@@ -34,3 +34,39 @@ class RB205_H_recruit: ls_gar_phase2_helmet
 		};
 	};
 };
+class RB205_H_trooper: RB205_H_recruit
+{
+	displayName = "[205] Clone Trooper Helmet";
+	hiddenSelectionsTextures[] =
+	{
+		"\RB205_main\data\H_enlisted.paa",
+		"\RB205_main\data\visor_p2.paa"
+	};
+};
+class RB205_H_corporal: RB205_H_trooper
+{
+	displayName = "[205] Clone Trooper Helmet (Corporal)";
+	hiddenSelectionsTextures[] =
+	{
+		"\RB205_main\data\H_nco.paa",
+		"\RB205_main\data\visor_p2.paa"
+	};
+};
+class RB205_H_sergeant: RB205_H_corporal
+{
+	displayName = "[205] Clone Trooper Helmet (Sergeant)";
+	hiddenSelectionsTextures[] =
+	{
+		"\RB205_main\data\H_nco.paa",
+		"\RB205_main\data\visor_p2.paa"
+	};
+};
+class RB205_H_lieutenant: RB205_H_sergeant
+{
+	displayName = "[205] Clone Trooper Helmet (Lieutenant)";
+	hiddenSelectionsTextures[] =
+	{
+		"\RB205_main\data\H_nco.paa",
+		"\RB205_main\data\visor_p2.paa"
+	};
+};
