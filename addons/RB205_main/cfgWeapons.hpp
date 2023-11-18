@@ -70,3 +70,43 @@ class RB205_H_lieutenant: RB205_H_sergeant
 		"\RB205_main\data\visor_p2_co.paa"
 	};
 };
+
+//////////////////////////////////////////////////////////
+
+class ls_gar_phase1Arf_helmet: ls_blueforHelmet_base
+{
+	class ItemInfo;
+};
+
+class RB205_H_recruit_arf: ls_gar_phase1Arf_helmet
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Recruit ARF Helmet";
+	picture = "\RB205_main\data\ui\icon_H_arf_p1.paa";
+	model = "\ls_armor_bluefor\helmet\gar\arf\ls_gar_arf_helmet.p3d";
+	hiddenSelections[] =
+	{
+		"camo1",
+		"camo2",
+		"visor"
+	};
+	hiddenSelectionsTextures[] =
+	{
+		"\RB205_main\data\H_arf_recruit_co.paa",
+		"",
+		"\ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa"
+	};
+	subItems[] = {};
+	class ItemInfo: ItemInfo
+	{
+		mass = MASS_HELMET;
+		allowedSlots[] = ALLOWED_SLOTS_HELMET;
+		uniformModel = "\ls_armor_bluefor\helmet\gar\arf\ls_gar_arf_helmet.p3d";
+		modelSides[] = {6};
+		hiddenSelections[] = {"camo1","camo2","visor"};
+		class HitpointsProtectionInfo
+		{
+			HITPOINTS_HELMET
+		};
+	};
+};
