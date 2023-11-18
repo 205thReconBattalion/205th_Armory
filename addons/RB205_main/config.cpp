@@ -10,7 +10,12 @@ class cfgPatches
         author = "205th Recon Battalion"
 		weapons[] =
 		{
-			"RB205_H_recruit"
+			"RB205_H_recruit",
+			"RB205_H_recruit_arf",
+			"RB205_H_trooper_arf",
+			"RB205_H_corporal_arf",
+			"RB205_H_sergeant_arf",
+			"RB205_H_lieutenant_arf"
 		};
 		units[] =
 		{

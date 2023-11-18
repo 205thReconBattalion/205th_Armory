@@ -110,3 +110,43 @@ class RB205_H_recruit_arf: ls_gar_phase1Arf_helmet
 		};
 	};
 };
+class RB205_H_trooper_arf: RB205_H_recruit_arf
+{
+	displayName = "[205] Clone Trooper ARF Helmet";
+	hiddenSelectionsTextures[] =
+	{
+		"\RB205_main\data\H_arf_enlisted_co.paa",
+		"",
+		"\RB205_main\data\visor_arf_co.paa"
+	};
+};
+class RB205_H_corporal_arf: RB205_H_trooper_arf
+{
+	displayName = "[205] Clone Trooper ARF Helmet (Corporal)";
+	hiddenSelectionsTextures[] =
+	{
+		"\RB205_main\data\H_arf_nco_co.paa",
+		"",
+		"\RB205_main\data\visor_arf_co.paa"
+	};
+};
+class RB205_H_sergeant_arf: RB205_H_corporal_arf
+{
+	displayName = "[205] Clone Trooper ARF Helmet (Sergeant)";
+	hiddenSelectionsTextures[] =
+	{
+		"\RB205_main\data\H_arf_nco_co.paa",
+		"",
+		"\RB205_main\data\visor_arf_co.paa"
+	};
+};
+class RB205_H_lieutenant_arf: RB205_H_sergeant_arf
+{
+	displayName = "[205] Clone Trooper ARF Helmet (Lieutenant)";
+	hiddenSelectionsTextures[] =
+	{
+		"\RB205_main\data\H_arf_nco_co.paa",
+		"",
+		"\RB205_main\data\visor_arf_co.paa"
+	};
+};
