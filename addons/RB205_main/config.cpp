@@ -11,6 +11,10 @@ class cfgPatches
 		weapons[] =
 		{
 			"RB205_H_recruit",
+			"RB205_H_trooper",
+			"RB205_H_corporal",
+			"RB205_H_sergeant",
+			"RB205_H_lieutenant",
 			"RB205_H_recruit_arf",
 			"RB205_H_trooper_arf",
 			"RB205_H_corporal_arf",
