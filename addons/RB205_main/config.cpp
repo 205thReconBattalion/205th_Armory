@@ -40,3 +40,5 @@ class cfgVehicles
 {
 	#include "cfgVehicles.hpp"
 };
+
+//Hallo Welt
