@@ -59,7 +59,7 @@ class RB205_H_lieutenant: RB205_H_sergeant
 	AIRBORNE HELMETS
 */
 
-class RB205_ab_recruit: RB205_H_ab_base
+class RB205_H_ab_recruit: RB205_H_ab_base
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone Airborne Recruit Helmet";
@@ -69,7 +69,7 @@ class RB205_ab_recruit: RB205_H_ab_base
 		"lsd_armor_bluefor\helmet\gar\airborne\data\visor_co.paa"
 	};
 };
-class RB205_ab_trooper: RB205_ab_recruit
+class RB205_H_ab_trooper: RB205_H_ab_recruit
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone Airborne Trooper Helmet";
@@ -79,7 +79,7 @@ class RB205_ab_trooper: RB205_ab_recruit
 		"RB205_main\data\airborne\visor_ab_co.paa"
 	};
 };
-class RB205_ab_corporal: RB205_ab_trooper
+class RB205_H_ab_corporal: RB205_H_ab_trooper
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone Airborne Trooper Helmet (Corporal)";
@@ -89,7 +89,7 @@ class RB205_ab_corporal: RB205_ab_trooper
 		"RB205_main\data\airborne\visor_ab_co.paa"
 	};
 };
-class RB205_ab_sergeant: RB205_ab_corporal
+class RB205_H_ab_sergeant: RB205_H_ab_corporal
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone Airborne Trooper Helmet (Sergeant)";
@@ -99,7 +99,7 @@ class RB205_ab_sergeant: RB205_ab_corporal
 		"RB205_main\data\airborne\visor_ab_co.paa"
 	};
 };
-class RB205_ab_lieutenant: RB205_ab_sergeant
+class RB205_H_ab_lieutenant: RB205_H_ab_sergeant
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone Airborne Trooper Helmet (Lieutenant)";
