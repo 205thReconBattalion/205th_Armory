@@ -280,3 +280,53 @@ class RB205_H_plt_lieutenant: RB205_H_plt_sergeant
 		"RB205_main\data\pilot\visor_plt_co.paa"
 	};
 };
+
+/*
+	SNOW HELMETS
+*/
+
+class RB205_H_snow_recruit: RB205_H_snow_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Snow Recruit Helmet";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\snow\H_snow_recruit_co.paa"
+	};
+};
+class RB205_H_snow_trooper: RB205_H_snow_recruit
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Snow Trooper Helmet";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\snow\H_snow_enl_co.paa"
+	};
+};
+class RB205_H_snow_corporal: RB205_H_snow_trooper
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Snow Trooper Helmet (Corporal)";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\snow\H_snow_nco_co.paa"
+	};
+};
+class RB205_H_snow_sergeant: RB205_H_snow_corporal
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Snow Trooper Helmet (Sergeant)";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\snow\H_snow_nco_co.paa"
+	};
+};
+class RB205_H_snow_lieutenant: RB205_H_snow_sergeant
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Snow Trooper Helmet (Lieutenant)";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\snow\H_snow_nco_co.paa"
+	};
+};

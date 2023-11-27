@@ -121,3 +121,31 @@ class RB205_H_plt_base: ls_gar_phase2Pilot_helmet
 		};
 	};
 };
+
+class ls_gar_phase2Insulated_helmet: ls_blueforHelmet_base
+{
+	class ItemInfo;
+};
+class RB205_H_snow_base: ls_gar_phase2Insulated_helmet
+{
+	ACCESS_FALSE
+	picture = "\RB205_main\data\ui\icon_H_snow.paa";
+	model = "ls_armor_bluefor\helmet\gar\phase2Insulated\ls_gar_phase2Insulated_helmet.p3d";
+	hiddenSelections[] =
+	{
+		"Camo1"
+	};
+	subItems[] = {};
+	class ItemInfo: ItemInfo
+	{
+		mass = MASS_HELMET;
+		allowedSlots[] = ALLOWED_SLOTS_HELMET;
+		uniformModel = "ls_armor_bluefor\helmet\gar\phase2Insulated\ls_gar_phase2Insulated_helmet.p3d";
+		modelSides[] = {6};
+		hiddenSelections[] = {"Camo1"};
+		class HitpointsProtectionInfo
+		{
+			HITPOINTS_HELMET
+		};
+	};
+};
