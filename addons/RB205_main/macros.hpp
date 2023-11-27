@@ -28,3 +28,15 @@
 
 //OTHER
 #define ALLOWED_SLOTS_HELMET {605,901}
+
+#define LINKED_ITEMS(HELMET,VEST,NVG) \
+linkedItems[] = \
+{ \
+	##HELMET##,##VEST##,##NVG##, \
+	"SWLB_clone_binocular","ItemMap","ItemGPS","JLTS_clone_comlink","ItemCompass","TFAR_microdagr" \
+}; \
+respawnlinkedItems[] = \
+{ \
+	##HELMET##,##VEST##,##NVG##, \
+	"SWLB_clone_binocular","ItemMap","ItemGPS","JLTS_clone_comlink","ItemCompass","TFAR_microdagr" \
+};
