@@ -39,7 +39,8 @@ class cfgPatches
 			"RB205_H_snow_trooper",
 			"RB205_H_snow_corporal",
 			"RB205_H_snow_sergeant",
-			"RB205_H_snow_lieutenant"
+			"RB205_H_snow_lieutenant",
+			"RB205_H_arc_trooper"
 		};
 		units[] =
 		{

@@ -149,3 +149,33 @@ class RB205_H_snow_base: ls_gar_phase2Insulated_helmet
 		};
 	};
 };
+
+class ls_gar_arc_helmet: ls_blueforHelmet_base
+{
+	class ItemInfo;
+};
+class RB205_H_arc_base: ls_gar_arc_helmet
+{
+	ACCESS_FALSE
+	picture = "\RB205_main\data\ui\icon_H_arc.paa";
+	model = "\ls_armor_bluefor\helmet\gar\arc\ls_gar_arc_helmet.p3d";
+	hiddenSelections[] =
+	{
+		"camo1",
+		"visor",
+		"illum"
+	};
+	subItems[] = {};
+	class ItemInfo: ItemInfo
+	{
+		mass = MASS_HELMET;
+		allowedSlots[] = ALLOWED_SLOTS_HELMET;
+		uniformModel = "\ls_armor_bluefor\helmet\gar\arc\ls_gar_arc_helmet.p3d";
+		modelSides[] = {6};
+		hiddenSelections[] = {"camo1","visor","illum"};
+		class HitpointsProtectionInfo
+		{
+			HITPOINTS_HELMET
+		};
+	};
+};

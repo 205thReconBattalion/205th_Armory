@@ -330,3 +330,15 @@ class RB205_H_snow_lieutenant: RB205_H_snow_sergeant
 		"RB205_main\data\snow\H_snow_nco_co.paa"
 	};
 };
+
+class RB205_H_arc_trooper: RB205_H_arc_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone ARC Trooper Helmet";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\arc\H_arc_co.paa",
+		"RB205_main\data\arc\visor_arc_co.paa",
+		"RB205_main\data\arc\H_arc_co.paa"
+	};
+};
