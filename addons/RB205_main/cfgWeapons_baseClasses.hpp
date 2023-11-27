@@ -1,14 +1,9 @@
 class ls_blueforHelmet_base;
+
 class ls_gar_phase2_helmet: ls_blueforHelmet_base
 {
 	class ItemInfo;
 };
-class ls_gar_phase1Arf_helmet: ls_blueforHelmet_base
-{
-	class ItemInfo;
-};
-
-
 class RB205_H_base: ls_gar_phase2_helmet
 {
 	ACCESS_FALSE
@@ -32,6 +27,11 @@ class RB205_H_base: ls_gar_phase2_helmet
 			HITPOINTS_HELMET
 		};
 	};
+};
+
+class ls_gar_phase1Arf_helmet: ls_blueforHelmet_base
+{
+	class ItemInfo;
 };
 class RB205_H_arf_base: ls_gar_phase1Arf_helmet
 {
@@ -62,4 +62,33 @@ class RB205_H_arfF_base: RB205_H_arf_base
 {
 	ACCESS_FALSE
 	picture = "\RB205_main\data\ui\icon_H_arfF.paa";
+};
+
+class lsd_gar_airborne_helmet: ls_blueforHelmet_base
+{
+	class ItemInfo;
+};
+class RB205_H_ab_base: lsd_gar_airborne_helmet
+{
+	ACCESS_FALSE
+	picture = "\RB205_main\data\ui\icon_H_ab.paa";
+	model = "\lsd_armor_bluefor\helmet\gar\airborne\lsd_gar_airborne_helmet.p3d";
+	hiddenSelections[] =
+	{
+		"camo1",
+		"visor"
+	};
+	subItems[] = {};
+	class ItemInfo: ItemInfo
+	{
+		mass = MASS_HELMET;
+		allowedSlots[] = ALLOWED_SLOTS_HELMET;
+		uniformModel = "\lsd_armor_bluefor\helmet\gar\airborne\lsd_gar_airborne_helmet.p3d";
+		modelSides[] = {6};
+		hiddenSelections[] = {"camo1","visor"};
+		class HitpointsProtectionInfo
+		{
+			HITPOINTS_HELMET
+		};
+	};
 };
