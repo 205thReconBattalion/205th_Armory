@@ -401,12 +401,12 @@ class RB205_U_lieutenant: RB205_U_base
 	VESTS
 */
 
-class V_ct: RB205_V_base
+class RB205_V_ct: RB205_V_base
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone Trooper Vest";
 };
-class V_clc: RB205_V_fireTeamLead_base
+class RB205_V_clc: RB205_V_fireTeamLead_base
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone Trooper Vest (Lance Corporal)";
@@ -418,7 +418,7 @@ class V_clc: RB205_V_fireTeamLead_base
 		"RB205_main\data\default\V_clc_co.paa"
 	};
 };
-class V_cp: RB205_V_fireTeamLead_base
+class RB205_V_cp: RB205_V_fireTeamLead_base
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone Trooper Vest (Corporal)";
@@ -430,7 +430,7 @@ class V_cp: RB205_V_fireTeamLead_base
 		"RB205_main\data\default\V_cp_co.paa"
 	};
 };
-class V_cs: RB205_V_squadLead_base
+class RB205_V_cs: RB205_V_squadLead_base
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone Trooper Vest (Sergeant)";
@@ -440,7 +440,7 @@ class V_cs: RB205_V_squadLead_base
 		""
 	};
 };
-class V_csm: RB205_V_platoonLead_base
+class RB205_V_csm: RB205_V_platoonLead_base
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone Trooper Vest (Sergeant-Major)";
@@ -449,7 +449,7 @@ class V_csm: RB205_V_platoonLead_base
 		"RB205_main\data\default\V_csm_co.paa"
 	};
 };
-class V_cl: RB205_V_platoonLead_base
+class RB205_V_cl: RB205_V_platoonLead_base
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone Trooper Vest (Lieutenant)";
