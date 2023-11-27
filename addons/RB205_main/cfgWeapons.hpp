@@ -236,7 +236,7 @@ class RB205_H_plt_recruit: RB205_H_plt_base
 	displayName = "[205] Clone Pilot Recruit Helmet";
 	hiddenSelectionsTextures[] =
 	{
-		"RB205_main\data\pilot\H_plt_enl_co.paa",
+		"RB205_main\data\pilot\H_plt_recruit_co.paa",
 		"ls_armor_bluefor\helmet\gar\phase2Pilot\data\visor_co.paa"
 	};
 };
