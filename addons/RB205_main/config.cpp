@@ -47,7 +47,14 @@ class cfgPatches
 			"RB205_U_trooper",
 			"RB205_U_corporal",
 			"RB205_U_sergeant",
-			"RB205_U_lieutenant"
+			"RB205_U_lieutenant",
+			
+			"RB205_V_ct",
+			"RB205_V_clc",
+			"RB205_V_cp",
+			"RB205_V_cs",
+			"RB205_V_csm",
+			"RB205_V_cl"
 		};
 		units[] =
 		{

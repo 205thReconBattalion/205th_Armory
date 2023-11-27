@@ -208,3 +208,93 @@ class RB205_U_base: ls_gar_phase2_uniform
         uniformType = "Neopren";
 	};
 };
+
+/*
+
+*/
+
+class V_PlateCarrier1_rgr;
+
+class SWLB_clone_basic_armor: V_PlateCarrier1_rgr
+{
+	class ItemInfo;
+};
+class RB205_V_base: SWLB_clone_basic_armor
+{
+	picture = "\SWLB_clones\data\ui\icon_SWLB_clone_uniform_ca.paa";
+	model = "\SWLB_clones\SWLB_clone_basic_armor.p3d";
+	class ItemInfo: ItemInfo
+	{
+		mass = MASS_VEST_ENL;
+		containerClass = INV_VEST_ENL;
+		uniformModel = "\SWLB_clones\SWLB_clone_basic_armor.p3d";
+		hiddenSelections[] = {};
+		class HitpointsProtectionInfo
+		{
+			HITPOINTS_VEST_ENLISTED
+		};
+	};
+};
+
+class SWLB_clone_recon_armor: SWLB_clone_basic_armor
+{
+	class ItemInfo;
+};
+class RB205_V_fireTeamLead_base: SWLB_clone_recon_armor
+{
+	picture = "\SWLB_clones\data\ui\icon_SWLB_clone_recon_armor_ca.paa";
+	model = "\SWLB_clones\SWLB_clone_recon_armor.p3d";
+	class ItemInfo: ItemInfo
+	{
+		mass = MASS_VEST_NCO;
+		containerClass = INV_VEST_NCO;
+		uniformModel = "\SWLB_clones\SWLB_clone_recon_armor.p3d";
+		hiddenSelections[] = {"camo1","camo2","holster","pauldron"};
+		class HitpointsProtectionInfo
+		{
+			HITPOINTS_VEST_FIRETEAMLEAD
+		};
+	};
+};
+
+class SWLB_clone_kama_armor: SWLB_clone_basic_armor
+{
+	class ItemInfo;
+};
+class RB205_V_squadLead_base: SWLB_clone_kama_armor
+{
+	picture = "\SWLB_clones\data\ui\icon_SWLB_clone_kama_armor_ca.paa";
+	model = "\SWLB_clones\SWLB_clone_kama_armor.p3d";
+	class ItemInfo: ItemInfo
+	{
+		mass = MASS_VEST_NCO;
+		containerClass = INV_VEST_NCO;
+		uniformModel = "\SWLB_clones\SWLB_clone_kama_armor.p3d";
+		hiddenSelections[] = {"camo1","rank"};
+		class HitpointsProtectionInfo
+		{
+			HITPOINTS_VEST_SQUADLEAD
+		};
+	};
+};
+
+class SWLB_clone_officer_armor: SWLB_clone_basic_armor
+{
+	class ItemInfo;
+};
+class RB205_V_platoonLead_base: SWLB_clone_officer_armor
+{
+	picture = "\SWLB_clones\data\ui\icon_SWLB_clone_officer_armor_ca.paa";
+	model = "\SWLB_clones\SWLB_clone_officer_armor.p3d";
+	class ItemInfo: ItemInfo
+	{
+		mass = MASS_VEST_CO;
+		containerClass = INV_VEST_CO;
+		uniformModel = "\SWLB_clones\SWLB_clone_officer_armor.p3d";
+		hiddenSelections[] = {"camo1"};
+		class HitpointsProtectionInfo
+		{
+			HITPOINTS_VEST_PLATOONLEAD
+		};
+	};
+};

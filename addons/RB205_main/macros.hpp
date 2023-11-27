@@ -5,21 +5,26 @@
 	scope = 0; \
 	scopeArsenal = 0;
 
-#define ALLOWED_SLOTS_HELMET {605,901}
-/*
-allowedSlots[] = {...}
-allowedSlots[] is an array of slot numbers where you may put the item:
-	605 - headgear
-	701 - vest
-	801 - uniform
-	901	- backpack
-
-e.g. helmet with allowedSlots[] = {605, 701, 901} means you can put the helmet in the vest or backpack but not inside your uniform
-*/
-
 //MASS VALUES
 #define MASS_HELMET 20
-#define MASS_UNIFORM 220
+
+#define MASS_UNIFORM 150
+
+#define MASS_VEST_ENL 10
+#define MASS_VEST_NCO 20
+#define MASS_VEST_CO 40
+#define MASS_VEST_ARC 60
 
 //INVENTORY SPACE
-#define INV_UNIFORM "Supply70"
+#define INV_UNIFORM "Supply80"
+
+#define INV_VEST_ENL "Supply200"
+#define INV_VEST_NCO "Supply250"
+#define INV_VEST_CO "Supply300"
+
+#define INV_VEST_GRENADIER "Supply250"
+#define INV_VEST_MEDIC "Supply250"
+#define INV_VEST_ARC "Supply250"
+
+//OTHER
+#define ALLOWED_SLOTS_HELMET {605,901}
