@@ -18,4 +18,8 @@ e.g. helmet with allowedSlots[] = {605, 701, 901} means you can put the helmet i
 */
 
 //MASS VALUES
-#define MASS_HELMET 10
+#define MASS_HELMET 20
+#define MASS_UNIFORM 220
+
+//INVENTORY SPACE
+#define INV_UNIFORM "Supply70"

@@ -1,3 +1,7 @@
+/*
+	HELMETS
+*/
+
 class ls_blueforHelmet_base;
 
 class ls_gar_phase2_helmet: ls_blueforHelmet_base
@@ -177,5 +181,30 @@ class RB205_H_arc_base: ls_gar_arc_helmet
 		{
 			HITPOINTS_HELMET
 		};
+	};
+};
+
+/*
+	UNIFORMS
+*/
+
+class ls_blueforUniform_base;
+
+class ls_gar_phase2_uniform: ls_blueforUniform_base
+{
+	class ItemInfo;
+};
+class RB205_U_base: ls_gar_phase2_uniform
+{
+	ACCESS_FALSE
+	picture = "\RB205_main\data\ui\icon_U_default.paa";
+	model = "\ls_armor_bluefor\uniform\gar\phase2\ls_gar_phase2_uniform_groundholder.p3d";
+	class ItemInfo: ItemInfo
+	{
+		mass = MASS_UNIFORM;
+		containerClass = INV_UNIFORM;
+		uniformClass = "RB205_clone_base";
+		uniformModel = "-";
+        uniformType = "Neopren";
 	};
 };

@@ -331,6 +331,10 @@ class RB205_H_snow_lieutenant: RB205_H_snow_sergeant
 	};
 };
 
+/*
+	ARC HELMET
+*/
+
 class RB205_H_arc_trooper: RB205_H_arc_base
 {
 	ACCESS_TRUE
@@ -341,4 +345,18 @@ class RB205_H_arc_trooper: RB205_H_arc_base
 		"RB205_main\data\arc\visor_arc_co.paa",
 		"RB205_main\data\arc\H_arc_co.paa"
 	};
+};
+
+/*
+	UNIFORMS
+*/
+
+class RB205_U_recruit: RB205_U_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Recruit Armor";
+	class ItemInfo: ItemInfo
+    {
+        uniformClass = RB205_clone_recruit;
+    };
 };
