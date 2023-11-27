@@ -92,3 +92,32 @@ class RB205_H_ab_base: lsd_gar_airborne_helmet
 		};
 	};
 };
+
+class ls_gar_phase2Pilot_helmet: ls_blueforHelmet_base
+{
+	class ItemInfo;
+};
+class RB205_H_plt_base: ls_gar_phase2Pilot_helmet
+{
+	ACCESS_FALSE
+	picture = "\RB205_main\data\ui\icon_H_plt.paa";
+	model = "ls_armor_bluefor\helmet\gar\phase2Pilot\ls_gar_phase2Pilot_helmet.p3d";
+	hiddenSelections[] =
+	{
+		"camo1",
+		"visor"
+	};
+	subItems[] = {};
+	class ItemInfo: ItemInfo
+	{
+		mass = MASS_HELMET;
+		allowedSlots[] = ALLOWED_SLOTS_HELMET;
+		uniformModel = "ls_armor_bluefor\helmet\gar\phase2Pilot\ls_gar_phase2Pilot_helmet.p3d";
+		modelSides[] = {6};
+		hiddenSelections[] = {"camo1","visor"};
+		class HitpointsProtectionInfo
+		{
+			HITPOINTS_HELMET
+		};
+	};
+};

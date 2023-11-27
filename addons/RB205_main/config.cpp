@@ -29,7 +29,12 @@ class cfgPatches
 			"RB205_H_arfF_trooper",
 			"RB205_H_arfF_corporal",
 			"RB205_H_arfF_sergeant",
-			"RB205_H_arfF_lieutenant"
+			"RB205_H_arfF_lieutenant",
+			"RB205_H_plt_recruit",
+			"RB205_H_plt_trooper",
+			"RB205_H_plt_corporal",
+			"RB205_H_plt_sergeant",
+			"RB205_H_plt_lieutenant"
 		};
 		units[] =
 		{
