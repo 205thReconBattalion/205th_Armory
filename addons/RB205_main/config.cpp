@@ -15,11 +15,11 @@ class cfgPatches
 			"RB205_H_corporal",
 			"RB205_H_sergeant",
 			"RB205_H_lieutenant",
-			"RB205_H_recruit_arf",
-			"RB205_H_trooper_arf",
-			"RB205_H_corporal_arf",
-			"RB205_H_sergeant_arf",
-			"RB205_H_lieutenant_arf"
+			"RB205_H_arf_recruit",
+			"RB205_H_arf_trooper",
+			"RB205_H_arf_corporal",
+			"RB205_H_arf_sergeant",
+			"RB205_H_arf_lieutenant"
 		};
 		units[] =
 		{
@@ -40,8 +40,3 @@ class cfgVehicles
 {
 	#include "cfgVehicles.hpp"
 };
-
-
-//////was läuft////////
-
-//Hallo Welt
