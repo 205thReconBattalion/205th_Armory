@@ -10,6 +10,7 @@ class RB205_clone_base: ls_gar_phase2_base
 	//ICON_RIFLEMAN
 	side=1;
 	faction="RB205";
+	editorSubCategory = "RB205_1AP";
 	identityTypes[]={"LanguageENG_F","SWLB_JH_Head_Hair"};
 	engineer="false";
 	canDeactivateMines="false";
@@ -17,34 +18,41 @@ class RB205_clone_base: ls_gar_phase2_base
 	backpack="";
 	//+Inventory
 };
-/*class RB205_ab_base: RB205_U_base
+class RB205_ab_base: RB205_clone_base
 {
 	ACCESS_FALSE
+	editorSubCategory = "RB205_1AP";
+	engineer="true";
 	backpack="";
 	//+Inventory
-};*/
+};
 /*class RB205_arf_base: RB205_clone_base
 {
 	ACCESS_FALSE
+	canDeactivateMines="true";
 	camouflage = 0.6;
 	backpack="";
 	//+Inventory
 };*/
-/*class RB205_plt_base: RB205_U_base
+/*class RB205_plt_base: RB205_clone_base
+{
+	ACCESS_FALSE
+	engineer="true";
+	backpack="";
+	//+Inventory
+};
+class RB205_snow_base: RB205_clone_base
 {
 	ACCESS_FALSE
 	backpack="";
 	//+Inventory
 };
-class RB205_snow_base: RB205_U_base
+class RB205_arc_base: RB205_clone_base
 {
 	ACCESS_FALSE
-	backpack="";
-	//+Inventory
-};
-class RB205_arc_base: RB205_U_base
-{
-	ACCESS_FALSE
+	engineer="true";
+	canDeactivateMines="true";
+	camouflage = 0.6;
 	backpack="";
 	//+Inventory
 };*/

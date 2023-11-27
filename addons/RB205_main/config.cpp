@@ -60,9 +60,18 @@ class cfgPatches
 		{
 			"RB205_clone_recruit",
 			"RB205_clone_trooper",
+			"RB205_clone_lanceCorporal",
 			"RB205_clone_corporal",
 			"RB205_clone_sergeant",
-			"RB205_clone_lieutenant"
+			"RB205_clone_sergeantMajor",
+			"RB205_clone_lieutenant",
+			"RB205_clone_ab_recruit",
+			"RB205_clone_ab_trooper",
+			"RB205_clone_ab_lanceCorporal",
+			"RB205_clone_ab_corporal",
+			"RB205_clone_ab_sergeant",
+			"RB205_clone_ab_sergeantMajor",
+			"RB205_clone_ab_lieutenant"
 		};
 	};
 };
