@@ -4,7 +4,8 @@ class cfgPatches
 	{
 		requiredAddons[]=
 		{
-			"ls_armor_bluefor"
+			"ls_armor_bluefor",
+			"lsd_armor_bluefor"
 		};
 		requiredVersion = 1.0;
         author = "205th Recon Battalion"
@@ -40,11 +41,21 @@ class cfgPatches
 			"RB205_H_snow_corporal",
 			"RB205_H_snow_sergeant",
 			"RB205_H_snow_lieutenant",
-			"RB205_H_arc_trooper"
+			"RB205_H_arc_trooper",
+
+			"RB205_U_recruit",
+			"RB205_U_trooper",
+			"RB205_U_corporal",
+			"RB205_U_sergeant",
+			"RB205_U_lieutenant"
 		};
 		units[] =
 		{
-			
+			"RB205_clone_recruit",
+			"RB205_clone_trooper",
+			"RB205_clone_corporal",
+			"RB205_clone_sergeant",
+			"RB205_clone_lieutenant"
 		};
 	};
 };

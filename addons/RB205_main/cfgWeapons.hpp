@@ -360,3 +360,39 @@ class RB205_U_recruit: RB205_U_base
         uniformClass = RB205_clone_recruit;
     };
 };
+class RB205_U_trooper: RB205_U_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Trooper Armor";
+	class ItemInfo: ItemInfo
+    {
+        uniformClass = RB205_clone_trooper;
+    };
+};
+class RB205_U_corporal: RB205_U_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Trooper Armor (Corporal)";
+	class ItemInfo: ItemInfo
+    {
+        uniformClass = RB205_clone_corporal;
+    };
+};
+class RB205_U_sergeant: RB205_U_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Trooper Armor (Sergeant)";
+	class ItemInfo: ItemInfo
+    {
+        uniformClass = RB205_clone_sergeant;
+    };
+};
+class RB205_U_lieutenant: RB205_U_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Trooper Armor (Lieutenant)";
+	class ItemInfo: ItemInfo
+    {
+        uniformClass = RB205_clone_lieutenant;
+    };
+};
