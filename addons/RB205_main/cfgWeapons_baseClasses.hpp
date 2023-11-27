@@ -58,3 +58,8 @@ class RB205_H_arf_base: ls_gar_phase1Arf_helmet
 		};
 	};
 };
+class RB205_H_arfF_base: RB205_H_arf_base
+{
+	ACCESS_FALSE
+	picture = "\RB205_main\data\ui\icon_H_arfF.paa";
+};
