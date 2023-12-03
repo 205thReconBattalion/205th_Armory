@@ -14,7 +14,7 @@ class RB205_H_recruit: RB205_H_base
 		"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
 	};
 };
-class RB205_H_trooper: RB205_H_recruit
+class RB205_H_trooper: RB205_H_base
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone Trooper Helmet";
@@ -24,7 +24,7 @@ class RB205_H_trooper: RB205_H_recruit
 		"RB205_main\data\default\visor_p2_co.paa"
 	};
 };
-class RB205_H_corporal: RB205_H_trooper
+class RB205_H_corporal: RB205_H_base
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone Trooper Helmet (Corporal)";
@@ -34,7 +34,7 @@ class RB205_H_corporal: RB205_H_trooper
 		"RB205_main\data\default\visor_p2_co.paa"
 	};
 };
-class RB205_H_sergeant: RB205_H_corporal
+class RB205_H_sergeant: RB205_H_base
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone Trooper Helmet (Sergeant)";
@@ -44,7 +44,7 @@ class RB205_H_sergeant: RB205_H_corporal
 		"RB205_main\data\default\visor_p2_co.paa"
 	};
 };
-class RB205_H_lieutenant: RB205_H_sergeant
+class RB205_H_lieutenant: RB205_H_base
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone Trooper Helmet (Lieutenant)";
@@ -69,7 +69,7 @@ class RB205_H_ab_recruit: RB205_H_ab_base
 		"lsd_armor_bluefor\helmet\gar\airborne\data\visor_co.paa"
 	};
 };
-class RB205_H_ab_trooper: RB205_H_ab_recruit
+class RB205_H_ab_trooper: RB205_H_ab_base
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone Airborne Trooper Helmet";
@@ -79,7 +79,7 @@ class RB205_H_ab_trooper: RB205_H_ab_recruit
 		"RB205_main\data\airborne\visor_ab_co.paa"
 	};
 };
-class RB205_H_ab_corporal: RB205_H_ab_trooper
+class RB205_H_ab_corporal: RB205_H_ab_base
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone Airborne Trooper Helmet (Corporal)";
@@ -89,7 +89,7 @@ class RB205_H_ab_corporal: RB205_H_ab_trooper
 		"RB205_main\data\airborne\visor_ab_co.paa"
 	};
 };
-class RB205_H_ab_sergeant: RB205_H_ab_corporal
+class RB205_H_ab_sergeant: RB205_H_ab_base
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone Airborne Trooper Helmet (Sergeant)";
@@ -99,7 +99,7 @@ class RB205_H_ab_sergeant: RB205_H_ab_corporal
 		"RB205_main\data\airborne\visor_ab_co.paa"
 	};
 };
-class RB205_H_ab_lieutenant: RB205_H_ab_sergeant
+class RB205_H_ab_lieutenant: RB205_H_ab_base
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone Airborne Trooper Helmet (Lieutenant)";
@@ -125,7 +125,7 @@ class RB205_H_arf_recruit: RB205_H_arf_base
 		"ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa"
 	};
 };
-class RB205_H_arf_trooper: RB205_H_arf_recruit
+class RB205_H_arf_trooper: RB205_H_arf_base
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone ARF Trooper Helmet";
@@ -136,7 +136,7 @@ class RB205_H_arf_trooper: RB205_H_arf_recruit
 		"RB205_main\data\arf\visor_arf_co.paa"
 	};
 };
-class RB205_H_arf_corporal: RB205_H_arf_trooper
+class RB205_H_arf_corporal: RB205_H_arf_base
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone ARF Trooper Helmet (Corporal)";
@@ -147,7 +147,7 @@ class RB205_H_arf_corporal: RB205_H_arf_trooper
 		"RB205_main\data\arf\visor_arf_co.paa"
 	};
 };
-class RB205_H_arf_sergeant: RB205_H_arf_corporal
+class RB205_H_arf_sergeant: RB205_H_arf_base
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone ARF Trooper Helmet (Sergeant)";
@@ -158,7 +158,7 @@ class RB205_H_arf_sergeant: RB205_H_arf_corporal
 		"RB205_main\data\arf\visor_arf_co.paa"
 	};
 };
-class RB205_H_arf_lieutenant: RB205_H_arf_sergeant
+class RB205_H_arf_lieutenant: RB205_H_arf_base
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone ARF Trooper Helmet (Lieutenant)";
@@ -181,7 +181,7 @@ class RB205_H_arfF_recruit: RB205_H_arfF_base
 		"ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa"
 	};
 };
-class RB205_H_arfF_trooper: RB205_H_arfF_recruit
+class RB205_H_arfF_trooper: RB205_H_arfF_base
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone ARF Trooper Helmet";
@@ -192,7 +192,7 @@ class RB205_H_arfF_trooper: RB205_H_arfF_recruit
 		"RB205_main\data\arf\visor_arf_co.paa"
 	};
 };
-class RB205_H_arfF_corporal: RB205_H_arfF_trooper
+class RB205_H_arfF_corporal: RB205_H_arfF_base
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone ARF Trooper Helmet (Corporal)";
@@ -203,7 +203,7 @@ class RB205_H_arfF_corporal: RB205_H_arfF_trooper
 		"RB205_main\data\arf\visor_arf_co.paa"
 	};
 };
-class RB205_H_arfF_sergeant: RB205_H_arfF_corporal
+class RB205_H_arfF_sergeant: RB205_H_arfF_base
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone ARF Trooper Helmet (Sergeant)";
@@ -214,7 +214,7 @@ class RB205_H_arfF_sergeant: RB205_H_arfF_corporal
 		"RB205_main\data\arf\visor_arf_co.paa"
 	};
 };
-class RB205_H_arfF_lieutenant: RB205_H_arfF_sergeant
+class RB205_H_arfF_lieutenant: RB205_H_arfF_base
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone ARF Trooper Helmet (Lieutenant)";
@@ -240,7 +240,7 @@ class RB205_H_plt_recruit: RB205_H_plt_base
 		"ls_armor_bluefor\helmet\gar\phase2Pilot\data\visor_co.paa"
 	};
 };
-class RB205_H_plt_trooper: RB205_H_plt_recruit
+class RB205_H_plt_trooper: RB205_H_plt_base
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone Pilot Trooper Helmet";
@@ -250,7 +250,7 @@ class RB205_H_plt_trooper: RB205_H_plt_recruit
 		"RB205_main\data\pilot\visor_plt_co.paa"
 	};
 };
-class RB205_H_plt_corporal: RB205_H_plt_trooper
+class RB205_H_plt_corporal: RB205_H_plt_base
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone Pilot Trooper Helmet (Corporal)";
@@ -260,7 +260,7 @@ class RB205_H_plt_corporal: RB205_H_plt_trooper
 		"RB205_main\data\pilot\visor_plt_co.paa"
 	};
 };
-class RB205_H_plt_sergeant: RB205_H_plt_corporal
+class RB205_H_plt_sergeant: RB205_H_plt_base
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone Pilot Trooper Helmet (Sergeant)";
@@ -270,7 +270,7 @@ class RB205_H_plt_sergeant: RB205_H_plt_corporal
 		"RB205_main\data\pilot\visor_plt_co.paa"
 	};
 };
-class RB205_H_plt_lieutenant: RB205_H_plt_sergeant
+class RB205_H_plt_lieutenant: RB205_H_plt_base
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone Pilot Trooper Helmet (Lieutenant)";
@@ -294,7 +294,7 @@ class RB205_H_snow_recruit: RB205_H_snow_base
 		"RB205_main\data\snow\H_snow_recruit_co.paa"
 	};
 };
-class RB205_H_snow_trooper: RB205_H_snow_recruit
+class RB205_H_snow_trooper: RB205_H_snow_base
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone Snow Trooper Helmet";
@@ -303,7 +303,7 @@ class RB205_H_snow_trooper: RB205_H_snow_recruit
 		"RB205_main\data\snow\H_snow_enl_co.paa"
 	};
 };
-class RB205_H_snow_corporal: RB205_H_snow_trooper
+class RB205_H_snow_corporal: RB205_H_snow_base
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone Snow Trooper Helmet (Corporal)";
@@ -312,7 +312,7 @@ class RB205_H_snow_corporal: RB205_H_snow_trooper
 		"RB205_main\data\snow\H_snow_nco_co.paa"
 	};
 };
-class RB205_H_snow_sergeant: RB205_H_snow_corporal
+class RB205_H_snow_sergeant: RB205_H_snow_base
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone Snow Trooper Helmet (Sergeant)";
@@ -321,7 +321,7 @@ class RB205_H_snow_sergeant: RB205_H_snow_corporal
 		"RB205_main\data\snow\H_snow_nco_co.paa"
 	};
 };
-class RB205_H_snow_lieutenant: RB205_H_snow_sergeant
+class RB205_H_snow_lieutenant: RB205_H_snow_base
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone Snow Trooper Helmet (Lieutenant)";
@@ -456,5 +456,402 @@ class RB205_V_cl: RB205_V_platoonLead_base
 	hiddenSelectionsTextures[] =
 	{
 		"RB205_main\data\default\V_cl_co.paa"
+	};
+};
+
+class RB205_V_medic: RB205_V_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Trooper Vest <Medic>";
+	picture = "\SWLB_clones\data\ui\icon_SWLB_clone_medic_armor_ca.paa";
+	model = "\SWLB_clones\SWLB_clone_medic_armor.p3d";
+	hiddenSelections[] =
+	{
+		"camo1"
+	};
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\default\V_medic_co.paa"
+	};
+	class ItemInfo: ItemInfo
+	{
+		containerClass = INV_VEST_MEDIC;
+		uniformModel = "\SWLB_clones\SWLB_clone_medic_armor.p3d";
+		hiddenSelections[] = {"camo1"};
+	};
+};
+class RB205_V_grenadier: RB205_V_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Trooper Vest <Grenadier>";
+	picture = "\SWLB_clones\data\ui\icon_SWLB_clone_light_armor_ca.paa";
+	model = "\SWLB_clones\SWLB_clone_grenadier_armor.p3d";
+	hiddenSelections[] =
+	{
+		"camo1",
+		"camo2"
+	};
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\default\V_light_co.paa",
+		"RB205_main\data\default\V_heavy_co.paa"
+	};
+	class ItemInfo: ItemInfo
+	{
+		containerClass = INV_VEST_GRENADIER;
+		uniformModel = "\SWLB_clones\SWLB_clone_grenadier_armor.p3d";
+		hiddenSelections[] = {"camo1","camo2"};
+	};
+};
+class RB205_V_rebreather: RB205_V_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Trooper Vest <Rebreather>";
+	picture = "\SWLB_clones\data\ui\icon_SWLB_clone_airborne_armor_ca.paa";
+	model = "\SWLB_CEE\data\SWLB_CEE_Lightweight_Rebreather.p3d";
+	hiddenSelections[] =
+	{
+		"camo1",
+		"camo2",
+		"camo3"
+	};
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\default\V_rebreather1_co.paa",
+		"RB205_main\data\default\V_rebreather2_co.paa",
+		"RB205_main\data\default\V_heavy_co.paa"
+	};
+	class ItemInfo: ItemInfo
+	{
+		containerClass = INV_VEST_MEDIC;
+		uniformModel = "\SWLB_CEE\data\SWLB_CEE_Lightweight_Rebreather.p3d";
+		hiddenSelections[] = {"camo1","camo2","camo3"};
+        vestType = "Rebreather";
+	};
+};
+
+class RB205_V_ab_ct: RB205_V_ab_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Airborne Trooper Vest";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\airborne\V_ab_accessories_co.paa",
+		"RB205_main\data\airborne\V_ab_ct_co.paa",
+		"RB205_main\data\airborne\V_ab_accessories_co.paa"
+	};
+};
+class RB205_V_ab_clc: RB205_V_ab_fireTeamLead_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Airborne Trooper Vest (Lance Corporal)";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\airborne\V_ab_accessories_co.paa",
+		"RB205_main\data\airborne\V_ab_ct_co.paa",
+		"RB205_main\data\airborne\V_ab_accessories_co.paa",
+		"RB205_main\data\airborne\V_ab_accessories_co.paa"
+	};
+};
+class RB205_V_ab_cp: RB205_V_ab_fireTeamLead_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Airborne Trooper Vest (Corporal)";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\airborne\V_ab_accessories_co.paa",
+		"RB205_main\data\airborne\V_ab_ct_co.paa",
+		"RB205_main\data\airborne\V_ab_accessories_co.paa",
+		"RB205_main\data\airborne\V_ab_accessories_co.paa"
+	};
+};
+class RB205_V_ab_cs: RB205_V_ab_squadLead_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Airborne Trooper Vest (Sergeant)";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\airborne\V_ab_accessories_co.paa",
+		"RB205_main\data\airborne\V_ab_cs_co.paa",
+		"RB205_main\data\airborne\V_ab_accessories_co.paa"
+	};
+};
+class RB205_V_ab_csm: RB205_V_ab_platoonLead_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Airborne Trooper Vest (Sergeant-Major)";
+	hiddenSelectionsTextures[]=
+	{
+		"RB205_main\data\airborne\V_ab_accessories_co.paa",
+		"RB205_main\data\airborne\V_ab_accessories_co.paa",
+		"RB205_main\data\airborne\V_ab_cl_co.paa",
+		"RB205_main\data\airborne\V_ab_accessories_co.paa",
+		"RB205_main\data\airborne\V_ab_accessories_co.paa"
+	};
+};
+class RB205_V_ab_cl: RB205_V_ab_platoonLead_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Airborne Trooper Vest (Lieutenant)";
+	hiddenSelectionsTextures[]=
+	{
+		"RB205_main\data\airborne\V_ab_accessories_co.paa",
+		"RB205_main\data\airborne\V_ab_accessories_co.paa",
+		"RB205_main\data\airborne\V_ab_cl_co.paa",
+		"RB205_main\data\airborne\V_ab_accessories_co.paa",
+		"RB205_main\data\airborne\V_ab_accessories_co.paa"
+	};
+};
+
+class RB205_V_ab_medic: RB205_V_ab_ct
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Airborne Trooper Vest <Medic>";
+	picture = "\SWLB_clones\data\ui\icon_SWLB_clone_medic_armor_ca.paa";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\airborne\V_ab_medic_co.paa",
+		"RB205_main\data\airborne\V_ab_ct_co.paa",
+		"RB205_main\data\airborne\V_ab_medic_co.paa"
+	};
+	class ItemInfo: ItemInfo
+	{
+		containerClass = INV_VEST_MEDIC;
+	};
+};
+class RB205_V_ab_grenadier: RB205_V_ab_ct
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Airborne Trooper Vest <Grenadier>";
+	class ItemInfo: ItemInfo
+	{
+		containerClass = INV_VEST_GRENADIER;
+	};
+};
+
+class RB205_V_arf_ct: RB205_V_arf_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone ARF Trooper Vest";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\arf\V_arf_light_co.paa",
+		"RB205_main\data\arf\V_arf_heavy_co.paa",
+		"RB205_main\data\arf\V_arf_ct_co.paa"
+	};
+};
+class RB205_V_arf_clc: RB205_V_fireTeamLead_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone ARF Trooper Vest (Lance Corporal)";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\arf\V_arf_clc_co.paa",
+		"",
+		"RB205_main\data\arf\V_arf_clc_co.paa",
+		"RB205_main\data\arf\V_arf_clc_co.paa"
+	};
+};
+class RB205_V_arf_cp: RB205_V_fireTeamLead_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone ARF Trooper Vest (Corporal)";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\arf\V_arf_cp_co.paa",
+		"",
+		"RB205_main\data\arf\V_arf_cp_co.paa",
+		"RB205_main\data\arf\V_arf_cp_co.paa"
+	};
+};
+class RB205_V_arf_cs: RB205_V_squadLead_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone ARF Trooper Vest (Sergeant)";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\arf\V_arf_cs_co.paa",
+		""
+	};
+};
+class RB205_V_arf_csm: RB205_V_platoonLead_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone ARF Trooper Vest (Sergeant-Major)";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\arf\V_arf_csm_co.paa"
+	};
+};
+class RB205_V_arf_cl: RB205_V_platoonLead_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone ARF Trooper Vest (Lieutenant)";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\arf\V_arf_cl_co.paa"
+	};
+};
+
+class RB205_V_arf_medic: RB205_V_medic
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone ARF Trooper Vest <Medic>";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\arf\V_arf_medic_co.paa"
+	};
+};
+
+class RB205_V_plt_ct: RB205_V_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Pilot Trooper Vest";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\pilot\V_plt_light_co.paa",
+		"RB205_main\data\pilot\V_plt_heavy_co.paa",
+		"RB205_main\data\pilot\V_plt_ct_co.paa"
+	};
+};
+class RB205_V_plt_clc: RB205_V_fireTeamLead_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Pilot Trooper Vest (Lance Corporal)";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\pilot\V_plt_clc_co.paa",
+		"",
+		"RB205_main\data\pilot\V_plt_clc_co.paa",
+		"RB205_main\data\pilot\V_plt_clc_co.paa"
+	};
+};
+class RB205_V_plt_cp: RB205_V_fireTeamLead_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Pilot Trooper Vest (Corporal)";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\pilot\V_plt_cp_co.paa",
+		"",
+		"RB205_main\data\pilot\V_plt_cp_co.paa",
+		"RB205_main\data\pilot\V_plt_cp_co.paa"
+	};
+};
+class RB205_V_plt_cs: RB205_V_squadLead_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Pilot Trooper Vest (Sergeant)";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\pilot\V_plt_cs_co.paa",
+		""
+	};
+};
+class RB205_V_plt_csm: RB205_V_platoonLead_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Pilot Trooper Vest (Sergeant-Major)";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\pilot\V_plt_csm_co.paa"
+	};
+};
+class RB205_V_plt_cl: RB205_V_platoonLead_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Pilot Trooper Vest (Lieutenant)";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\pilot\V_plt_cl_co.paa"
+	};
+};
+
+class RB205_V_snow_ct: RB205_V_snow_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Snow Trooper Vest";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\snow\V_snow_ct_co.paa"
+	};
+};
+class RB205_V_snow_clc: RB205_V_snow_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Snow Trooper Vest (Lance Corporal)";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\snow\V_snow_clc_co.paa"
+	};
+};
+class RB205_V_snow_cp: RB205_V_snow_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Snow Trooper Vest (Corporal)";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\snow\V_snow_cp_co.paa"
+	};
+};
+class RB205_V_snow_cs: RB205_V_snow_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Snow Trooper Vest (Sergeant)";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\snow\V_snow_cs_co.paa"
+	};
+};
+class RB205_V_snow_csm: RB205_V_snow_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Snow Trooper Vest (Sergeant-Major)";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\snow\V_snow_csm_co.paa"
+	};
+};
+class RB205_V_snow_cl: RB205_V_snow_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Snow Trooper Vest (Lieutenant)";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\snow\V_snow_cl_co.paa"
+	};
+};
+
+class RB205_V_snow_medic: RB205_V_snow_ct
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Snow Trooper Vest <Medic>";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\snow\V_snow_medic_co.paa"
+	};
+	class ItemInfo: ItemInfo
+	{
+		containerClass = INV_VEST_MEDIC;
+	};
+};
+class RB205_V_snow_grenadier: RB205_V_snow_ct
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Snow Trooper Vest <Grenadier>";
+	class ItemInfo: ItemInfo
+	{
+		containerClass = INV_VEST_GRENADIER;
+	};
+};
+
+class RB205_V_arc: RB205_V_arc_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone ARC Trooper Vest";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\arc\V_arc_accessories_co.paa",
+		"RB205_main\data\arc\V_arc_co.paa"
 	};
 };
