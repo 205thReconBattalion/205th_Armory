@@ -22,8 +22,8 @@
 #define INV_VEST_NCO "Supply250"
 #define INV_VEST_CO "Supply300"
 
-#define INV_VEST_GRENADIER "Supply250"
 #define INV_VEST_MEDIC "Supply250"
+#define INV_VEST_GRENADIER "Supply250"
 #define INV_VEST_ARC "Supply250"
 
 //OTHER
