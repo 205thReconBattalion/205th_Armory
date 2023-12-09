@@ -134,3 +134,237 @@ class RB205_clone_ab_lieutenant: RB205_ab_base
 	uniformclass = "RB205_U_lieutenant";
 	LINKED_ITEMS(RB205_H_ab_lieutenant,"RB205_V_cl","JLTS_NVG_droid_chip_1")
 };
+
+class ls_gar_standard_backpack;
+class RB205_B_heavy: ls_gar_standard_backpack
+{
+	ACCESS_TRUE
+	displayname = "[205] Clone Trooper Backpack <Heavy>";
+	maximumload = INV_BACK;
+	picture = "\RB205_main\data\ui\backpacks\icon_B_heavy.paa";
+	hiddenselectionstextures[] =
+	{
+		"RB205_main\data\default\B_default_co.paa",
+		"RB205_main\data\default\B_cover_co.paa"
+	};
+};
+class ls_gar_medic_backpack;
+class RB205_B_medic: ls_gar_medic_backpack
+{
+	ACCESS_TRUE
+	displayname = "[205] Clone Trooper Backpack <Medic>";
+	maximumload = INV_BACK_MEDIC;
+	picture = "\RB205_main\data\ui\backpacks\icon_B_medic.paa";
+	hiddenselectionstextures[] =
+	{
+		"RB205_main\data\default\B_medic_co.paa",
+		"RB205_main\data\default\B_cover_co.paa",
+		"RB205_main\data\default\B_medic_bacta_co.paa",
+		"RB205_main\data\default\B_medic_bacta_co.paa"
+	};
+};
+class ls_gar_rocket_backpack;
+class RB205_B_rocket: ls_gar_rocket_backpack
+{
+	ACCESS_TRUE
+	displayname = "[205] Clone Trooper Backpack <AT/AA>";
+	maximumload = INV_BACK_ROCKET;
+	picture = "\RB205_main\data\ui\backpacks\icon_B_rocket.paa";
+	hiddenselectionstextures[] =
+	{
+		"RB205_main\data\default\B_default_co.paa",
+		"RB205_main\data\default\B_rocket_holder_co.paa",
+		"RB205_main\data\default\B_rocket_co.paa",
+		"RB205_main\data\default\B_rocket_light_co.paa",
+		""
+	};
+};
+class RB205_B_eod: ls_gar_standard_backpack
+{
+	ACCESS_TRUE
+	displayname = "[205] Clone Trooper Backpack <EOD>";
+	maximumload = INV_BACK_EOD;
+	picture = "\RB205_main\data\ui\backpacks\icon_B_eod.paa";
+	hiddenselectionstextures[] =
+	{
+		"RB205_main\data\default\B_eod_co.paa",
+		"RB205_main\data\default\B_cover_co.paa"
+	};
+};
+class ls_gar_radio_backpack;
+class RB205_B_radio: ls_gar_radio_backpack
+{
+	ACCESS_TRUE
+	displayname = "[205] Clone Trooper Backpack <RTO>";
+	maximumload = INV_BACK_RADIO;
+	picture = "\RB205_main\data\ui\backpacks\icon_B_radio.paa";
+	TFAR_RADIO
+	hiddenselectionstextures[] =
+	{
+		"RB205_main\data\default\B_default_co.paa",
+		"RB205_main\data\default\B_radio_co.paa",
+		"RB205_main\data\default\B_radio_screen_co.paa"
+	};
+};
+class SWLB_clone_RTO_mini_backpack;
+class RB205_B_radio_mini: SWLB_clone_RTO_mini_backpack
+{
+	ACCESS_TRUE
+	displayname = "[205] Clone Trooper Radio Transmitter";
+	maximumload = INV_BACK_NONE;
+	TFAR_RADIO_SMALL
+	picture = "\RB205_main\data\ui\backpacks\icon_B_radio_mini.paa";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\default\B_radio_mini_co.paa",
+		"RB205_main\data\default\B_radio_mini_acc_co.paa"
+	};
+};
+class RB205_B_radio_mini_blk: RB205_B_radio_mini
+{
+	ACCESS_TRUE
+	displayname = "[205] Clone Trooper Radio Transmitter (Black)";
+	picture = "\RB205_main\data\ui\backpacks\icon_B_radio_mini_blk.paa";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\default\B_radio_mini_blk_co.paa",
+		"RB205_main\data\default\B_radio_mini_acc_blk_co.paa"
+	};
+};
+
+class RB205_B_ab: RB205_B_ab_base
+{
+	ACCESS_TRUE
+	displayname = "[205] Clone Airborne Trooper Jetpack";
+	maximumload = INV_BACK_NONE;
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\airborne\B_ab_jetpack_co.paa"
+	};
+};
+class RB205_B_ab_heavy: RB205_B_ab
+{
+	ACCESS_TRUE
+	displayname = "[205] Clone Airborne Trooper Jetpack <Heavy>";
+	maximumload = INV_BACK;
+};
+class RB205_B_ab_medic: RB205_B_ab
+{
+	ACCESS_TRUE
+	displayname = "[205] Clone Airborne Trooper Jetpack <Medic>";
+	maximumload = INV_BACK_MEDIC;
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\airborne\B_ab_jetpack_medic_co.paa"
+	};
+};
+class RB205_B_ab_rocket: RB205_B_ab
+{
+	ACCESS_TRUE
+	displayname = "[205] Clone Airborne Trooper Jetpack <AT/AA>";
+	maximumload = INV_BACK_ROCKET;
+};
+class RB205_B_ab_eod: RB205_B_ab
+{
+	ACCESS_TRUE
+	displayname = "[205] Clone Airborne Trooper Jetpack <EOD>";
+	maximumload = INV_BACK_EOD;
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\airborne\B_ab_jetpack_eod_co.paa"
+	};
+};
+class RB205_B_ab_radio: RB205_B_ab
+{
+	ACCESS_TRUE
+	displayname = "[205] Clone Airborne Trooper Jetpack <RTO>";
+	maximumload = INV_BACK_RADIO;
+	TFAR_RADIO
+};
+
+class SWLB_clone_bag;
+class RB205_B_arf: SWLB_clone_bag
+{
+	ACCESS_TRUE
+	displayname = "[205] Clone ARF Trooper Backpack";
+	maximumLoad = INV_BACK_ARF;
+	TFAR_RADIO_SMALL
+	picture = "\RB205_main\data\ui\backpacks\icon_B_arf.paa";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\arf\B_arf_co.paa",
+		"RB205_main\data\arf\B_arf_co.paa"
+	};
+};
+
+class RB205_B_snow: RB205_B_snow_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Snow Trooper Backpack";
+	maximumLoad = INV_BACK_NONE;
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\snow\B_snow_co.paa",
+		"RB205_main\data\snow\B_snow_co.paa"
+	};
+};
+class RB205_B_snow_heavy: RB205_B_snow
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Snow Trooper Backpack <Heavy>";
+	maximumLoad = INV_BACK;
+};
+class RB205_B_snow_medic: RB205_B_snow
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Snow Trooper Backpack <Medic>";
+	maximumLoad = INV_BACK_MEDIC;
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\snow\B_snow_medic_co.paa",
+		"RB205_main\data\snow\B_snow_medic_co.paa"
+	};
+};
+class RB205_B_snow_rocket: RB205_B_snow
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Snow Trooper Backpack <AT/AA>";
+	maximumLoad = INV_BACK_ROCKET;
+};
+class RB205_B_snow_eod: RB205_B_snow
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Snow Trooper Backpack <EOD>";
+	maximumLoad = INV_BACK_EOD;
+};
+class RB205_B_snow_radio: RB205_B_snow
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Snow Trooper Backpack <RTO>";
+	maximumLoad = INV_BACK_RADIO;
+};
+
+class SWLB_clone_arc_backpack;
+class RB205_B_arc: SWLB_clone_arc_backpack
+{
+	ACCESS_TRUE
+	displayname = "[205] Clone ARC Trooper Backpack";
+	maximumload = INV_BACK_ARC;
+	TFAR_RADIO
+	picture = "\RB205_main\data\ui\backpacks\icon_B_arc.paa";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\arc\B_arc_co.paa"
+	};
+};
+class RB205_B_arc_jetpack: RB205_B_ab_base
+{
+	ACCESS_TRUE
+	displayname = "[205] Clone ARC Trooper Jetpack";
+	maximumload = INV_BACK_ARC;
+	TFAR_RADIO
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\airborne\B_ab_jetpack_co.paa"
+	};
+};

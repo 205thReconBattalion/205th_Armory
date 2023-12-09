@@ -59,28 +59,46 @@ class RB205_arc_base: RB205_clone_base
 
 
 
+/*
+	BACKPACKS
+*/
 
+/*class ls_gar_standard_backpack;
+class RB205_B_base: ls_gar_standard_backpack
+{
+	ACCESS_FALSE
+	picture = "\SWLB_equipment\backpacks\data\ui\icon_SWLB_clone_backpack_ca.paa";
+	model = "ls_equipment_bluefor\backpack\gar\backpack\ls_gar_standard_backpack.p3d";
+	hiddenselectionstextures[]=
+	{
+		"205th_main\data\B_trooper.paa",
+		"205th_main\data\B_cover.paa"
+	};
+};*/
 
-//DEFAULT
-//ENL - SWLB_clone_basic_armor
-//FT Lead - SWLB_clone_recon_nco_armor
-//SQ Lead - SWLB_clone_kama_armor
-//PT Lead - SWLB_clone_officer_armor
+class JLTS_Clone_jumppack_JT12;
+class RB205_B_ab_base: JLTS_Clone_jumppack_JT12
+{
+	ACCESS_FALSE
+	picture = "\RB205_main\data\ui\backpacks\icon_B_ab.paa";
+	model = "\MRC\JLTS\characters\CloneArmor2\CloneJumppackJT12.p3d";
+	hiddenSelections[] =
+	{
+		"camo1"
+	};
+	JLTS_isJumppack = 0;
+	RD501_jumppack_is_jumppack = 0;
+};
 
-//AIRBORNE
-//ENL - SWLB_clone_airborne_armor
-//FT Lead - SWLB_clone_airborne_nco_armor
-//SQ Lead - SWLB_clone_airborne_nco_armor
-//PT Lead - ls_gar_airborneOfficer_vest
-
-//ARF - SWLB_CEE_ARF_Vest
-
-//PLT - lsd_gar_clone_vest
-
-//SNOW - LST_VestV2_21
-
-//ARC - SWLB_clone_arc_armor
-
-//Medic - SWLB_clone_medic_armor
-//Scuba - SWLB_CEE_Lightweight_Rebreather
-//Greandier - SWLB_clone_grenadier_armor
+class LST_21_BackPack;
+class RB205_B_snow_base: LST_21_BackPack
+{
+	ACCESS_FALSE
+	picture = "\RB205_main\data\ui\backpacks\icon_B_snow.paa";
+	model = "\armor_unit\21\BackPack_21.p3d";
+	hiddenSelections[] =
+	{
+		"backpack",
+		"cloth"
+	};
+};

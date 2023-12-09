@@ -5,7 +5,12 @@ class cfgPatches
 		requiredAddons[]=
 		{
 			"ls_armor_bluefor",
-			"lsd_armor_bluefor"
+			"lsd_armor_bluefor",
+			"ls_equipment_bluefor",
+			"SWLB_equipment_backpacks",
+			"JLTS_characters_CloneArmor2",
+			"JLTS_jumppacks",
+			"LS_Armor"
 		};
 		requiredVersion = 1.0;
         author = "205th Recon Battalion"
@@ -106,7 +111,30 @@ class cfgPatches
 			"RB205_clone_ab_corporal",
 			"RB205_clone_ab_sergeant",
 			"RB205_clone_ab_sergeantMajor",
-			"RB205_clone_ab_lieutenant"
+			"RB205_clone_ab_lieutenant",
+
+			"RB205_B_heavy",
+			"RB205_B_medic",
+			"RB205_B_rocket",
+			"RB205_B_eod",
+			"RB205_B_radio",
+			"RB205_B_radio_mini",
+			"RB205_B_radio_mini_blk",
+			"RB205_B_ab",
+			"RB205_B_ab_heavy",
+			"RB205_B_ab_medic",
+			"RB205_B_ab_rocket",
+			"RB205_B_ab_eod",
+			"RB205_B_ab_radio",
+			"RB205_B_arf",
+			"RB205_B_snow",
+			"RB205_B_snow_heavy",
+			"RB205_B_snow_medic",
+			"RB205_B_snow_rocket",
+			"RB205_B_snow_eod",
+			"RB205_B_snow_radio",
+			"RB205_B_arc",
+			"RB205_B_arc_jetpack"
 		};
 	};
 };
