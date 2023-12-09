@@ -151,6 +151,10 @@ class cfgVehicles
 {
 	#include "cfgVehicles.hpp"
 };
+class CfgGlasses
+{
+	#include "cfgGlasses.hpp"
+};
 
 class CfgFactionClasses
 {
