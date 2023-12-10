@@ -5,12 +5,14 @@ class cfgPatches
 		requiredAddons[]=
 		{
 			"ls_armor_bluefor",
-			"lsd_armor_bluefor",
 			"ls_equipment_bluefor",
+			"lsd_armor_bluefor",
+			"lsd_equipment_bluefor",
 			"SWLB_equipment_backpacks",
+			"JLTS_core",
 			"JLTS_characters_CloneArmor2",
 			"JLTS_jumppacks",
-			"LS_Armor"
+			"LS_Armor", //by Last Force Project
 		};
 		requiredVersion = 1.0;
         author = "205th Recon Battalion"
@@ -94,7 +96,13 @@ class cfgPatches
 			"RB205_V_snow_cl",
 			"RB205_V_snow_medic",
 			"RB205_V_snow_grenadier",
-			"RB205_V_arc"
+			"RB205_V_arc",
+
+			"RB205_NV",
+			"RB205_NV_marksmen",
+			"RB205_NV_rangefinder",
+			"RB205_NV_arf_antenna",
+			"RB205_NV_chip"
 		};
 		units[] =
 		{

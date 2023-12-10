@@ -855,3 +855,69 @@ class RB205_V_arc: RB205_V_arc_base
 		"RB205_main\data\arc\V_arc_co.paa"
 	};
 };
+
+
+
+class lsd_gar_standard_nvg;
+class RB205_NV: lsd_gar_standard_nvg
+{
+	displayName = "[205] Clone Trooper Visor";
+	modelOptics = MODEL_OPTICS;
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\default\NV_default_co.paa"
+	};
+	VIS_NV
+};
+
+class lsd_gar_standardSPC_nvg;
+class RB205_NV_marksmen: lsd_gar_standardSPC_nvg
+{
+	displayName = "[205] Clone Marksman Visor";
+	modelOptics = MODEL_OPTICS;
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\default\NV_default_co.paa"
+	};
+	VIS_NV
+};
+
+class lsd_gar_rangefinder_nvg;
+class RB205_NV_rangefinder: lsd_gar_rangefinder_nvg
+{
+	displayName = "[205] Clone Rangefinder";
+	modelOptics = MODEL_OPTICS;
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\default\NV_default_co.paa"
+	};
+	picture="\SWLB_clones\data\ui\icon_SWLB_clone_rangefinder_ca.paa";
+	VIS_NV
+};
+class RB205_NV_arf_antenna: lsd_gar_rangefinder_nvg
+{
+	displayName = "[205] ARF Antenna";
+	modelOptics = MODEL_OPTICS;
+	VIS_NV_T
+
+	model = "\SWLB_equipment\facewears\helmet_ARF_antenna.p3d";
+	picture = "\SWLB_equipment\facewears\data\ui\icon_SWLB_clone_arf_antenna_ca.paa";
+	hiddenSelections[] = {};
+	hiddenSelectionsTextures[] = {};
+	class ItemInfo
+	{
+		type = 616;
+		uniformModel = "\SWLB_equipment\facewears\helmet_ARF_antenna.p3d";
+		modelOff = "\SWLB_equipment\facewears\helmet_ARF_antenna.p3d";
+		mass = 20;
+		hiddenSelections[] = {};
+	};
+};
+
+class JLTS_NVG_droid_chip_1;
+class RB205_NV_chip: JLTS_NVG_droid_chip_1
+{
+	displayName = "[205] Integrated Nightvision";
+	modelOptics = MODEL_OPTICS;
+	VIS_NV
+};

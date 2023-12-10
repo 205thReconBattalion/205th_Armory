@@ -52,6 +52,15 @@ tf_hasLRradio=1; \
 tf_range=250000; \
 tf_subtype="digital_lr";
 
+//NIGHT VISION
+#define VIS_NV \
+visionMode[] = { "Normal", "NVG" };
+#define VIS_NV_T \
+visionMode[] = { "Normal", "NVG", "TI" }; \
+thermalMode[]= { 0, 1 };
+
+#define MODEL_OPTICS "\SWLB_clones\SWLB_clone_nvg_optic_dummy.p3d"
+
 //OTHER
 #define ALLOWED_SLOTS_HELMET {605,901}
 
