@@ -135,7 +135,6 @@ class cfgPatches
 			"RB205_B_ab_eod",
 			"RB205_B_ab_radio",
 			"RB205_B_arf",
-			"RB205_B_snow",
 			"RB205_B_snow_heavy",
 			"RB205_B_snow_medic",
 			"RB205_B_snow_rocket",

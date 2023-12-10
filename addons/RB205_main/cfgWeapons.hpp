@@ -378,7 +378,7 @@ class RB205_U_corporal: RB205_U_base
         uniformClass = RB205_clone_corporal;
     };
 };
-class RB205_U_sergeant: RB205_U_base
+class RB205_U_sergeant: RB205_U_sgt_base
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone Trooper Armor (Sergeant)";
@@ -387,7 +387,7 @@ class RB205_U_sergeant: RB205_U_base
         uniformClass = RB205_clone_sergeant;
     };
 };
-class RB205_U_lieutenant: RB205_U_base
+class RB205_U_lieutenant: RB205_U_lt_base
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone Trooper Armor (Lieutenant)";
@@ -463,7 +463,7 @@ class RB205_V_medic: RB205_V_base
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone Trooper Vest <Medic>";
-	picture = "\SWLB_clones\data\ui\icon_SWLB_clone_medic_armor_ca.paa";
+	picture = "\RB205_main\data\ui\vests\icon_V_medic.paa";
 	model = "\SWLB_clones\SWLB_clone_medic_armor.p3d";
 	hiddenSelections[] =
 	{
@@ -484,7 +484,7 @@ class RB205_V_grenadier: RB205_V_base
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone Trooper Vest <Grenadier>";
-	picture = "\SWLB_clones\data\ui\icon_SWLB_clone_light_armor_ca.paa";
+	picture = "\RB205_main\data\ui\vests\icon_V_grenadier.paa";
 	model = "\SWLB_clones\SWLB_clone_grenadier_armor.p3d";
 	hiddenSelections[] =
 	{
@@ -507,7 +507,7 @@ class RB205_V_rebreather: RB205_V_base
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone Trooper Vest <Rebreather>";
-	picture = "\SWLB_clones\data\ui\icon_SWLB_clone_airborne_armor_ca.paa";
+	picture = "\A3\characters_f\Data\UI\icon_V_RebreatherB_CA.paa";//TODO
 	model = "\SWLB_CEE\data\SWLB_CEE_Lightweight_Rebreather.p3d";
 	hiddenSelections[] =
 	{
@@ -607,7 +607,7 @@ class RB205_V_ab_medic: RB205_V_ab_ct
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone Airborne Trooper Vest <Medic>";
-	picture = "\SWLB_clones\data\ui\icon_SWLB_clone_medic_armor_ca.paa";
+	picture = "\RB205_main\data\ui\vests\icon_V_ab_medic.paa";
 	hiddenSelectionsTextures[] =
 	{
 		"RB205_main\data\airborne\V_ab_medic_co.paa",
@@ -623,6 +623,7 @@ class RB205_V_ab_grenadier: RB205_V_ab_ct
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone Airborne Trooper Vest <Grenadier>";
+	picture = "\RB205_main\data\ui\vests\icon_V_ab_grenadier.paa";
 	class ItemInfo: ItemInfo
 	{
 		containerClass = INV_VEST_GRENADIER;
@@ -858,50 +859,73 @@ class RB205_V_arc: RB205_V_arc_base
 
 
 
-class lsd_gar_standard_nvg;
+class ls_nvg_base;
+class lsd_gar_standard_nvg: ls_nvg_base
+{
+	class ItemInfo;
+};
 class RB205_NV: lsd_gar_standard_nvg
 {
 	displayName = "[205] Clone Trooper Visor";
 	modelOptics = MODEL_OPTICS;
+	VIS_NV
+	picture = "\RB205_main\data\ui\other\icon_NV.paa";
 	hiddenSelectionsTextures[] =
 	{
 		"RB205_main\data\default\NV_default_co.paa"
 	};
-	VIS_NV
+	class ItemInfo: ItemInfo
+	{
+		mass = 10;
+	};
 };
 
-class lsd_gar_standardSPC_nvg;
+class lsd_gar_standardSPC_nvg: lsd_gar_standard_nvg
+{
+	class ItemInfo;
+};
 class RB205_NV_marksmen: lsd_gar_standardSPC_nvg
 {
 	displayName = "[205] Clone Marksman Visor";
 	modelOptics = MODEL_OPTICS;
+	VIS_NV_T
+	picture = "\RB205_main\data\ui\other\icon_NV_marksman.paa";
 	hiddenSelectionsTextures[] =
 	{
 		"RB205_main\data\default\NV_default_co.paa"
 	};
-	VIS_NV
+	class ItemInfo: ItemInfo
+	{
+		mass = 10;
+	};
 };
 
-class lsd_gar_rangefinder_nvg;
+class lsd_gar_rangefinder_nvg: ls_nvg_base
+{
+	class ItemInfo;
+};
 class RB205_NV_rangefinder: lsd_gar_rangefinder_nvg
 {
 	displayName = "[205] Clone Rangefinder";
 	modelOptics = MODEL_OPTICS;
+	VIS_NV
+	picture = "\RB205_main\data\ui\other\icon_NV_rangefinder.paa";
 	hiddenSelectionsTextures[] =
 	{
 		"RB205_main\data\default\NV_default_co.paa"
 	};
-	picture="\SWLB_clones\data\ui\icon_SWLB_clone_rangefinder_ca.paa";
-	VIS_NV
+	class ItemInfo: ItemInfo
+	{
+		mass = 5;
+	};
 };
 class RB205_NV_arf_antenna: lsd_gar_rangefinder_nvg
 {
 	displayName = "[205] ARF Antenna";
 	modelOptics = MODEL_OPTICS;
 	VIS_NV_T
-
+	picture = "\RB205_main\data\ui\other\icon_NV_arf.paa";
 	model = "\SWLB_equipment\facewears\helmet_ARF_antenna.p3d";
-	picture = "\SWLB_equipment\facewears\data\ui\icon_SWLB_clone_arf_antenna_ca.paa";
 	hiddenSelections[] = {};
 	hiddenSelectionsTextures[] = {};
 	class ItemInfo
@@ -909,15 +933,23 @@ class RB205_NV_arf_antenna: lsd_gar_rangefinder_nvg
 		type = 616;
 		uniformModel = "\SWLB_equipment\facewears\helmet_ARF_antenna.p3d";
 		modelOff = "\SWLB_equipment\facewears\helmet_ARF_antenna.p3d";
-		mass = 20;
+		mass = 5;
 		hiddenSelections[] = {};
 	};
 };
 
-class JLTS_NVG_droid_chip_1;
+class NVGoggles;
+class JLTS_NVG_droid_chip_1: NVGoggles
+{
+	class ItemInfo;
+};
 class RB205_NV_chip: JLTS_NVG_droid_chip_1
 {
 	displayName = "[205] Integrated Nightvision";
 	modelOptics = MODEL_OPTICS;
 	VIS_NV
+	class ItemInfo: ItemInfo
+	{
+		mass = 0;
+	};
 };
