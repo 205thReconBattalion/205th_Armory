@@ -8,7 +8,7 @@ class cfgPatches
 			"JLTS_Z6_mag"
 		};
 		requiredVersion = 1.0;
-        author = "205th Recon Battalion"
+        author = "205th Recon Battalion";
 		ammo[] =
 		{
 			"RB205_ammo_standard",
@@ -103,6 +103,7 @@ class CfgMagazines
 		tracersEvery = 1;
 		lastRoundsTracer = 60;
 		descriptionShort = "$STR_205_Standard_Energy_Pack_DescriptionShort";
+        author = "205th Recon Battalion";
 	};
 
 	// DC-17
@@ -119,6 +120,7 @@ class CfgMagazines
 		tracersEvery=1;
 		lastRoundsTracer = 30;//20
 		descriptionShort = "$STR_205_Compact_Energy_Pack_DescriptionShort";
+        author = "205th Recon Battalion"
 	};
 
 	// DC-15X, Valken-38X
@@ -135,6 +137,7 @@ class CfgMagazines
 		tracersEvery = 1;
 		lastRoundsTracer = 15;
 		descriptionShort = "$STR_205_Overcharged_Energy_Pack_DescriptionShort";
+        author = "205th Recon Battalion";
 	};
 
 	//DC-15L
@@ -151,6 +154,7 @@ class CfgMagazines
 		tracersEvery = 1;
 		lastRoundsTracer =  200;
 		descriptionShort = "$STR_205_Heavy_Energy_Pack_DescriptionShort";
+        author = "205th Recon Battalion";
 	};
 
 	//Z-6
@@ -167,6 +171,7 @@ class CfgMagazines
 		tracersEvery = 1;
 		lastRoundsTracer = 350;
 		descriptionShort = "$STR_205_RapidFire_Energy_Pack_DescriptionShort";
+        author = "205th Recon Battalion";
 	};
 
 	//Westar-M5
@@ -183,5 +188,6 @@ class CfgMagazines
 		tracersEvery = 1;
 		lastRoundsTracer = 60;
 		descriptionShort = "$STR_205_Experimental_Energy_Pack_DescriptionShort";
+        author = "205th Recon Battalion";
 	};
 };
