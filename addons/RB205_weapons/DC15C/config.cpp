@@ -8,6 +8,7 @@ class cfgPatches
 			"3AS_Weapons_DC15C"
 		};
 		requiredVersion = 1.0;
+        author = "205th Recon Battalion";
 		units[] = {};
 		weapons[] =
 		{
