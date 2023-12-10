@@ -15,7 +15,7 @@ class cfgPatches
 			"LS_Armor", //by Last Force Project
 		};
 		requiredVersion = 1.0;
-        author = "205th Recon Battalion"
+        author = "205th Recon Battalion";
 		weapons[] =
 		{
 			"RB205_H_recruit",
