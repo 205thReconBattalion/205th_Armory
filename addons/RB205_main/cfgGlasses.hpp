@@ -7,43 +7,35 @@ class RB205_diving_inv: G_Diving
 	mass = 0;
 };
 
-
-/*class G_Combat;
-class VIS_base : G_Combat
+class G_Combat;
+class RB205_VIS_base : G_Combat
 {
-	model = "\SWLB_clones\SWLB_clone_ccVisor.p3d";
-	picture = "\SWLB_clones\data\ui\icon_SWLB_clone_ccVisor_ca.paa";
-	hiddenSelections[] = {"camo1","camo2"};
+	ACCESS_FALSE
+	model = "\lsd_equipment_bluefor\nvg\gar\commander\lsd_gar_p2Commander_nvg";
+	hiddenSelections[] = {"camo1","camo2","camo3"};
 	identityTypes[] = {};
-	scope = 1;
 };
-class VIS_corporal : VIS_base
+class RB205_VIS : RB205_VIS_base
 {
-	displayName = "[205] Clone Corporal Visor";
-	hiddenSelectionsTextures[] = {"205th_main\data\N_visor.paa"};
-	scope = 2;
+	ACCESS_FALSE
+	displayName = "[205] Clone Visor";
+	picture = "\RB205_main\data\ui\other\icon_visor.paa";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\default\NV_default_co.paa",
+		"",
+		""
+	};
 };
-class VIS_sergeant : VIS_base
+class RB205_VIS_com : RB205_VIS_base
 {
-	displayName = "[205] Clone Sergeant Visor";
-	hiddenSelectionsTextures[] = {"205th_main\data\N_visor2.paa"};
-	scope = 2;
+	ACCESS_FALSE
+	displayName = "[205] Clone Commander Visor";
+	picture = "\RB205_main\data\ui\other\icon_visor_com.paa";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\default\NV_default_co.paa",
+		"RB205_main\data\default\NV_default_co.paa",
+		"RB205_main\data\default\NV_default_co.paa"
+	};
 };
-class VIS_sergeantMajor : VIS_base
-{
-	displayName = "[205] Clone Sergeant-Major Visor";
-	hiddenSelectionsTextures[] = {"205th_main\data\N_visor.paa"};
-	scope = 2;
-};
-class VIS_lieutenant : VIS_base
-{
-	displayName = "[205] Clone Lieutenant Visor";
-	hiddenSelectionsTextures[] = {"205th_main\data\N_visor2.paa"};
-	scope = 2;
-};
-class VIS_captain : VIS_base
-{
-	displayName = "[205] Clone Captain Visor";
-	hiddenSelectionsTextures[] = {"205th_main\data\N_visor.paa"};
-	scope = 2;
-};*/
