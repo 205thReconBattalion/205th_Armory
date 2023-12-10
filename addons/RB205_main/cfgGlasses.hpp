@@ -1,8 +1,10 @@
 class G_Diving;
-class 205_diving_inv: G_Diving
+class RB205_diving_inv: G_Diving
 {
-	displayName="[205] Clone Scuba Visor";
-	model="";
+	displayName = "[205] Clone Scuba Visor";
+	model = "";
+	picture = "\RB205_main\data\ui\other\icon_scubaVisor.paa";
+	mass = 0;
 };
 
 
