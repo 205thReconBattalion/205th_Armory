@@ -827,6 +827,7 @@ class RB205_V_snow_medic: RB205_V_snow_ct
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone Snow Trooper Vest <Medic>";
+	picture = "\RB205_main\data\ui\vests\icon_V_snow_medic.paa";
 	hiddenSelectionsTextures[] =
 	{
 		"RB205_main\data\snow\V_snow_medic_co.paa"
@@ -840,6 +841,7 @@ class RB205_V_snow_grenadier: RB205_V_snow_ct
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone Snow Trooper Vest <Grenadier>";
+	picture = "\RB205_main\data\ui\vests\icon_V_snow_grenadier.paa";
 	class ItemInfo: ItemInfo
 	{
 		containerClass = INV_VEST_GRENADIER;
@@ -866,7 +868,10 @@ class lsd_gar_standard_nvg: ls_nvg_base
 };
 class RB205_NV: lsd_gar_standard_nvg
 {
+	ACCESS_TRUE
+	author = "205th Recon Battalion";
 	displayName = "[205] Clone Trooper Visor";
+	descriptionShort = "NV";
 	modelOptics = MODEL_OPTICS;
 	VIS_NV
 	picture = "\RB205_main\data\ui\other\icon_NV.paa";
@@ -886,7 +891,10 @@ class lsd_gar_standardSPC_nvg: lsd_gar_standard_nvg
 };
 class RB205_NV_marksmen: lsd_gar_standardSPC_nvg
 {
-	displayName = "[205] Clone Marksman Visor";
+	ACCESS_TRUE
+	author = "205th Recon Battalion";
+	displayName = "[205] Clone Trooper Visor <Marksman>";
+	descriptionShort = "NV/TI";
 	modelOptics = MODEL_OPTICS;
 	VIS_NV_T
 	picture = "\RB205_main\data\ui\other\icon_NV_marksman.paa";
@@ -906,7 +914,10 @@ class lsd_gar_rangefinder_nvg: ls_nvg_base
 };
 class RB205_NV_rangefinder: lsd_gar_rangefinder_nvg
 {
-	displayName = "[205] Clone Rangefinder";
+	ACCESS_TRUE
+	author = "205th Recon Battalion";
+	displayName = "[205] Clone Trooper Rangefinder";
+	descriptionShort = "NV";
 	modelOptics = MODEL_OPTICS;
 	VIS_NV
 	picture = "\RB205_main\data\ui\other\icon_NV_rangefinder.paa";
@@ -921,7 +932,10 @@ class RB205_NV_rangefinder: lsd_gar_rangefinder_nvg
 };
 class RB205_NV_arf_antenna: lsd_gar_rangefinder_nvg
 {
-	displayName = "[205] ARF Antenna";
+	ACCESS_TRUE
+	author = "205th Recon Battalion";
+	displayName = "[205] Clone ARF Trooper Antenna";
+	descriptionShort = "NV/TI";
 	modelOptics = MODEL_OPTICS;
 	VIS_NV_T
 	picture = "\RB205_main\data\ui\other\icon_NV_arf.paa";
@@ -945,7 +959,10 @@ class JLTS_NVG_droid_chip_1: NVGoggles
 };
 class RB205_NV_chip: JLTS_NVG_droid_chip_1
 {
+	ACCESS_TRUE
+	author = "205th Recon Battalion";
 	displayName = "[205] Integrated Nightvision";
+	descriptionShort = "NV";
 	modelOptics = MODEL_OPTICS;
 	VIS_NV
 	class ItemInfo: ItemInfo

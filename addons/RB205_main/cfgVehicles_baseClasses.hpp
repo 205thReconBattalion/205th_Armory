@@ -80,6 +80,8 @@ class JLTS_Clone_jumppack_JT12;
 class RB205_B_ab_base: JLTS_Clone_jumppack_JT12
 {
 	ACCESS_FALSE
+	author = "205th Recon Battalion";
+	descriptionShort = "";
 	picture = "\RB205_main\data\ui\backpacks\icon_B_ab.paa";
 	model = "\MRC\JLTS\characters\CloneArmor2\CloneJumppackJT12.p3d";
 	hiddenSelections[] =
@@ -94,6 +96,8 @@ class LST_21_BackPack;
 class RB205_B_snow_base: LST_21_BackPack
 {
 	ACCESS_FALSE
+	author = "205th Recon Battalion";
+	descriptionShort = "";
 	picture = "\RB205_main\data\ui\backpacks\icon_B_snow.paa";
 	model = "\armor_unit\21\BackPack_21.p3d";
 	hiddenSelections[] =

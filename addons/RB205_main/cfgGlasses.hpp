@@ -1,6 +1,8 @@
 class G_Diving;
 class RB205_diving_inv: G_Diving
 {
+	ACCESS_TRUE
+	author = "205th Recon Battalion";
 	displayName = "[205] Clone Scuba Visor";
 	model = "";
 	picture = "\RB205_main\data\ui\other\icon_scubaVisor.paa";
@@ -11,9 +13,11 @@ class G_Combat;
 class RB205_VIS_base : G_Combat
 {
 	ACCESS_FALSE
+	author = "205th Recon Battalion";
 	model = "\lsd_equipment_bluefor\nvg\gar\commander\lsd_gar_p2Commander_nvg";
 	hiddenSelections[] = {"camo1","camo2","camo3"};
 	identityTypes[] = {};
+	mass = 2;
 };
 class RB205_VIS : RB205_VIS_base
 {

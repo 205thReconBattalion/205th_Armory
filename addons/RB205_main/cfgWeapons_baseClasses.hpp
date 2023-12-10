@@ -3,27 +3,32 @@
 */
 
 class ls_blueforHelmet_base;
+class lsd_blueforHelmet_base;
 
-class ls_gar_phase2_helmet: ls_blueforHelmet_base
+class lsd_gar_phase2_helmet: lsd_blueforHelmet_base
 {
 	class ItemInfo;
 };
-class RB205_H_base: ls_gar_phase2_helmet
+class RB205_H_base: lsd_gar_phase2_helmet
 {
 	ACCESS_FALSE
+	author = "205th Recon Battalion";
+	descriptionShort = "";
 	picture = "\RB205_main\data\ui\helmets\icon_H_default.paa";
-	model = "\ls_armor_bluefor\helmet\gar\phase2\ls_gar_phase2_helmet.p3d";
+	model = "\lsd_armor_bluefor\helmet\gar\phase2\lsd_gar_phase2_helmet.p3d";
 	hiddenSelections[] =
 	{
 		"camo1",
 		"visor"
 	};
+	ace_hearing_protection = ACE_HEARING_PROTECTION;
+	ace_hearing_lowerVolume = ACE_HEARING_LOWER_VOLUME_DEFAULT;
 	subItems[] = {};
 	class ItemInfo: ItemInfo
 	{
 		mass = MASS_HELMET;
 		allowedSlots[] = ALLOWED_SLOTS_HELMET;
-		uniformModel = "\ls_armor_bluefor\helmet\gar\phase2\ls_gar_phase2_helmet.p3d";
+		uniformModel = "lsd_armor_bluefor\helmet\gar\phase2\lsd_gar_phase2_helmet.p3d";
 		modelSides[] = {6};
 		hiddenSelections[] = {"camo1","visor"};
 		class HitpointsProtectionInfo
@@ -40,6 +45,8 @@ class lsd_gar_airborne_helmet: ls_blueforHelmet_base
 class RB205_H_ab_base: lsd_gar_airborne_helmet
 {
 	ACCESS_FALSE
+	author = "205th Recon Battalion";
+	descriptionShort = "";
 	picture = "\RB205_main\data\ui\helmets\icon_H_ab.paa";
 	model = "\lsd_armor_bluefor\helmet\gar\airborne\lsd_gar_airborne_helmet.p3d";
 	hiddenSelections[] =
@@ -47,6 +54,8 @@ class RB205_H_ab_base: lsd_gar_airborne_helmet
 		"camo1",
 		"visor"
 	};
+	ace_hearing_protection = ACE_HEARING_PROTECTION;
+	ace_hearing_lowerVolume = ACE_HEARING_LOWER_VOLUME_DEFAULT;
 	subItems[] = {};
 	class ItemInfo: ItemInfo
 	{
@@ -69,6 +78,8 @@ class ls_gar_phase1Arf_helmet: ls_blueforHelmet_base
 class RB205_H_arf_base: ls_gar_phase1Arf_helmet
 {
 	ACCESS_FALSE
+	author = "205th Recon Battalion";
+	descriptionShort = "";
 	picture = "\RB205_main\data\ui\helmets\icon_H_arf.paa";
 	model = "\ls_armor_bluefor\helmet\gar\arf\ls_gar_arf_helmet.p3d";
 	hiddenSelections[] =
@@ -77,6 +88,8 @@ class RB205_H_arf_base: ls_gar_phase1Arf_helmet
 		"camo2",
 		"visor"
 	};
+	ace_hearing_protection = ACE_HEARING_PROTECTION;
+	ace_hearing_lowerVolume = ACE_HEARING_LOWER_VOLUME_DEFAULT;
 	subItems[] = {};
 	class ItemInfo: ItemInfo
 	{
@@ -94,6 +107,8 @@ class RB205_H_arf_base: ls_gar_phase1Arf_helmet
 class RB205_H_arfF_base: RB205_H_arf_base
 {
 	ACCESS_FALSE
+	author = "205th Recon Battalion";
+	descriptionShort = "";
 	picture = "\RB205_main\data\ui\helmets\icon_H_arfF.paa";
 };
 
@@ -104,6 +119,8 @@ class ls_gar_phase2Pilot_helmet: ls_blueforHelmet_base
 class RB205_H_plt_base: ls_gar_phase2Pilot_helmet
 {
 	ACCESS_FALSE
+	author = "205th Recon Battalion";
+	descriptionShort = "";
 	picture = "\RB205_main\data\ui\helmets\icon_H_plt.paa";
 	model = "ls_armor_bluefor\helmet\gar\phase2Pilot\ls_gar_phase2Pilot_helmet.p3d";
 	hiddenSelections[] =
@@ -111,6 +128,8 @@ class RB205_H_plt_base: ls_gar_phase2Pilot_helmet
 		"camo1",
 		"visor"
 	};
+	ace_hearing_protection = ACE_HEARING_PROTECTION;
+	ace_hearing_lowerVolume = ACE_HEARING_LOWER_VOLUME_PILOT;
 	subItems[] = {};
 	class ItemInfo: ItemInfo
 	{
@@ -133,12 +152,16 @@ class ls_gar_phase2Insulated_helmet: ls_blueforHelmet_base
 class RB205_H_snow_base: ls_gar_phase2Insulated_helmet
 {
 	ACCESS_FALSE
+	author = "205th Recon Battalion";
+	descriptionShort = "";
 	picture = "\RB205_main\data\ui\helmets\icon_H_snow.paa";
 	model = "ls_armor_bluefor\helmet\gar\phase2Insulated\ls_gar_phase2Insulated_helmet.p3d";
 	hiddenSelections[] =
 	{
 		"Camo1"
 	};
+	ace_hearing_protection = ACE_HEARING_PROTECTION;
+	ace_hearing_lowerVolume = ACE_HEARING_LOWER_VOLUME_DEFAULT;
 	subItems[] = {};
 	class ItemInfo: ItemInfo
 	{
@@ -154,27 +177,31 @@ class RB205_H_snow_base: ls_gar_phase2Insulated_helmet
 	};
 };
 
-class ls_gar_arc_helmet: ls_blueforHelmet_base
+class lsd_gar_arc_helmet: lsd_blueforHelmet_base
 {
 	class ItemInfo;
 };
-class RB205_H_arc_base: ls_gar_arc_helmet
+class RB205_H_arc_base: lsd_gar_arc_helmet
 {
 	ACCESS_FALSE
+	author = "205th Recon Battalion";
+	descriptionShort = "";
 	picture = "\RB205_main\data\ui\helmets\icon_H_arc.paa";
-	model = "\ls_armor_bluefor\helmet\gar\arc\ls_gar_arc_helmet.p3d";
+	model = "\lsd_armor_bluefor\helmet\gar\arc\lsd_gar_arc_helmet";
 	hiddenSelections[] =
 	{
 		"camo1",
 		"visor",
 		"illum"
 	};
+	ace_hearing_protection = ACE_HEARING_PROTECTION;
+	ace_hearing_lowerVolume = ACE_HEARING_LOWER_VOLUME_DEFAULT;
 	subItems[] = {};
 	class ItemInfo: ItemInfo
 	{
 		mass = MASS_HELMET;
 		allowedSlots[] = ALLOWED_SLOTS_HELMET;
-		uniformModel = "\ls_armor_bluefor\helmet\gar\arc\ls_gar_arc_helmet.p3d";
+		uniformModel = "\lsd_armor_bluefor\helmet\gar\arc\lsd_gar_arc_helmet";
 		modelSides[] = {6};
 		hiddenSelections[] = {"camo1","visor","illum"};
 		class HitpointsProtectionInfo
@@ -189,7 +216,6 @@ class RB205_H_arc_base: ls_gar_arc_helmet
 */
 
 class ls_blueforUniform_base;
-
 class ls_gar_phase2_uniform: ls_blueforUniform_base
 {
 	class ItemInfo;
@@ -197,6 +223,8 @@ class ls_gar_phase2_uniform: ls_blueforUniform_base
 class RB205_U_base: ls_gar_phase2_uniform
 {
 	ACCESS_FALSE
+	author = "205th Recon Battalion";
+	descriptionShort = "";
 	picture = "\RB205_main\data\ui\uniforms\icon_U_default.paa";
 	model = "\ls_armor_bluefor\uniform\gar\phase2\ls_gar_phase2_uniform_groundholder.p3d";
 	class ItemInfo: ItemInfo
@@ -241,6 +269,8 @@ class SWLB_clone_basic_armor: V_PlateCarrier1_rgr
 class RB205_V_base: SWLB_clone_basic_armor
 {
 	ACCESS_FALSE
+	author = "205th Recon Battalion";
+	descriptionShort = "";
 	picture = "\RB205_main\data\ui\vests\icon_V_default.paa";
 	model = "\SWLB_clones\SWLB_clone_basic_armor.p3d";
 	class ItemInfo: ItemInfo
@@ -322,12 +352,6 @@ class RB205_V_platoonLead_base: RB205_V_base
 		};
 	};
 };
-
-//AIRBORNE
-//ENL - SWLB_clone_airborne_armor
-//FT Lead - SWLB_clone_airborne_nco_armor
-//SQ Lead - SWLB_clone_airborne_nco_armor
-//PT Lead - ls_gar_airborneOfficer_vest
 
 class RB205_V_ab_base: RB205_V_base
 {
@@ -418,6 +442,23 @@ class RB205_V_arf_base: RB205_V_base
 	};
 };
 
+class RB205_V_snow_base: RB205_V_base
+{
+	ACCESS_FALSE
+	picture = "\RB205_main\data\ui\vests\icon_V_snow.paa";
+	model = "\armor_unit\21\21st_Vest_V2.p3d";
+	hiddenSelections[] =
+	{
+		"Camo1"
+	};
+	class ItemInfo: ItemInfo
+	{
+		uniformModel = "\armor_unit\21\21st_Vest_V2.p3d";
+		hiddenSelections[] = {"Camo1"};
+        vestType = "Rebreather";
+	};
+};
+
 class RB205_V_arc_base: RB205_V_base
 {
 	ACCESS_FALSE
@@ -432,23 +473,6 @@ class RB205_V_arc_base: RB205_V_base
 	{
 		uniformModel = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
 		hiddenSelections[] = {"camo1","camo2"};
-        vestType = "Rebreather";
-	};
-};
-
-class RB205_V_snow_base: RB205_V_base
-{
-	ACCESS_FALSE
-	picture = "armor_unit\21\ui\21_Vest.paa";
-	model = "\armor_unit\21\21st_Vest_V2.p3d";
-	hiddenSelections[] =
-	{
-		"Camo1"
-	};
-	class ItemInfo: ItemInfo
-	{
-		uniformModel = "\armor_unit\21\21st_Vest_V2.p3d";
-		hiddenSelections[] = {"Camo1"};
         vestType = "Rebreather";
 	};
 };

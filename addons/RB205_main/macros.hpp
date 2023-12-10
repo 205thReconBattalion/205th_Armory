@@ -52,6 +52,11 @@ tf_hasLRradio=1; \
 tf_range=250000; \
 tf_subtype="digital_lr";
 
+//ACE HEARING PROTECTION
+#define ACE_HEARING_PROTECTION 1
+#define ACE_HEARING_LOWER_VOLUME_DEFAULT 0.1 //0.25
+#define ACE_HEARING_LOWER_VOLUME_PILOT 0.6
+
 //NIGHT VISION
 #define VIS_NV \
 visionMode[] = { "Normal", "NVG" };
