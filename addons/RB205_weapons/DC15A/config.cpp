@@ -1,6 +1,6 @@
 class cfgPatches
 {
-	class 205th_weapons_dc15a
+	class RB205_weapons_dc15a
 	{
 		requiredAddons[] =
 		{
