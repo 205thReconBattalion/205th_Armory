@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="205RB">
+    <Package name="205_weapons">
+<!--displayName weapons-->
+        <Key ID="STR_205_DC15A_DisplayName">
+            <English>[205] DC-15A Blaster Rifle</English>
+            <German>[205] DC-15A Blastergewehr</German>
+        </Key>
+        <Key ID="STR_205_DC15A_GL_DisplayName">
+            <English>[205] DC-15A GL Blaster Rifle</English>
+            <German>[205] DC-15A GL Blastergewehr</German>
+        </Key>
+        <Key ID="STR_205_DC15C_DisplayName">
+            <English>[205] DC-15C Blaster Carbine</English>
+            <German>[205] DC-15C Blasterkarabiner</German>
+        </Key>
+        <Key ID="STR_205_DC15C_GL_DisplayName">
+            <English>[205] DC-15C GL Blaster Carbine</English>
+            <German>[205] DC-15C GL Blasterkarabiner</German>
+        </Key>
+        <Key ID="STR_205_DC15L_DisplayName">
+            <English>[205] DC-15L Blaster Rifle</English>
+            <German>[205] DC-15L Blastergewehr</German>
+        </Key>
+        <Key ID="STR_205_DC15S_DisplayName">
+            <English>[205] DC-15S Blaster Carbine</English>
+            <German>[205] DC-15S Blasterkarabiner</German>
+        </Key>
+        <Key ID="STR_205_DC15X_DisplayName">
+            <English>[205] DC-15X Sniper Rifle</English>
+            <German>[205] DC-15X Scharfschützengewehr</German>
+        </Key>
+        <Key ID="STR_205_DC17_DisplayName">
+            <English>[205] DC-17 Blaster Pistol</English>
+            <German>[205] DC-17 Blasterpistole</German>
+        </Key>
+        <Key ID="STR_205_DC17_DUAL_DisplayName">
+            <English>[205] DC-17 Blaster Pistol (Dual)</English>
+            <German>[205] DC-17 Blasterpistole (Doppelt)</German>
+        </Key>
+        <Key ID="STR_205_DC17_ALT_DisplayName">
+            <English>[205] DC-17 Blaster Pistol (Alt.)</English>
+            <German>[205] DC-17 Blasterpistole (Alt.)</German>
+        </Key>
+        <Key ID="STR_205_PLX1_DisplayName">
+            <English>[205] PLX-1 Missile Launcher</English>
+            <German>[205] PLX-1 Raketenwerfer</German>
+        </Key>
+        <Key ID="STR_205_RPS6_DisplayName">
+            <English>[205] RPS-6 Rocket Launcher</English>
+            <German>[205] RPS-6 Raketenwerfer</German>
+        </Key>
+        <Key ID="STR_205_RPS6_Disposable_DisplayName">
+            <English>[205] RPS-6 Rocket Launcher (Disposable)</English>
+            <German>[205] RPS-6 Raketenwerfer (Einweg)</German>
+        </Key>
+        <Key ID="STR_205_RPS6_DisposableUsed_DisplayName">
+            <English>[205] RPS-6 Rocket Launcher (Used)</English>
+            <German>[205] RPS-6 Raketenwerfer (Benutzt)</German>
+        </Key>
+        <Key ID="STR_205_V38X_DisplayName">
+            <English>[205] Valken-38X Blaster Rifle</English>
+            <German>[205] Valken-38X Blastergewehr</German>
+        </Key>
+        <Key ID="STR_205_WESTARM5_DisplayName">
+            <English>[205] Westar-M5 Blaster Rifle</English>
+            <German>[205] Westar-M5 Blastergewehr</German>
+        </Key>
+        <Key ID="STR_205_Z6_DisplayName">
+            <English>[205] Z-6 Rotary Blaster</English>
+            <German>[205] Z-6 Rotationsblaster</German>
+        </Key>
+<!--displayNameShort weapons-->
+        <Key ID="STR_205_DC15A_DisplayNameShort">
+            <English>DC-15A</English>
+            <German>DC-15A</German>
+        </Key>
+        <Key ID="STR_205_DC15A_GL_DisplayNameShort">
+            <English>DC-15A-GL</English>
+            <German>DC-15A-GL</German>
+        </Key>
+        <Key ID="STR_205_DC15C_DisplayNameShort">
+            <English>DC-15C</English>
+            <German>DC-15C</German>
+        </Key>
+        <Key ID="STR_205_DC15C_GL_DisplayNameShort">
+            <English>DC-15C-GL</English>
+            <German>DC-15C-GL</German>
+        </Key>
+        <Key ID="STR_205_DC15L_DisplayNameShort">
+            <English>DC-15L</English>
+            <German>DC-15L</German>
+        </Key>
+        <Key ID="STR_205_DC15S_DisplayNameShort">
+            <English>DC-15S</English>
+            <German>DC-15S</German>
+        </Key>
+        <Key ID="STR_205_DC15X_DisplayNameShort">
+            <English>DC-15X</English>
+            <German>DC-15X</German>
+        </Key>
+        <Key ID="STR_205_DC17_DisplayNameShort">
+            <English>DC-17</English>
+            <German>DC-17</German>
+        </Key>
+        <Key ID="STR_205_DC17_DUAL_DisplayNameShort">
+            <English>DC-17</English>
+            <German>DC-17</German>
+        </Key>
+        <Key ID="STR_205_DC17_ALT_DisplayNameShort">
+            <English>DC-17</English>
+            <German>DC-17</German>
+        </Key>
+        <Key ID="STR_205_PLX1_DisplayNameShort">
+            <English>PLX-1</English>
+            <German>PLX-1</German>
+        </Key>
+        <Key ID="STR_205_RPS6_DisplayNameShort">
+            <English>RPS-6</English>
+            <German>RPS-6</German>
+        </Key>
+        <Key ID="STR_205_RPS6_Disposable_DisplayNameShort">
+            <English>RPS-6 (Disp.)</English>
+            <German>RPS-6 (Einweg)</German>
+        </Key>
+        <Key ID="STR_205_RPS6_DisposableUsed_DisplayNameShort">
+            <English>RPS-6 (Used)</English>
+            <German>RPS-6 (Benutzt)</German>
+        </Key>
+        <Key ID="STR_205_V38X_DisplayNameShort">
+            <English>Valken-38X</English>
+            <German>Valken-38X</German>
+        </Key>
+        <Key ID="STR_205_WESTARM5_DisplayNameShort">
+            <English>Westar-M5</English>
+            <German>Westar-M5</German>
+        </Key>
+        <Key ID="STR_205_Z6_DisplayNameShort">
+            <English>Z-6</English>
+            <German>Z-6</German>
+        </Key>
+<!--displayName magazines-->
+        <Key ID="STR_205_Standard_Energy_Pack_DisplayName">
+            <English>[205] Standard Energy Pack (60 Ch.)</English>
+            <German>[205] Standard Energiepaket (60 Lad.)</German>
+        </Key>
+        <Key ID="STR_205_Compact_Energy_Pack_DisplayName">
+            <English>[205] Compact Energy Pack (30 Ch.)</English>
+            <German>[205] Kompaktes Energiepaket (30 Lad.)</German>
+        </Key>
+        <Key ID="STR_205_Overcharged_Energy_Pack_DisplayName">
+            <English>[205] Overcharged Energy Pack (15 Ch.)</English>
+            <German>[205] Überladenes Energiepaket (15 Lad.)</German>
+        </Key>
+        <Key ID="STR_205_Heavy_Energy_Pack_DisplayName">
+            <English>[205] Heavy Energy Pack (200 Ch.)</English>
+            <German>[205] Schweres Energiepaket (200 Lad.)</German>
+        </Key>
+        <Key ID="STR_205_RapidFire_Energy_Pack_DisplayName">
+            <English>[205] Rapid Fire Energy Pack (350 Ch.)</English>
+            <German>[205] Schnellschuss Energiepaket (350 Lad.)</German>
+        </Key>
+        <Key ID="STR_205_Experimental_Energy_Pack_DisplayName">
+            <English>[205] Experimental Energy Pack (60 Ch.)</English>
+            <German>[205] Experimentelles Energiepaket (60 Lad.)</German>
+        </Key>
+        <Key ID="STR_205_PLX1_AA_MISSILE_DisplayName">
+            <English>[205] PLX-1 Missile (AA)</English>
+            <German>[205] PLX-1 Rakete (AA)</German>
+        </Key>
+        <Key ID="STR_205_RPS6_ROCKET_DisplayName">
+            <English>[205] RPS-6 Rocket</English>
+            <German>[205] RPS-6 Rakete</German>
+        </Key>
+<!--displayNameShort magazines-->
+        <Key ID="STR_205_Standard_Energy_Pack_DisplayNameShort">
+            <English>Laser (Standard)</English>
+            <German>Laser (Standard)</German>
+        </Key>
+        <Key ID="STR_205_Compact_Energy_Pack_DisplayNameShort">
+            <English>Laser (Compact)</English>
+            <German>Laser (Kompakt)</German>
+        </Key>
+        <Key ID="STR_205_Overcharged_Energy_Pack_DisplayNameShort">
+            <English>Laser (Overch.)</English>
+            <German>Laser (Überl.)</German>
+        </Key>
+        <Key ID="STR_205_Heavy_Energy_Pack_DisplayNameShort">
+            <English>Laser (Heavy)</English>
+            <German>Laser (Schwer)</German>
+        </Key>
+        <Key ID="STR_205_RapidFire_Energy_Pack_DisplayNameShort">
+            <English>Laser (Rapid F.)</English>
+            <German>Laser (Schnellf.)</German>
+        </Key>
+        <Key ID="STR_205_Experimental_Energy_Pack_DisplayNameShort">
+            <English>Laser (Exp.)</English>
+            <German>Laser (Exp.)</German>
+        </Key>
+        <Key ID="STR_205_PLX1_AA_MISSILE_DisplayNameShort">
+            <English>Missile (AA)</English>
+            <German>Rakete (AA)</German>
+        </Key>
+        <Key ID="STR_205_RPS6_ROCKET_DisplayNameShort">
+            <English>Rocket</English>
+            <German>Rakete</German>
+        </Key>
+<!--descriptionShort magazines-->
+        <Key ID="STR_205_Standard_Energy_Pack_DescriptionShort">
+            <English>Standard energy pack used by the DC-15 series</English>
+            <German>Standard Energiepaket genutzt von der DC-15 Reihe</German>
+        </Key>
+        <Key ID="STR_205_Compact_Energy_Pack_DescriptionShort">
+            <English>Compact energy pack used by the DC-17</English>
+            <German>Kompaktes Energiepaket genutzt von der DC-17</German>
+        </Key>
+        <Key ID="STR_205_Overcharged_Energy_Pack_DescriptionShort">
+            <English>Overcharged energy pack used by the VK-38X and the DC-15X</English>
+            <German>Überladenes Energiepaket genutzt von der VK-18X und der DC-15X</German>
+        </Key>
+        <Key ID="STR_205_Heavy_Energy_Pack_DescriptionShort">
+            <English>Heavy energy pack used by the DC-15L</English>
+            <German>Schweres Energiepaket genutzt von der DC-15L</German>
+        </Key>
+        <Key ID="STR_205_RapidFire_Energy_Pack_DescriptionShort">
+            <English>Heavy energy pack used by the Z-6</English>
+            <German>Schnellschuss Energiepaket genutzt von der Z-6</German>
+        </Key>
+        <Key ID="STR_205_Experimental_Energy_Pack_DescriptionShort">
+            <English>Experimental energy pack used by the Westar-M5</English>
+            <German>Experimentelles Energiepaket genutzt von der Westar-M5</German>
+        </Key>
+        <Key ID="STR_205_PLX1_AA_MISSILE_DescriptionShort">
+            <English>Anti-Air rocket used by the PLX-1 rocket launcher</English>
+            <German>Luftabwehr-Rakete genutzt von dem PLX-1 Raketenwerfer</German>
+        </Key>
+        <Key ID="STR_205_RPS6_ROCKET_DescriptionShort">
+            <English>Anti-Tank rocket used by the RPS-6 rocket launcher</English>
+            <German>Panzerabwehr-Rakete genutzt von dem RPS-6 Raketenwerfer</German>
+        </Key>
+<!--displayName attachments etc.-->
+    </Package>
+        <Key ID="STR_205_OPTIC_DC15L_DisplayName">
+            <English>[205] DC-15L Optic</English>
+            <German>[205] DC-15L Visier</German>
+        </Key>
+        <Key ID="STR_205_SUPPRESSOR_DC15X_DisplayName">
+            <English>[205] DC-15X Suppressor</English>
+            <German>[205] DC-15X Schalldämpfer</German>
+        </Key>
+        <Key ID="STR_205_OPTIC_V38X_DisplayName">
+            <English>[205] Valken-38X Optic</English>
+            <German>[205] Valken-38X Visier</German>
+        </Key>
+</Project>
