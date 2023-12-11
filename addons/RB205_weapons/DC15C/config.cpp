@@ -21,7 +21,7 @@ class cfgPatches
 #include "\RB205_weapons\emp_compat.hpp"
 
 class GunParticles;
-class Mode_FullAuto;
+class Mode_Burst;
 class Mode_SemiAuto;
 
 class CfgWeapons
@@ -32,7 +32,7 @@ class CfgWeapons
 		author = "205th Recon Battalion";
 		displayName = "$STR_205_DC15C_DisplayName";
 		displayNameShort = "$STR_205_DC15C_DisplayNameShort";
-		descriptionShort = "Blasterkarabiner der GAR<br />Freigegeben für: Airborne, Scuba";
+		descriptionShort = "Blasterkarabiner der GAR<br />Freigegeben für: Alle<br />(Unterwasser-Fähig)";
 		picture = "\RB205_weapons\data\ui\dc15s.paa";
 		fireLightDiffuse[] = {0,0,1};
 		canShootInWater = 1;
@@ -58,10 +58,10 @@ class CfgWeapons
 		};
 		modes[] =
 		{
-			"FullAuto",
+			"Burst",
 			"Single"
 		};
-		class FullAuto: Mode_FullAuto
+		class Burst: Mode_Burst
 		{
 			sounds[] =
 			{
@@ -75,7 +75,7 @@ class CfgWeapons
 					"RB205_DC15C_Shot_SoundSet"
 				};
 			};
-			reloadTime = 0.1;
+			reloadTime = 0.05;
 			dispersion = 0.00118;
 			minRange = 0;
 			minRangeProbab = 0.89999998;
@@ -120,7 +120,7 @@ class CfgWeapons
 		author = "205th Recon Battalion";
 		displayName = "$STR_205_DC15C_GL_DisplayName";
 		displayNameShort = "$STR_205_DC15C_GL_DisplayNameShort";
-		descriptionShort = "Blasterkarabiner der GAR<br />Freigegeben für: Grenadier (Airborne/Scuba)";
+		descriptionShort = "Blasterkarabiner der GAR<br />Freigegeben für: Alle<br />(Unterwasser-Fähig)";
 		picture = "\RB205_weapons\data\ui\dc15s.paa";
 		fireLightDiffuse[] = {0,0,1};
 		canShootInWater = 1;
@@ -133,7 +133,7 @@ class CfgWeapons
 		JLTS_friedItem = "RB205_DC15C_GL_fried";
 		modes[] =
 		{
-			"FullAuto",
+			"Burst",
 			"Single"
 		};
 		muzzles[] =
@@ -166,7 +166,7 @@ class CfgWeapons
 			soundContinuous = 0;
 			soundBurst = 0;
 		};
-		class FullAuto: Mode_FullAuto
+		class Burst: Mode_Burst
 		{
 			sounds[] =
 			{
@@ -180,7 +180,7 @@ class CfgWeapons
 					"RB205_DC15C_Shot_SoundSet"
 				};
 			};
-			reloadTime = 0.1;
+			reloadTime = 0.05;
 			dispersion = 0.00118;
 			minRange = 0;
 			minRangeProbab = 0.89999998;
