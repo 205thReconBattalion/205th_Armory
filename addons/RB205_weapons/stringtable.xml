@@ -70,6 +70,10 @@
             <English>[205] Z-6 Rotary Blaster</English>
             <German>[205] Z-6 Rotationsblaster</German>
         </Key>
+        <Key ID="STR_205_DC17M_DisplayName">
+            <English>[205] DC-17M Blaster</English>
+            <German>[205] DC-17M Blasterkarabiner</German>
+        </Key>
 <!--displayNameShort weapons-->
         <Key ID="STR_205_DC15A_DisplayNameShort">
             <English>DC-15A</English>
@@ -139,6 +143,10 @@
             <English>Z-6</English>
             <German>Z-6</German>
         </Key>
+        <Key ID="STR_205_DC17M_DisplayNameShort">
+            <English>DC-17M</English>
+            <German>DC-17M</German>
+        </Key>
 <!--displayName magazines-->
         <Key ID="STR_205_Standard_Energy_Pack_DisplayName">
             <English>[205] Standard Energy Pack (60 Ch.)</English>
@@ -171,6 +179,18 @@
         <Key ID="STR_205_RPS6_ROCKET_DisplayName">
             <English>[205] RPS-6 Rocket</English>
             <German>[205] RPS-6 Rakete</German>
+        </Key>
+        <Key ID="STR_205_DC17M_blaster_Energy_Pack_DisplayName">
+            <English>[205] DC-17M Energy Pack (60 Ch.)</English>
+            <German>[205] DC-17M Energiepaket (60 Lad.)</German>
+        </Key>
+        <Key ID="STR_205_DC17M_sniper_Energy_Pack_DisplayName">
+            <English>[205] DC-17M Overcharged Energy Pack (60 Ch.)</English>
+            <German>[205] DC-17M Überladenes Energiepaket (5 Lad.)</German>
+        </Key>
+        <Key ID="STR_205_DC17M_at_Energy_Pack_DisplayName">
+            <English>[205] DC-17M High Explosive Grenade</English>
+            <German>[205] DC-17M Hochexplosiv-Granate</German>
         </Key>
 <!--displayNameShort magazines-->
         <Key ID="STR_205_Standard_Energy_Pack_DisplayNameShort">
@@ -205,6 +225,18 @@
             <English>Rocket</English>
             <German>Rakete</German>
         </Key>
+        <Key ID="STR_205_DC17M_blaster_Energy_Pack_DisplayNameShort">
+            <English>Laser (Standard)</English>
+            <German>Laser (Standard)</German>
+        </Key>
+        <Key ID="STR_205_DC17M_sniper_Energy_Pack_DisplayNameShort">
+            <English>Laser (Overch.)</English>
+            <German>Laser (Überl.)</German>
+        </Key>
+        <Key ID="STR_205_DC17M_at_Energy_Pack_DisplayNameShort">
+            <English>Grenade</English>
+            <German>Granate</German>
+        </Key>
 <!--descriptionShort magazines-->
         <Key ID="STR_205_Standard_Energy_Pack_DescriptionShort">
             <English>Standard energy pack used by the DC-15 series</English>
@@ -238,6 +270,18 @@
             <English>Anti-Tank rocket used by the RPS-6 rocket launcher</English>
             <German>Panzerabwehr-Rakete genutzt von dem RPS-6 Raketenwerfer</German>
         </Key>
+        <Key ID="STR_205_DC17M_blaster_Energy_Pack_DescriptionShort">
+            <English>Energy pack used by the DC-17M</English>
+            <German>Energiepaket genutzt von der DC-17M</German>
+        </Key>
+        <Key ID="STR_205_DC17M_sniper_Energy_Pack_DescriptionShort">
+            <English>Overcharged energy pack used by the DC-17M</English>
+            <German>Überladenes Energiepaket genutzt von der DC-17M</German>
+        </Key>
+        <Key ID="STR_205_DC17M_at_Energy_Pack_DescriptionShort">
+            <English>High Explosive grenade used by the DC-17M</English>
+            <German>Hochexplosiv-Granate genutzt von der DC-17M</German>
+        </Key>
 <!--displayName attachments etc.-->
     </Package>
         <Key ID="STR_205_OPTIC_DC15L_DisplayName">
@@ -251,5 +295,21 @@
         <Key ID="STR_205_OPTIC_V38X_DisplayName">
             <English>[205] Valken-38X Optic</English>
             <German>[205] Valken-38X Visier</German>
+        </Key>
+        <Key ID="STR_205_OPTIC_DC17M_DisplayName">
+            <English>[205] DC-17M Optic</English>
+            <German>[205] DC-17M Visier</German>
+        </Key>
+        <Key ID="STR_205_ATTACHMENT_DC17M_blaster_DisplayName">
+            <English>[205] DC-17M Blaster Attachment</English>
+            <German>[205] DC-17M Blaster-Aufsatz</German>
+        </Key>
+        <Key ID="STR_205_ATTACHMENT_DC17M_sniper_DisplayName">
+            <English>[205] DC-17M Sniper Attachment</English>
+            <German>[205] DC-17M Scharfschützen-Aufsatz</German>
+        </Key>
+        <Key ID="STR_205_ATTACHMENT_DC17M_at_DisplayName">
+            <English>[205] DC-17M Anti Armor Attachment</English>
+            <German>[205] DC-17M Granatwerfer-Aufsatz</German>
         </Key>
 </Project>
