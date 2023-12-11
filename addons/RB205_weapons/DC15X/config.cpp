@@ -41,6 +41,7 @@ class CfgWeapons
 
 	class RB205_DC15X: JLTS_DC15X
 	{
+		author = "205th Recon Battalion";
 		displayName = "$STR_205_DC15X_DisplayName";
 		displayNameShort = "$STR_205_DC15X_DisplayNameShort";
 		descriptionShort = "-> 205th Recon Battalion";
@@ -128,6 +129,7 @@ class CfgWeapons
 	class InventoryMuzzleItem_Base_F;
 	class RB205_DC15X_Suppressor: muzzle_snds_338_black
 	{
+		author = "205th Recon Battalion";
 		scope = 2;
 		displayName = "$STR_205_SUPPRESSOR_DC15X_DisplayName";
 		picture = "\a3\Weapons_F_Mark\Data\UI\icon_muzzle_snds_338_black_ca.paa";
@@ -199,7 +201,7 @@ class CfgVehicles
 
 class cfgSoundShaders
 {
-	class 205_DC15X_SoundShader_Close
+	class RB205_DC15X_SoundShader_Close
 	{
 		samples[]=
 		{
