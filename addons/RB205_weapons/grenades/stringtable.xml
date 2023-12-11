@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="205RB">
+    <Package name="205_grenades">
+<!--displayName-->
+        <Key ID="STR_205_ThermalDetonator_DisplayName">
+            <English>[205] Thermal Detonator</English>
+            <German>[205] Thermaldetonator</German>
+        </Key>
+        <Key ID="STR_205_ImpactGrenade_DisplayName">
+            <English>[205] Impact Grenade</English>
+            <German>[205] Kontaktgranate</German>
+        </Key>
+        <Key ID="STR_205_SmokeW_DisplayName">
+            <English>[205] Smoke Grenade (White)</English>
+            <German>[205] Rauchgranate (Weiß)</German>
+        </Key>
+        <Key ID="STR_205_SmokeB_DisplayName">
+            <English>[205] Smoke Grenade (Blue)</English>
+            <German>[205] Rauchgranate (Blau)</German>
+        </Key>
+        <Key ID="STR_205_SmokeG_DisplayName">
+            <English>[205] Smoke Grenade (Green)</English>
+            <German>[205] Rauchgranate (Grün)</German>
+        </Key>
+        <Key ID="STR_SmokeR_DisplayName">
+            <English>[205] Smoke Grenade (Red)</English>
+            <German>[205] Rauchgranate (Rot)</German>
+        </Key>
+        <Key ID="STR_205_SonicDetonator_DisplayName">
+            <English>[205] Sonic Detonator</English>
+            <German>[205] Schockgranate</German>
+        </Key>
+        <Key ID="STR_205_DroidPopper_DisplayName">
+            <English>[205] Droid Popper</English>
+            <German>[205] Droidenkracher</German>
+        </Key>
+<!--displayNameShort-->
+        <Key ID="STR_205_ThermalDetonator_DisplayNameShort">
+            <English>Thermal Det</English>
+            <German>Thermaldetonator</German>
+        </Key>
+        <Key ID="STR_205_ImpactGrenade_DisplayNameShort">
+            <English>Impact Grenade</English>
+            <German>Kontaktgranate</German>
+        </Key>
+        <Key ID="STR_205_SmokeW_DisplayNameShort">
+            <English>Smoke (White)</English>
+            <German>Rauch (Weiß)</German>
+        </Key>
+        <Key ID="STR_205_SmokeB_DisplayNameShort">
+            <English>Smoke (Blue)</English>
+            <German>Rauch (Blau)</German>
+        </Key>
+        <Key ID="STR_205_SmokeG_DisplayNameShort">
+            <English>Smoke (Green)</English>
+            <German>Rauch (Grün)</German>
+        </Key>
+        <Key ID="STR_205_SmokeR_DisplayNameShort">
+            <English>Smoke (Red)</English>
+            <German>Rauch (Rot)</German>
+        </Key>
+        <Key ID="STR_205_SonicDetonator_DisplayNameShort">
+            <English>Sonic Det</English>
+            <German>Schockgranate</German>
+        </Key>
+        <Key ID="STR_205_DroidPopper_DisplayNameShort">
+            <English>Droid Popper</English>
+            <German>Droidenkracher</German>
+        </Key>
+    </Package>
+</Project>
