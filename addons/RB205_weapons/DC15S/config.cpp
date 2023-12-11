@@ -33,7 +33,7 @@ class CfgWeapons
 		author = "205th Recon Battalion";
 		displayName = "$STR_205_DC15S_DisplayName";
 		displayNameShort = "$STR_205_DC15S_DisplayNameShort";
-		descriptionShort = "-> 205th Recon Battalion";
+		descriptionShort = "Standard-Blasterkarabiner der GAR<br />Freigegeben für: Alle";
 		picture = "\RB205_weapons\data\ui\dc15s.paa";
 		fireLightDiffuse[] = {0,0,1};
 		magazines[] =

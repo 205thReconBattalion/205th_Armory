@@ -44,7 +44,7 @@ class CfgWeapons
 		author = "205th Recon Battalion";
 		displayName = "$STR_205_DC15X_DisplayName";
 		displayNameShort = "$STR_205_DC15X_DisplayNameShort";
-		descriptionShort = "-> 205th Recon Battalion";
+		descriptionShort = "Scharfschützengewehr der GAR<br />Freigegeben für: ARF";
 		picture = "\RB205_weapons\data\ui\dc15x.paa";
 		fireLightDiffuse[] = {0,0,1};
 		baseWeapon = "RB205_DC15X";

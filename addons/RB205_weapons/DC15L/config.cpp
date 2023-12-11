@@ -38,7 +38,7 @@ class CfgWeapons
 		author = "205th Recon Battalion";
 		displayName = "$STR_205_DC15L_DisplayName";
 		displayNameShort = "$STR_205_DC15L_DisplayNameShort";
-		descriptionShort = "-> 205th Recon Battalion";
+		descriptionShort = "Blastergewehr der GAR<br />Freigegeben für: Heavy";
 		picture = "\RB205_weapons\data\ui\dc15a.paa";
 		fireLightDiffuse[] = {0,0,1};
 		magazines[] =

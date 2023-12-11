@@ -42,7 +42,7 @@ class CfgWeapons
 		author = "205th Recon Battalion";
 		displayName = "$STR_205_V38X_DisplayName";
 		displayNameShort = "$STR_205_V38X_DisplayNameShort";
-		descriptionShort = "-> 205th Recon Battalion";
+		descriptionShort = "Blastergewehr der GAR<br />Freigegeben für: Marksman";
 		picture = "\RB205_weapons\data\ui\v38x.paa";
 		fireLightDiffuse[] = {0,0,1};
 		magazines[] =

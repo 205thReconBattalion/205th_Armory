@@ -55,7 +55,7 @@ class CfgWeapons
 		author = "205th Recon Battalion";
 		displayName = "$STR_205_WESTARM5_DisplayName";
 		displayNameShort = "$STR_205_WESTARM5_DisplayNameShort";
-		descriptionShort = "-> 205th Recon Battalion";
+		descriptionShort = "Blastergewehr der GAR<br />Freigegeben für: ARC";
 		picture = "\RB205_weapons\data\ui\westar.paa";
 		fireLightDiffuse[] = {0,0,1};
 		scope = 2;

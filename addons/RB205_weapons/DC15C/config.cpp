@@ -32,7 +32,7 @@ class CfgWeapons
 		author = "205th Recon Battalion";
 		displayName = "$STR_205_DC15C_DisplayName";
 		displayNameShort = "$STR_205_DC15C_DisplayNameShort";
-		descriptionShort = "-> 205th Recon Battalion";
+		descriptionShort = "Blasterkarabiner der GAR<br />Freigegeben für: Airborne, Scuba";
 		picture = "\RB205_weapons\data\ui\dc15s.paa";
 		fireLightDiffuse[] = {0,0,1};
 		canShootInWater = 1;
@@ -120,7 +120,7 @@ class CfgWeapons
 		author = "205th Recon Battalion";
 		displayName = "$STR_205_DC15C_GL_DisplayName";
 		displayNameShort = "$STR_205_DC15C_GL_DisplayNameShort";
-		descriptionShort = "-> 205th Recon Battalion";
+		descriptionShort = "Blasterkarabiner der GAR<br />Freigegeben für: Grenadier (Airborne/Scuba)";
 		picture = "\RB205_weapons\data\ui\dc15s.paa";
 		fireLightDiffuse[] = {0,0,1};
 		canShootInWater = 1;

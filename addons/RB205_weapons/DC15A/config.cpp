@@ -34,7 +34,7 @@ class CfgWeapons
 		author = "205th Recon Battalion";
 		displayName = "$STR_205_DC15A_DisplayName";
 		displayNameShort = "$STR_205_DC15A_DisplayNameShort";
-		descriptionShort = "-> 205th Recon Battalion";
+		descriptionShort = "Standard-Blastergewehr der GAR<br />Freigegeben für: Alle";
 		picture = "\RB205_weapons\data\ui\dc15a.paa";
 		fireLightDiffuse[] = {0,0,1};
 		magazines[] =
@@ -108,7 +108,7 @@ class CfgWeapons
 		author = "205th Recon Battalion";
 		displayName = "$STR_205_DC15A_GL_DisplayName";
 		displayNameShort = "$STR_205_DC15A_GL_DisplayNameShort";
-		descriptionShort = "-> 205th Recon Battalion";
+		descriptionShort = "Standard-Blastergewehr der GAR<br />Freigegeben für: Grenadier";
 		picture = "\RB205_weapons\data\ui\dc15a.paa";
 		fireLightDiffuse[] = {0,0,1};
 		magazines[] =

@@ -37,7 +37,7 @@ class CfgWeapons
 		author = "205th Recon Battalion";
 		displayName = "$STR_205_DC17_DisplayName";
 		displayNameShort = "$STR_205_DC17_DisplayNameShort";
-		descriptionShort = "-> 205th Recon Battalion";
+		descriptionShort = "Blasterpistole der GAR<br />Freigegeben für: Alle";
 		picture = "\RB205_weapons\data\ui\dc17.paa";
 		fireLightDiffuse[] = {0,0,1};
 		magazines[] =
@@ -94,7 +94,7 @@ class CfgWeapons
 		scope = 2;
 		displayName = "$STR_205_DC17_DUAL_DisplayName";
 		displayNameShort = "$STR_205_DC17_DUAL_DisplayNameShort";
-		descriptionShort = "-> 205th Recon Battalion";
+		descriptionShort = "Blasterpistolen der GAR<br />Freigegeben für: ARC, CS+";
 		picture = "\RB205_weapons\data\ui\dc17_dual.paa";
 		fireLightDiffuse[] = {0,0,1};
 		cursor = "RB205_CH_DC17_Dual2";
@@ -122,7 +122,7 @@ class CfgWeapons
 		author = "205th Recon Battalion";
 		displayName = "$STR_205_DC17_ALT_DisplayName";
 		displayNameShort = "$STR_205_DC17_ALT_DisplayNameShort";
-		descriptionShort = "-> 205th Recon Battalion";
+		descriptionShort = "Blasterpistole der GAR<br />Freigegeben für: Alle";
 		picture = "\205th_weapons\data\ui\dc17.paa";
 		fireLightDiffuse[] = {0,0,1};
 		magazines[] =

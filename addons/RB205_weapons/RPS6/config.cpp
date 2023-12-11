@@ -67,6 +67,7 @@ class CfgMagazines
 	{
 		displayName = "$STR_205_RPS6_ROCKET_DisplayName";
 		displayNameShort = "$STR_205_RPS6_ROCKET_DisplayNameShort";
+		descriptionShort = "$STR_205_RPS6_ROCKET_DescriptionShort";
 		ammo = "RB205_AMMO_RPS6";//"3AS_R_MK41_AT";
 		scope = 2;
 		mass = 50;
@@ -84,7 +85,7 @@ class CfgWeapons
 	{
 		displayName = "$STR_205_RPS6_DisplayName";
 		displayNameShort = "$STR_205_RPS6_DisplayNameShort";
-		descriptionShort = "-> 205th Recon Battalion";
+		descriptionShort = "Panzerabwehr-Raketenwerfer<br />Freigegeben für: AT/AA";
 		picture = "\MRC\JLTS\weapons\RPS6\data\ui\rps6_ui_ca.paa";
 		author = "205th Recon Battalion";
 		baseWeapon = "RB205_RPS6";
@@ -224,7 +225,7 @@ class CfgWeapons
 	{
 		displayname = "$STR_205_RPS6_Disposable_DisplayName";
 		displayNameShort = "$STR_205_RPS6_Disposable_DisplayName";
-		descriptionShort = "-> 205th Recon Battalion";
+		descriptionShort = "Panzerabwehr-Raketenwerfer<br />Freigegeben für: AT/AA";
 		picture = "\MRC\JLTS\weapons\RPS6\data\ui\rps6_ui_ca.paa";
 		scope = 1;
 		mass = 250;
@@ -242,7 +243,7 @@ class CfgWeapons
 	{
 		displayname = "$STR_205_RPS6_Disposable_DisplayName";
 		displayNameShort = "$STR_205_RPS6_Disposable_DisplayName";
-		descriptionShort = "-> 205th Recon Battalion";
+		descriptionShort = "Panzerabwehr-Raketenwerfer<br />Freigegeben für: AT/AA";
 		picture = "\MRC\JLTS\weapons\RPS6\data\ui\rps6_ui_ca.paa";
 		scope = 2;
 		baseWeapon = "RB205_RPS6_disposable";
@@ -255,7 +256,7 @@ class CfgWeapons
 	{
 		displayname = "$STR_205_RPS6_DisposableUsed_DisplayName";
 		displayNameShort = "$STR_205_RPS6_DisposableUsed_DisplayName";
-		descriptionShort = "-> 205th Recon Battalion";
+		descriptionShort = "Panzerabwehr-Raketenwerfer<br />Freigegeben für: AT/AA";
 		picture = "\MRC\JLTS\weapons\RPS6\data\ui\rps6_ui_ca.paa";
 		scope = 1;
 		mass = 200;

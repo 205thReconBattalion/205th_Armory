@@ -199,7 +199,7 @@ class CfgWeapons
 		author = "205th Recon Battalion";
 		displayName="$STR_205_DC17M_DisplayName";
 		displayNameShort = "STR_205_DC17M_DisplayNameShort";
-		descriptionShort = "-> 205th Recon Battalion";
+		descriptionShort = "Blasterkarabiner der GAR<br />Freigegeben für: CC";
 		hiddenSelectionsTextures[] =
 		{
 			"RB205_weapons\data\RB205_DC17M.paa"

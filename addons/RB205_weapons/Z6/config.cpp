@@ -29,7 +29,7 @@ class CfgWeapons
 		author = "205th Recon Battalion";
 		displayName = "$STR_205_Z6_DisplayName";
 		displayNameShort = "$STR_205_Z6_DisplayNameShort";
-		descriptionShort = "-> 205th Recon Battalion";
+		descriptionShort = "Rotationsblaster der GAR<br />Freigegeben für: Heavy";
 		picture = "\RB205_weapons\data\ui\z6.paa";
 		fireLightDiffuse[] = {0,0,1};
 		baseWeapon = "RB205_Z6";
