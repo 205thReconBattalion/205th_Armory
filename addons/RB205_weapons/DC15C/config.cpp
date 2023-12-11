@@ -28,7 +28,8 @@ class CfgWeapons
 {
 	class 3AS_DC15C_F;
 	class RB205_DC15C: 3AS_DC15C_F
-	{ 
+	{
+		author = "205th Recon Battalion";
 		displayName = "$STR_205_DC15C_DisplayName";
 		displayNameShort = "$STR_205_DC15C_DisplayNameShort";
 		descriptionShort = "-> 205th Recon Battalion";
@@ -116,6 +117,7 @@ class CfgWeapons
 	class 3AS_DC15C_GL;
 	class RB205_DC15C_GL: 3AS_DC15C_GL
 	{
+		author = "205th Recon Battalion";
 		displayName = "$STR_205_DC15C_GL_DisplayName";
 		displayNameShort = "$STR_205_DC15C_GL_DisplayNameShort";
 		descriptionShort = "-> 205th Recon Battalion";

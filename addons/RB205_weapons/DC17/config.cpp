@@ -34,6 +34,7 @@ class CfgWeapons
 	
 	class RB205_DC17: 3AS_DC17S_F
 	{
+		author = "205th Recon Battalion";
 		displayName = "$STR_205_DC17_DisplayName";
 		displayNameShort = "$STR_205_DC17_DisplayNameShort";
 		descriptionShort = "-> 205th Recon Battalion";
@@ -89,6 +90,7 @@ class CfgWeapons
 	FRIED_WEAPON_SECONDARY(RB205_DC17,"\RB205_weapons\data\ui\dc17_fried.paa")
 	class RB205_DC17_Dual: RB205_DC17
 	{
+		author = "205th Recon Battalion";
 		scope = 2;
 		displayName = "$STR_205_DC17_DUAL_DisplayName";
 		displayNameShort = "$STR_205_DC17_DUAL_DisplayNameShort";
@@ -117,6 +119,7 @@ class CfgWeapons
 	class SWLW_DC17;
 	class RB205_DC17_alt: SWLW_DC17
 	{
+		author = "205th Recon Battalion";
 		displayName = "$STR_205_DC17_ALT_DisplayName";
 		displayNameShort = "$STR_205_DC17_ALT_DisplayNameShort";
 		descriptionShort = "-> 205th Recon Battalion";

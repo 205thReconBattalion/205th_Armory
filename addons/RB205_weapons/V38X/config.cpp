@@ -39,6 +39,7 @@ class CfgWeapons
 
 	class RB205_Valken38X: 3AS_Valken38X_F
 	{
+		author = "205th Recon Battalion";
 		displayName = "$STR_205_V38X_DisplayName";
 		displayNameShort = "$STR_205_V38X_DisplayNameShort";
 		descriptionShort = "-> 205th Recon Battalion";
@@ -113,6 +114,7 @@ class CfgWeapons
 
 	class RB205_Optic_VK38X: 3AS_Optic_VK38X
 	{
+		author = "205th Recon Battalion";
 		displayName = "$STR_205_OPTIC_V38X_DisplayName";
 		class ItemInfo: InventoryOpticsItem_Base_F
 		{

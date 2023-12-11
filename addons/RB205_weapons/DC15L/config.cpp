@@ -35,6 +35,7 @@ class CfgWeapons
 	class 3AS_DC15L_F;
 	class RB205_DC15L: 3AS_DC15L_F
 	{
+		author = "205th Recon Battalion";
 		displayName = "$STR_205_DC15L_DisplayName";
 		displayNameShort = "$STR_205_DC15L_DisplayNameShort";
 		descriptionShort = "-> 205th Recon Battalion";
@@ -113,6 +114,7 @@ class CfgWeapons
 
 	class RB205_Optic_DC15L: 3AS_Optic_DC15L
 	{
+		author = "205th Recon Battalion";
 		displayName = "$STR_205_OPTIC_DC15L_DisplayName";
 		class ItemInfo: InventoryOpticsItem_Base_F
 		{

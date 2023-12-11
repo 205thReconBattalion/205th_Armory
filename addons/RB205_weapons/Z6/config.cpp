@@ -26,6 +26,7 @@ class CfgWeapons
 	class JLTS_Z6;
 	class RB205_Z6: JLTS_Z6
 	{
+		author = "205th Recon Battalion";
 		displayName = "$STR_205_Z6_DisplayName";
 		displayNameShort = "$STR_205_Z6_DisplayNameShort";
 		descriptionShort = "-> 205th Recon Battalion";
