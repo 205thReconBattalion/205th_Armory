@@ -66,8 +66,8 @@ class CfgWeapons
 					"RB205_DC15A_Shot_SoundSet"
 				};
 			};
-			reloadTime = 0.2;
-			dispersion = 0.00073000003;
+			reloadTime = 0.1;
+			dispersion = 0.00066;
 			minRange = 2;
 			minRangeProbab = 0.5;
 			midRange = 200;
@@ -76,6 +76,40 @@ class CfgWeapons
 			maxRangeProbab = 0.30000001;
 			soundContinuous = 0;
 			soundBurst = 0;
+		};
+		class OpticsModes
+		{
+			class Ironsights
+			{
+				opticsID = 1;
+				opticsZoomInit = 0.75;
+				opticsZoomMax = 1.1;
+				opticsZoomMin = 0.25;
+				distanceZoomMax = 100;
+				distanceZoomMin = 100;
+				memoryPointCamera = "eye";
+				opticsDisablePeripherialVision = 0.67;
+				opticsFlare = "true";
+				opticsPPEffects[] = {"OpticsCHAbera5","OpticsBlur5"};
+				useModelOptics = 0;
+				visionMode[] = {};
+			};
+			class Scopes: Ironsights
+			{
+				opticsID = 2;
+				opticsZoomInit = 0.125;
+				opticsZoomMax = 0.125;
+				opticsZoomMin = 0.0625;
+				distanceZoomMax = 100;
+				distanceZoomMin = 100;
+				cameraDir = "";
+				memoryPointCamera = "opticView";
+				opticsDisablePeripherialVision = 0.67;
+				opticsFlare = "true";
+				opticsPPEffects[] = {"OpticsCHAbera5","OpticsBlur5"};
+				useModelOptics = 1;
+				visionMode[] = {"Normal","NVG"};
+			};
 		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
@@ -141,7 +175,7 @@ class CfgWeapons
 					"RB205_DC15A_Shot_SoundSet"
 				};
 			};
-			reloadTime = 0.2;
+			reloadTime = 0.1;
 			dispersion = 0.00073000003;
 			minRange = 2;
 			minRangeProbab = 0.5;
