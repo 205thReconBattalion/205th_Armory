@@ -123,7 +123,7 @@ class CfgWeapons
 		displayName = "$STR_205_DC17_ALT_DisplayName";
 		displayNameShort = "$STR_205_DC17_ALT_DisplayNameShort";
 		descriptionShort = "Blasterpistole der GAR<br />Freigegeben für: Alle";
-		picture = "\205th_weapons\data\ui\dc17.paa";
+		picture = "\RB205_weapons\data\ui\dc17.paa";
 		fireLightDiffuse[] = {0,0,1};
 		magazines[] =
 		{
