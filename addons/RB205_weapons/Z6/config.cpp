@@ -60,7 +60,7 @@ class CfgWeapons
 			};
 			displayname = "FullAuto";
 			reloadTime = 0.059999999;
-			dispersion = 0.001;
+			dispersion = 0.005;//0.001
 			minRange = 0;
 			minRangeProbab = 0.89999998;
 			midRange = 15;
