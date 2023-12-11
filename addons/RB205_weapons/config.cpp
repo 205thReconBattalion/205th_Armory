@@ -85,6 +85,13 @@ class CfgAmmo
 		hit = 20;
 		caliber = 1.95;
 	};
+
+	class JLTS_bullet_scatter_blue;
+	class RB205_ammo_scatter: JLTS_bullet_scatter_blue
+	{
+		hit = 15;//5
+		caliber = 1.95;//1.2
+	};
 };
 
 class CfgMagazines
@@ -188,6 +195,23 @@ class CfgMagazines
 		tracersEvery = 1;
 		lastRoundsTracer = 60;
 		descriptionShort = "$STR_205_Experimental_Energy_Pack_DescriptionShort";
+        author = "205th Recon Battalion";
+	};
+
+	//DP-23
+	class JLTS_DP23_mag;
+	class RB205_Scatter_Energy_Pack: JLTS_DP23_mag//3AS_45Rnd_EC50_Mag
+	{
+		displayName = "$STR_205_Scatter_Energy_Pack_DisplayName";
+		displayNameShort = "$STR_205_Scatter_Energy_Pack_DisplayNameShort";
+		picture = "\MRC\JLTS\weapons\DP23\data\ui\DP23_mag_ui_ca.paa";
+		model = "\MRC\JLTS\weapons\DP23\DP23_mag.p3d";
+		ammo = "RB205_ammo_scatter";
+		count = 20;
+		mass = 8;
+		tracersEvery = 1;
+		lastRoundsTracer = 20;
+		descriptionShort = "$STR_205_Scatter_Energy_Pack_DescriptionShort";
         author = "205th Recon Battalion";
 	};
 };

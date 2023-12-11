@@ -70,6 +70,10 @@
             <English>[205] Z-6 Rotary Blaster</English>
             <German>[205] Z-6 Rotationsblaster</German>
         </Key>
+        <Key ID="STR_205_DP23_DisplayName">
+            <English>[205] DP-23 Scatter Blaster</English>
+            <German>[205] DP-23 Streu-Blaster</German>
+        </Key>
         <Key ID="STR_205_DC17M_DisplayName">
             <English>[205] DC-17M Blaster</English>
             <German>[205] DC-17M Blasterkarabiner</German>
@@ -143,6 +147,10 @@
             <English>Z-6</English>
             <German>Z-6</German>
         </Key>
+        <Key ID="STR_205_DP23_DisplayNameShort">
+            <English>DP-23</English>
+            <German>DP-23</German>
+        </Key>
         <Key ID="STR_205_DC17M_DisplayNameShort">
             <English>DC-17M</English>
             <German>DC-17M</German>
@@ -171,6 +179,10 @@
         <Key ID="STR_205_Experimental_Energy_Pack_DisplayName">
             <English>[205] Experimental Energy Pack (60 Ch.)</English>
             <German>[205] Experimentelles Energiepaket (60 Lad.)</German>
+        </Key>
+        <Key ID="STR_205_Scatter_Energy_Pack_DisplayName">
+            <English>[205] Scatter Energy Pack (20 Ch.)</English>
+            <German>[205] Streu Energiepaket (20 Lad.)</German>
         </Key>
         <Key ID="STR_205_PLX1_AA_MISSILE_DisplayName">
             <English>[205] PLX-1 Missile (AA)</English>
@@ -217,6 +229,10 @@
             <English>Laser (Exp.)</English>
             <German>Laser (Exp.)</German>
         </Key>
+        <Key ID="STR_205_Scatter_Energy_Pack_DisplayNameShort">
+            <English>Laser (Scat.)</English>
+            <German>Laser (Streu.)</German>
+        </Key>
         <Key ID="STR_205_PLX1_AA_MISSILE_DisplayNameShort">
             <English>Missile (AA)</English>
             <German>Rakete (AA)</German>
@@ -261,6 +277,10 @@
         <Key ID="STR_205_Experimental_Energy_Pack_DescriptionShort">
             <English>Experimental energy pack used by the Westar-M5</English>
             <German>Experimentelles Energiepaket genutzt von der Westar-M5</German>
+        </Key>
+        <Key ID="STR_205_Scatter_Energy_Pack_DescriptionShort">
+            <English>Scatter energy pack used by the DP-23</English>
+            <German>Streu Energiepaket genutzt von der DP-23</German>
         </Key>
         <Key ID="STR_205_PLX1_AA_MISSILE_DescriptionShort">
             <English>Anti-Air missile used by the PLX-1 rocket launcher</English>
