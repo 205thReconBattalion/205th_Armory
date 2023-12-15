@@ -40,6 +40,7 @@ class CfgWeapons
 		{
 			"RB205_Standard_Energy_Pack"
 		};
+		magazineWell[] = {};
 		JLTS_hasElectronics = 1;
 		JLTS_hasEMPProtection = 0;
 		JLTS_friedItem = "205_DC15C_fried";
@@ -76,7 +77,7 @@ class CfgWeapons
 				};
 			};
 			reloadTime = 0.05;
-			dispersion = 0.00118;
+			dispersion = 0.0011;
 			minRange = 0;
 			minRangeProbab = 0.89999998;
 			midRange = 15;
@@ -101,7 +102,7 @@ class CfgWeapons
 				};
 			};
 			reloadTime = 0.1;
-			dispersion = 0.00118;
+			dispersion = 0.0011;
 			minRange = 2;
 			minRangeProbab = 0.30000001;
 			midRange = 150;
@@ -128,6 +129,7 @@ class CfgWeapons
 		{
 			"RB205_Standard_Energy_Pack"
 		};
+		magazineWell[] = {};
 		JLTS_hasElectronics = 1;
 		JLTS_hasEMPProtection = 0;
 		JLTS_friedItem = "RB205_DC15C_GL_fried";
@@ -156,7 +158,7 @@ class CfgWeapons
 				};
 			};
 			reloadTime = 0.1;
-			dispersion = 0.00118;
+			dispersion = 0.0011;
 			minRange = 2;
 			minRangeProbab = 0.30000001;
 			midRange = 150;
@@ -181,7 +183,7 @@ class CfgWeapons
 				};
 			};
 			reloadTime = 0.05;
-			dispersion = 0.00118;
+			dispersion = 0.0011;
 			minRange = 0;
 			minRangeProbab = 0.89999998;
 			midRange = 15;

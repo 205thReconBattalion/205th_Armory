@@ -46,6 +46,7 @@ class CfgWeapons
 			"RB205_Heavy_Energy_Pack",
 			"RB205_Standard_Energy_Pack"
 		};
+		magazineWell[] = {};
 		JLTS_hasElectronics = 1;
 		JLTS_hasEMPProtection = 0;
 		JLTS_friedItem = "RB205_DC15L_fried";

@@ -40,6 +40,7 @@ class CfgWeapons
 		{
 			"RB205_Standard_Energy_Pack"
 		};
+		magazineWell[] = {};
 		JLTS_hasElectronics = 1;
 		JLTS_hasEMPProtection = 0;
 		JLTS_friedItem = "RB205_DC15S_fried";
@@ -70,7 +71,7 @@ class CfgWeapons
 				};
 			};
 			reloadTime = 0.1;
-			dispersion = 0.00116;
+			dispersion = 0.0012;
 			minRange = 2;
 			minRangeProbab = 0.30000001;
 			midRange = 150;
@@ -95,7 +96,7 @@ class CfgWeapons
 				};
 			};
 			reloadTime = 0.1;
-			dispersion = 0.00116;
+			dispersion = 0.0012;
 			minRange = 0;
 			minRangeProbab = 0.89999998;
 			midRange = 15;

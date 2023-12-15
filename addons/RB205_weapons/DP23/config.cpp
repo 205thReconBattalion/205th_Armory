@@ -24,11 +24,12 @@ class CfgWeapons
 	{
 		displayName = "$STR_205_DP23_DisplayName";
 		displayNameShort = "$STR_205_DP23_DisplayNameShort";
-		descriptionShort = "";
+		descriptionShort = "Freigegeben für: 1-3 'Rancor'";
 		magazines[] =
 		{
 			"RB205_Scatter_Energy_Pack"
 		};
 		baseWeapon = "RB205_DP23";
+        author = "205th Recon Battalion";
 	};
 };
