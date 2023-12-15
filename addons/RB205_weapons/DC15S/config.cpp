@@ -70,7 +70,7 @@ class CfgWeapons
 				};
 			};
 			reloadTime = 0.1;
-			dispersion = 0.00116;
+			dispersion = 0.0012;
 			minRange = 2;
 			minRangeProbab = 0.30000001;
 			midRange = 150;
@@ -95,7 +95,7 @@ class CfgWeapons
 				};
 			};
 			reloadTime = 0.1;
-			dispersion = 0.00116;
+			dispersion = 0.0012;
 			minRange = 0;
 			minRangeProbab = 0.89999998;
 			midRange = 15;

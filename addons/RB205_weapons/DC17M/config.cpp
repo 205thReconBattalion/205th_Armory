@@ -47,19 +47,7 @@ class CfgAmmo
 	class SWLW_ammo_smg_blue;
 	class SWLW_ammo_sniper_blue;
 	class SWLW_ammo_40mm_at;
-
-	/*class RB205_ammo_smg_blue: SWLW_ammo_smg_blue
-	{
-		hit = 12;
-		caliber = 1.65;
-		coefgravity = 0;
-	};*/
-	/*class RB205_ammo_sniper_blue: SWLW_ammo_sniper_blue
-	{
-		hit = 25;
-		caliber = 3.21;
-		coefgravity = 0;
-	};*/
+	
 	class RB205_ammo_40mm_at: SWLW_ammo_40mm_at
 	{
 		hit = 550;
@@ -78,7 +66,7 @@ class CfgMagazines
 		displayName = "$STR_205_DC17M_blaster_Energy_Pack_DisplayName";
 		displayNameShort = "$STR_205_DC17M_blaster_Energy_Pack_DisplayNameShort";
 		descriptionShort = "$STR_205_DC17M_blaster_Energy_Pack_DescriptionShort";
-		ammo = "RB205_ammo_experimental";//RB205_ammo_smg_blue
+		ammo = "RB205_ammo_standard";
 		count = 60;
 		mass = 10;
 	};
@@ -88,7 +76,7 @@ class CfgMagazines
 		displayName = "$STR_205_DC17M_sniper_Energy_Pack_DisplayName";
 		displayNameShort = "$STR_205_DC17M_sniper_Energy_Pack_DisplayNameShort";
 		descriptionShort = "$STR_205_DC17M_sniper_Energy_Pack_DescriptionShort";
-		ammo = "RB205_ammo_overcharged";//RB205_ammo_sniper_blue
+		ammo = "RB205_ammo_overcharged";
 		count = 5;
 		mass = 4;
 	};
@@ -116,7 +104,7 @@ class CfgWeapons
 	{
 		author = "205th Recon Battalion";
 		displayName = "$STR_205_ATTACHMENT_DC17M_blaster_DisplayName";
-		dispersion = 0;
+		dispersion = 0.0012;
 	};
 	class RB205_attachment_DC17M_sniper: SWLW_attachment_DC17M_sniper
 	{
@@ -128,6 +116,7 @@ class CfgWeapons
 	{
 		author = "205th Recon Battalion";
 		displayName = "$STR_205_ATTACHMENT_DC17M_at_DisplayName";
+		dispersion = 0.0012;
 	};
 	class RB205_attachment_scope_DC17M_sniper: SWLW_attachment_scope_DC17M_sniper
 	{
@@ -263,7 +252,7 @@ class CfgWeapons
 				};
 			};
 			reloadTime = 0.1;
-			dispersion = 0;
+			dispersion = 0.0012;
 			minRange = 5;
 			minRangeProbab = 0.30000001;
 			midRange = 25;
@@ -321,7 +310,7 @@ class CfgWeapons
 				};
 			};
 			reloadTime = 0.1;
-			dispersion = 0;
+			dispersion = 0.0012;
 			minRange = 5;
 			minRangeProbab = 0.30000001;
 			midRange = 25;
