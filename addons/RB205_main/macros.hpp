@@ -35,6 +35,19 @@
 #define INV_BACK_ARF	200
 #define INV_BACK_ARC	300
 
+//NIGHT VISION
+#define VIS_NV \
+visionMode[] = { "Normal", "NVG" };
+#define VIS_NV_T \
+visionMode[] = { "Normal", "NVG", "TI" }; \
+thermalMode[]= { 0, 1 };
+
+//ACE HEARING PROTECTION
+#define ACE_HEARING_PROTECTION 1
+#define ACE_HEARING_LOWER_VOLUME_DEFAULT 0.1 //0.25
+#define ACE_HEARING_LOWER_VOLUME_PILOT 0.6
+#define MODEL_OPTICS "\SWLB_clones\SWLB_clone_nvg_optic_dummy.p3d"
+
 //TASK FORCE ARROWHEAD RADIO (TFAR)
 #define TFAR_RADIO \
 tf_dialog="JLTS_clone_rto_radio_dialog"; \
@@ -52,19 +65,24 @@ tf_hasLRradio=1; \
 tf_range=250000; \
 tf_subtype="digital_lr";
 
-//ACE HEARING PROTECTION
-#define ACE_HEARING_PROTECTION 1
-#define ACE_HEARING_LOWER_VOLUME_DEFAULT 0.1 //0.25
-#define ACE_HEARING_LOWER_VOLUME_PILOT 0.6
-
-//NIGHT VISION
-#define VIS_NV \
-visionMode[] = { "Normal", "NVG" };
-#define VIS_NV_T \
-visionMode[] = { "Normal", "NVG", "TI" }; \
-thermalMode[]= { 0, 1 };
-
-#define MODEL_OPTICS "\SWLB_clones\SWLB_clone_nvg_optic_dummy.p3d"
+/* JUMPPACK */
+#define JET_EMERGENCY \
+	NSM_jumppack_is_jumppack=1; \
+	NSM_jumppack_spam_delay=1; \
+	NSM_jumppack_energy_capacity=10; \
+	NSM_jumppack_recharge=5; \
+	NSM_jumppack_jump_types[] = \
+	{ \
+		{ \
+			"Deceleration", \
+			{ 0,5,10,0,0,0 } \
+		} \
+	};\
+	NSM_jumppack_jump_effect_script = "NSM_jumppack_effect_fnc_jt_21"; \
+	NSM_jumppack_effect_points[] = {{"spine3",{0,-0.3,-0.1}}}; \
+	NSM_jumppack_sound_ignite[] = {"NSM_Main\sounds\cdv21Start.ogg"}; \
+    NSM_jumppack_sound_land[] = {"NSM_Main\sounds\cdv21End.ogg"}; \
+    NSM_jumppack_sound_idle[] = {"NSM_Main\sounds\cdv21Idle.ogg"};
 
 //OTHER
 #define ALLOWED_SLOTS_HELMET {605,901}
