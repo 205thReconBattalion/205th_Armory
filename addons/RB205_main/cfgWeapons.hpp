@@ -889,7 +889,7 @@ class lsd_gar_standardSPC_nvg: lsd_gar_standard_nvg
 {
 	class ItemInfo;
 };
-class RB205_NV_marksmen: lsd_gar_standardSPC_nvg
+class RB205_NV_marksman: lsd_gar_standardSPC_nvg
 {
 	ACCESS_TRUE
 	author = "205th Recon Battalion";

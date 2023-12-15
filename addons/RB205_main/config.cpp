@@ -99,7 +99,7 @@ class cfgPatches
 			"RB205_V_arc",
 
 			"RB205_NV",
-			"RB205_NV_marksmen",
+			"RB205_NV_marksman",
 			"RB205_NV_rangefinder",
 			"RB205_NV_arf_antenna",
 			"RB205_NV_chip"
@@ -153,7 +153,6 @@ class cfgWeapons
 {
 	#include "cfgWeapons.hpp"
 };
-
 class cfgVehicles
 {
 	#include "cfgVehicles.hpp"
