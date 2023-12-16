@@ -113,6 +113,7 @@ class cfgPatches
 			"RB205_clone_sergeant",
 			"RB205_clone_sergeantMajor",
 			"RB205_clone_lieutenant",
+
 			"RB205_clone_ab_recruit",
 			"RB205_clone_ab_trooper",
 			"RB205_clone_ab_lanceCorporal",
@@ -120,6 +121,22 @@ class cfgPatches
 			"RB205_clone_ab_sergeant",
 			"RB205_clone_ab_sergeantMajor",
 			"RB205_clone_ab_lieutenant",
+
+			"RB205_clone_arf_recruit",
+			"RB205_clone_arf_trooper",
+			"RB205_clone_arf_lanceCorporal",
+			"RB205_clone_arf_corporal",
+			"RB205_clone_arf_sergeant",
+			"RB205_clone_arf_sergeantMajor",
+			"RB205_clone_arf_lieutenant",
+
+			"RB205_clone_plt_recruit",
+			"RB205_clone_plt_trooper",
+			"RB205_clone_plt_lanceCorporal",
+			"RB205_clone_plt_corporal",
+			"RB205_clone_plt_sergeant",
+			"RB205_clone_plt_sergeantMajor",
+			"RB205_clone_plt_lieutenant",
 
 			"RB205_B_heavy",
 			"RB205_B_medic",

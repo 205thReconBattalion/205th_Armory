@@ -91,10 +91,10 @@ tf_subtype="digital_lr";
 linkedItems[] = \
 { \
 	##HELMET##,##VEST##,##NVG##, \
-	"SWLB_clone_binocular","ItemMap","ItemGPS","JLTS_clone_comlink","ItemCompass","TFAR_microdagr" \
+	"ItemMap","ItemGPS","JLTS_clone_comlink","ItemCompass","TFAR_microdagr" \
 }; \
 respawnlinkedItems[] = \
 { \
 	##HELMET##,##VEST##,##NVG##, \
-	"SWLB_clone_binocular","ItemMap","ItemGPS","JLTS_clone_comlink","ItemCompass","TFAR_microdagr" \
+	"ItemMap","ItemGPS","JLTS_clone_comlink","ItemCompass","TFAR_microdagr" \
 };

@@ -393,7 +393,81 @@ class RB205_U_lieutenant: RB205_U_lt_base
 	displayName = "[205] Clone Trooper Armor (Lieutenant)";
 	class ItemInfo: ItemInfo
     {
-        uniformClass = RB205_clone_corporal;
+        uniformClass = RB205_clone_lieutenant;
+    };
+};
+
+class RB205_U_arf_trooper: RB205_U_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone ARF Trooper Armor";
+	class ItemInfo: ItemInfo
+    {
+        uniformClass = RB205_clone_arf_trooper;
+    };
+};
+class RB205_U_arf_corporal: RB205_U_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone ARF Trooper Armor (Corporal)";
+	class ItemInfo: ItemInfo
+    {
+        uniformClass = RB205_clone_arf_corporal;
+    };
+};
+class RB205_U_arf_sergeant: RB205_U_sgt_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone ARF Trooper Armor (Sergeant)";
+	class ItemInfo: ItemInfo
+    {
+        uniformClass = RB205_clone_arf_sergeant;
+    };
+};
+class RB205_U_arf_lieutenant: RB205_U_lt_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone ARF Trooper Armor (Lieutenant)";
+	class ItemInfo: ItemInfo
+    {
+        uniformClass = RB205_clone_arf_lieutenant;
+    };
+};
+
+class RB205_U_plt_trooper: RB205_U_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Pilot Trooper Armor";
+	class ItemInfo: ItemInfo
+    {
+        uniformClass = RB205_clone_plt_trooper;
+    };
+};
+class RB205_U_plt_corporal: RB205_U_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Pilot Trooper Armor (Corporal)";
+	class ItemInfo: ItemInfo
+    {
+        uniformClass = RB205_clone_plt_corporal;
+    };
+};
+class RB205_U_plt_sergeant: RB205_U_sgt_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Pilot Trooper Armor (Sergeant)";
+	class ItemInfo: ItemInfo
+    {
+        uniformClass = RB205_clone_plt_sergeant;
+    };
+};
+class RB205_U_plt_lieutenant: RB205_U_lt_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Pilot Trooper Armor (Lieutenant)";
+	class ItemInfo: ItemInfo
+    {
+        uniformClass = RB205_clone_plt_lieutenant;
     };
 };
 
