@@ -471,6 +471,62 @@ class RB205_U_plt_lieutenant: RB205_U_lt_base
     };
 };
 
+class RB205_U_snow_recruit: RB205_U_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Snow Recruit Armor";
+	class ItemInfo: ItemInfo
+    {
+        uniformClass = RB205_clone_snow_recruit;
+    };
+};
+class RB205_U_snow_trooper: RB205_U_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Snow Trooper Armor";
+	class ItemInfo: ItemInfo
+    {
+        uniformClass = RB205_clone_snow_trooper;
+    };
+};
+class RB205_U_snow_corporal: RB205_U_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Snow Trooper Armor (Corporal)";
+	class ItemInfo: ItemInfo
+    {
+        uniformClass = RB205_clone_snow_corporal;
+    };
+};
+class RB205_U_snow_sergeant: RB205_U_sgt_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Snow Trooper Armor (Sergeant)";
+	class ItemInfo: ItemInfo
+    {
+        uniformClass = RB205_clone_snow_sergeant;
+    };
+};
+class RB205_U_snow_lieutenant: RB205_U_lt_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Snow Trooper Armor (Lieutenant)";
+	class ItemInfo: ItemInfo
+    {
+        uniformClass = RB205_clone_snow_lieutenant;
+    };
+};
+
+class RB205_U_arc_trooper: RB205_U_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone ARC Trooper Armor";
+	class ItemInfo: ItemInfo
+    {
+        uniformClass = RB205_clone_arc_trooper;
+    };
+};
+
 /*
 	VESTS
 */

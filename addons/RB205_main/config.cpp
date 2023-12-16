@@ -23,33 +23,37 @@ class cfgPatches
 			"RB205_H_corporal",
 			"RB205_H_sergeant",
 			"RB205_H_lieutenant",
+
 			"RB205_H_ab_recruit",
 			"RB205_H_ab_trooper",
 			"RB205_H_ab_corporal",
 			"RB205_H_ab_sergeant",
 			"RB205_H_ab_lieutenant",
-			"RB205_V_ab_medic",
-			"RB205_V_ab_grenadier",
+
 			"RB205_H_arf_recruit",
 			"RB205_H_arf_trooper",
 			"RB205_H_arf_corporal",
 			"RB205_H_arf_sergeant",
 			"RB205_H_arf_lieutenant",
+
 			"RB205_H_arfF_recruit",
 			"RB205_H_arfF_trooper",
 			"RB205_H_arfF_corporal",
 			"RB205_H_arfF_sergeant",
 			"RB205_H_arfF_lieutenant",
+
 			"RB205_H_plt_recruit",
 			"RB205_H_plt_trooper",
 			"RB205_H_plt_corporal",
 			"RB205_H_plt_sergeant",
 			"RB205_H_plt_lieutenant",
+
 			"RB205_H_snow_recruit",
 			"RB205_H_snow_trooper",
 			"RB205_H_snow_corporal",
 			"RB205_H_snow_sergeant",
 			"RB205_H_snow_lieutenant",
+			
 			"RB205_H_arc_trooper",
 
 			"RB205_U_recruit",
@@ -57,6 +61,24 @@ class cfgPatches
 			"RB205_U_corporal",
 			"RB205_U_sergeant",
 			"RB205_U_lieutenant",
+			
+			"RB205_U_arf_trooper",
+			"RB205_U_arf_corporal",
+			"RB205_U_arf_sergeant",
+			"RB205_U_arf_lieutenant",
+			
+			"RB205_U_plt_trooper",
+			"RB205_U_plt_corporal",
+			"RB205_U_plt_sergeant",
+			"RB205_U_plt_lieutenant",
+			
+			"RB205_U_snow_recruit",
+			"RB205_U_snow_trooper",
+			"RB205_U_snow_corporal",
+			"RB205_U_snow_sergeant",
+			"RB205_U_snow_lieutenant",
+
+			"RB205_U_arc_trooper",
 			
 			"RB205_V_ct",
 			"RB205_V_clc",
@@ -67,6 +89,7 @@ class cfgPatches
 			"RB205_V_medic",
 			"RB205_V_grenadier",
 			"RB205_V_rebreather",
+
 			"RB205_V_ab_ct",
 			"RB205_V_ab_clc",
 			"RB205_V_ab_cp",
@@ -75,6 +98,7 @@ class cfgPatches
 			"RB205_V_ab_cl",
 			"RB205_V_ab_medic",
 			"RB205_V_ab_grenadier",
+
 			"RB205_V_arf_ct",
 			"RB205_V_arf_clc",
 			"RB205_V_arf_cp",
@@ -82,12 +106,14 @@ class cfgPatches
 			"RB205_V_arf_csm",
 			"RB205_V_arf_cl",
 			"RB205_V_arf_medic",
+
 			"RB205_V_plt_ct",
 			"RB205_V_plt_clc",
 			"RB205_V_plt_cp",
 			"RB205_V_plt_cs",
 			"RB205_V_plt_csm",
 			"RB205_V_plt_cl",
+
 			"RB205_V_snow_ct",
 			"RB205_V_snow_clc",
 			"RB205_V_snow_cp",
@@ -96,6 +122,7 @@ class cfgPatches
 			"RB205_V_snow_cl",
 			"RB205_V_snow_medic",
 			"RB205_V_snow_grenadier",
+
 			"RB205_V_arc",
 
 			"RB205_NV",
@@ -138,6 +165,16 @@ class cfgPatches
 			"RB205_clone_plt_sergeantMajor",
 			"RB205_clone_plt_lieutenant",
 
+			"RB205_clone_snow_recruit",
+			"RB205_clone_snow_trooper",
+			"RB205_clone_snow_lanceCorporal",
+			"RB205_clone_snow_corporal",
+			"RB205_clone_snow_sergeant",
+			"RB205_clone_snow_sergeantMajor",
+			"RB205_clone_snow_lieutenant",
+
+			"RB205_clone_arc_trooper",
+
 			"RB205_B_heavy",
 			"RB205_B_medic",
 			"RB205_B_rocket",
@@ -145,18 +182,22 @@ class cfgPatches
 			"RB205_B_radio",
 			"RB205_B_radio_mini",
 			"RB205_B_radio_mini_blk",
+
 			"RB205_B_ab",
 			"RB205_B_ab_heavy",
 			"RB205_B_ab_medic",
 			"RB205_B_ab_rocket",
 			"RB205_B_ab_eod",
 			"RB205_B_ab_radio",
+
 			"RB205_B_arf",
+
 			"RB205_B_snow_heavy",
 			"RB205_B_snow_medic",
 			"RB205_B_snow_rocket",
 			"RB205_B_snow_eod",
 			"RB205_B_snow_radio",
+
 			"RB205_B_arc",
 			"RB205_B_arc_jetpack"
 		};

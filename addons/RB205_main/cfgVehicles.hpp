@@ -288,6 +288,103 @@ class RB205_clone_plt_lieutenant: RB205_plt_base
 	LINKED_ITEMS(RB205_H_plt_lieutenant,"RB205_V_plt_cl","RB205_NV_chip")
 };
 
+class RB205_clone_snow_recruit: RB205_snow_base
+{
+	ACCESS_TRUE
+	displayName = "(1-CR) Clone Snow Recruit";
+	uniformclass = "RB205_U_snow_recruit";
+	hiddenselectionsTextures[] =
+	{
+		"RB205_main\data\snow\U_recruit_upper_co.paa",
+		"RB205_main\data\snow\U_recruit_lower_co.paa",
+		"RB205_main\data\snow\U_undersuit_co.paa"
+	};
+	LINKED_ITEMS(RB205_H_snow_recruit,"RB205_V_snow_ct","RB205_NV_chip")
+};
+class RB205_clone_snow_trooper: RB205_snow_base
+{
+	ACCESS_TRUE
+	displayName = "(2-CT) Clone Snow Trooper";
+	uniformclass = "RB205_U_snow_trooper";
+	hiddenselectionsTextures[] =
+	{
+		"RB205_main\data\snow\U_enl_upper_co.paa",
+		"RB205_main\data\snow\U_enl_lower_co.paa",
+		"RB205_main\data\snow\U_undersuit_co.paa"
+	};
+	LINKED_ITEMS(RB205_H_snow_trooper,"RB205_V_snow_ct","RB205_NV_chip")
+};
+class RB205_clone_snow_lanceCorporal: RB205_snow_base
+{
+	ACCESS_TRUE
+	displayName = "(3-CLC) Clone Snow Lance-Corporal";
+	uniformclass = "RB205_U_snow_corporal";
+	LINKED_ITEMS(RB205_H_snow_corporal,"RB205_V_snow_clc","RB205_NV_chip")
+};
+class RB205_clone_snow_corporal: RB205_snow_base
+{
+	ACCESS_TRUE
+	displayName = "(4-CP) Clone Snow Corporal";
+	uniformclass = "RB205_U_snow_corporal";
+	hiddenselectionsTextures[] =
+	{
+		"RB205_main\data\snow\U_nco_upper_co.paa",
+		"RB205_main\data\snow\U_nco_lower_co.paa",
+		"RB205_main\data\snow\U_undersuit_co.paa"
+	};
+	LINKED_ITEMS(RB205_H_snow_corporal,"RB205_V_snow_cp","RB205_NV_chip")
+};
+class RB205_clone_snow_sergeant: RB205_snow_base
+{
+	ACCESS_TRUE
+	displayName = "(5-CS) Clone Snow Sergeant";
+	uniformclass = "RB205_U_snow_sergeant";
+	hiddenselectionsTextures[] =
+	{
+		"RB205_main\data\snow\U_nco_upper_co.paa",
+		"RB205_main\data\snow\U_nco_lower_co.paa",
+		"RB205_main\data\snow\U_undersuit_co.paa"
+	};
+	LINKED_ITEMS(RB205_H_snow_sergeant,"RB205_V_snow_cs","RB205_NV_chip")
+};
+class RB205_clone_snow_sergeantMajor: RB205_snow_base
+{
+	ACCESS_TRUE
+	displayName = "(6-CSM) Clone Snow Sergeant-Major";
+	uniformclass = "RB205_U_snow_sergeant";
+	LINKED_ITEMS(RB205_H_snow_sergeant,"RB205_V_snow_csm","RB205_NV_chip")
+	backpack="RB205_B_radio_mini";
+};
+class RB205_clone_snow_lieutenant: RB205_snow_base
+{
+	ACCESS_TRUE
+	displayName = "(7-CL) Clone Snow Lieutenant";
+	uniformclass = "RB205_U_snow_lieutenant";
+	hiddenselectionsTextures[] =
+	{
+		"RB205_main\data\snow\U_nco_upper_co.paa",
+		"RB205_main\data\snow\U_nco_lower_co.paa",
+		"RB205_main\data\snow\U_undersuit_co.paa"
+	};
+	LINKED_ITEMS(RB205_H_snow_lieutenant,"RB205_V_snow_cl","RB205_NV_chip")
+	backpack="RB205_B_radio_mini";
+};
+
+class RB205_clone_arc_trooper: RB205_arc_base
+{
+	ACCESS_TRUE
+	displayName = "(ARC) Clone ARC Trooper";
+	uniformclass = "RB205_U_arc_trooper";
+	hiddenselectionsTextures[] =
+	{
+		"RB205_main\data\default\U_enl_upper_co.paa",
+		"RB205_main\data\default\U_enl_lower_co.paa",
+		"RB205_main\data\default\U_undersuit_co.paa"
+	};
+	LINKED_ITEMS(RB205_H_arc_trooper,"RB205_V_arc","RB205_NV_rangefinder")
+	backpack="RB205_B_arc";
+};
+
 class ls_gar_standard_backpack;
 class RB205_B_heavy: ls_gar_standard_backpack
 {

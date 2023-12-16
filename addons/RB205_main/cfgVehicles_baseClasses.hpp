@@ -141,6 +141,13 @@ class RB205_plt_base: RB205_clone_base
 class RB205_snow_base: RB205_clone_base
 {
 	ACCESS_FALSE
+	model="\armor_unit\21\21.p3d";
+	hiddenSelections[]=
+	{
+		"Camo1",
+		"Camo2",
+		"CamoB"
+	};
 	backpack="";
 	weapons[]=
 	{
