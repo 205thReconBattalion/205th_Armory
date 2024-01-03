@@ -31,6 +31,8 @@ class cfgPatches
 	};
 };
 
+#include "\RB205_weapons\emp_compat.hpp"
+
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
@@ -350,6 +352,7 @@ class CfgWeapons
 			};
 		};
 	};
+	//FRIED_WEAPON(RB205_DC17M,"\RB205_weapons\data\ui\dc17m_fried.paa")
 	class RB205_DC17M_blaster: RB205_DC17M
 	{
 		class LinkedItems
