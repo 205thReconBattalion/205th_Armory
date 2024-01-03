@@ -17,6 +17,8 @@ class cfgPatches
 	};
 };
 
+#include "\RB205_weapons\emp_compat.hpp"
+
 class CfgWeapons
 {
 	class JLTS_DP23;
@@ -32,4 +34,5 @@ class CfgWeapons
 		baseWeapon = "RB205_DP23";
         author = "205th Recon Battalion";
 	};
+	//FRIED_WEAPON(RB205_DP23,"\RB205_weapons\data\ui\dp23_fried.paa")
 };
