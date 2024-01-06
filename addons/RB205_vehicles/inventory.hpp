@@ -1,0 +1,210 @@
+
+#define VEH_INVENTORY \
+class TransportItems \
+{ \
+    class _transport_ToolKit \
+    { \
+        name = "ToolKit"; \
+        count = 1; \
+    }; \
+    class _tansport_JLTS_repairkit_weapon \
+    { \
+        name = "JLTS_repairkit_weapon"; \
+        count = 1; \
+    }; \
+    class _transport_EntrenchingTool \
+    { \
+        name = "ACE_EntrenchingTool"; \
+        count = 2; \
+    }; \
+    class _transport_ACE_rope6 \
+    { \
+        name = "ACE_rope6"; \
+        count = 1; \
+    }; \
+    class _transport_ACE_rope15 \
+    { \
+        name = "ACE_rope15"; \
+        count = 1; \
+    }; \
+    class _transport_ACE_rope36 \
+    { \
+        name = "ACE_rope36"; \
+        count = 1; \
+    }; \
+    class _transport_BodyBag \
+    { \
+        name = "ACE_BodyBag"; \
+        count = 5; \
+    }; \
+    class _transport_CableTie \
+    { \
+        name = "ACE_CableTie"; \
+        count = 25; \
+    }; \
+    class _transport_ACE_packingBandage \
+    { \
+        name = "ACE_packingBandage"; \
+        count = 75; \
+    }; \
+    class _transport_ACE_elasticBandage \
+    { \
+        name = "ACE_elasticBandage"; \
+        count = 50; \
+    }; \
+    class _transport_ACE_tourniquet \
+    { \
+        name = "ACE_tourniquet"; \
+        count = 8; \
+    }; \
+    class _transport_ACE_morphine \
+    { \
+        name = "ACE_morphine"; \
+        count = 10; \
+    }; \
+    class _transport_ACE_epinephrine \
+    { \
+        name = "ACE_epinephrine"; \
+        count = 10; \
+    }; \
+    class _transport_SurgicalKit \
+    { \
+        name = "ACE_surgicalKit"; \
+        count = 1; \
+    }; \
+    class _transport_ACE_suture \
+    { \
+        name = "ACE_suture"; \
+        count = 50; \
+    }; \
+    class _transport_ACE_salineIV \
+    { \
+        name = "ACE_salineIV"; \
+        count = 20; \
+    }; \
+    class _transport_ACE_salineIV_500 \
+    { \
+        name = "ACE_salineIV_500"; \
+        count = 10; \
+    }; \
+    class _transport_ACE_salineIV_250 \
+    { \
+        name = "ACE_salineIV_250"; \
+        count = 10; \
+    }; \
+}; \
+class TransportWeapons \
+{ \
+    class _transport_dc15a \
+    { \
+        weapon = "RB205_DC15A"; \
+        count = 2; \
+    }; \
+    class _transport_dc15s \
+    { \
+        weapon = "RB205_DC15S"; \
+        count = 2; \
+    }; \
+    class _transport_rps6Disposable \
+    { \
+        weapon = "RB205_RPS6_disposable"; \
+        count = 2; \
+    }; \
+}; \
+class TransportMagazines \
+{ \
+    class _transport_standardMag \
+    { \
+        magazine = "RB205_Standard_Energy_Pack"; \
+        count = 50; \
+    }; \
+}; \
+class TransportBackpacks \
+{ \
+    class _transport_backpack \
+    { \
+        backpack = "RB205_B_heavy"; \
+        count = 1; \
+    }; \
+};
+
+#define VEH_INVENTORY_LIGHT \
+class TransportItems \
+{ \
+    class _transport_ACE_rope6 \
+    { \
+        name = "ACE_rope6"; \
+        count = 1; \
+    }; \
+    class _tansport_JLTS_repairkit_weapon_mini \
+    { \
+        name = "JLTS_repairkit_weapon_mini"; \
+        count = 1; \
+    }; \
+    class _transport_CableTie \
+    { \
+        name = "ACE_CableTie"; \
+        count = 5; \
+    }; \
+    class _transport_ACE_packingBandage \
+    { \
+        name = "ACE_packingBandage"; \
+        count = 25; \
+    }; \
+    class _transport_ACE_elasticBandage \
+    { \
+        name = "ACE_elasticBandage"; \
+        count = 10; \
+    }; \
+    class _transport_ACE_tourniquet \
+    { \
+        name = "ACE_tourniquet"; \
+        count = 2; \
+    }; \
+    class _transport_ACE_morphine \
+    { \
+        name = "ACE_morphine"; \
+        count = 3; \
+    }; \
+    class _transport_ACE_epinephrine \
+    { \
+        name = "ACE_epinephrine"; \
+        count = 3; \
+    }; \
+    class _transport_SurgicalKit \
+    { \
+        name = "ACE_surgicalKit"; \
+        count = 1; \
+    }; \
+    class _transport_ACE_suture \
+    { \
+        name = "ACE_suture"; \
+        count = 8; \
+    }; \
+    class _transport_ACE_salineIV_500 \
+    { \
+        name = "ACE_salineIV_500"; \
+        count = 2; \
+    }; \
+    class _transport_ACE_salineIV_250 \
+    { \
+        name = "ACE_salineIV_250"; \
+        count = 2; \
+    }; \
+}; \
+class TransportWeapons \
+{ \
+    class _transport_dc17 \
+    { \
+        weapon = "RB205_DC17"; \
+        count = 1; \
+    }; \
+}; \
+class TransportMagazines \
+{ \
+    class transport_compactMag \
+    { \
+        magazine = "RB205_Compact_Energy_Pack"; \
+        count = 8; \
+    }; \
+};
