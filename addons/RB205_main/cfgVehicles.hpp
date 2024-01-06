@@ -435,7 +435,8 @@ class RB205_B_rocket: ls_gar_rocket_backpack
 		""
 	};
 };
-class RB205_B_eod: ls_gar_standard_backpack
+class ls_gar_heavy_backpack;
+class RB205_B_eod: ls_gar_heavy_backpack
 {
 	ACCESS_TRUE
 	author = "205th Recon Battalion";
@@ -446,7 +447,8 @@ class RB205_B_eod: ls_gar_standard_backpack
 	hiddenselectionstextures[] =
 	{
 		"RB205_main\data\default\B_eod_co.paa",
-		"RB205_main\data\default\B_cover_co.paa"
+		"RB205_main\data\default\B_cover_co.paa",
+		"RB205_main\data\default\B_pouches_co.paa"
 	};
 };
 class ls_gar_radio_backpack;
