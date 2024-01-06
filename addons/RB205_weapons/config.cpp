@@ -5,7 +5,8 @@ class cfgPatches
 		requiredAddons[] =
 		{
 			"3AS_Weapons",
-			"JLTS_Z6_mag"
+			"JLTS_weapons_Z6",
+			"JLTS_weapons_DP23"
 		};
 		requiredVersion = 1.0;
         author = "205th Recon Battalion";
