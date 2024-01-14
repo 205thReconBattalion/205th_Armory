@@ -36,16 +36,6 @@ class cfgWeapons
             };
     };
 
-    class RB205_V_ct;
-    class RB205_V_crossfire : RB205_V_ct
-    {
-        displayName = "[205] Clone Trooper Vest (4600)";
-        hiddenSelectionsTextures[] =
-            {
-                "RB205_custom\4600_crossfire\data\V_crossfire.paa"
-            };
-    };
-
     class RB205_U_trooper;
     class ItemInfo;
     class RB205_U_crossfire : RB205_U_trooper

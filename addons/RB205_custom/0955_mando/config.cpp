@@ -36,16 +36,6 @@ class cfgWeapons
             };
     };
 
-    class RB205_V_clc;
-    class RB205_V_mando : RB205_V_clc
-    {
-        displayName = "[205] Clone Trooper Vest (0955)";
-        hiddenSelectionsTextures[] =
-            {
-                "RB205_custom\0955_mando\data\V_mando.paa"
-            };
-    };
-
     class RB205_U_corporal;
     class ItemInfo;
     class RB205_U_mando : RB205_U_corporal
