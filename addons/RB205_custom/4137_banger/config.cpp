@@ -11,8 +11,7 @@ class RB205_custom_banger
     weapons[] =
     {
         "RB205_H_banger",
-        "RB205_U_banger",
-        "RB205_V_banger"
+        "RB205_U_banger"
     };
     units[]	=
     {
@@ -33,17 +32,6 @@ class RB205_H_banger: RB205_H_trooper
     {
         "RB205_custom\4137_banger\data\H_banger.paa",
         "RB205_main\data\default\visor_p2_co.paa"
-    };
-};
-
-
-class RB205_V_ct;
-class RB205_V_banger: RB205_V_ct
-{
-    displayName = "[205] Clone Trooper Vest (4137)";
-    hiddenSelectionsTextures[] =
-    {
-        "RB205_custom\4137_banger\data\V_banger.paa"
     };
 };
 
@@ -73,7 +61,7 @@ class RB205_clone_banger: RB205_clone_trooper
         "RB205_custom\4137_banger\data\U_banger_lower.paa",
         "RB205_main\data\default\U_undersuit_co.paa"
     };
-    LINKED_ITEMS("RB205_H_banger","RB205_V_banger","RB205_NV_chip")
+    LINKED_ITEMS("RB205_H_banger","RB205_V_ct","RB205_NV_chip")
     backpack = "RB205_B_medic";
 };
 };
