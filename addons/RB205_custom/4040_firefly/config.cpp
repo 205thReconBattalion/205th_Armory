@@ -61,7 +61,7 @@ class cfgVehicles
                 "RB205_custom\4040_firefly\data\U_firefly_lower.paa",
                 "RB205_main\data\default\U_undersuit_co.paa"
             };
-        LINKED_ITEMS(RB205_H_firefly, "RB205_V_ab_ct", "RB205_NV_rangefinder")
+        LINKED_ITEMS(RB205_H_firefly, "RB205_V_ab_ct", "RB205_NV_chip")
         backpack = "";
     };
 };
