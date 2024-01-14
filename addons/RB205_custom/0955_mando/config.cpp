@@ -11,8 +11,7 @@ class cfgPatches
         weapons[] =
             {
                 "RB205_H_mando",
-                "RB205_U_mando",
-                "RB205_V_mando"
+                "RB205_U_mando"
             };
         units[] =
             {
@@ -33,16 +32,6 @@ class cfgWeapons
             {
                 "RB205_custom\0955_mando\data\H_mando.paa",
                 "RB205_main\data\default\visor_p2_co.paa"
-            };
-    };
-
-    class RB205_V_clc;
-    class RB205_V_mando : RB205_V_clc
-    {
-        displayName = "[205] Clone Trooper Vest (0955)";
-        hiddenSelectionsTextures[] =
-            {
-                "RB205_custom\0955_mando\data\V_mando.paa"
             };
     };
 
@@ -72,7 +61,7 @@ class cfgVehicles
                 "RB205_custom\0955_mando\data\U_mando_lower.paa",
                 "RB205_main\data\default\U_undersuit_co.paa"
             };
-        LINKED_ITEMS(RB205_H_mando, "RB205_V_mando", "RB205_NV_rangefinder")
+        LINKED_ITEMS(RB205_H_mando, "RB205_V_clc", "RB205_NV_rangefinder")
         backpack = "";
     };
 };
