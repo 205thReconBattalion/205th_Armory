@@ -32,7 +32,7 @@ class RB205_H_kamaz: RB205_H_arf_sergeant
     {
         "RB205_custom\2609_kamaz\data\H_kamaz.paa",
         "",
-        "RB205_main\data\default\visor_p2_co.paa"
+        "RB205_main\data\arf\visor_arf_co.paa"
     };
 };
 

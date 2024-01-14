@@ -32,7 +32,7 @@ class RB205_H_jumper: RB205_H_arf_trooper
     {
         "RB205_custom\7565_jumper\data\H_jumper.paa",
         "\RB205_main\data\arf\H_arf_flaps_co.paa",
-        "RB205_main\data\default\visor_p2_co.paa"
+        "RB205_main\data\arf\visor_arf_co.paa"
     };
 };
 
