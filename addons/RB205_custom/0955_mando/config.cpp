@@ -4,7 +4,8 @@ class cfgPatches
     {
         requiredAddons[] =
             {
-                "RB205_main"
+                "RB205_main",
+                "RB205_custom"
             };
         requiredVersion = 1.0;
         weapons[] =
