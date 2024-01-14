@@ -61,7 +61,7 @@ class cfgVehicles
                 "RB205_custom\4600_crossfire\data\U_crossfire_lower.paa",
                 "RB205_main\data\default\U_undersuit_co.paa"
             };
-        LINKED_ITEMS(RB205_H_crossfire, "RB205_NV")
+        LINKED_ITEMS(RB205_H_crossfire, "RB205_V_ct", "RB205_NV")
         backpack = "";
     };
 };
