@@ -4,7 +4,8 @@ class RB205_custom_banger
 {
     requiredAddons[] =
     {
-        "RB205_main"
+        "RB205_main",
+        "RB205_custom"
     };
     requiredVersion = 1.0;
     weapons[] =
