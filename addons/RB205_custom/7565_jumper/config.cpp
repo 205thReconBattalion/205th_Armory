@@ -43,7 +43,7 @@ class RB205_U_jumper: RB205_U_arf_trooper
     displayName = "[205] Clone Trooper ARF Uniform (7565)";
     class ItemInfo: ItemInfo
     {
-        uniformClass = RB205_clone_jumer;
+        uniformClass = RB205_clone_jumper;
     };
 };
 };
