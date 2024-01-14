@@ -72,6 +72,6 @@ class cfgVehicles
                 "RB205_main\data\default\U_undersuit_co.paa"
             };
         LINKED_ITEMS(RB205_H_mando, "RB205_V_mando", "RB205_NV_rangefinder")
-        backpack = "RB205_B_radio_mini";
+        backpack = "";
     };
 };
