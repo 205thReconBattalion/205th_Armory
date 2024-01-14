@@ -62,6 +62,6 @@ class cfgVehicles
                 "RB205_main\data\default\U_undersuit_co.paa"
             };
         LINKED_ITEMS(RB205_H_firefly, "RB205_V_ab_ct", "RB205_NV_chip")
-        backpack = "";
+        backpack = "RB205_B_ab";
     };
 };
