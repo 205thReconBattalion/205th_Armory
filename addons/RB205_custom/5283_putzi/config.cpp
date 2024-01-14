@@ -61,7 +61,7 @@ class cfgVehicles
                 "RB205_custom\5283_putzi\data\U_putzi_lower.paa",
                 "RB205_main\data\default\U_undersuit_co.paa"
             };
-        LINKED_ITEMS(RB205_H_putzi, "RB205_V_ab_ct", "RB205_NV_rangefinder")
+        LINKED_ITEMS(RB205_H_putzi, "RB205_V_ab_ct", "RB205_NV_chip")
         backpack = "";
     };
 };
