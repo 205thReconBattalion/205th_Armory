@@ -11,8 +11,7 @@ class RB205_custom_jumper
     weapons[] =
     {
         "RB205_H_jumper",
-        "RB205_U_jumper",
-        "RB205_V_jumper"
+        "RB205_U_jumper"
     };
     units[]	=
     {
@@ -63,7 +62,7 @@ class RB205_clone_jumper: RB205_clone_arf_trooper
         "RB205_custom\7565_jumper\data\U_jumper_lower.paa",
         "RB205_main\data\default\U_undersuit_co.paa"
     };
-    LINKED_ITEMS("RB205_H_jumper","RB205_V_jumper","RB205_NV_arf_antenna")
+    LINKED_ITEMS("RB205_H_jumper","RB205_V_arf_ct","RB205_NV_arf_antenna")
     backpack = "RB205_B_arf";
 };
 };
