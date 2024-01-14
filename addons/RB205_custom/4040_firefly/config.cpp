@@ -53,7 +53,7 @@ class cfgVehicles
     class RB205_clone_ab_trooper;
     class RB205_clone_firefly : RB205_clone_ab_trooper
     {
-        displayName = "CLC-4040 firefly";
+        displayName = "CSP-4040 firefly";
         uniformclass = "RB205_U_firefly";
         editorSubCategory = "RB205_lore";
         hiddenselectionsTextures[] =
