@@ -53,7 +53,7 @@ class cfgVehicles
 class RB205_clone_arf_trooper;
 class RB205_clone_junior: RB205_clone_arf_trooper
 {
-    displayName = "CSP-5463 junior";
+    displayName = "CP-5463 junior";
     uniformclass = "RB205_U_junior";
     editorSubCategory = "RB205_lore";
     hiddenselectionsTextures[] =
@@ -62,7 +62,7 @@ class RB205_clone_junior: RB205_clone_arf_trooper
         "RB205_custom\5463_junior\data\U_junior_lower.paa",
         "RB205_main\data\default\U_undersuit_co.paa"
     };
-    LINKED_ITEMS("RB205_H_junior","RB205_V_arf_ct","RB205_NV_arf_antenna")
+    LINKED_ITEMS("RB205_H_junior","RB205_V_arf_cp","RB205_NV_arf_antenna")
     backpack = "RB205_B_arf";
 };
 };
