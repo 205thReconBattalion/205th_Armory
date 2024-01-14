@@ -52,7 +52,7 @@ class cfgVehicles
     class RB205_clone_ab_trooper;
     class RB205_clone_putzi : RB205_clone_ab_trooper
     {
-        displayName = "CSP-5283 putzi";
+        displayName = "CSP-5283 Putzi";
         uniformclass = "RB205_U_putzi";
         editorSubCategory = "RB205_lore";
         hiddenselectionsTextures[] =
