@@ -177,7 +177,7 @@ class RB205_H_arfF_recruit: RB205_H_arfF_base
 	hiddenSelectionsTextures[] =
 	{
 		"RB205_main\data\arf\H_arf_recruit_co.paa",
-		"RB205_main\data\arf\H_arf_flaps_co.paa",
+		"RB205_main\data\arf\H_arf_flaps_white_co.paa",
 		"ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa"
 	};
 };
@@ -1071,7 +1071,10 @@ class RB205_NV_arf_antenna: lsd_gar_rangefinder_nvg
 	picture = "\RB205_main\data\ui\other\icon_NV_arf.paa";
 	model = "\SWLB_equipment\facewears\helmet_ARF_antenna.p3d";
 	hiddenSelections[] = {};
-	hiddenSelectionsTextures[] = {};
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\arf\NV_arf_co.paa"
+	};
 	class ItemInfo
 	{
 		type = 616;
