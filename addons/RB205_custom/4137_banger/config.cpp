@@ -36,17 +36,6 @@ class RB205_H_banger: RB205_H_trooper
     };
 };
 
-
-class RB205_V_ct;
-class RB205_V_banger: RB205_V_ct
-{
-    displayName = "[205] Clone Trooper Vest (4137)";
-    hiddenSelectionsTextures[] =
-    {
-        "RB205_custom\4137_banger\data\V_banger.paa"
-    };
-};
-
 class RB205_U_trooper;
 class ItemInfo;
 class RB205_U_banger: RB205_U_trooper
