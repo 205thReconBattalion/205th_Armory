@@ -3,22 +3,22 @@ class cfgPatches
     class RB205_custom_smoker 
     { 
         requiredAddons[] = 
-            { 
-                "RB205_main", 
-                "RB205_custom" 
-            }; 
+        { 
+            "RB205_main", 
+            "RB205_custom" 
+        }; 
         requiredVersion = 1.0; 
         weapons[] = 
-            { 
-                "RB205_H_arc_smoker", 
-                "RB205_H_ab_smoker",
-                "RB205_U_smoker", 
-                "RB205_V_arc_smoker" 
-            }; 
+        { 
+            "RB205_H_arc_smoker", 
+            "RB205_H_ab_smoker",
+            "RB205_U_smoker", 
+            "RB205_V_arc_smoker" 
+        }; 
         units[] = 
-            { 
-                "RB205_clone_smoker" 
-            }; 
+        { 
+            "RB205_clone_smoker" 
+        }; 
     }; 
 }; 
  
@@ -81,12 +81,12 @@ class cfgVehicles
         uniformclass = "RB205_U_smoker"; 
         editorSubCategory = "RB205_lore"; 
         hiddenselectionsTextures[] = 
-            { 
-                "RB205_custom\2288_smoker\data\U_smoker_upper.paa", 
-                "RB205_custom\2288_smoker\data\U_smoker_lower.paa", 
-                "RB205_main\data\default\U_undersuit_co.paa" 
-            }; 
+        { 
+            "RB205_custom\2288_smoker\data\U_smoker_upper.paa", 
+            "RB205_custom\2288_smoker\data\U_smoker_lower.paa", 
+            "RB205_main\data\default\U_undersuit_co.paa" 
+        }; 
         LINKED_ITEMS("RB205_H_arc_smoker", "RB205_V_arc_smoker", "RB205_NV_rangefinder") 
-        backpack = "RB205_B_arc"; 
+        backpack = "RB205_B_arc_jetpack"; 
     }; 
 };
