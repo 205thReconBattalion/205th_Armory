@@ -28,7 +28,7 @@ class cfgWeapons
     class RB205_H_arc_trooper;
     class RB205_H_arc_gentleman : RB205_H_arc_trooper
     {
-        displayName = "[205] ARC Trooper Helmet [2441]";
+        displayName = "[205] Clone ARC Trooper Helmet [2441]";
         hiddenSelectionsTextures[] =
             {
                 "RB205_custom\2441_gentleman\data\H_gentleman.paa",
@@ -40,7 +40,7 @@ class cfgWeapons
     class ItemInfo;
     class RB205_U_gentleman : RB205_U_arc_trooper
     {
-        displayName = "[205] ARC Trooper Uniform [2441]";
+        displayName = "[205] Clone ARC Trooper Armor [2441]";
         class ItemInfo : ItemInfo
         {
             uniformClass = RB205_clone_gentleman;
@@ -50,7 +50,7 @@ class cfgWeapons
     class RB205_V_arc;
     class RB205_V_arc_gentleman : RB205_V_arc
     {
-        displayName = "[205] ARC Trooper Vest [2441]";
+        displayName = "[205] Clone ARC Trooper Vest [2441]";
         hiddenSelectionsTextures[] =
         {
             "RB205_custom\2441_gentleman\data\V_arc_gentleman.paa",
@@ -75,6 +75,6 @@ class cfgVehicles
                 "RB205_main\data\default\U_undersuit_co.paa"
             };
         LINKED_ITEMS("RB205_H_arc_gentleman", "RB205_V_arc_gentleman", "RB205_NV_rangefinder")
-        backpack = "RB205_B_arc";
+        backpack = "";
     };
 };
