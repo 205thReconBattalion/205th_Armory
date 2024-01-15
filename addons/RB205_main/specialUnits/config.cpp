@@ -18,11 +18,13 @@ class cfgPatches
 			"RB205_clone_trooper_rto",
 
 			"RB205_clone_ab_trooper_medic",
+			"RB205_clone_ab_trooper_rto",
 
 			"RB205_clone_arf_trooper_medic",
 			"RB205_clone_arf_trooper_sniper",
 
-			"Rb205_clone_snow_trooper_medic"
+			"Rb205_clone_snow_trooper_medic",
+			"Rb205_clone_snow_trooper_rto"
 		};
 	};
 };
@@ -165,6 +167,14 @@ class cfgVehicles
 		LINKED_ITEMS(RB205_H_ab_trooper,"RB205_V_ab_medic","RB205_NV_chip")
 		backpack = "RB205_B_ab_medic";
 	};
+	class RB205_clone_ab_trooper_rto: RB205_clone_ab_trooper
+	{
+		ACCESS_TRUE
+		displayName = "Clone Airborne Trooper <RTO>";
+		uniformclass = "RB205_U_trooper";
+		LINKED_ITEMS(RB205_H_ab_trooper,"RB205_V_ab_ct","RB205_NV_chip")
+		backpack = "RB205_B_ab_radio";
+	};
 
 	class RB205_clone_arf_trooper;
 	class RB205_clone_arf_trooper_medic: RB205_clone_arf_trooper
@@ -218,5 +228,13 @@ class cfgVehicles
 		uniformclass = "RB205_U_snow_trooper";
 		LINKED_ITEMS(RB205_H_snow_trooper,"RB205_V_snow_medic","RB205_NV_chip")
 		backpack = "RB205_B_snow_medic";
+	};
+	class Rb205_clone_snow_trooper_rto: RB205_clone_snow_trooper
+	{
+		ACCESS_TRUE
+		displayName = "Clone Snow Trooper <RTO>";
+		uniformclass = "RB205_U_snow_trooper";
+		LINKED_ITEMS(RB205_H_snow_trooper,"RB205_V_snow_ct","RB205_NV_chip")
+		backpack = "RB205_B_snow_radio";
 	};
 };
