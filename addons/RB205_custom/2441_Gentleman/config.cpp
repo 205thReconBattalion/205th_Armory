@@ -74,6 +74,6 @@ class cfgVehicles
                 "RB205_custom\2441_gentleman\data\U_gentleman_lower.paa",
                 "RB205_main\data\default\U_undersuit_co.paa"
             };
-        LINKED_ITEMS("RB205_H_arc_gentleman", "RB205_V_arc_gentleman", "RB205_NV_rangefinder");
+        LINKED_ITEMS("RB205_H_arc_gentleman", "RB205_V_arc_gentleman", "RB205_NV_rangefinder")
     };
 };
