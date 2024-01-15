@@ -29,7 +29,7 @@ class cfgWeapons
     class RB205_H_arc_trooper; 
     class RB205_H_arc_smoker : RB205_H_arc_trooper 
     { 
-        displayName = "[205] ARC Trooper Helmet [2288]"; 
+        displayName = "[205] Clone ARC Trooper Helmet [2288]"; 
         hiddenSelectionsTextures[] = 
         { 
             "RB205_custom\2288_smoker\data\H_smoker.paa", 
@@ -40,7 +40,7 @@ class cfgWeapons
     class RB205_H_ab_sergeant; 
     class RB205_H_ab_smoker : RB205_H_ab_sergeant 
     { 
-        displayName = "[205] Airborne Trooper Helmet [2288]"; 
+        displayName = "[205] Clone Airborne Trooper Helmet [2288]"; 
         hiddenSelectionsTextures[] = 
         { 
             "RB205_custom\2288_smoker\data\H_smoker_airborne.paa",
@@ -52,7 +52,7 @@ class cfgWeapons
     class ItemInfo; 
     class RB205_U_smoker : RB205_U_arc_trooper 
     { 
-        displayName = "[205] ARC Trooper Uniform [2288]"; 
+        displayName = "[205] Clone ARC Trooper Armor [2288]"; 
         class ItemInfo : ItemInfo 
         { 
             uniformClass = RB205_clone_smoker; 
@@ -62,7 +62,7 @@ class cfgWeapons
     class RB205_V_arc; 
     class RB205_V_arc_smoker : RB205_V_arc 
     { 
-        displayName = "[205] ARC Trooper Vest [2288]"; 
+        displayName = "[205] Clone ARC Trooper Vest [2288]"; 
         hiddenSelectionsTextures[] = 
         { 
             "RB205_custom\2288_smoker\data\V_arc_smoker.paa", 
