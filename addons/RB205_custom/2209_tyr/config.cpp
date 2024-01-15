@@ -52,7 +52,7 @@ class cfgVehicles
     class RB205_clone_trooper;
     class RB205_clone_tyr : RB205_clone_trooper
     {
-        displayName = "CST-2209 Tyr";
+        displayName = "CSP-2209 Tyr";
         uniformclass = "RB205_U_tyr";
         editorSubCategory = "RB205_lore";
         hiddenselectionsTextures[] =
