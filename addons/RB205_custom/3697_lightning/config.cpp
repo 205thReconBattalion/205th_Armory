@@ -1,6 +1,6 @@
 class cfgPatches
 {
-    class RB205_custom_lighting
+    class RB205_custom_lightning
     {
         requiredAddons[] =
         {
@@ -11,8 +11,8 @@ class cfgPatches
         weapons[] =
         {
             "RB205_H_lightning",
-            "RB205_U_lightning",
-            "RB205_V_lightning"
+            "RB205_V_lightning",
+            "RB205_U_lightning"
         };
         units[]	=
         {
@@ -28,7 +28,7 @@ class cfgWeapons
     class RB205_H_sergeant;
     class RB205_H_lightning: RB205_H_sergeant
     {
-        displayName = "[205] Clone Trooper Helmet (3697)";
+        displayName = "[205] Clone Trooper Helmet [3697]";
         hiddenSelectionsTextures[] =
         {
             "RB205_custom\3697_lightning\data\H_lightning.paa",
@@ -39,7 +39,7 @@ class cfgWeapons
     class RB205_V_cs;
     class RB205_V_lightning: RB205_V_cs
     {
-        displayName = "[205] Clone Trooper Vest (3697)";
+        displayName = "[205] Clone Trooper Vest [3697]";
         hiddenSelectionsTextures[] =
         {
             "RB205_custom\3697_lightning\data\V_lightning.paa"
@@ -50,7 +50,7 @@ class cfgWeapons
     class ItemInfo;
     class RB205_U_lightning: RB205_U_sergeant
     {
-        displayName = "[205] Clone Trooper Uniform (3697)";
+        displayName = "[205] Clone Trooper Uniform [3697]";
         class ItemInfo: ItemInfo
         {
             uniformClass = RB205_clone_lightning;
