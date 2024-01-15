@@ -50,7 +50,7 @@ class cfgWeapons
     class ItemInfo;
     class RB205_U_lightning: RB205_U_sergeant
     {
-        displayName = "[205] Clone Trooper Uniform [3697]";
+        displayName = "[205] Clone Trooper Armor [3697]";
         class ItemInfo: ItemInfo
         {
             uniformClass = RB205_clone_lightning;

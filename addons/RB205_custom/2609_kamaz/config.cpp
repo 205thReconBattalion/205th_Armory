@@ -11,8 +11,7 @@ class RB205_custom_kamaz
     weapons[] =
     {
         "RB205_H_kamaz",
-        "RB205_U_kamaz",
-        "RB205_V_kamaz"
+        "RB205_U_kamaz"
     };
     units[]	=
     {
@@ -28,7 +27,7 @@ class cfgWeapons
     class RB205_H_arf_sergeant;
     class RB205_H_kamaz: RB205_H_arf_sergeant
     {
-        displayName = "[205] Clone Trooper ARF Helmet [2609]";
+        displayName = "[205] Clone ARF Trooper Helmet [2609]";
         hiddenSelectionsTextures[] =
         {
             "RB205_custom\2609_kamaz\data\H_kamaz.paa",
@@ -41,20 +40,10 @@ class cfgWeapons
     class ItemInfo;
     class RB205_U_kamaz: RB205_U_arf_sergeant
     {
-        displayName = "[205] Clone Trooper ARF Uniform [2609]";
+        displayName = "[205] Clone ARF Trooper Armor [2609]";
         class ItemInfo: ItemInfo
         {
             uniformClass = RB205_clone_kamaz;
-        };
-    };
-
-    class RB205_V_arf_cs;
-    class RB205_V_kamaz: RB205_V_arf_cs
-    {
-        displayName = "[205] Clone Trooper Vest [2609]";
-        hiddenSelectionsTextures[] =
-        {
-            "RB205_custom\2609_kamaz\data\V_kamaz.paa"
         };
     };
 };
@@ -73,6 +62,6 @@ class cfgVehicles
             "RB205_custom\2609_kamaz\data\U_kamaz_lower.paa",
             "RB205_main\data\default\U_undersuit_co.paa"
         };
-        LINKED_ITEMS("RB205_H_kamaz","RB205_V_kamaz","RB205_NV_arf_antenna")
+        LINKED_ITEMS("RB205_H_kamaz","RB205_V_arf_cs","RB205_NV_arf_antenna")
     };
 };
