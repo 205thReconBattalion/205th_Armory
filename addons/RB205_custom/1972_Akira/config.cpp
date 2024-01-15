@@ -61,7 +61,6 @@ class RB205_clone_plt_akira: RB205_clone_plt_corporal
         "RB205_custom\1972_akira\data\U_akira_lower.paa",
         "RB205_main\data\default\U_undersuit_co.paa"
         };
-    LINKED_ITEMS("RB205_H_plt_akira","RB205_V_plt_cp","RB205_NV_chip")
-    backpack = "";
+    LINKED_ITEMS("RB205_H_plt_akira","RB205_V_plt_cp","RB205_NV_chip");
 };
 };
