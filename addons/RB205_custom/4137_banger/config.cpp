@@ -1,50 +1,50 @@
 class cfgPatches
 {
-class RB205_custom_banger
-{
-    requiredAddons[] =
+    class RB205_custom_banger
     {
-        "RB205_main",
-        "RB205_custom"
+        requiredAddons[] =
+        {
+            "RB205_main",
+            "RB205_custom"
+        };
+        requiredVersion = 1.0;
+        weapons[] =
+        {
+            "RB205_H_banger",
+            "RB205_U_banger"
+        };
+        units[]	=
+        {
+            "RB205_clone_banger"
+        };
     };
-    requiredVersion = 1.0;
-    weapons[] =
-    {
-        "RB205_H_banger",
-        "RB205_U_banger"
-    };
-    units[]	=
-    {
-        "RB205_clone_banger"
-    };
-};
 };
 
 #include "\RB205_main\macros.hpp"
 
 class cfgWeapons
 {
-class RB205_H_trooper;
-class RB205_H_banger: RB205_H_trooper
-{
-    displayName = "[205] Clone Trooper Helmet (4137)";
-    hiddenSelectionsTextures[] =
+    class RB205_H_trooper;
+    class RB205_H_banger: RB205_H_trooper
     {
-        "RB205_custom\4137_banger\data\H_banger.paa",
-        "RB205_main\data\default\visor_p2_co.paa"
+        displayName = "[205] Clone Trooper Helmet [4137]";
+        hiddenSelectionsTextures[] =
+        {
+            "RB205_custom\4137_banger\data\H_banger.paa",
+            "RB205_main\data\default\visor_p2_co.paa"
+        };
     };
-};
 
-class RB205_U_trooper;
-class ItemInfo;
-class RB205_U_banger: RB205_U_trooper
-{
-    displayName = "[205] Clone Trooper Uniform (4137)";
-    class ItemInfo: ItemInfo
+    class RB205_U_trooper;
+    class ItemInfo;
+    class RB205_U_banger: RB205_U_trooper
     {
-        uniformClass = RB205_clone_banger;
+        displayName = "[205] Clone Trooper Armor [4137]";
+        class ItemInfo: ItemInfo
+        {
+            uniformClass = RB205_clone_banger;
+        };
     };
-};
 };
 
 class cfgVehicles
@@ -61,7 +61,7 @@ class RB205_clone_banger: RB205_clone_trooper
         "RB205_custom\4137_banger\data\U_banger_lower.paa",
         "RB205_main\data\default\U_undersuit_co.paa"
     };
-    LINKED_ITEMS("RB205_H_banger","RB205_V_ct","RB205_NV_chip")
+    LINKED_ITEMS("RB205_H_banger","RB205_V_medic","RB205_NV_chip")
     backpack = "RB205_B_medic";
 };
 };

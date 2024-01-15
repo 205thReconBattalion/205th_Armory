@@ -28,7 +28,7 @@ class cfgWeapons
     class RB205_H_lieutenant;
 	class RB205_H_doc: RB205_H_lieutenant
 	{
-		displayName = "[205] Clone Trooper Helmet (7005)";
+		displayName = "[205] Clone Trooper Helmet [7005]";
         hiddenSelectionsTextures[] =
         {
             "RB205_custom\7005_doc\data\H_doc.paa",
@@ -39,7 +39,7 @@ class cfgWeapons
     class RB205_H_arf_lieutenant;
     class RB205_H_arf_doc: RB205_H_arf_lieutenant
 	{
-		displayName = "[205] Clone ARF Trooper Helmet (7005)";
+		displayName = "[205] Clone ARF Trooper Helmet [7005]";
         hiddenSelectionsTextures[] =
         {
             "RB205_custom\7005_doc\data\H_doc_arf.paa",
@@ -51,7 +51,7 @@ class cfgWeapons
     class RB205_V_cl;
     class RB205_V_doc: RB205_V_cl
     {
-        displayName = "[205] Clone Trooper Vest (7005)";
+        displayName = "[205] Clone Trooper Vest [7005]";
         hiddenSelectionsTextures[] =
         {
             "RB205_custom\7005_doc\data\V_doc.paa"
@@ -62,7 +62,7 @@ class cfgWeapons
     class ItemInfo;
     class RB205_U_doc: RB205_U_lieutenant
     {
-        displayName = "[205] Clone Trooper Uniform (7005)";
+        displayName = "[205] Clone Trooper Armor [7005]";
         class ItemInfo: ItemInfo
         {
             uniformClass = RB205_clone_doc;
@@ -85,6 +85,5 @@ class cfgVehicles
             "RB205_main\data\default\U_undersuit_co.paa"
         };
         LINKED_ITEMS(RB205_H_doc,"RB205_V_doc","RB205_NV_rangefinder")
-	    backpack = "RB205_B_radio_mini";
     };
 };
