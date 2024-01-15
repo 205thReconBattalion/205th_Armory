@@ -31,8 +31,8 @@ class cfgWeapons
         hiddenSelectionsTextures[] =
         {
             "RB205_custom\7565_jumper\data\H_jumper.paa",
-            "\RB205_main\data\arf\H_arf_flaps_co.paa",
-            "RB205_main\data\default\visor_p2_co.paa"
+            "RB205_main\data\arf\H_arf_flaps_co.paa",
+            "RB205_main\data\arf\visor_arf_co.paa"
         };
     };
 
@@ -43,7 +43,7 @@ class cfgWeapons
         displayName = "[205] Clone ARF Trooper Armor [7565]";
         class ItemInfo: ItemInfo
         {
-            uniformClass = RB205_clone_jumer;
+            uniformClass = RB205_clone_jumper;
         };
     };
 };
