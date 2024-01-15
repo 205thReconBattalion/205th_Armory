@@ -27,7 +27,7 @@ class cfgWeapons
 class RB205_H_arf_trooper;
 class RB205_H_junior: RB205_H_arf_trooper
 {
-    displayName = "[205] Clone ARF Trooper Helmet (5463)";
+    displayName = "[205] Clone ARF Trooper Helmet [5463]";
     hiddenSelectionsTextures[] =
     {
         "RB205_custom\5463_junior\data\H_junior.paa",
@@ -40,7 +40,7 @@ class RB205_U_arf_trooper;
 class ItemInfo;
 class RB205_U_junior: RB205_U_arf_trooper
 {
-    displayName = "[205] Clone ARF Trooper Uniform (5463)";
+    displayName = "[205] Clone ARF Trooper Uniform [5463]";
     class ItemInfo: ItemInfo
     {
         uniformClass = RB205_clone_junior;
