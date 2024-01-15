@@ -53,7 +53,7 @@ class cfgVehicles
     class RB205_clone_arf_trooper;
     class RB205_clone_jupp: RB205_clone_arf_trooper
     {
-        displayName = "CSP-1262 jupp";
+        displayName = "CSP-1262 Jupp";
         uniformclass = "RB205_U_jupp";
         editorSubCategory = "RB205_lore";
         hiddenselectionsTextures[] =
