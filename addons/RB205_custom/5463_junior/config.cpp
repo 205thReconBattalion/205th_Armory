@@ -62,6 +62,6 @@ class RB205_clone_junior: RB205_clone_arf_corporal
         "RB205_custom\5463_junior\data\U_junior_lower.paa",
         "RB205_main\data\default\U_undersuit_co.paa"
     };
-    LINKED_ITEMS("RB205_H_junior","RB205_V_arf_cp","RB205_NV_arf_antenna");
+    LINKED_ITEMS("RB205_H_junior","RB205_V_arf_cp","RB205_NV_arf_antenna")
 };
 };
