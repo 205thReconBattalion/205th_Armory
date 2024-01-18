@@ -4,7 +4,11 @@
 
 #define DC17_IN_USE "RB205_DC17_alt"
 
-class ls_gar_phase2_base;
+class lsd_gar_phase2_base;
+class ls_gar_phase2_base: lsd_gar_phase2_base
+{
+	class HitPoints;
+};
 class RB205_clone_base: ls_gar_phase2_base
 {
 	ACCESS_FALSE
@@ -66,6 +70,223 @@ class RB205_clone_base: ls_gar_phase2_base
 		"ACE_epinephrin","ACE_epinephrin","ACE_epinephrin",
 		"ACE_morphine","ACE_morphine","ACE_morphine"
 	};
+	class HitPoints: HitPoints
+	{
+		class HitFace
+		{
+			armor=1;
+			material=-1;
+			name="face_hub";
+			passThrough=0.80000001;
+			radius=0.079999998;
+			explosionShielding=0.1;
+			minimalHit=0.0099999998;
+		};
+		class HitNeck: HitFace
+		{
+			armor=1;
+			material=-1;
+			name="neck";
+			passThrough=0.80000001;
+			radius=0.1;
+			explosionShielding=0.5;
+			minimalHit=0.0099999998;
+		};
+		class HitHead: HitNeck
+		{
+			armor=1;
+			material=-1;
+			name="head";
+			passThrough=0.80000001;
+			radius=0.2;
+			explosionShielding=0.5;
+			minimalHit=0.0099999998;
+			depends="HitFace max HitNeck";
+		};
+		class HitPelvis: HitHead
+		{
+			armor=8;
+			material=-1;
+			name="pelvis";
+			passThrough=0.80000001;
+			radius=0.23999999;
+			explosionShielding=3;
+			visual="injury_body";
+			minimalHit=0.0099999998;
+			depends="";
+		};
+		class HitAbdomen: HitPelvis
+		{
+			armor=6;
+			material=-1;
+			name="spine1";
+			passThrough=0.80000001;
+			radius=0.16;
+			explosionShielding=3;
+			visual="injury_body";
+			minimalHit=0.0099999998;
+		};
+		class HitDiaphragm: HitAbdomen
+		{
+			armor=6;
+			material=-1;
+			name="spine2";
+			passThrough=0.33000001;
+			radius=0.18000001;
+			explosionShielding=6;
+			visual="injury_body";
+			minimalHit=0.0099999998;
+		};
+		class HitChest: HitDiaphragm
+		{
+			armor=8;
+			material=-1;
+			name="spine3";
+			passThrough=0.33000001;
+			radius=0.18000001;
+			explosionShielding=6;
+			visual="injury_body";
+			minimalHit=0.0099999998;
+		};
+		class HitBody: HitChest
+		{
+			armor=1000;
+			material=-1;
+			name="body";
+			passThrough=1;
+			radius=0;
+			explosionShielding=6;
+			visual="injury_body";
+			minimalHit=0.0099999998;
+			depends="HitPelvis max HitAbdomen max HitDiaphragm max HitChest";
+		};
+		class HitArms: HitBody
+		{
+			armor=6;
+			material=-1;
+			name="arms";
+			passThrough=1;
+			radius=0.1;
+			explosionShielding=3;
+			visual="injury_hands";
+			minimalHit=0.0099999998;
+			depends="0";
+		};
+		class HitHands: HitArms
+		{
+			armor=6;
+			material=-1;
+			name="hands";
+			passThrough=1;
+			radius=0.1;
+			explosionShielding=1;
+			visual="injury_hands";
+			minimalHit=0.0099999998;
+			depends="HitArms";
+		};
+		class HitLegs: HitHands
+		{
+			armor=6;
+			material=-1;
+			name="legs";
+			passThrough=1;
+			radius=0.14;
+			explosionShielding=3;
+			visual="injury_legs";
+			minimalHit=0.0099999998;
+			depends="0";
+		};
+		class Incapacitated: HitLegs
+		{
+			armor=1000;
+			material=-1;
+			name="body";
+			passThrough=1;
+			radius=0;
+			explosionShielding=3;
+			visual="";
+			minimalHit=0;
+			depends="(((Total - 0.25) max 0) + ((HitHead - 0.25) max 0) + ((HitBody - 0.25) max 0)) * 2";
+		};
+		class HitLeftArm
+		{
+			armor=6;
+			material=-1;
+			name="hand_l";
+			passThrough=1;
+			radius=0.079999998;
+			explosionShielding=3;
+			visual="injury_hands";
+			minimalHit=0.0099999998;
+		};
+		class HitRightArm: HitLeftArm
+		{
+			name="hand_r";
+		};
+		class HitLeftLeg
+		{
+			armor=6;
+			material=-1;
+			name="leg_l";
+			passThrough=1;
+			radius=0.1;
+			explosionShielding=3;
+			visual="injury_legs";
+			minimalHit=0.0099999998;
+		};
+		class HitRightLeg: HitLeftLeg
+		{
+			name="leg_r";
+		};
+	};
+	armor=2;
+	armorStructural=4;
+	explosionShielding=0.40000001;
+	minTotalDamageThreshold=0.001;
+	impactDamageMultiplier=0.5;
+	/*class Wounds
+	{
+		tex[]={};
+		mat[]=
+		{
+			"MRC\JLTS\Characters\CloneArmor\data\Clone_armor1.rvmat",
+			"MRC\JLTS\Characters\CloneArmor\data\Clone_armor1_injury.rvmat",
+			"MRC\JLTS\Characters\CloneArmor\data\Clone_armor1_injury.rvmat",
+			"MRC\JLTS\Characters\CloneArmor\data\Clone_armor2.rvmat",
+			"MRC\JLTS\Characters\CloneArmor\data\Clone_armor2_injury.rvmat",
+			"MRC\JLTS\Characters\CloneArmor\data\Clone_armor2_injury.rvmat",
+			"A3\Characters_F\Common\Data\basicbody.rvmat",
+			"A3\Characters_F\Common\Data\basicbody_injury.rvmat",
+			"A3\Characters_F\Common\Data\basicbody_injury.rvmat",
+			"a3\characters_f\heads\data\hl_white.rvmat",
+			"a3\characters_f\heads\data\hl_white_injury.rvmat",
+			"a3\characters_f\heads\data\hl_white_injury.rvmat",
+			"A3\Characters_F\Heads\Data\hl_white_bald_muscular.rvmat",
+			"A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat",
+			"A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat",
+			"A3\Characters_F\Heads\Data\hl_white_02_bald_muscular.rvmat",
+			"A3\Characters_F\Heads\Data\hl_white_02_bald_muscular_injury.rvmat",
+			"A3\Characters_F\Heads\Data\hl_white_02_bald_muscular_injury.rvmat",
+			"A3\Characters_F\Heads\Data\hl_black_bald_muscular.rvmat",
+			"A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat",
+			"A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat",
+			"A3\Characters_F\Heads\Data\hl_white_hairy_muscular.rvmat",
+			"A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat",
+			"A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat",
+			"A3\Characters_F\Heads\Data\hl_white_old.rvmat",
+			"A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat",
+			"A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat",
+			"A3\Characters_F\Heads\Data\hl_asian_bald_muscular.rvmat",
+			"A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat",
+			"A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat",
+			"A3\Characters_F_Exp\Heads\Data\hl_tanoan_bald_muscular.rvmat",
+			"A3\Characters_F_Exp\Heads\Data\hl_tanoan_bald_muscular_injury.rvmat",
+			"A3\Characters_F_Exp\Heads\Data\hl_tanoan_bald_muscular_injury.rvmat",
+			"A3\Characters_F_Exp\Heads\Data\hl_asian_02_bald_muscular.rvmat",
+			"A3\Characters_F_Exp\Heads\Data\hl_asian_02_bald_muscular_injury.rvmat",
+			"A3\Characters_F_Exp\Heads\Data\hl_asian_02_bald_muscular_injury.rvmat"
+		};
+	};*/
 };
 class RB205_ab_base: RB205_clone_base
 {
