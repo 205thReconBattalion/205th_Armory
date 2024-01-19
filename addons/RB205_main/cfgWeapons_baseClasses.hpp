@@ -2,6 +2,20 @@
 	HELMETS
 */
 
+#define HITPOINTS_HELMET \
+class Head \
+{ \
+	hitpointName = "HitHead"; \
+	armor = 10; \
+	passThrough = 0.5; \
+}; \
+class Face \
+{ \
+	hitpointName = "HitFace"; \
+	armor = 8; \
+	passThrough = 0.5; \
+};
+
 class ls_blueforHelmet_base;
 class lsd_blueforHelmet_base;
 
@@ -281,7 +295,7 @@ class RB205_V_base: SWLB_clone_basic_armor
 		hiddenSelections[] = {};
 		class HitpointsProtectionInfo
 		{
-			HITPOINTS_VEST_ENLISTED
+			
 		};
 	};
 };
@@ -305,7 +319,7 @@ class RB205_V_fireTeamLead_base: RB205_V_base
 		hiddenSelections[] = {"camo1","camo2","holster","pauldron"};
 		class HitpointsProtectionInfo
 		{
-			HITPOINTS_VEST_FIRETEAMLEAD
+			
 		};
 	};
 };
@@ -327,7 +341,12 @@ class RB205_V_squadLead_base: RB205_V_base
 		hiddenSelections[] = {"camo1","rank"};
 		class HitpointsProtectionInfo
 		{
-			HITPOINTS_VEST_SQUADLEAD
+			class Legs
+			{
+				hitpointName="HitLegs";
+				armor=6;
+				passThrough=0.30000001;
+			};
 		};
 	};
 };
@@ -348,7 +367,24 @@ class RB205_V_platoonLead_base: RB205_V_base
 		hiddenSelections[] = {"camo1"};
 		class HitpointsProtectionInfo
 		{
-			HITPOINTS_VEST_PLATOONLEAD
+			class Chest
+			{
+				HitpointName="HitChest";
+				armor=10;
+				PassThrough=0.30000001;
+			};
+			class Arms
+			{
+				hitpointName="HitArms";
+				armor=4;
+				passThrough=0.30000001;
+			};
+			class Legs
+			{
+				hitpointName="HitLegs";
+				armor=6;
+				passThrough=0.30000001;
+			};
 		};
 	};
 };
@@ -458,6 +494,54 @@ class RB205_V_snow_base: RB205_V_base
         vestType = "Rebreather";
 	};
 };
+class RB205_V_snow_fireTeamLead_base: RB205_V_fireTeamLead_base
+{
+	ACCESS_FALSE
+	picture = "\RB205_main\data\ui\vests\icon_V_snow.paa";
+	model = "\armor_unit\21\21st_Vest_V2.p3d";
+	hiddenSelections[] =
+	{
+		"Camo1"
+	};
+	class ItemInfo: ItemInfo
+	{
+		uniformModel = "\armor_unit\21\21st_Vest_V2.p3d";
+		hiddenSelections[] = {"Camo1"};
+        vestType = "Rebreather";
+	};
+};
+class RB205_V_snow_squadLead_base: RB205_V_squadLead_base
+{
+	ACCESS_FALSE
+	picture = "\RB205_main\data\ui\vests\icon_V_snow.paa";
+	model = "\armor_unit\21\21st_Vest_V2.p3d";
+	hiddenSelections[] =
+	{
+		"Camo1"
+	};
+	class ItemInfo: ItemInfo
+	{
+		uniformModel = "\armor_unit\21\21st_Vest_V2.p3d";
+		hiddenSelections[] = {"Camo1"};
+        vestType = "Rebreather";
+	};
+};
+class RB205_V_snow_platoonLead_base: RB205_V_platoonLead_base
+{
+	ACCESS_FALSE
+	picture = "\RB205_main\data\ui\vests\icon_V_snow.paa";
+	model = "\armor_unit\21\21st_Vest_V2.p3d";
+	hiddenSelections[] =
+	{
+		"Camo1"
+	};
+	class ItemInfo: ItemInfo
+	{
+		uniformModel = "\armor_unit\21\21st_Vest_V2.p3d";
+		hiddenSelections[] = {"Camo1"};
+        vestType = "Rebreather";
+	};
+};
 
 class RB205_V_arc_base: RB205_V_base
 {
@@ -474,5 +558,26 @@ class RB205_V_arc_base: RB205_V_base
 		uniformModel = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
 		hiddenSelections[] = {"camo1","camo2"};
         vestType = "Rebreather";
+		class HitpointsProtectionInfo
+		{
+			class Chest
+			{
+				HitpointName="HitChest";
+				armor=30;
+				PassThrough=0.30000001;
+			};
+			class Arms
+			{
+				hitpointName="HitArms";
+				armor=6;
+				passThrough=0.30000001;
+			};
+			class Legs
+			{
+				hitpointName="HitLegs";
+				armor=6;
+				passThrough=0.30000001;
+			};
+		};
 	};
 };
