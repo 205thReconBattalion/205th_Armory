@@ -24,8 +24,8 @@ class cfgPatches
 
 class cfgWeapons
 {
-    class RB205_H_ab_trooper;
-    class RB205_H_tachanka: RB205_H_ab_trooper
+    class RB205_H_trooper;
+    class RB205_H_tachanka: RB205_H_trooper
     {
         displayName = "[205] Clone Trooper Helmet [0113]";
         hiddenSelectionsTextures[] =
