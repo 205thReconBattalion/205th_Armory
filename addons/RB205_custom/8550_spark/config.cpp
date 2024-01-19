@@ -65,6 +65,7 @@ class cfgVehicles
     {
         displayName = "CC-8550 Spark";
         uniformclass = "RB205_U_spark";
+        editorSubCategory = "RB205_lore"; 
         hiddenselectionsTextures[] =
         {
             "RB205_custom\8550_spark\data\U_spark_upper.paa",
