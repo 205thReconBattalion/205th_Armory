@@ -42,7 +42,8 @@ class cfgWeapons
         displayName = "[205] Clone Trooper Vest [3697]";
         hiddenSelectionsTextures[] =
         {
-            "RB205_custom\3697_lightning\data\V_lightning.paa"
+            "RB205_custom\3697_lightning\data\V_lightning.paa",
+            ""
         };
     };
 
