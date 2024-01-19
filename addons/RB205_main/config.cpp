@@ -12,7 +12,7 @@ class cfgPatches
 			"JLTS_core",
 			"JLTS_characters_CloneArmor2",
 			"JLTS_jumppacks",
-			"LS_Armor", //by Last Force Project
+			"LS_Armor" //by Last Force Project
 		};
 		requiredVersion = 1.0;
         author = "205th Recon Battalion";
@@ -205,7 +205,6 @@ class cfgPatches
 };
 
 #include "macros.hpp"
-#include "HitpointsProtectionInfo.hpp"
 
 class cfgWeapons
 {
