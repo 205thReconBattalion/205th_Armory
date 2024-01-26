@@ -39,31 +39,50 @@ class cfgVehicles
 		editorSubcategory = "RB205_veh_air";
 		editorPreview = "";
 		//Textures
+		hiddenSelectionsMaterials[]=
+		{
+			"RB205_vehicles\nuClass\data\nuClass_exterior.rvmat",
+			"RB205_vehicles\nuClass\data\nuClass_wings.rvmat",
+			"RB205_vehicles\nuClass\data\nuClass_interior.rvmat",
+			"RB205_vehicles\nuClass\data\nuClass_cockpit_doors.rvmat"
+		};
 		hiddenSelectionsTextures[] =
 		{
-			"3AS\3as_nu\data\exterior_CO.paa",
-			"3AS\3as_nu\data\wings_CO.paa",
+			"RB205_vehicles\nuClass\data\nuClass_exterior_co.paa",
+			"RB205_vehicles\nuClass\data\nuClass_wings_co.paa",
 			"3as\3as_Nu\data\interior_co.paa",
-			"3as\3as_Nu\data\cockpit_doors_co.paa"
+			"RB205_vehicles\nuClass\data\nuClass_cockpit_doors_co.paa"
 		};
 		class TextureSources
 		{
-			/*class Default
+			class Default
 			{
 				displayName = "205th Recon Battalion";
 				author = "205th Recon Battalion";
-				textures[] = TODO
+				textures[] =
+				{
+					"RB205_vehicles\nuClass\data\nuClass_exterior_co.paa",
+					"RB205_vehicles\nuClass\data\nuClass_wings_co.paa",
+					"3as\3as_Nu\data\interior_co.paa",
+					"RB205_vehicles\nuClass\data\nuClass_cockpit_doors_co.paa"
+				};
 				factions[] =
 				{
 					"RB205"
 				};
-			};*/
-			/*class RB205_chimaera
+			};
+			class RB205_chimaera
 			{
 				displayName = "205th Recon Battalion - Chimaera";
 				author = "205th Recon Battalion";
-				textures[] = TODO
-			};*/
+				textures[] =
+				{
+					"RB205_vehicles\nuClass\data\nuClass2_exterior_co.paa",
+					"RB205_vehicles\nuClass\data\nuClass2_wings_co.paa",
+					"3as\3as_Nu\data\interior_co.paa",
+					"RB205_vehicles\nuClass\data\nuClass2_cockpit_doors_co.paa"
+				};
+			};
 			class Republic
 			{
 				displayName = "Grand Army of the Republic";

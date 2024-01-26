@@ -31,7 +31,13 @@ class cfgWeapons
         hiddenSelectionsTextures[] =
         {
             "RB205_custom\0113_tachanka\data\H_tachanka.paa",
-            "RB205_main\data\airborne\visor_ab_co.paa"
+            "RB205_main\data\default\visor_p2_co.paa"
+        };
+        class XtdGearInfo
+        {
+            model = "RB205_H_custom";
+            id = "0113";
+            var = "dft";
         };
     };
 
@@ -43,6 +49,12 @@ class cfgWeapons
         class ItemInfo: ItemInfo
         {
             uniformClass = RB205_clone_tachanka;
+        };
+        class XtdGearInfo
+        {
+            model = "RB205_U_custom";
+            id = "0113";
+            var = "dft";
         };
     };
 };

@@ -10,10 +10,10 @@ class cfgPatches
         requiredVersion = 1.0; 
         weapons[] = 
         { 
-            "RB205_H_arc_smoker", 
+            "RB205_H_smoker", 
             "RB205_H_ab_smoker",
             "RB205_U_smoker", 
-            "RB205_V_arc_smoker" 
+            "RB205_V_smoker" 
         }; 
         units[] = 
         { 
@@ -27,14 +27,20 @@ class cfgPatches
 class cfgWeapons 
 { 
     class RB205_H_arc_trooper; 
-    class RB205_H_arc_smoker : RB205_H_arc_trooper 
+    class RB205_H_smoker : RB205_H_arc_trooper 
     { 
         displayName = "[205] Clone ARC Trooper Helmet [2288]"; 
         hiddenSelectionsTextures[] = 
         { 
             "RB205_custom\2288_smoker\data\H_smoker.paa", 
             "RB205_main\data\arc\visor_arc_co.paa" 
-        }; 
+        };
+        class XtdGearInfo
+        {
+            model = "RB205_H_custom";
+            id = "2288";
+            var = "dft";
+        };
     }; 
 
     class RB205_H_ab_sergeant; 
@@ -45,8 +51,14 @@ class cfgWeapons
         { 
             "RB205_custom\2288_smoker\data\H_smoker_airborne.paa",
             "RB205_main\data\airborne\visor_ab_co.paa"
-        }; 
-    }; 
+        };
+        class XtdGearInfo
+        {
+            model = "RB205_H_custom";
+            id = "2288";
+            var = "var1";
+        };
+    };
  
     class RB205_U_arc_trooper; 
     class ItemInfo; 
@@ -56,19 +68,30 @@ class cfgWeapons
         class ItemInfo : ItemInfo 
         { 
             uniformClass = RB205_clone_smoker; 
-        }; 
+        };
+        class XtdGearInfo
+        {
+            model = "RB205_U_custom";
+            id = "2288";
+            var = "dft";
+        };
     }; 
  
     class RB205_V_arc; 
-    class RB205_V_arc_smoker : RB205_V_arc 
+    class RB205_V_smoker : RB205_V_arc 
     { 
         displayName = "[205] Clone ARC Trooper Vest [2288]"; 
         hiddenSelectionsTextures[] = 
         { 
             "RB205_custom\2288_smoker\data\V_arc_smoker.paa", 
             "RB205_custom\2288_smoker\data\V_smoker.paa" 
- 
-        }; 
+        };
+        class XtdGearInfo
+        {
+            model = "RB205_V_custom";
+            id = "2288";
+            var = "dft";
+        };
     }; 
 }; 
  
@@ -86,7 +109,7 @@ class cfgVehicles
             "RB205_custom\2288_smoker\data\U_smoker_lower.paa", 
             "RB205_main\data\default\U_undersuit_co.paa" 
         }; 
-        LINKED_ITEMS("RB205_H_arc_smoker", "RB205_V_arc_smoker", "RB205_NV_rangefinder") 
+        LINKED_ITEMS("RB205_H_smoker", "RB205_V_smoker", "RB205_NV_rangefinder") 
         backpack = "RB205_B_arc_jetpack"; 
     }; 
 };

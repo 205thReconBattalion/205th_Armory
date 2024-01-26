@@ -33,6 +33,12 @@ class cfgWeapons
             "RB205_custom\9089_unlucky\data\H_unlucky.paa",
             "RB205_main\data\default\visor_p2_co.paa"
         };
+        class XtdGearInfo
+        {
+            model = "RB205_H_custom";
+            id = "9089";
+            var = "dft";
+        };
     };
 
     class RB205_U_trooper;
@@ -43,6 +49,12 @@ class cfgWeapons
         class ItemInfo: ItemInfo
         {
             uniformClass = RB205_clone_unlucky;
+        };
+        class XtdGearInfo
+        {
+            model = "RB205_U_custom";
+            id = "9089";
+            var = "dft";
         };
     };
 };
@@ -61,7 +73,7 @@ class RB205_clone_unlucky: RB205_clone_trooper
         "RB205_custom\9089_unlucky\data\U_unlucky_lower.paa",
         "RB205_main\data\default\U_undersuit_co.paa"
     };
-    LINKED_ITEMS("RB205_H_unlucky","RB205_V_medic","RB205_NV")
+    LINKED_ITEMS("RB205_H_unlucky","RB205_V_medic","RB205_NV_chip")
     backpack = "RB205_B_medic";
 };
 };

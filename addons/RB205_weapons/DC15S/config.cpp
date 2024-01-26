@@ -44,9 +44,9 @@ class CfgWeapons
 		JLTS_hasElectronics = 1;
 		JLTS_hasEMPProtection = 0;
 		JLTS_friedItem = "RB205_DC15S_fried";
-		opticsZoomInit = 0.5;
+		opticsZoomInit = 0.75;//0.5
 		opticsZoomMax = 1.25;
-		opticsZoomMin = 0.5;
+		opticsZoomMin = 0.25;//0.5
 		modes[] =
 		{
 			"FullAuto",

@@ -33,16 +33,28 @@ class cfgWeapons
             "RB205_custom\5283_putzi\data\H_putzi.paa",
             "RB205_main\data\airborne\visor_ab_co.paa"
         };
+        class XtdGearInfo
+        {
+            model = "RB205_H_custom";
+            id = "5283";
+            var = "dft";
+        };
     };
 
     class RB205_U_trooper;
     class ItemInfo;
     class RB205_U_putzi : RB205_U_trooper
     {
-        displayName = "[205] Clone Airborne Trooper Armor [5283]";
+        displayName = "[205] Clone Trooper Armor [5283]";
         class ItemInfo : ItemInfo
         {
             uniformClass = RB205_clone_putzi;
+        };
+        class XtdGearInfo
+        {
+            model = "RB205_U_custom";
+            id = "5283";
+            var = "dft";
         };
     };
 };

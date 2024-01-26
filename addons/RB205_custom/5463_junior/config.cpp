@@ -1,67 +1,79 @@
 class cfgPatches
 {
-class RB205_custom_junior
-{
-    requiredAddons[] =
+    class RB205_custom_junior
     {
-        "RB205_main",
-        "RB205_custom"
+        requiredAddons[] =
+        {
+            "RB205_main",
+            "RB205_custom"
+        };
+        requiredVersion = 1.0;
+        weapons[] =
+        {
+            "RB205_H_junior",
+            "RB205_U_junior"
+        };
+        units[]	=
+        {
+            "RB205_clone_junior"
+        };
     };
-    requiredVersion = 1.0;
-    weapons[] =
-    {
-        "RB205_H_junior",
-        "RB205_U_junior"
-    };
-    units[]	=
-    {
-        "RB205_clone_junior"
-    };
-};
 };
 
 #include "\RB205_main\macros.hpp"
 
 class cfgWeapons
 {
-class RB205_H_arf_trooper;
-class RB205_H_junior: RB205_H_arf_trooper
-{
-    displayName = "[205] Clone ARF Trooper Helmet [5463]";
-    hiddenSelectionsTextures[] =
+    class RB205_H_arf_trooper;
+    class RB205_H_junior: RB205_H_arf_trooper
     {
-        "RB205_custom\5463_junior\data\H_junior.paa",
-        "",
-        "RB205_main\data\arf\visor_arf_co.paa"
+        displayName = "[205] Clone ARF Trooper Helmet [5463]";
+        hiddenSelectionsTextures[] =
+        {
+            "RB205_custom\5463_junior\data\H_junior.paa",
+            "",
+            "RB205_main\data\arf\visor_arf_co.paa"
+        };
+        class XtdGearInfo
+        {
+            model = "RB205_H_custom";
+            id = "5463";
+            var = "dft";
+        };
     };
-};
 
-class RB205_U_arf_trooper;
-class ItemInfo;
-class RB205_U_junior: RB205_U_arf_trooper
-{
-    displayName = "[205] Clone ARF Trooper Uniform [5463]";
-    class ItemInfo: ItemInfo
+    class RB205_U_arf_trooper;
+    class ItemInfo;
+    class RB205_U_junior: RB205_U_arf_trooper
     {
-        uniformClass = RB205_clone_junior;
+        displayName = "[205] Clone ARF Trooper Uniform [5463]";
+        class ItemInfo: ItemInfo
+        {
+            uniformClass = RB205_clone_junior;
+        };
+        class XtdGearInfo
+        {
+            model = "RB205_U_custom";
+            id = "5463";
+            var = "dft";
+        };
     };
-};
 };
 
 class cfgVehicles
 {
-class RB205_clone_arf_corporal;
-class RB205_clone_junior: RB205_clone_arf_corporal
-{
-    displayName = "CP-5463 junior";
-    uniformclass = "RB205_U_junior";
-    editorSubCategory = "RB205_lore";
-    hiddenselectionsTextures[] =
+    class RB205_clone_arf_corporal;
+    class RB205_clone_junior: RB205_clone_arf_corporal
     {
-        "RB205_custom\5463_junior\data\U_junior_upper.paa",
-        "RB205_custom\5463_junior\data\U_junior_lower.paa",
-        "RB205_main\data\default\U_undersuit_co.paa"
+        displayName = "CP-5463 Junior";
+        uniformclass = "RB205_U_junior";
+        editorSubCategory = "RB205_lore";
+        hiddenselectionsTextures[] =
+        {
+            "RB205_custom\5463_junior\data\U_junior_upper.paa",
+            "RB205_custom\5463_junior\data\U_junior_lower.paa",
+            "RB205_main\data\default\U_undersuit_co.paa"
+        };
+        LINKED_ITEMS("RB205_H_junior","RB205_V_arf_cp","RB205_NV_arf_antenna")
     };
-    LINKED_ITEMS("RB205_H_junior","RB205_V_arf_cp","RB205_NV_arf_antenna")
-};
 };

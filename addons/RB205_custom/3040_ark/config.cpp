@@ -33,6 +33,12 @@ class cfgWeapons
             "RB205_custom\3040_ark\data\H_ark.paa",
             "RB205_main\data\default\visor_p2_co.paa"
         };
+        class XtdGearInfo
+        {
+            model = "RB205_H_custom";
+            id = "3040";
+            var = "dft";
+        };
     };
 
     class RB205_U_trooper;
@@ -43,6 +49,12 @@ class cfgWeapons
         class ItemInfo : ItemInfo
         {
             uniformClass = RB205_clone_ark;
+        };
+        class XtdGearInfo
+        {
+            model = "RB205_U_custom";
+            id = "3040";
+            var = "dft";
         };
     };
 };

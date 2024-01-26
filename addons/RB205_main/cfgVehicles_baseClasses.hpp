@@ -18,6 +18,7 @@ class RB205_clone_base: ls_gar_phase2_base
 	faction="RB205";
 	editorSubCategory = "RB205_1AP";
 	identityTypes[]={"LanguageENG_F","SWLB_JH_Head_Hair"};
+    nakedUniform = "lsd_gar_bodyGlove_uniform";
 	engineer="false";
 	canDeactivateMines="false";
 	camouflage = 1;
@@ -461,6 +462,36 @@ class RB205_B_ab_base: JLTS_Clone_jumppack_JT12
 	RD501_jumppack_is_jumppack = 0;
 	tas_is_jetpack = 1; //3AS
 	JET_EMERGENCY
+};
+
+class SWLB_CEE_Recon_RTO_Backpack;
+class RB205_B_arf_base: SWLB_CEE_Recon_RTO_Backpack
+{
+	ACCESS_FALSE
+	author = "205th Recon Battalion";
+	descriptionShort = "";
+	picture = "\RB205_main\data\ui\backpacks\icon_B_arf.paa";
+	model = "\SWLB_CEE\data\SWLB_CEE_Recon_RTO_Backpack.p3d";
+	hiddenSelections[] =
+	{
+		"Accumulator",
+		"Camo1",
+		"Camo2",
+		"Camo3",
+		"Main"
+	};
+	maximumLoad = INV_BACK_ARF;
+	TFAR_RADIO_SMALL
+};
+class RB205_B_arf_camo_base: RB205_B_arf_base
+{
+	ACCESS_FALSE
+	model = "\SWLB_equipment\backpacks\SWLB_clone_RTO_mini_backpack.p3d";
+	hiddenSelections[] =
+	{
+		"main",
+		"accumulator"
+	};
 };
 
 class LST_21_BackPack;

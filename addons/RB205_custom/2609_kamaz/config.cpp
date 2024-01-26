@@ -34,6 +34,12 @@ class cfgWeapons
             "",
             "RB205_main\data\arf\visor_arf_co.paa"
         };
+        class XtdGearInfo
+        {
+            model = "RB205_H_custom";
+            id = "2609";
+            var = "dft";
+        };
     };
 
     class RB205_U_arf_sergeant;
@@ -44,6 +50,12 @@ class cfgWeapons
         class ItemInfo: ItemInfo
         {
             uniformClass = RB205_clone_kamaz;
+        };
+        class XtdGearInfo
+        {
+            model = "RB205_U_custom";
+            id = "2609";
+            var = "dft";
         };
     };
 };

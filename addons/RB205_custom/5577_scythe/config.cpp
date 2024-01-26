@@ -12,7 +12,8 @@ class cfgPatches
         {
             "RB205_H_scythe",
             "RB205_U_scythe",
-            "RB205_V_scythe"
+            "RB205_V_scythe",
+            "RB205_VIS_scythe"
         };
 		units[]	=
         {
@@ -34,17 +35,13 @@ class cfgWeapons
             "RB205_custom\5577_scythe\data\H_scythe.paa",
 		    "RB205_main\data\default\visor_p2_co.paa"
         };
-	};
-
-    class RB205_V_cl;
-    class RB205_V_scythe: RB205_V_cl
-    {
-        displayName = "[205] Clone Trooper Vest [5577]";
-        hiddenSelectionsTextures[] =
+        class XtdGearInfo
         {
-            "RB205_custom\5577_scythe\data\V_scythe.paa"
+            model = "RB205_H_custom";
+            id = "5577";
+            var = "dft";
         };
-    };
+	};
 
     class RB205_U_lieutenant;
     class ItemInfo;
@@ -54,6 +51,28 @@ class cfgWeapons
         class ItemInfo: ItemInfo
         {
             uniformClass = RB205_clone_scythe;
+        };
+        class XtdGearInfo
+        {
+            model = "RB205_U_custom";
+            id = "5577";
+            var = "dft";
+        };
+    };
+
+    class RB205_V_cl;
+    class RB205_V_scythe: RB205_V_cl
+    {
+        displayName = "[205] Clone Trooper Vest [5577]";
+        hiddenSelectionsTextures[] =
+        {
+            "RB205_custom\5577_scythe\data\V_scythe.paa"
+        };
+        class XtdGearInfo
+        {
+            model = "RB205_V_custom";
+            id = "5577";
+            var = "dft";
         };
     };
 };
@@ -72,7 +91,30 @@ class cfgVehicles
             "RB205_custom\5577_scythe\data\U_scythe_lower.paa",
             "RB205_main\data\default\U_undersuit_co.paa"
         };
-        LINKED_ITEMS(RB205_H_scythe,"RB205_V_scythe","RB205_NV_rangefinder")
+        LINKED_ITEMS(RB205_H_scythe,"RB205_V_scythe","RB205_NV_chip")
 	    backpack = "RB205_B_radio_mini_blk";
+        identityTypes[]={"LanguageENG_F","SWLB_JH_Head_Hair","RB205_VIS_scythe"};
+    };
+};
+
+class CfgGlasses
+{
+    class RB205_VIS;
+    class RB205_VIS_scythe: RB205_VIS
+    {
+        displayName = "[205] Clone Visor [5577]";
+        hiddenSelectionsTextures[] =
+        {
+            "RB205_custom\5577_scythe\data\VIS_scythe.paa",
+            "",
+            ""
+        };
+        identityTypes[] = { "RB205_VIS_scythe",1 };
+        class XtdGearInfo
+        {
+            model = "RB205_G_custom";
+            type = "5577";
+            var = "dft";
+        };
     };
 };

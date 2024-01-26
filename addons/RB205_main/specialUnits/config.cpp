@@ -39,7 +39,7 @@ class cfgVehicles
 		ACCESS_TRUE
 		displayName = "Clone Trooper <Medic>";
 		uniformclass = "RB205_U_trooper";
-		LINKED_ITEMS(RB205_H_trooper,"RB205_V_medic","RB205_NV")
+		LINKED_ITEMS(RB205_H_trooper,"RB205_V_medic","RB205_NV_chip")
 		backpack = "RB205_B_medic";
 	};
 	class RB205_clone_trooper_grenadier: RB205_clone_trooper
@@ -47,7 +47,7 @@ class cfgVehicles
 		ACCESS_TRUE
 		displayName = "Clone Trooper <Grenadier>";
 		uniformclass = "RB205_U_trooper";
-		LINKED_ITEMS(RB205_H_trooper,"RB205_V_grenadier","RB205_NV")
+		LINKED_ITEMS(RB205_H_trooper,"RB205_V_grenadier","RB205_NV_chip")
 		weapons[]=
 		{
 			"RB205_DC15A_GL",
@@ -84,7 +84,7 @@ class cfgVehicles
 		ACCESS_TRUE
 		displayName = "Clone Trooper <Heavy>";
 		uniformclass = "RB205_U_trooper";
-		LINKED_ITEMS(RB205_H_trooper,"RB205_V_ct","RB205_NV")
+		LINKED_ITEMS(RB205_H_trooper,"RB205_V_ct","RB205_NV_chip")
 		backpack = "RB205_B_heavy";
 		weapons[]=
 		{

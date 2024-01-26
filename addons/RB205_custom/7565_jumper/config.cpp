@@ -34,6 +34,12 @@ class cfgWeapons
             "RB205_main\data\arf\H_arf_flaps_co.paa",
             "RB205_main\data\arf\visor_arf_co.paa"
         };
+        class XtdGearInfo
+        {
+            model = "RB205_H_custom";
+            id = "7565";
+            var = "dft";
+        };
     };
 
     class RB205_U_arf_trooper;
@@ -44,6 +50,12 @@ class cfgWeapons
         class ItemInfo: ItemInfo
         {
             uniformClass = RB205_clone_jumper;
+        };
+        class XtdGearInfo
+        {
+            model = "RB205_U_custom";
+            id = "7565";
+            var = "dft";
         };
     };
 };

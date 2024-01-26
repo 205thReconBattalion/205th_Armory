@@ -27,11 +27,17 @@ class cfgWeapons
     class RB205_H_ab_corporal;
     class RB205_H_norway : RB205_H_ab_corporal
     {
-        displayName = "[205] Clone Airborne Trooper Helmet (7300)";
+        displayName = "[205] Clone Airborne Trooper Helmet [7300]";
         hiddenSelectionsTextures[] =
         {
             "RB205_custom\7300_norway\data\H_norway.paa",
             "RB205_main\data\airborne\visor_ab_co.paa"
+        };
+        class XtdGearInfo
+        {
+            model = "RB205_H_custom";
+            id = "7300";
+            var = "dft";
         };
     };
 
@@ -39,10 +45,16 @@ class cfgWeapons
     class ItemInfo;
     class RB205_U_norway : RB205_U_corporal
     {
-        displayName = "[205] Clone Airborne Trooper Armor (7300)";
+        displayName = "[205] Clone Trooper Armor [7300]";
         class ItemInfo : ItemInfo
         {
             uniformClass = RB205_clone_norway;
+        };
+        class XtdGearInfo
+        {
+            model = "RB205_U_custom";
+            id = "7300";
+            var = "dft";
         };
     };
 };

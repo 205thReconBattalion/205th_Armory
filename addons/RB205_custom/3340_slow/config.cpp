@@ -11,8 +11,8 @@ class cfgPatches
         weapons[] =
         {
             "RB205_H_slow",
-            "RB205_V_slow",
-            "RB205_U_slow"
+            "RB205_U_slow",
+            "RB205_V_slow"
         };
         units[]	=
         {
@@ -34,16 +34,11 @@ class cfgWeapons
             "RB205_custom\3340_slow\data\H_slow.paa",
             "RB205_main\data\default\visor_p2_co.paa"
         };
-    };
-
-    class RB205_V_cs;
-    class RB205_V_slow: RB205_V_cs
-    {
-        displayName = "[205] Clone Trooper Vest [3340]";
-        hiddenSelectionsTextures[] =
+        class XtdGearInfo
         {
-            "RB205_custom\3340_slow\data\V_slow.paa",
-            ""
+            model = "RB205_H_custom";
+            id = "3340";
+            var = "dft";
         };
     };
 
@@ -55,6 +50,29 @@ class cfgWeapons
         class ItemInfo: ItemInfo
         {
             uniformClass = RB205_clone_slow;
+        };
+        class XtdGearInfo
+        {
+            model = "RB205_U_custom";
+            id = "3340";
+            var = "dft";
+        };
+    };
+
+    class RB205_V_cs;
+    class RB205_V_slow: RB205_V_cs
+    {
+        displayName = "[205] Clone Trooper Vest [3340]";
+        hiddenSelectionsTextures[] =
+        {
+            "RB205_custom\3340_slow\data\V_slow.paa",
+            ""
+        };
+        class XtdGearInfo
+        {
+            model = "RB205_V_custom";
+            id = "3340";
+            var = "dft";
         };
     };
 };
@@ -73,7 +91,7 @@ class cfgVehicles
             "RB205_custom\3340_slow\data\U_slow_lower.paa",
             "RB205_main\data\default\U_undersuit_co.paa"
         };
-        LINKED_ITEMS("RB205_H_slow","RB205_V_slow","RB205_NV")
-        backpack = "RB205_B_radio";
+        LINKED_ITEMS("RB205_H_slow","RB205_V_slow","RB205_NV_rangefinder")
+	    identityTypes[] = {"LanguageENG_F","SWLB_JH_Head_Hair"};
     };
 };

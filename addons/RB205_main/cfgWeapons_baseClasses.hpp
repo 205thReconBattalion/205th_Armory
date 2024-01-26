@@ -35,9 +35,15 @@ class RB205_H_base: lsd_gar_phase2_helmet
 		"camo1",
 		"visor"
 	};
+	hiddenSelectionsMaterials[] =
+	{
+		"",
+		"\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+	};
 	ace_hearing_protection = ACE_HEARING_PROTECTION;
 	ace_hearing_lowerVolume = ACE_HEARING_LOWER_VOLUME_DEFAULT;
 	subItems[] = {};
+	identityTypes[] = {"LanguageENG_F","SWLB_JH_Head_Hair"};
 	class ItemInfo: ItemInfo
 	{
 		mass = MASS_HELMET;
@@ -68,9 +74,15 @@ class RB205_H_ab_base: lsd_gar_airborne_helmet
 		"camo1",
 		"visor"
 	};
+	hiddenSelectionsMaterials[] =
+	{
+		"lsd_armor_bluefor\helmet\gar\airborne\data\helmet.rvmat",
+		"\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+	};
 	ace_hearing_protection = ACE_HEARING_PROTECTION;
 	ace_hearing_lowerVolume = ACE_HEARING_LOWER_VOLUME_DEFAULT;
 	subItems[] = {};
+	identityTypes[] = {"LanguageENG_F","SWLB_JH_Head_Hair"};
 	class ItemInfo: ItemInfo
 	{
 		mass = MASS_HELMET;
@@ -102,9 +114,16 @@ class RB205_H_arf_base: ls_gar_phase1Arf_helmet
 		"camo2",
 		"visor"
 	};
+	hiddenSelectionsMaterials[] =
+	{
+		"",
+		"",
+		"\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+	};
 	ace_hearing_protection = ACE_HEARING_PROTECTION;
 	ace_hearing_lowerVolume = ACE_HEARING_LOWER_VOLUME_DEFAULT;
 	subItems[] = {};
+	identityTypes[] = {"LanguageENG_F","SWLB_JH_Head_Hair"};
 	class ItemInfo: ItemInfo
 	{
 		mass = MASS_HELMET;
@@ -142,9 +161,15 @@ class RB205_H_plt_base: ls_gar_phase2Pilot_helmet
 		"camo1",
 		"visor"
 	};
+	hiddenSelectionsMaterials[] =
+	{
+		"",
+		"\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+	};
 	ace_hearing_protection = ACE_HEARING_PROTECTION;
 	ace_hearing_lowerVolume = ACE_HEARING_LOWER_VOLUME_PILOT;
 	subItems[] = {};
+	identityTypes[] = {"LanguageENG_F","SWLB_JH_Head_Hair"};
 	class ItemInfo: ItemInfo
 	{
 		mass = MASS_HELMET;
@@ -177,6 +202,7 @@ class RB205_H_snow_base: ls_gar_phase2Insulated_helmet
 	ace_hearing_protection = ACE_HEARING_PROTECTION;
 	ace_hearing_lowerVolume = ACE_HEARING_LOWER_VOLUME_DEFAULT;
 	subItems[] = {};
+	identityTypes[] = {"LanguageENG_F","SWLB_JH_Head_Hair"};
 	class ItemInfo: ItemInfo
 	{
 		mass = MASS_HELMET;
@@ -208,9 +234,16 @@ class RB205_H_arc_base: lsd_gar_arc_helmet
 		"visor",
 		"illum"
 	};
+	hiddenSelectionsMaterials[] =
+	{
+		"",
+		"\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat",
+		"\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+	};
 	ace_hearing_protection = ACE_HEARING_PROTECTION;
 	ace_hearing_lowerVolume = ACE_HEARING_LOWER_VOLUME_DEFAULT;
 	subItems[] = {};
+	identityTypes[] = {"LanguageENG_F","SWLB_JH_Head_Hair"};
 	class ItemInfo: ItemInfo
 	{
 		mass = MASS_HELMET;

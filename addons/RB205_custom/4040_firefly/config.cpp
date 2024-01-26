@@ -33,16 +33,28 @@ class cfgWeapons
             "RB205_custom\4040_firefly\data\H_firefly.paa",
             "RB205_main\data\airborne\visor_ab_co.paa"
         };
+        class XtdGearInfo
+        {
+            model = "RB205_H_custom";
+            id = "4040";
+            var = "dft";
+        };
     };
 
     class RB205_U_trooper;
     class ItemInfo;
     class RB205_U_firefly : RB205_U_trooper
     {
-        displayName = "[205] Clone Airborne Trooper Armor [4040]";
+        displayName = "[205] Clone Trooper Armor [4040]";
         class ItemInfo : ItemInfo
         {
             uniformClass = RB205_clone_firefly;
+        };
+        class XtdGearInfo
+        {
+            model = "RB205_U_custom";
+            id = "4040";
+            var = "dft";
         };
     };
 };
