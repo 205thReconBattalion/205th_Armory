@@ -33,6 +33,12 @@ class cfgWeapons
             "RB205_custom\4600_crossfire\data\H_crossfire.paa",
             "RB205_main\data\default\visor_p2_co.paa"
         };
+        class XtdGearInfo
+        {
+            model = "RB205_H_custom";
+            id = "4600";
+            var = "dft";
+        };
     };
 
     class RB205_U_trooper;
@@ -43,6 +49,12 @@ class cfgWeapons
         class ItemInfo : ItemInfo
         {
             uniformClass = RB205_clone_crossfire;
+        };
+        class XtdGearInfo
+        {
+            model = "RB205_U_custom";
+            id = "4600";
+            var = "dft";
         };
     };
 };
@@ -61,6 +73,6 @@ class cfgVehicles
             "RB205_custom\4600_crossfire\data\U_crossfire_lower.paa",
             "RB205_main\data\default\U_undersuit_co.paa"
         };
-        LINKED_ITEMS(RB205_H_crossfire, "RB205_V_ct", "RB205_NV")
+        LINKED_ITEMS(RB205_H_crossfire, "RB205_V_ct", "RB205_NV_chip")
     };
 };

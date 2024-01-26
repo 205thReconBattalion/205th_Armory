@@ -33,6 +33,12 @@ class cfgWeapons
             "RB205_custom\0955_mando\data\H_mando.paa",
             "RB205_main\data\default\visor_p2_co.paa"
         };
+        class XtdGearInfo
+        {
+            model = "RB205_H_custom";
+            id = "0955";
+            var = "dft";
+        };
     };
 
     class RB205_U_corporal;
@@ -43,6 +49,12 @@ class cfgWeapons
         class ItemInfo : ItemInfo
         {
             uniformClass = RB205_clone_mando;
+        };
+        class XtdGearInfo
+        {
+            model = "RB205_U_custom";
+            id = "0955";
+            var = "dft";
         };
     };
 };
@@ -62,5 +74,6 @@ class cfgVehicles
             "RB205_main\data\default\U_undersuit_co.paa"
         };
         LINKED_ITEMS(RB205_H_mando, "RB205_V_clc", "RB205_NV_rangefinder")
+	    identityTypes[] = {"LanguageENG_F","SWLB_JH_Head_Hair"};
     };
 };

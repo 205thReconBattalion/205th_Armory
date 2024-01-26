@@ -34,6 +34,12 @@ class cfgWeapons
             "RB205_custom\2111_pain\data\H_pain.paa",
             "RB205_main\data\default\visor_p2_co.paa"
         };
+        class XtdGearInfo
+        {
+            model = "RB205_H_custom";
+            id = "2111";
+            var = "dft";
+        };
     };
     
     class RB205_U_trooper;
@@ -45,6 +51,12 @@ class cfgWeapons
         {
             uniformClass = RB205_clone_pain;	 
         }
+        class XtdGearInfo
+        {
+            model = "RB205_U_custom";
+            id = "2111";
+            var = "dft";
+        };
     };
 };
 

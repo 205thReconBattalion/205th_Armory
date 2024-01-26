@@ -15,7 +15,8 @@ class RB205_clone_recruit: RB205_clone_base
 		"RB205_main\data\default\U_recruit_lower_co.paa",
 		"RB205_main\data\default\U_undersuit_co.paa"
 	};
-	LINKED_ITEMS(RB205_H_recruit,"RB205_V_ct","RB205_NV")
+	LINKED_ITEMS(RB205_H_recruit,"RB205_V_ct","RB205_NV_chip")
+	identityTypes[] = {"LanguageENG_F","SWLB_JH_Head_Hair"};
 };
 class RB205_clone_trooper: RB205_clone_base
 {
@@ -28,14 +29,16 @@ class RB205_clone_trooper: RB205_clone_base
 		"RB205_main\data\default\U_enl_lower_co.paa",
 		"RB205_main\data\default\U_undersuit_co.paa"
 	};
-	LINKED_ITEMS(RB205_H_trooper,"RB205_V_ct","RB205_NV")
+	LINKED_ITEMS(RB205_H_trooper,"RB205_V_ct","RB205_NV_chip")
+	identityTypes[] = {"LanguageENG_F","SWLB_JH_Head_Hair"};
 };
 class RB205_clone_lanceCorporal: RB205_clone_base
 {
 	ACCESS_TRUE
 	displayName = "(3-CLC) Clone Lance-Corporal";
 	uniformclass = "RB205_U_corporal";
-	LINKED_ITEMS(RB205_H_corporal,"RB205_V_clc","RB205_NV_rangefinder")
+	LINKED_ITEMS(RB205_H_corporal,"RB205_V_clc","RB205_NV_chip")
+	identityTypes[] = {"LanguageENG_F","SWLB_JH_Head_Hair","RB205_VIS"};
 };
 class RB205_clone_corporal: RB205_clone_base
 {
@@ -48,7 +51,8 @@ class RB205_clone_corporal: RB205_clone_base
 		"RB205_main\data\default\U_nco_lower_co.paa",
 		"RB205_main\data\default\U_undersuit_co.paa"
 	};
-	LINKED_ITEMS(RB205_H_corporal,"RB205_V_cp","RB205_NV_rangefinder")
+	LINKED_ITEMS(RB205_H_corporal,"RB205_V_cp","RB205_NV_chip")
+	identityTypes[] = {"LanguageENG_F","SWLB_JH_Head_Hair","RB205_VIS"};
 };
 class RB205_clone_sergeant: RB205_clone_base
 {
@@ -61,14 +65,16 @@ class RB205_clone_sergeant: RB205_clone_base
 		"RB205_main\data\default\U_nco_lower_co.paa",
 		"RB205_main\data\default\U_undersuit_co.paa"
 	};
-	LINKED_ITEMS(RB205_H_sergeant,"RB205_V_cs","RB205_NV_rangefinder")
+	LINKED_ITEMS(RB205_H_sergeant,"RB205_V_cs","RB205_NV_chip")
+	identityTypes[] = {"LanguageENG_F","SWLB_JH_Head_Hair","RB205_VIS"};
 };
 class RB205_clone_sergeantMajor: RB205_clone_base
 {
 	ACCESS_TRUE
 	displayName = "(6-CSM) Clone Sergeant-Major";
 	uniformclass = "RB205_U_sergeant";
-	LINKED_ITEMS(RB205_H_sergeant,"RB205_V_csm","RB205_NV_rangefinder")
+	LINKED_ITEMS(RB205_H_sergeant,"RB205_V_csm","RB205_NV_chip")
+	identityTypes[] = {"LanguageENG_F","SWLB_JH_Head_Hair","RB205_VIS"};
 	backpack="RB205_B_radio_mini";
 };
 class RB205_clone_lieutenant: RB205_clone_base
@@ -82,7 +88,8 @@ class RB205_clone_lieutenant: RB205_clone_base
 		"RB205_main\data\default\U_nco_lower_co.paa",
 		"RB205_main\data\default\U_undersuit_co.paa"
 	};
-	LINKED_ITEMS(RB205_H_lieutenant,"RB205_V_cl","RB205_NV_rangefinder")
+	LINKED_ITEMS(RB205_H_lieutenant,"RB205_V_cl","RB205_NV_chip")
+	identityTypes[] = {"LanguageENG_F","SWLB_JH_Head_Hair","RB205_VIS"};
 	backpack="RB205_B_radio_mini";
 };
 
@@ -212,6 +219,63 @@ class RB205_clone_arf_lieutenant: RB205_arf_base
 	};
 	LINKED_ITEMS(RB205_H_arf_lieutenant,"RB205_V_arf_cl","RB205_NV_arf_antenna")
 	backpack="RB205_B_radio_mini";
+};
+
+class RB205_clone_arf_trooper_arctic: RB205_arf_base
+{
+	ACCESS_TRUE
+	displayName = "(2-CT) Clone ARF Trooper <Arctic>";
+	uniformclass = "RB205_U_arf_trooper_arctic";
+	hiddenselectionsTextures[] =
+	{
+		"RB205_main\data\arf\U_arf_arctic_upper_co.paa",
+		"RB205_main\data\arf\U_arf_arctic_lower_co.paa",
+		"RB205_main\data\default\U_undersuit_co.paa"
+	};
+	LINKED_ITEMS(RB205_H_arf_trooper_arctic,"RB205_V_arf_ct","RB205_NV_arf_antenna")
+	backpack = "RB205_B_arf_arctic";
+};
+class RB205_clone_arf_trooper_desert: RB205_arf_base
+{
+	ACCESS_TRUE
+	displayName = "(2-CT) Clone ARF Trooper <Desert>";
+	uniformclass = "RB205_U_arf_trooper_desert";
+	hiddenselectionsTextures[] =
+	{
+		"RB205_main\data\arf\U_arf_desert_upper_co.paa",
+		"RB205_main\data\arf\U_arf_desert_lower_co.paa",
+		"RB205_main\data\default\U_undersuit_co.paa"
+	};
+	LINKED_ITEMS(RB205_H_arf_trooper_desert,"RB205_V_arf_ct","RB205_NV_arf_antenna")
+	backpack = "RB205_B_arf_desert";
+};
+class RB205_clone_arf_trooper_jungle: RB205_arf_base
+{
+	ACCESS_TRUE
+	displayName = "(2-CT) Clone ARF Trooper <Jungle>";
+	uniformclass = "RB205_U_arf_trooper_jungle";
+	hiddenselectionsTextures[] =
+	{
+		"RB205_main\data\arf\U_arf_jungle_upper_co.paa",
+		"RB205_main\data\arf\U_arf_jungle_lower_co.paa",
+		"RB205_main\data\default\U_undersuit_co.paa"
+	};
+	LINKED_ITEMS(RB205_H_arf_trooper_jungle,"RB205_V_arf_ct","RB205_NV_arf_antenna")
+	backpack = "RB205_B_arf_jungle";
+};
+class RB205_clone_arf_trooper_woodland: RB205_arf_base
+{
+	ACCESS_TRUE
+	displayName = "(2-CT) Clone ARF Trooper <Woodland>";
+	uniformclass = "RB205_U_arf_trooper_woodland";
+	hiddenselectionsTextures[] =
+	{
+		"RB205_main\data\arf\U_arf_woodland_upper_co.paa",
+		"RB205_main\data\arf\U_arf_woodland_lower_co.paa",
+		"RB205_main\data\default\U_undersuit_co.paa"
+	};
+	LINKED_ITEMS(RB205_H_arf_trooper_woodland,"RB205_V_arf_ct","RB205_NV_arf_antenna")
+	backpack = "RB205_B_arf_woodland";
 };
 
 class RB205_clone_plt_recruit: RB205_plt_base
@@ -553,20 +617,57 @@ class RB205_B_ab_radio: RB205_B_ab
 	TFAR_RADIO
 };
 
-class SWLB_clone_bag;
-class RB205_B_arf: SWLB_clone_bag
+class RB205_B_arf: RB205_B_arf_base
 {
 	ACCESS_TRUE
-	author = "205th Recon Battalion";
 	displayname = "[205] Clone ARF Trooper Backpack";
-	descriptionShort = "";
-	maximumLoad = INV_BACK_ARF;
-	TFAR_RADIO_SMALL
-	picture = "\RB205_main\data\ui\backpacks\icon_B_arf.paa";
 	hiddenSelectionsTextures[] =
 	{
-		"RB205_main\data\arf\B_arf_co.paa",
+		"RB205_main\data\arf\B_arf_acc_co.paa",
+		"",
+		"",
+		"RB205_main\data\arf\B_arf2_co.paa",
 		"RB205_main\data\arf\B_arf_co.paa"
+	};
+};
+class RB205_B_arf_arctic: RB205_B_arf_camo_base
+{
+	ACCESS_TRUE
+	displayname = "[205] Clone ARF Trooper Backpack <Arctic>";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\arf\B_arf_arctic_co.paa",
+		"RB205_main\data\arf\B_arf_acc_camo_co.paa"
+	};
+};
+class RB205_B_arf_desert: RB205_B_arf_camo_base
+{
+	ACCESS_TRUE
+	displayname = "[205] Clone ARF Trooper Backpack <Desert>";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\arf\B_arf_desert_co.paa",
+		"RB205_main\data\arf\B_arf_acc_camo_co.paa"
+	};
+};
+class RB205_B_arf_jungle: RB205_B_arf_camo_base
+{
+	ACCESS_TRUE
+	displayname = "[205] Clone ARF Trooper Backpack <Jungle>";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\arf\B_arf_jungle_co.paa",
+		"RB205_main\data\arf\B_arf_acc_camo_co.paa"
+	};
+};
+class RB205_B_arf_woodland: RB205_B_arf_camo_base
+{
+	ACCESS_TRUE
+	displayname = "[205] Clone ARF Trooper Backpack <Woodland>";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\arf\B_arf_woodland_co.paa",
+		"RB205_main\data\arf\B_arf_acc_camo_co.paa"
 	};
 };
 

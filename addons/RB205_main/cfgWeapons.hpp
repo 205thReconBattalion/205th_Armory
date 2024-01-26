@@ -13,6 +13,11 @@ class RB205_H_recruit: RB205_H_base
 		"RB205_main\data\default\H_recruit_co.paa",
 		"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
 	};
+	hiddenSelectionsMaterials[] =
+	{
+		"",
+		""
+	};
 };
 class RB205_H_trooper: RB205_H_base
 {
@@ -67,6 +72,11 @@ class RB205_H_ab_recruit: RB205_H_ab_base
 	{
 		"RB205_main\data\airborne\H_ab_recruit_co.paa",
 		"lsd_armor_bluefor\helmet\gar\airborne\data\visor_co.paa"
+	};
+	hiddenSelectionsMaterials[] =
+	{
+		"",
+		""
 	};
 };
 class RB205_H_ab_trooper: RB205_H_ab_base
@@ -124,6 +134,12 @@ class RB205_H_arf_recruit: RB205_H_arf_base
 		"",
 		"ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa"
 	};
+	hiddenSelectionsMaterials[] =
+	{
+		"",
+		"",
+		""
+	};
 };
 class RB205_H_arf_trooper: RB205_H_arf_base
 {
@@ -170,17 +186,6 @@ class RB205_H_arf_lieutenant: RB205_H_arf_base
 	};
 };
 
-class RB205_H_arfF_recruit: RB205_H_arfF_base
-{
-	ACCESS_TRUE
-	displayName = "[205] Clone ARF Recruit Helmet";
-	hiddenSelectionsTextures[] =
-	{
-		"RB205_main\data\arf\H_arf_recruit_co.paa",
-		"RB205_main\data\arf\H_arf_flaps_white_co.paa",
-		"ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa"
-	};
-};
 class RB205_H_arfF_trooper: RB205_H_arfF_base
 {
 	ACCESS_TRUE
@@ -232,89 +237,66 @@ class RB205_H_arf_trooper_arctic: RB205_H_arf_base
 	displayName = "[205] Clone ARF Trooper Helmet <Arctic>";
 	hiddenSelectionsTextures[] =
 	{
-		"RB205_main\data\arf\H_arf_enl_co.paa",
+		"RB205_main\data\arf\H_arf_arctic_co.paa",
 		"",
-		"RB205_main\data\arf\visor_arf_co.paa"
+		"ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa"
 	};
-};
-class RB205_H_arfF_trooper_arctic: RB205_H_arfF_base
-{
-	ACCESS_TRUE
-	displayName = "[205] Clone ARF Trooper Helmet <Arctic>";
-	hiddenSelectionsTextures[] =
+	hiddenSelectionsMaterials[] =
 	{
-		"RB205_main\data\arf\H_arf_enl_co.paa",
-		"RB205_main\data\arf\H_arf_flaps_white_co.paa",
-		"RB205_main\data\arf\visor_arf_co.paa"
+		"",
+		"",
+		""
 	};
 };
-
 class RB205_H_arf_trooper_desert: RB205_H_arf_base
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone ARF Trooper Helmet <Desert>";
 	hiddenSelectionsTextures[] =
 	{
-		"RB205_main\data\arf\H_arf_enl_co.paa",
+		"RB205_main\data\arf\H_arf_desert_co.paa",
 		"",
-		"RB205_main\data\arf\visor_arf_co.paa"
+		"ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa"
 	};
-};
-class RB205_H_arfF_trooper_desert: RB205_H_arfF_base
-{
-	ACCESS_TRUE
-	displayName = "[205] Clone ARF Trooper Helmet <Desert>";
-	hiddenSelectionsTextures[] =
+	hiddenSelectionsMaterials[] =
 	{
-		"RB205_main\data\arf\H_arf_enl_co.paa",
-		"RB205_main\data\arf\H_arf_flaps_gray_co.paa",
-		"RB205_main\data\arf\visor_arf_co.paa"
+		"",
+		"",
+		""
 	};
 };
-
 class RB205_H_arf_trooper_jungle: RB205_H_arf_base
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone ARF Trooper Helmet <Jungle>";
 	hiddenSelectionsTextures[] =
 	{
-		"RB205_main\data\arf\H_arf_enl_co.paa",
+		"RB205_main\data\arf\H_arf_jungle_co.paa",
 		"",
-		"RB205_main\data\arf\visor_arf_co.paa"
+		"ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa"
 	};
-};
-class RB205_H_arfF_trooper_jungle: RB205_H_arfF_base
-{
-	ACCESS_TRUE
-	displayName = "[205] Clone ARF Trooper Helmet <Jungle>";
-	hiddenSelectionsTextures[] =
+	hiddenSelectionsMaterials[] =
 	{
-		"RB205_main\data\arf\H_arf_enl_co.paa",
-		"RB205_main\data\arf\H_arf_flaps_co.paa",
-		"RB205_main\data\arf\visor_arf_co.paa"
+		"",
+		"",
+		""
 	};
 };
-
 class RB205_H_arf_trooper_woodland: RB205_H_arf_base
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone ARF Trooper Helmet <Woodland>";
 	hiddenSelectionsTextures[] =
 	{
-		"RB205_main\data\arf\H_arf_enl_co.paa",
+		"RB205_main\data\arf\H_arf_woodland_co.paa",
 		"",
-		"RB205_main\data\arf\visor_arf_co.paa"
+		"ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa"
 	};
-};
-class RB205_H_arfF_trooper_woodland: RB205_H_arfF_base
-{
-	ACCESS_TRUE
-	displayName = "[205] Clone ARF Trooper Helmet <Woodland>";
-	hiddenSelectionsTextures[] =
+	hiddenSelectionsMaterials[] =
 	{
-		"RB205_main\data\arf\H_arf_enl_co.paa",
-		"RB205_main\data\arf\H_arf_flaps_gray_co.paa",
-		"RB205_main\data\arf\visor_arf_co.paa"
+		"",
+		"",
+		""
 	};
 };
 
@@ -330,6 +312,11 @@ class RB205_H_plt_recruit: RB205_H_plt_base
 	{
 		"RB205_main\data\pilot\H_plt_recruit_co.paa",
 		"ls_armor_bluefor\helmet\gar\phase2Pilot\data\visor_co.paa"
+	};
+	hiddenSelectionsMaterials[] =
+	{
+		"",
+		""
 	};
 };
 class RB205_H_plt_trooper: RB205_H_plt_base
@@ -523,6 +510,43 @@ class RB205_U_arf_lieutenant: RB205_U_lt_base
 	class ItemInfo: ItemInfo
     {
         uniformClass = RB205_clone_arf_lieutenant;
+    };
+};
+
+class RB205_U_arf_trooper_arctic: RB205_U_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone ARF Trooper Armor <Arctic>";
+	class ItemInfo: ItemInfo
+    {
+        uniformClass = RB205_clone_arf_trooper_arctic;
+    };
+};
+class RB205_U_arf_trooper_desert: RB205_U_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone ARF Trooper Armor <Desert>";
+	class ItemInfo: ItemInfo
+    {
+        uniformClass = RB205_clone_arf_trooper_desert;
+    };
+};
+class RB205_U_arf_trooper_jungle: RB205_U_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone ARF Trooper Armor <Jungle>";
+	class ItemInfo: ItemInfo
+    {
+        uniformClass = RB205_clone_arf_trooper_jungle;
+    };
+};
+class RB205_U_arf_trooper_woodland: RB205_U_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone ARF Trooper Armor <Woodland>";
+	class ItemInfo: ItemInfo
+    {
+        uniformClass = RB205_clone_arf_trooper_woodland;
     };
 };
 

@@ -36,11 +36,15 @@ class cfgPatches
 			"RB205_H_arf_sergeant",
 			"RB205_H_arf_lieutenant",
 
-			"RB205_H_arfF_recruit",
 			"RB205_H_arfF_trooper",
 			"RB205_H_arfF_corporal",
 			"RB205_H_arfF_sergeant",
 			"RB205_H_arfF_lieutenant",
+			
+			"RB205_H_arf_trooper_arctic",
+			"RB205_H_arf_trooper_desert",
+			"RB205_H_arf_trooper_jungle",
+			"RB205_H_arf_trooper_woodland",
 
 			"RB205_H_plt_recruit",
 			"RB205_H_plt_trooper",
@@ -66,6 +70,11 @@ class cfgPatches
 			"RB205_U_arf_corporal",
 			"RB205_U_arf_sergeant",
 			"RB205_U_arf_lieutenant",
+
+			"RB205_U_arf_trooper_arctic",
+			"RB205_U_arf_trooper_desert",
+			"RB205_U_arf_trooper_jungle",
+			"RB205_U_arf_trooper_woodland",
 			
 			"RB205_U_plt_trooper",
 			"RB205_U_plt_corporal",
@@ -157,6 +166,11 @@ class cfgPatches
 			"RB205_clone_arf_sergeantMajor",
 			"RB205_clone_arf_lieutenant",
 
+			"RB205_clone_arf_trooper_arctic",
+			"RB205_clone_arf_trooper_desert",
+			"RB205_clone_arf_trooper_jungle",
+			"RB205_clone_arf_trooper_woodland",
+
 			"RB205_clone_plt_recruit",
 			"RB205_clone_plt_trooper",
 			"RB205_clone_plt_lanceCorporal",
@@ -192,6 +206,11 @@ class cfgPatches
 
 			"RB205_B_arf",
 
+			"RB205_B_arf_arctic",
+			"RB205_B_arf_desert",
+			"RB205_B_arf_jungle",
+			"RB205_B_arf_woodland",
+
 			"RB205_B_snow_heavy",
 			"RB205_B_snow_medic",
 			"RB205_B_snow_rocket",
@@ -218,6 +237,7 @@ class CfgGlasses
 {
 	#include "cfgGlasses.hpp"
 };
+#include "XtdGearModels.hpp"
 
 class CfgFactionClasses
 {
