@@ -458,6 +458,11 @@ class RB205_B_heavy: ls_gar_standard_backpack
 	descriptionShort = "";
 	maximumload = INV_BACK;
 	picture = "\RB205_main\data\ui\backpacks\icon_B_heavy.paa";
+	hiddenSelectionsMaterials[] =
+	{
+		"RB205_main\data\materials\B_dft.rvmat",
+		"RB205_main\data\materials\B_cover.rvmat"
+	};
 	hiddenselectionstextures[] =
 	{
 		"RB205_main\data\default\B_default_co.paa",
@@ -473,6 +478,13 @@ class RB205_B_medic: ls_gar_medic_backpack
 	descriptionShort = "";
 	maximumload = INV_BACK_MEDIC;
 	picture = "\RB205_main\data\ui\backpacks\icon_B_medic.paa";
+	hiddenSelectionsMaterials[] =
+	{
+		"RB205_main\data\materials\B_dft.rvmat",
+		"RB205_main\data\materials\B_cover.rvmat",
+		"RB205_main\data\materials\B_medic1.rvmat",
+		"RB205_main\data\materials\B_medic2.rvmat"
+	};
 	hiddenselectionstextures[] =
 	{
 		"RB205_main\data\default\B_medic_co.paa",
@@ -490,6 +502,14 @@ class RB205_B_rocket: ls_gar_rocket_backpack
 	descriptionShort = "";
 	maximumload = INV_BACK_ROCKET;
 	picture = "\RB205_main\data\ui\backpacks\icon_B_rocket.paa";
+	hiddenSelectionsMaterials[] =
+	{
+		"RB205_main\data\materials\B_dft.rvmat",
+		"RB205_main\data\materials\B_rocket_holder.rvmat",
+		"RB205_main\data\materials\B_rocket.rvmat",
+		"RB205_main\data\materials\B_rocket_light.rvmat",
+		""
+	};
 	hiddenselectionstextures[] =
 	{
 		"RB205_main\data\default\B_default_co.paa",
@@ -508,6 +528,12 @@ class RB205_B_eod: ls_gar_heavy_backpack
 	descriptionShort = "";
 	maximumload = INV_BACK_EOD;
 	picture = "\RB205_main\data\ui\backpacks\icon_B_eod.paa";
+	hiddenSelectionsMaterials[] =
+	{
+		"RB205_main\data\materials\B_dft.rvmat",
+		"RB205_main\data\materials\B_cover.rvmat",
+		"RB205_main\data\materials\B_pouches.rvmat"
+	};
 	hiddenselectionstextures[] =
 	{
 		"RB205_main\data\default\B_eod_co.paa",
@@ -525,6 +551,12 @@ class RB205_B_radio: ls_gar_radio_backpack
 	maximumload = INV_BACK_RADIO;
 	picture = "\RB205_main\data\ui\backpacks\icon_B_radio.paa";
 	TFAR_RADIO
+	hiddenSelectionsMaterials[] =
+	{
+		"RB205_main\data\materials\B_dft.rvmat",
+		"RB205_main\data\materials\B_radio.rvmat",
+		"RB205_main\data\materials\B_screen.rvmat"
+	};
 	hiddenselectionstextures[] =
 	{
 		"RB205_main\data\default\B_default_co.paa",
@@ -542,6 +574,11 @@ class RB205_B_radio_mini: SWLB_clone_RTO_mini_backpack
 	maximumload = INV_BACK_NONE;
 	TFAR_RADIO_SMALL
 	picture = "\RB205_main\data\ui\backpacks\icon_B_radio_mini.paa";
+	hiddenSelectionsMaterials[] =
+	{
+		"RB205_main\data\materials\B_radio_mini.rvmat",
+		"RB205_main\data\materials\B_radio_mini_acc.rvmat"
+	};
 	hiddenSelectionsTextures[] =
 	{
 		"RB205_main\data\default\B_radio_mini_co.paa",
@@ -727,6 +764,10 @@ class RB205_B_arc: SWLB_clone_arc_backpack
 	maximumload = INV_BACK_ARC;
 	TFAR_RADIO
 	picture = "\RB205_main\data\ui\backpacks\icon_B_arc.paa";
+	hiddenSelectionsMaterials[] =
+	{
+		"RB205_main\data\materials\B_arc.rvmat"
+	};
 	hiddenSelectionsTextures[] =
 	{
 		"RB205_main\data\arc\B_arc_co.paa"

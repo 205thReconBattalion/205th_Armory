@@ -14,9 +14,8 @@ class RB205_VIS_base : G_Combat
 {
 	ACCESS_FALSE
 	author = "205th Recon Battalion";
-	model = "\lsd_equipment_bluefor\nvg\gar\commander\lsd_gar_p2Commander_nvg";
+	model = "\lsd_equipment_bluefor\nvg\gar\commander\lsd_gar_p2Commander_nvg.p3d";
 	hiddenSelections[] = {"camo1","camo2","camo3"};
-	//hiddenUnderwaterSelections[] = {"camo1","camo2","camo3"};
 	identityTypes[] = {};
 	mass = 2;
 	mode = 4;
@@ -26,6 +25,12 @@ class RB205_VIS : RB205_VIS_base
 	ACCESS_TRUE
 	displayName = "[205] Clone Visor";
 	picture = "\RB205_main\data\ui\other\icon_visor.paa";
+	hiddenSelectionsMaterials[] =
+	{
+		"RB205_main\data\materials\NV_dft.rvmat",
+		"",
+		""
+	};
 	hiddenSelectionsTextures[] =
 	{
 		"RB205_main\data\default\VIS_default_co.paa",
@@ -33,12 +38,6 @@ class RB205_VIS : RB205_VIS_base
 		""
 	};
 	identityTypes[] = { "RB205_VIS",1 };
-	/*hiddenUnderwaterSelectionsTextures[] =
-	{
-		"RB205_main\data\default\VIS_default_co.paa",
-		"",
-		""
-	};*/
 };
 class RB205_VIS_com : RB205_VIS_base
 {
@@ -51,10 +50,4 @@ class RB205_VIS_com : RB205_VIS_base
 		"RB205_main\data\default\VIS_base_co.paa",
 		"RB205_main\data\default\VIS_base_co.paa"
 	};
-	/*hiddenUnderwaterSelectionsTextures[] =
-	{
-		"RB205_main\data\default\VIS_base_co.paa",
-		"RB205_main\data\default\VIS_base_co.paa",
-		"RB205_main\data\default\VIS_base_co.paa"
-	};*/
 };

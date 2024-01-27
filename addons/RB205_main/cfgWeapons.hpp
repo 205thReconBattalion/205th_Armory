@@ -715,6 +715,10 @@ class RB205_V_medic: RB205_V_base
 	{
 		"camo1"
 	};
+	hiddenSelectionsMaterials[] =
+	{
+		"RB205_main\data\materials\heavy_acc.rvmat"
+	};
 	hiddenSelectionsTextures[] =
 	{
 		"RB205_main\data\default\V_medic_co.paa"
@@ -736,6 +740,11 @@ class RB205_V_grenadier: RB205_V_base
 	{
 		"camo1",
 		"camo2"
+	};
+	hiddenSelectionsMaterials[] =
+	{
+		"RB205_main\data\materials\light_acc.rvmat",
+		"RB205_main\data\materials\heavy_acc.rvmat"
 	};
 	hiddenSelectionsTextures[] =
 	{
@@ -760,6 +769,12 @@ class RB205_V_rebreather: RB205_V_base
 		"camo1",
 		"camo2",
 		"camo3"
+	};
+	hiddenSelectionsMaterials[] =
+	{
+		"RB205_main\data\materials\H_plt.rvmat",
+		"RB205_main\data\materials\officer_acc.rvmat",
+		"RB205_main\data\materials\heavy_acc.rvmat"
 	};
 	hiddenSelectionsTextures[] =
 	{
@@ -1121,6 +1136,10 @@ class RB205_NV: lsd_gar_standard_nvg
 	modelOptics = MODEL_OPTICS;
 	VIS_NV
 	picture = "\RB205_main\data\ui\other\icon_NV.paa";
+	hiddenSelectionsMaterials[] =
+	{
+		"RB205_main\data\materials\NV_dft.rvmat"
+	};
 	hiddenSelectionsTextures[] =
 	{
 		"RB205_main\data\default\NV_default_co.paa"
@@ -1144,6 +1163,10 @@ class RB205_NV_marksman: lsd_gar_standardSPC_nvg
 	modelOptics = MODEL_OPTICS;
 	VIS_NV_T
 	picture = "\RB205_main\data\ui\other\icon_NV_marksman.paa";
+	hiddenSelectionsMaterials[] =
+	{
+		"RB205_main\data\materials\NV_dft.rvmat"
+	};
 	hiddenSelectionsTextures[] =
 	{
 		"RB205_main\data\default\NV_default_co.paa"
@@ -1167,6 +1190,10 @@ class RB205_NV_rangefinder: lsd_gar_rangefinder_nvg
 	modelOptics = MODEL_OPTICS;
 	VIS_NV
 	picture = "\RB205_main\data\ui\other\icon_NV_rangefinder.paa";
+	hiddenSelectionsMaterials[] =
+	{
+		"RB205_main\data\materials\NV_dft.rvmat"
+	};
 	hiddenSelectionsTextures[] =
 	{
 		"RB205_main\data\default\NV_default_co.paa"

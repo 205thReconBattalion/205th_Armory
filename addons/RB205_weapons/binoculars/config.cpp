@@ -27,6 +27,10 @@ class CfgWeapons
 		descriptionShort = "Freigegeben für: Alle";
         author = "205th Recon Battalion";
 		picture = "\RB205_weapons\data\ui\binocular.paa";
+		hiddenSelectionsMaterials[] =
+		{
+			"\RB205_weapons\data\materials\binocular.rvmat"
+		};
 		hiddenSelectionsTextures[] =
 		{
 			"\RB205_weapons\data\RB205_binocular_co.paa"
@@ -42,6 +46,10 @@ class CfgWeapons
 		descriptionShort = "Freigegeben für: ARF, CL+";
         author = "205th Recon Battalion";
 		picture = "\RB205_weapons\data\ui\binocular_arf.paa";
+		hiddenSelectionsMaterials[] =
+		{
+			"\RB205_weapons\data\materials\binocular_arf.rvmat"
+		};
 		hiddenSelectionsTextures[] =
 		{
 			"\RB205_weapons\data\RB205_binocular_arf_blk_co.paa"

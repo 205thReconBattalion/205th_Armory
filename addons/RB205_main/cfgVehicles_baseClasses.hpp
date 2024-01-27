@@ -245,6 +245,12 @@ class RB205_clone_base: ls_gar_phase2_base
 	explosionShielding=0.40000001;
 	minTotalDamageThreshold=0.001;
 	impactDamageMultiplier=0.5;
+	hiddenSelectionsMaterials[] =
+	{
+		"RB205_main\data\materials\U_upper.rvmat",
+		"RB205_main\data\materials\U_lower.rvmat",
+		"RB205_main\data\materials\U_undersuit.rvmat"
+	};
 	/*class Wounds
 	{
 		tex[]={};
@@ -458,6 +464,10 @@ class RB205_B_ab_base: JLTS_Clone_jumppack_JT12
 	{
 		"camo1"
 	};
+	hiddenSelectionsMaterials[] =
+	{
+		"RB205_main\data\materials\B_ab.rvmat"
+	};
 	JLTS_isJumppack = 0;
 	RD501_jumppack_is_jumppack = 0;
 	tas_is_jetpack = 1; //3AS
@@ -479,6 +489,14 @@ class RB205_B_arf_base: SWLB_CEE_Recon_RTO_Backpack
 		"Camo2",
 		"Camo3",
 		"Main"
+	};
+	hiddenSelectionsMaterials[] =
+	{
+		"RB205_main\data\materials\B_radio_mini_acc.rvmat",
+		"",
+		"",
+		"RB205_main\data\materials\light_acc.rvmat",
+		"RB205_main\data\materials\B_radio_mini.rvmat"
 	};
 	maximumLoad = INV_BACK_ARF;
 	TFAR_RADIO_SMALL
