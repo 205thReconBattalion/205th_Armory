@@ -1,0 +1,97 @@
+class cfgPatches
+{
+    class RB205_custom_sixes
+    {
+        requiredAddons[] =
+        {
+            "RB205_main",
+            "RB205_custom"
+        };
+        requiredVersion = 1.0;
+        weapons[] =
+        {
+            "RB205_H_sixes",
+            "RB205_U_sixes",
+            "RB205_V_sixes"
+        };
+        units[]	=
+        {
+            "RB205_clone_sixes"
+        };
+    };
+};
+
+#include "\RB205_main\macros.hpp"
+
+class cfgWeapons
+{
+    class RB205_H_plt_sergeant;
+    class RB205_H_sixes: RB205_H_plt_sergeant
+    {
+        displayName = "[205] Clone Pilot Trooper Helmet [6666]";
+        hiddenSelectionsTextures[] =
+        {
+            "RB205_custom\6666_sixes\data\H_sixes.paa",
+            "RB205_main\data\pilot\visor_plt_co.paa"
+        };
+        class XtdGearInfo
+        {
+            model = "RB205_H_custom";
+            id = "6666";
+            var = "dft";
+        };
+    };
+
+    class RB205_U_plt_sergeant;
+    class ItemInfo;
+    class RB205_U_sixes: RB205_U_plt_sergeant
+    {
+        displayName = "[205] Clone Pilot Trooper Armor [6666]";
+        class ItemInfo: ItemInfo
+        {
+            uniformClass = RB205_clone_sixes;
+        };
+        class XtdGearInfo
+        {
+            model = "RB205_U_custom";
+            id = "6666";
+            var = "dft";
+        };
+    };
+
+    class RB205_V_plt_cs;
+    class RB205_V_sixes: RB205_V_plt_cs
+    {
+        displayName = "[205] Clone Pilot Trooper Vest [6666]";
+        hiddenSelectionsTextures[] =
+        {
+            "RB205_custom\6666_sixes\data\V_sixes.paa",
+            ""
+        };
+        class XtdGearInfo
+        {
+            model = "RB205_V_custom";
+            id = "6666";
+            var = "dft";
+        };
+    };
+};
+
+class cfgVehicles
+{
+    class RB205_clone_plt_sergeant;
+    class RB205_clone_sixes: RB205_clone_plt_sergeant
+    {
+        displayName = "CS-6666 Sixes";
+        uniformclass = "RB205_U_sixes";
+        editorSubCategory = "RB205_lore";
+        hiddenselectionsTextures[] =
+        {
+            "RB205_custom\6666_sixes\data\U_sixes_upper.paa",
+            "RB205_custom\6666_sixes\data\U_sixes_lower.paa",
+            "RB205_main\data\default\U_undersuit_co.paa"
+        };
+        LINKED_ITEMS("RB205_H_sixes","RB205_V_sixes","RB205_NV_chip")
+	    identityTypes[] = {"LanguageENG_F","SWLB_JH_Head_Hair"};
+    };
+};
