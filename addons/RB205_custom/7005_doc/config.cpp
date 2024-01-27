@@ -113,7 +113,16 @@ class cfgWeapons
         ACCESS_TRUE
         displayName = "[205] Clone Trooper Vest [7005]";
         model = "\SWLB_clones\SWLB_clone_recon_officer_armor.p3d";
-        hiddenSelections[] = {"camo1","camo2"};
+        hiddenSelections[] =
+        {
+            "camo1",
+            "camo2"
+        };
+        hiddenSelectionsMaterials[]=
+        {
+            "RB205_main\data\materials\heavy_acc.rvmat",
+            "RB205_main\data\materials\officer_acc.rvmat"
+        };
         hiddenSelectionsTextures[] =
         {
             "RB205_custom\7005_doc\data\V_doc_accessories.paa",
@@ -144,6 +153,12 @@ class cfgVehicles
         uniformclass = "RB205_U_doc";
         model = "ls_armor_bluefor\uniform\gar\marshalCommander\ls_gar_marshalCommander_uniform.p3d";
 	    editorSubCategory = "RB205_lore";
+        hiddenselectionsMaterials[] =
+        {
+            "RB205_main\data\materials\U_upper2.rvmat",
+            "RB205_main\data\materials\U_lower.rvmat",
+            "RB205_main\data\materials\U_undersuit.rvmat"
+        };
         hiddenselectionsTextures[] =
         {
             "RB205_custom\7005_doc\data\U_doc_upper.paa",

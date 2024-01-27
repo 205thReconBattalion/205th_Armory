@@ -98,6 +98,11 @@ class cfgWeapons
         displayName = "[205] Clone Commander Vest [8550]"
         model = "\SWLB_clones\SWLB_clone_commander_armor.p3d";
         hiddenSelections[] = {"camo1","rank"};
+        hiddenSelectionsMaterials[]=
+        {
+            "RB205_main\data\materials\officer_acc.rvmat",
+            "RB205_main\data\materials\rank.rvmat"
+        };
         hiddenSelectionsTextures[] =
         {
             "RB205_custom\8550_spark\data\V_spark.paa",
@@ -139,7 +144,6 @@ class cfgVehicles
         };
     };
 
-    class JLTS_Clone_jumppack_mc;
     class RB205_B_arc_jetpack;
     class RB205_B_spark_jetpack: RB205_B_arc_jetpack
     {
@@ -148,7 +152,14 @@ class cfgVehicles
         author = "205th Recon Battalion";
         picture = "\RB205_custom\8550_spark\data\ui\icon_B_spark_jetpack.paa";
         model = "\MRC\JLTS\characters\CloneArmor\CloneJumppackMC.p3d";
-        hiddenSelections[] = {"camo1"};
+        hiddenSelections[] =
+        {
+            "camo1"
+        };
+        hiddenSelectionsMaterials[] =
+        {
+            "RB205_main\data\materials\B_spark_jetpack.rvmat"
+        };
         hiddenSelectionsTextures[] =
         {
             "RB205_custom\8550_spark\data\B_spark.paa"
@@ -165,7 +176,7 @@ class cfgVehicles
     {
         displayName = "CC-8550 Spark";
         uniformclass = "RB205_U_spark";
-        editorSubCategory = "RB205_lore"; 
+        editorSubCategory = "RB205_lore";
         hiddenselectionsTextures[] =
         {
             "RB205_custom\8550_spark\data\U_spark_upper.paa",

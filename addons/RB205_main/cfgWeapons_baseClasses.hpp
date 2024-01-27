@@ -37,7 +37,7 @@ class RB205_H_base: lsd_gar_phase2_helmet
 	};
 	hiddenSelectionsMaterials[] =
 	{
-		"",
+		"RB205_main\data\materials\H_dft.rvmat",
 		"\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
 	};
 	ace_hearing_protection = ACE_HEARING_PROTECTION;
@@ -76,7 +76,7 @@ class RB205_H_ab_base: lsd_gar_airborne_helmet
 	};
 	hiddenSelectionsMaterials[] =
 	{
-		"lsd_armor_bluefor\helmet\gar\airborne\data\helmet.rvmat",
+		"RB205_main\data\materials\H_ab.rvmat",
 		"\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
 	};
 	ace_hearing_protection = ACE_HEARING_PROTECTION;
@@ -116,7 +116,7 @@ class RB205_H_arf_base: ls_gar_phase1Arf_helmet
 	};
 	hiddenSelectionsMaterials[] =
 	{
-		"",
+		"RB205_main\data\materials\H_arf.rvmat",
 		"",
 		"\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
 	};
@@ -143,6 +143,12 @@ class RB205_H_arfF_base: RB205_H_arf_base
 	author = "205th Recon Battalion";
 	descriptionShort = "";
 	picture = "\RB205_main\data\ui\helmets\icon_H_arfF.paa";
+	hiddenSelectionsMaterials[] =
+	{
+		"RB205_main\data\materials\H_arf.rvmat",
+		"RB205_main\data\materials\H_arf_flaps.rvmat",
+		"\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+	};
 };
 
 class ls_gar_phase2Pilot_helmet: ls_blueforHelmet_base
@@ -163,7 +169,7 @@ class RB205_H_plt_base: ls_gar_phase2Pilot_helmet
 	};
 	hiddenSelectionsMaterials[] =
 	{
-		"",
+		"RB205_main\data\materials\H_plt.rvmat",
 		"\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
 	};
 	ace_hearing_protection = ACE_HEARING_PROTECTION;
@@ -236,7 +242,7 @@ class RB205_H_arc_base: lsd_gar_arc_helmet
 	};
 	hiddenSelectionsMaterials[] =
 	{
-		"",
+		"RB205_main\data\materials\H_arc.rvmat",
 		"\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat",
 		"\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
 	};
@@ -344,6 +350,13 @@ class RB205_V_fireTeamLead_base: RB205_V_base
 		"holster",
 		"pauldron"
 	};
+	hiddenSelectionsMaterials[]=
+	{
+		"RB205_main\data\materials\heavy_acc.rvmat",
+		"RB205_main\data\materials\heavy_acc.rvmat",
+		"RB205_main\data\materials\heavy_acc_holster.rvmat",
+		"RB205_main\data\materials\heavy_acc.rvmat"
+	};
 	class ItemInfo: ItemInfo
 	{
 		mass = MASS_VEST_NCO;
@@ -365,6 +378,11 @@ class RB205_V_squadLead_base: RB205_V_base
 	{
 		"camo1",
 		"rank"
+	};
+	hiddenSelectionsMaterials[]=
+	{
+		"RB205_main\data\materials\officer_acc.rvmat",
+		""
 	};
 	class ItemInfo: ItemInfo
 	{
@@ -391,6 +409,10 @@ class RB205_V_platoonLead_base: RB205_V_base
 	hiddenSelections[] =
 	{
 		"camo1"
+	};
+	hiddenSelectionsMaterials[]=
+	{
+		"RB205_main\data\materials\officer_acc.rvmat"
 	};
 	class ItemInfo: ItemInfo
 	{
@@ -434,6 +456,13 @@ class RB205_V_ab_base: RB205_V_base
 		"ammo",
 		"pauldron"
 	};
+	hiddenSelectionsMaterials[] =
+	{
+		"RB205_main\data\materials\heavy_acc.rvmat",
+		"RB205_main\data\materials\officer_acc.rvmat",
+		"RB205_main\data\materials\heavy_acc.rvmat",
+		""
+	};
 	class ItemInfo: ItemInfo
 	{
 		uniformModel = "\SWLB_clones\SWLB_clone_airborne_armor.p3d";
@@ -452,6 +481,13 @@ class RB205_V_ab_fireTeamLead_base: RB205_V_fireTeamLead_base
 		"ammo",
 		"pauldron"
 	};
+	hiddenSelectionsMaterials[] =
+	{
+		"RB205_main\data\materials\heavy_acc.rvmat",
+		"RB205_main\data\materials\officer_acc.rvmat",
+		"RB205_main\data\materials\heavy_acc.rvmat",
+		"RB205_main\data\materials\heavy_acc.rvmat"
+	};
 	class ItemInfo: ItemInfo
 	{
 		uniformModel = "\SWLB_clones\SWLB_clone_airborne_armor.p3d";
@@ -468,6 +504,13 @@ class RB205_V_ab_squadLead_base: RB205_V_squadLead_base
 		"camo2",
 		"ammo",
 		"pauldron"
+	};
+	hiddenSelectionsMaterials[] =
+	{
+		"RB205_main\data\materials\heavy_acc.rvmat",
+		"RB205_main\data\materials\officer_acc.rvmat",
+		"RB205_main\data\materials\heavy_acc.rvmat",
+		""
 	};
 	class ItemInfo: ItemInfo
 	{
@@ -487,6 +530,14 @@ class RB205_V_ab_platoonLead_base: RB205_V_platoonLead_base
 		"camo3",
 		"pauldron"
 	};
+	hiddenSelectionsMaterials[] =
+	{
+		"RB205_main\data\materials\heavy_acc.rvmat",
+		"RB205_main\data\materials\heavy_acc.rvmat",
+		"RB205_main\data\materials\officer_acc.rvmat",
+		"RB205_main\data\materials\officer_acc.rvmat",
+		"RB205_main\data\materials\officer_acc.rvmat"
+	};
 	class ItemInfo: ItemInfo
 	{
 		uniformModel = "ls_armor_bluefor\vest\gar\airborneOfficer\ls_gar_airborneOfficer_vest.p3d";
@@ -503,6 +554,12 @@ class RB205_V_arf_base: RB205_V_base
 		"camo1",
 		"camo2",
 		"camo3"
+	};
+	hiddenSelectionsMaterials[] =
+	{
+		"RB205_main\data\materials\light_acc.rvmat",
+		"RB205_main\data\materials\heavy_acc.rvmat",
+		"RB205_main\data\materials\officer_acc.rvmat"
 	};
 	class ItemInfo: ItemInfo
 	{
@@ -585,6 +642,11 @@ class RB205_V_arc_base: RB205_V_base
 	{
 		"camo1",
 		"camo2"
+	};
+	hiddenSelectionsMaterials[] =
+	{
+		"RB205_main\data\materials\V_arc.rvmat",
+		"RB205_main\data\materials\officer_acc.rvmat"
 	};
 	class ItemInfo: ItemInfo
 	{
