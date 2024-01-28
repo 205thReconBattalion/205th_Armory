@@ -11,8 +11,8 @@ class cfgPatches
 			"SWLB_equipment_backpacks",
 			"JLTS_core",
 			"JLTS_characters_CloneArmor2",
-			"JLTS_jumppacks",
-			"LS_Armor" //by Last Force Project
+			"JLTS_jumppacks"//,
+			//"LS_Armor" //by Last Force Project
 		};
 		requiredVersion = 1.0;
         author = "205th Recon Battalion";
