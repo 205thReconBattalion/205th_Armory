@@ -62,6 +62,7 @@ params ["_this"];
 		"RB205_H_mando","RB205_U_mando",
 		"RB205_H_shadow","RB205_U_shadow",
 		"RB205_H_rambo","RB205_U_rambo",
+		"RB205_H_fugger","RB205_U_fugger",
 		"RB205_H_akira","RB205_U_akira",
 		"RB205_H_pain","RB205_U_pain",
 		"RB205_H_fire","RB205_U_fire",
