@@ -24,8 +24,6 @@ class cfgPatches
 		};
 		ammo[] =
 		{
-			//"RB205_ammo_smg_blue",
-			//"RB205_ammo_sniper_blue",
 			"RB205_ammo_40mm_at"
 		};
 	};

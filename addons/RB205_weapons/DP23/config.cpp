@@ -27,6 +27,7 @@ class CfgWeapons
 		displayName = "$STR_205_DP23_DisplayName";
 		displayNameShort = "$STR_205_DP23_DisplayNameShort";
 		descriptionShort = "Freigegeben für: 1-3 'Rancor'";
+		picture = "\RB205_weapons\data\ui\dp23.paa";
 		magazines[] =
 		{
 			"RB205_Scatter_Energy_Pack"
@@ -34,5 +35,5 @@ class CfgWeapons
 		baseWeapon = "RB205_DP23";
         author = "205th Recon Battalion";
 	};
-	//FRIED_WEAPON(RB205_DP23,"\RB205_weapons\data\ui\dp23_fried.paa")
+	FRIED_WEAPON(RB205_DP23,"\RB205_weapons\data\ui\dp23_fried.paa")
 };

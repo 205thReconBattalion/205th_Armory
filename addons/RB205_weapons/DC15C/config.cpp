@@ -33,7 +33,7 @@ class CfgWeapons
 		displayName = "$STR_205_DC15C_DisplayName";
 		displayNameShort = "$STR_205_DC15C_DisplayNameShort";
 		descriptionShort = "Blasterkarabiner der GAR<br />Freigegeben für: Alle<br />(Unterwasser-Fähig)";
-		picture = "\RB205_weapons\data\ui\dc15s.paa";
+		picture = "\RB205_weapons\data\ui\dc15c.paa";
 		fireLightDiffuse[] = {0,0,1};
 		canShootInWater = 1;
 		magazines[] =
@@ -113,7 +113,7 @@ class CfgWeapons
 			soundBurst = 0;
 		};
 	};
-	FRIED_WEAPON(RB205_DC15C,"\RB205_weapons\data\ui\dc15s_fried.paa")
+	FRIED_WEAPON(RB205_DC15C,"\RB205_weapons\data\ui\dc15c_fried.paa")
 	
 	class 3AS_DC15C_GL;
 	class RB205_DC15C_GL: 3AS_DC15C_GL
@@ -122,7 +122,7 @@ class CfgWeapons
 		displayName = "$STR_205_DC15C_GL_DisplayName";
 		displayNameShort = "$STR_205_DC15C_GL_DisplayNameShort";
 		descriptionShort = "Blasterkarabiner der GAR<br />Freigegeben für: Alle<br />(Unterwasser-Fähig)";
-		picture = "\RB205_weapons\data\ui\dc15s.paa";
+		picture = "\RB205_weapons\data\ui\dc15c.paa";
 		fireLightDiffuse[] = {0,0,1};
 		canShootInWater = 1;
 		magazines[] =
@@ -259,7 +259,7 @@ class CfgWeapons
 			};
 		};
 	};
-	FRIED_WEAPON(RB205_DC15C_GL,"\RB205_weapons\data\ui\dc15s_fried.paa")
+	FRIED_WEAPON(RB205_DC15C_GL,"\RB205_weapons\data\ui\dc15c_fried.paa")
 };
 
 class cfgSoundShaders
