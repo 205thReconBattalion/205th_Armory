@@ -4,8 +4,8 @@ class cfgPatches
 	{
 		requiredAddons[]=
 		{
-			"RB205_vehicles",
-			"212th_APC_test"
+			"RB205_vehicles"/*,
+			"212th_APC_test"*/
 		};
 		requiredVersion = 1.0;
         author = "205th Recon Battalion";
