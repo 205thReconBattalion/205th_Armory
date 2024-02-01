@@ -7,8 +7,12 @@ class cfgPatches
             "A3_Ui_F"
         };
         requiredVersion = 1.0;
+        author = "205th Recon Battalion";
+		units[] = {};
+		weapons[] = {};
     };
 };
+
 class CfgMarkerClasses
 {
 	class RB205_BFT
