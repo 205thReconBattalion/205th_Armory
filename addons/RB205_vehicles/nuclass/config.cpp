@@ -43,7 +43,7 @@ class cfgVehicles
 		{
 			"RB205_vehicles\nuClass\data\nuClass_exterior.rvmat",
 			"RB205_vehicles\nuClass\data\nuClass_wings.rvmat",
-			"RB205_vehicles\nuClass\data\nuClass_interior.rvmat",
+			"3as\3as_Nu\data\NU_Interior.rvmat",
 			"RB205_vehicles\nuClass\data\nuClass_cockpit_doors.rvmat"
 		};
 		hiddenSelectionsTextures[] =
