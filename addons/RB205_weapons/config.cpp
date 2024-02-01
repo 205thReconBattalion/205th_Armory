@@ -90,8 +90,9 @@ class CfgAmmo
 	class JLTS_bullet_scatter_blue;
 	class RB205_ammo_scatter: JLTS_bullet_scatter_blue
 	{
-		hit = 15;//5
-		caliber = 1.95;//1.2
+		hit = 5;
+		caliber = 1.2;
+		timetolive = 1;
 	};
 };
 
