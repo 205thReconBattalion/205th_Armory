@@ -66,7 +66,7 @@ class CfgMagazines
 		displayName = "$STR_205_DC17M_blaster_Energy_Pack_DisplayName";
 		displayNameShort = "$STR_205_DC17M_blaster_Energy_Pack_DisplayNameShort";
 		descriptionShort = "$STR_205_DC17M_blaster_Energy_Pack_DescriptionShort";
-		ammo = "RB205_ammo_standard";
+		ammo = "RB205_ammo_experimental";
 		count = 60;
 		mass = 10;
 	};
@@ -188,7 +188,7 @@ class CfgWeapons
 		author = "205th Recon Battalion";
 		displayName="$STR_205_DC17M_DisplayName";
 		displayNameShort = "STR_205_DC17M_DisplayNameShort";
-		descriptionShort = "Blasterkarabiner der GAR<br />Freigegeben für: CC";
+		descriptionShort = "Blasterkarabiner der GAR<br />Freigegeben für: Pathfinder, ARC";
 		hiddenSelectionsTextures[] =
 		{
 			"RB205_weapons\data\RB205_DC17M.paa"

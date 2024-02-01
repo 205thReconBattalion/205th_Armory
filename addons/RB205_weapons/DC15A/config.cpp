@@ -266,6 +266,40 @@ class CfgWeapons
 				};
 			};
 		};
+		class OpticsModes
+		{
+			class Ironsights
+			{
+				opticsID = 1;
+				opticsZoomInit = 0.75;
+				opticsZoomMax = 1.1;
+				opticsZoomMin = 0.25;
+				distanceZoomMax = 100;
+				distanceZoomMin = 100;
+				memoryPointCamera = "eye";
+				opticsDisablePeripherialVision = 0.67;
+				opticsFlare = "true";
+				opticsPPEffects[] = {"OpticsCHAbera5","OpticsBlur5"};
+				useModelOptics = 0;
+				visionMode[] = {};
+			};
+			class Scopes: Ironsights
+			{
+				opticsID = 2;
+				opticsZoomInit = 0.125;
+				opticsZoomMax = 0.125;
+				opticsZoomMin = 0.0625;
+				distanceZoomMax = 100;
+				distanceZoomMin = 100;
+				cameraDir = "";
+				memoryPointCamera = "opticView";
+				opticsDisablePeripherialVision = 0.67;
+				opticsFlare = "true";
+				opticsPPEffects[] = {"OpticsCHAbera5","OpticsBlur5"};
+				useModelOptics = 1;
+				visionMode[] = {"Normal","NVG"};
+			};
+		};
 	};
 	FRIED_WEAPON(RB205_DC15A_GL,"\RB205_weapons\data\ui\dc15a_fried.paa")
 };
