@@ -29,8 +29,6 @@ player addPrimaryWeaponItem "RB205_Standard_Energy_Pack";
 player addWeapon "RB205_DC17_alt";
 player addSecondaryWeaponItem "RB205_Compact_Energy_Pack";
 player addSecondaryWeaponItem "JLTS_stun_mag_long";
-// TERITARY WEAPON
-player addWeapon "RB205_RPS6_disposable_base";
 
 // UNIFORM
 player setVariable ["ACE_IsEngineer", 0, true]; 
