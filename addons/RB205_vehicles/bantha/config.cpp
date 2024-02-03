@@ -92,7 +92,7 @@ class cfgVehicles
 	};
 
 	class 212th_B_APC_Wheeled_fs_cannon_F;
-	class RB205_bantha_mortar: 212th_B_APC_Wheeled_aa_cannon_F
+	class RB205_bantha_mortar: 212th_B_APC_Wheeled_fs_cannon_F
 	{
 		ACCESS_TRUE
 		displayName = "HAVw A2 Bantha (Mortar)";
