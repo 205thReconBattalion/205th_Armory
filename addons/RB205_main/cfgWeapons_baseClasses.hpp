@@ -58,6 +58,45 @@ class RB205_H_base: lsd_gar_phase2_helmet
 	};
 };
 
+class ls_gar_barc_helmet: ls_blueforHelmet_base
+{
+	class ItemInfo;
+};
+class RB205_H_barc_base: ls_gar_barc_helmet
+{
+	ACCESS_FALSE
+	author = "205th Recon Battalion";
+	descriptionShort = "";
+	picture = "\RB205_main\data\ui\helmets\icon_H_barc.paa";
+	model = "\ls_armor_bluefor\helmet\gar\barc\ls_gar_barc_helmet.p3d";
+	hiddenSelections[] =
+	{
+		"camo1",
+		"visor"
+	};
+	hiddenSelectionsMaterials[] =
+	{
+		"RB205_main\data\materials\H_barc.rvmat",
+		"\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+	};
+	ace_hearing_protection = ACE_HEARING_PROTECTION;
+	ace_hearing_lowerVolume = ACE_HEARING_LOWER_VOLUME_DEFAULT;
+	subItems[] = {};
+	identityTypes[] = {"LanguageENG_F","SWLB_JH_Head_Hair"};
+	class ItemInfo: ItemInfo
+	{
+		mass = MASS_HELMET;
+		allowedSlots[] = ALLOWED_SLOTS_HELMET;
+		uniformModel = "ls_armor_bluefor\helmet\gar\barc\ls_gar_barc_helmet.p3d";
+		modelSides[] = {6};
+		hiddenSelections[] = {"camo1","visor"};
+		class HitpointsProtectionInfo
+		{
+			HITPOINTS_HELMET
+		};
+	};
+};
+
 class lsd_gar_airborne_helmet: ls_blueforHelmet_base
 {
 	class ItemInfo;
