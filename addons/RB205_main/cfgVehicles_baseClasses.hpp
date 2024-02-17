@@ -376,6 +376,12 @@ class RB205_snow_base: RB205_clone_base
 		"Camo2",
 		"CamoB"
 	};
+	hiddenSelectionsMaterials[] =
+	{
+		"RB205_main\data\materials\U_snow_upper.rvmat",
+		"RB205_main\data\materials\U_snow_lower.rvmat",
+		"RB205_main\data\materials\U_snow_undersuit.rvmat"
+	};
 	backpack="";
 	weapons[]=
 	{
@@ -524,5 +530,10 @@ class RB205_B_snow_base: LST_21_BackPack
 	{
 		"backpack",
 		"cloth"
+	};
+	hiddenSelectionsMaterials[]=
+	{
+		"RB205_main\data\materials\B_snow.rvmat",
+		"RB205_main\data\materials\B_snow_cloth.rvmat"
 	};
 };

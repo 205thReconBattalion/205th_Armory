@@ -406,7 +406,7 @@ class RB205_H_snow_lieutenant: RB205_H_snow_base
 	displayName = "[205] Clone Snow Trooper Helmet (Lieutenant)";
 	hiddenSelectionsTextures[] =
 	{
-		"RB205_main\data\snow\H_snow_nco_co.paa"
+		"RB205_main\data\snow\H_snow_cl_co.paa"
 	};
 };
 
