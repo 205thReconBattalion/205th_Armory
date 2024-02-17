@@ -244,6 +244,10 @@ class RB205_H_snow_base: ls_gar_phase2Insulated_helmet
 	{
 		"Camo1"
 	};
+	hiddenSelectionsMaterials[] =
+	{
+		"RB205_main\data\materials\H_snow.rvmat"
+	};
 	ace_hearing_protection = ACE_HEARING_PROTECTION;
 	ace_hearing_lowerVolume = ACE_HEARING_LOWER_VOLUME_DEFAULT;
 	subItems[] = {};
@@ -616,6 +620,10 @@ class RB205_V_snow_base: RB205_V_base
 	{
 		"Camo1"
 	};
+	hiddenSelectionsMaterials[] =
+	{
+		"RB205_main\data\materials\V_snow.rvmat"
+	};
 	class ItemInfo: ItemInfo
 	{
 		uniformModel = "\armor_unit\21\21st_Vest_V2.p3d";
@@ -631,6 +639,10 @@ class RB205_V_snow_fireTeamLead_base: RB205_V_fireTeamLead_base
 	hiddenSelections[] =
 	{
 		"Camo1"
+	};
+	hiddenSelectionsMaterials[] =
+	{
+		"RB205_main\data\materials\V_snow.rvmat"
 	};
 	class ItemInfo: ItemInfo
 	{
@@ -648,6 +660,10 @@ class RB205_V_snow_squadLead_base: RB205_V_squadLead_base
 	{
 		"Camo1"
 	};
+	hiddenSelectionsMaterials[] =
+	{
+		"RB205_main\data\materials\V_snow.rvmat"
+	};
 	class ItemInfo: ItemInfo
 	{
 		uniformModel = "\armor_unit\21\21st_Vest_V2.p3d";
@@ -663,6 +679,10 @@ class RB205_V_snow_platoonLead_base: RB205_V_platoonLead_base
 	hiddenSelections[] =
 	{
 		"Camo1"
+	};
+	hiddenSelectionsMaterials[] =
+	{
+		"RB205_main\data\materials\V_snow.rvmat"
 	};
 	class ItemInfo: ItemInfo
 	{
