@@ -12,8 +12,7 @@ class cfgPatches
         {
             "RB205_H_scythe",
             "RB205_U_scythe",
-            "RB205_V_scythe",
-            "RB205_VIS_scythe"
+            "RB205_V_scythe"
         };
 		units[]	=
         {
@@ -94,6 +93,6 @@ class cfgVehicles
         };
         LINKED_ITEMS(RB205_H_scythe,"RB205_V_scythe","RB205_NV_chip")
 	    backpack = "RB205_B_radio_mini_blk";
-        identityTypes[]={"LanguageENG_F","SWLB_JH_Head_Hair","RB205_VIS_scythe"};
+        identityTypes[]={"LanguageENG_F","SWLB_JH_Head_Hair"};
     };
 };
