@@ -12,8 +12,7 @@ class cfgPatches
         {
             "RB205_H_scythe",
             "RB205_U_scythe",
-            "RB205_V_scythe",
-            "RB205_VIS_scythe"
+            "RB205_V_scythe"
         };
 		units[]	=
         {
@@ -26,14 +25,15 @@ class cfgPatches
 
 class cfgWeapons
 {
-    class RB205_H_lieutenant;
-	class RB205_H_scythe: RB205_H_lieutenant
+    class RB205_H_barc_base;
+	class RB205_H_scythe: RB205_H_barc_base
 	{
+        ACCESS_TRUE
 		displayName = "[205] Clone Trooper Helmet [5577]";
         hiddenSelectionsTextures[] =
         {
             "RB205_custom\5577_scythe\data\H_scythe.paa",
-		    "RB205_main\data\default\visor_p2_co.paa"
+		    "RB205_custom\5577_scythe\data\visor_scythe.paa"
         };
         class XtdGearInfo
         {
@@ -93,28 +93,6 @@ class cfgVehicles
         };
         LINKED_ITEMS(RB205_H_scythe,"RB205_V_scythe","RB205_NV_chip")
 	    backpack = "RB205_B_radio_mini_blk";
-        identityTypes[]={"LanguageENG_F","SWLB_JH_Head_Hair","RB205_VIS_scythe"};
-    };
-};
-
-class CfgGlasses
-{
-    class RB205_VIS;
-    class RB205_VIS_scythe: RB205_VIS
-    {
-        displayName = "[205] Clone Visor [5577]";
-        hiddenSelectionsTextures[] =
-        {
-            "RB205_custom\5577_scythe\data\VIS_scythe.paa",
-            "",
-            ""
-        };
-        identityTypes[] = { "RB205_VIS_scythe",1 };
-        class XtdGearInfo
-        {
-            model = "RB205_G_custom";
-            type = "5577";
-            var = "dft";
-        };
+        identityTypes[]={"LanguageENG_F","SWLB_JH_Head_Hair"};
     };
 };
