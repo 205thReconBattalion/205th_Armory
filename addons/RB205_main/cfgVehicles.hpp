@@ -763,6 +763,8 @@ class RB205_B_arc: SWLB_clone_arc_backpack
 	descriptionShort = "";
 	maximumload = INV_BACK_ARC;
 	TFAR_RADIO
+	ace_logistics_wirecutter_hasWirecutter = 1;
+	ace_trenches_entrenchingTool = 1;
 	picture = "\RB205_main\data\ui\backpacks\icon_B_arc.paa";
 	hiddenSelectionsMaterials[] =
 	{
