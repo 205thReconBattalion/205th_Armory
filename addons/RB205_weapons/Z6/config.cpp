@@ -12,8 +12,7 @@ class cfgPatches
 		units[] = {};
 		weapons[] =
 		{
-			"RB205_Z6",
-			"RB205_Z6_dev"
+			"RB205_Z6"
 		};
 	};
 };
@@ -71,12 +70,6 @@ class CfgWeapons
 		};
 	};
 	FRIED_WEAPON(RB205_Z6,"\RB205_weapons\data\ui\z6_fried.paa")
-
-	class RB205_Z6_dev: RB205_Z6
-	{
-		displayName = "[205] Z-6 Rotary Blaster (DEVELOPMENT)";
-		baseWeapon = "RB205_Z6_dev";
-	};
 };
 
 class cfgSoundShaders
