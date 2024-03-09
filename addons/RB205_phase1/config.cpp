@@ -1,6 +1,6 @@
 class cfgPatches
 {
-    class RB205_main
+    class RB205_phase1
 	{
 		requiredAddons[]=
 		{
