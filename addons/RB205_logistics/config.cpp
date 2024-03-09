@@ -6,7 +6,8 @@ class CfgPatches
 		{
 			"RB205_main",
 			"RB205_weapons",
-			"RB205_custom"
+			"RB205_custom",
+			"3AS_Prop_Droids"
 		};
 		requiredVersion=1.0;
 		units[]=
@@ -17,7 +18,9 @@ class CfgPatches
 			"RB205_gonk_heal",
 			"RB205_gonk_restricted",
 			"RB205_resupply_weapons",
-			"RB205_resupply_medical"
+			"RB205_resupply_medical",
+			"RB205_resupply_equipment",
+			"RB205_resupply_arsenal"
 		};
 		weapons[]={};
 	};
@@ -37,7 +40,7 @@ class CfgEditorSubcategories
 {
 	class RB205_gonk
 	{
-		displayName = "Gonk Droids";
+		displayName = "Droids";
 	};
 	class RB205_crates
 	{
@@ -88,6 +91,17 @@ class CfgVehicles
 		//sound="GonkMarch";
 		scope=1;
 	};
+	class Land_3AS_Medical_Droid;
+	class RB205_med_base: Land_3AS_Medical_Droid
+	{
+		author = "Spark";
+		editorCategory = "RB205_prop";
+		editorSubcategory = "RB205_gonk";
+		ACE_CARGO
+		CARRYABLE
+		DRAGGABLE
+		scope=1;
+	};
 	class RB205_gonk_aio: RB205_gonk_Base
 	{
 		displayName = "[205] Gonk (All In One)";
@@ -108,9 +122,9 @@ class CfgVehicles
 		scope		= 2;
 		scopeCurator= 2;
 	};
-	class RB205_gonk_heal: RB205_gonk_Base
+	class RB205_gonk_heal: RB205_med_base
 	{
-		displayName = "[205] Gonk (Heal)";
+		displayName = "[205] Medical Droid";
 		class EventHandlers: DefaultEventhandlers
 		{
 			init = "[_this select 0] execVM '\RB205_logistics\scripts\gonk\heal.sqf';";
@@ -129,8 +143,8 @@ class CfgVehicles
 		scopeCurator= 2;
 	};
 
-
-	class RB205_resupply_weapons: JLTS_Ammobox_weapons_GAR
+	class 3AS_Supply_Large_Ammo_Prop;
+	class RB205_resupply_weapons: 3AS_Supply_Large_Ammo_Prop
 	{
 		displayName="[205] Resupply Crate (Weapons/Ammo)";
 		editorCategory="RB205_prop";
@@ -148,7 +162,8 @@ class CfgVehicles
 		scope		= 2;
 		scopeCurator= 2;
 	};
-	class RB205_resupply_medical: JLTS_Ammobox_support_GAR
+	class 3AS_Supply_Large_Medical_Prop;
+	class RB205_resupply_medical: 3AS_Supply_Large_Medical_Prop
 	{
 		displayName="[205] Resupply Crate (Medical)";
 		editorCategory="RB205_prop";
@@ -158,6 +173,44 @@ class CfgVehicles
 		class EventHandlers: DefaultEventhandlers
 		{
 			init = "[_this select 0] execVM '\RB205_logistics\scripts\crates\medical.sqf';";
+		};
+		class TransportWeapons{};
+		class TransportMagazines{};
+		class TransportItems{};
+		class TransportBackpacks{};
+		scope		= 2;
+		scopeCurator= 2;
+	};
+	class 3AS_Supply_Large_Prop;
+	class RB205_resupply_equipment: 3AS_Supply_Large_Prop
+	{
+		displayName="[205] Resupply Crate (Equipment)";
+		editorCategory="RB205_prop";
+		editorSubcategory="RB205_crates";
+		INVENTORY_SPACE
+		ACE_CARGO
+		class EventHandlers: DefaultEventhandlers
+		{
+			init = "[_this select 0] execVM '\RB205_logistics\scripts\crates\equipment.sqf';";
+		};
+		class TransportWeapons{};
+		class TransportMagazines{};
+		class TransportItems{};
+		class TransportBackpacks{};
+		scope		= 2;
+		scopeCurator= 2;
+	};
+	class 3AS_Supply_Large_Black_Prop;
+	class RB205_resupply_arsenal: 3AS_Supply_Large_Black_Prop
+	{
+		displayName="[205] Resupply Crate (Arsenal)";
+		editorCategory="RB205_prop";
+		editorSubcategory="RB205_crates";
+		INVENTORY_SPACE
+		ACE_CARGO
+		class EventHandlers: DefaultEventhandlers
+		{
+			init = "[_this select 0] execVM '\RB205_logistics\scripts\gonk\arsenal.sqf';";
 		};
 		class TransportWeapons{};
 		class TransportMagazines{};
