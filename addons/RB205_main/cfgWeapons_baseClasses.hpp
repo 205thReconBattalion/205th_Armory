@@ -2,20 +2,6 @@
 	HELMETS
 */
 
-#define HITPOINTS_HELMET \
-class Head \
-{ \
-	hitpointName = "HitHead"; \
-	armor = 10; \
-	passThrough = 0.5; \
-}; \
-class Face \
-{ \
-	hitpointName = "HitFace"; \
-	armor = 8; \
-	passThrough = 0.5; \
-};
-
 class ls_blueforHelmet_base;
 class lsd_blueforHelmet_base;
 

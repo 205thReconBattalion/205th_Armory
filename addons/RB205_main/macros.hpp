@@ -84,6 +84,21 @@ tf_subtype="digital_lr";
     NSM_jumppack_sound_land[] = {"NSM_Main\sounds\cdv21End.ogg"}; \
     NSM_jumppack_sound_idle[] = {"NSM_Main\sounds\cdv21Idle.ogg"};
 
+//HITPOINTS
+#define HITPOINTS_HELMET \
+class Head \
+{ \
+	hitpointName = "HitHead"; \
+	armor = 10; \
+	passThrough = 0.5; \
+}; \
+class Face \
+{ \
+	hitpointName = "HitFace"; \
+	armor = 8; \
+	passThrough = 0.5; \
+};
+
 //OTHER
 #define ALLOWED_SLOTS_HELMET {605,901}
 

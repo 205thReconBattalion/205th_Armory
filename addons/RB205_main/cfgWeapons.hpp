@@ -136,7 +136,7 @@ class RB205_H_arf_recruit: RB205_H_arf_base
 	};
 	hiddenSelectionsMaterials[] =
 	{
-		"",
+		"RB205_main\data\materials\H_arf.rvmat",
 		"",
 		""
 	};
