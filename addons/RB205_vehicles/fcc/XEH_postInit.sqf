@@ -1,7 +1,7 @@
 //FCC errichten
 
 private _condition1 = {
-	(_target animationSourcePhase "ramp" > 1);
+	(_target animationSourcePhase "ramp" > 1) && (alive _target);
 };
  
 private _deploy = {
@@ -14,6 +14,9 @@ private _deploy = {
 
 	RB205_flagfcc = "ls_commandPost_republic_blue" createVehicle (getPos _target);                          //Republik-Logo
 	RB205_flagfcc attachTo [_target, [0.24,-1.5,0]];
+
+	RB205_fcc_mapMarker = createMarker ["RB205_fcc_mapMarker", _target, 1];
+	RB205_fcc_mapMarker setMarkerType "JLTS_loc_commandpost";
 
 	//RB205_resupplyweaponsfcc = "RB205_resupply_weapons" createVehicle (getPos _target);                     //Resupply-Kisten
 	//RB205_resupplyweaponsfcc attachTo [_target, [1.2,-1.5,-1.1]];
@@ -37,12 +40,20 @@ private _deploy = {
 
 	RB205_fcc_resupplyCrate_empty = "RB205_resupply_base" createVehicle (getPos _target);
 	[RB205_fcc_resupplyCrate_empty, _target, true] call ace_cargo_fnc_loadItem;
+	
+	RB205_fcc_eventHandlerID = _target addEventHandler ["Killed",
+	{		
+		["RB205_RespawnModule_text_destroyed", ["", ""]] call BIS_fnc_showNotification;
+		deleteVehicle RB205_flagfcc;
+		deleteMarker RB205_fcc_mapMarker;
+		[RB205_fcc_respawn, true] call ace_arsenal_fnc_removeBox;
+	}];
 };
 
 //FCC abbauen
 
 private _condition2 = {
-	(_target animationSourcePhase "ramp" < 1)
+	(_target animationSourcePhase "ramp" < 1) && (alive _target);
 };
  
 private _undeploy = {
@@ -52,6 +63,8 @@ private _undeploy = {
 	[RB205_fcc_respawn, true] call ace_arsenal_fnc_removeBox;                                               //Ace-Arsenal entfernen
 
 	deleteVehicle RB205_flagfcc;                                                                            //Republik-Logo entfernen
+
+	deleteMarker RB205_fcc_mapMarker;
 
 	//deleteVehicle RB205_resupplyweaponsfcc;                                                                 //Resupply-Kisten entfernen
 	//deleteVehicle RB205_resupplymedicfcc;                                                                   //Resupply-Kisten entfernen
@@ -69,7 +82,9 @@ private _undeploy = {
 	deleteVehicle RB205_fcc_resupplyCrate_arsenal;
 	
 	[RB205_fcc_resupplyCrate_empty, _target] call ace_cargo_fnc_unloadItem;
-	deleteVehicle RB205_fcc_resupplyCrate_arsenal;
+	deleteVehicle RB205_fcc_resupplyCrate_empty;
+
+	_target removeEventHandler ["Killed", RB205_fcc_eventHandlerID];
 };
 
 //ACE-Integration
