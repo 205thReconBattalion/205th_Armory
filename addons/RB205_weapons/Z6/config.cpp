@@ -166,3 +166,25 @@ class cfgSoundSets
 		loop = 0;
 	};
 };
+
+class Extended_PostInit_EventHandlers
+{
+	class RB205_weapons_z6_PreInit
+	{
+		init="call compile preprocessFileLineNumbers '\RB205_weapons\Z6\XEH_preInit.sqf'";
+	};
+};
+
+class CfgFunctions
+{
+	class RB205_z6
+	{
+		class z6shield
+		{
+			file = "RB205_weapons\Z6";
+			class activateShield
+			{
+			};
+		};
+	};
+};
