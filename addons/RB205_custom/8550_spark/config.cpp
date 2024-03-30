@@ -169,6 +169,7 @@ class cfgVehicles
             model = "RB205_custom_B_spark";
             type = "jetpack";
         };
+        knd_isJetpack = 1;
     };
 
     class RB205_clone_lieutenant;
