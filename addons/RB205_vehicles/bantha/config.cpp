@@ -14,9 +14,11 @@ class cfgPatches
 		{
 			"RB205_bantha",
 			"RB205_bantha_unarmed",
-			"RB205_bantha_mg",
 			"RB205_bantha_aa",
-			"RB205_bantha_mortar"
+			"RB205_bantha_mortar",
+			"RB205_bantha_assault",
+			"RB205_bantha_cargo",
+			"RB205_bantha_service"
 		};
 	};
 };
@@ -27,8 +29,8 @@ class cfgPatches
 class cfgVehicles
 {
 
-	class 212th_B_APC_Wheeled_02_cannon_F;
-	class RB205_bantha: 212th_B_APC_Wheeled_02_cannon_F
+	class Aux212_Bantha_C_IFV;
+	class RB205_bantha: Aux212_Bantha_C_IFV
 	{
 		ACCESS_TRUE
 		displayName = "HAVw A2 Bantha";
@@ -43,27 +45,11 @@ class cfgVehicles
 		editorPreview = "";
 	};
 
-	class 212th_B_APC_Wheeled_unarmed_F;
-	class RB205_bantha_unarmed: 212th_B_APC_Wheeled_unarmed_F
+	class Aux212_Bantha_C_Unarmed;
+	class RB205_bantha_unarmed: Aux212_Bantha_C_Unarmed
 	{
 		ACCESS_TRUE
-		displayName = "HAVw A2 Bantha (Transport)";
-		author = "205th Recon Battalion";
-		crew = "RB205_clone_trooper";
-		VEH_INVENTORY
-		CARGO_M
-		//Editor/ Zeus
-		side = 1;
-		faction = "RB205";
-		editorSubcategory = "RB205_veh_tank";
-		editorPreview = "";
-	};
-	
-	class 212th_B_APC_Wheeled_mg_F;
-	class RB205_bantha_mg: 212th_B_APC_Wheeled_mg_F
-	{
-		ACCESS_TRUE
-		displayName = "HAVw A2 Bantha (MG)";
+		displayName = "HAVw A2 Bantha (Unarmed)";
 		author = "205th Recon Battalion";
 		crew = "RB205_clone_trooper";
 		VEH_INVENTORY
@@ -75,8 +61,8 @@ class cfgVehicles
 		editorPreview = "";
 	};
 
-	class 212th_B_APC_Wheeled_aa_cannon_F;
-	class RB205_bantha_aa: 212th_B_APC_Wheeled_aa_cannon_F
+	class Aux212_Bantha_C_AA;
+	class RB205_bantha_aa: Aux212_Bantha_C_AA
 	{
 		ACCESS_TRUE
 		displayName = "HAVw A2 Bantha (AA)";
@@ -91,11 +77,59 @@ class cfgVehicles
 		editorPreview = "";
 	};
 
-	class 212th_B_APC_Wheeled_fs_cannon_F;
-	class RB205_bantha_mortar: 212th_B_APC_Wheeled_fs_cannon_F
+	class Aux212_Bantha_C_Mortar;
+	class RB205_bantha_mortar: Aux212_Bantha_C_Mortar
 	{
 		ACCESS_TRUE
 		displayName = "HAVw A2 Bantha (Mortar)";
+		author = "205th Recon Battalion";
+		crew = "RB205_clone_trooper";
+		VEH_INVENTORY
+		CARGO_M
+		//Editor/ Zeus
+		side = 1;
+		faction = "RB205";
+		editorSubcategory = "RB205_veh_tank";
+		editorPreview = "";
+	};
+	
+	class Aux212_Bantha_T_Assault;
+	class RB205_bantha_assault: Aux212_Bantha_T_Assault
+	{
+		ACCESS_TRUE
+		displayName = "HAVw A2 Bantha (Assault)";
+		author = "205th Recon Battalion";
+		crew = "RB205_clone_trooper";
+		VEH_INVENTORY
+		CARGO_M
+		//Editor/ Zeus
+		side = 1;
+		faction = "RB205";
+		editorSubcategory = "RB205_veh_tank";
+		editorPreview = "";
+	};
+	
+	class Aux212_Bantha_T_Cargo;
+	class RB205_bantha_cargo: Aux212_Bantha_T_Cargo
+	{
+		ACCESS_TRUE
+		displayName = "HAVw A2 Bantha (Cargo)";
+		author = "205th Recon Battalion";
+		crew = "RB205_clone_trooper";
+		VEH_INVENTORY
+		CARGO_L
+		//Editor/ Zeus
+		side = 1;
+		faction = "RB205";
+		editorSubcategory = "RB205_veh_tank";
+		editorPreview = "";
+	};
+	
+	class Aux212_Bantha_E_MSV;
+	class RB205_bantha_service: Aux212_Bantha_E_MSV
+	{
+		ACCESS_TRUE
+		displayName = "HAVw A2 Bantha (Service)";
 		author = "205th Recon Battalion";
 		crew = "RB205_clone_trooper";
 		VEH_INVENTORY
