@@ -21,6 +21,9 @@ class cfgPatches
 			"RB205_smokeBlue",
 			"RB205_smokeGreen",
 			"RB205_smokeRed",
+			"RB205_smokeYellow",
+			"RB205_smokePurple",
+			"RB205_smokeOrange",
 			"RB205_sonicDet",
 			"RB205_droidPopper"
 		};
@@ -64,6 +67,9 @@ class CfgMagazines
 	class 3AS_SmokeBlue;
 	class 3AS_SmokeGreen;
 	class 3AS_SmokeRed;
+	class 3AS_SmokeYellow;
+	class 3AS_SmokePurple;
+	class 3AS_SmokeOrange;
 	
 	class ACE_M84;
 	class HandGrenade;
@@ -124,6 +130,33 @@ class CfgMagazines
 		MASS_SMK
         author = "205th Recon Battalion";
 	};
+	class RB205_smokeYellow: 3AS_SmokeYellow
+	{
+		displayName = "$STR_SmokeY_DisplayName";
+		displayNameShort = "$STR_205_SmokeY_DisplayNameShort";
+		descriptionShort = "Wirkung: Rauch<br />Farbe: Gelb<br />Dauer: 3 Minuten";
+		picture = "\RB205_weapons\grenades\data\smokeY.paa";
+		MASS_SMK
+        author = "205th Recon Battalion";
+	};
+	class RB205_smokePurple: 3AS_SmokePurple
+	{
+		displayName = "$STR_SmokeP_DisplayName";
+		displayNameShort = "$STR_205_SmokeP_DisplayNameShort";
+		descriptionShort = "Wirkung: Rauch<br />Farbe: Lila<br />Dauer: 3 Minuten";
+		picture = "\RB205_weapons\grenades\data\smokeP.paa";
+		MASS_SMK
+        author = "205th Recon Battalion";
+	};
+	class RB205_smokeOrange: 3AS_SmokeOrange
+	{
+		displayName = "$STR_SmokeO_DisplayName";
+		displayNameShort = "$STR_205_SmokeO_DisplayNameShort";
+		descriptionShort = "Wirkung: Rauch<br />Farbe: Orange<br />Dauer: 3 Minuten";
+		picture = "\RB205_weapons\grenades\data\smokeO.paa";
+		MASS_SMK
+        author = "205th Recon Battalion";
+	};
 	class RB205_sonicDet: ACE_M84
 	{
 		displayName = "$STR_205_SonicDetonator_DisplayName";
@@ -160,6 +193,9 @@ class CfgWeapons
 			"RB205_smokeBlue_muzzle",
 			"RB205_smokeGreen_muzzle",
 			"RB205_smokeRed_muzzle",
+			"RB205_smokeYellow_muzzle",
+			"RB205_smokePurple_muzzle",
+			"RB205_smokeOrange_muzzle",
 			"RB205_sonicDet_muzzle",
 			"RB205_droidPopper_muzzle"
 		};
@@ -204,6 +240,27 @@ class CfgWeapons
 			magazines[] =
 			{
 				"RB205_smokeRed"
+			};
+		};
+		class RB205_smokeYellow_muzzle: ThrowMuzzle
+		{
+			magazines[] =
+			{
+				"RB205_smokeYellow"
+			};
+		};
+		class RB205_smokePurple_muzzle: ThrowMuzzle
+		{
+			magazines[] =
+			{
+				"RB205_smokePurple"
+			};
+		};
+		class RB205_smokeOrange_muzzle: ThrowMuzzle
+		{
+			magazines[] =
+			{
+				"RB205_smokeOrange"
 			};
 		};
 		class RB205_sonicDet_muzzle: ThrowMuzzle

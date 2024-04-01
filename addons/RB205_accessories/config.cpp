@@ -224,19 +224,19 @@ class CfgGlasses
         hiddenSelections[] =
         {
             "pouch",
-            "insigniaalt",
+            "insignialt",
             "knife"
         };
 		hiddenSelectionsMaterial[] =
         {
             "\RB205_accessories\data\scythe\pouch.rvmat",
-            "\RB205_accessories\data\scythe\insigniaalt.rvmat",
+            "\RB205_accessories\data\scythe\insignialt.rvmat",
             "\RB205_accessories\data\scythe\knife.rvmat"
         };
 		hiddenSelectionsTextures[] =
         {
             "\RB205_accessories\data\scythe\pouch_co.paa",
-            "\RB205_accessories\data\scythe\insigniaalt_co.paa",
+            "\RB205_accessories\data\scythe\insignialt_co.paa",
             "\RB205_accessories\data\scythe\knife_co.paa"
         };
     };
