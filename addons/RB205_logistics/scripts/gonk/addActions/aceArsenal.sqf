@@ -51,6 +51,8 @@ params ["_this"];
 
 		"RB205_binocular","RB205_binocular_arf",
 
+		"RB205_arc_bracer",
+
 		//SQUAD ARMOR
 		"RB205_U_trooper_zillo","RB205_U_corporal_zillo","RB205_U_sergeant_zillo",
 		"RB205_U_trooper_chimaera","RB205_U_corporal_chimaera","RB205_U_sergeant_chimaera",
@@ -83,7 +85,7 @@ params ["_this"];
 		"RB205_H_crossfire","RB205_U_crossfire",
 		"RB205_H_putzi","RB205_U_putzi",
 		"RB205_H_junior","RB205_U_junior",
-		"RB205_H_scythe","RB205_U_scythe","RB205_V_scythe","RB205_VIS_scythe",
+		"RB205_H_scythe","RB205_U_scythe","RB205_V_scythe","RB205_scythe_attachments",
 		"RB205_H_sixes","RB205_U_sixes","RB205_V_sixes",
 		"RB205_H_doc","RB205_H_doc_damaged","RB205_H_arf_doc","RB205_U_doc","RB205_V_doc","RB205_VIS_doc","RB205_VIS_doc_damaged",
 		"RB205_H_norway","RB205_U_norway",
