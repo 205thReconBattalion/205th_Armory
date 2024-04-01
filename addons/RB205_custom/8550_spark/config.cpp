@@ -203,12 +203,12 @@ class CfgGlasses
             "RB205_custom\8550_spark\data\VIS_spark.paa"
         };*/
         identityTypes[] = { "RB205_VIS_spark",1 };
-        class XtdGearInfo
+        /*class XtdGearInfo
         {
             model = "RB205_G_custom";
             type = "8550";
             var = "dft";
-        };
+        };*/
     };
 };
 
