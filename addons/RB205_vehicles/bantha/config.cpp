@@ -28,8 +28,11 @@ class cfgPatches
 
 class cfgVehicles
 {
-
-	class Aux212_Bantha_C_IFV;
+	class Aux212_Bantha_C_IFV_Base;
+	class Aux212_Bantha_C_IFV: Aux212_Bantha_C_IFV_Base
+	{
+		class ACE_SelfActions;
+	};
 	class RB205_bantha: Aux212_Bantha_C_IFV
 	{
 		ACCESS_TRUE
@@ -43,9 +46,14 @@ class cfgVehicles
 		faction = "RB205";
 		editorSubcategory = "RB205_veh_tank";
 		editorPreview = "";
+		#include "intercom.hpp"
 	};
 
-	class Aux212_Bantha_C_Unarmed;
+	class Aux212_Bantha_C_Unarmed_Base;
+	class Aux212_Bantha_C_Unarmed: Aux212_Bantha_C_Unarmed_Base
+	{
+		class ACE_SelfActions;
+	};
 	class RB205_bantha_unarmed: Aux212_Bantha_C_Unarmed
 	{
 		ACCESS_TRUE
@@ -59,9 +67,14 @@ class cfgVehicles
 		faction = "RB205";
 		editorSubcategory = "RB205_veh_tank";
 		editorPreview = "";
+		#include "intercom.hpp"
 	};
 
-	class Aux212_Bantha_C_AA;
+	class Aux212_Bantha_C_AA_Base;
+	class Aux212_Bantha_C_AA: Aux212_Bantha_C_AA_Base
+	{
+		class ACE_SelfActions;
+	};
 	class RB205_bantha_aa: Aux212_Bantha_C_AA
 	{
 		ACCESS_TRUE
@@ -75,9 +88,14 @@ class cfgVehicles
 		faction = "RB205";
 		editorSubcategory = "RB205_veh_tank";
 		editorPreview = "";
+		#include "intercom.hpp"
 	};
 
-	class Aux212_Bantha_C_Mortar;
+	class Aux212_Bantha_C_Mortar_Base;
+	class Aux212_Bantha_C_Mortar: Aux212_Bantha_C_Mortar_Base
+	{
+		class ACE_SelfActions;
+	};
 	class RB205_bantha_mortar: Aux212_Bantha_C_Mortar
 	{
 		ACCESS_TRUE
@@ -91,9 +109,14 @@ class cfgVehicles
 		faction = "RB205";
 		editorSubcategory = "RB205_veh_tank";
 		editorPreview = "";
+		#include "intercom.hpp"
 	};
 	
-	class Aux212_Bantha_T_Assault;
+	class Aux212_Bantha_T_Assault_Base;
+	class Aux212_Bantha_T_Assault: Aux212_Bantha_T_Assault_Base
+	{
+		class ACE_SelfActions;
+	};
 	class RB205_bantha_assault: Aux212_Bantha_T_Assault
 	{
 		ACCESS_TRUE
@@ -107,9 +130,14 @@ class cfgVehicles
 		faction = "RB205";
 		editorSubcategory = "RB205_veh_tank";
 		editorPreview = "";
+		#include "intercom.hpp"
 	};
 	
-	class Aux212_Bantha_T_Cargo;
+	class Aux212_Bantha_T_Cargo_Base;
+	class Aux212_Bantha_T_Cargo: Aux212_Bantha_T_Cargo_Base
+	{
+		class ACE_SelfActions;
+	};
 	class RB205_bantha_cargo: Aux212_Bantha_T_Cargo
 	{
 		ACCESS_TRUE
@@ -123,9 +151,14 @@ class cfgVehicles
 		faction = "RB205";
 		editorSubcategory = "RB205_veh_tank";
 		editorPreview = "";
+		#include "intercom.hpp"
 	};
 	
-	class Aux212_Bantha_E_MSV;
+	class Aux212_Bantha_E_MSV_Base;
+	class Aux212_Bantha_E_MSV: Aux212_Bantha_E_MSV_Base
+	{
+		class ACE_SelfActions;
+	};
 	class RB205_bantha_service: Aux212_Bantha_E_MSV
 	{
 		ACCESS_TRUE
@@ -139,5 +172,6 @@ class cfgVehicles
 		faction = "RB205";
 		editorSubcategory = "RB205_veh_tank";
 		editorPreview = "";
+		#include "intercom.hpp"
 	};
 };
