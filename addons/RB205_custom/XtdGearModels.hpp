@@ -82,7 +82,7 @@ class XtdGearModels
         class RB205_U_custom: RB205_H_custom{};
         class RB205_V_custom: RB205_H_custom{};
     };
-    class CfgGlasses
+    /*class CfgGlasses
     {
         class RB205_G_custom
         {
@@ -162,7 +162,7 @@ class XtdGearModels
                 };
             };
         };
-    };
+    };*/
 };
 
 #define U_P2(CLASS,TYPE,RANK,CAMO,SQUAD) \
@@ -200,7 +200,7 @@ class XtdGearInfos
         U_P2(RB205_U_plt_corporal_raven,"plt","cp","default","3_1")
         U_P2(RB205_U_plt_sergeant_raven,"plt","cs","default","3_1")
     };
-    class CfgGlasses
+    /*class CfgGlasses
     {
         class RB205_VIS
         {
@@ -208,5 +208,5 @@ class XtdGearInfos
             type = "dft";
             var = "dft";
         };
-    };
+    };*/
 };

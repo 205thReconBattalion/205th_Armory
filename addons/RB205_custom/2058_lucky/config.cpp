@@ -127,11 +127,11 @@ class CfgGlasses
             ""
         };
         identityTypes[] = { "RB205_VIS_lucky",1 };
-        class XtdGearInfo
+        /*class XtdGearInfo
         {
             model = "RB205_G_custom";
             type = "2058";
             var = "dft";
-        };
+        };*/
     };
 };

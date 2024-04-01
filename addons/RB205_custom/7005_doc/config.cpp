@@ -185,8 +185,7 @@ class CfgGlasses
         identityTypes[] = { "RB205_VIS_doc",1 };
         class XtdGearInfo
         {
-            model = "RB205_G_custom";
-            type = "7005";
+            model = "RB205_G_custom_doc";
             var = "dft";
         };
     };
@@ -202,9 +201,43 @@ class CfgGlasses
         identityTypes[] = { "RB205_VIS_doc_damaged",1 };
         class XtdGearInfo
         {
-            model = "RB205_G_custom";
-            type = "7005";
-            var = "var1";
+            model = "RB205_G_custom_doc";
+            var = "damaged";
+        };
+    };
+};
+
+class XtdGearModels
+{
+    class CfgGlasses
+    {
+        class RB205_G_custom_doc
+        {
+            label = "7005";
+            author = "205th Recon Battalion";
+            options[] =
+			{
+                "var"
+			};
+            class var
+            {
+                label = "Variante";
+                values[] =
+				{
+					"dft",
+                    "damaged",
+				};
+                class dft
+                {
+                    label = "Standard";
+                    description = "";
+                };
+                class damaged
+                {
+                    label = "Beschädigt";
+                    description = "";
+                };
+            };
         };
     };
 };
