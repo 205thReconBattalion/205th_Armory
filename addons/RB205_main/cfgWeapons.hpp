@@ -15,7 +15,7 @@ class RB205_H_recruit: RB205_H_base
 	};
 	hiddenSelectionsMaterials[] =
 	{
-		"",
+		"RB205_main\data\materials\H_dft.rvmat",
 		""
 	};
 };
@@ -75,7 +75,7 @@ class RB205_H_ab_recruit: RB205_H_ab_base
 	};
 	hiddenSelectionsMaterials[] =
 	{
-		"",
+		"RB205_main\data\materials\H_ab.rvmat",
 		""
 	};
 };
@@ -243,7 +243,7 @@ class RB205_H_arf_trooper_arctic: RB205_H_arf_base
 	};
 	hiddenSelectionsMaterials[] =
 	{
-		"",
+		"RB205_main\data\materials\H_arf.rvmat",
 		"",
 		""
 	};
@@ -260,7 +260,7 @@ class RB205_H_arf_trooper_desert: RB205_H_arf_base
 	};
 	hiddenSelectionsMaterials[] =
 	{
-		"",
+		"RB205_main\data\materials\H_arf.rvmat",
 		"",
 		""
 	};
@@ -277,7 +277,7 @@ class RB205_H_arf_trooper_jungle: RB205_H_arf_base
 	};
 	hiddenSelectionsMaterials[] =
 	{
-		"",
+		"RB205_main\data\materials\H_arf.rvmat",
 		"",
 		""
 	};
@@ -294,7 +294,7 @@ class RB205_H_arf_trooper_woodland: RB205_H_arf_base
 	};
 	hiddenSelectionsMaterials[] =
 	{
-		"",
+		"RB205_main\data\materials\H_arf.rvmat",
 		"",
 		""
 	};
@@ -315,7 +315,7 @@ class RB205_H_plt_recruit: RB205_H_plt_base
 	};
 	hiddenSelectionsMaterials[] =
 	{
-		"",
+		"RB205_main\data\materials\H_plt.rvmat",
 		""
 	};
 };
