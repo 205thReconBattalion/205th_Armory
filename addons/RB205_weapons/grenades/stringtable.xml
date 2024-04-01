@@ -26,6 +26,18 @@
             <English>[205] Smoke Grenade (Red)</English>
             <German>[205] Rauchgranate (Rot)</German>
         </Key>
+        <Key ID="STR_SmokeY_DisplayName">
+            <English>[205] Smoke Grenade (Yellow)</English>
+            <German>[205] Rauchgranate (Gelb)</German>
+        </Key>
+        <Key ID="STR_SmokeP_DisplayName">
+            <English>[205] Smoke Grenade (Purple)</English>
+            <German>[205] Rauchgranate (Lila)</German>
+        </Key>
+        <Key ID="STR_SmokeO_DisplayName">
+            <English>[205] Smoke Grenade (Orange)</English>
+            <German>[205] Rauchgranate (Orange)</German>
+        </Key>
         <Key ID="STR_205_SonicDetonator_DisplayName">
             <English>[205] Sonic Detonator</English>
             <German>[205] Schockgranate</German>
@@ -58,6 +70,18 @@
         <Key ID="STR_205_SmokeR_DisplayNameShort">
             <English>Smoke (Red)</English>
             <German>Rauch (Rot)</German>
+        </Key>
+        <Key ID="STR_205_SmokeY_DisplayNameShort">
+            <English>Smoke (Yellow)</English>
+            <German>Rauch (Gelb)</German>
+        </Key>
+        <Key ID="STR_205_SmokeP_DisplayNameShort">
+            <English>Smoke (Purple)</English>
+            <German>Rauch (Lila)</German>
+        </Key>
+        <Key ID="STR_205_SmokeO_DisplayNameShort">
+            <English>Smoke (Orange)</English>
+            <German>Rauch (Orange)</German>
         </Key>
         <Key ID="STR_205_SonicDetonator_DisplayNameShort">
             <English>Sonic Det</English>
