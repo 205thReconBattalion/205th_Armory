@@ -24,6 +24,7 @@ class cfgWeapons {};
 class cfgVehicles
 {
 	class 3as_arc_170_base;
+	class Plane_Fighter_03_dynamicLoadout_base_F;
 
 	class RB205_arc170: 3as_arc_170_base
 	{
@@ -74,5 +75,25 @@ class cfgVehicles
 				};
 			};
 		};
+		class Components{
+		class TransportPylonsComponent
+					{
+						class pylons
+						{
+							class pylon1
+							{
+								hardpoints[]=
+								{
+									"JMSLLTE_BOMB_20RND_PYLON"
+								};
+								attachment="PylonRack_JMSLLTE_20Rnd_VL6179_proton_bomb";
+								priority=13;
+								maxweight=600;
+								bay=1;
+								turret[]={};
+							};
+						};
+					};
+					};
 	};
 };
