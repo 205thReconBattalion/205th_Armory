@@ -80,20 +80,61 @@ class cfgVehicles
 					{
 						class pylons
 						{
-							class pylon1
+							class pylons1
+							{
+								hardpoints[]=
+								{
+									"JMSLLTE_TS5_12RND_PROTON_PYLON"
+								};
+								attachment="PylonRack_JMSLLTE_12Rnd_Ts5_proton_missiless"; //PylonRack_Missile_BIM9X_x2
+								priority=1;
+								maxweight=500;
+								turret[]={};
+								UIposition[]={0.5,0.25};
+							};
+							class pylons2: pylons1
+							{
+								UIposition[]={0.15000001,0.25};
+								mirroredMissilePos=1;
+							};
+
+							class pylons3: pylons1
 							{
 								hardpoints[]=
 								{
 									"JMSLLTE_BOMB_20RND_PYLON"
 								};
-								attachment="PylonRack_JMSLLTE_20Rnd_VL6179_proton_bomb";
-								priority=13;
+								attachment="PylonRack_Missile_BIM9X_x2"; //PylonRack_Missile_BIM9X_x2
+								priority=1;
 								maxweight=600;
 								bay=1;
 								turret[]={};
+								UIposition[]={0.55000001,0.34999999};
 							};
+							class pylons4: pylons3
+							{
+								UIposition[]={0.1,0.34999999};
+								mirroredMissilePos=3;
+							};
+							class pylons5: pylons1
+							{
+								hardpoints[]=
+								{
+								"JMSLLTE_MR93_20RND_MISSILE_PYLON",
+								"JMSLLTE_MS3_20RND_MISSILE_PYLON"
+								};
+								attachment="PylonRack_JMSLLTE_20Rnd_Ms3_missiles";
+								priority=2;
+								maxweight=500;
+								UIposition[]={0.60000002,0.44999999};
+							};
+							class pylons6: pylons5
+								{
+								UIposition[]={0.050000001,0.44999999};
+								mirroredMissilePos=5;
+								};
 						};
 					};
-					};
+				};
 	};
 };
