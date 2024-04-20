@@ -78,6 +78,7 @@ class cfgVehicles
 		class Components{
 		class TransportPylonsComponent
 					{
+						UIPicture="3as\3AS_ARC170\data\plane_ARC_pylon_ca.paa";
 						class pylons
 						{
 							class pylons1
