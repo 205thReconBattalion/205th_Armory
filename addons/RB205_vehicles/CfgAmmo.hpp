@@ -1,6 +1,6 @@
 class cfgammo{
 
-    class 205_warthog_mg
+    class 205_wh_mg_ammo
     {
         model = "";
         tracerStartTime = 0;
