@@ -23,10 +23,6 @@ class cfgPatches
 
 #include "\RB205_vehicles\macros.hpp"
 #include "\RB205_vehicles\inventory.hpp"
-#include "\RB205_vehicles\cfgammo.hpp"
-#include "\RB205_vehicles\cfgmagazines.hpp"
-#include "\RB205_vehicles\cfgweapons.hpp"
-
 
 //class cfgWeapons {};
 class cfgVehicles
@@ -35,8 +31,10 @@ class cfgVehicles
 	class OPTRE_M813_TT;
 	class OPTRE_M914_RV;
 	class OPTRE_M12_Base;
-	class OPTRE_M12_LRV: OPTRE_M12_Base{
-		class Turrets{
+	class OPTRE_M12_LRV: OPTRE_M12_Base
+	{
+		class Turrets
+		{
 			class MainTurret;
 		}
 	}
@@ -222,17 +220,17 @@ class cfgVehicles
 		};
 		class Turrets: Turrets
 		{
-			
 			class MainTurret: MainTurret
 			{
 				weapons[]=
 				{
-					"205_wh_mg_wp"
+					"RB205_wth_mg"
 				};
 				magazines[]=
 				{
-					"205_1000rnd_mg_ma",
-					"205_1000rnd_mg_ma"
+					"RB205_wth_mg_mag_1000rnd",
+					"RB205_wth_mg_mag_1000rnd",
+					"RB205_wth_mg_mag_1000rnd"
 				};
 			};
 		};

@@ -24,7 +24,14 @@ class cfgPatches
 
 class cfgVehicles
 {
-	class optre_catfish_mg_f;
+	class optre_catfish_unarmed_f;
+	class optre_catfish_mg_f: optre_catfish_unarmed_f
+	{
+		class Turrets
+		{
+			class MainTurret;
+		}
+	}
 	class RB205_catfish_mg: optre_catfish_mg_f
 	{
 		ACCESS_TRUE
@@ -84,6 +91,22 @@ class cfgVehicles
 				"RB205_vehicles\catfish\data\205_catfish_boat.rvmat",
 				"RB205_vehicles\catfish\data\205_catfish_boat.rvmat",
 				"OPTRE_Vehicles\Catfish\data\optre_destroyed_boat.rvmat"
+			};
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[]=
+				{
+					"RB205_wth_mg"
+				};
+				magazines[]=
+				{
+					"RB205_wth_mg_mag_1000rnd",
+					"RB205_wth_mg_mag_1000rnd",
+					"RB205_wth_mg_mag_1000rnd"
+				};
 			};
 		};
 	};
