@@ -74,5 +74,6 @@ class cfgVehicles
 				};
 			};
 		};
+		#include "\RB205_vehicles\sounds_aircraft_alarm.hpp"
 	};
 };

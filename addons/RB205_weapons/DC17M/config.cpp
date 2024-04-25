@@ -193,6 +193,7 @@ class CfgWeapons
 		{
 			"RB205_weapons\data\RB205_DC17M.paa"
 		};
+		cursor = "RB205_CH_dc17m";
 		magazines[] =
 		{
 			"RB205_DC17M_Blaster_Mag",
@@ -398,5 +399,14 @@ class CfgWeapons
 				slot = "CowsSlot";
 			};
 		};
+	};
+};
+
+class CfgWeaponCursors
+{
+	class throw;
+	class RB205_CH_dc17m: throw
+	{
+		texture = "\A3\ui_f\data\igui\cfg\weaponcursors\coil_gs.paa";
 	};
 };
