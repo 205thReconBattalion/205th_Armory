@@ -88,5 +88,15 @@ class cfgVehicles
 				};
 			};
 		};
+		//Weapons
+		weapons[] =
+		{
+			"3as_LAAT_Medium_Canon",
+			"RB205_Missile_AG",
+			"RB205_Missile_AA_SR",
+			"CMFlareLauncher"
+		};
+		#include "\RB205_vehicles\laat\laat_sounds.hpp"
+		#include "\RB205_vehicles\sounds_aircraft_alarm.hpp"
 	};
 };
