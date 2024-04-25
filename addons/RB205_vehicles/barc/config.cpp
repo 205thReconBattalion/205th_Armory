@@ -725,6 +725,13 @@ class cfgAmmo
 		indirectHit = 8;
 		indirectHitRange = 0.4;
 		caliber = 7;//4
+		class CamShakeFire
+		{
+			distance = 0;
+			duration = 0;
+			frequency = 0;
+			power = 0;
+		};
 	};
 
 	class ls_speeder_HE;
