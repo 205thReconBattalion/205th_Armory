@@ -75,5 +75,23 @@ class cfgVehicles
 				};
 			};
 		};
+		//Weapons
+		weapons[] =
+		{
+			"3as_V19_Medium_Cannon",
+			"RB205_Missile_AA_SR",
+			"RB205_Missile_AA_MR",
+			"RB205_Missile_AG",
+			"CMFlareLauncher"
+		};
+		magazines[] =
+		{
+			"3as_V19_800Rnd_Medium_shells","3as_V19_800Rnd_Medium_shells","3as_V19_800Rnd_Medium_shells","3as_V19_800Rnd_Medium_shells","3as_V19_800Rnd_Medium_shells",
+			"3as_PylonMissile_ARC_2Rnd_Missile_AA","3as_PylonMissile_ARC_2Rnd_Missile_AA","3as_PylonMissile_ARC_2Rnd_Missile_AA","3as_PylonMissile_ARC_2Rnd_Missile_AA","3as_PylonMissile_ARC_2Rnd_Missile_AA","3as_PylonMissile_ARC_2Rnd_Missile_AA","3as_PylonMissile_ARC_2Rnd_Missile_AA","3as_PylonMissile_ARC_2Rnd_Missile_AA",
+			"PylonMissile_Missile_AMRAAM_D_x1","PylonMissile_Missile_AMRAAM_D_x1","PylonMissile_Missile_AMRAAM_D_x1","PylonMissile_Missile_AMRAAM_D_x1",
+			"6Rnd_Missile_AGM_02_F",
+			"240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine"
+		};
+		#include "\RB205_vehicles\sounds_aircraft_alarm.hpp"
 	}
 };
