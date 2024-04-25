@@ -7,12 +7,13 @@ class cfgPatches
 			"RB205_vehicles"
 		};
 		requiredVersion = 1.0;
-        author = "205th Recon Battalion";
+    author = "205th Recon Battalion";
 		weapons[] =
 		{
 			"RB205_Missile_AA_SR",
 			"RB205_Missile_AA_MR",
-			"RB205_Missile_AG"
+			"RB205_Missile_AG",
+			"RB205_wth_mg"
 		};
 		units[] = {};
 	};
@@ -20,8 +21,6 @@ class cfgPatches
 
 class CfgWeapons
 {
-	
-
 	class 3as_ARC_Missile_AA;
 	class RB205_Missile_AA_SR: 3as_ARC_Missile_AA
 	{
@@ -87,4 +86,43 @@ class CfgWeapons
 			1
 		};
 	};
+  class HMG_127;
+  class OPTRE_M41_LAAG: HMG_127
+	{
+    class FullAuto;
+  }
+  class RB205_wth_mg: OPTRE_M41_LAAG
+	{
+    magazines[] =
+		{
+      "RB205_wth_mg_mag_1000rnd",
+    };
+    class FullAuto: FullAuto
+		{
+      class StandardSound
+			{
+        soundsetshot[] = { "3AS_Z6_SoundSet" };
+      };
+    };
+  };
+};
+
+class CfgMagazines
+{
+	class OPTRE_1000Rnd_127x99_M41;
+	class RB205_wth_mg_mag_1000rnd: OPTRE_1000Rnd_127x99_M41
+	{
+		displayName	= "[205] 1000x BlasTech Ammo";
+		displayNameShort = "WTH/MG Ammo";
+		ammo = "RB205_wth_mg_ammo";
+	};
+};
+
+class CfgAmmo
+{
+  class OPTRE_B_127x99_Ball;
+  class RB205_wth_mg_ammo: OPTRE_B_127x99_Ball
+	{
+    model = "\3AS\3AS_Weapons\Data\tracer_blue.p3d";
+  };
 };
