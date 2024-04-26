@@ -103,7 +103,7 @@ params ["_this"];
 		"ACE_salineIV","ACE_salineIV_250","ACE_salineIV_500",
 		"ACE_bloodIV","ACE_bloodIV_250","ACE_bloodIV_500",
 		"ACE_plasmaIV","ACE_plasmaIV_250","ACE_plasmaIV_500",
-		"ACE_morphine","ACE_epinephrine","ACE_adenosine",
+		"ACE_morphine","ACE_epinephrine","ACE_adenosine","ACE_painkillers",
 		"ACE_surgicalKit","ACE_personalAidKit","ACE_tourniquet","ACE_splint","ACE_suture","ACE_bodyBag","ACE_bodyBag_blue","ACE_bodyBag_white",
 		
 		//FOOD
