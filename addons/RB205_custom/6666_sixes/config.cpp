@@ -64,7 +64,7 @@ class cfgVehicles
     class RB205_clone_plt_corporal;
     class RB205_clone_sixes: RB205_clone_plt_corporal
     {
-        displayName = "CS-6666 Sixes";
+        displayName = "CP-6666 Sixes";
         uniformclass = "RB205_U_sixes";
         editorSubCategory = "RB205_lore";
         hiddenselectionsTextures[] =

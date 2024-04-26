@@ -82,7 +82,7 @@ class cfgVehicles
     class RB205_clone_plt_sergeant;
     class RB205_clone_lucky: RB205_clone_plt_sergeant
     {
-        displayName = "CL-2058 Lucky";
+        displayName = "CS-2058 Lucky";
         uniformclass = "RB205_U_lucky";
 	    editorSubCategory = "RB205_lore";
         hiddenselectionsTextures[] =
