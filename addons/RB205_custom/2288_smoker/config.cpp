@@ -43,8 +43,8 @@ class cfgWeapons
         };
     }; 
 
-    class RB205_H_ab_sergeant; 
-    class RB205_H_ab_smoker : RB205_H_ab_sergeant 
+    class RB205_H_ab_trooper; 
+    class RB205_H_ab_smoker : RB205_H_ab_trooper 
     { 
         displayName = "[205] Clone Airborne Trooper Helmet [2288]"; 
         hiddenSelectionsTextures[] = 
