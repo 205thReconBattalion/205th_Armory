@@ -89,7 +89,7 @@ params ["_this"];
 		"RB205_H_sixes","RB205_U_sixes",
 		"RB205_H_doc","RB205_H_doc_damaged","RB205_H_arf_doc","RB205_U_doc","RB205_V_doc","RB205_VIS_doc","RB205_VIS_doc_damaged",
 		"RB205_H_norway","RB205_U_norway",
-		"RB205_H_jumper","RB205_U_jumper",
+		"RB205_H_jumper","RB205_U_jumper","RB205_V_jumper",
 		"RB205_H_spark","RB205_H_arf_spark","RB205_U_spark","RB205_V_spark","RB205_B_spark","RB205_B_spark_jetpack","RB205_VIS_spark",
 		"RB205_H_unlucky","RB205_U_unlucky",
 
