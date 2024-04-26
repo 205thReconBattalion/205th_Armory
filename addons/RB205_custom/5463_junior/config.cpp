@@ -65,7 +65,7 @@ class cfgVehicles
     class RB205_clone_arf_corporal;
     class RB205_clone_junior: RB205_clone_arf_corporal
     {
-        displayName = "CP-5463 Junior";
+        displayName = "CSP-5463 Junior";
         uniformclass = "RB205_U_junior";
         editorSubCategory = "RB205_lore";
         hiddenselectionsTextures[] =

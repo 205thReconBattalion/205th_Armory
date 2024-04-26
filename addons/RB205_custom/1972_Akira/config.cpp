@@ -24,8 +24,8 @@ class cfgPatches
 
 class cfgWeapons
 {
-    class RB205_H_plt_corporal;
-    class RB205_H_akira: RB205_H_plt_corporal
+    class RB205_H_plt_trooper;
+    class RB205_H_akira: RB205_H_plt_trooper
     {
         displayName = "[205] Clone Pilot Trooper Helmet [1972]";
         hiddenSelectionsTextures[] =
@@ -41,9 +41,9 @@ class cfgWeapons
         };
     };
 
-    class RB205_U_plt_corporal;
+    class RB205_U_plt_trooper;
     class ItemInfo;
-    class RB205_U_akira: RB205_U_plt_corporal
+    class RB205_U_akira: RB205_U_plt_trooper
     {
         displayName = "[205] Clone Pilot Trooper Armor [1972]";
         class ItemInfo: ItemInfo
@@ -61,18 +61,18 @@ class cfgWeapons
 
 class cfgVehicles
 {
-class RB205_clone_plt_corporal;
-class RB205_clone_akira: RB205_clone_plt_corporal
-{
-    displayName = "CP-1972 Akira";
-    uniformclass = "RB205_U_akira";
-    editorSubCategory = "RB205_lore";
-    hiddenselectionsTextures[] =
+    class RB205_clone_plt_trooper;
+    class RB205_clone_akira: RB205_clone_plt_trooper
+    {
+        displayName = "CSP-1972 Akira";
+        uniformclass = "RB205_U_akira";
+        editorSubCategory = "RB205_lore";
+        hiddenselectionsTextures[] =
         {
-        "RB205_custom\1972_akira\data\U_akira_upper.paa",
-        "RB205_custom\1972_akira\data\U_akira_lower.paa",
-        "RB205_main\data\default\U_undersuit_co.paa"
+            "RB205_custom\1972_akira\data\U_akira_upper.paa",
+            "RB205_custom\1972_akira\data\U_akira_lower.paa",
+            "RB205_main\data\default\U_undersuit_co.paa"
         };
-    LINKED_ITEMS("RB205_H_akira","RB205_V_plt_cp","RB205_NV_chip")
-};
+        LINKED_ITEMS("RB205_H_akira","RB205_V_ct","RB205_NV_chip")
+    };
 };
