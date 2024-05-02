@@ -5,7 +5,7 @@ class cfgPatches
 		requiredAddons[]=
 		{
 			"RB205_vehicles",
-			"3as_nu"
+			"3AS_Republic_Heli_Nu"
 		};
 		requiredVersion = 1.0;
         author = "205th Recon Battalion";
@@ -20,11 +20,64 @@ class cfgPatches
 #include "\RB205_vehicles\macros.hpp"
 #include "\RB205_vehicles\inventory.hpp"
 
-class cfgWeapons {};
 class cfgVehicles
 {
-	class 3AS_Nuclass;
+	class 3AS_Nu_REP_F;
+	class RB205_nuclass: 3AS_Nu_REP_F
+	{
+		ACCESS_TRUE
+		displayName = "Nu-Class Shuttle";
+		author = "205th Recon Battalion";
+		crew = "RB205_clone_plt_trooper";
+		VEH_INVENTORY
+		CARGO_XL
+		//Editor/ Zeus
+		side = 1;
+		faction = "RB205";
+		editorSubcategory = "RB205_veh_air";
+		editorPreview = "";
+		#include "\RB205_vehicles\sounds_aircraft_alarm.hpp"
+		//Textures		
+		class TextureSources
+		{
+			class Republic
+			{
+				displayName = "Grand Army of the Republic";
+				author = "3AS";
+				textures[] =
+				{
+					"3as\3as_republic_heli\nu_class\data\hull_co.paa",
+					"3as\3as_republic_heli\nu_class\data\hull_front_co.paa",
+					"3as\3as_republic_heli\nu_class\data\wings_co.paa",
+					"3as\3as_republic_heli\rho_class\data\cockpit_co.paa",
+					"3as\3as_republic_heli\rho_class\data\cockpit_interfaces_co.paa",
+					"3as\3as_republic_heli\rho_class\data\interior_co.paa",
+					"3as\3as_republic_heli\rho_class\data\interior_optional_co.paa"
+				};
+				/*factions[] =
+				{
+					"RB205"
+				};*/
+			};
+			class Empire
+			{
+				displayName = "Galactic Empire";
+				author = "3AS";
+				textures[] =
+				{
+					"3as\3as_republic_heli\nu_class\data\hull_co.paa",
+					"3as\3as_republic_heli\nu_class\data\hull_front_co.paa",
+					"3as\3as_republic_heli\nu_class\data\wings_co.paa",
+					"3as\3as_republic_heli\rho_class\data\cockpit_co.paa",
+					"3as\3as_republic_heli\rho_class\data\cockpit_interfaces_co.paa",
+					"3as\3as_republic_heli\rho_class\data\interior_co.paa",
+					"3as\3as_republic_heli\rho_class\data\interior_optional_co.paa"
+				};
+			};
+		};
+	};
 
+	/*class 3AS_Nuclass;
 	class RB205_nuclass: 3AS_Nuclass
 	{
 		ACCESS_TRUE
@@ -109,5 +162,5 @@ class cfgVehicles
 			};
 		};
 		#include "\RB205_vehicles\sounds_aircraft_alarm.hpp"
-	};
+	};*/
 };
