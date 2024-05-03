@@ -477,10 +477,6 @@ class RB205_V_commander_base: RB205_V_platoonLead_base
 	ACCESS_FALSE
 	class ItemInfo: ItemInfo
 	{
-		/*mass = MASS_VEST_CO;
-		containerClass = INV_VEST_CO;
-		uniformModel = "\SWLB_clones\SWLB_clone_officer_armor.p3d";
-		hiddenSelections[] = {"camo1"};*/
 		class HitpointsProtectionInfo
 		{
 			class Chest
