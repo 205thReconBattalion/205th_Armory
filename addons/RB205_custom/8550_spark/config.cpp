@@ -91,8 +91,8 @@ class cfgWeapons
         };
     };
 
-    class RB205_V_platoonLead_base;
-    class RB205_V_spark: RB205_V_platoonLead_base
+    class RB205_V_commander_base;
+    class RB205_V_spark: RB205_V_commander_base
     {
         ACCESS_TRUE
         displayName = "[205] Clone Commander Vest [8550]"
@@ -169,6 +169,17 @@ class cfgVehicles
             model = "RB205_custom_B_spark";
             type = "jetpack";
         };
+        //KND-Jetpack:
+        knd_isJetpack = 1;
+        knd_jetpack_acceleration = 1.8;
+        knd_jetpack_ascensionCoef = 1;
+        knd_jetpack_coolCoef = 1;
+        knd_jetpack_fuelCapacity = 400;
+        knd_jetpack_fuelCoef = 1.5;
+        knd_jetpack_heatCoef = 5; //8
+        knd_jetpack_jumpCoef = 1;
+        knd_jetpack_resistance = 4;
+        knd_jetpack_strafeCoef = 0.3;
     };
 
     class RB205_clone_lieutenant;

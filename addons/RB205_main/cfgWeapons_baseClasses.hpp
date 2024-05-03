@@ -472,6 +472,34 @@ class RB205_V_platoonLead_base: RB205_V_base
 		};
 	};
 };
+class RB205_V_commander_base: RB205_V_platoonLead_base
+{
+	ACCESS_FALSE
+	class ItemInfo: ItemInfo
+	{
+		class HitpointsProtectionInfo
+		{
+			class Chest
+			{
+				HitpointName="HitChest";
+				armor=30;
+				PassThrough=0.30000001;
+			};
+			class Arms
+			{
+				hitpointName="HitArms";
+				armor=6;
+				passThrough=0.30000001;
+			};
+			class Legs
+			{
+				hitpointName="HitLegs";
+				armor=6;
+				passThrough=0.30000001;
+			};
+		};
+	};
+};
 
 class RB205_V_ab_base: RB205_V_base
 {
