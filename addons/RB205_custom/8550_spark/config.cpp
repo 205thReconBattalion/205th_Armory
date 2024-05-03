@@ -91,8 +91,8 @@ class cfgWeapons
         };
     };
 
-    class RB205_V_platoonLead_base;
-    class RB205_V_spark: RB205_V_platoonLead_base
+    class RB205_V_commander_base;
+    class RB205_V_spark: RB205_V_commander_base
     {
         ACCESS_TRUE
         displayName = "[205] Clone Commander Vest [8550]"
