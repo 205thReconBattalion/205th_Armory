@@ -35,6 +35,7 @@ class cfgVehicles
 	{
 		class Turrets
 		{
+			class CargoGunner_1;
 			class MainTurret;
 		}
 	}
@@ -220,6 +221,8 @@ class cfgVehicles
 		};
 		class Turrets: Turrets
 		{
+			class CargoGunner_1: CargoGunner_1{};
+
 			class MainTurret: MainTurret
 			{
 				weapons[]=
