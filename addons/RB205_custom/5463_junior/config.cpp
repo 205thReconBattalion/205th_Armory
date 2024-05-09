@@ -24,15 +24,14 @@ class cfgPatches
 
 class cfgWeapons
 {
-    class RB205_H_arf_trooper;
-    class RB205_H_junior: RB205_H_arf_trooper
+    class RB205_H_trooper;
+    class RB205_H_junior: RB205_H_trooper
     {
-        displayName = "[205] Clone ARF Trooper Helmet [5463]";
+        displayName = "[205] Clone Trooper Helmet [5463]";
         hiddenSelectionsTextures[] =
         {
             "RB205_custom\5463_junior\data\H_junior.paa",
-            "",
-            "RB205_main\data\arf\visor_arf_co.paa"
+            "RB205_main\data\default\visor_p2_co.paa"
         };
         class XtdGearInfo
         {
@@ -42,11 +41,11 @@ class cfgWeapons
         };
     };
 
-    class RB205_U_arf_trooper;
+    class RB205_U_trooper;
     class ItemInfo;
-    class RB205_U_junior: RB205_U_arf_trooper
+    class RB205_U_junior: RB205_U_trooper
     {
-        displayName = "[205] Clone ARF Trooper Uniform [5463]";
+        displayName = "[205] Clone Trooper Uniform [5463]";
         class ItemInfo: ItemInfo
         {
             uniformClass = RB205_clone_junior;
@@ -62,8 +61,8 @@ class cfgWeapons
 
 class cfgVehicles
 {
-    class RB205_clone_arf_corporal;
-    class RB205_clone_junior: RB205_clone_arf_corporal
+    class RB205_clone_trooper;
+    class RB205_clone_junior: RB205_clone_trooper
     {
         displayName = "CSP-5463 Junior";
         uniformclass = "RB205_U_junior";
@@ -74,6 +73,6 @@ class cfgVehicles
             "RB205_custom\5463_junior\data\U_junior_lower.paa",
             "RB205_main\data\default\U_undersuit_co.paa"
         };
-        LINKED_ITEMS("RB205_H_junior","RB205_V_arf_cp","RB205_NV_arf_antenna")
+        LINKED_ITEMS("RB205_H_junior","RB205_V_ct","RB205_NV_chip")
     };
 };
