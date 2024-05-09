@@ -38,7 +38,8 @@ class CfgWeapons
 		displayName = "$STR_205_DC17_DisplayName";
 		displayNameShort = "$STR_205_DC17_DisplayNameShort";
 		descriptionShort = "Blasterpistole der GAR<br />Freigegeben für: Alle";
-		picture = "\RB205_weapons\data\ui\dc17.paa";
+		picture = "\3AS\3AS_Weapons\DC17S\Data\UI\3as_dc17s.paa";
+		cursor = "RB205_CH_sidearm";
 		fireLightDiffuse[] = {0,0,1};
 		magazines[] =
 		{
@@ -96,9 +97,9 @@ class CfgWeapons
 		displayName = "$STR_205_DC17_DUAL_DisplayName";
 		displayNameShort = "$STR_205_DC17_DUAL_DisplayNameShort";
 		descriptionShort = "Blasterpistolen der GAR<br />Freigegeben für: ARC, CS+";
-		picture = "\RB205_weapons\data\ui\dc17_dual.paa";
+		picture = "\3AS\3AS_Weapons\DC17S\Data\UI\3as_dc17s_d.paa";
+		cursor = "RB205_CH_sidearm_dual";
 		fireLightDiffuse[] = {0,0,1};
-		cursor = "RB205_CH_DC17_Dual2";
 		model = "3AS\3AS_Weapons\DC17S\3AS_DC17S_Dual_F.p3d";
 		weaponInfoType = "RscWeaponZeroing";
 		reloadAction = "ls_dualPistol_reload";
@@ -125,7 +126,8 @@ class CfgWeapons
 		displayName = "$STR_205_DC17_ALT_DisplayName";
 		displayNameShort = "$STR_205_DC17_ALT_DisplayNameShort";
 		descriptionShort = "Blasterpistole der GAR<br />Freigegeben für: Alle";
-		picture = "\RB205_weapons\data\ui\dc17.paa";
+		picture = "\3AS\3AS_Weapons\DC17S\Data\UI\3as_dc17s.paa";
+		cursor = "RB205_CH_sidearm";
 		fireLightDiffuse[] = {0,0,1};
 		magazines[] =
 		{
@@ -269,17 +271,5 @@ class cfgSoundSets
 
 class CfgWeaponCursors
 {
-	class throw;
-	class RB205_CH_Dot: throw
-	{
-		texture = "RB205_weapons\DC17\data\CH_Dot.paa";
-	};
-	class RB205_CH_DC17_Dual: throw
-	{
-		texture = "RB205_weapons\DC17\data\CH_DC17_Dual.paa";
-	};
-	class RB205_CH_DC17_Dual2: throw
-	{
-		texture = "RB205_weapons\DC17\data\CH_DC17_Dual2.paa";
-	};
+	
 };

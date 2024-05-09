@@ -86,14 +86,16 @@ class CfgWeapons
 		displayName = "$STR_205_RPS6_DisplayName";
 		displayNameShort = "$STR_205_RPS6_DisplayNameShort";
 		descriptionShort = "Panzerabwehr-Raketenwerfer<br />Freigegeben für: AT/AA";
-		picture = "\MRC\JLTS\weapons\RPS6\data\ui\rps6_ui_ca.paa";
+		picture = "\3AS\3AS_Weapons\RPS6\Data\UI\3as_rps6d.paa";
 		author = "205th Recon Battalion";
 		baseWeapon = "RB205_RPS6";
 		magazines[] =
 		{
 			"RB205_MAG_RPS6"
 		};
-		JLTS_hasElectronics = 0;
+		JLTS_hasElectronics = 1;
+		JLTS_hasEMPProtection = 0;
+		JLTS_friedItem = "RB205_RPS6_fried";
 		scope = 2;
 		_generalMacro = "launch_RPG32_F";
 		model = "\3AS\3AS_Weapons\RPS6\3AS_RPS6_F.p3d";
@@ -217,6 +219,7 @@ class CfgWeapons
 			libTextDesc = "$STR_A3_CfgWeapons_launch_LAW_Library0";
 		};
 	};
+	FRIED_WEAPON(RB205_RPS6,"\RB205_weapons\data\ui\rps6_fried.paa")
 
 
 
@@ -226,7 +229,7 @@ class CfgWeapons
 		displayname = "$STR_205_RPS6_Disposable_DisplayName";
 		displayNameShort = "$STR_205_RPS6_Disposable_DisplayName";
 		descriptionShort = "Panzerabwehr-Raketenwerfer<br />Freigegeben für: AT/AA";
-		picture = "\MRC\JLTS\weapons\RPS6\data\ui\rps6_ui_ca.paa";
+		picture = "\3AS\3AS_Weapons\RPS6\Data\UI\3as_rps6d.paa";
 		scope = 1;
 		mass = 250;
 		baseWeapon = "RB205_RPS6_disposable";
@@ -244,7 +247,7 @@ class CfgWeapons
 		displayname = "$STR_205_RPS6_Disposable_DisplayName";
 		displayNameShort = "$STR_205_RPS6_Disposable_DisplayName";
 		descriptionShort = "Panzerabwehr-Raketenwerfer<br />Freigegeben für: AT/AA";
-		picture = "\MRC\JLTS\weapons\RPS6\data\ui\rps6_ui_ca.paa";
+		picture = "\3AS\3AS_Weapons\RPS6\Data\UI\3as_rps6d.paa";
 		scope = 2;
 		baseWeapon = "RB205_RPS6_disposable";
 		magazines[] = 
@@ -257,7 +260,7 @@ class CfgWeapons
 		displayname = "$STR_205_RPS6_DisposableUsed_DisplayName";
 		displayNameShort = "$STR_205_RPS6_DisposableUsed_DisplayName";
 		descriptionShort = "Panzerabwehr-Raketenwerfer<br />Freigegeben für: AT/AA";
-		picture = "\MRC\JLTS\weapons\RPS6\data\ui\rps6_ui_ca.paa";
+		picture = "\3AS\3AS_Weapons\RPS6\Data\UI\3as_rps6d.paa";
 		scope = 1;
 		mass = 200;
 		baseWeapon = "RB205_RPS6_disposable_used";

@@ -60,18 +60,21 @@ class CfgWeapons
 		displayName = "$STR_205_PLX1_DisplayName";
 		displayNameShort = "$STR_205_PLX1_DisplayNameShort";
 		descriptionShort = "Luftabwehr-Raketenwerfer<br />Freigegeben für: AT/AA";
-		picture = "\MRC\JLTS\weapons\PLX1\data\ui\PLX1_ui_ca.paa";
+		picture = "\3AS\3AS_Weapons\PLX1\Data\UI\3as_plx.paa";
         author = "205th Recon Battalion";
 		magazines[] =
 		{
 			"RB205_MK39_AA"
 		};
-		JLTS_hasElectronics = 0;
+		JLTS_hasElectronics = 1;
+		JLTS_hasEMPProtection = 0;
+		JLTS_friedItem = "RB205_PLX1_F_fried";
 		ace_overpressure_angle = 45;
 		ace_overpressure_damage = 0.69999999;
 		ace_overpresssure_priority = 1;
 		ace_overpressure_range = 10;
 	};
+	FRIED_WEAPON(RB205_PLX1_F,"\RB205_weapons\data\ui\plx_fried.paa")
 };
 
 

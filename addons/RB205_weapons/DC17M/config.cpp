@@ -189,17 +189,21 @@ class CfgWeapons
 		displayName="$STR_205_DC17M_DisplayName";
 		displayNameShort = "STR_205_DC17M_DisplayNameShort";
 		descriptionShort = "Blasterkarabiner der GAR<br />Freigegeben für: Pathfinder, ARC";
+		picture = "\3AS\3AS_Weapons\DC17M\data\UI\3as_dc17m.paa";
+		cursor = "RB205_CH_default";
 		hiddenSelectionsTextures[] =
 		{
 			"RB205_weapons\data\RB205_DC17M.paa"
 		};
-		cursor = "RB205_CH_dc17m";
 		magazines[] =
 		{
 			"RB205_DC17M_Blaster_Mag",
 			"RB205_DC17M_Sniper_Mag",
 			"RB205_DC17M_AT_Mag"
 		};
+		JLTS_hasElectronics = 1;
+		JLTS_hasEMPProtection = 1;
+		JLTS_friedItem = "RB205_DC17M_fried";
 		modes[] =
 		{
 			"Single",
@@ -351,7 +355,7 @@ class CfgWeapons
 			};
 		};
 	};
-	//FRIED_WEAPON(RB205_DC17M,"\RB205_weapons\data\ui\dc17m_fried.paa")
+	FRIED_WEAPON(RB205_DC17M,"\RB205_weapons\data\ui\dc17m_fried.paa")
 	class RB205_DC17M_blaster: RB205_DC17M
 	{
 		class LinkedItems
@@ -399,14 +403,5 @@ class CfgWeapons
 				slot = "CowsSlot";
 			};
 		};
-	};
-};
-
-class CfgWeaponCursors
-{
-	class throw;
-	class RB205_CH_dc17m: throw
-	{
-		texture = "\A3\ui_f\data\igui\cfg\weaponcursors\coil_gs.paa";
 	};
 };
