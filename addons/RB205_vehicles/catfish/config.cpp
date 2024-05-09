@@ -29,6 +29,11 @@ class cfgVehicles
 	{
 		class Turrets
 		{
+			class CargoTurret_01;
+			class CargoTurret_02;
+			class CargoTurret_03;
+			class CargoTurret_04;
+			class CargoTurret_05;
 			class MainTurret;
 		}
 	}
@@ -95,6 +100,11 @@ class cfgVehicles
 		};
 		class Turrets: Turrets
 		{
+			class CargoTurret_1: CargoTurret_01{};
+			class CargoTurret_2: CargoTurret_02{};
+			class CargoTurret_3: CargoTurret_03{};
+			class CargoTurret_4: CargoTurret_04{};
+			class CargoTurret_5: CargoTurret_05{};
 			class MainTurret: MainTurret
 			{
 				weapons[]=
