@@ -12,7 +12,10 @@ class cfgPatches
 		weapons[] =	{};
 		units[] =
 		{
-			"RB205_nuclass"
+			"RB205_rhoclass",
+			"RB205_rhoclass_crate_transport",
+			"RB205_rhoclass_crate_barracks",
+			"RB205_rhoclass_crate_medical"
 		};
 	};
 };

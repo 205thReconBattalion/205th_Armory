@@ -176,7 +176,7 @@ class cfgVehicles
         knd_jetpack_coolCoef = 1;
         knd_jetpack_fuelCapacity = 400;
         knd_jetpack_fuelCoef = 1.5;
-        knd_jetpack_heatCoef = 5; //8
+        knd_jetpack_heatCoef = 6;
         knd_jetpack_jumpCoef = 1;
         knd_jetpack_resistance = 4;
         knd_jetpack_strafeCoef = 0.3;
