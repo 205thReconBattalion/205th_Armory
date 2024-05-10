@@ -10,10 +10,12 @@ class cfgPatches
         requiredVersion = 1.0;
         weapons[] = 
         {
+            "RB205_H_flank",
+            "RB205_U_flank"
         };
         units[] =
         {
-
+            "RB205_clone_flank"
         };
     };
 };
@@ -23,7 +25,7 @@ class cfgPatches
 class cfgWeapons
 {
     class RB205_H_trooper;
-    class RB205_H_flank : RB205_H_trooper
+    class RB205_H_flank: RB205_H_trooper
     {
         displayName = "[205] Clone Trooper Helmet [5567]";
         hiddenSelectionsTextures[] =
@@ -41,10 +43,10 @@ class cfgWeapons
 
     class RB205_U_trooper;
     class ItemInfo;
-    class RB205_U_flank : RB205_U_trooper
+    class RB205_U_flank: RB205_U_trooper
     {
         displayName = "[205] Clone Trooper Armor [5567]";
-        class ItemInfo : ItemInfo
+        class ItemInfo: ItemInfo
         {
             uniformClass = RB205_clone_flank;
         };
@@ -60,7 +62,7 @@ class cfgWeapons
 class cfgVehicles
 {
     class RB205_clone_trooper;
-    class RB205_clone_flank : RB205_clone_trooper
+    class RB205_clone_flank: RB205_clone_trooper
     {
         displayName = "CTF-5567 Flank";
         uniformClass = "RB205_U_flank";
