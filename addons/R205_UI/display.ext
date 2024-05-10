@@ -1,0 +1,29 @@
+#define GUI_GRID_CENTER_X	((safeZoneX + (safeZoneW - ((safeZoneW / safeZoneH) min 1.2)) / 2))
+#define GUI_GRID_CENTER_Y	((safeZoneY + (safeZoneH - (((safeZoneW / safeZoneH) min 1.2) / 1.2)) / 2))
+#define GUI_GRID_CENTER_W	((((safeZoneW / safeZoneH) min 1.2) / 40))
+#define GUI_GRID_CENTER_H	(((((safeZoneW / safeZoneH) min 1.2) / 1.2) / 25))
+#define GUI_GRID_CENTER_WAbs	(((safeZoneW / safeZoneH) min 1.2))
+#define GUI_GRID_CENTER_HAbs	((((safeZoneW / safeZoneH) min 1.2) / 1.2))
+
+
+
+
+
+class Menu {
+
+    x = 13.5 * GUI_GRID_CENTER_W + GUI_GRID_CENTER_X;
+    y = 20 * GUI_GRID_CENTER_H + GUI_GRID_CENTER_Y;
+    w = 5 * GUI_GRID_CENTER_W;
+    h = 1.5 * GUI_GRID_CENTER_H;
+
+    class RscButtonMenuCancel_2700: RscButtonMenuCancel
+    {
+        text = "abbrechen";
+    };
+    class RscButtonMenuOK_2600: RscButtonMenuOK
+    {
+
+    };
+};
+
+
