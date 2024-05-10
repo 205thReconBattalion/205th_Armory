@@ -85,6 +85,7 @@ params ["_this"];
 		"RB205_H_crossfire","RB205_U_crossfire",
 		"RB205_H_putzi","RB205_U_putzi",
 		"RB205_H_junior","RB205_U_junior",
+		"RB205_H_flank","RB205_U_flank",
 		"RB205_H_scythe","RB205_U_scythe","RB205_V_scythe","RB205_scythe_attachments",
 		"RB205_H_irwan","RB205_U_irwan",
 		"RB205_H_sixes","RB205_U_sixes",
