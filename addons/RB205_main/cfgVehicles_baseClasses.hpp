@@ -536,4 +536,5 @@ class RB205_B_snow_base: LST_21_BackPack
 		"RB205_main\data\materials\B_snow.rvmat",
 		"RB205_main\data\materials\B_snow_cloth.rvmat"
 	};
+	tf_hasLRradio = 0;
 };
