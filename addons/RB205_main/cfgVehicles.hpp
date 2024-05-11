@@ -752,6 +752,7 @@ class RB205_B_snow_radio: RB205_B_snow_heavy
 	displayName = "[205] Clone Snow Trooper Backpack <RTO>";
 	maximumLoad = INV_BACK_RADIO;
 	picture = "\RB205_main\data\ui\backpacks\icon_B_snow_radio.paa";
+	TFAR_RADIO
 };
 
 class SWLB_clone_arc_backpack;
