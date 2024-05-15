@@ -66,7 +66,18 @@ tf_range=250000; \
 tf_subtype="digital_lr";
 
 /* JUMPPACK */
-#define JET_EMERGENCY \
+#define JETPACK_VALUES \
+	knd_isJetpack = 1; \
+	knd_jetpack_acceleration = 1.8; \
+	knd_jetpack_ascensionCoef = 1; \
+	knd_jetpack_coolCoef = 1; \
+	knd_jetpack_fuelCapacity = 400; \
+	knd_jetpack_fuelCoef = 1.5; \
+	knd_jetpack_heatCoef = 6; \
+	knd_jetpack_jumpCoef = 1; \
+	knd_jetpack_resistance = 4; \
+	knd_jetpack_strafeCoef = 0.3;
+/*#define JET_EMERGENCY \
 	NSM_jumppack_is_jumppack=1; \
 	NSM_jumppack_spam_delay=1; \
 	NSM_jumppack_energy_capacity=10; \
@@ -82,7 +93,7 @@ tf_subtype="digital_lr";
 	NSM_jumppack_effect_points[] = {{"spine3",{0,-0.3,-0.1}}}; \
 	NSM_jumppack_sound_ignite[] = {"NSM_Main\sounds\cdv21Start.ogg"}; \
     NSM_jumppack_sound_land[] = {"NSM_Main\sounds\cdv21End.ogg"}; \
-    NSM_jumppack_sound_idle[] = {"NSM_Main\sounds\cdv21Idle.ogg"};
+    NSM_jumppack_sound_idle[] = {"NSM_Main\sounds\cdv21Idle.ogg"};*/
 
 //HITPOINTS
 #define HITPOINTS_HELMET \

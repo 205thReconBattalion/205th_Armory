@@ -476,8 +476,9 @@ class RB205_B_ab_base: JLTS_Clone_jumppack_JT12
 	};
 	JLTS_isJumppack = 0;
 	RD501_jumppack_is_jumppack = 0;
-	tas_is_jetpack = 1; //3AS
-	JET_EMERGENCY
+	tas_is_jetpack = 0;
+	//JET_EMERGENCY
+	JETPACK_VALUES
 };
 
 class SWLB_CEE_Recon_RTO_Backpack;
