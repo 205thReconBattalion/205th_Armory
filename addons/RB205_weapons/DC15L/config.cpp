@@ -39,7 +39,7 @@ class CfgWeapons
 		displayName = "$STR_205_DC15L_DisplayName";
 		displayNameShort = "$STR_205_DC15L_DisplayNameShort";
 		descriptionShort = "Blastergewehr der GAR<br />Freigegeben für: Heavy";
-		picture = "\RB205_weapons\data\ui\dc15a.paa";
+		picture = "\3AS\3AS_Weapons\DC15L\Data\UI\3as_dc15l.paa";
 		fireLightDiffuse[] = {0,0,1};
 		magazines[] =
 		{
@@ -108,7 +108,7 @@ class CfgWeapons
 			};
 		};
 	};
-	FRIED_WEAPON(RB205_DC15L,"\RB205_weapons\data\ui\dc15a_fried.paa")
+	FRIED_WEAPON(RB205_DC15L,"\RB205_weapons\data\ui\dc15l_fried.paa")
 
 	class 3AS_Optic_DC15L;
 	class InventoryOpticsItem_Base_F;

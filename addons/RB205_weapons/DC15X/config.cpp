@@ -38,14 +38,13 @@ class WeaponSlotsInfo;
 class CfgWeapons
 {
 	class JLTS_DC15X;
-
 	class RB205_DC15X: JLTS_DC15X
 	{
 		author = "205th Recon Battalion";
 		displayName = "$STR_205_DC15X_DisplayName";
 		displayNameShort = "$STR_205_DC15X_DisplayNameShort";
 		descriptionShort = "Scharfschützengewehr der GAR<br />Freigegeben für: ARF";
-		picture = "\RB205_weapons\data\ui\dc15x.paa";
+		picture = "\3AS\3AS_Weapons\Imperial\data\UI\3as_dlt19x.paa";
 		fireLightDiffuse[] = {0,0,1};
 		baseWeapon = "RB205_DC15X";
 		JLTS_hasElectronics = 1;

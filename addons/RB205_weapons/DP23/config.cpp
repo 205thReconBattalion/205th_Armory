@@ -33,13 +33,16 @@ class CfgWeapons
 		displayName = "$STR_205_DP23_DisplayName";
 		displayNameShort = "$STR_205_DP23_DisplayNameShort";
 		descriptionShort = "Freigegeben für: 1-3 'Rancor'";
-		picture = "\RB205_weapons\data\ui\dp23.paa";
+		picture = "\3AS\3AS_Weapons\MPL\Data\UI\3as_mpl.paa";
 		magazines[] =
 		{
 			"RB205_Scatter_Energy_Pack"
 		};
 		JLTS_canHaveShield=1;
 		JLTS_shieldedWeapon="RB205_DP23_shield";
+		JLTS_hasElectronics = 1;
+		JLTS_hasEMPProtection = 0;
+		JLTS_friedItem = "RB205_DP23_fried";
 		baseWeapon = "RB205_DP23";
         author = "205th Recon Battalion";
 		class WeaponSlotsInfo: WeaponSlotsInfo
@@ -80,6 +83,9 @@ class CfgWeapons
 		JLTS_isShielded=1;
 		JLTS_baseWeapon="RB205_DP23";
 		baseWeapon = "RB205_DP23_shield";
+		JLTS_hasElectronics = 1;
+		JLTS_hasEMPProtection = 0;
+		JLTS_friedItem = "RB205_DP23_shield_fried";
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass=110;
