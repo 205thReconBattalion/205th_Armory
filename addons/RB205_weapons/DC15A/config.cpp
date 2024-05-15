@@ -36,7 +36,6 @@ class CfgWeapons
 		displayNameShort = "$STR_205_DC15A_DisplayNameShort";
 		descriptionShort = "Standard-Blastergewehr der GAR<br />Freigegeben für: Alle";
 		picture = "\3AS\3AS_Weapons\DC15A\Data\UI\3as_dc15a.paa";
-		cursor = "RB205_CH_default";
 		fireLightDiffuse[] = {0,0,1};
 		magazines[] =
 		{
@@ -146,7 +145,6 @@ class CfgWeapons
 		displayNameShort = "$STR_205_DC15A_GL_DisplayNameShort";
 		descriptionShort = "Standard-Blastergewehr der GAR<br />Freigegeben für: Grenadier";
 		picture = "\3AS\3AS_Weapons\DC15A\Data\UI\3as_dc15agl.paa";
-		cursor = "RB205_CH_default";
 		fireLightDiffuse[] = {0,0,1};
 		magazines[] =
 		{

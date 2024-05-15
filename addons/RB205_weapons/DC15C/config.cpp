@@ -34,7 +34,6 @@ class CfgWeapons
 		displayNameShort = "$STR_205_DC15C_DisplayNameShort";
 		descriptionShort = "Blasterkarabiner der GAR<br />Freigegeben für: Alle<br />(Unterwasser-Fähig)";
 		picture = "\3AS\3AS_Weapons\DC15C\Data\UI\3as_dc15c.paa";
-		cursor = "RB205_CH_default";
 		fireLightDiffuse[] = {0,0,1};
 		canShootInWater = 1;
 		magazines[] =
@@ -124,7 +123,6 @@ class CfgWeapons
 		displayNameShort = "$STR_205_DC15C_GL_DisplayNameShort";
 		descriptionShort = "Blasterkarabiner der GAR<br />Freigegeben für: Alle<br />(Unterwasser-Fähig)";
 		picture = "\3AS\3AS_Weapons\DC15C\Data\UI\3as_dc15cgl.paa";
-		cursor = "RB205_CH_default";
 		fireLightDiffuse[] = {0,0,1};
 		canShootInWater = 1;
 		magazines[] =

@@ -34,7 +34,6 @@ class CfgWeapons
 		displayNameShort = "$STR_205_DP23_DisplayNameShort";
 		descriptionShort = "Freigegeben für: 1-3 'Rancor'";
 		picture = "\3AS\3AS_Weapons\MPL\Data\UI\3as_mpl.paa";
-		cursor = "RB205_CH_shotgun";
 		magazines[] =
 		{
 			"RB205_Scatter_Energy_Pack"

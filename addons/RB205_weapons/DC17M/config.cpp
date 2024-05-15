@@ -190,7 +190,6 @@ class CfgWeapons
 		displayNameShort = "STR_205_DC17M_DisplayNameShort";
 		descriptionShort = "Blasterkarabiner der GAR<br />Freigegeben für: Pathfinder, ARC";
 		picture = "\3AS\3AS_Weapons\DC17M\data\UI\3as_dc17m.paa";
-		cursor = "RB205_CH_default";
 		hiddenSelectionsTextures[] =
 		{
 			"RB205_weapons\data\RB205_DC17M.paa"

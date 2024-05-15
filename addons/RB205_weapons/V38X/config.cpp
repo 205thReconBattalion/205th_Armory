@@ -44,7 +44,6 @@ class CfgWeapons
 		displayNameShort = "$STR_205_V38X_DisplayNameShort";
 		descriptionShort = "Blastergewehr der GAR<br />Freigegeben für: Marksman";
 		picture = "\3AS\3AS_Weapons\Valken38X\Data\UI\3as_valken.paa";
-		cursor = "RB205_CH_sniper";
 		fireLightDiffuse[] = {0,0,1};
 		magazines[] =
 		{

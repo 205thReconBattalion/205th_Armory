@@ -57,7 +57,6 @@ class CfgWeapons
 		displayNameShort = "$STR_205_WESTARM5_DisplayNameShort";
 		descriptionShort = "Blastergewehr der GAR<br />Freigegeben für: ARC";
 		picture = "\3AS\3AS_Weapons\WestarM5\Data\UI\3as_westar.paa";
-		cursor = "RB205_CH_default";
 		fireLightDiffuse[] = {0,0,1};
 		scope = 2;
 		recoil = "recoil_smg_03";

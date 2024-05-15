@@ -31,7 +31,6 @@ class CfgWeapons
 		displayNameShort = "$STR_205_Z6_DisplayNameShort";
 		descriptionShort = "Rotationsblaster der GAR<br />Freigegeben für: Heavy";
 		picture = "3AS\3AS_Weapons\X42\Data\UI\3as_btx42.paa";
-		cursor = "RB205_CH_default";
 		fireLightDiffuse[] = {0,0,1};
 		baseWeapon = "RB205_Z6";
 		magazines[] =

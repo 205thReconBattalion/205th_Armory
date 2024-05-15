@@ -40,7 +40,6 @@ class CfgWeapons
 		displayNameShort = "$STR_205_DC15L_DisplayNameShort";
 		descriptionShort = "Blastergewehr der GAR<br />Freigegeben für: Heavy";
 		picture = "\3AS\3AS_Weapons\DC15L\Data\UI\3as_dc15l.paa";
-		cursor = "RB205_CH_default";
 		fireLightDiffuse[] = {0,0,1};
 		magazines[] =
 		{
