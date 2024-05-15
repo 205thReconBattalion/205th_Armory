@@ -46,7 +46,7 @@ class CfgWeapons
 		displayNameShort = "$STR_205_DC15X_DisplayNameShort";
 		descriptionShort = "Scharfschützengewehr der GAR<br />Freigegeben für: ARF";
 		picture = "\3AS\3AS_Weapons\Imperial\data\UI\3as_dlt19x.paa";
-		cursor = "RB205_CH_invisible";
+		cursor = "RB205_CH_sniper";
 		fireLightDiffuse[] = {0,0,1};
 		baseWeapon = "RB205_DC15X";
 		JLTS_hasElectronics = 1;

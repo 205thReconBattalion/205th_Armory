@@ -1,6 +1,6 @@
 class cfgPatches
 {
-	class RB205_weapons_cursors
+	class RB205_weapons_crosshair
 	{
 		requiredAddons[] =
 		{
