@@ -440,22 +440,13 @@ respawnlinkedItems[] = \
 class cfgVehicles
 {
     class RB205_unit_base;
-    class RB205_emp_trooper: RB205_unit_base
+    class RB205_unit_emp_base: RB205_unit_base
     {
-        ACCESS_TRUE
-        displayName = "(1-CT) Stormtrooper";
+        ACCESS_FALSE
         identityTypes[] = {"LanguageENG_F","Head_NATO"};
-        uniformClass = "RB205_emp_U_trooper";
         nakedUniform = "lsd_bodyglove_uniform";
-        model = "\JMSLLTE_empire\stormtrooperClear.p3d";
-        hiddenSelections[] = {"camo1"};
-        hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\body\StormtrooperBody_clean_co.paa"};
         side = 1;
         faction = "RB205_empire";
-	    editorSubCategory = "RB205_empire_stormtrooper";
-        //Inventory:
-        LINKED_ITEMS("RB205_emp_H_trooper","RB205_emp_V_ct")
-	    backpack = "";
         weapons[]=
         {
             "3AS_E11",
@@ -496,6 +487,19 @@ class cfgVehicles
             "ACE_Tourniquet","ACE_Tourniquet","ACE_Tourniquet","ACE_Tourniquet",
             "ACE_painkillers","ACE_painkillers"
         };
+    };
+    class RB205_emp_trooper: RB205_unit_emp_base
+    {
+        ACCESS_TRUE
+        displayName = "(1-CT) Stormtrooper";
+        uniformClass = "RB205_emp_U_trooper";
+        model = "\JMSLLTE_empire\stormtrooperClear.p3d";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\body\StormtrooperBody_clean_co.paa"};
+	    editorSubCategory = "RB205_empire_stormtrooper";
+        //Inventory:
+        LINKED_ITEMS("RB205_emp_H_trooper","RB205_emp_V_ct")
+	    backpack = "";
         class Wounds
         {
             mat[] = {"JMSLLTE_empire\data\body\StormtrooperBodyClean.rvmat","JMSLLTE_empire\data\body\StormtrooperBodyClean_injury.rvmat","JMSLLTE_empire\data\body\StormtrooperBodyClean_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat"};
@@ -544,18 +548,14 @@ class cfgVehicles
         displayName = "(8-CC) Stormtrooper Commander";
         LINKED_ITEMS("RB205_emp_H_trooper","RB205_emp_V_cc")
     };
-    class RB205_emp_scout_trooper: RB205_unit_base
+    class RB205_emp_scout_trooper: RB205_unit_emp_base
     {
         ACCESS_TRUE
         displayName = "(1-CT) Scout Trooper";
-        identityTypes[] = {"LanguageENG_F","Head_NATO"};
         uniformClass = "RB205_emp_U_scout_trooper";
-        nakedUniform = "lsd_bodyglove_uniform";
         model = "\JMSLLTE_empire\scouttrooper.p3d";
         hiddenSelections[] = {"Camo1"};
         hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\body\ScouttrooperBody_co.paa"};
-        side = 1;
-        faction = "RB205_empire";
 	    editorSubCategory = "RB205_empire_scout";
         //Inventory:
         LINKED_ITEMS("RB205_emp_H_scout_trooper","RB205_emp_V_scout_ct")
@@ -581,24 +581,6 @@ class cfgVehicles
             "JMSLLTE_EC17_15rnd_Mag","JMSLLTE_EC17_15rnd_Mag","JMSLLTE_EC17_15rnd_Mag","JMSLLTE_EC17_15rnd_Mag","JMSLLTE_EC17_15rnd_Mag",
             "RB205_thermalDet","RB205_thermalDet","RB205_thermalDet",
             "RB205_smokeWhite","RB205_smokeWhite"
-        };
-        items[]=
-        {
-            "ACE_EntrenchingTool",
-            "ACE_Flashlight_XL50",
-            "ACE_CableTie","ACE_CableTie","ACE_CableTie",
-            "ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage",
-            "ACE_Tourniquet","ACE_Tourniquet","ACE_Tourniquet","ACE_Tourniquet",
-            "ACE_painkillers","ACE_painkillers"
-        };
-        respawnitems[]=
-        {
-            "ACE_EntrenchingTool",
-            "ACE_Flashlight_XL50",
-            "ACE_CableTie","ACE_CableTie","ACE_CableTie",
-            "ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage",
-            "ACE_Tourniquet","ACE_Tourniquet","ACE_Tourniquet","ACE_Tourniquet",
-            "ACE_painkillers","ACE_painkillers"
         };
         class Wounds
         {
@@ -648,18 +630,14 @@ class cfgVehicles
         displayName = "(8-CC) Scout Trooper Commander";
         LINKED_ITEMS("RB205_emp_H_scout_trooper","RB205_emp_V_cc")
     };
-    class RB205_emp_plt_trooper: RB205_unit_base
+    class RB205_emp_plt_trooper: RB205_unit_emp_base
     {
         ACCESS_TRUE
         displayName = "TIE Pilot";
-        identityTypes[] = {"LanguageENG_F","Head_NATO"};
         uniformClass = "RB205_emp_U_plt_trooper";
-        nakedUniform = "lsd_bodyglove_uniform";
         model = "\JMSLLTE_empire\tiepilot.p3d";
         hiddenSelections[] = {"Camo1","Camo2"};
         hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\body\pilot_torso_co.paa","JMSLLTE_empire\data\body\pilot_legs_co.paa"};
-        side = 1;
-        faction = "RB205_empire";
 	    editorSubCategory = "RB205_empire_other";
         //Inventory:
         LINKED_ITEMS("RB205_emp_H_plt_trooper","RB205_emp_V_plt_ct")
@@ -686,84 +664,24 @@ class cfgVehicles
             "RB205_thermalDet","RB205_thermalDet","RB205_thermalDet",
             "RB205_smokeWhite","RB205_smokeWhite"
         };
-        items[]=
-        {
-            "ACE_Flashlight_XL50",
-            "ACE_CableTie","ACE_CableTie","ACE_CableTie",
-            "ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage",
-            "ACE_Tourniquet","ACE_Tourniquet","ACE_Tourniquet","ACE_Tourniquet",
-            "ACE_painkillers","ACE_painkillers"
-        };
-        respawnitems[]=
-        {
-            "ACE_Flashlight_XL50",
-            "ACE_CableTie","ACE_CableTie","ACE_CableTie",
-            "ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage",
-            "ACE_Tourniquet","ACE_Tourniquet","ACE_Tourniquet","ACE_Tourniquet",
-            "ACE_painkillers","ACE_painkillers"
-        };
         class Wounds
         {
             mat[] = {"JMSLLTE_empire\data\body\navycrewman.rvmat","JMSLLTE_empire\data\body\navycrewman_injury.rvmat","JMSLLTE_empire\data\body\navycrewman_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat"};
             tex[] = {};
         };
     };
-    class RB205_emp_snow_trooper: RB205_unit_base
+    class RB205_emp_snow_trooper: RB205_unit_emp_base
     {
         ACCESS_TRUE
         displayName = "Snowtrooper";
-        identityTypes[] = {"LanguageENG_F","Head_NATO"};
         uniformClass = "RB205_emp_U_snow_trooper";
-        nakedUniform = "lsd_bodyglove_uniform";
         model = "\JMSLLTE_empire\snowtrooper.p3d";
         hiddenSelections[] = {"camo1","camo2"};
         hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\body\SnowtrooperBody_co.paa","JMSLLTE_empire\data\body\snowubka_co.paa"};
-        side = 1;
-        faction = "RB205_empire";
 	    editorSubCategory = "RB205_empire_other";
         //Inventory:
         LINKED_ITEMS("RB205_emp_H_snow_trooper","RB205_emp_V_snow_ct")
 	    backpack = "";
-        weapons[]=
-        {
-            "3AS_E11",
-            "Throw","Put"
-        };
-        respawnweapons[]=
-        {
-            "3AS_E11",
-            "Throw","Put"
-        };
-        magazines[]=
-        {
-            "3AS_40Rnd_EM40_Mag_Imp","3AS_40Rnd_EM40_Mag_Imp","3AS_40Rnd_EM40_Mag_Imp","3AS_40Rnd_EM40_Mag_Imp","3AS_40Rnd_EM40_Mag_Imp","3AS_40Rnd_EM40_Mag_Imp","3AS_40Rnd_EM40_Mag_Imp","3AS_40Rnd_EM40_Mag_Imp",
-            "RB205_thermalDet","RB205_thermalDet","RB205_thermalDet",
-            "RB205_smokeWhite","RB205_smokeWhite"
-        };
-        respawnmagazines[]=
-        {
-            "3AS_40Rnd_EM40_Mag_Imp","3AS_40Rnd_EM40_Mag_Imp","3AS_40Rnd_EM40_Mag_Imp","3AS_40Rnd_EM40_Mag_Imp","3AS_40Rnd_EM40_Mag_Imp","3AS_40Rnd_EM40_Mag_Imp","3AS_40Rnd_EM40_Mag_Imp","3AS_40Rnd_EM40_Mag_Imp",
-            "RB205_thermalDet","RB205_thermalDet","RB205_thermalDet",
-            "RB205_smokeWhite","RB205_smokeWhite"
-        };
-        items[]=
-        {
-            "ACE_EntrenchingTool",
-            "ACE_Flashlight_XL50",
-            "ACE_CableTie","ACE_CableTie","ACE_CableTie",
-            "ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage",
-            "ACE_Tourniquet","ACE_Tourniquet","ACE_Tourniquet","ACE_Tourniquet",
-            "ACE_painkillers","ACE_painkillers"
-        };
-        respawnitems[]=
-        {
-            "ACE_EntrenchingTool",
-            "ACE_Flashlight_XL50",
-            "ACE_CableTie","ACE_CableTie","ACE_CableTie",
-            "ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage",
-            "ACE_Tourniquet","ACE_Tourniquet","ACE_Tourniquet","ACE_Tourniquet",
-            "ACE_painkillers","ACE_painkillers"
-        };
         class Wounds
         {
             mat[] = {"JMSLLTE_empire\data\body\SnowtrooperBody.rvmat","JMSLLTE_empire\data\body\SnowtrooperBody_injury.rvmat","JMSLLTE_empire\data\body\SnowtrooperBody_injury.rvmat","JMSLLTE_empire\data\body\SnowtrooperBody_clo.rvmat","JMSLLTE_empire\data\body\SnowtrooperBody_clo_injury.rvmat","JMSLLTE_empire\data\body\SnowtrooperBody_clo_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat"};
