@@ -1,4 +1,5 @@
-class cfgPatches {
+class cfgPatches
+{
     class RB205_empire
 	{
 		requiredAddons[]=
@@ -633,23 +634,23 @@ class cfgVehicles
         faction = "RB205_empire";
         weapons[]=
         {
-            "3AS_E11",
+            "RB205_E11_wScope",
             "Throw","Put"
         };
         respawnweapons[]=
         {
-            "3AS_E11",
+            "RB205_E11_wScope",
             "Throw","Put"
         };
         magazines[]=
         {
-            "3AS_40Rnd_EM40_Mag_Imp","3AS_40Rnd_EM40_Mag_Imp","3AS_40Rnd_EM40_Mag_Imp","3AS_40Rnd_EM40_Mag_Imp","3AS_40Rnd_EM40_Mag_Imp","3AS_40Rnd_EM40_Mag_Imp","3AS_40Rnd_EM40_Mag_Imp","3AS_40Rnd_EM40_Mag_Imp",
+            "RB205_E11_mag","RB205_E11_mag","RB205_E11_mag","RB205_E11_mag","RB205_E11_mag","RB205_E11_mag","RB205_E11_mag","RB205_E11_mag",
             "RB205_thermalDet","RB205_thermalDet","RB205_thermalDet",
             "RB205_smokeWhite","RB205_smokeWhite"
         };
         respawnmagazines[]=
         {
-            "3AS_40Rnd_EM40_Mag_Imp","3AS_40Rnd_EM40_Mag_Imp","3AS_40Rnd_EM40_Mag_Imp","3AS_40Rnd_EM40_Mag_Imp","3AS_40Rnd_EM40_Mag_Imp","3AS_40Rnd_EM40_Mag_Imp","3AS_40Rnd_EM40_Mag_Imp","3AS_40Rnd_EM40_Mag_Imp",
+            "RB205_E11_mag","RB205_E11_mag","RB205_E11_mag","RB205_E11_mag","RB205_E11_mag","RB205_E11_mag","RB205_E11_mag","RB205_E11_mag",
             "RB205_thermalDet","RB205_thermalDet","RB205_thermalDet",
             "RB205_smokeWhite","RB205_smokeWhite"
         };
