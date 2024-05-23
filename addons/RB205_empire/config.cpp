@@ -38,6 +38,25 @@ class cfgPatches {
 		};
 		units[] =
 		{
+            "RB205_B_emp_heavy",
+            "RB205_B_emp_medic",
+            "RB205_B_emp_rocket",
+            "RB205_B_emp_eod",
+            "RB205_B_emp_radio",
+            "RB205_B_emp_ab",
+            "RB205_B_emp_ab_heavy",
+            "RB205_B_emp_ab_medic",
+            "RB205_B_emp_ab_rocket",
+            "RB205_B_emp_ab_eod",
+            "RB205_B_emp_ab_radio",
+            "RB205_B_emp_scout",
+            "RB205_B_emp_plt",
+            "RB205_B_emp_snow_heavy",
+            "RB205_B_emp_snow_medic",
+            "RB205_B_emp_snow_rocket",
+            "RB205_B_emp_snow_eod",
+            "RB205_B_emp_snow_radio",
+
             "RB205_emp_trooper",
             "RB205_emp_lanceCorporal",
             "RB205_emp_corporal",
@@ -46,6 +65,15 @@ class cfgPatches {
             "RB205_emp_lieutenant",
             "RB205_emp_captain",
             "RB205_emp_commander",
+
+            "RB205_emp_ab_trooper",
+            "RB205_emp_ab_lanceCorporal",
+            "RB205_emp_ab_corporal",
+            "RB205_emp_ab_sergeant",
+            "RB205_emp_ab_sergeantMajor",
+            "RB205_emp_ab_lieutenant",
+            "RB205_emp_ab_captain",
+            "RB205_emp_ab_commander",
 
             "RB205_emp_scout_trooper",
             "RB205_emp_scout_lanceCorporal",
@@ -58,15 +86,6 @@ class cfgPatches {
             
             "RB205_emp_plt_trooper",            
             "RB205_emp_snow_trooper"
-			/*"RB205_emp_B_storm",
-            "RB205_emp_B_storm_rto",
-            "RB205_emp_B_storm_medic",
-            "RB205_emp_B_jump",
-            "RB205_emp_B_jet",
-            "RB205_emp_B_jet_blk",
-            "RB205_emp_B_snow",
-            "RB205_emp_B_snow_medic",
-            "RB205_emp_B_flame"*/
 		};
 	};
 };
@@ -439,6 +458,171 @@ respawnlinkedItems[] = \
 
 class cfgVehicles
 {
+    /*
+        BACKPACKS
+    */
+    class RB205_backpack_base;
+    class RB205_backpack_heavy_base;
+    class RB205_backpack_medic_base;
+    class RB205_backpack_rocket_base;
+    class RB205_backpack_eod_base;
+    class RB205_backpack_radio_base;
+    class RB205_backpack_scout_base;
+
+    class RB205_B_emp_heavy: RB205_backpack_heavy_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Stormtrooper Backpack <Heavy>";
+        model = "\JMSLLTE_empire\back_imp.p3d";
+        picture = "\JMSLLTE_empire\data\ico\ico_b_imp.paa";
+    };
+    class RB205_B_emp_medic: RB205_backpack_medic_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Stormtrooper Backpack <Medic>";
+        model = "\JMSLLTE_empire\back_imp_surv.p3d";
+        picture = "\JMSLLTE_empire\data\ico\ico_b_imp.paa";
+    };
+    class RB205_B_emp_rocket: RB205_backpack_rocket_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Stormtrooper Backpack <AT/AA>";
+        model = "\JMSLLTE_empire\back_imp.p3d";
+        picture = "\JMSLLTE_empire\data\ico\ico_b_imp.paa";
+    };
+    class RB205_B_emp_eod: RB205_backpack_eod_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Stormtrooper Backpack <EOD>";
+        model = "\JMSLLTE_scum\back_small_imp.p3d";
+        picture = "\JMSLLTE_scum\data\ico\ico_b_small.paa";
+    };
+    class RB205_B_emp_radio: RB205_backpack_radio_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Stormtrooper Backpack <RTO>";
+        model = "\JMSLLTE_empire\back_rad.p3d";
+        picture = "\JMSLLTE_empire\data\ico\ico_b_imp.paa";
+    };
+    class RB205_B_emp_ab: RB205_backpack_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Rockettrooper Jetpack";
+        model = "\JMSLLTE_empire\back_skyrocket.p3d";
+        picture = "\JMSLLTE_empire\data\ico\ico_b_snow.paa";
+        hiddenSelections[] = {"Camo1"};
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\back_skypack_co.paa"};
+        JETPACK_TRUE
+    };
+    class RB205_B_emp_ab_heavy: RB205_backpack_heavy_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Rockettrooper Jetpack <Heavy>";
+        model = "\JMSLLTE_empire\back_skyrocket.p3d";
+        picture = "\JMSLLTE_empire\data\ico\ico_b_snow.paa";
+        hiddenSelections[] = {"Camo1"};
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\back_skypack_co.paa"};
+        JETPACK_TRUE
+    };
+    class RB205_B_emp_ab_medic: RB205_backpack_medic_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Rockettrooper Jetpack <Medic>";
+        model = "\JMSLLTE_empire\back_skyrocket.p3d";
+        picture = "\JMSLLTE_empire\data\ico\ico_b_snow.paa";
+        hiddenSelections[] = {"Camo1"};
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\back_skypack_co.paa"};
+        JETPACK_TRUE
+    };
+    class RB205_B_emp_ab_rocket: RB205_backpack_rocket_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Rockettrooper Jetpack <AT/AA>";
+        model = "\JMSLLTE_empire\back_skyrocket.p3d";
+        picture = "\JMSLLTE_empire\data\ico\ico_b_snow.paa";
+        hiddenSelections[] = {"Camo1"};
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\back_skypack_co.paa"};
+        JETPACK_TRUE
+    };
+    class RB205_B_emp_ab_eod: RB205_backpack_eod_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Rockettrooper Jetpack <EOD>";
+        model = "\JMSLLTE_empire\back_skyrocket.p3d";
+        picture = "\JMSLLTE_empire\data\ico\ico_b_snow.paa";
+        hiddenSelections[] = {"Camo1"};
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\back_skypack_co.paa"};
+        JETPACK_TRUE
+    };
+    class RB205_B_emp_ab_radio: RB205_backpack_radio_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Rockettrooper Jetpack <RTO>";
+        model = "\JMSLLTE_empire\back_skyrocket.p3d";
+        picture = "\JMSLLTE_empire\data\ico\ico_b_snow.paa";
+        hiddenSelections[] = {"Camo1"};
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\back_skypack_co.paa"};
+        JETPACK_TRUE
+    };
+    class RB205_B_emp_scout: RB205_backpack_scout_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Scout Trooper Backpack";
+    };
+    class RB205_B_emp_plt: RB205_backpack_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Tie Pilot Transmitter";
+        TFAR_RADIO_SMALL
+    };
+    class RB205_B_emp_snow_heavy: RB205_backpack_heavy_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Snowtrooper Backpack <Heavy>";
+        model = "\JMSLLTE_empire\back_snow.p3d";
+        picture = "\JMSLLTE_empire\data\ico\ico_b_snow.paa";
+        hiddenSelections[] = {"Camo1"};
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\back_snow_co.paa"};
+    };
+    class RB205_B_emp_snow_medic: RB205_backpack_medic_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Snowtrooper Backpack <Medic>";
+        model = "\JMSLLTE_empire\back_snow.p3d";
+        picture = "\JMSLLTE_empire\data\ico\ico_b_snow.paa";
+        hiddenSelections[] = {"Camo1"};
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\back_snowMed_co.paa"};
+    };
+    class RB205_B_emp_snow_rocket: RB205_backpack_rocket_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Snowtrooper Backpack <AT/AA>";
+        model = "\JMSLLTE_empire\back_snow.p3d";
+        picture = "\JMSLLTE_empire\data\ico\ico_b_snow.paa";
+        hiddenSelections[] = {"Camo1"};
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\back_snow_co.paa"};
+    };
+    class RB205_B_emp_snow_eod: RB205_backpack_eod_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Snowtrooper Backpack <EOD>";
+        model = "\JMSLLTE_empire\back_snow.p3d";
+        picture = "\JMSLLTE_empire\data\ico\ico_b_snow.paa";
+        hiddenSelections[] = {"Camo1"};
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\back_snow_co.paa"};
+    };
+    class RB205_B_emp_snow_radio: RB205_backpack_radio_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Snowtrooper Backpack <RTO>";
+        model = "\JMSLLTE_empire\back_snow.p3d";
+        picture = "\JMSLLTE_empire\data\ico\ico_b_snow.paa";
+        hiddenSelections[] = {"Camo1"};
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\back_snow_co.paa"};
+    };
+    /*
+        UNITS
+    */
     class RB205_unit_base;
     class RB205_unit_emp_base: RB205_unit_base
     {
@@ -548,6 +732,55 @@ class cfgVehicles
         displayName = "(8-CC) Stormtrooper Commander";
         LINKED_ITEMS("RB205_emp_H_trooper","RB205_emp_V_cc")
     };
+    class RB205_emp_ab_trooper: RB205_emp_trooper
+    {
+        ACCESS_TRUE
+        displayName = "(1-CT) Rockettrooper";
+        LINKED_ITEMS("RB205_emp_H_ab_trooper","RB205_emp_V_ct")
+	    backpack = "RB205_B_emp_ab";
+    };
+    class RB205_emp_ab_lanceCorporal: RB205_emp_ab_trooper
+    {
+        ACCESS_TRUE
+        displayName = "(2-CLC) Rockettrooper Lance-Corporal";
+        LINKED_ITEMS("RB205_emp_H_ab_trooper","RB205_emp_V_clc")
+    };
+    class RB205_emp_ab_corporal: RB205_emp_ab_trooper
+    {
+        ACCESS_TRUE
+        displayName = "(3-CP) Rockettrooper Corporal";
+        LINKED_ITEMS("RB205_emp_H_ab_trooper","RB205_emp_V_cp")
+    };
+    class RB205_emp_ab_sergeant: RB205_emp_ab_trooper
+    {
+        ACCESS_TRUE
+        displayName = "(4-CS) Rockettrooper Sergeant";
+        LINKED_ITEMS("RB205_emp_H_ab_trooper","RB205_emp_V_cs")
+    };
+    class RB205_emp_ab_sergeantMajor: RB205_emp_ab_trooper
+    {
+        ACCESS_TRUE
+        displayName = "(5-CSM) Rockettrooper Sergeant-Major";
+        LINKED_ITEMS("RB205_emp_H_ab_trooper","RB205_emp_V_csm")
+    };
+    class RB205_emp_ab_lieutenant: RB205_emp_ab_trooper
+    {
+        ACCESS_TRUE
+        displayName = "(6-CL) Rockettrooper Lieutenant";
+        LINKED_ITEMS("RB205_emp_H_ab_trooper","RB205_emp_V_cl")
+    };
+    class RB205_emp_ab_captain: RB205_emp_ab_trooper
+    {
+        ACCESS_TRUE
+        displayName = "(7-CO) Rockettrooper Captain";
+        LINKED_ITEMS("RB205_emp_H_ab_trooper","RB205_emp_V_co")
+    };
+    class RB205_emp_ab_commander: RB205_emp_ab_trooper
+    {
+        ACCESS_TRUE
+        displayName = "(8-CC) Rockettrooper Commander";
+        LINKED_ITEMS("RB205_emp_H_ab_trooper","RB205_emp_V_cc")
+    };
     class RB205_emp_scout_trooper: RB205_unit_emp_base
     {
         ACCESS_TRUE
@@ -559,7 +792,7 @@ class cfgVehicles
 	    editorSubCategory = "RB205_empire_scout";
         //Inventory:
         LINKED_ITEMS("RB205_emp_H_scout_trooper","RB205_emp_V_scout_ct")
-	    backpack = "";
+	    backpack = "RB205_B_emp_scout";
         weapons[]=
         {
             "JMSLLTE_ec17pistol",
@@ -641,7 +874,7 @@ class cfgVehicles
 	    editorSubCategory = "RB205_empire_other";
         //Inventory:
         LINKED_ITEMS("RB205_emp_H_plt_trooper","RB205_emp_V_plt_ct")
-	    backpack = "";
+	    backpack = "RB205_B_emp_plt";
         weapons[]=
         {
             "3AS_SE14R",
@@ -681,7 +914,7 @@ class cfgVehicles
 	    editorSubCategory = "RB205_empire_other";
         //Inventory:
         LINKED_ITEMS("RB205_emp_H_snow_trooper","RB205_emp_V_snow_ct")
-	    backpack = "";
+	    backpack = "RB205_B_emp_snow_heavy";
         class Wounds
         {
             mat[] = {"JMSLLTE_empire\data\body\SnowtrooperBody.rvmat","JMSLLTE_empire\data\body\SnowtrooperBody_injury.rvmat","JMSLLTE_empire\data\body\SnowtrooperBody_injury.rvmat","JMSLLTE_empire\data\body\SnowtrooperBody_clo.rvmat","JMSLLTE_empire\data\body\SnowtrooperBody_clo_injury.rvmat","JMSLLTE_empire\data\body\SnowtrooperBody_clo_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat"};

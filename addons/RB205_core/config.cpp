@@ -369,4 +369,55 @@ class cfgVehicles
             };
         };
     };
+
+    class B_Kitbag_rgr;
+    class Bag_Base;
+    class RB205_backpack_base: Bag_Base
+    {
+        ACCESS_FALSE
+        author = AUTHOR;
+        picture = PICTURE;
+        descriptionShort = "";
+		model = "\RB205_core\data\B_invisible.p3d";
+	    maximumLoad = 0;
+		mass = 0;
+    };
+    class RB205_backpack_heavy_base: RB205_backpack_base
+    {
+        ACCESS_FALSE
+        maximumLoad = 150;
+    };
+    class RB205_backpack_medic_base: RB205_backpack_base
+    {
+        ACCESS_FALSE
+        maximumLoad = 250;
+    };
+    class RB205_backpack_rocket_base: RB205_backpack_base
+    {
+        ACCESS_FALSE
+        maximumLoad = 200;
+    };
+    class RB205_backpack_eod_base: RB205_backpack_base
+    {
+        ACCESS_FALSE
+        maximumLoad = 150;
+    };
+    class RB205_backpack_radio_base: RB205_backpack_base
+    {
+        ACCESS_FALSE
+        maximumLoad = 50;
+        TFAR_RADIO
+    };
+    class RB205_backpack_scout_base: RB205_backpack_base
+    {
+        ACCESS_FALSE
+        maximumLoad = 200;
+        TFAR_RADIO_SMALL
+    };
+    class RB205_backpack_sof_base: RB205_backpack_base
+    {
+        ACCESS_FALSE
+        maximumLoad = 300;
+        TFAR_RADIO_SMALL
+    };
 };
