@@ -12,7 +12,7 @@ PixelShaderID = "Super";
 VertexShaderID = "Super";
 class Stage1
 {
-	texture="armor_unit\21\21_Undersuit_nohq.paa";
+	texture="LFP_marine\data\undersuit_nohq.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -48,7 +48,7 @@ class Stage3
 };
 class Stage4
 {
-	texture="armor_unit\21\21_Undersuit_as.paa";
+	texture="LFP_marine\data\undersuit_as.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -60,7 +60,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="armor_unit\21\21_Undersuit_smdi.paa";
+	texture="LFP_marine\data\undersuit_smdi.paa";
 	uvSource="tex";
 	class uvTransform
 	{

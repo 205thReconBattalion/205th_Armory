@@ -369,7 +369,7 @@ class RB205_plt_base: RB205_clone_base
 class RB205_snow_base: RB205_clone_base
 {
 	ACCESS_FALSE
-	model="\armor_unit\21\21.p3d";
+	model="\LFP_marine\armor.p3d";
 	hiddenSelections[]=
 	{
 		"Camo1",
@@ -519,14 +519,14 @@ class RB205_B_arf_camo_base: RB205_B_arf_base
 	};
 };
 
-class LST_21_BackPack;
-class RB205_B_snow_base: LST_21_BackPack
+class ls_gar_standard_backpack;
+class RB205_B_snow_base: ls_gar_standard_backpack
 {
 	ACCESS_FALSE
 	author = "205th Recon Battalion";
 	descriptionShort = "";
 	picture = "\RB205_main\data\ui\backpacks\icon_B_snow.paa";
-	model = "\armor_unit\21\BackPack_21.p3d";
+	model = "\LFP_marine\backpack.p3d";
 	hiddenSelections[] =
 	{
 		"backpack",
