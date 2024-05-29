@@ -30,7 +30,8 @@ class cfgPatches
 		ammo[] =
 		{
 			"RB205_droidPopper_ammo",
-			"RB205_impact_ammo"
+			"RB205_impact_ammo",
+			"RB205_smokeShellWhite"
 		};
 	};
 };
@@ -56,6 +57,12 @@ class CfgAmmo
 	class RB205_impact_ammo: 3AS_Detonator_1RND
 	{
 		explosionTime = 0;
+	};
+
+	class 3AS_SmokeShellBase;
+	class RB205_smokeShellWhite: 3AS_SmokeShellBase
+	{
+		effectsSmoke = "SmokeShellWhiteEffect";
 	};
 };
 
@@ -102,6 +109,7 @@ class CfgMagazines
 		picture = "\RB205_weapons\grenades\data\smokeW.paa";
 		MASS_SMK
         author = "205th Recon Battalion";
+		ammo = "RB205_smokeShellWhite";
 	};
 	class RB205_smokeBlue: 3AS_SmokeBlue
 	{
