@@ -449,7 +449,7 @@ class RB205_clone_arc_trooper: RB205_arc_base
 	backpack="RB205_B_arc";
 };
 
-class ls_gar_standard_backpack;
+//class ls_gar_standard_backpack;
 class RB205_B_heavy: ls_gar_standard_backpack
 {
 	ACCESS_TRUE
