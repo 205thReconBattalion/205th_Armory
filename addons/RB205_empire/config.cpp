@@ -16,11 +16,51 @@ class cfgPatches
 			"RB205_emp_H_scout_trooper",
 			"RB205_emp_H_plt_trooper",
 			"RB205_emp_H_snow_trooper",
+            "RB205_emp_H_tank_trooper",
+            "RB205_emp_H_death_trooper",
+            
+			"RB205_emp_H_trooper_dirt",
+			"RB205_emp_H_trooper_sand",
+			"RB205_emp_H_trooper_mud",
+			"RB205_emp_H_trooper_shadow",
+            "RB205_emp_H_scout_trooper_camo",
+			"RB205_emp_H_scout_trooper_mud",
+			"RB205_emp_H_scout_trooper_shadow",
+
+            "RB205_emp_H_officer_grey",
+            "RB205_emp_H_officer_grey_lowered",
+            "RB205_emp_H_officer_green",
+            "RB205_emp_H_officer_green_lowered",
+            "RB205_emp_H_officer_black",
+            "RB205_emp_H_officer_black_lowered",
+            "RB205_emp_H_officer_isb_agent",
+            "RB205_emp_H_officer_helmet_black",
+            "RB205_emp_H_officer_helmet_green",
             
 			"RB205_emp_U_trooper",
 			"RB205_emp_U_scout_trooper",
 			"RB205_emp_U_plt_trooper",
 			"RB205_emp_U_snow_trooper",
+            "RB205_emp_U_tank_trooper",
+            "RB205_emp_U_death_trooper",
+            
+			"RB205_emp_U_trooper_dirt",
+			"RB205_emp_U_trooper_sand",
+			"RB205_emp_U_trooper_mud",
+			"RB205_emp_U_trooper_shadow",
+            "RB205_emp_U_scout_trooper_camo",
+			"RB205_emp_U_scout_trooper_mud",
+			"RB205_emp_U_scout_trooper_shadow",
+
+            "RB205_emp_U_officer_grey",
+            "RB205_emp_U_officer_green",
+            "RB205_emp_U_officer_black",
+            "RB205_emp_U_officer_isb",
+            "RB205_emp_U_officer_isb_agent",
+            "RB205_emp_U_officer_coat_black",
+            "RB205_emp_U_officer_coat_grey",
+            "RB205_emp_U_officer_coat_green",
+            "RB205_emp_U_officer_coat_isb",
 
             "RB205_emp_V_ct",
 			"RB205_emp_V_clc",
@@ -35,7 +75,32 @@ class cfgPatches
 			"RB205_emp_V_rebreather",
             "RB205_emp_V_scout_ct",
             "RB205_emp_V_plt_ct",
-            "RB205_emp_V_snow_ct"
+            "RB205_emp_V_snow_ct",
+            "RB205_emp_V_tank_ct",
+            "RB205_emp_V_shadow_ct",
+            "RB205_emp_V_death",
+            "RB205_emp_V_death_grenadier",
+            "RB205_emp_V_death_lead",
+            "RB205_emp_V_death_lead2",
+            "RB205_emp_V_death_lead3",
+
+            "RB205_emp_V_navy_ensign",
+            "RB205_emp_V_navy_lieutenant",
+            "RB205_emp_V_navy_seniorLieutenant",
+            "RB205_emp_V_navy_captain",
+            "RB205_emp_V_navy_admiral",
+            "RB205_emp_V_army_sergeantMajor",
+            "RB205_emp_V_army_lieutenant",
+            "RB205_emp_V_army_captain",
+            "RB205_emp_V_army_commander",
+            "RB205_emp_V_isb_agent",
+            "RB205_emp_V_isb_lieutenant",
+            "RB205_emp_V_isb_captain",
+            "RB205_emp_V_isb_major",
+            "RB205_emp_V_officer_armor_black",
+            "RB205_emp_V_officer_armor_green",
+
+            "RB205_emp_N_death"
 		};
 		units[] =
 		{
@@ -57,6 +122,7 @@ class cfgPatches
             "RB205_B_emp_snow_rocket",
             "RB205_B_emp_snow_eod",
             "RB205_B_emp_snow_radio",
+            "RB205_B_emp_death",
 
             "RB205_emp_trooper",
             "RB205_emp_lanceCorporal",
@@ -66,6 +132,11 @@ class cfgPatches
             "RB205_emp_lieutenant",
             "RB205_emp_captain",
             "RB205_emp_commander",
+
+            "RB205_emp_trooper_dirt",
+            "RB205_emp_trooper_sand",
+            "RB205_emp_trooper_mud",
+            "RB205_emp_trooper_shadow",
 
             "RB205_emp_ab_trooper",
             "RB205_emp_ab_lanceCorporal",
@@ -85,8 +156,36 @@ class cfgPatches
             "RB205_emp_scout_captain",
             "RB205_emp_scout_commander",
             
-            "RB205_emp_plt_trooper",            
-            "RB205_emp_snow_trooper"
+            "RB205_emp_scout_trooper_camo",
+            "RB205_emp_scout_trooper_mud",
+            "RB205_emp_scout_trooper_shadow",
+            
+            "RB205_emp_plt_trooper",
+            "RB205_emp_snow_trooper",
+            "RB205_emp_tank_trooper",
+            "RB205_emp_death_trooper",
+            "RB205_emp_death_trooper_commander",
+
+            "RB205_emp_navy_ensign",
+            "RB205_emp_navy_lieutenant",
+            "RB205_emp_navy_seniorLieutenant",
+            "RB205_emp_navy_captain",
+            "RB205_emp_navy_admiral",
+            "RB205_emp_navy_armored",
+            "RB205_emp_navy_armored2",
+            "RB205_emp_army_sergeantMajor",
+            "RB205_emp_army_lieutenant",
+            "RB205_emp_army_captain",
+            "RB205_emp_army_commander",
+            "RB205_emp_army_armored",
+            "RB205_emp_isb_agent",
+            "RB205_emp_isb_lieutenant",
+            "RB205_emp_isb_captain",
+            "RB205_emp_isb_major",
+            "RB205_emp_army_officer_coat",
+            "RB205_emp_navy_officer_coat",
+            "RB205_emp_navy_officer_coat2",
+            "RB205_emp_isb_officer_coat"
 		};
 	};
 };
@@ -173,6 +272,198 @@ class cfgWeapons
             hiddenSelections[] = {"Camo1"};
         };
     };
+    class RB205_emp_H_tank_trooper: RB205_helmet_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Tank Trooper Helmet";
+        model = "JMSLLTE_empire\helmets\TanktrooperHelmet.p3d";
+        picture = "\JMSLLTE_empire\helmets\data\ico\ico_helm_shore.paa";
+        hiddenSelections[] = {"Camo1"};
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\helmets\data\tanktrooper_helmet_co.paa"};
+        class ItemInfo: ItemInfo
+        {
+            uniformmodel = "JMSLLTE_empire\helmets\TanktrooperHelmet.p3d";
+            hiddenSelections[] = {"Camo1"};
+        };
+    };
+    class RB205_emp_H_death_trooper: RB205_helmet_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Death Trooper Helmet";
+        model = "JMSLLTE_empire\helmets\DeathtrooperHelmet.p3d";
+        picture = "\JMSLLTE_empire\helmets\data\ico\ico_helm_death.paa";
+        hiddenSelections[] = {"Camo1"};
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\helmets\data\Deathtrooper_co.paa"};
+        class ItemInfo: ItemInfo
+        {
+            uniformmodel = "JMSLLTE_empire\helmets\DeathtrooperHelmet.p3d";
+            hiddenSelections[] = {"Camo1"};
+        };
+    };
+    
+    class RB205_emp_H_trooper_dirt: RB205_emp_H_trooper
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Stormtrooper Helmet (Dirty)";
+        model = "JMSLLTE_empire\helmets\StormtrooperHelmet2.p3d";
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\helmets\data\stormtrooper2_helmet_dirty_co.paa"};
+        class ItemInfo: ItemInfo
+        {
+            uniformmodel = "JMSLLTE_empire\helmets\StormtrooperHelmet2.p3d";
+        };
+    };
+    class RB205_emp_H_trooper_sand: RB205_emp_H_trooper
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Stormtrooper Helmet (Sandy)";
+        model = "JMSLLTE_empire\helmets\StormtrooperHelmet2.p3d";
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\helmets\data\stormtrooper2_helmet_sand_co.paa"};
+        class ItemInfo: ItemInfo
+        {
+            uniformmodel = "JMSLLTE_empire\helmets\StormtrooperHelmet2.p3d";
+        };
+    };
+    class RB205_emp_H_trooper_mud: RB205_emp_H_trooper
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Stormtrooper Helmet (Muddy)";
+        model = "JMSLLTE_empire\helmets\StormtrooperHelmet2dirty.p3d";
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\helmets\data\stormtrooper2_helmet_mimban_co.paa"};
+        class ItemInfo: ItemInfo
+        {
+            uniformmodel = "JMSLLTE_empire\helmets\StormtrooperHelmet2dirty.p3d";
+        };
+    };
+    class RB205_emp_H_trooper_shadow: RB205_emp_H_trooper
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Shadowtrooper Helmet";
+        model = "JMSLLTE_empire\helmets\StormtrooperHelmet2.p3d";
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\helmets\data\stormtrooper2_helmet_shadow_co.paa"};
+        class ItemInfo: ItemInfo
+        {
+            uniformmodel = "JMSLLTE_empire\helmets\StormtrooperHelmet2.p3d";
+        };
+    };
+    class RB205_emp_H_scout_trooper_camo: RB205_emp_H_scout_trooper
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Scout Trooper Helmet (Camo)";
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\helmets\data\scouttrooper_helmet_wood_co.paa"};
+    };
+    class RB205_emp_H_scout_trooper_mud: RB205_emp_H_scout_trooper
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Scout Trooper Helmet (Muddy)";
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\helmets\data\scouttrooper_helmet_mimb_co.paa"};
+    };
+    class RB205_emp_H_scout_trooper_shadow: RB205_emp_H_scout_trooper
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Storm Commando Helmet";
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\helmets\data\scouttrooper_helmet_black_co.paa"};
+    };
+
+    class RB205_emp_H_officer_base: RB205_helmet_base
+    {
+        ACCESS_FALSE
+        model = "JMSLLTE_empire\helmets\Officer_cap.p3d";
+        picture = "\JMSLLTE_empire\helmets\data\ico\ico_cap_bl.paa";
+        hiddenSelections[] = {"Camo1"};
+        class ItemInfo: ItemInfo
+        {
+            uniformmodel = "JMSLLTE_empire\helmets\Officer_cap.p3d";
+            hiddenSelections[] = {"Camo1"};
+        };
+    };
+    class RB205_emp_H_officer_lowered_base: RB205_emp_H_officer_base
+    {
+        ACCESS_FALSE
+        model = "JMSLLTE_empire\helmets\Officer_cap2.p3d";
+        class ItemInfo: ItemInfo
+        {
+            uniformmodel = "JMSLLTE_empire\helmets\Officer_cap2.p3d";
+            hiddenSelections[] = {"Camo1"};
+        };
+    };
+    class RB205_emp_H_officer_grey: RB205_emp_H_officer_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Officer Cap (Grey)";
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\helmets\data\officer_cap_grey_co.paa"};
+    };
+    class RB205_emp_H_officer_grey_lowered: RB205_emp_H_officer_lowered_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Officer Cap (Grey) (Lowered)";
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\helmets\data\officer_cap_grey_co.paa"};
+    };
+    class RB205_emp_H_officer_green: RB205_emp_H_officer_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Officer Cap (Green)";
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\helmets\data\officer_cap_mudtrooper_co.paa"};
+    };
+    class RB205_emp_H_officer_green_lowered: RB205_emp_H_officer_lowered_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Officer Cap (Green) (Lowered)";
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\helmets\data\officer_cap_mudtrooper_co.paa"};
+    };
+    class RB205_emp_H_officer_black: RB205_emp_H_officer_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Officer Cap (Black)";
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\helmets\data\officer_cap_black_co.paa"};
+    };
+    class RB205_emp_H_officer_black_lowered: RB205_emp_H_officer_lowered_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Officer Cap (Black) (Lowered)";
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\helmets\data\officer_cap_black_co.paa"};
+    };
+    class RB205_emp_H_officer_isb_agent: RB205_helmet_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] ISB Agent Helmet";
+        model = "JMSLLTE_empire\helmets\ISB_helmet.p3d";
+        picture = "\JMSLLTE_empire\helmets\data\ico\ico_helm_isb.paa";
+        hiddenSelections[] = {"Camo1"};
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\vests\data\isb_armor_co.paa"};
+        class ItemInfo: ItemInfo
+        {
+            uniformmodel = "JMSLLTE_empire\helmets\ISB_helmet.p3d";
+            hiddenSelections[] = {"Camo1"};
+        };
+    };
+    class RB205_emp_H_officer_helmet_black: RB205_helmet_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Officer Helmet (Black)";
+        model = "JMSLLTE_empire\helmets\Officer_helmet.p3d";
+        picture = "\JMSLLTE_empire\helmets\data\ico\ico_helm_of.paa";
+        hiddenSelections[] = {"Camo1"};
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\helmets\data\officer_helmet_black_co.paa"};
+        class ItemInfo: ItemInfo
+        {
+            uniformmodel = "JMSLLTE_empire\helmets\Officer_helmet.p3d";
+            hiddenSelections[] = {"Camo1"};
+        };
+    };
+    class RB205_emp_H_officer_helmet_green: RB205_helmet_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Officer Helmet (Green)";
+        model = "JMSLLTE_empire\helmets\Officer_helmet.p3d";
+        picture = "\JMSLLTE_empire\helmets\data\ico\ico_helm_of.paa";
+        hiddenSelections[] = {"Camo1"};
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\helmets\data\officer_helmet_co.paa"};
+        class ItemInfo: ItemInfo
+        {
+            uniformmodel = "JMSLLTE_empire\helmets\Officer_helmet.p3d";
+            hiddenSelections[] = {"Camo1"};
+        };
+    };
     /*
         UNIFORMS
     */
@@ -219,6 +510,181 @@ class cfgWeapons
         class ItemInfo: ItemInfo
         {
             uniformClass = RB205_emp_snow_trooper;
+        };
+    };
+    class RB205_emp_U_tank_trooper: RB205_uniform_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Tank Trooper Armor";
+        picture = "\JMSLLTE_empire\data\ico\ico_u_shore.paa";
+        class ItemInfo: ItemInfo
+        {
+            uniformClass = RB205_emp_tank_trooper;
+        };
+    };
+    class RB205_emp_U_death_trooper: RB205_uniform_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Death Trooper Armor";
+        picture = "\JMSLLTE_empire\data\ico\ico_u_death.paa";
+        class ItemInfo: ItemInfo
+        {
+            uniformClass = RB205_emp_death_trooper;
+        };
+    };
+
+    class RB205_emp_U_trooper_dirt: RB205_emp_U_trooper
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Stormtrooper Armor (Dirty)";
+        class ItemInfo: ItemInfo
+        {
+            uniformClass = RB205_emp_trooper_dirt;
+        };
+    };
+    class RB205_emp_U_trooper_sand: RB205_emp_U_trooper
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Stormtrooper Armor (Sandy)";
+        class ItemInfo: ItemInfo
+        {
+            uniformClass = RB205_emp_trooper_sand;
+        };
+    };
+    class RB205_emp_U_trooper_mud: RB205_emp_U_trooper
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Stormtrooper Armor (Muddy)";
+        class ItemInfo: ItemInfo
+        {
+            uniformClass = RB205_emp_trooper_mud;
+        };
+    };
+    class RB205_emp_U_trooper_shadow: RB205_emp_U_trooper
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Shadowtrooper Armor";
+        class ItemInfo: ItemInfo
+        {
+            uniformClass = RB205_emp_trooper_shadow;
+        };
+    };
+    class RB205_emp_U_scout_trooper_camo: RB205_emp_U_scout_trooper
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Scout Trooper Armor (Camo)";
+        class ItemInfo: ItemInfo
+        {
+            uniformClass = RB205_emp_scout_trooper_camo;
+        };
+    };
+    class RB205_emp_U_scout_trooper_mud: RB205_emp_U_scout_trooper
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Scout Trooper Armor (Muddy)";
+        class ItemInfo: ItemInfo
+        {
+            uniformClass = RB205_emp_scout_trooper_mud;
+        };
+    };
+    class RB205_emp_U_scout_trooper_shadow: RB205_emp_U_scout_trooper
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Storm Commando Armor";
+        class ItemInfo: ItemInfo
+        {
+            uniformClass = RB205_emp_scout_trooper_shadow;
+        };
+    };
+
+    class RB205_emp_U_officer_grey: RB205_uniform_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Navy Officer Uniform (Grey)";
+        picture = "\JMSLLTE_empire\data\ico\ico_u_officer.paa";
+        class ItemInfo: ItemInfo
+        {
+            uniformClass = RB205_emp_navy_ensign;
+        };
+    };
+    class RB205_emp_U_officer_green: RB205_uniform_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Navy Officer Uniform (Green)";
+        picture = "\JMSLLTE_empire\data\ico\ico_u_officer.paa";
+        class ItemInfo: ItemInfo
+        {
+            uniformClass = RB205_emp_navy_captain;
+        };
+    };
+    class RB205_emp_U_officer_black: RB205_uniform_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Army Officer Uniform";
+        picture = "\JMSLLTE_empire\data\ico\ico_u_officer.paa";
+        class ItemInfo: ItemInfo
+        {
+            uniformClass = RB205_emp_army_sergeantMajor;
+        };
+    };
+    class RB205_emp_U_officer_isb: RB205_uniform_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] ISB Officer Uniform";
+        picture = "\JMSLLTE_empire\data\ico\ico_u_officer.paa";
+        class ItemInfo: ItemInfo
+        {
+            uniformClass = RB205_emp_isb_lieutenant;
+        };
+    };
+    class RB205_emp_U_officer_isb_agent: RB205_uniform_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] ISB Agent Uniform";
+        picture = "\JMSLLTE_empire\data\ico\ico_u_officer.paa";
+        class ItemInfo: ItemInfo
+        {
+            uniformClass = RB205_emp_isb_agent;
+        };
+    };
+    class RB205_emp_U_officer_coat_black: RB205_uniform_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Army Officer Coat";
+        picture = "\JMSLLTE_empire\data\ico\ico_u_coat.paa";
+        class ItemInfo: ItemInfo
+        {
+            uniformClass = RB205_emp_army_officer_coat;
+        };
+    };
+    class RB205_emp_U_officer_coat_grey: RB205_uniform_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Navy Officer Coat (Grey)";
+        picture = "\JMSLLTE_empire\data\ico\ico_u_coat.paa";
+        class ItemInfo: ItemInfo
+        {
+            uniformClass = RB205_emp_navy_officer_coat;
+        };
+    };
+    class RB205_emp_U_officer_coat_green: RB205_uniform_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Navy Officer Coat (Green)";
+        picture = "\JMSLLTE_empire\data\ico\ico_u_coat.paa";
+        class ItemInfo: ItemInfo
+        {
+            uniformClass = RB205_emp_navy_officer_coat2;
+        };
+    };
+    class RB205_emp_U_officer_coat_isb: RB205_uniform_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] ISB Officer Coat";
+        picture = "\JMSLLTE_empire\data\ico\ico_u_coat.paa";
+        class ItemInfo: ItemInfo
+        {
+            uniformClass = RB205_emp_isb_officer_coat;
         };
     };
     /*
@@ -357,6 +823,7 @@ class cfgWeapons
             hiddenSelections[] = {"Camo1"};
         };
     };
+
     class RB205_emp_V_medic: RB205_vest_medic_base
     {
         ACCESS_TRUE
@@ -400,6 +867,7 @@ class cfgWeapons
             vestType = "Rebreather";
         };
     };
+
     class RB205_emp_V_scout_ct: RB205_vest_base
     {
         ACCESS_TRUE
@@ -443,6 +911,321 @@ class cfgWeapons
             hiddenSelections[] = {"Camo1"};
         };
     };
+    class RB205_emp_V_tank_ct: RB205_vest_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Tank Trooper Vest";
+        model = "\JMSLLTE_empire\vests\StormtroperArmor.p3d";
+        picture = "\JMSLLTE_empire\vests\ico\ico_v_storm.paa";
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\JMSLLTE_empire\vests\StormtroperArmor.p3d";
+            hiddenSelections[] = {"Camo1"};
+        };
+    };
+    class RB205_emp_V_shadow_ct: RB205_vest_co_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Shadowtrooper Bandolier";
+        model = "\JMSLLTE_empire\vests\StormtroperBand2.p3d";
+        picture = "\JMSLLTE_empire\vests\ico\ico_v_storm.paa";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {};
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\JMSLLTE_empire\vests\StormtroperBand2.p3d";
+            hiddenSelections[] = {};
+        };
+    };
+    class RB205_emp_V_death: RB205_vest_co_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Death Trooper Vest";
+        model = "\JMSLLTE_empire\vests\DeathtrooperVest.p3d";
+        picture = "\JMSLLTE_empire\vests\ico\ico_v_death.paa";
+        hiddenSelections[] = {"Camo1"};
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\body\Deathtrooper_co.paa"};
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\JMSLLTE_empire\vests\DeathtrooperVest.p3d";
+            hiddenSelections[] = {"Camo1"};
+        };
+    };
+    class RB205_emp_V_death_grenadier: RB205_vest_co_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Death Trooper Vest (Grenadier)";
+        model = "\JMSLLTE_empire\vests\DeathtrooperHeavy.p3d";
+        picture = "\JMSLLTE_empire\vests\ico\ico_v_death.paa";
+        hiddenSelections[] = {"Camo1"};
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\body\Deathtrooper_co.paa"};
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\JMSLLTE_empire\vests\DeathtrooperHeavy.p3d";
+            hiddenSelections[] = {"Camo1"};
+        };
+    };
+    class RB205_emp_V_death_lead: RB205_vest_co_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Death Trooper Vest (Commander 1)";
+        model = "\JMSLLTE_empire\vests\DeathtrooperCom.p3d";
+        picture = "\JMSLLTE_empire\vests\ico\ico_v_deathBlack.paa";
+        hiddenSelections[] = {"Camo1"};
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\body\Deathtrooper_co.paa"};
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\JMSLLTE_empire\vests\DeathtrooperCom.p3d";
+            hiddenSelections[] = {"Camo1"};
+        };
+    };
+    class RB205_emp_V_death_lead2: RB205_vest_co_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Death Trooper Vest (Commander 2)";
+        model = "\JMSLLTE_empire\vests\DeathtrooperSpec.p3d";
+        picture = "\JMSLLTE_empire\vests\ico\ico_v_deathBlack.paa";
+        hiddenSelections[] = {"Camo1"};
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\body\Deathtrooper_co.paa"};
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\JMSLLTE_empire\vests\DeathtrooperSpec.p3d";
+            hiddenSelections[] = {"Camo1"};
+        };
+    };
+    class RB205_emp_V_death_lead3: RB205_vest_co_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Death Trooper Vest (Commander 3)";
+        model = "\JMSLLTE_empire\vests\DeathtrooperHeavyFull.p3d";
+        picture = "\JMSLLTE_empire\vests\ico\ico_v_deathBlack.paa";
+        hiddenSelections[] = {"Camo1"};
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\body\Deathtrooper_co.paa"};
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\JMSLLTE_empire\vests\DeathtrooperHeavyFull.p3d";
+            hiddenSelections[] = {"Camo1"};
+        };
+    };
+
+    class RB205_emp_V_navy_ensign: RB205_vest_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Navy Insignia Plaque (Ens.)";
+        model = "\JMSLLTE_empire\vests\of_rank_attend.p3d";
+        picture = "\JMSLLTE_empire\vests\ico\ico_v_ofAtt.paa";
+        hiddenSelections[] = {"camo"};
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\JMSLLTE_empire\vests\of_rank_attend.p3d";
+            hiddenSelections[] = {"Camo1"};
+        };
+    };
+    class RB205_emp_V_navy_lieutenant: RB205_vest_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Navy Insignia Plaque (Lt.)";
+        model = "\JMSLLTE_empire\vests\of_rank_nh_lt.p3d";
+        picture = "\JMSLLTE_empire\vests\ico\ico_v_ofLtAlt.paa";
+        hiddenSelections[] = {"camo"};
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\JMSLLTE_empire\vests\of_rank_nh_lt.p3d";
+            hiddenSelections[] = {"Camo1"};
+        };
+    };
+    class RB205_emp_V_navy_seniorLieutenant: RB205_vest_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Navy Insignia Plaque (Sr. Lt.)";
+        model = "\JMSLLTE_empire\vests\of_rank_nh_lt.p3d";
+        picture = "\JMSLLTE_empire\vests\ico\ico_v_ofLtAlt.paa";
+        hiddenSelections[] = {"camo"};
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\JMSLLTE_empire\vests\of_rank_nh_lt.p3d";
+            hiddenSelections[] = {"Camo1"};
+        };
+    };
+    class RB205_emp_V_navy_captain: RB205_vest_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Navy Insignia Plaque (Cpt.)";
+        model = "\JMSLLTE_empire\vests\of_rank_nh_cap.p3d";
+        picture = "\JMSLLTE_empire\vests\ico\ico_v_ofCapALt.paa";
+        hiddenSelections[] = {"camo"};
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\JMSLLTE_empire\vests\of_rank_nh_cap.p3d";
+            hiddenSelections[] = {"Camo1"};
+        };
+    };
+    class RB205_emp_V_navy_admiral: RB205_vest_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Navy Insignia Plaque (Adm.)";
+        model = "\JMSLLTE_empire\vests\of_rank_nh_maj.p3d";
+        picture = "\JMSLLTE_empire\vests\ico\ico_v_ofMajAlt.paa";
+        hiddenSelections[] = {"camo"};
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\JMSLLTE_empire\vests\of_rank_nh_maj.p3d";
+            hiddenSelections[] = {"Camo1"};
+        };
+    };
+
+    class RB205_emp_V_army_sergeantMajor: RB205_vest_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Army Insignia Plaque (Sgt. Maj.)";
+        model = "\JMSLLTE_empire\vests\of_rank_ens.p3d";
+        picture = "\JMSLLTE_empire\vests\ico\ico_v_death.paa";
+        hiddenSelections[] = {"camo"};
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\JMSLLTE_empire\vests\of_rank_ens.p3d";
+            hiddenSelections[] = {"Camo1"};
+        };
+    };
+    class RB205_emp_V_army_lieutenant: RB205_vest_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Army Insignia Plaque (Lt.)";
+        model = "\JMSLLTE_empire\vests\of_rank_army_lt.p3d";
+        picture = "\JMSLLTE_empire\vests\ico\ico_v_ofArmyLt.paa";
+        hiddenSelections[] = {"camo"};
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\JMSLLTE_empire\vests\of_rank_army_lt.p3d";
+            hiddenSelections[] = {"Camo1"};
+        };
+    };
+    class RB205_emp_V_army_captain: RB205_vest_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Army Insignia Plaque (Cpt.)";
+        model = "\JMSLLTE_empire\vests\of_rank_army_cpt.p3d";
+        picture = "\JMSLLTE_empire\vests\ico\ico_v_ofArmyCap.paa";
+        hiddenSelections[] = {"camo"};
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\JMSLLTE_empire\vests\of_rank_army_cpt.p3d";
+            hiddenSelections[] = {"Camo1"};
+        };
+    };
+    class RB205_emp_V_army_commander: RB205_vest_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Army Insignia Plaque (Cmdr.)";
+        model = "\JMSLLTE_empire\vests\of_rank_army_col.p3d";
+        picture = "\JMSLLTE_empire\vests\ico\ico_v_ofArmyCol.paa";
+        hiddenSelections[] = {"camo"};
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\JMSLLTE_empire\vests\of_rank_army_col.p3d";
+            hiddenSelections[] = {"Camo1"};
+        };
+    };
+
+    class RB205_emp_V_isb_agent: RB205_vest_co_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] ISB Agent Vest";
+        model = "\JMSLLTE_empire\vests\isb_chestArmor.p3d";
+        picture = "\JMSLLTE_empire\vests\ico\ico_v_storm.paa";
+        hiddenSelections[] = {"Camo1"};
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\vests\data\isb_armor_co.paa"};
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\JMSLLTE_empire\vests\isb_chestArmor.p3d";
+            hiddenSelections[] = {"Camo1"};
+        };
+    };
+    class RB205_emp_V_isb_lieutenant: RB205_vest_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] ISB Insignia Plaque (Lt.)";
+        model = "\JMSLLTE_empire\vests\of_rank_navy_lt.p3d";
+        picture = "\JMSLLTE_empire\vests\ico\ico_v_ofNavyLt.paa";
+        hiddenSelections[] = {"camo"};
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\JMSLLTE_empire\vests\of_rank_navy_lt.p3d";
+            hiddenSelections[] = {"Camo1"};
+        };
+    };
+    class RB205_emp_V_isb_captain: RB205_vest_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] ISB Insignia Plaque (Cpt.)";
+        model = "\JMSLLTE_empire\vests\of_rank_navy_cpt.p3d";
+        picture = "\JMSLLTE_empire\vests\ico\ico_v_ofNavyCpt.paa";
+        hiddenSelections[] = {"camo"};
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\JMSLLTE_empire\vests\of_rank_navy_cpt.p3d";
+            hiddenSelections[] = {"Camo1"};
+        };
+    };
+    class RB205_emp_V_isb_major: RB205_vest_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] ISB Insignia Plaque (Mjr.)";
+        model = "\JMSLLTE_empire\vests\of_rank_navy_cmdr.p3d";
+        picture = "\JMSLLTE_empire\vests\ico\ico_v_ofNavyCmdr.paa";
+        hiddenSelections[] = {"camo"};
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\JMSLLTE_empire\vests\of_rank_navy_cmdr.p3d";
+            hiddenSelections[] = {"Camo1"};
+        };
+    };
+
+    class RB205_emp_V_officer_armor_black: RB205_vest_nco_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Officer Chest Armor (Black)";
+        model = "\JMSLLTE_empire\vests\of_chestArmorForced.p3d";
+        picture = "\JMSLLTE_empire\vests\ico\ico_v_storm.paa";
+        hiddenSelections[] = {"Camo1","Camo2"};
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\vests\data\of_chestArmor_black_co.paa","JMSLLTE_empire\data\body\atat_pilot_black_co.paa"};
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\JMSLLTE_empire\vests\of_chestArmorForced.p3d";
+            hiddenSelections[] = {"Camo1","Camo2"};
+        };
+    };
+    class RB205_emp_V_officer_armor_green: RB205_vest_nco_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Officer Chest Armor (Green)";
+        model = "\JMSLLTE_empire\vests\of_chestArmorForced.p3d";
+        picture = "\JMSLLTE_empire\vests\ico\ico_v_storm.paa";
+        hiddenSelections[] = {"Camo1","Camo2"};
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\vests\data\of_chestArmor_co.paa","JMSLLTE_empire\data\body\atat_pilot_green_co.paa"};
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\JMSLLTE_empire\vests\of_chestArmorForced.p3d";
+            hiddenSelections[] = {"Camo1","Camo2"};
+        };
+    };
+
+    class JLTS_NVG_droid_chip_2;
+    class RB205_emp_N_death: JLTS_NVG_droid_chip_2
+    {
+        ACCESS_TRUE
+        author = "205th Recon Battalion";
+        displayName = "[205|EMP] Death Trooper Scanner";
+        descriptionShort = "NV";
+        model = "\JMSLLTE_empire\helmets\DeathtrooperScanner.p3d";
+        class ItemInfo
+        {
+            mass = 0;
+            uniformModel = "JMSLLTE_empire\helmets\DeathtrooperScanner.p3d";
+            modelOff = "JMSLLTE_empire\helmets\DeathtrooperScanner.p3d";
+            type = 616;
+        };
+    };
 };
 
 #define LINKED_ITEMS(HELMET,VEST) \
@@ -454,6 +1237,17 @@ linkedItems[] = \
 respawnlinkedItems[] = \
 { \
 	##HELMET##,##VEST##, \
+	"ItemMap","ItemGPS","JLTS_clone_comlink","ItemCompass","ItemWatch" \
+};
+#define LINKED_ITEMS_WITHOUT_VEST(HELMET) \
+linkedItems[] = \
+{ \
+	##HELMET##, \
+	"ItemMap","ItemGPS","JLTS_clone_comlink","ItemCompass","ItemWatch" \
+}; \
+respawnlinkedItems[] = \
+{ \
+	##HELMET##, \
 	"ItemMap","ItemGPS","JLTS_clone_comlink","ItemCompass","ItemWatch" \
 };
 
@@ -469,6 +1263,7 @@ class cfgVehicles
     class RB205_backpack_eod_base;
     class RB205_backpack_radio_base;
     class RB205_backpack_scout_base;
+    class RB205_backpack_sof_base;
 
     class RB205_B_emp_heavy: RB205_backpack_heavy_base
     {
@@ -621,6 +1416,11 @@ class cfgVehicles
         hiddenSelections[] = {"Camo1"};
         hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\back_snow_co.paa"};
     };
+    class RB205_B_emp_death: RB205_backpack_sof_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Death Trooper Transmitter";
+    };
     /*
         UNITS
     */
@@ -644,13 +1444,13 @@ class cfgVehicles
         };
         magazines[]=
         {
-            "RB205_E11_mag","RB205_E11_mag","RB205_E11_mag","RB205_E11_mag","RB205_E11_mag","RB205_E11_mag","RB205_E11_mag","RB205_E11_mag",
+            "RB205_Standard_Energy_Pack_red","RB205_Standard_Energy_Pack_red","RB205_Standard_Energy_Pack_red","RB205_Standard_Energy_Pack_red","RB205_Standard_Energy_Pack_red","RB205_Standard_Energy_Pack_red","RB205_Standard_Energy_Pack_red","RB205_Standard_Energy_Pack_red",
             "RB205_thermalDet","RB205_thermalDet","RB205_thermalDet",
             "RB205_smokeWhite","RB205_smokeWhite"
         };
         respawnmagazines[]=
         {
-            "RB205_E11_mag","RB205_E11_mag","RB205_E11_mag","RB205_E11_mag","RB205_E11_mag","RB205_E11_mag","RB205_E11_mag","RB205_E11_mag",
+            "RB205_Standard_Energy_Pack_red","RB205_Standard_Energy_Pack_red","RB205_Standard_Energy_Pack_red","RB205_Standard_Energy_Pack_red","RB205_Standard_Energy_Pack_red","RB205_Standard_Energy_Pack_red","RB205_Standard_Energy_Pack_red","RB205_Standard_Energy_Pack_red",
             "RB205_thermalDet","RB205_thermalDet","RB205_thermalDet",
             "RB205_smokeWhite","RB205_smokeWhite"
         };
@@ -733,6 +1533,62 @@ class cfgVehicles
         displayName = "(8-CC) Stormtrooper Commander";
         LINKED_ITEMS("RB205_emp_H_trooper","RB205_emp_V_cc")
     };
+    class RB205_emp_trooper_dirt: RB205_emp_trooper
+    {
+        ACCESS_TRUE
+        displayName = "Stormtrooper (Dirty)";
+        uniformClass = "RB205_emp_U_trooper_dirt";
+        model = "\JMSLLTE_empire\stormtrooper.p3d";
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\body\StormtrooperBody_dirty_co.paa"};
+        LINKED_ITEMS("RB205_emp_H_trooper_dirt","RB205_emp_V_ct")
+        class Wounds
+        {
+            mat[] = {"JMSLLTE_empire\data\body\StormtrooperBody.rvmat","JMSLLTE_empire\data\body\StormtrooperBody_injury.rvmat","JMSLLTE_empire\data\body\StormtrooperBody_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat"};
+            tex[] = {};
+        };
+    };
+    class RB205_emp_trooper_sand: RB205_emp_trooper
+    {
+        ACCESS_TRUE
+        displayName = "Stormtrooper (Sandy)";
+        uniformClass = "RB205_emp_U_trooper_sand";
+        model = "\JMSLLTE_empire\stormtrooper.p3d";
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\body\StormtrooperBody_sand_co.paa"};
+        LINKED_ITEMS("RB205_emp_H_trooper_sand","RB205_emp_V_ct")
+        class Wounds
+        {
+            mat[] = {"JMSLLTE_empire\data\body\StormtrooperBody.rvmat","JMSLLTE_empire\data\body\StormtrooperBody_injury.rvmat","JMSLLTE_empire\data\body\StormtrooperBody_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat"};
+            tex[] = {};
+        };
+    };
+    class RB205_emp_trooper_mud: RB205_emp_trooper
+    {
+        ACCESS_TRUE
+        displayName = "Stormtrooper (Muddy)";
+        uniformClass = "RB205_emp_U_trooper_mud";
+        model = "\JMSLLTE_empire\stormtrooperDirty.p3d";
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\body\StormtrooperBody_mimban_co.paa"};
+        LINKED_ITEMS("RB205_emp_H_trooper_mud","RB205_emp_V_ct")
+        class Wounds
+        {
+            mat[] = {"JMSLLTE_empire\data\body\StormtrooperBodyDirty.rvmat","JMSLLTE_empire\data\body\StormtrooperBodyDirty_injury.rvmat","JMSLLTE_empire\data\body\StormtrooperBodyDirty_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat"};
+            tex[] = {};
+        };
+    };
+    class RB205_emp_trooper_shadow: RB205_emp_trooper
+    {
+        ACCESS_TRUE
+        displayName = "Shadowtrooper";
+        uniformClass = "RB205_emp_U_trooper_shadow";
+        model = "\JMSLLTE_empire\stormtrooper.p3d";
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\body\StormtrooperBody_shadow_co.paa"};
+        LINKED_ITEMS("RB205_emp_H_trooper_shadow","RB205_emp_V_shadow_ct")
+        class Wounds
+        {
+            mat[] = {"JMSLLTE_empire\data\body\StormtrooperBody.rvmat","JMSLLTE_empire\data\body\StormtrooperBody_injury.rvmat","JMSLLTE_empire\data\body\StormtrooperBody_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat"};
+            tex[] = {};
+        };
+    };
     class RB205_emp_ab_trooper: RB205_emp_trooper
     {
         ACCESS_TRUE
@@ -796,23 +1652,23 @@ class cfgVehicles
 	    backpack = "RB205_B_emp_scout";
         weapons[]=
         {
-            "JMSLLTE_ec17pistol",
+            "RB205_EC17_wScope",
             "Throw","Put"
         };
         respawnweapons[]=
         {
-            "JMSLLTE_ec17pistol",
+            "RB205_EC17_wScope",
             "Throw","Put"
         };
         magazines[]=
         {
-            "JMSLLTE_EC17_15rnd_Mag","JMSLLTE_EC17_15rnd_Mag","JMSLLTE_EC17_15rnd_Mag","JMSLLTE_EC17_15rnd_Mag","JMSLLTE_EC17_15rnd_Mag",
+            "RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red",
             "RB205_thermalDet","RB205_thermalDet","RB205_thermalDet",
             "RB205_smokeWhite","RB205_smokeWhite"
         };
         respawnmagazines[]=
         {
-            "JMSLLTE_EC17_15rnd_Mag","JMSLLTE_EC17_15rnd_Mag","JMSLLTE_EC17_15rnd_Mag","JMSLLTE_EC17_15rnd_Mag","JMSLLTE_EC17_15rnd_Mag",
+            "RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red",
             "RB205_thermalDet","RB205_thermalDet","RB205_thermalDet",
             "RB205_smokeWhite","RB205_smokeWhite"
         };
@@ -864,6 +1720,30 @@ class cfgVehicles
         displayName = "(8-CC) Scout Trooper Commander";
         LINKED_ITEMS("RB205_emp_H_scout_trooper","RB205_emp_V_cc")
     };
+    class RB205_emp_scout_trooper_camo: RB205_emp_scout_trooper
+    {
+        ACCESS_TRUE
+        displayName = "Scout Trooper (Camo)";
+        uniformClass = "RB205_emp_U_scout_trooper_camo";
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\body\ScouttrooperBody_wood_co.paa"};
+        LINKED_ITEMS("RB205_emp_H_scout_trooper_camo","RB205_emp_V_scout_ct")
+    };
+    class RB205_emp_scout_trooper_mud: RB205_emp_scout_trooper
+    {
+        ACCESS_TRUE
+        displayName = "Scout Trooper (Muddy)";
+        uniformClass = "RB205_emp_U_scout_trooper_mud";
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\body\ScouttrooperBody_mimb_co.paa"};
+        LINKED_ITEMS("RB205_emp_H_scout_trooper_mud","RB205_emp_V_scout_ct")
+    };
+    class RB205_emp_scout_trooper_shadow: RB205_emp_scout_trooper
+    {
+        ACCESS_TRUE
+        displayName = "Storm Commando";
+        uniformClass = "RB205_emp_U_scout_trooper_shadow";
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\body\ScouttrooperBody_black_co.paa"};
+        LINKED_ITEMS("RB205_emp_H_scout_trooper_shadow","RB205_emp_V_scout_ct")
+    };
     class RB205_emp_plt_trooper: RB205_unit_emp_base
     {
         ACCESS_TRUE
@@ -878,23 +1758,23 @@ class cfgVehicles
 	    backpack = "RB205_B_emp_plt";
         weapons[]=
         {
-            "3AS_SE14R",
+            "RB205_SE14R",
             "Throw","Put"
         };
         respawnweapons[]=
         {
-            "3AS_SE14R",
+            "RB205_SE14R",
             "Throw","Put"
         };
         magazines[]=
         {
-            "3AS_16Rnd_EM20_Mag_Imp","3AS_16Rnd_EM20_Mag_Imp","3AS_16Rnd_EM20_Mag_Imp","3AS_16Rnd_EM20_Mag_Imp","3AS_16Rnd_EM20_Mag_Imp",
+            "RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red",
             "RB205_thermalDet","RB205_thermalDet","RB205_thermalDet",
             "RB205_smokeWhite","RB205_smokeWhite"
         };
         respawnmagazines[]=
         {
-            "3AS_16Rnd_EM20_Mag_Imp","3AS_16Rnd_EM20_Mag_Imp","3AS_16Rnd_EM20_Mag_Imp","3AS_16Rnd_EM20_Mag_Imp","3AS_16Rnd_EM20_Mag_Imp",
+            "RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red",
             "RB205_thermalDet","RB205_thermalDet","RB205_thermalDet",
             "RB205_smokeWhite","RB205_smokeWhite"
         };
@@ -921,6 +1801,259 @@ class cfgVehicles
             mat[] = {"JMSLLTE_empire\data\body\SnowtrooperBody.rvmat","JMSLLTE_empire\data\body\SnowtrooperBody_injury.rvmat","JMSLLTE_empire\data\body\SnowtrooperBody_injury.rvmat","JMSLLTE_empire\data\body\SnowtrooperBody_clo.rvmat","JMSLLTE_empire\data\body\SnowtrooperBody_clo_injury.rvmat","JMSLLTE_empire\data\body\SnowtrooperBody_clo_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat"};
             tex[] = {};
         };
+    };
+    class RB205_emp_tank_trooper: RB205_unit_emp_base
+    {
+        ACCESS_TRUE
+        displayName = "Tank Trooper";
+        uniformClass = "RB205_emp_U_tank_trooper";
+        model = "\JMSLLTE_empire\shoretrooper.p3d";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\body\ShoretrooperBody_tank_co.paa"};
+	    editorSubCategory = "RB205_empire_other";
+        //Inventory:
+        LINKED_ITEMS("RB205_emp_H_tank_trooper","RB205_emp_V_tank_ct")
+	    backpack = "";
+        class Wounds
+        {
+            mat[] = {"JMSLLTE_empire\data\body\ShoretrooperBody.rvmat","JMSLLTE_empire\data\body\ShoretrooperBody_injury.rvmat","JMSLLTE_empire\data\body\ShoretrooperBody_injury.rvmat","JMSLLTE_empire\data\body\ShoretrooperBody_clo.rvmat","JMSLLTE_empire\data\body\ShoretrooperBody_clo_injury.rvmat","JMSLLTE_empire\data\body\ShoretrooperBody_clo_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat"};
+            tex[] = {};
+        };
+    };
+    class RB205_emp_death_trooper: RB205_unit_emp_base
+    {
+        ACCESS_TRUE
+        displayName = "Death Trooper";
+        uniformClass = "RB205_emp_U_death_trooper";
+        model = "\JMSLLTE_empire\deathtrooper.p3d";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\body\Deathtrooper_co.paa"};
+	    editorSubCategory = "RB205_empire_other";
+        //Inventory:
+        LINKED_ITEMS("RB205_emp_H_death_trooper","RB205_emp_V_death")
+	    backpack = "RB205_B_emp_death";
+        weapons[]=
+        {
+            "RB205_E11D",
+            "RB205_SE14R",
+            "Throw","Put"
+        };
+        respawnweapons[]=
+        {
+            "RB205_E11D",
+            "RB205_SE14R",
+            "Throw","Put"
+        };
+        magazines[]=
+        {
+            "RB205_Experimental_Energy_Pack_red","RB205_Experimental_Energy_Pack_red","RB205_Experimental_Energy_Pack_red","RB205_Experimental_Energy_Pack_red","RB205_Experimental_Energy_Pack_red",
+            "RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red",
+            "RB205_thermalDet","RB205_thermalDet","RB205_thermalDet",
+            "RB205_smokeWhite","RB205_smokeWhite"
+        };
+        respawnmagazines[]=
+        {
+            "RB205_Experimental_Energy_Pack_red","RB205_Experimental_Energy_Pack_red","RB205_Experimental_Energy_Pack_red","RB205_Experimental_Energy_Pack_red","RB205_Experimental_Energy_Pack_red",
+            "RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red",
+            "RB205_thermalDet","RB205_thermalDet","RB205_thermalDet",
+            "RB205_smokeWhite","RB205_smokeWhite"
+        };
+        class Wounds
+        {
+            mat[] = {"A3\Characters_F\OPFOR\Data\clothing.rvmat","A3\Characters_F\OPFOR\Data\clothing_injury.rvmat","A3\Characters_F\OPFOR\Data\clothing_injury.rvmat"};
+            tex[] = {};
+        };
+    };
+    class RB205_emp_death_trooper_commander: RB205_emp_death_trooper
+    {
+        ACCESS_TRUE
+        displayName = "Death Trooper (Commander)";
+        LINKED_ITEMS("RB205_emp_H_death_trooper","RB205_emp_V_death_lead")
+    };
+    class RB205_emp_officer_base: RB205_unit_emp_base
+    {
+        ACCESS_FALSE
+        nakedUniform = "U_BasicBody";
+        model = "\JMSLLTE_empire\officer.p3d";
+        hiddenSelections[] = {"Camo1"};
+	    editorSubCategory = "RB205_empire_officer";
+        //Inventory:
+	    backpack = "";
+        weapons[]=
+        {
+            "RB205_SE14R",
+            "Throw","Put"
+        };
+        respawnweapons[]=
+        {
+            "RB205_SE14R",
+            "Throw","Put"
+        };
+        magazines[]=
+        {
+            "RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red"
+        };
+        respawnmagazines[]=
+        {
+            "RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red"
+        };
+        class Wounds
+        {
+            mat[] = {"JMSLLTE_empire\data\body\of_body.rvmat","JMSLLTE_empire\data\body\of_body_injury.rvmat","JMSLLTE_empire\data\body\of_body_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat"};
+            tex[] = {};
+        };
+    };
+    class RB205_emp_navy_ensign: RB205_emp_officer_base
+    {
+        ACCESS_TRUE
+        displayName = "Navy Ensign (Ens.)";
+        uniformClass = "RB205_emp_U_officer_grey";
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\body\of_body_grey_co.paa"};
+        LINKED_ITEMS("RB205_emp_H_officer_grey","RB205_emp_V_navy_ensign")
+    };
+    class RB205_emp_navy_lieutenant: RB205_emp_navy_ensign
+    {
+        ACCESS_TRUE
+        displayName = "Navy Lieutenant (Lt.)";
+        LINKED_ITEMS("RB205_emp_H_officer_grey","RB205_emp_V_navy_lieutenant")
+    };
+    class RB205_emp_navy_seniorLieutenant: RB205_emp_navy_ensign
+    {
+        ACCESS_TRUE
+        displayName = "Navy Senior Lieutenant (Sr. Lt.)";
+        LINKED_ITEMS("RB205_emp_H_officer_grey","RB205_emp_V_navy_seniorLieutenant")
+    };
+    class RB205_emp_navy_captain: RB205_emp_officer_base
+    {
+        ACCESS_TRUE
+        displayName = "Navy Captain (Cpt.)";
+        uniformClass = "RB205_emp_U_officer_green";
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\body\of_body_green_co.paa"};
+        LINKED_ITEMS("RB205_emp_H_officer_green","RB205_emp_V_navy_captain")
+    };
+    class RB205_emp_navy_admiral: RB205_emp_navy_captain
+    {
+        ACCESS_TRUE
+        displayName = "Navy Admiral (Adm.)";
+        LINKED_ITEMS("RB205_emp_H_officer_green","RB205_emp_V_navy_admiral")
+    };
+    class RB205_emp_navy_armored: RB205_emp_navy_ensign
+    {
+        ACCESS_TRUE
+        displayName = "Navy Officer (Armored)";
+        LINKED_ITEMS("RB205_emp_H_officer_helmet_black","RB205_emp_V_officer_armor_black")
+    };
+    class RB205_emp_navy_armored2: RB205_emp_navy_captain
+    {
+        ACCESS_TRUE
+        displayName = "Navy Officer (Armored)";
+        LINKED_ITEMS("RB205_emp_H_officer_helmet_green","RB205_emp_V_officer_armor_green")
+    };
+    class RB205_emp_army_sergeantMajor: RB205_emp_officer_base
+    {
+        ACCESS_TRUE
+        displayName = "Army Sergeant-Major (Sgt. Mjr.)";
+        uniformClass = "RB205_emp_U_officer_black";
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\body\of_body_black_co.paa"};
+        LINKED_ITEMS("RB205_emp_H_officer_black","RB205_emp_V_army_sergeantMajor")
+    };
+    class RB205_emp_army_lieutenant: RB205_emp_army_sergeantMajor
+    {
+        ACCESS_TRUE
+        displayName = "Army Lieutenant (Lt.)";
+        LINKED_ITEMS("RB205_emp_H_officer_black","RB205_emp_V_army_lieutenant")
+    };
+    class RB205_emp_army_captain: RB205_emp_army_sergeantMajor
+    {
+        ACCESS_TRUE
+        displayName = "Army Captain (Cpt.)";
+        LINKED_ITEMS("RB205_emp_H_officer_black","RB205_emp_V_army_captain")
+    };
+    class RB205_emp_army_commander: RB205_emp_army_sergeantMajor
+    {
+        ACCESS_TRUE
+        displayName = "Army Commander (Cmdr.)";
+        LINKED_ITEMS("RB205_emp_H_officer_black","RB205_emp_V_army_commander")
+    };
+    class RB205_emp_army_armored: RB205_emp_army_sergeantMajor
+    {
+        ACCESS_TRUE
+        displayName = "Army Officer (Armored)";
+        LINKED_ITEMS("RB205_emp_H_officer_helmet_black","RB205_emp_V_officer_armor_black")
+    };
+    class RB205_emp_isb_agent: RB205_unit_emp_base
+    {
+        ACCESS_TRUE
+        displayName = "ISB Agent";
+        uniformClass = "RB205_emp_U_officer_isb_agent";
+        nakedUniform = "U_BasicBody";
+        model = "\JMSLLTE_empire\officer.p3d";
+        hiddenSelections[] = {"Camo1"};
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\body\of_body_ISB_co.paa"};
+	    editorSubCategory = "RB205_empire_officer";
+        //Inventory:
+	    backpack = "RB205_B_emp_scout";
+        LINKED_ITEMS("RB205_emp_H_officer_isb_agent","RB205_emp_V_isb_agent")
+    };
+    class RB205_emp_isb_lieutenant: RB205_emp_officer_base
+    {
+        ACCESS_TRUE
+        displayName = "ISB Lieutenant (Lt.)";
+        uniformClass = "RB205_emp_U_officer_isb";
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\body\of_body_ISBof_co.paa"};
+        LINKED_ITEMS("RB205_emp_H_officer_black","RB205_emp_V_isb_lieutenant")
+    };
+    class RB205_emp_isb_captain: RB205_emp_isb_lieutenant
+    {
+        ACCESS_TRUE
+        displayName = "ISB Captain (Cpt.)";
+        LINKED_ITEMS("RB205_emp_H_officer_black","RB205_emp_V_isb_captain")
+    };
+    class RB205_emp_isb_major: RB205_emp_isb_lieutenant
+    {
+        ACCESS_TRUE
+        displayName = "ISB Major (Maj.)";
+        LINKED_ITEMS("RB205_emp_H_officer_black","RB205_emp_V_isb_major")
+    };
+    class RB205_emp_officer_coat_base: RB205_emp_officer_base
+    {
+        ACCESS_FALSE
+        model = "\JMSLLTE_empire\officerCoat.p3d";
+        hiddenSelections[] = {"Camo1","Camo2"};
+	    editorSubCategory = "RB205_empire_officer";
+
+    };
+    class RB205_emp_army_officer_coat: RB205_emp_officer_coat_base
+    {
+        ACCESS_TRUE
+        displayName = "Army Officer (Coat)";
+        uniformClass = "RB205_emp_U_officer_coat_black";
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\body\of_body_black_co.paa","JMSLLTE_empire\data\body\of_coat_black_co.paa"};
+        LINKED_ITEMS_WITHOUT_VEST("RB205_emp_H_officer_black")
+    };
+    class RB205_emp_navy_officer_coat: RB205_emp_officer_coat_base
+    {
+        ACCESS_TRUE
+        displayName = "Navy Officer (Coat)";
+        uniformClass = "RB205_emp_U_officer_coat_grey";
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\body\of_body_grey_co.paa","JMSLLTE_empire\data\body\of_coat_black_co.paa"};
+        LINKED_ITEMS_WITHOUT_VEST("RB205_emp_H_officer_black")
+    };
+    class RB205_emp_navy_officer_coat2: RB205_emp_officer_coat_base
+    {
+        ACCESS_TRUE
+        displayName = "Navy Officer (Coat)";
+        uniformClass = "RB205_emp_U_officer_coat_green";
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\body\of_body_green_co.paa","JMSLLTE_empire\data\body\of_coat_green_co.paa"};
+        LINKED_ITEMS_WITHOUT_VEST("RB205_emp_H_officer_green")
+    };
+    class RB205_emp_isb_officer_coat: RB205_emp_officer_coat_base
+    {
+        ACCESS_TRUE
+        displayName = "ISB Officer (Coat)";
+        uniformClass = "RB205_emp_U_officer_coat_isb";
+        hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\body\of_body_ISBof_co.paa","JMSLLTE_empire\data\body\of_coat_white_co.paa"};
+        LINKED_ITEMS_WITHOUT_VEST("RB205_emp_H_officer_black")
     };
 };
 class cfgGlasses
@@ -951,6 +2084,11 @@ class cfgEditorSubcategories
     class RB205_empire_scout
 	{
 		displayName = "Scout Trooper";
+		ACCESS_TRUE
+	};
+    class RB205_empire_officer
+    {
+		displayName = "Officer";
 		ACCESS_TRUE
 	};
     class RB205_empire_other

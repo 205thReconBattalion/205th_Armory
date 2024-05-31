@@ -78,6 +78,42 @@
             <English>[205] DC-17M Blaster</English>
             <German>[205] DC-17M Blasterkarabiner</German>
         </Key>
+        <Key ID="STR_205_E11_DisplayName">
+            <English>[205|EMP] E-11 Blaster Rifle</English>
+            <German>[205|EMP] E-11 Blastergewehr</German>
+        </Key>
+        <Key ID="STR_205_E11_STOCK_DisplayName">
+            <English>[205|EMP] E-11 Blaster Rifle (Stock)</English>
+            <German>[205|EMP] E-11 Blastergewehr (Schaft)</German>
+        </Key>
+        <Key ID="STR_205_E11_GL_DisplayName">
+            <English>[205|EMP] E-11 GL Blaster Rifle (Stock)</English>
+            <German>[205|EMP] E-11 GL Blastergewehr (Schaft)</German>
+        </Key>
+        <Key ID="STR_205_DLT19_DisplayName">
+            <English>[205|EMP] DLT-19 Heavy Blaster Rifle</English>
+            <German>[205|EMP] DLT-19 Blastergewehr</German>
+        </Key>
+        <Key ID="STR_205_DLT19X_DisplayName">
+            <English>[205|EMP] DLT-19X Sniper Rifle</English>
+            <German>[205|EMP] DLT-19X Scharfschützengewehr</German>
+        </Key>
+        <Key ID="STR_205_E11D_DisplayName">
+            <English>[205|EMP] E-11D Blaster Carbine</English>
+            <German>[205|EMP] E-11D Blasterkarabiner</German>
+        </Key>
+        <Key ID="STR_205_SE14R_DisplayName">
+            <English>[205|EMP] SE-14r Light Repeating Blaster</English>
+            <German>[205|EMP] SE-14r Repetierblasterpistole</German>
+        </Key>
+        <Key ID="STR_205_RK3_DisplayName">
+            <English>[205|EMP] RK-3 Blaster Pistol</English>
+            <German>[205|EMP] RK-3 Blasterpistole</German>
+        </Key>
+        <Key ID="STR_205_EC17_DisplayName">
+            <English>[205|EMP] EC-17 Hold-Out Blaster</English>
+            <German>[205|EMP] EC-17 Miniblasterpistole</German>
+        </Key>
 <!--displayNameShort weapons-->
         <Key ID="STR_205_DC15A_DisplayNameShort">
             <English>DC-15A</English>
@@ -154,6 +190,38 @@
         <Key ID="STR_205_DC17M_DisplayNameShort">
             <English>DC-17M</English>
             <German>DC-17M</German>
+        </Key>
+        <Key ID="STR_205_E11_DisplayNameShort">
+            <English>E-11</English>
+            <German>E-11</German>
+        </Key>
+        <Key ID="STR_205_E11_GL_DisplayNameShort">
+            <English>E-11-GL</English>
+            <German>E-11-GL</German>
+        </Key>
+        <Key ID="STR_205_DLT19_DisplayNameShort">
+            <English>DLT-19</English>
+            <German>DLT-19</German>
+        </Key>
+        <Key ID="STR_205_DLT19X_DisplayNameShort">
+            <English>DLT-19X</English>
+            <German>DLT-19X</German>
+        </Key>
+        <Key ID="STR_205_E11D_DisplayNameShort">
+            <English>E-11D</English>
+            <German>E-11D</German>
+        </Key>
+        <Key ID="STR_205_SE14R_DisplayNameShort">
+            <English>SE-14r</English>
+            <German>SE-14r</German>
+        </Key>
+        <Key ID="STR_205_RK3_DisplayNameShort">
+            <English>RK-3</English>
+            <German>RK-3</German>
+        </Key>
+        <Key ID="STR_205_EC17_DisplayNameShort">
+            <English>EC-17</English>
+            <German>EC-17</German>
         </Key>
 <!--displayName magazines-->
         <Key ID="STR_205_Standard_Energy_Pack_DisplayName">
@@ -258,17 +326,33 @@
             <English>Standard energy pack used by the DC-15 series</English>
             <German>Standard Energiepaket genutzt von der DC-15 Reihe</German>
         </Key>
+        <Key ID="STR_205_Standard_Energy_Pack_red_DescriptionShort">
+            <English>Standard energy pack used by the E-11</English>
+            <German>Standard Energiepaket genutzt von der E-11</German>
+        </Key>
         <Key ID="STR_205_Compact_Energy_Pack_DescriptionShort">
             <English>Compact energy pack used by the DC-17</English>
             <German>Kompaktes Energiepaket genutzt von der DC-17</German>
+        </Key>
+        <Key ID="STR_205_Compact_Energy_Pack_red_DescriptionShort">
+            <English>Compact energy pack used by the SE-14r, RK-3 and the EC-17</English>
+            <German>Kompaktes Energiepaket genutzt von der SE-14r, RK-3 und der EC-17</German>
         </Key>
         <Key ID="STR_205_Overcharged_Energy_Pack_DescriptionShort">
             <English>Overcharged energy pack used by the VK-38X and the DC-15X</English>
             <German>Überladenes Energiepaket genutzt von der VK-18X und der DC-15X</German>
         </Key>
+        <Key ID="STR_205_Overcharged_Energy_Pack_red_DescriptionShort">
+            <English>Overcharged energy pack used by the DLT-19X</English>
+            <German>Überladenes Energiepaket genutzt von der DLT-19X</German>
+        </Key>
         <Key ID="STR_205_Heavy_Energy_Pack_DescriptionShort">
             <English>Heavy energy pack used by the DC-15L</English>
             <German>Schweres Energiepaket genutzt von der DC-15L</German>
+        </Key>
+        <Key ID="STR_205_Heavy_Energy_Pack_red_DescriptionShort">
+            <English>Heavy energy pack used by the DLT-19</English>
+            <German>Schweres Energiepaket genutzt von der DLT-19</German>
         </Key>
         <Key ID="STR_205_RapidFire_Energy_Pack_DescriptionShort">
             <English>Heavy energy pack used by the Z-6</English>
@@ -277,6 +361,10 @@
         <Key ID="STR_205_Experimental_Energy_Pack_DescriptionShort">
             <English>Experimental energy pack used by the Westar-M5</English>
             <German>Experimentelles Energiepaket genutzt von der Westar-M5</German>
+        </Key>
+        <Key ID="STR_205_Experimental_Energy_Pack_red_DescriptionShort">
+            <English>Experimental energy pack used by the E-11D</English>
+            <German>Experimentelles Energiepaket genutzt von der E-11D</German>
         </Key>
         <Key ID="STR_205_Scatter_Energy_Pack_DescriptionShort">
             <English>Scatter energy pack used by the DP-23</English>
