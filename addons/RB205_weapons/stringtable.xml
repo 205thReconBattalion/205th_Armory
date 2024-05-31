@@ -78,6 +78,10 @@
             <English>[205] DC-17M Blaster</English>
             <German>[205] DC-17M Blasterkarabiner</German>
         </Key>
+        <Key ID="STR_205_BTX42_DisplayName">
+            <English>[205] BT X-42 Heavy Flamethrower</English>
+            <German>[205] BT X-42 Schwerer Flammenwerfer</German>
+        </Key>
         <Key ID="STR_205_E11_DisplayName">
             <English>[205|EMP] E-11 Blaster Rifle</English>
             <German>[205|EMP] E-11 Blastergewehr</German>
@@ -191,6 +195,10 @@
             <English>DC-17M</English>
             <German>DC-17M</German>
         </Key>
+        <Key ID="STR_205_BTX42_DisplayNameShort">
+            <English>BT X-42</English>
+            <German>BT X-42</German>
+        </Key>
         <Key ID="STR_205_E11_DisplayNameShort">
             <English>E-11</English>
             <German>E-11</German>
@@ -272,6 +280,10 @@
             <English>[205] DC-17M High Explosive Grenade</English>
             <German>[205] DC-17M Hochexplosiv-Granate</German>
         </Key>
+        <Key ID="STR_205_RB205_BTX42_mag_DisplayName">
+            <English>[205] Flamethrower Fuel</English>
+            <German>[205] Flammenwerfer Benzin</German>
+        </Key>
 <!--displayNameShort magazines-->
         <Key ID="STR_205_Standard_Energy_Pack_DisplayNameShort">
             <English>Laser (Standard)</English>
@@ -320,6 +332,10 @@
         <Key ID="STR_205_DC17M_at_Energy_Pack_DisplayNameShort">
             <English>Grenade</English>
             <German>Granate</German>
+        </Key>
+        <Key ID="STR_205_RB205_BTX42_mag_DisplayNameShort">
+            <English>Fuel</English>
+            <German>Benzin</German>
         </Key>
 <!--descriptionShort magazines-->
         <Key ID="STR_205_Standard_Energy_Pack_DescriptionShort">
@@ -389,6 +405,10 @@
         <Key ID="STR_205_DC17M_at_Energy_Pack_DescriptionShort">
             <English>High Explosive grenade used by the DC-17M</English>
             <German>Hochexplosiv-Granate genutzt von der DC-17M</German>
+        </Key>
+        <Key ID="STR_205_RB205_BTX42_mag_DescriptionShort">
+            <English>Fuel for flamethrowers used by the BT X-42</English>
+            <German>Benzin für Flammenwerfer genutzt vom BT X-42</German>
         </Key>
 <!--displayName attachments etc.-->
     </Package>

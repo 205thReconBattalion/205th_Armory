@@ -119,6 +119,12 @@ class CfgWeapons
 	{
 		cursor = "RB205_CH_default";
 	};
+
+	class 41_Flammenwerfer_02_F;
+	class RB205_BTX42: 41_Flammenwerfer_02_F
+	{
+		cursor = "RB205_CH_flame";
+	};
 	
 	class JLTS_DP23;
 	class RB205_DP23: JLTS_DP23

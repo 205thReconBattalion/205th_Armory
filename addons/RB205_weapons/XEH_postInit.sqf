@@ -6,16 +6,16 @@ if (!(hasInterface) or (isDedicated)) exitWith {};
 	(findDisplay 46) displayAddEventHandler ["MouseButtonDown", { 
 		_unit = missionNamespace getVariable["bis_fnc_moduleRemoteControl_unit", player];
 		if (
-		(animationState _unit in ["rotary_proper_walkfr","rotary_proper_walkfl","rotary_proper_walkr","rotary_proper_walkl","rotary_proper_walkbr","rotary_proper_walkbl","rotary_proper_walkb","rotary_proper_walk","rotary_proper_turnr","rotary_proper_turnl","rotary_proper_toidle","rotary_proper_idle"]) or 
-		!(currentWeapon _unit in ["RB205_Z6"]) or 
-		(dialog) or 
-		(_this select 1 != 0) or 
-		(weaponLowered _unit) or 
-		(stance _unit != "STAND") or
-		!(isTouchingGround _unit) or
-		!(isNull objectParent _unit) or
-		!(alive _unit) or 
-		(visibleMap)
+			(animationState _unit in ["rotary_proper_walkfr","rotary_proper_walkfl","rotary_proper_walkr","rotary_proper_walkl","rotary_proper_walkbr","rotary_proper_walkbl","rotary_proper_walkb","rotary_proper_walk","rotary_proper_turnr","rotary_proper_turnl","rotary_proper_toidle","rotary_proper_idle"]) or 
+			!(currentWeapon _unit in ["RB205_Z6","RB205_BTX42"]) or 
+			(dialog) or 
+			(_this select 1 != 0) or 
+			(weaponLowered _unit) or 
+			(stance _unit != "STAND") or
+			!(isTouchingGround _unit) or
+			!(isNull objectParent _unit) or
+			!(alive _unit) or 
+			(visibleMap)
 		) exitWith {};
 		[_unit,"Rotary_Proper_ToIdle"] remoteExec ["switchMove",0];
 		[_unit,"Rotary_Proper_ToIdle"] remoteExec ["playMoveNow",0];
