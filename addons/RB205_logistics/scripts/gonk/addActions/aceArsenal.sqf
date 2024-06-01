@@ -3,9 +3,14 @@ params ["_this"];
 [_this,
 	[
 		//WEAPONS / ATTACHMENTS / AMMO
-		"RB205_DC15A","RB205_DC15A_GL","RB205_DC15C","RB205_DC15C_GL","RB205_DC15L","RB205_DC15S","RB205_DC15X","RB205_DC17M","RB205_DP23","RB205_Valken38X","RB205_WestarM5","RB205_Z6","JLTS_DC15S","twc_2inch_bag","RB205_PLX1_F","RB205_RPS6","RB205_RPS6_disposable","RB205_DC17","RB205_DC17_alt","RB205_DC17_Dual","JLTS_DC17SA","UNSC_Knife","UNSC_Knife_reversed","ACE_Flashlight_Maglite_ML300L","hgun_esd_01_F",
+		"RB205_DC15A","RB205_DC15A_GL","RB205_DC15C","RB205_DC15C_GL","RB205_DC15L","RB205_DC15S","RB205_DC15X","RB205_DC17M","RB205_DP23","RB205_Valken38X","RB205_WestarM5","RB205_Z6","RB205_BTX42","JLTS_DC15S","twc_2inch_bag","RB205_PLX1_F","RB205_RPS6","RB205_RPS6_disposable","RB205_DC17","RB205_DC17_alt","RB205_DC17_Dual","JLTS_DC17SA","UNSC_Knife","UNSC_Knife_reversed","ACE_Flashlight_Maglite_ML300L","hgun_esd_01_F",
 		"3AS_optic_holo_DC15S","3AS_Optic_Scope_WestarM5","SEA_Optic_Holo_Two_Red","SEA_Optic_Holo_Two_Blue","SEA_Optic_Holo_Two_Green","SEA_Optic_Holo_One_Green","JLTS_DC15X_scope","SEA_Optic_Holo_One_Red","3AS_optic_acog_DC15C","3AS_optic_reflex_DC15C","RB205_Optic_DC15L","SEA_Optic_Holo_One_Blue","RB205_attachment_scope_DC17M_sniper","SEA_Optic_Holo_One_Yellow","RB205_Optic_VK38X","SEA_Optic_Holo_Two_Yellow","OPTRE_M7_Laser","acc_pointer_IR","OPTRE_BMR_Laser","JLTS_DC17SA_flashlight","acc_flashlight","ACE_DBAL_A3_Green","acc_flashlight_pistol","OPTRE_M45_Flashlight","OPTRE_M7_Flashlight","OPTRE_M6C_Laser","OPTRE_M6G_Flashlight","OPTRE_M12_Laser","ACE_DBAL_A3_Red","ACE_SPIR","ACE_acc_pointer_green","RB205_DC15X_Suppressor","RB205_attachment_DC17M_blaster","RB205_attachment_DC17M_at","RB205_attachment_DC17M_sniper","3AS_Bipod_VK38X_f","3AS_Bipod_DC15L_f","muzzle_antenna_03_f","muzzle_antenna_01_f","muzzle_antenna_02_f",
-		"RB205_Scatter_Energy_Pack","JLTS_DC15A_mag","3Rnd_SmokeBlue_Grenade_shell","3Rnd_SmokeGreen_Grenade_shell","RB205_Overcharged_Energy_Pack","JLTS_stun_mag_short","RB205_Standard_Energy_Pack","3Rnd_SmokeRed_Grenade_shell","ACE_40mm_Flare_red","RB205_RapidFire_Energy_Pack","ACE_40mm_Flare_white","RB205_DC17M_AT_Mag","3AS_6Rnd_HE_Grenade_shell","JLTS_DC15S_mag","twc_2inch_he_1rnd","3Rnd_HE_Grenade_shell","RB205_Compact_Energy_Pack","3Rnd_SmokePurple_Grenade_shell","RB205_Heavy_Energy_Pack","RB205_Experimental_Energy_Pack","JLTS_stun_mag_long","RB205_DC17M_Sniper_Mag","3Rnd_SmokeYellow_Grenade_shell","RB205_MK39_AA","ACE_40mm_Flare_green","JLTS_DC17SA_mag","RB205_MAG_RPS6","3Rnd_Smoke_Grenade_shell","ACE_HuntIR_M203","3Rnd_SmokeOrange_Grenade_shell","RB205_DC17M_Blaster_Mag","WBK_Cybercrystal",
+		"RB205_Scatter_Energy_Pack","JLTS_DC15A_mag","3Rnd_SmokeBlue_Grenade_shell","3Rnd_SmokeGreen_Grenade_shell","RB205_Overcharged_Energy_Pack","JLTS_stun_mag_short","RB205_Standard_Energy_Pack","3Rnd_SmokeRed_Grenade_shell","ACE_40mm_Flare_red","RB205_RapidFire_Energy_Pack","ACE_40mm_Flare_white","RB205_DC17M_AT_Mag","RB205_BTX42_mag","3AS_6Rnd_HE_Grenade_shell","JLTS_DC15S_mag","twc_2inch_he_1rnd","3Rnd_HE_Grenade_shell","RB205_Compact_Energy_Pack","3Rnd_SmokePurple_Grenade_shell","RB205_Heavy_Energy_Pack","RB205_Experimental_Energy_Pack","JLTS_stun_mag_long","RB205_DC17M_Sniper_Mag","3Rnd_SmokeYellow_Grenade_shell","RB205_MK39_AA","ACE_40mm_Flare_green","JLTS_DC17SA_mag","RB205_MAG_RPS6","3Rnd_Smoke_Grenade_shell","ACE_HuntIR_M203","3Rnd_SmokeOrange_Grenade_shell","RB205_DC17M_Blaster_Mag","WBK_Cybercrystal",
+		
+		//IMPERIAL WEAPONS / ATTACHMENTS / AMMO
+		"RB205_DLT19","RB205_DLT19X","RB205_E11","RB205_E11_stock","RB205_E11_gl","RB205_E11D","RB205_EC17","RB205_RK3","RB205_SE14R",
+		"3AS_Imp_Optic_1","JMSLLTE_e11_holoSF_Scope","3AS_Imp_Optic_E11","JMSLLTE_ec17_holo_Scope","JMSLLTE_e11_bl_Scope","3AS_Imp_Optic_4","JMSLLTE_e11_holo_Scope","3AS_Imp_Optic_3","3AS_Imp_Optic_DLT19x","3AS_Imp_Optic_2",
+		"RB205_Heavy_Energy_Pack_red","RB205_Compact_Energy_Pack_red","RB205_Standard_Energy_Pack_red","RB205_Overcharged_Energy_Pack_red","RB205_Experimental_Energy_Pack_red",
 		
 		//GRENADES / EXPLOSIVES
 		"RB205_thermalDet","RB205_impactGren","RB205_sonicDet","RB205_droidPopper","RB205_smokeWhite","RB205_smokeBlue","RB205_smokeGreen","RB205_smokeRed","RB205_smokeYellow","RB205_smokePurple","RB205_smokeOrange",
@@ -100,6 +105,28 @@ params ["_this"];
 		"SW205_U_p1_trooper","SW205_U_p1_sergeant","SW205_U_p1_lieutenant","SW205_U_p1_captain","SW205_U_p1_commander",
 		"SW205_B_p1_heavy","SW205_B_p1_medic","SW205_B_p1_rocket","SW205_B_p1_eod","SW205_B_p1_radio","SW205_B_p1_jetpack","SW205_B_p1_jetpack_heavy","SW205_B_p1_jetpack_medic","SW205_B_p1_jetpack_rocket","SW205_B_p1_jetpack_eod","SW205_B_p1_jetpack_radio","SW205_B_p1_arf",
 
+		//Imperial Armor
+		"RB205_emp_H_trooper","RB205_emp_H_ab_trooper","RB205_emp_H_scout_trooper","RB205_emp_H_plt_trooper","RB205_emp_H_snow_trooper","RB205_emp_H_tank_trooper","RB205_emp_H_death_trooper",
+		"RB205_emp_H_trooper_dirt","RB205_emp_H_trooper_sand","RB205_emp_H_trooper_mud","RB205_emp_H_trooper_shadow","RB205_emp_H_scout_trooper_camo","RB205_emp_H_scout_trooper_mud","RB205_emp_H_scout_trooper_shadow",
+		"RB205_emp_H_officer_grey","RB205_emp_H_officer_grey_lowered","RB205_emp_H_officer_green","RB205_emp_H_officer_green_lowered","RB205_emp_H_officer_black","RB205_emp_H_officer_black_lowered","RB205_emp_H_officer_isb_agent","RB205_emp_H_officer_helmet_black","RB205_emp_H_officer_helmet_green",
+		
+		"RB205_emp_U_trooper","RB205_emp_U_scout_trooper","RB205_emp_U_plt_trooper","RB205_emp_U_snow_trooper","RB205_emp_U_tank_trooper","RB205_emp_U_death_trooper",
+		"RB205_emp_U_trooper_dirt","RB205_emp_U_trooper_sand","RB205_emp_U_trooper_mud","RB205_emp_U_trooper_shadow","RB205_emp_U_scout_trooper_camo","RB205_emp_U_scout_trooper_mud","RB205_emp_U_scout_trooper_shadow",
+		"RB205_emp_U_officer_grey","RB205_emp_U_officer_green","RB205_emp_U_officer_black","RB205_emp_U_officer_isb","RB205_emp_U_officer_isb_agent","RB205_emp_U_officer_coat_black","RB205_emp_U_officer_coat_grey","RB205_emp_U_officer_coat_green","RB205_emp_U_officer_coat_isb",
+
+		"RB205_emp_V_ct","RB205_emp_V_clc","RB205_emp_V_cp","RB205_emp_V_cs","RB205_emp_V_csm","RB205_emp_V_cl","RB205_emp_V_co","RB205_emp_V_cc",
+		"RB205_emp_V_medic","RB205_emp_V_grenadier","RB205_emp_V_rebreather",
+		"RB205_emp_V_scout_ct","RB205_emp_V_plt_ct","RB205_emp_V_snow_ct","RB205_emp_V_tank_ct","RB205_emp_V_shadow_ct","RB205_emp_V_death","RB205_emp_V_death_grenadier","RB205_emp_V_death_lead","RB205_emp_V_death_lead2","RB205_emp_V_death_lead3",
+
+		"RB205_emp_V_navy_ensign","RB205_emp_V_navy_lieutenant","RB205_emp_V_navy_seniorLieutenant","RB205_emp_V_navy_captain","RB205_emp_V_navy_admiral","RB205_emp_V_army_sergeantMajor","RB205_emp_V_army_lieutenant","RB205_emp_V_army_captain","RB205_emp_V_army_commander","RB205_emp_V_isb_agent","RB205_emp_V_isb_lieutenant","RB205_emp_V_isb_captain","RB205_emp_V_isb_major","RB205_emp_V_officer_armor_black","RB205_emp_V_officer_armor_green",
+
+		"RB205_B_emp_heavy","RB205_B_emp_medic","RB205_B_emp_rocket","RB205_B_emp_eod","RB205_B_emp_radio",
+		"RB205_B_emp_ab","RB205_B_emp_ab_heavy","RB205_B_emp_ab_medic","RB205_B_emp_ab_rocket","RB205_B_emp_ab_eod","RB205_B_emp_ab_radio",
+		"RB205_B_emp_snow_heavy","RB205_B_emp_snow_medic","RB205_B_emp_snow_rocket","RB205_B_emp_snow_eod","RB205_B_emp_snow_radio",
+		"RB205_B_emp_scout","RB205_B_emp_plt","RB205_B_emp_death",
+
+		"RB205_emp_N_death"
+		
 		//MEDICAL
 		"ACE_fieldDressing","ACE_packingBandage","ACE_elasticBandage","ACE_quikclot",
 		"ACE_salineIV","ACE_salineIV_250","ACE_salineIV_500",
