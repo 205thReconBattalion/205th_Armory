@@ -34,7 +34,7 @@ class cfgWeapons
     class RB205_H_lieutenant;
     class RB205_H_spark: RB205_H_lieutenant
     {
-        displayName = "[205] Clone Commander Helmet [8550]"
+        displayName = "[205] Clone Commander Helmet [8550]";
         hiddenSelectionsTextures[] =
         {
             "RB205_custom\8550_spark\data\H_spark.paa",
@@ -53,7 +53,7 @@ class cfgWeapons
     class RB205_H_arf_lieutenant;
     class RB205_H_arf_spark: RB205_H_arf_lieutenant
     {
-        displayName = "[205] Clone ARF Commander Helmet [8550]"
+        displayName = "[205] Clone ARF Commander Helmet [8550]";
         hiddenSelectionsTextures[] =
         {
             "RB205_custom\8550_spark\data\H_spark_arf.paa",
@@ -95,7 +95,7 @@ class cfgWeapons
     class RB205_V_spark: RB205_V_commander_base
     {
         ACCESS_TRUE
-        displayName = "[205] Clone Commander Vest [8550]"
+        displayName = "[205] Clone Commander Vest [8550]";
         model = "\SWLB_clones\SWLB_clone_commander_armor.p3d";
         hiddenSelections[] = {"camo1","rank"};
         hiddenSelectionsMaterials[]=

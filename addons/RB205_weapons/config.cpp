@@ -180,7 +180,7 @@ class CfgMagazines
 		tracersEvery=1;
 		lastRoundsTracer = 30;
 		descriptionShort = "$STR_205_Compact_Energy_Pack_DescriptionShort";
-        author = "205th Recon Battalion"
+        author = "205th Recon Battalion";
 	};
 	// SE-14r, RK-3, EC-17
 	class RB205_Compact_Energy_Pack_red: RB205_Compact_Energy_Pack

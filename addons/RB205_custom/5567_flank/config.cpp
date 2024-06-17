@@ -37,7 +37,7 @@ class cfgWeapons
         {
             model = "RB205_H_custom";
             id = "5567";
-            var = "dft"
+            var = "dft";
         };
     };
 

@@ -7,7 +7,7 @@ class cfgPatches
             "RB205_main",
             "RB205_custom"
         };
-        author = "205th Recon Battalion"
+        author = "205th Recon Battalion";
         requiredVersion = 1.0;
         weapons[] =
         {
