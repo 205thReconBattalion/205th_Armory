@@ -14,7 +14,12 @@ class cfgPatches
 			"RB205_weapons_dp23",
 			"RB205_weapons_v38x",
 			"RB205_weapons_westarM5",
-			"RB205_weapons_z6"
+			"RB205_weapons_z6",
+			"RB205_weapons_e11",
+			"RB205_weapons_dlt19",
+			"RB205_weapons_dlt19x",
+			"RB205_weapons_se14r",
+			"RB205_weapons_rk3"
 		};
 		requiredVersion = 1.0;
         author = "205th Recon Battalion";
@@ -114,6 +119,12 @@ class CfgWeapons
 	{
 		cursor = "RB205_CH_default";
 	};
+
+	class 41_Flammenwerfer_02_F;
+	class RB205_BTX42: 41_Flammenwerfer_02_F
+	{
+		cursor = "RB205_CH_flame";
+	};
 	
 	class JLTS_DP23;
 	class RB205_DP23: JLTS_DP23
@@ -137,5 +148,59 @@ class CfgWeapons
 	class RB205_Z6: JLTS_Z6
 	{
 		cursor = "RB205_CH_default";
+	};
+
+	class 3AS_E11;
+	class RB205_E11: 3AS_E11
+	{
+		cursor = "RB205_CH_default";
+	};
+
+	class 3AS_E11Stock;
+	class RB205_E11_stock: 3AS_E11Stock
+	{
+		cursor = "RB205_CH_default";
+	};
+
+	class 3AS_E11_GL;
+	class RB205_E11_gl: 3AS_E11_GL
+	{
+		cursor = "RB205_CH_default";
+	};
+
+	class 3AS_DLT19;
+	class RB205_DLT19: 3AS_DLT19
+	{
+		cursor = "RB205_CH_default";
+	};
+
+	class 3AS_DLT19X;
+	class RB205_DLT19X: 3AS_DLT19X
+	{
+		cursor = "RB205_CH_sniper";
+	};
+
+	class JMSLLTE_e11d;
+	class RB205_E11D: JMSLLTE_e11d
+	{
+		cursor = "RB205_CH_default";
+	};
+
+	class 3AS_SE14R;
+	class RB205_SE14R: 3AS_SE14R
+	{
+		cursor = "RB205_CH_sidearm";
+	};
+
+	class 3AS_RK3;
+	class RB205_RK3: 3AS_RK3
+	{
+		cursor = "RB205_CH_sidearm";
+	};
+
+	class JMSLLTE_ec17pistol;
+	class RB205_EC17: JMSLLTE_ec17pistol
+	{
+		cursor = "RB205_CH_sidearm";
 	};
 };
