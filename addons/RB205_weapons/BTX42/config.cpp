@@ -1,6 +1,6 @@
 class cfgPatches
 {
-	class RB205_weapons_z6
+	class RB205_weapons_btx42
 	{
 		requiredAddons[]=
 		{

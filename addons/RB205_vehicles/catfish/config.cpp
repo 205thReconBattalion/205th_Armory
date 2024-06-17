@@ -1,6 +1,6 @@
 class cfgPatches
 {
-    class RB205_vehicles_av7
+    class RB205_vehicles_catfish
 	{
 		requiredAddons[]=
 		{
