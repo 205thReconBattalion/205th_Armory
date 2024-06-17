@@ -29,9 +29,6 @@ class CfgPatches
 		};
 		weapons[]={};
 	};
-	class RB205_marker
-    {
-    };
 };
 
 class CfgEditorCategories

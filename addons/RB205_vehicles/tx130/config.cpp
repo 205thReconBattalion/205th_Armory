@@ -14,7 +14,7 @@ class cfgPatches
 		{
 			"RB205_tx130",
 			"RB205_tx130_gl",
-			"RB205_tx130_aa",
+			//"RB205_tx130_aa",
 			"RB205_tx130_recon",
 			"RB205_tx130_super"
 		};
@@ -147,7 +147,7 @@ class cfgVehicles
 			};
 		};
 	};
-	class RB205_tx130_aa: 3as_saber_AA
+	/*class RB205_tx130_aa: 3as_saber_AA
 	{
 		ACCESS_TRUE
 		displayName="TX-130/AA";
@@ -203,7 +203,7 @@ class cfgVehicles
 				};
 			};
 		};
-	};
+	};*/
 	class RB205_tx130_recon: 3as_saber_m1Recon
 	{
 		ACCESS_TRUE
