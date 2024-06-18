@@ -1,17 +1,64 @@
 #define AUTHOR "205th Recon Battalion"
-#define PICTURE "\RB205_core\data\RB205_logo.paa"
+#define LOGO "\RB205_core\data\RB205_logo.paa"
 
 
-//ARSENAL ACCESS:
+/* ARSENAL ACCESS */
 #define ACCESS_TRUE \
 	scope = 2; \
 	scopeArsenal = 2;
+
 #define ACCESS_FALSE \
 	scope = 0; \
 	scopeArsenal = 0;
 
 
-//TASK FORCE ARROWHEAD RADIO (TFAR)
+/* MASS / WEIGHT */
+#define MASS_HELMET 	20
+
+#define MASS_UNIFORM 	150
+
+#define MASS_VEST		10
+#define MASS_VEST_NCO	20
+#define MASS_VEST_CO	40
+
+#define MASS_NVG		5
+
+
+/* INVENOTRY SPACE */
+#define INV_UNIFORM 	"Supply80"
+
+#define INV_VEST 			"Supply200"
+#define INV_VEST_NCO 		"Supply250"
+#define INV_VEST_CO 		"Supply300"
+#define INV_VEST_MEDIC 		"Supply250"
+#define INV_VEST_GRENADIER 	"Supply250"
+#define INV_VEST_ARC 		"Supply300"
+
+#define INV_BACK		150
+#define INV_BACK_NONE	0
+#define INV_BACK_MEDIC	250
+#define INV_BACK_ROCKET	200
+#define INV_BACK_EOD	150
+#define INV_BACK_RADIO	50
+#define INV_BACK_ARF	200
+#define INV_BACK_ARC	300
+
+
+/* NIGHTVISION / THERMAL */
+//#define VISION_MODE { "Normal", "NVG" }
+//#define VISION_MODE_SCOUT { "Normal", "NVG", "TI" }
+
+#define MODEL_OPTICS				"\MRC\JLTS\Core_mod\nvg_optic_dummy.p3d"
+#define MODEL_OPTICS_NV_VISOR 		"\MRC\JLTS\characters\CloneArmor\CloneNVG_regular_optic.p3d"
+#define MODEL_OPTICS_RANGEFINDER 	"\MRC\JLTS\characters\CloneArmor\CloneNVGRange_optic.p3d"
+
+
+/* ACE */
+#define ACE_HEARING_VOLUME 			0.1
+#define ACE_HEARING_VOLUME_LOWERED 	0.6
+
+
+/* TASK FORCE ARROWHEAD RADIO (TFAR) */
 #define TFAR_RADIO \
 tf_dialog="JLTS_clone_rto_radio_dialog"; \
 tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;"; \

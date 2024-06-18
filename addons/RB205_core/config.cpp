@@ -30,23 +30,24 @@ class cfgPatches
 
 class cfgWeapons
 {
-    class ItemCore;
-    class H_HelmetB: ItemCore
+    class H_HelmetB;
+    class help_helmet_base: H_HelmetB
     {
         class ItemInfo;
     };
-    class RB205_helmet_base: H_HelmetB
+    class RB205_helmet_base: help_helmet_base
     {
         ACCESS_FALSE
         author = AUTHOR;
-        picture = PICTURE;
+        picture = LOGO;
         descriptionShort = "";
         ace_hearing_protection = 1;
-        ace_hearing_lowerVolume = 0.1;
+        ace_hearing_lowerVolume = ACE_HEARING_VOLUME;
         subItems[] = {};
         class ItemInfo: ItemInfo
         {
-            mass = 20;
+            mass = MASS_HELMET;
+            allowedSlots[] = {605,901};
             modelSides[] = {6};
             class HitpointsProtectionInfo
             {
@@ -65,20 +66,22 @@ class cfgWeapons
             };
         };
     };
-    class Uniform_Base: ItemCore
+
+    class Uniform_Base;
+    class help_uniform_base: Uniform_Base
     {
         class ItemInfo;
     };
-    class RB205_uniform_base: Uniform_Base
+    class RB205_uniform_base: help_uniform_base
     {
         ACCESS_FALSE
         author = AUTHOR;
-        picture = PICTURE;
+        picture = LOGO;
         descriptionShort = "";
         class ItemInfo: ItemInfo
         {
-            mass = 150;
-            containerClass = "Supply80";
+            mass = MASS_UNIFORM;
+            containerClass = INV_UNIFORM;
             modelSides[] = {6};
             uniformClass = "RB205_unit_base";
             uniformModel = "-";
@@ -86,20 +89,21 @@ class cfgWeapons
         };
     };
 
-    class Vest_Camo_Base: ItemCore
+    class Vest_Camo_Base;
+    class help_vest_base: Vest_Camo_Base
     {
         class ItemInfo;
     };
-    class RB205_vest_base: Vest_Camo_Base
+    class RB205_vest_base: help_vest_base
     {
         ACCESS_FALSE
         author = AUTHOR;
-        picture = PICTURE;
+        picture = LOGO;
         descriptionShort = "";
         class ItemInfo: ItemInfo
         {
-            mass = 10;
-            containerClass = "Supply200";
+            mass = MASS_VEST;
+            containerClass = INV_VEST;
             class HitpointsProtectionInfo{};
         };
     };
@@ -108,8 +112,8 @@ class cfgWeapons
         ACCESS_FALSE
         class ItemInfo: ItemInfo
         {
-            mass = 20;
-            containerClass = "Supply250";
+            mass = MASS_VEST_NCO;
+            containerClass = INV_VEST_NCO;
             class HitpointsProtectionInfo
             {
                 class Chest
@@ -138,8 +142,8 @@ class cfgWeapons
         ACCESS_FALSE
         class ItemInfo: ItemInfo
         {
-            mass = 40;
-            containerClass = "Supply300";
+            mass = MASS_VEST_CO;
+            containerClass = INV_VEST_CO;
             class HitpointsProtectionInfo
             {
                 class Chest
@@ -170,6 +174,7 @@ class cfgWeapons
         {
             containerClass = "Supply250";
         };
+        //TODO: entfernen
     };
     class RB205_vest_grenadier_base: RB205_vest_base
     {
@@ -178,6 +183,32 @@ class cfgWeapons
         {
             containerClass = "Supply250";
         };
+        //TODO: entfernen
+    };
+
+    class NVGoggles;
+    class help_nvg_base: NVGoggles
+    {
+        class ItemInfo;
+    };
+    class RB205_nvg_base: help_nvg_base
+    {
+        ACCESS_FALSE
+        author = AUTHOR;
+        picture = LOGO;
+        descriptionShort = "NV";
+        visionMode[] = { "Normal", "NVG" };
+        class ItemInfo: ItemInfo
+        {
+            mass = MASS_NVG;
+        };
+    };
+    class RB205_nvg_ti_base: RB205_nvg_base
+    {
+        ACCESS_FALSE
+        descriptionShort = "NV/TI";
+        visionMode[] = { "Normal", "NVG", "TI" };
+	    thermalMode[] = {0};
     };
 };
 
@@ -188,7 +219,7 @@ class cfgVehicles
     {
         ACCESS_FALSE
         author = AUTHOR;
-        picture = PICTURE;
+        picture = LOGO;
         //icon = "iconMan";
         identityTypes[] = {"LanguageENG_F","WhiteHead_01"};
         //engineer = "false";
@@ -376,7 +407,7 @@ class cfgVehicles
     {
         ACCESS_FALSE
         author = AUTHOR;
-        picture = PICTURE;
+        picture = LOGO;
         descriptionShort = "";
 		model = "\RB205_core\data\B_invisible.p3d";
 	    maximumLoad = 0;

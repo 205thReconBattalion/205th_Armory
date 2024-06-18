@@ -17,6 +17,7 @@ class cfgPatches
 	};
 };
 
+#include "\RB205_core\macros.hpp"
 #include "\RB205_main\macros.hpp"
 
 #define SLOT(CLASS,DISPLAYNAME) \
