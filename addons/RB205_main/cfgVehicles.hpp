@@ -1,7 +1,7 @@
 #include "cfgVehicles_baseClasses.hpp"
 
 /*
-	DEFAULT UNITS
+	UNITS
 */
 
 class RB205_clone_recruit: RB205_clone_base
@@ -446,44 +446,23 @@ class RB205_clone_arc_trooper: RB205_arc_base
 };
 
 /*
-	BACKPACK
+	BACKPACKS
 */
 
-class RB205_B_heavy: ls_gar_standard_backpack
+class RB205_B_heavy: RB205_B_heavy_base
 {
 	ACCESS_TRUE
-	author = "205th Recon Battalion";
 	displayname = "[205] Clone Trooper Backpack <Heavy>";
-	descriptionShort = "";
-	maximumload = INV_BACK;
-	picture = "\RB205_main\data\ui\backpacks\icon_B_heavy.paa";
-	hiddenSelectionsMaterials[] =
-	{
-		"RB205_main\data\materials\B_dft.rvmat",
-		"RB205_main\data\materials\B_cover.rvmat"
-	};
 	hiddenselectionstextures[] =
 	{
 		"RB205_main\data\default\B_default_co.paa",
 		"RB205_main\data\default\B_cover_co.paa"
 	};
 };
-class ls_gar_medic_backpack;
-class RB205_B_medic: ls_gar_medic_backpack
+class RB205_B_medic: RB205_B_medic_base
 {
 	ACCESS_TRUE
-	author = "205th Recon Battalion";
 	displayname = "[205] Clone Trooper Backpack <Medic>";
-	descriptionShort = "";
-	maximumload = INV_BACK_MEDIC;
-	picture = "\RB205_main\data\ui\backpacks\icon_B_medic.paa";
-	hiddenSelectionsMaterials[] =
-	{
-		"RB205_main\data\materials\B_dft.rvmat",
-		"RB205_main\data\materials\B_cover.rvmat",
-		"RB205_main\data\materials\B_medic1.rvmat",
-		"RB205_main\data\materials\B_medic2.rvmat"
-	};
 	hiddenselectionstextures[] =
 	{
 		"RB205_main\data\default\B_medic_co.paa",
@@ -492,23 +471,10 @@ class RB205_B_medic: ls_gar_medic_backpack
 		"RB205_main\data\default\B_medic_bacta_co.paa"
 	};
 };
-class ls_gar_rocket_backpack;
-class RB205_B_rocket: ls_gar_rocket_backpack
+class RB205_B_rocket: RB205_B_rocket_base
 {
 	ACCESS_TRUE
-	author = "205th Recon Battalion";
-	displayname = "[205] Clone Trooper Backpack <AT/AA>";
-	descriptionShort = "";
-	maximumload = INV_BACK_ROCKET;
-	picture = "\RB205_main\data\ui\backpacks\icon_B_rocket.paa";
-	hiddenSelectionsMaterials[] =
-	{
-		"RB205_main\data\materials\B_dft.rvmat",
-		"RB205_main\data\materials\B_rocket_holder.rvmat",
-		"RB205_main\data\materials\B_rocket.rvmat",
-		"RB205_main\data\materials\B_rocket_light.rvmat",
-		""
-	};
+	displayname = "[205] Clone Trooper Backpack <AT/AA>";	
 	hiddenselectionstextures[] =
 	{
 		"RB205_main\data\default\B_default_co.paa",
@@ -518,21 +484,10 @@ class RB205_B_rocket: ls_gar_rocket_backpack
 		""
 	};
 };
-class ls_gar_heavy_backpack;
-class RB205_B_eod: ls_gar_heavy_backpack
+class RB205_B_eod: RB205_B_eod_base
 {
 	ACCESS_TRUE
-	author = "205th Recon Battalion";
 	displayname = "[205] Clone Trooper Backpack <EOD>";
-	descriptionShort = "";
-	maximumload = INV_BACK_EOD;
-	picture = "\RB205_main\data\ui\backpacks\icon_B_eod.paa";
-	hiddenSelectionsMaterials[] =
-	{
-		"RB205_main\data\materials\B_dft.rvmat",
-		"RB205_main\data\materials\B_cover.rvmat",
-		"RB205_main\data\materials\B_pouches.rvmat"
-	};
 	hiddenselectionstextures[] =
 	{
 		"RB205_main\data\default\B_eod_co.paa",
@@ -540,22 +495,10 @@ class RB205_B_eod: ls_gar_heavy_backpack
 		"RB205_main\data\default\B_pouches_co.paa"
 	};
 };
-class ls_gar_radio_backpack;
-class RB205_B_radio: ls_gar_radio_backpack
+class RB205_B_radio: RB205_B_radio_base
 {
 	ACCESS_TRUE
-	author = "205th Recon Battalion";
 	displayname = "[205] Clone Trooper Backpack <RTO>";
-	descriptionShort = "";
-	maximumload = INV_BACK_RADIO;
-	picture = "\RB205_main\data\ui\backpacks\icon_B_radio.paa";
-	TFAR_RADIO
-	hiddenSelectionsMaterials[] =
-	{
-		"RB205_main\data\materials\B_dft.rvmat",
-		"RB205_main\data\materials\B_radio.rvmat",
-		"RB205_main\data\materials\B_screen.rvmat"
-	};
 	hiddenselectionstextures[] =
 	{
 		"RB205_main\data\default\B_default_co.paa",
@@ -563,33 +506,20 @@ class RB205_B_radio: ls_gar_radio_backpack
 		"RB205_main\data\default\B_radio_screen_co.paa"
 	};
 };
-class SWLB_clone_RTO_mini_backpack;
-class RB205_B_radio_mini: SWLB_clone_RTO_mini_backpack
+class RB205_B_radio_mini: RB205_B_radio_mini_base
 {
 	ACCESS_TRUE
-	author = "205th Recon Battalion";
 	displayname = "[205] Clone Trooper Radio Transmitter";
-	descriptionShort = "";
-	maximumload = INV_BACK_NONE;
-	TFAR_RADIO_SMALL
-	picture = "\RB205_main\data\ui\backpacks\icon_B_radio_mini.paa";
-	hiddenSelectionsMaterials[] =
-	{
-		"RB205_main\data\materials\B_radio_mini.rvmat",
-		"RB205_main\data\materials\B_radio_mini_acc.rvmat"
-	};
 	hiddenSelectionsTextures[] =
 	{
 		"RB205_main\data\default\B_radio_mini_co.paa",
 		"RB205_main\data\default\B_radio_mini_acc_co.paa"
 	};
 };
-class RB205_B_radio_mini_blk: RB205_B_radio_mini
+class RB205_B_radio_mini_blk: RB205_B_radio_mini_base
 {
 	ACCESS_TRUE
-	author = "205th Recon Battalion";
 	displayname = "[205] Clone Trooper Radio Transmitter (Black)";
-	descriptionShort = "";
 	hiddenSelectionsTextures[] =
 	{
 		"RB205_main\data\default\B_radio_mini_blk_co.paa",

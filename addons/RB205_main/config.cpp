@@ -4,15 +4,6 @@ class cfgPatches
 	{
 		requiredAddons[]=
 		{
-			/*"ls_armor_bluefor",
-			"ls_equipment_bluefor",
-			"lsd_armor_bluefor",
-			"lsd_equipment_bluefor",
-			"SWLB_equipment_backpacks",
-			"JLTS_core",
-			"JLTS_characters_CloneArmor2",
-			"JLTS_jumppacks",
-			//"LS_Armor" //by Last Force Project*/
 			"RB205_core",
 			"lsd_armor_bluefor",
 			"ls_armor_bluefor",
@@ -21,8 +12,12 @@ class cfgPatches
 			"lsd_equipment_bluefor",
 			"3AS_Intel",
 			"ls_armor_bluefor_deprecated",
+			"ls_equipment_bluefor",
+			"SWLB_equipment_backpacks",
 			"JLTS_characters_CloneArmor2",
+			"JLTS_jumppacks",
 			"SWLB_equipment_backpacks"
+			//"LS_Armor" //by Last Force Project*/
 		};
 		requiredVersion = 1.0;
         author = "205th Recon Battalion";

@@ -143,7 +143,6 @@ class RB205_arf_base: RB205_clone_base
 {
 	ACCESS_FALSE
 	editorSubCategory = "RB205_70MRP";
-	canDeactivateMines = "true";
 	camouflage = CAMOUFLAGE_SCOUT;
 	//Inventory:
 	backpack = "RB205_B_arf";
@@ -166,7 +165,6 @@ class RB205_plt_base: RB205_clone_base
 {
 	ACCESS_FALSE
 	editorSubCategory = "RB205_35HSP";
-	engineer = "true";
 	//Iventory:
 	backpack = "RB205_B_radio_mini";
 	weapons[]=
@@ -229,8 +227,6 @@ class RB205_snow_base: RB205_clone_base
 class RB205_arc_base: RB205_clone_base
 {
 	ACCESS_FALSE
-	engineer = "true";
-	canDeactivateMines = "true";
 	camouflage = CAMOUFLAGE_SCOUT;
 	//Inventory:
 	backpack = "RB205_B_arc";
@@ -272,20 +268,133 @@ class RB205_arc_base: RB205_clone_base
 	BACKPACKS
 */
 
-/*class ls_gar_standard_backpack;
-class RB205_B_base: ls_gar_standard_backpack
+class RB205_backpack_base;
+
+class RB205_B_heavy_base: RB205_backpack_base
 {
 	ACCESS_FALSE
-	picture = "\SWLB_equipment\backpacks\data\ui\icon_SWLB_clone_backpack_ca.paa";
+	picture = "\RB205_main\data\ui\backpacks\icon_B_heavy.paa";
 	model = "ls_equipment_bluefor\backpack\gar\backpack\ls_gar_standard_backpack.p3d";
-	hiddenselectionstextures[]=
+	hiddenselections[] =
 	{
-		"205th_main\data\B_trooper.paa",
-		"205th_main\data\B_cover.paa"
+		"backpack",
+		"cover"
 	};
-};*/
-class JLTS_Clone_jumppack_JT12;
-class RB205_backpack_base;
+	hiddenSelectionsMaterials[] =
+	{
+		"RB205_main\data\materials\B_dft.rvmat",
+		"RB205_main\data\materials\B_cover.rvmat"
+	};
+	mass = MASS_BACKPACK;
+	maximumload = INV_BACK;
+};
+class RB205_B_medic_base: RB205_backpack_base
+{
+	ACCESS_FALSE
+	picture = "\RB205_main\data\ui\backpacks\icon_B_medic.paa";
+	model = "ls_equipment_bluefor\backpack\gar\backpack\ls_gar_medic_backpack.p3d";
+	hiddenselections[] =
+	{
+		"backpack",
+		"cover",
+		"medic1",
+		"medic2"
+	};
+	hiddenSelectionsMaterials[] =
+	{
+		"RB205_main\data\materials\B_dft.rvmat",
+		"RB205_main\data\materials\B_cover.rvmat",
+		"RB205_main\data\materials\B_medic1.rvmat",
+		"RB205_main\data\materials\B_medic2.rvmat"
+	};
+	mass = MASS_BACKPACK;
+	maximumload = INV_BACK_MEDIC;
+};
+class RB205_B_rocket_base: RB205_backpack_base
+{
+	ACCESS_FALSE
+	picture = "\RB205_main\data\ui\backpacks\icon_B_rocket.paa";
+	model = "ls_equipment_bluefor\backpack\gar\backpack\ls_gar_rocket_backpack.p3d";
+	hiddenselections[] =
+	{
+		"backpack",
+		"holder",
+		"rocket",
+		"light",
+		"pouches"
+	};
+	hiddenSelectionsMaterials[] =
+	{
+		"RB205_main\data\materials\B_dft.rvmat",
+		"RB205_main\data\materials\B_rocket_holder.rvmat",
+		"RB205_main\data\materials\B_rocket.rvmat",
+		"RB205_main\data\materials\B_rocket_light.rvmat",
+		""
+	};
+	mass = MASS_BACKPACK;
+	maximumload = INV_BACK_ROCKET;
+};
+class RB205_B_eod_base: RB205_backpack_base
+{
+	ACCESS_FALSE
+	picture = "\RB205_main\data\ui\backpacks\icon_B_eod.paa";
+	model = "ls_equipment_bluefor\backpack\gar\heavyBackpack\ls_gar_heavy_backpack.p3d";
+	hiddenselections[] =
+	{
+		"backpack",
+		"cover",
+		"pouches",
+		"tube"
+	};
+	hiddenSelectionsMaterials[] =
+	{
+		"RB205_main\data\materials\B_dft.rvmat",
+		"RB205_main\data\materials\B_cover.rvmat",
+		"RB205_main\data\materials\B_pouches.rvmat"
+	};
+	mass = MASS_BACKPACK;
+	maximumload = INV_BACK_EOD;
+};
+class RB205_B_radio_base: RB205_backpack_base
+{
+	ACCESS_FALSE
+	picture = "\RB205_main\data\ui\backpacks\icon_B_radio.paa";
+	model = "ls_equipment_bluefor\backpack\gar\backpack\ls_gar_radio_backpack.p3d";
+	hiddenselections[] =
+	{
+		"backpack",
+		"radio",
+		"screen"
+	};
+	hiddenSelectionsMaterials[] =
+	{
+		"RB205_main\data\materials\B_dft.rvmat",
+		"RB205_main\data\materials\B_radio.rvmat",
+		"RB205_main\data\materials\B_screen.rvmat"
+	};
+	mass = MASS_BACKPACK;
+	maximumload = INV_BACK_RADIO;
+	TFAR_RADIO
+};
+class RB205_B_radio_mini_base: RB205_backpack_base
+{
+	ACCESS_FALSE
+	picture = "\RB205_main\data\ui\backpacks\icon_B_radio_mini.paa";
+	model = "\SWLB_equipment\backpacks\SWLB_clone_RTO_mini_backpack.p3d";
+	hiddenSelections[] =
+	{
+		"main",
+		"accumulator"
+	};
+	hiddenSelectionsMaterials[] =
+	{
+		"RB205_main\data\materials\B_radio_mini.rvmat",
+		"RB205_main\data\materials\B_radio_mini_acc.rvmat"
+	};
+	mass = MASS_BACKPACK_SMALL;
+	maximumload = INV_BACK_NONE;
+	TFAR_RADIO_SMALL
+};
 
 class RB205_B_ab_base: RB205_backpack_base
 {
@@ -305,7 +414,6 @@ class RB205_B_ab_base: RB205_backpack_base
 	JETPACK_TRUE
 };
 
-class SWLB_CEE_Recon_RTO_Backpack;
 class RB205_B_arf_base: RB205_backpack_base
 {
 	ACCESS_FALSE
@@ -342,7 +450,6 @@ class RB205_B_arf_camo_base: RB205_B_arf_base
 	};
 };
 
-class ls_gar_standard_backpack;
 class RB205_B_snow_base: RB205_backpack_base
 {
 	ACCESS_FALSE
