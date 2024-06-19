@@ -16,7 +16,9 @@ class cfgPatches
 			"SWLB_equipment_backpacks",
 			"JLTS_characters_CloneArmor2",
 			"JLTS_jumppacks",
-			"SWLB_equipment_backpacks"
+			"SWLB_equipment_backpacks",
+			"A3_Characters_F_Heads",
+			"A3_Characters_F"
 			//"LS_Armor" //by Last Force Project*/
 		};
 		requiredVersion = 1.0;

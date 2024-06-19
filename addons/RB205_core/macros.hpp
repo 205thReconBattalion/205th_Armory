@@ -22,6 +22,7 @@
 #define MASS_VEST_CO		40
 
 #define MASS_NVG			5
+#define MASS_VISOR			5
 
 #define MASS_BACKPACK		50
 #define MASS_BACKPACK_SMALL	10

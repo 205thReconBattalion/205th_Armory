@@ -4,7 +4,9 @@ class cfgPatches
 	{
 		requiredAddons[] =
         {
-            "A3_Characters_F"
+            "ItemCore",
+            "A3_Characters_F",
+            "A3_Weapons_F_Ammoboxes"
         };
 		requiredVersion = 1.0;
         weapons[] =
@@ -401,7 +403,6 @@ class cfgVehicles
         };
     };
 
-    class B_Kitbag_rgr;
     class Bag_Base;
     class RB205_backpack_base: Bag_Base
     {
