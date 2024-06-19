@@ -48,7 +48,33 @@
 #define INV_BACK_SOF	300
 
 
-/* ACE */
+/* INVENOTRY MACROS */
+#define WEAP_XX(a,b) 	class _xx_##a { weapon = a; count = b; }
+#define MAG_XX(a,b) 	class _xx_##a { magazine = a; count = b; }
+#define ITEM_XX(a,b) 	class _xx_##a { name = a; count = b; }
+
+#define ENUM_2(a) 	a, a
+#define ENUM_3(a) 	a, a, a
+#define ENUM_4(a) 	a, a, a, a
+#define ENUM_5(a) 	a, a, a, a, a
+#define ENUM_6(a) 	a, a, a, a, a, a
+#define ENUM_7(a) 	a, a, a, a, a, a, a
+#define ENUM_8(a) 	a, a, a, a, a, a, a, a
+#define ENUM_9(a) 	a, a, a, a, a, a, a, a, a
+#define ENUM_10(a) 	a, a, a, a, a, a, a, a, a, a
+#define ENUM_11(a) 	a, a, a, a, a, a, a, a, a, a, a
+#define ENUM_12(a) 	a, a, a, a, a, a, a, a, a, a, a, a
+#define ENUM_13(a) 	a, a, a, a, a, a, a, a, a, a, a, a, a
+#define ENUM_14(a) 	a, a, a, a, a, a, a, a, a, a, a, a, a, a
+#define ENUM_15(a) 	a, a, a, a, a, a, a, a, a, a, a, a, a, a, a
+#define ENUM_20(a) 	a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a
+#define ENUM_25(a) 	a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a
+#define ENUM_50(a) 	a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a
+#define ENUM_75(a) 	a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a
+#define ENUM_100(a) 	a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a
+
+
+/* ACE HEARING */
 #define ACE_HEARING_VOLUME 			0.1
 #define ACE_HEARING_VOLUME_LOWERED 	0.6
 

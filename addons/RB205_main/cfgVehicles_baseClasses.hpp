@@ -9,7 +9,7 @@ class RB205_clone_base: RB205_unit_base
 	uniformClass = "RB205_U_base";
 	side = 1;
 	faction = "RB205";
-	editorSubCategory = "RB205_1AP";
+	editorSubCategory = "RB205_cloneTrooper";
 	identityTypes[] = IDENTITY_TYPES;
     nakedUniform = "lsd_gar_bodyGlove_uniform";
 	//Inventory:
@@ -30,35 +30,29 @@ class RB205_clone_base: RB205_unit_base
 	};
 	magazines[] =
 	{
-		"RB205_Standard_Energy_Pack","RB205_Standard_Energy_Pack","RB205_Standard_Energy_Pack","RB205_Standard_Energy_Pack","RB205_Standard_Energy_Pack","RB205_Standard_Energy_Pack","RB205_Standard_Energy_Pack","RB205_Standard_Energy_Pack",
-		"RB205_Compact_Energy_Pack","RB205_Compact_Energy_Pack","RB205_Compact_Energy_Pack","JLTS_stun_mag_long","JLTS_stun_mag_long",
-		"RB205_thermalDet","RB205_thermalDet","RB205_thermalDet",
-		"RB205_smokeWhite","RB205_smokeWhite"
+		ADD_INVENTORY_MAG_RIFLEMAN
 	};
 	respawnmagazines[] =
 	{
-		"RB205_Standard_Energy_Pack","RB205_Standard_Energy_Pack","RB205_Standard_Energy_Pack","RB205_Standard_Energy_Pack","RB205_Standard_Energy_Pack","RB205_Standard_Energy_Pack","RB205_Standard_Energy_Pack","RB205_Standard_Energy_Pack",
-		"RB205_Compact_Energy_Pack","RB205_Compact_Energy_Pack","RB205_Compact_Energy_Pack","JLTS_stun_mag_long","JLTS_stun_mag_long",
-		"RB205_thermalDet","RB205_thermalDet","RB205_thermalDet",
-		"RB205_smokeWhite","RB205_smokeWhite"
+		ADD_INVENTORY_MAG_RIFLEMAN
 	};
 	items[] =
 	{
 		"ACE_EntrenchingTool",
 		"ACE_Flashlight_XL50",
-		"ACE_CableTie","ACE_CableTie","ACE_CableTie",
-		"ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage",
-		"ACE_Tourniquet","ACE_Tourniquet","ACE_Tourniquet","ACE_Tourniquet",
-		"ACE_painkillers","ACE_painkillers"
+		ENUM_3("ACE_CableTie"),
+		ENUM_25("ACE_packingBandage"),
+		ENUM_4("ACE_Tourniquet"),
+		"JLTS_ids_gar_army"
 	};
 	respawnitems[] =
 	{
 		"ACE_EntrenchingTool",
 		"ACE_Flashlight_XL50",
-		"ACE_CableTie","ACE_CableTie","ACE_CableTie",
-		"ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage",
-		"ACE_Tourniquet","ACE_Tourniquet","ACE_Tourniquet","ACE_Tourniquet",
-		"ACE_painkillers","ACE_painkillers"
+		ENUM_3("ACE_CableTie"),
+		ENUM_25("ACE_packingBandage"),
+		ENUM_4("ACE_Tourniquet"),
+		"JLTS_ids_gar_army"
 	};
 	//Model Values:
 	model = "ls_armor_bluefor\uniform\gar\phase2\ls_gar_phase2_uniform.p3d";
@@ -122,7 +116,7 @@ class RB205_clone_base: RB205_unit_base
 class RB205_ab_base: RB205_clone_base
 {
 	ACCESS_FALSE
-	editorSubCategory = "RB205_1AP";
+	editorSubCategory = "RB205_cloneAirborneTrooper";
 	backpack = "RB205_B_ab";
 	weapons[] =
 	{
@@ -142,7 +136,7 @@ class RB205_ab_base: RB205_clone_base
 class RB205_arf_base: RB205_clone_base
 {
 	ACCESS_FALSE
-	editorSubCategory = "RB205_70MRP";
+	editorSubCategory = "RB205_cloneArfTrooper";
 	camouflage = CAMOUFLAGE_SCOUT;
 	//Inventory:
 	backpack = "RB205_B_arf";
@@ -164,7 +158,7 @@ class RB205_arf_base: RB205_clone_base
 class RB205_plt_base: RB205_clone_base
 {
 	ACCESS_FALSE
-	editorSubCategory = "RB205_35HSP";
+	editorSubCategory = "RB205_clonePilotTrooper";
 	//Iventory:
 	backpack = "RB205_B_radio_mini";
 	weapons[]=
@@ -179,20 +173,21 @@ class RB205_plt_base: RB205_clone_base
 	};
 	magazines[]=
 	{
-		"RB205_Compact_Energy_Pack","RB205_Compact_Energy_Pack","RB205_Compact_Energy_Pack","RB205_Compact_Energy_Pack","RB205_Compact_Energy_Pack",
-		"JLTS_stun_mag_long","JLTS_stun_mag_long",
-		"RB205_smokeBlue","RB205_smokeBlue"
+		ENUM_5("RB205_Compact_Energy_Pack"),
+		ENUM_2("RB205_smokeBlue"),
+		ENUM_2("ACE_painkillers")
 	};
 	respawnmagazines[]=
 	{
-		"RB205_Compact_Energy_Pack","RB205_Compact_Energy_Pack","RB205_Compact_Energy_Pack","RB205_Compact_Energy_Pack","RB205_Compact_Energy_Pack",
-		"JLTS_stun_mag_long","JLTS_stun_mag_long",
-		"RB205_smokeBlue","RB205_smokeBlue"
+		ENUM_5("RB205_Compact_Energy_Pack"),
+		ENUM_2("RB205_smokeBlue"),
+		ENUM_2("ACE_painkillers")
 	};
 };
 class RB205_snow_base: RB205_clone_base
 {
 	ACCESS_FALSE
+	editorSubCategory = "RB205_cloneSnowTrooper";
 	//Inventory:
 	backpack = "";
 	weapons[] =
@@ -227,6 +222,7 @@ class RB205_snow_base: RB205_clone_base
 class RB205_arc_base: RB205_clone_base
 {
 	ACCESS_FALSE
+	editorSubCategory = "RB205_cloneTrooper";
 	camouflage = CAMOUFLAGE_SCOUT;
 	//Inventory:
 	backpack = "RB205_B_arc";
@@ -246,21 +242,17 @@ class RB205_arc_base: RB205_clone_base
 	};
 	magazines[] =
 	{
-		"RB205_Experimental_Energy_Pack","RB205_Experimental_Energy_Pack","RB205_Experimental_Energy_Pack","RB205_Experimental_Energy_Pack","RB205_Experimental_Energy_Pack","RB205_Experimental_Energy_Pack","RB205_Experimental_Energy_Pack","RB205_Experimental_Energy_Pack",
-		"3AS_6Rnd_HE_Grenade_shell","3AS_6Rnd_HE_Grenade_shell","3AS_6Rnd_HE_Grenade_shell",
-		"RB205_Compact_Energy_Pack","RB205_Compact_Energy_Pack","RB205_Compact_Energy_Pack","JLTS_stun_mag_long","JLTS_stun_mag_long",
-		"RB205_thermalDet","RB205_thermalDet","RB205_thermalDet",
-		"RB205_sonicDet","RB205_sonicDet",
-		"RB205_smokeWhite","RB205_smokeWhite"
+		ADD_INVENTORY_MAG,
+		ENUM_8("RB205_Experimental_Energy_Pack"),
+		ENUM_3("3AS_6Rnd_HE_Grenade_shell"),
+		ENUM_2("RB205_sonicDet")
 	};
 	respawnmagazines[] =
 	{
-		"RB205_Experimental_Energy_Pack","RB205_Experimental_Energy_Pack","RB205_Experimental_Energy_Pack","RB205_Experimental_Energy_Pack","RB205_Experimental_Energy_Pack","RB205_Experimental_Energy_Pack","RB205_Experimental_Energy_Pack","RB205_Experimental_Energy_Pack",
-		"3AS_6Rnd_HE_Grenade_shell","3AS_6Rnd_HE_Grenade_shell","3AS_6Rnd_HE_Grenade_shell",
-		"RB205_Compact_Energy_Pack","RB205_Compact_Energy_Pack","RB205_Compact_Energy_Pack","JLTS_stun_mag_long","JLTS_stun_mag_long",
-		"RB205_thermalDet","RB205_thermalDet","RB205_thermalDet",
-		"RB205_sonicDet","RB205_sonicDet",
-		"RB205_smokeWhite","RB205_smokeWhite"
+		ADD_INVENTORY_MAG,
+		ENUM_8("RB205_Experimental_Energy_Pack"),
+		ENUM_3("3AS_6Rnd_HE_Grenade_shell"),
+		ENUM_2("RB205_sonicDet")
 	};
 };
 

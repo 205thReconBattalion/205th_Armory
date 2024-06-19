@@ -18,7 +18,8 @@ class cfgPatches
 			"JLTS_jumppacks",
 			"SWLB_equipment_backpacks",
 			"A3_Characters_F_Heads",
-			"A3_Characters_F"
+			"A3_Characters_F",
+			"RB205_weapons"
 			//"LS_Armor" //by Last Force Project*/
 		};
 		requiredVersion = 1.0;
@@ -196,6 +197,34 @@ class cfgPatches
 
 			"RB205_clone_arc_trooper",
 
+			"RB205_clone_trooper_aa",
+			"RB205_clone_trooper_at",
+			"RB205_clone_trooper_eod",
+			"RB205_clone_trooper_grenadier",
+			"RB205_clone_trooper_heavy",
+			"RB205_clone_trooper_marksman",
+			"RB205_clone_trooper_medic",
+			"RB205_clone_trooper_rto",
+			
+			"RB205_clone_ab_trooper_eod",
+			"RB205_clone_ab_trooper_grenadier",
+			"RB205_clone_ab_trooper_heavy",
+			"RB205_clone_ab_trooper_marksman",
+			"RB205_clone_ab_trooper_medic",
+			"RB205_clone_ab_trooper_rto",
+
+			"RB205_clone_arf_trooper_medic",
+			"RB205_clone_arf_trooper_sniper",
+
+			"RB205_clone_snow_trooper_aa",
+			"RB205_clone_snow_trooper_at",
+			"RB205_clone_snow_trooper_eod",
+			"RB205_clone_snow_trooper_grenadier",
+			"RB205_clone_snow_trooper_heavy",
+			"RB205_clone_snow_trooper_marksman",
+			"RB205_clone_snow_trooper_medic",
+			"RB205_clone_snow_trooper_rto",
+
 			"RB205_B_heavy",
 			"RB205_B_medic",
 			"RB205_B_rocket",
@@ -271,5 +300,25 @@ class CfgEditorSubcategories
 	{
 		displayName = "35th Heavy Support Platoon";
 		ACCESS_TRUE
+	};
+	class RB205_cloneTrooper
+	{
+		displayName = "Clone Trooper";
+	};
+	class RB205_cloneAirborneTrooper
+	{
+		displayName = "Clone Airborne Trooper";
+	};
+	class RB205_cloneSnowTrooper
+	{
+		displayName = "Clone Snow Trooper";
+	};
+	class RB205_cloneArfTrooper
+	{
+		displayName = "Clone ARF Trooper";
+	};
+	class RB205_clonePilotTrooper
+	{
+		displayName = "Clone Pilot Trooper";
 	};
 };

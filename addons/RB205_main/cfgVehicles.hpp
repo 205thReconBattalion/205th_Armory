@@ -446,6 +446,487 @@ class RB205_clone_arc_trooper: RB205_arc_base
 };
 
 /*
+	UNITS (COMBAT ROLES)
+*/
+
+class RB205_clone_trooper_aa: RB205_clone_trooper
+{
+	ACCESS_TRUE
+	displayName = "Clone Trooper <AA>";
+	backpack = "RB205_B_rocket_predef_aa";
+	weapons[] =
+	{
+		"RB205_DC15S",
+		"RB205_PLX1_F",
+		"RB205_DC17_alt",
+		"RB205_binocular",
+		"Throw","Put"
+	};
+	respawnweapons[] =
+	{
+		"RB205_DC15S",
+		"RB205_PLX1_F",
+		"RB205_DC17_alt",
+		"RB205_binocular",
+		"Throw","Put"
+	};
+	magazines[] =
+	{
+		ADD_INVENTORY_MAG_RIFLEMAN,
+		"RB205_MK39_AA"
+	};
+	respawnmagazines[] =
+	{
+		ADD_INVENTORY_MAG_RIFLEMAN,
+		"RB205_MK39_AA"
+	};
+};
+class RB205_clone_trooper_at: RB205_clone_trooper
+{
+	ACCESS_TRUE
+	displayName = "Clone Trooper <AT>";
+	backpack = "RB205_B_rocket_predef_at";
+	weapons[] =
+	{
+		"RB205_DC15S",
+		"RB205_RPS6",
+		"RB205_DC17_alt",
+		"RB205_binocular",
+		"Throw","Put"
+	};
+	respawnweapons[] =
+	{
+		"RB205_DC15S",
+		"RB205_RPS6",
+		"RB205_DC17_alt",
+		"RB205_binocular",
+		"Throw","Put"
+	};
+	magazines[] =
+	{
+		ADD_INVENTORY_MAG_RIFLEMAN,
+		"RB205_MAG_RPS6"
+	};
+	respawnmagazines[] =
+	{
+		ADD_INVENTORY_MAG_RIFLEMAN,
+		"RB205_MAG_RPS6"
+	};
+};
+class RB205_clone_trooper_eod: RB205_clone_trooper
+{
+	ACCESS_TRUE
+	displayName = "Clone Trooper <EOD>";
+	backpack = "RB205_B_eod";
+};
+class RB205_clone_trooper_grenadier: RB205_clone_trooper
+{
+	ACCESS_TRUE
+	displayName = "Clone Trooper <Grenadier>";
+	LINKED_ITEMS("RB205_H_trooper","RB205_V_grenadier","RB205_NV_chip")
+	weapons[] =
+	{
+		"RB205_DC15A_GL",
+		"RB205_DC17_alt",,
+		"RB205_binocular",
+		"Throw","Put"
+	};
+	respawnweapons[] =
+	{
+		"RB205_DC15A_GL",
+		"RB205_DC17_alt",,
+		"RB205_binocular",
+		"Throw","Put"
+	};
+	magazines[] =
+	{
+		ADD_INVENTORY_MAG_GRENADIER
+	};
+	respawnmagazines[] =
+	{
+		ADD_INVENTORY_MAG_GRENADIER
+	};
+};
+class RB205_clone_trooper_heavy: RB205_clone_trooper
+{
+	ACCESS_TRUE
+	displayName = "Clone Trooper <Heavy>";
+	backpack = "RB205_B_heavy";
+	weapons[] =
+	{
+		"RB205_Z6",
+		"RB205_DC17_alt",,
+		"RB205_binocular",
+		"Throw","Put"
+	};
+	respawnweapons[] =
+	{
+		"RB205_Z6",
+		"RB205_DC17_alt",,
+		"RB205_binocular",
+		"Throw","Put"
+	};
+	magazines[] =
+	{
+		ADD_INVENTORY_MAG_HEAVY
+	};
+	respawnmagazines[] =
+	{
+		ADD_INVENTORY_MAG_HEAVY
+	};
+};
+class RB205_clone_trooper_marksman: RB205_clone_trooper
+{
+	ACCESS_TRUE
+	displayName = "Clone Trooper <Marksman>";
+	LINKED_ITEMS("RB205_H_trooper","RB205_V_ct","RB205_NV_marksman")
+	weapons[] =
+	{
+		"RB205_Valken38X",
+		"RB205_DC17_alt",,
+		"RB205_binocular",
+		"Throw","Put"
+	};
+	respawnweapons[] =
+	{
+		"RB205_Valken38X",
+		"RB205_DC17_alt",,
+		"RB205_binocular",
+		"Throw","Put"
+	};
+	magazines[] =
+	{
+		ADD_INVENTORY_MAG_MARKSMAN
+	};
+	respawnmagazines[] =
+	{
+		ADD_INVENTORY_MAG_MARKSMAN
+	};
+};
+class RB205_clone_trooper_medic: RB205_clone_trooper
+{
+	ACCESS_TRUE
+	displayName = "Clone Trooper <Medic>";
+	LINKED_ITEMS("RB205_H_trooper","RB205_V_medic","RB205_NV_chip")
+	backpack = "RB205_B_medic";
+};
+class RB205_clone_trooper_rto: RB205_clone_trooper
+{
+	ACCESS_TRUE
+	displayName = "Clone Trooper <RTO>";
+	backpack = "RB205_B_radio";
+};
+
+class RB205_clone_ab_trooper_eod: RB205_clone_ab_trooper
+{
+	ACCESS_TRUE
+	displayName = "Clone Airborne Trooper <EOD>";
+	backpack = "RB205_B_ab_eod";
+};
+class RB205_clone_ab_trooper_grenadier: RB205_clone_ab_trooper
+{
+	ACCESS_TRUE
+	displayName = "Clone Airborne Trooper <Grenadier>";
+	LINKED_ITEMS("RB205_H_ab_trooper","RB205_V_ab_grenadier","RB205_NV_chip")
+	weapons[] =
+	{
+		"RB205_DC15C_GL",
+		"RB205_DC17_alt",,
+		"RB205_binocular",
+		"Throw","Put"
+	};
+	respawnweapons[] =
+	{
+		"RB205_DC15C_GL",
+		"RB205_DC17_alt",,
+		"RB205_binocular",
+		"Throw","Put"
+	};
+	magazines[] =
+	{
+		ADD_INVENTORY_MAG_GRENADIER
+	};
+	respawnmagazines[] =
+	{
+		ADD_INVENTORY_MAG_GRENADIER
+	};
+};
+class RB205_clone_ab_trooper_heavy: RB205_clone_ab_trooper
+{
+	ACCESS_TRUE
+	displayName = "Clone Airborne Trooper <Heavy>";
+	backpack = "RB205_B_ab_heavy";
+	weapons[] =
+	{
+		"RB205_DC15L",
+		"RB205_DC17_alt",,
+		"RB205_binocular",
+		"Throw","Put"
+	};
+	respawnweapons[] =
+	{
+		"RB205_DC15L",
+		"RB205_DC17_alt",,
+		"RB205_binocular",
+		"Throw","Put"
+	};
+	magazines[] =
+	{
+		ADD_INVENTORY_MAG,
+		ENUM_8("RB205_Heavy_Energy_Pack")
+	};
+	respawnmagazines[] =
+	{
+		ADD_INVENTORY_MAG,
+		ENUM_8("RB205_Heavy_Energy_Pack")
+	};
+};
+class RB205_clone_ab_trooper_marksman: RB205_clone_ab_trooper
+{
+	ACCESS_TRUE
+	displayName = "Clone Airborne Trooper <Marksman>";
+	weapons[] =
+	{
+		"RB205_Valken38X",
+		"RB205_DC17_alt",,
+		"RB205_binocular",
+		"Throw","Put"
+	};
+	respawnweapons[] =
+	{
+		"RB205_Valken38X",
+		"RB205_DC17_alt",,
+		"RB205_binocular",
+		"Throw","Put"
+	};
+	magazines[] =
+	{
+		ADD_INVENTORY_MAG_MARKSMAN
+	};
+	respawnmagazines[] =
+	{
+		ADD_INVENTORY_MAG_MARKSMAN
+	};
+};
+class RB205_clone_ab_trooper_medic: RB205_clone_ab_trooper
+{
+	ACCESS_TRUE
+	displayName = "Clone Airborne Trooper <Medic>";
+	LINKED_ITEMS("RB205_H_ab_trooper","RB205_V_ab_medic","RB205_NV_chip")
+	backpack = "RB205_B_ab_medic";
+};
+class RB205_clone_ab_trooper_rto: RB205_clone_ab_trooper
+{
+	ACCESS_TRUE
+	displayName = "Clone Airborne Trooper <RTO>";
+	backpack = "RB205_B_ab_radio";
+};
+
+class RB205_clone_arf_trooper_medic: RB205_clone_arf_trooper
+{
+	ACCESS_TRUE
+	displayName = "Clone ARF Trooper <Medic>";
+	LINKED_ITEMS("RB205_H_arf_trooper","RB205_V_arf_medic","RB205_NV_arf_antenna")
+	backpack = "RB205_B_medic";
+};
+class RB205_clone_arf_trooper_sniper: RB205_clone_arf_trooper
+{
+	ACCESS_TRUE
+	displayName = "Clone ARF Trooper <Sniper>";
+	weapons[]=
+	{
+		"RB205_DC15X",
+		"RB205_DC17_alt",,
+		"RB205_binocular_arf",
+		"Throw","Put"
+	};
+	respawnweapons[]=
+	{
+		"RB205_DC15X",
+		"RB205_DC17_alt",,
+		"RB205_binocular_arf",
+		"Throw","Put"
+	};
+	magazines[]=
+	{
+		ADD_INVENTORY_MAG,
+		ENUM_8("RB205_Overcharged_Energy_Pack")
+	};
+	respawnmagazines[]=
+	{
+		ADD_INVENTORY_MAG,
+		ENUM_8("RB205_Overcharged_Energy_Pack")
+	};
+};
+
+class RB205_clone_snow_trooper_aa: RB205_clone_snow_trooper
+{
+	ACCESS_TRUE
+	displayName = "Clone Snow Trooper <AA>";
+	backpack = "RB205_B_snow_rocket_predef_aa";
+	weapons[] =
+	{
+		"RB205_DC15A",
+		"RB205_PLX1_F",
+		"RB205_DC17_alt",
+		"RB205_binocular",
+		"Throw","Put"
+	};
+	respawnweapons[] =
+	{
+		"RB205_DC15A",
+		"RB205_PLX1_F",
+		"RB205_DC17_alt",
+		"RB205_binocular",
+		"Throw","Put"
+	};
+	magazines[] =
+	{
+		ADD_INVENTORY_MAG_RIFLEMAN,
+		"RB205_MK39_AA"
+	};
+	respawnmagazines[] =
+	{
+		ADD_INVENTORY_MAG_RIFLEMAN,
+		"RB205_MK39_AA"
+	};
+};
+class RB205_clone_snow_trooper_at: RB205_clone_snow_trooper
+{
+	ACCESS_TRUE
+	displayName = "Clone Snow Trooper <AT>";
+	backpack = "RB205_B_snow_rocket_predef_at";
+	weapons[] =
+	{
+		"RB205_DC15A",
+		"RB205_RPS6",
+		"RB205_DC17_alt",
+		"RB205_binocular",
+		"Throw","Put"
+	};
+	respawnweapons[] =
+	{
+		"RB205_DC15A",
+		"RB205_RPS6",
+		"RB205_DC17_alt",
+		"RB205_binocular",
+		"Throw","Put"
+	};
+	magazines[] =
+	{
+		ADD_INVENTORY_MAG_RIFLEMAN,
+		"RB205_MAG_RPS6"
+	};
+	respawnmagazines[] =
+	{
+		ADD_INVENTORY_MAG_RIFLEMAN,
+		"RB205_MAG_RPS6"
+	};
+};
+class RB205_clone_snow_trooper_eod: RB205_clone_snow_trooper
+{
+	ACCESS_TRUE
+	displayName = "Clone Snow Trooper <EOD>";
+	backpack = "RB205_B_snow_eod";
+};
+class RB205_clone_snow_trooper_grenadier: RB205_clone_snow_trooper
+{
+	ACCESS_TRUE
+	displayName = "Clone Snow Trooper <Grenadier>";
+	LINKED_ITEMS("RB205_H_snow_trooper","RB205_V_snow_grenadier","RB205_NV_chip")
+	weapons[] =
+	{
+		"RB205_DC15A_GL",
+		"RB205_DC17_alt",,
+		"RB205_binocular",
+		"Throw","Put"
+	};
+	respawnweapons[] =
+	{
+		"RB205_DC15A_GL",
+		"RB205_DC17_alt",,
+		"RB205_binocular",
+		"Throw","Put"
+	};
+	magazines[] =
+	{
+		ADD_INVENTORY_MAG_GRENADIER
+	};
+	respawnmagazines[] =
+	{
+		ADD_INVENTORY_MAG_GRENADIER
+	};
+};
+class RB205_clone_snow_trooper_heavy: RB205_clone_snow_trooper
+{
+	ACCESS_TRUE
+	displayName = "Clone Snow Trooper <Heavy>";
+	backpack = "RB205_B_snow_heavy";
+	weapons[] =
+	{
+		"RB205_Z6",
+		"RB205_DC17_alt",,
+		"RB205_binocular",
+		"Throw","Put"
+	};
+	respawnweapons[] =
+	{
+		"RB205_Z6",
+		"RB205_DC17_alt",,
+		"RB205_binocular",
+		"Throw","Put"
+	};
+	magazines[] =
+	{
+		ADD_INVENTORY_MAG_HEAVY
+	};
+	respawnmagazines[] =
+	{
+		ADD_INVENTORY_MAG_HEAVY
+	};
+};
+class RB205_clone_snow_trooper_marksman: RB205_clone_snow_trooper
+{
+	ACCESS_TRUE
+	displayName = "Clone Snow Trooper <Marksman>";
+	weapons[] =
+	{
+		"RB205_Valken38X",
+		"RB205_DC17_alt",,
+		"RB205_binocular",
+		"Throw","Put"
+	};
+	respawnweapons[] =
+	{
+		"RB205_Valken38X",
+		"RB205_DC17_alt",,
+		"RB205_binocular",
+		"Throw","Put"
+	};
+	magazines[] =
+	{
+		ADD_INVENTORY_MAG_MARKSMAN
+	};
+	respawnmagazines[] =
+	{
+		ADD_INVENTORY_MAG_MARKSMAN
+	};
+};
+class RB205_clone_snow_trooper_medic: RB205_clone_snow_trooper
+{
+	ACCESS_TRUE
+	displayName = "Clone Snow Trooper <Medic>";
+	LINKED_ITEMS("RB205_H_snow_trooper","RB205_V_snow_medic","RB205_NV_chip")
+	backpack = "RB205_B_snow_medic";
+};
+class RB205_clone_snow_trooper_rto: RB205_clone_snow_trooper
+{
+	ACCESS_TRUE
+	displayName = "Clone Snow Trooper <RTO>";
+	backpack = "RB205_B_snow_radio";
+};
+
+/*
 	BACKPACKS
 */
 
@@ -713,5 +1194,61 @@ class RB205_B_arc_jetpack: RB205_B_ab_base
 	hiddenSelectionsTextures[] =
 	{
 		"RB205_main\data\airborne\B_ab_jetpack_co.paa"
+	};
+};
+
+/*
+	BACKPACKS (PRE-DEFINED / FILLED)
+*/
+
+#define HIDE_BACKPACK_PREDEF \
+	scope = 1; \
+	scopeArsenal = 0;
+
+class RB205_B_rocket_predef_aa: RB205_B_rocket
+{
+	HIDE_BACKPACK_PREDEF
+	class TransportMagazines
+	{
+		MAG_XX(RB205_MK39_AA, 4);
+	};
+};
+class RB205_B_rocket_predef_at: RB205_B_rocket
+{
+	HIDE_BACKPACK_PREDEF
+	class TransportMagazines
+	{
+		MAG_XX(RB205_MAG_RPS6, 4);
+	};
+};
+class RB205_B_ab_rocket_predef_aa: RB205_B_ab_rocket
+{
+	HIDE_BACKPACK_PREDEF
+	class TransportMagazines
+	{
+		MAG_XX(RB205_MK39_AA, 4);
+	};
+};
+class RB205_B_ab_rocket_predef_at: RB205_B_ab_rocket
+{
+	HIDE_BACKPACK_PREDEF
+	class TransportMagazines
+	{
+		MAG_XX(RB205_MAG_RPS6, 4);
+	};
+};class RB205_B_snow_rocket_predef_aa: RB205_B_snow_rocket
+{
+	HIDE_BACKPACK_PREDEF
+	class TransportMagazines
+	{
+		MAG_XX(RB205_MK39_AA, 4);
+	};
+};
+class RB205_B_snow_rocket_predef_at: RB205_B_snow_rocket
+{
+	HIDE_BACKPACK_PREDEF
+	class TransportMagazines
+	{
+		MAG_XX(RB205_MAG_RPS6, 4);
 	};
 };
