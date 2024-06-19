@@ -9,6 +9,7 @@ class cfgPatches
             "A3_Weapons_F_Ammoboxes"
         };
 		requiredVersion = 1.0;
+        author = "205th Recon Battalion";
         weapons[] =
 		{
             "RB205_helmet_base",

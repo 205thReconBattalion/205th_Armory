@@ -7,7 +7,6 @@ class cfgPatches
 			"3AS_Weapons",
 			"JLTS_weapons_Z6",
 			"JLTS_weapons_DP23",
-
 			"CBA_Extended_EventHandlers",
 			"CBA_MAIN"
 		};
