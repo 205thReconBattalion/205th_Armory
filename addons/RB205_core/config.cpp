@@ -24,8 +24,6 @@ class cfgPatches
 	};
 };
 
-//#include "\RB205_core\macros.hpp"
-//#include "\RB205_core\macros_extArsenal.hpp"
 #include "macros.hpp"
 
 class cfgWeapons
@@ -220,11 +218,13 @@ class cfgVehicles
         ACCESS_FALSE
         author = AUTHOR;
         picture = LOGO;
-        //icon = "iconMan";
+        //Combat Role:
+        icon = "iconMan";
         identityTypes[] = {"LanguageENG_F","WhiteHead_01"};
-        //engineer = "false";
-        //canDeactivateMines = "false";
-        //camouflage = 1.4;
+        engineer = "false";
+        canDeactivateMines = "false";
+        camouflage = CAMOUFLAGE_DEFAULT;
+        //Armor Values:
         armor = 2;
         armorStructural = 4;
         explosionShielding = 0.40000001;
@@ -408,8 +408,8 @@ class cfgVehicles
         ACCESS_FALSE
         author = AUTHOR;
         picture = LOGO;
-        descriptionShort = "";
 		model = "\RB205_core\data\B_invisible.p3d";
+        descriptionShort = "";
 	    maximumLoad = 0;
 		mass = 0;
     };

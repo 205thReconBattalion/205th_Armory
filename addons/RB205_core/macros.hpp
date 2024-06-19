@@ -13,19 +13,22 @@
 
 
 /* MASS / WEIGHT */
-#define MASS_HELMET 	20
+#define MASS_HELMET 		20
 
-#define MASS_UNIFORM 	150
+#define MASS_UNIFORM 		150
 
-#define MASS_VEST		10
-#define MASS_VEST_NCO	20
-#define MASS_VEST_CO	40
+#define MASS_VEST			10
+#define MASS_VEST_NCO		20
+#define MASS_VEST_CO		40
 
-#define MASS_NVG		5
+#define MASS_NVG			5
+
+#define MASS_BACKPACK		50
+#define MASS_BACKPACK_SMALL	10
 
 
 /* INVENOTRY SPACE */
-#define INV_UNIFORM 	"Supply80"
+#define INV_UNIFORM 		"Supply80"
 
 #define INV_VEST 			"Supply200"
 #define INV_VEST_NCO 		"Supply250"
@@ -40,22 +43,24 @@
 #define INV_BACK_ROCKET	200
 #define INV_BACK_EOD	150
 #define INV_BACK_RADIO	50
-#define INV_BACK_ARF	200
-#define INV_BACK_ARC	300
-
-
-/* NIGHTVISION / THERMAL */
-//#define VISION_MODE { "Normal", "NVG" }
-//#define VISION_MODE_SCOUT { "Normal", "NVG", "TI" }
-
-#define MODEL_OPTICS				"\MRC\JLTS\Core_mod\nvg_optic_dummy.p3d"
-#define MODEL_OPTICS_NV_VISOR 		"\MRC\JLTS\characters\CloneArmor\CloneNVG_regular_optic.p3d"
-#define MODEL_OPTICS_RANGEFINDER 	"\MRC\JLTS\characters\CloneArmor\CloneNVGRange_optic.p3d"
+#define INV_BACK_SCOUT	200
+#define INV_BACK_SOF	300
 
 
 /* ACE */
 #define ACE_HEARING_VOLUME 			0.1
 #define ACE_HEARING_VOLUME_LOWERED 	0.6
+
+
+/* NIGHTVISION / THERMAL */
+#define MODEL_OPTICS				"\MRC\JLTS\Core_mod\nvg_optic_dummy.p3d"
+#define MODEL_OPTICS_NV_VISOR 		"\MRC\JLTS\characters\CloneArmor\CloneNVG_regular_optic.p3d"
+#define MODEL_OPTICS_RANGEFINDER 	"\MRC\JLTS\characters\CloneArmor\CloneNVGRange_optic.p3d"
+
+
+/* CAMOUFLAGE VALUES */
+#define CAMOUFLAGE_DEFAULT 1.4
+#define CAMOUFLAGE_SCOUT 0.4
 
 
 /* TASK FORCE ARROWHEAD RADIO (TFAR) */
