@@ -27,8 +27,6 @@ class cfgPatches
 
 class cfgWeapons
 {
-    class ItemInfo;
-
     class RB205_H_lieutenant;
 	class RB205_H_doc: RB205_H_lieutenant
 	{
@@ -87,7 +85,11 @@ class cfgWeapons
         };
 	};
 
-    class RB205_U_cpt_base;
+    class RB205_U_base;
+    class RB205_U_cpt_base: RB205_U_base
+    {
+        class ItemInfo;
+    };
     class RB205_U_doc: RB205_U_cpt_base
     {
         ACCESS_TRUE
@@ -106,8 +108,11 @@ class cfgWeapons
             squad = "default";
         };
     };
-
-    class RB205_V_platoonLead_base;
+    class RB205_vest_co_base;
+    class RB205_V_platoonLead_base: RB205_vest_co_base
+    {
+        class ItemInfo;
+    };
     class RB205_V_doc: RB205_V_platoonLead_base
     {
         ACCESS_TRUE
@@ -146,9 +151,10 @@ class cfgWeapons
 
 class cfgVehicles
 {
-    class RB205_clone_lieutenant;
-    class RB205_clone_doc: RB205_clone_lieutenant
+    class RB205_clone_captain;
+    class RB205_clone_doc: RB205_clone_captain
     {
+        ACCESS_TRUE
         displayName = "CO-7005 Doc";
         uniformclass = "RB205_U_doc";
         model = "ls_armor_bluefor\uniform\gar\marshalCommander\ls_gar_marshalCommander_uniform.p3d";
@@ -165,8 +171,8 @@ class cfgVehicles
             "RB205_custom\7005_doc\data\U_doc_lower.paa",
             "RB205_main\data\default\U_undersuit_co.paa"
         };
-        LINKED_ITEMS(RB205_H_doc,"RB205_V_doc","RB205_NV_chip")
-        identityTypes[]={"LanguageENG_F","SWLB_JH_Head_Hair","RB205_VIS_doc"};
+        LINKED_ITEMS("RB205_H_doc","RB205_V_doc","RB205_NV_chip")
+        identityTypes[] = IDENTITY_TYPES_GLASSES("RB205_VIS_doc");
     };
 };
 

@@ -41,8 +41,11 @@ class cfgWeapons
         };
     };
 
-    class RB205_U_corporal;
-    class ItemInfo;
+    class RB205_U_base;
+    class RB205_U_corporal: RB205_U_base
+    {
+        class ItemInfo;
+    };
     class RB205_U_shadow : RB205_U_corporal
     {
         displayName = "[205] Clone Trooper Armor [1312]";
@@ -73,6 +76,6 @@ class cfgVehicles
             "RB205_custom\1312_shadow\data\U_shadow_lower.paa",
             "RB205_main\data\default\U_undersuit_co.paa"
         };
-        LINKED_ITEMS(RB205_H_shadow, "RB205_V_ab_clc", "RB205_NV_chip")
+        LINKED_ITEMS("RB205_H_shadow", "RB205_V_ab_clc", "RB205_NV_chip")
     };
 };

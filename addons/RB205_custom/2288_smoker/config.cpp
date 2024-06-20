@@ -60,8 +60,11 @@ class cfgWeapons
         };
     };
  
-    class RB205_U_arc_trooper; 
-    class ItemInfo; 
+    class RB205_U_base;
+    class RB205_U_arc_trooper: RB205_U_base
+    {
+        class ItemInfo;
+    };
     class RB205_U_smoker : RB205_U_arc_trooper 
     { 
         displayName = "[205] Clone ARC Trooper Armor [2288]"; 
@@ -110,6 +113,6 @@ class cfgVehicles
             "RB205_main\data\default\U_undersuit_co.paa" 
         }; 
         LINKED_ITEMS("RB205_H_smoker", "RB205_V_smoker", "RB205_NV_rangefinder") 
-        backpack = "RB205_B_arc_jetpack"; 
+        backpack = "RB205_B_arc_jetpack";
     }; 
 };

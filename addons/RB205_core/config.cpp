@@ -21,7 +21,8 @@ class cfgPatches
         };
         units[] =
 		{
-            "RB205_unit_base"
+            "RB205_unit_base",
+            "RB205_backpack_base"
         };
 	};
 };
@@ -166,24 +167,6 @@ class cfgWeapons
                 };
             };
         };
-    };
-    class RB205_vest_medic_base: RB205_vest_base
-    {
-        ACCESS_FALSE
-        class ItemInfo: ItemInfo
-        {
-            containerClass = "Supply250";
-        };
-        //TODO: entfernen
-    };
-    class RB205_vest_grenadier_base: RB205_vest_base
-    {
-        ACCESS_FALSE
-        class ItemInfo: ItemInfo
-        {
-            containerClass = "Supply250";
-        };
-        //TODO: entfernen
     };
 
     class NVGoggles;
@@ -413,50 +396,5 @@ class cfgVehicles
         descriptionShort = "";
 	    maximumLoad = 0;
 		mass = 0;
-    };
-    class RB205_backpack_heavy_base: RB205_backpack_base
-    {
-        ACCESS_FALSE
-        maximumLoad = 150;
-        //TODO: entfernen
-    };
-    class RB205_backpack_medic_base: RB205_backpack_base
-    {
-        ACCESS_FALSE
-        maximumLoad = 250;
-        //TODO: entfernen
-    };
-    class RB205_backpack_rocket_base: RB205_backpack_base
-    {
-        ACCESS_FALSE
-        maximumLoad = 200;
-        //TODO: entfernen
-    };
-    class RB205_backpack_eod_base: RB205_backpack_base
-    {
-        ACCESS_FALSE
-        maximumLoad = 150;
-        //TODO: entfernen
-    };
-    class RB205_backpack_radio_base: RB205_backpack_base
-    {
-        ACCESS_FALSE
-        maximumLoad = 50;
-        TFAR_RADIO
-        //TODO: entfernen
-    };
-    class RB205_backpack_scout_base: RB205_backpack_base
-    {
-        ACCESS_FALSE
-        maximumLoad = 200;
-        TFAR_RADIO_SMALL
-        //TODO: entfernen
-    };
-    class RB205_backpack_sof_base: RB205_backpack_base
-    {
-        ACCESS_FALSE
-        maximumLoad = 300;
-        TFAR_RADIO_SMALL
-        //TODO: entfernen
     };
 };

@@ -11,7 +11,8 @@ class cfgPatches
         weapons[] =
         {
             "RB205_H_putzi",
-            "RB205_U_putzi"
+            "RB205_U_putzi",
+            "RB205_V_putzi"
         };
         units[] =
         {
@@ -41,9 +42,12 @@ class cfgWeapons
         };
     };
 
-    class RB205_U_trooper;
-    class ItemInfo;
-    class RB205_U_putzi : RB205_U_trooper
+    class RB205_U_sgt_base;
+    class RB205_U_sergeant: RB205_U_sgt_base
+    {
+        class ItemInfo;
+    };
+    class RB205_U_putzi : RB205_U_sergeant
     {
         displayName = "[205] Clone Trooper Armor [5283]";
         class ItemInfo : ItemInfo
@@ -57,6 +61,18 @@ class cfgWeapons
             var = "dft";
         };
     };
+
+    class RB205_V_ab_cs;
+    class RB205_V_putzi: RB205_V_ab_cs
+    {
+        displayName = "[205] Clone Airborne Trooper Vest (Sergeant)";
+        hiddenSelectionsTextures[] =
+        {
+            "RB205_main\data\airborne\V_ab_accessories_co.paa",
+            "RB205_main\data\airborne\V_ab_cs_co.paa",
+            "RB205_main\data\airborne\V_ab_accessories_co.paa"
+        };
+    };
 };
 
 class cfgVehicles
@@ -64,7 +80,7 @@ class cfgVehicles
     class RB205_clone_ab_trooper;
     class RB205_clone_putzi : RB205_clone_ab_trooper
     {
-        displayName = "CSP-5283 Putzi";
+        displayName = "CS-5283 Putzi";
         uniformclass = "RB205_U_putzi";
         editorSubCategory = "RB205_lore";
         hiddenselectionsTextures[] =
@@ -73,6 +89,6 @@ class cfgVehicles
             "RB205_custom\5283_putzi\data\U_putzi_lower.paa",
             "RB205_main\data\default\U_undersuit_co.paa"
         };
-        LINKED_ITEMS(RB205_H_putzi, "RB205_V_ab_ct", "RB205_NV_chip")
+        LINKED_ITEMS("RB205_H_putzi", "RB205_V_putzi", "RB205_NV_chip")
     };
 };

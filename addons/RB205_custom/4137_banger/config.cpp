@@ -41,8 +41,11 @@ class cfgWeapons
         };
     };
 
-    class RB205_U_trooper;
-    class ItemInfo;
+    class RB205_U_base;
+    class RB205_U_trooper: RB205_U_base
+    {
+        class ItemInfo;
+    };
     class RB205_U_banger: RB205_U_trooper
     {
         displayName = "[205] Clone Trooper Armor [4137]";

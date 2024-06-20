@@ -41,8 +41,11 @@ class cfgWeapons
         };
     };
 
-    class RB205_U_trooper;
-    class ItemInfo;
+    class RB205_U_base;
+    class RB205_U_trooper: RB205_U_base
+    {
+        class ItemInfo;
+    };
     class RB205_U_ark : RB205_U_trooper
     {
         displayName = "[205] Clone Trooper Armor [3040]";
@@ -73,6 +76,6 @@ class cfgVehicles
             "RB205_custom\3040_ark\data\U_ark_lower.paa",
             "RB205_main\data\default\U_undersuit_co.paa"
         };
-        LINKED_ITEMS(RB205_H_ark, "RB205_V_ct", "RB205_NV_chip")
+        LINKED_ITEMS("RB205_H_ark", "RB205_V_ct", "RB205_NV_chip")
     };
 };

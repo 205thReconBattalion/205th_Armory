@@ -90,6 +90,24 @@ class RB205_clone_lieutenant: RB205_clone_base
 	identityTypes[] = IDENTITY_TYPES_GLASSES("RB205_VIS");
 	backpack="RB205_B_radio_mini";
 };
+class RB205_clone_captain: RB205_clone_base
+{
+	ACCESS_FALSE
+	displayName = "(8-CO) Clone Captain";
+	uniformclass = "RB205_U_lieutenant";
+	LINKED_ITEMS("RB205_H_lieutenant","RB205_V_cl","RB205_NV_chip")
+	identityTypes[] = IDENTITY_TYPES_GLASSES("RB205_VIS");
+	backpack="RB205_B_radio_mini";
+};
+class RB205_clone_commander: RB205_clone_base
+{
+	ACCESS_FALSE
+	displayName = "(9-CC) Clone Commander";
+	uniformclass = "RB205_U_lieutenant";
+	LINKED_ITEMS("RB205_H_lieutenant","RB205_V_cl","RB205_NV_chip")
+	identityTypes[] = IDENTITY_TYPES_GLASSES("RB205_VIS");
+	backpack="RB205_B_radio_mini";
+};
 
 class RB205_clone_ab_recruit: RB205_ab_base
 {

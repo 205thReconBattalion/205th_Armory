@@ -41,8 +41,11 @@ class cfgWeapons
         };
     };
 
-    class RB205_U_plt_trooper;
-    class ItemInfo;
+    class RB205_U_base;
+    class RB205_U_plt_trooper: RB205_U_base
+    {
+        class ItemInfo;
+    };
     class RB205_U_paso: RB205_U_plt_trooper
     {
         displayName = "[205] Clone Pilot Trooper Armor [3234]";

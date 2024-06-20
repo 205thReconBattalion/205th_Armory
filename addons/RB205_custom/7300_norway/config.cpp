@@ -41,8 +41,11 @@ class cfgWeapons
         };
     };
 
-    class RB205_U_corporal;
-    class ItemInfo;
+    class RB205_U_base;
+    class RB205_U_corporal: RB205_U_base
+    {
+        class ItemInfo;
+    };
     class RB205_U_norway : RB205_U_corporal
     {
         displayName = "[205] Clone Trooper Armor [7300]";
@@ -73,6 +76,6 @@ class cfgVehicles
             "RB205_custom\7300_norway\data\U_norway_lower.paa",
             "RB205_main\data\default\U_undersuit_co.paa"
         };
-        LINKED_ITEMS(RB205_H_norway, "RB205_V_ab_cp", "RB205_NV_chip")
+        LINKED_ITEMS("RB205_H_norway", "RB205_V_ab_cp", "RB205_NV_chip")
     };
 };

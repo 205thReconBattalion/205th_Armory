@@ -523,11 +523,9 @@ class CfgEditorSubcategories
 	class RB205_lore
 	{
 		displayName = "Lore Clones";
-		ACCESS_TRUE
 	};
 	class RB205_squadVariants
 	{
 		displayName = "Squad-specific Armor";
-		ACCESS_TRUE
 	};
 };

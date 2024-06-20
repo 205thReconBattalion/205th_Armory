@@ -42,8 +42,11 @@ class cfgWeapons
         };
     };
 
-    class RB205_U_arf_sergeant;
-    class ItemInfo;
+    class RB205_U_sgt_base;
+    class RB205_U_arf_sergeant: RB205_U_sgt_base
+    {
+        class ItemInfo;
+    };
     class RB205_U_jumper: RB205_U_arf_sergeant
     {
         displayName = "[205] Clone ARF Trooper Armor [7565]";

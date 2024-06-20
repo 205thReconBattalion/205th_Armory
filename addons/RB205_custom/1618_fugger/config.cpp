@@ -73,6 +73,6 @@ class cfgVehicles
             "RB205_custom\1618_fugger\data\U_fugger_lower.paa",
             "RB205_main\data\default\U_undersuit_co.paa"
         };
-        LINKED_ITEMS(RB205_H_fugger, "RB205_V_ab_ct", "RB205_NV_chip")
+        LINKED_ITEMS("RB205_H_fugger", "RB205_V_ab_ct", "RB205_NV_chip")
     };
 };

@@ -42,8 +42,11 @@ class cfgWeapons
         };
 	};
 
-    class RB205_U_plt_sergeant;
-    class ItemInfo;
+    class RB205_U_sgt_base;
+    class RB205_U_plt_sergeant: RB205_U_sgt_base
+    {
+        class ItemInfo;
+    };
     class RB205_U_lucky: RB205_U_plt_sergeant
     {
         displayName = "[205] Clone Trooper Armor [2058]";
@@ -91,7 +94,7 @@ class cfgVehicles
             "RB205_custom\2058_lucky\data\U_lucky_lower.paa",
             "RB205_main\data\default\U_undersuit_co.paa"
         };
-        LINKED_ITEMS(RB205_H_lucky,"RB205_V_lucky","RB205_NV_chip")
-	    identityTypes[] = {"LanguageENG_F","SWLB_JH_Head_Hair"};
+        LINKED_ITEMS("RB205_H_lucky","RB205_V_lucky","RB205_NV_chip")
+	    identityTypes[] = IDENTITY_TYPES;
     };
 };

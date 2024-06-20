@@ -41,8 +41,11 @@ class cfgWeapons
         };
     };
 
-    class RB205_U_plt_corporal;
-    class ItemInfo;
+    class RB205_U_base;
+    class RB205_U_plt_corporal: RB205_U_base
+    {
+        class ItemInfo;
+    };
     class RB205_U_sixes: RB205_U_plt_corporal
     {
         displayName = "[205] Clone Pilot Trooper Armor [6666]";
@@ -74,6 +77,6 @@ class cfgVehicles
             "RB205_main\data\default\U_undersuit_co.paa"
         };
         LINKED_ITEMS("RB205_H_sixes","RB205_V_plt_cp","RB205_NV_chip")
-	    identityTypes[] = {"LanguageENG_F","SWLB_JH_Head_Hair"};
+	    identityTypes[] = IDENTITY_TYPES;
     };
 };

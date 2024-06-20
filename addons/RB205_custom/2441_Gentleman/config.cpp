@@ -42,8 +42,11 @@ class cfgWeapons
         };
     };
 
-    class RB205_U_arc_trooper;
-    class ItemInfo;
+    class RB205_U_base;
+    class RB205_U_arc_trooper: RB205_U_base
+    {
+        class ItemInfo;
+    };
     class RB205_U_gentleman : RB205_U_arc_trooper
     {
         displayName = "[205] Clone ARC Trooper Armor [2441]";

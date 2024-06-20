@@ -41,8 +41,11 @@ class cfgWeapons
         };
     };
 
-    class RB205_U_trooper;
-    class ItemInfo;
+    class RB205_U_base;
+    class RB205_U_trooper: RB205_U_base
+    {
+        class ItemInfo;
+    };
     class RB205_U_firefly : RB205_U_trooper
     {
         displayName = "[205] Clone Trooper Armor [4040]";
@@ -73,6 +76,6 @@ class cfgVehicles
             "RB205_custom\4040_firefly\data\U_firefly_lower.paa",
             "RB205_main\data\default\U_undersuit_co.paa"
         };
-        LINKED_ITEMS(RB205_H_firefly, "RB205_V_ab_ct", "RB205_NV_chip")
+        LINKED_ITEMS("RB205_H_firefly", "RB205_V_ab_ct", "RB205_NV_chip")
     };
 };

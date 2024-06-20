@@ -323,7 +323,22 @@ class RB205_V_platoonLead_base: RB205_vest_co_base
 class RB205_V_commander_base: RB205_V_platoonLead_base
 {
 	ACCESS_FALSE
-	//TODO: V_companyLead ???
+	model = "\SWLB_clones\SWLB_clone_commander_armor.p3d";
+	hiddenSelections[] =
+	{
+		"camo1",
+		"rank"
+	};
+	hiddenSelectionsMaterials[]=
+	{
+		"RB205_main\data\materials\officer_acc.rvmat",
+		"RB205_main\data\materials\rank.rvmat"
+	};
+	class ItemInfo: ItemInfo
+	{
+		uniformModel = "\SWLB_clones\SWLB_clone_commander_armor.p3d";
+		hiddenSelections[] = {"camo1","rank"};
+	};
 };
 
 class RB205_V_ab_base: RB205_V_base

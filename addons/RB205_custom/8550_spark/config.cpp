@@ -29,8 +29,6 @@ class cfgPatches
 
 class cfgWeapons
 {
-    class ItemInfo;
-
     class RB205_H_lieutenant;
     class RB205_H_spark: RB205_H_lieutenant
     {
@@ -71,7 +69,11 @@ class cfgWeapons
         };
     };
 
-    class RB205_U_com_base;
+    class RB205_U_base;
+    class RB205_U_com_base: RB205_U_base
+    {
+        class ItemInfo;
+    };
     class RB205_U_spark: RB205_U_com_base
     {
         ACCESS_TRUE
@@ -96,22 +98,10 @@ class cfgWeapons
     {
         ACCESS_TRUE
         displayName = "[205] Clone Commander Vest [8550]";
-        model = "\SWLB_clones\SWLB_clone_commander_armor.p3d";
-        hiddenSelections[] = {"camo1","rank"};
-        hiddenSelectionsMaterials[]=
-        {
-            "RB205_main\data\materials\officer_acc.rvmat",
-            "RB205_main\data\materials\rank.rvmat"
-        };
         hiddenSelectionsTextures[] =
         {
             "RB205_custom\8550_spark\data\V_spark.paa",
             "RB205_custom\8550_spark\data\V_spark_rank.paa"
-        };
-        class ItemInfo: ItemInfo
-        {
-            uniformModel = "\SWLB_clones\SWLB_clone_commander_armor.p3d";
-            hiddenSelections[] = {"camo1","rank"};
         };
         class XtdGearInfo
         {
@@ -126,16 +116,12 @@ class cfgWeapons
 
 class cfgVehicles
 {
-    class B_Kitbag_rgr;
-    class RB205_B_spark: B_Kitbag_rgr
+    class RB205_backpack_base;
+    class RB205_B_spark: RB205_backpack_base
     {
         ACCESS_TRUE
         displayName = "[205] Clone Commander Radio Transmitter [8550]";
-        author = "205th Recon Battalion";
         picture = "\RB205_custom\8550_spark\data\ui\icon_B_spark.paa";
-		model = "\RB205_custom\8550_spark\data\B_spark_invisible.p3d";
-		maximumLoad = 0;
-		mass = 0;
 		TFAR_RADIO_SMALL
         class XtdGearInfo
         {
@@ -147,9 +133,7 @@ class cfgVehicles
     class RB205_B_arc_jetpack;
     class RB205_B_spark_jetpack: RB205_B_arc_jetpack
     {
-        ACCESS_TRUE
         displayName = "[205] Clone Commander Jetpack [8550]";
-        author = "205th Recon Battalion";
         picture = "\RB205_custom\8550_spark\data\ui\icon_B_spark_jetpack.paa";
         model = "\MRC\JLTS\characters\CloneArmor\CloneJumppackMC.p3d";
         hiddenSelections[] =
@@ -171,9 +155,10 @@ class cfgVehicles
         };
     };
 
-    class RB205_clone_lieutenant;
-    class RB205_clone_spark: RB205_clone_lieutenant
+    class RB205_clone_commander;
+    class RB205_clone_spark: RB205_clone_commander
     {
+        ACCESS_TRUE
         displayName = "CC-8550 Spark";
         uniformclass = "RB205_U_spark";
         editorSubCategory = "RB205_lore";
@@ -183,9 +168,10 @@ class cfgVehicles
             "RB205_custom\8550_spark\data\U_spark_lower.paa",
             "RB205_main\data\default\U_undersuit_co.paa"
         };
-        LINKED_ITEMS(RB205_H_spark,"RB205_V_spark","RB205_NV_chip")
+        LINKED_ITEMS("RB205_H_spark","RB205_V_spark","RB205_NV_chip")
         backpack = "RB205_B_spark_jetpack";
-        identityTypes[]={"LanguageENG_F","SWLB_JH_Head_Hair","RB205_VIS_spark"};
+        identityTypes[] = IDENTITY_TYPES_GLASSES("RB205_VIS_spark");
+        
     };
 };
 
