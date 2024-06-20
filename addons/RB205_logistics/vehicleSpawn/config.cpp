@@ -6,8 +6,9 @@ class CfgPatches
 		{
 			"RB205_vehicles_barc",
 			"RB205_vehicles_atrt",
-			"3AS_LAAT",
-			"3AS_ATTE",
+			"RB205_vehicles_laat",
+			"RB205_vehicles_laat_c",
+			"RB205_vehicles_atte",
 			"ace_interact_menu"
 		};
 		author = "205th Recon Battalion"
