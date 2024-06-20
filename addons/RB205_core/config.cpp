@@ -197,7 +197,11 @@ class cfgWeapons
 
 class cfgVehicles
 {
-    class B_Soldier_base_F;
+    class SoldierWB;
+    class B_Soldier_base_F: SoldierWB
+    {
+        class HitPoints;
+    };
     class RB205_unit_base: B_Soldier_base_F
     {
         ACCESS_FALSE
@@ -215,7 +219,7 @@ class cfgVehicles
         explosionShielding = 0.40000001;
         minTotalDamageThreshold = 0.001;
         impactDamageMultiplier = 0.5;
-        class HitPoints
+        class HitPoints: HitPoints
         {
             class HitFace
             {
