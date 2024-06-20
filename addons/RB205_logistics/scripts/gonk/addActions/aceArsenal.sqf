@@ -126,6 +126,8 @@ params ["_this"];
 		"RB205_B_emp_scout","RB205_B_emp_plt","RB205_B_emp_death",
 
 		"RB205_emp_N_death",
+
+		"RB205_emp_binocular","RB205_emp_binocular_scout",
 		
 		//MEDICAL
 		"ACE_fieldDressing","ACE_packingBandage","ACE_elasticBandage","ACE_quikclot",
