@@ -5,7 +5,8 @@ class cfgPatches
 		requiredAddons[]=
 		{
 			"RB205_core",
-            "JMSLLTE_empire_helm_mod"
+            "JMSLLTE_empire_helm_mod",
+			"RB205_weapons"
 		};
         skipWhenMissingDependencies = 1;
 		requiredVersion = 1.0;
@@ -190,7 +191,7 @@ class cfgPatches
 	};
 };
 
-#include "\RB205_core\macros.hpp"
+#include "macros.hpp"
 
 class cfgWeapons
 {
@@ -824,7 +825,7 @@ class cfgWeapons
         };
     };
 
-    class RB205_emp_V_medic: RB205_vest_medic_base
+    class RB205_emp_V_medic: RB205_vest_base
     {
         ACCESS_TRUE
         displayName = "[205|EMP] Stormtrooper Vest <Medic>";
@@ -834,11 +835,12 @@ class cfgWeapons
         hiddenSelectionsTextures[] = {"JMSLLTE_empire\vests\data\stormheavy_co.paa"};
         class ItemInfo: ItemInfo
         {
+            containerClass = INV_VEST_MEDIC;
             uniformModel = "\JMSLLTE_empire\vests\StormtroperHeavy2.p3d";
             hiddenSelections[] = {"Camo1"};
         };
     };
-    class RB205_emp_V_grenadier: RB205_vest_grenadier_base
+    class RB205_emp_V_grenadier: RB205_vest_base
     {
         ACCESS_TRUE
         displayName = "[205|EMP] Stormtrooper Vest <Grenadier>";
@@ -848,6 +850,7 @@ class cfgWeapons
         hiddenSelectionsTextures[] = {};
         class ItemInfo: ItemInfo
         {
+            containerClass = INV_VEST_GRENADIER;
             uniformModel = "\JMSLLTE_empire\vests\StormtroperBand.p3d";
             hiddenSelections[] = {};
         };
@@ -862,6 +865,7 @@ class cfgWeapons
         hiddenSelectionsTextures[] = {"JMSLLTE_empire\helmets\data\tiepilot_helmet_storm_co.paa"};
         class ItemInfo: ItemInfo
         {
+            containerClass = INV_VEST_MEDIC;
             uniformModel = "\JMSLLTE_empire\vests\TIEpilotVest.p3d";
             hiddenSelections[] = {"Camo1"};
             vestType = "Rebreather";
@@ -1210,45 +1214,24 @@ class cfgWeapons
         };
     };
 
-    class JLTS_NVG_droid_chip_2;
-    class RB205_emp_N_death: JLTS_NVG_droid_chip_2
+    class RB205_nvg_base;
+    class RB205_nvg_ti_base: RB205_nvg_base
+    {
+        class ItemInfo;
+    };
+    class RB205_emp_N_death: RB205_nvg_ti_base
     {
         ACCESS_TRUE
-        author = "205th Recon Battalion";
         displayName = "[205|EMP] Death Trooper Scanner";
-        descriptionShort = "NV";
+        picture = "\MRC\JLTS\Core_mod\data\ui\nvg_chip_2_ui_ca.paa";
         model = "\JMSLLTE_empire\helmets\DeathtrooperScanner.p3d";
-        class ItemInfo
+	    modelOptics = MODEL_OPTICS;
+        class ItemInfo: ItemInfo
         {
-            mass = 0;
             uniformModel = "JMSLLTE_empire\helmets\DeathtrooperScanner.p3d";
             modelOff = "JMSLLTE_empire\helmets\DeathtrooperScanner.p3d";
-            type = 616;
         };
     };
-};
-
-#define LINKED_ITEMS(HELMET,VEST) \
-linkedItems[] = \
-{ \
-	##HELMET##,##VEST##, \
-	"ItemMap","ItemGPS","JLTS_clone_comlink","ItemCompass","ItemWatch" \
-}; \
-respawnlinkedItems[] = \
-{ \
-	##HELMET##,##VEST##, \
-	"ItemMap","ItemGPS","JLTS_clone_comlink","ItemCompass","ItemWatch" \
-};
-#define LINKED_ITEMS_WITHOUT_VEST(HELMET) \
-linkedItems[] = \
-{ \
-	##HELMET##, \
-	"ItemMap","ItemGPS","JLTS_clone_comlink","ItemCompass","ItemWatch" \
-}; \
-respawnlinkedItems[] = \
-{ \
-	##HELMET##, \
-	"ItemMap","ItemGPS","JLTS_clone_comlink","ItemCompass","ItemWatch" \
 };
 
 class cfgVehicles
@@ -1435,42 +1418,44 @@ class cfgVehicles
         weapons[]=
         {
             "RB205_E11_wScope",
+            "RB205_emp_binocular",
             "Throw","Put"
         };
         respawnweapons[]=
         {
             "RB205_E11_wScope",
+            "RB205_emp_binocular",
             "Throw","Put"
         };
         magazines[]=
         {
-            "RB205_Standard_Energy_Pack_red","RB205_Standard_Energy_Pack_red","RB205_Standard_Energy_Pack_red","RB205_Standard_Energy_Pack_red","RB205_Standard_Energy_Pack_red","RB205_Standard_Energy_Pack_red","RB205_Standard_Energy_Pack_red","RB205_Standard_Energy_Pack_red",
-            "RB205_thermalDet","RB205_thermalDet","RB205_thermalDet",
-            "RB205_smokeWhite","RB205_smokeWhite"
+            ENUM_8("RB205_Standard_Energy_Pack_red"),
+            ENUM_3("RB205_thermalDet"),
+            ENUM_2("RB205_smokeWhite"),
+            ENUM_2("ACE_painkillers")
         };
         respawnmagazines[]=
         {
-            "RB205_Standard_Energy_Pack_red","RB205_Standard_Energy_Pack_red","RB205_Standard_Energy_Pack_red","RB205_Standard_Energy_Pack_red","RB205_Standard_Energy_Pack_red","RB205_Standard_Energy_Pack_red","RB205_Standard_Energy_Pack_red","RB205_Standard_Energy_Pack_red",
-            "RB205_thermalDet","RB205_thermalDet","RB205_thermalDet",
-            "RB205_smokeWhite","RB205_smokeWhite"
+            ENUM_8("RB205_Standard_Energy_Pack_red"),
+            ENUM_3("RB205_thermalDet"),
+            ENUM_2("RB205_smokeWhite"),
+            ENUM_2("ACE_painkillers")
         };
         items[]=
         {
             "ACE_EntrenchingTool",
             "ACE_Flashlight_XL50",
-            "ACE_CableTie","ACE_CableTie","ACE_CableTie",
-            "ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage",
-            "ACE_Tourniquet","ACE_Tourniquet","ACE_Tourniquet","ACE_Tourniquet",
-            "ACE_painkillers","ACE_painkillers"
+            ENUM_3("ACE_CableTie"),
+            ENUM_25("ACE_packingBandage"),
+            ENUM_4("ACE_Tourniquet")
         };
         respawnitems[]=
         {
             "ACE_EntrenchingTool",
             "ACE_Flashlight_XL50",
-            "ACE_CableTie","ACE_CableTie","ACE_CableTie",
-            "ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage",
-            "ACE_Tourniquet","ACE_Tourniquet","ACE_Tourniquet","ACE_Tourniquet",
-            "ACE_painkillers","ACE_painkillers"
+            ENUM_3("ACE_CableTie"),
+            ENUM_25("ACE_packingBandage"),
+            ENUM_4("ACE_Tourniquet")
         };
     };
     class RB205_emp_trooper: RB205_unit_emp_base
@@ -1593,6 +1578,7 @@ class cfgVehicles
     {
         ACCESS_TRUE
         displayName = "(1-CT) Rockettrooper";
+        editorSubCategory = "RB205_empire_rockettrooper";
         LINKED_ITEMS("RB205_emp_H_ab_trooper","RB205_emp_V_ct")
 	    backpack = "RB205_B_emp_ab";
     };
@@ -1653,24 +1639,28 @@ class cfgVehicles
         weapons[]=
         {
             "RB205_EC17_wScope",
+            "RB205_emp_binocular_scout",
             "Throw","Put"
         };
         respawnweapons[]=
         {
             "RB205_EC17_wScope",
+            "RB205_emp_binocular_scout",
             "Throw","Put"
         };
         magazines[]=
         {
-            "RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red",
-            "RB205_thermalDet","RB205_thermalDet","RB205_thermalDet",
-            "RB205_smokeWhite","RB205_smokeWhite"
+            ENUM_5("RB205_Compact_Energy_Pack_red"),
+            ENUM_3("RB205_thermalDet"),
+            ENUM_2("RB205_smokeWhite"),
+            ENUM_2("ACE_painkillers")
         };
         respawnmagazines[]=
         {
-            "RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red",
-            "RB205_thermalDet","RB205_thermalDet","RB205_thermalDet",
-            "RB205_smokeWhite","RB205_smokeWhite"
+            ENUM_5("RB205_Compact_Energy_Pack_red"),
+            ENUM_3("RB205_thermalDet"),
+            ENUM_2("RB205_smokeWhite"),
+            ENUM_2("ACE_painkillers")
         };
         class Wounds
         {
@@ -1768,15 +1758,15 @@ class cfgVehicles
         };
         magazines[]=
         {
-            "RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red",
-            "RB205_thermalDet","RB205_thermalDet","RB205_thermalDet",
-            "RB205_smokeWhite","RB205_smokeWhite"
+            ENUM_5("RB205_Compact_Energy_Pack_red"),
+            ENUM_2("RB205_smokeBlue"),
+            ENUM_2("ACE_painkillers")
         };
         respawnmagazines[]=
         {
-            "RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red",
-            "RB205_thermalDet","RB205_thermalDet","RB205_thermalDet",
-            "RB205_smokeWhite","RB205_smokeWhite"
+            ENUM_5("RB205_Compact_Energy_Pack_red"),
+            ENUM_2("RB205_smokeBlue"),
+            ENUM_2("ACE_painkillers")
         };
         class Wounds
         {
@@ -1836,27 +1826,31 @@ class cfgVehicles
         {
             "RB205_E11D",
             "RB205_SE14R",
+            "RB205_emp_binocular_scout",
             "Throw","Put"
         };
         respawnweapons[]=
         {
             "RB205_E11D",
             "RB205_SE14R",
+            "RB205_emp_binocular_scout",
             "Throw","Put"
         };
         magazines[]=
         {
-            "RB205_Experimental_Energy_Pack_red","RB205_Experimental_Energy_Pack_red","RB205_Experimental_Energy_Pack_red","RB205_Experimental_Energy_Pack_red","RB205_Experimental_Energy_Pack_red",
-            "RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red",
-            "RB205_thermalDet","RB205_thermalDet","RB205_thermalDet",
-            "RB205_smokeWhite","RB205_smokeWhite"
+            ENUM_8("RB205_Experimental_Energy_Pack_red"),
+            ENUM_5("RB205_Compact_Energy_Pack_red"),
+            ENUM_3("RB205_thermalDet"),
+            ENUM_2("RB205_smokeWhite"),
+            ENUM_2("ACE_painkillers")
         };
         respawnmagazines[]=
         {
-            "RB205_Experimental_Energy_Pack_red","RB205_Experimental_Energy_Pack_red","RB205_Experimental_Energy_Pack_red","RB205_Experimental_Energy_Pack_red","RB205_Experimental_Energy_Pack_red",
-            "RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red",
-            "RB205_thermalDet","RB205_thermalDet","RB205_thermalDet",
-            "RB205_smokeWhite","RB205_smokeWhite"
+            ENUM_8("RB205_Experimental_Energy_Pack_red"),
+            ENUM_5("RB205_Compact_Energy_Pack_red"),
+            ENUM_3("RB205_thermalDet"),
+            ENUM_2("RB205_smokeWhite"),
+            ENUM_2("ACE_painkillers")
         };
         class Wounds
         {
@@ -1882,20 +1876,22 @@ class cfgVehicles
         weapons[]=
         {
             "RB205_SE14R",
+            "RB205_emp_binocular_scout",
             "Throw","Put"
         };
         respawnweapons[]=
         {
             "RB205_SE14R",
+            "RB205_emp_binocular_scout",
             "Throw","Put"
         };
         magazines[]=
         {
-            "RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red"
+            ENUM_3("RB205_Compact_Energy_Pack_red")
         };
         respawnmagazines[]=
         {
-            "RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red","RB205_Compact_Energy_Pack_red"
+            ENUM_3("RB205_Compact_Energy_Pack_red")
         };
         class Wounds
         {
@@ -2071,7 +2067,6 @@ class cfgFactionClasses
 	class RB205_empire
 	{
 		displayName = "205th Recon Battalion - Empire";
-		ACCESS_TRUE
 	};
 };
 class cfgEditorSubcategories
@@ -2079,21 +2074,21 @@ class cfgEditorSubcategories
 	class RB205_empire_stormtrooper
 	{
 		displayName = "Stormtrooper";
-		ACCESS_TRUE
+	};
+	class RB205_empire_rockettrooper
+	{
+		displayName = "Rockettrooper";
 	};
     class RB205_empire_scout
 	{
 		displayName = "Scout Trooper";
-		ACCESS_TRUE
 	};
     class RB205_empire_officer
     {
 		displayName = "Officer";
-		ACCESS_TRUE
 	};
     class RB205_empire_other
 	{
 		displayName = "Other";
-		ACCESS_TRUE
 	};
 };

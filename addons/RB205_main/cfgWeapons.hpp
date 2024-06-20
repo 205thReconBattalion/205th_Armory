@@ -784,7 +784,7 @@ class RB205_V_rebreather: RB205_V_base
 	};
 	class ItemInfo: ItemInfo
 	{
-		containerClass = INV_VEST_MEDIC; //TODO ???
+		containerClass = INV_VEST_MEDIC;
 		uniformModel = "\SWLB_CEE\data\SWLB_CEE_Lightweight_Rebreather.p3d";
 		hiddenSelections[] = {"camo1","camo2","camo3"};
         vestType = "Rebreather";
