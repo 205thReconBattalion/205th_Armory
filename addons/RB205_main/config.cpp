@@ -280,7 +280,6 @@ class CfgFactionClasses
 	class RB205
 	{
 		displayName = "205th Recon Battalion";
-		ACCESS_TRUE
 	};
 };
 class CfgEditorSubcategories
