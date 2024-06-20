@@ -1,4 +1,4 @@
-class cfgPatches
+/*class cfgPatches
 {
     class RB205_slots
 	{
@@ -123,4 +123,4 @@ class CfgEditorSubcategories
 		displayName = "Slots (Unarmed)";
 		ACCESS_TRUE
 	};
-};
+};*/

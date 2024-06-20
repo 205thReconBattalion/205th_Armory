@@ -14,7 +14,7 @@ private _roles = [
 		if (_confirmed) then
 		{
 			systemChat format ["Deine Auswahl: %1", _data];
-			playSound3D ["RB205_logistics\sounds\Gonk.ogg", _this select 0];
+			playSound3D ["RB205_logistics\gonk\data\Gonk.ogg", _this select 0];
 			
 			switch (_data) do
 			{

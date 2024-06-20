@@ -98,6 +98,7 @@ class CfgVehicles
 		faction = "RB205";
 		editorSubcategory = "RB205_veh_other";
 		editorPreview = "";
+		crew = CREW_DEFAULT;
 		class assembleInfo
 		{
 			displayName = "";
@@ -115,7 +116,6 @@ class CfgVehicles
 		faction = "RB205";
 		editorSubcategory = "RB205_veh_other";
 		editorPreview = "";
-		crew = CREW_DEFAULT;
 		class assembleInfo
 		{
 			displayName = "";
