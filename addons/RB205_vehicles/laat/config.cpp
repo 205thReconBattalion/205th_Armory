@@ -33,16 +33,16 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		displayName = "LAAT/I";
-		author = "205th Recon Battalion";
-		crew = "RB205_clone_plt_trooper";
+		author = AUTHOR;
+		crew = CREW_AIR;
 		VEH_INVENTORY
-		CARGO_L
+		CARGO_M
 		//Editor/ Zeus
 		side = 1;
 		faction = "RB205";
 		editorSubcategory = "RB205_veh_air";
 		editorPreview = "";
-		//Textures
+		//Texture
 		hiddenSelectionsTextures[] =
 		{
 			"RB205_vehicles\laat\data\laat_hull_co.paa",
@@ -138,10 +138,10 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		displayName = "LAAT/I (Lights)";
-		author = "205th Recon Battalion";
-		crew = "RB205_clone_plt_trooper";
+		author = AUTHOR;
+		crew = CREW_AIR;
 		VEH_INVENTORY
-		CARGO_L
+		CARGO_M
 		//Editor/ Zeus
 		side = 1;
 		faction = "RB205";
@@ -243,10 +243,10 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		displayName = "LAAT/I (Turrets)";
-		author = "205th Recon Battalion";
-		crew = "RB205_clone_plt_trooper";
+		author = AUTHOR;
+		crew = CREW_AIR;
 		VEH_INVENTORY
-		CARGO_L
+		CARGO_M
 		//Editor/ Zeus
 		side = 1;
 		faction = "RB205";

@@ -259,7 +259,6 @@ class cfgPatches
 	};
 };
 
-#include "\RB205_core\macros.hpp"
 #include "macros.hpp"
 
 class cfgWeapons
@@ -286,21 +285,6 @@ class CfgFactionClasses
 };
 class CfgEditorSubcategories
 {
-	class RB205_1AP
-	{
-		displayName = "1st Attack Platoon";
-		ACCESS_TRUE
-	};
-	class RB205_70MRP
-	{
-		displayName = "70th Mobile Response Platoon";
-		ACCESS_TRUE
-	};
-	class RB205_35HSP
-	{
-		displayName = "35th Heavy Support Platoon";
-		ACCESS_TRUE
-	};
 	class RB205_cloneTrooper
 	{
 		displayName = "Clone Trooper";

@@ -7,6 +7,7 @@ class cfgPatches
 			"RB205_vehicles",
 			"optre_catfish"
 		};
+        skipWhenMissingDependencies = 1;
 		requiredVersion = 1.0;
         author = "205th Recon Battalion";
 		units[] =
@@ -41,8 +42,8 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		displayName = "'Catfish' Water Glider (MG)";
-		author = "205th Recon Battalion";
-		crew = "RB205_clone_trooper";
+		author = AUTHOR;
+		crew = CREW_DEFAULT;
 		VEH_INVENTORY_LIGHT
 		CARGO_S
 		//Editor/ Zeus
@@ -83,7 +84,6 @@ class cfgVehicles
 				};
 			};
 		};
-		//Material
 		hiddenselectionsMaterials[]=
 		{
 			"RB205_vehicles\catfish\data\205_catfish_boat.rvmat"
@@ -126,8 +126,8 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		displayName = "'Catfish' Water Glider (AA)";
-		author = "205th Recon Battalion";
-		crew = "RB205_clone_trooper";
+		author = AUTHOR;
+		crew = CREW_DEFAULT;
 		VEH_INVENTORY_LIGHT
 		CARGO_S
 		//Editor/ Zeus
@@ -166,7 +166,6 @@ class cfgVehicles
 				};
 			};
 		};
-		//Material
 		hiddenselectionsMaterials[]=
 		{
 			"RB205_vehicles\catfish\data\205_catfish_boat.rvmat"
@@ -188,8 +187,8 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		displayName = "'Catfish' Water Glider (AT)";
-		author = "205th Recon Battalion";
-		crew = "RB205_clone_trooper";
+		author = AUTHOR;
+		crew = CREW_DEFAULT;
 		VEH_INVENTORY_LIGHT
 		CARGO_S
 		//Editor/ Zeus
@@ -230,7 +229,6 @@ class cfgVehicles
 				};
 			};
 		};
-		//Material
 		hiddenselectionsMaterials[]=
 		{
 			"RB205_vehicles\catfish\data\205_catfish_boat.rvmat"

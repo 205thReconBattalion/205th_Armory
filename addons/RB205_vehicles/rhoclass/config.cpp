@@ -30,16 +30,15 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		displayName = "Rho-Class Shuttle";
-		author = "205th Recon Battalion";
-		crew = "RB205_clone_plt_trooper";
+		author = AUTHOR;
+		crew = CREW_AIR;
 		VEH_INVENTORY
-		CARGO_XL
+		CARGO_L
 		//Editor/ Zeus
 		side = 1;
 		faction = "RB205";
 		editorSubcategory = "RB205_veh_air";
 		editorPreview = "";
-		#include "\RB205_vehicles\sounds_aircraft_alarm.hpp"
 		//Textures		
 		class TextureSources
 		{
@@ -57,10 +56,6 @@ class cfgVehicles
 					"3as\3as_republic_heli\rho_class\data\interior_co.paa",
 					"3as\3as_republic_heli\rho_class\data\interior_optional_co.paa"
 				};
-				/*factions[] =
-				{
-					"RB205"
-				};*/
 			};
 			class Empire
 			{
@@ -78,6 +73,7 @@ class cfgVehicles
 				};
 			};
 		};
+		#include "\RB205_vehicles\sounds_aircraft_alarm.hpp"
 	};
 
 
@@ -87,8 +83,10 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		displayName = "Rho-Class Crate (Transport)";
-		author = "205th Recon Battalion";
-		crew = "RB205_clone_trooper";
+		author = AUTHOR;
+		crew = CREW_DEFAULT;
+		VEH_INVENTORY
+		CARGO_L
 		//Editor/ Zeus
 		side = 1;
 		faction = "RB205";
@@ -139,8 +137,10 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		displayName = "Rho-Class Crate (Barracks)";
-		author = "205th Recon Battalion";
-		crew = "RB205_clone_trooper";
+		author = AUTHOR;
+		crew = CREW_DEFAULT;
+		VEH_INVENTORY
+		CARGO_L
 		//Editor/ Zeus
 		side = 1;
 		faction = "RB205";
@@ -191,8 +191,10 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		displayName = "Rho-Class Crate (Medical)";
-		author = "205th Recon Battalion";
-		crew = "RB205_clone_trooper";
+		author = AUTHOR;
+		crew = CREW_DEFAULT;
+		VEH_INVENTORY
+		CARGO_L
 		//Editor/ Zeus
 		side = 1;
 		faction = "RB205";

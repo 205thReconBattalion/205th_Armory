@@ -20,7 +20,6 @@ class cfgPatches
 #include "\RB205_vehicles\macros.hpp"
 #include "\RB205_vehicles\inventory.hpp"
 
-class cfgWeapons {};
 class cfgVehicles
 {
 	class 3as_Jug;
@@ -28,10 +27,10 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		displayName = "HAVw A6 Juggernaut";
-		author = "205th Recon Battalion";
-		crew = "RB205_clone_trooper";
+		author = AUTHOR;
+		crew = CREW_ARMORED;
 		VEH_INVENTORY
-		CARGO_M
+		CARGO_L
 		//Editor/ Zeus
 		side = 1;
 		faction = "RB205";

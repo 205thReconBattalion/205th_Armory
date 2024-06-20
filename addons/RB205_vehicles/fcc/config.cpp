@@ -27,8 +27,8 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		displayName = "Forward Command Center";
-		author = "205th Recon Battalion";
-		crew = "RB205_clone_trooper";
+		author = AUTHOR;
+		crew = CREW_DEFAULT;
 		VEH_INVENTORY
         CARGO_M
 		//Editor/ Zeus
@@ -51,7 +51,7 @@ class CfgNotifications
 { 
 	class RB205_RespawnModule_text 
 	{ 
-		title = "Neue Respawnposition";								// Title displayed as text on black background. Filled by arguments. 
+		title = "Neue Respawnposition";									// Title displayed as text on black background. Filled by arguments. 
 		iconPicture = "\a3\Modules_f\data\iconHQ_ca.paa";  				// Small icon displayed in left part. Colored by "color", filled by arguments. 
 		iconText = "";   												// Short text displayed over the icon. Colored by "color", filled by arguments. 
 		description = "Das Forward Command Center wurde errichtet!";  	// Brief description displayed as structured text. Colored by "color", filled by arguments. 

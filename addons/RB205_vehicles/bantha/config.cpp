@@ -4,9 +4,10 @@ class cfgPatches
 	{
 		requiredAddons[]=
 		{
-			"RB205_vehicles"/*,
-			"212th_APC_test"*/
+			"RB205_vehicles",
+			"212th_APC_test"
 		};
+        skipWhenMissingDependencies = 1;
 		requiredVersion = 1.0;
         author = "205th Recon Battalion";
 		weapons[] =	{};
@@ -37,10 +38,10 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		displayName = "HAVw A2 Bantha";
-		author = "205th Recon Battalion";
-		crew = "RB205_clone_trooper";
+		author = AUTHOR;
+		crew = CREW_ARMORED;
 		VEH_INVENTORY
-		CARGO_M
+		CARGO_S
 		//Editor/ Zeus
 		side = 1;
 		faction = "RB205";
@@ -58,10 +59,10 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		displayName = "HAVw A2 Bantha (Unarmed)";
-		author = "205th Recon Battalion";
-		crew = "RB205_clone_trooper";
+		author = AUTHOR;
+		crew = CREW_ARMORED;
 		VEH_INVENTORY
-		CARGO_M
+		CARGO_S
 		//Editor/ Zeus
 		side = 1;
 		faction = "RB205";
@@ -79,10 +80,10 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		displayName = "HAVw A2 Bantha (AA)";
-		author = "205th Recon Battalion";
-		crew = "RB205_clone_trooper";
+		author = AUTHOR;
+		crew = CREW_ARMORED;
 		VEH_INVENTORY
-		CARGO_M
+		CARGO_S
 		//Editor/ Zeus
 		side = 1;
 		faction = "RB205";
@@ -100,10 +101,10 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		displayName = "HAVw A2 Bantha (Mortar)";
-		author = "205th Recon Battalion";
-		crew = "RB205_clone_trooper";
+		author = AUTHOR;
+		crew = CREW_ARMORED;
 		VEH_INVENTORY
-		CARGO_M
+		CARGO_S
 		//Editor/ Zeus
 		side = 1;
 		faction = "RB205";
@@ -121,10 +122,10 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		displayName = "HAVw A2 Bantha (Assault)";
-		author = "205th Recon Battalion";
-		crew = "RB205_clone_trooper";
+		author = AUTHOR;
+		crew = CREW_ARMORED;
 		VEH_INVENTORY
-		CARGO_M
+		CARGO_S
 		//Editor/ Zeus
 		side = 1;
 		faction = "RB205";
@@ -142,8 +143,8 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		displayName = "HAVw A2 Bantha (Cargo)";
-		author = "205th Recon Battalion";
-		crew = "RB205_clone_trooper";
+		author = AUTHOR;
+		crew = CREW_ARMORED;
 		VEH_INVENTORY
 		CARGO_L
 		//Editor/ Zeus
@@ -163,8 +164,8 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		displayName = "HAVw A2 Bantha (Service)";
-		author = "205th Recon Battalion";
-		crew = "RB205_clone_trooper";
+		author = AUTHOR;
+		crew = CREW_ARMORED;
 		VEH_INVENTORY
 		CARGO_M
 		//Editor/ Zeus

@@ -24,7 +24,6 @@ class cfgPatches
 #include "\RB205_vehicles\macros.hpp"
 #include "\RB205_vehicles\inventory.hpp"
 
-class cfgWeapons {};
 class cfgVehicles
 {
 	class O_Truck_03_transport_F;
@@ -38,8 +37,8 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		displayName = "TEMP/T";
-		author = "205th Recon Battalion";
-		crew = "RB205_clone_trooper";
+		author = AUTHOR;
+		crew = CREW_DEFAULT;
 		VEH_INVENTORY
 		CARGO_L
 		//Editor/ Zeus
@@ -77,8 +76,8 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		displayName = "TEMP/T (Covered)";
-		author = "205th Recon Battalion";
-		crew = "RB205_clone_trooper";
+		author = AUTHOR;
+		crew = CREW_DEFAULT;
 		VEH_INVENTORY
 		CARGO_L
 		//Editor/ Zeus
@@ -118,8 +117,8 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		displayName = "TEMP/R";
-		author = "205th Recon Battalion";
-		crew = "RB205_clone_trooper";
+		author = AUTHOR;
+		crew = CREW_DEFAULT;
 		VEH_INVENTORY_LIGHT
 		CARGO_S
 		//Editor/ Zeus
@@ -157,8 +156,8 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		displayName = "TEMP/A";
-		author = "205th Recon Battalion";
-		crew = "RB205_clone_trooper";
+		author = AUTHOR;
+		crew = CREW_DEFAULT;
 		VEH_INVENTORY_LIGHT
 		CARGO_S
 		//Editor/ Zeus
@@ -198,8 +197,8 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		displayName = "TEMP/F";
-		author = "205th Recon Battalion";
-		crew = "RB205_clone_trooper";
+		author = AUTHOR;
+		crew = CREW_DEFAULT;
 		VEH_INVENTORY_LIGHT
 		CARGO_S
 		//Editor/ Zeus
@@ -237,8 +236,8 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		displayName = "TEMP/E";
-		author = "205th Recon Battalion";
-		crew = "RB205_clone_trooper";
+		author = AUTHOR;
+		crew = CREW_DEFAULT;
 		VEH_INVENTORY_LIGHT
 		CARGO_S
 		//Editor/ Zeus

@@ -5,7 +5,6 @@ class cfgPatches
 		requiredAddons[]=
 		{
 			"RB205_vehicles",
-			"A3_Boat_F_Beta_SDV_01",
 			"JLTS_drones_prowler"
 		};
 		requiredVersion = 1.0;
@@ -28,7 +27,7 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		displayName = "Prowler 1000";
-		author = "205th Recon Battalion";
+		author = AUTHOR;
 		//Editor/ Zeus
 		side = 1;
 		faction = "RB205";
@@ -42,14 +41,29 @@ class cfgVehicles
 		//Backpack
 		class assembleInfo
 		{
-			primary=0;
-			base="";
-			displayName="";
-			assembleTo="";
-			dissasembleTo[]=
-			{
-				"RB205_B_prowler"
-			};
+			displayName = "";
+			assembleTo = "";
+			dissasembleTo[] = {};
+			primary = 0;
+			base = "";
 		};
+		/*Copy for backpack:
+		class assembleInfo
+		{
+			displayName = "Prowler 1000";
+			assembleTo = "RB205_prowler";
+			dissasembleTo[] = {};
+			primary = 1;
+			base = "";
+		};
+		Copy for vehicle:
+		class assembleInfo
+		{
+			displayName = "";
+			assembleTo = "";
+			dissasembleTo[] = {"RB205_B_prowler"};
+			primary = 0;
+			base = "";
+		};*/
 	};
 };

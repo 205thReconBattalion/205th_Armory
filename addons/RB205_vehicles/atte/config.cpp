@@ -28,8 +28,8 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		displayName = "AT-TE";
-		author = "205th Recon Battalion";
-		crew = "RB205_clone_trooper";
+		author = AUTHOR;
+		crew = CREW_ARMORED;
 		VEH_INVENTORY
 		CARGO_L
 		//Editor/ Zeus
@@ -37,7 +37,7 @@ class cfgVehicles
 		faction = "RB205";
 		editorSubcategory = "RB205_veh_tank";
 		editorPreview = "";
-		//Textures
+		//Texture
 		hiddenselectionstextures[]=
 		{
 			"3as\3AS_ATTE\data\Textures\3AS_ATTE_Shell_co.paa",

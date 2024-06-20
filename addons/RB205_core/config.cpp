@@ -2,12 +2,7 @@ class cfgPatches
 {
     class RB205_core
 	{
-		requiredAddons[] =
-        {
-            "ItemCore",
-            "A3_Characters_F",
-            "A3_Weapons_F_Ammoboxes"
-        };
+		requiredAddons[] = {};
 		requiredVersion = 1.0;
         author = "205th Recon Battalion";
         weapons[] =

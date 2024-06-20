@@ -45,7 +45,7 @@ class TransportItems \
     class _transport_ACE_packingBandage \
     { \
         name = "ACE_packingBandage"; \
-        count = 75; \
+        count = 250; \
     }; \
     class _transport_ACE_elasticBandage \
     { \

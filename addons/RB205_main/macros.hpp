@@ -1,5 +1,9 @@
+#include "\RB205_core\macros.hpp"
+
+
 #define IDENTITY_TYPES {"LanguageENG_F","SWLB_JH_Head_Hair"}
 #define IDENTITY_TYPES_GLASSES(GLASSES) {"LanguageENG_F","SWLB_JH_Head_Hair",##GLASSES##}
+
 
 #define LINKED_ITEMS(HELMET,VEST,NVG) \
 linkedItems[] = \
@@ -13,10 +17,8 @@ respawnlinkedItems[] = \
 	"ItemMap","ItemGPS","JLTS_clone_comlink","ItemCompass","ACE_Altimeter" \
 };
 
-/*
-	UNIT INVENTORY
-*/
 
+/* UNIT INVENTORY */
 #define ADD_INVENTORY_MAG \
 	ENUM_5("RB205_Compact_Energy_Pack"), \
 	ENUM_3("RB205_thermalDet"), \

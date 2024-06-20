@@ -13,36 +13,26 @@ class cfgPatches
 	};
 };
 
-#include "macros.hpp"
-
-class cfgWeapons {};
-class cfgVehicles {};
-
 class CfgEditorSubcategories
 {
 	class RB205_veh_ground
 	{
-		displayName = "Vehicles"; //Fahrzeuge
-		ACCESS_TRUE
+		displayName = "Vehicles";
 	};
 	class RB205_veh_tank
 	{
-		displayName = "Vehicles - Armored"; //Fahrzeuge - Gepanzert
-		ACCESS_TRUE
+		displayName = "Vehicles - Armored";
 	};
 	class RB205_veh_air
 	{
-		displayName = "Vehicles - Starfighter"; //Fahrzeuge - Sternenjäger
-		ACCESS_TRUE
+		displayName = "Vehicles - Starfighter";
 	};
 	class RB205_veh_naval
 	{
-		displayName = "Vehicles - Naval"; //Fahrzeuge - ???
-		ACCESS_TRUE
+		displayName = "Vehicles - Naval";
 	};
 	class RB205_veh_other
 	{
-		displayName = "Vehicles - Other"; //Fahrzeuge - Sonstige
-		ACCESS_TRUE
+		displayName = "Vehicles - Other";
 	};
 };
