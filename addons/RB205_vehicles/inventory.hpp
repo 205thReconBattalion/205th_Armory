@@ -1,4 +1,3 @@
-
 #define VEH_INVENTORY \
 class TransportItems \
 { \
@@ -45,12 +44,12 @@ class TransportItems \
     class _transport_ACE_packingBandage \
     { \
         name = "ACE_packingBandage"; \
-        count = 250; \
+        count = 750; \
     }; \
     class _transport_ACE_elasticBandage \
     { \
         name = "ACE_elasticBandage"; \
-        count = 50; \
+        count = 250; \
     }; \
     class _transport_ACE_tourniquet \
     { \
@@ -67,6 +66,16 @@ class TransportItems \
         name = "ACE_epinephrine"; \
         count = 10; \
     }; \
+    class _transport_ACE_adenosine \
+    { \
+        name = "ACE_adenosine"; \
+        count = 10; \
+    }; \
+    class _transport_ACE_painkillers \
+    { \
+        name = "ACE_painkillers"; \
+        count = 10; \
+    }; \
     class _transport_SurgicalKit \
     { \
         name = "ACE_surgicalKit"; \
@@ -75,7 +84,7 @@ class TransportItems \
     class _transport_ACE_suture \
     { \
         name = "ACE_suture"; \
-        count = 50; \
+        count = 150; \
     }; \
     class _transport_ACE_salineIV \
     { \
@@ -171,6 +180,16 @@ class TransportItems \
         name = "ACE_epinephrine"; \
         count = 3; \
     }; \
+    class _transport_ACE_adenosine \
+    { \
+        name = "ACE_adenosine"; \
+        count = 3; \
+    }; \
+    class _transport_ACE_painkillers \
+    { \
+        name = "ACE_painkillers"; \
+        count = 1; \
+    }; \
     class _transport_SurgicalKit \
     { \
         name = "ACE_surgicalKit"; \
@@ -179,7 +198,7 @@ class TransportItems \
     class _transport_ACE_suture \
     { \
         name = "ACE_suture"; \
-        count = 8; \
+        count = 15; \
     }; \
     class _transport_ACE_salineIV_500 \
     { \

@@ -68,8 +68,9 @@ class cfgVehicles
 		ACCESS_TRUE
 		displayName = "74-Z Speeder Bike";
 		author = AUTHOR;
-		CARGO_NONE
 		crew = CREW_EMP_SCOUT;
+		VEH_INVENTORY_LIGHT
+		CARGO_NONE
 		faction = "RB205_empire";
 		editorSubCategory = "RB205_veh_ground";
 		hiddenSelectionsTextures[] = {"\JMSLLTE_vehicles_gr\74Z\data\74z_white_co.paa"};
@@ -103,6 +104,7 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		crew = CREW_EMP_DEFAULT;
+		VEH_INVENTORY
 		faction = "RB205_empire";
 		hiddenSelectionsTextures[] = {"\OPTRE_Vehicles\Warthog\data\snow\M12HogMaav_extupper_snow_co.paa","\OPTRE_Vehicles\Warthog\data\snow\M12HogMaav_extunder_snow_co.paa","\OPTRE_Vehicles\Warthog\data\decals_ca.paa","\OPTRE_Vehicles\Warthog\data\snow\M12HogMaav_interior_snow_co.paa","\OPTRE_Vehicles\Warthog\data\snow\hog_apc_snow_co.paa"};
 		hiddenSelectionsMaterials[] = {};
@@ -112,6 +114,7 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		crew = CREW_EMP_DEFAULT;
+		VEH_INVENTORY
 		faction = "RB205_empire";
 		hiddenSelectionsTextures[] = {"\OPTRE_Vehicles\Warthog\data\snow\M12HogMaav_extupper_snow_co.paa","\OPTRE_Vehicles\Warthog\data\snow\M12HogMaav_extunder_snow_co.paa","\OPTRE_Vehicles\Warthog\data\snow\transp_lopo_snow_co.paa","\OPTRE_Vehicles\warthog\data\decals_ca.paa","\OPTRE_Vehicles\warthog\data\snow\M12HogMaav_interior_snow_co.paa","\OPTRE_Vehicles\warthog\data\warthog_transport_net_ca.paa","\OPTRE_Vehicles\warthog\data\warthog_transport_decals_ca.paa","\OPTRE_Vehicles\Warthog\data\snow\hog_apc_snow_co.paa"};
 		hiddenSelectionsMaterials[] = {};
@@ -121,6 +124,7 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		crew = CREW_EMP_DEFAULT;
+		VEH_INVENTORY
 		faction = "RB205_empire";
 		hiddenSelectionsTextures[] = {"\OPTRE_Vehicles\Warthog\data\snow\M12HogMaav_extupper_snow_co.paa","\OPTRE_Vehicles\Warthog\data\snow\M12HogMaav_extunder_snow_co.paa","\OPTRE_Vehicles\warthog\data\decals_ca.paa","\OPTRE_Vehicles\warthog\data\snow\M12HogMaav_interior_snow_co.paa","\OPTRE_Vehicles\warthog\data\net_ca.paa","\OPTRE_Vehicles\Warthog\data\snow\hog_apc_snow_co.paa"};
 		hiddenSelectionsMaterials[] = {};
@@ -130,6 +134,7 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		crew = CREW_EMP_DEFAULT;
+		VEH_INVENTORY
 		faction = "RB205_empire";
 		hiddenSelectionsTextures[] = {"\OPTRE_Vehicles\Warthog\data\snow\M12HogMaav_extupper_snow_co.paa","\OPTRE_Vehicles\Warthog\data\snow\M12HogMaav_extunder_snow_co.paa","\OPTRE_Vehicles\Warthog\data\snow\m12_turret_snow_co.paa","\OPTRE_Vehicles\warthog\data\decals_ca.paa","\OPTRE_Vehicles\warthog\data\snow\M12HogMaav_interior_snow_co.paa","\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa","\OPTRE_Vehicles\warthog\data\turrets\sight_co.paa","\OPTRE_Vehicles\Warthog\data\snow\hog_apc_snow_co.paa"};
 		hiddenSelectionsMaterials[] = {};
@@ -139,6 +144,7 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		crew = CREW_EMP_DEFAULT;
+		VEH_INVENTORY
 		faction = "RB205_empire";
 		hiddenSelectionsTextures[] = {"\OPTRE_Vehicles\Warthog\data\snow\M12HogMaav_extupper_snow_co.paa","\OPTRE_Vehicles\Warthog\data\snow\M12HogMaav_extunder_snow_co.paa","\OPTRE_Vehicles\Warthog\data\snow\m12_turret_snow_co.paa","\OPTRE_Vehicles\warthog\data\decals_ca.paa","\OPTRE_Vehicles\warthog\data\snow\M12HogMaav_interior_snow_co.paa","\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa","\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa","\OPTRE_Vehicles\Warthog\data\snow\hog_apc_snow_co.paa"};
 		hiddenSelectionsMaterials[] = {};
@@ -148,6 +154,7 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		crew = CREW_EMP_DEFAULT;
+		VEH_INVENTORY
 		faction = "RB205_empire";
 		hiddenSelectionsTextures[] = {"\OPTRE_Vehicles\Warthog\data\snow\M12HogMaav_extupper_snow_co.paa","\OPTRE_Vehicles\Warthog\data\snow\M12HogMaav_extunder_snow_co.paa","\OPTRE_Vehicles\Warthog\data\snow\m79_turret_snow_co.paa","\OPTRE_Vehicles\warthog\data\decals_ca.paa","\OPTRE_Vehicles\warthog\data\snow\M12HogMaav_interior_snow_co.paa","\OPTRE_Vehicles\Warthog\data\snow\hog_apc_snow_co.paa"};
 		hiddenSelectionsMaterials[] = {};
@@ -160,6 +167,7 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		crew = CREW_EMP_ARMORED;
+		VEH_INVENTORY
 		faction = "RB205_empire";
 		hiddenSelectionsTextures[] = {"3as\3as_itt\data\itt_co.paa","3as\3as_itt\data\glass_co.paa","3as\3as_itt\data\itt_int_back_co.paa","3as\3as_itt\data\itt_door_co.paa","3as\3as_itt\data\itt_int_front_co.paa","3as\3as_itt\data\itt_emiss_co.paa","3as\3as_itt\data\itt_turret_co.paa"};
 		hiddenSelectionsMaterials[] = {};
@@ -169,6 +177,7 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		crew = CREW_EMP_ARMORED;
+		VEH_INVENTORY
 		faction = "RB205_empire";
 		hiddenSelectionsTextures[] = {"3as\3as_itt\data\itt_logistic_co.paa","3as\3as_itt\data\glass_co.paa","3as\3as_itt\data\itt_int_back_co.paa","3as\3as_itt\data\itt_door_co.paa","3as\3as_itt\data\itt_int_front_co.paa","3as\3as_itt\data\itt_emiss_co.paa",""};
 		hiddenSelectionsMaterials[] = {};
@@ -178,6 +187,7 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		crew = CREW_EMP_ARMORED;
+		VEH_INVENTORY
 		faction = "RB205_empire";
 		hiddenSelectionsTextures[] = {"3as\3as_itt\data\Medical\itt_medical_co.paa","3as\3as_itt\data\glass_co.paa","3as\3as_itt\data\itt_int_back_co.paa","3as\3as_itt\data\itt_door_co.paa","3as\3as_itt\data\itt_int_front_co.paa","3as\3as_itt\data\itt_emiss_co.paa",""};
 		hiddenSelectionsMaterials[] = {};
@@ -187,6 +197,7 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		crew = CREW_EMP_ARMORED;
+		VEH_INVENTORY
 		faction = "RB205_empire";
 		hiddenSelectionsTextures[] = {"3AS\3AS_Saber\data\Saber_Imp_hull_co.paa","3AS\3AS_Saber\data\Saber_Imp_weapons_co.paa"};
 		hiddenSelectionsMaterials[] = {};
@@ -197,6 +208,7 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		crew = CREW_EMP_ARMORED;
+		VEH_INVENTORY
 		faction = "RB205_empire";
 		hiddenSelectionsTextures[] = {"3AS\3AS_Saber\data\Saber_imp_hull_co.paa","3AS\3AS_Saber\data\Saber_Imp_weapons_co.paa"};
 		hiddenSelectionsMaterials[] = {};
@@ -207,6 +219,7 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		crew = CREW_EMP_ARMORED;
+		VEH_INVENTORY
 		faction = "RB205_empire";
 		hiddenSelectionsTextures[] = {"3AS\3AS_Saber\data\Saber_Imp_hull_co.paa","3AS\3AS_Saber\data\Saber_weapons_scout_Imp_co.paa"};
 		hiddenSelectionsMaterials[] = {"3AS\3AS_Saber\data\Saberhull.rvmat","3AS\3AS_Saber\data\Saberweapons_scout.rvmat"};
@@ -217,6 +230,7 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		crew = CREW_EMP_ARMORED;
+		VEH_INVENTORY
 		faction = "RB205_empire";
 		hiddenSelectionsTextures[] = {"3AS\3AS_Saber\data\Saber_Imp_hull_co.paa","3AS\3AS_Saber\data\Saber_Imp_weapons_co.paa"};
 		hiddenSelectionsMaterials[] = {};
@@ -227,6 +241,7 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		crew = CREW_EMP_ARMORED;
+		VEH_INVENTORY
 		faction = "RB205_empire";
 		hiddenselectionstextures[] = {"3as\3AS_ATTE\data\Textures\3AS_ATTE_Shell_Imp_co.paa","3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa","3as\3AS_ATTE\data\Textures\3AS_ATTE_Detail_co.paa","3as\3AS_ATTE\data\Textures\3AS_ATTE_Legs_IMP_co.paa","3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa","3as\3as_atte\data\textures\3as_atte_armor_co.paa"};
 		hiddenSelectionsMaterials[] = {};
@@ -238,8 +253,9 @@ class cfgVehicles
 		ACCESS_TRUE
 		displayName = "AT-AT";
 		author = AUTHOR;
-		CARGO_L
 		crew = CREW_EMP_ARMORED;
+		VEH_INVENTORY
+		CARGO_L
 		faction = "RB205_empire";
 		editorSubCategory = "RB205_veh_tank";
 	};
@@ -249,8 +265,9 @@ class cfgVehicles
 		ACCESS_TRUE
 		displayName = "AT-ST";
 		author = AUTHOR;
-		CARGO_S
 		crew = CREW_EMP_ARMORED;
+		VEH_INVENTORY
+		CARGO_S
 		faction = "RB205_empire";
 		editorSubCategory = "RB205_veh_tank";
 	};
@@ -262,6 +279,7 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		crew = CREW_EMP_AIR;
+		VEH_INVENTORY
 		faction = "RB205_empire";
 		hiddenSelectionsTextures[] = {"3AS\3AS_Laat\LAATI\data\Hull_Imp_CO.paa","3AS\3AS_Laat\LAATI\data\wings_Imp_CO.paa","3AS\3AS_Laat\LAATI\data\weapons_Imp_CO.paa","3AS\3AS_Laat\LAATI\data\weapon_Details_Imp_CO.paa","3AS\3AS_Laat\LAATI\data\interior_Imp_CO.paa"};
 		hiddenSelectionsMaterials[] = {};
@@ -272,6 +290,7 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		crew = CREW_EMP_AIR;
+		VEH_INVENTORY
 		faction = "RB205_empire";
 		hiddenSelectionsTextures[] = {"3AS\3as_LAAT\LAAT_LE\data\imperialpatrol01_CO.paa"};
 		hiddenSelectionsMaterials[] = {};
@@ -282,6 +301,7 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		crew = CREW_EMP_AIR;
+		VEH_INVENTORY
 		faction = "RB205_empire";
 		hiddenSelectionsTextures[] = {"3as\3as_republic_heli\nu_class\data\hull_Imp_co.paa","3as\3as_republic_heli\nu_class\data\hull_front_imp_co.paa","3as\3as_republic_heli\nu_class\data\wings_Imp_co.paa","3as\3as_republic_heli\rho_class\data\cockpit_co.paa","3as\3as_republic_heli\rho_class\data\cockpit_interfaces_co.paa","3as\3as_republic_heli\rho_class\data\interior_co.paa","3as\3as_republic_heli\rho_class\data\interior_optional_co.paa"};
 		hiddenSelectionsMaterials[] = {};
@@ -292,6 +312,7 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		crew = CREW_EMP_AIR;
+		VEH_INVENTORY
 		faction = "RB205_empire";
 		hiddenSelectionsTextures[] = {"3as\3as_republic_heli\rho_class\data\hull_rho_Imp_co.paa","3as\3as_republic_heli\nu_class\data\hull_front_imp_co.paa","3as\3as_republic_heli\rho_class\data\wings_rho_Imp_co.paa","3as\3as_republic_heli\rho_class\data\cockpit_co.paa","3as\3as_republic_heli\rho_class\data\cockpit_interfaces_co.paa","3as\3as_republic_heli\rho_class\data\interior_co.paa","3as\3as_republic_heli\rho_class\data\interior_optional_co.paa"};
 		hiddenSelectionsMaterials[] = {};
@@ -302,6 +323,7 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		crew = CREW_EMP_AIR;
+		VEH_INVENTORY
 		faction = "RB205_empire";
 		hiddenselectionstextures[] = {"3as\3as_starships\data\hs_imp_ext_co.paa","3as\3as_starships\data\hs_int_co.paa"};
 		hiddenSelectionsMaterials[] = {};
@@ -313,8 +335,9 @@ class cfgVehicles
 		ACCESS_TRUE
 		displayName = "Lambda-Class T-4A Shuttle";
 		author = AUTHOR;
-		CARGO_L
 		crew = CREW_EMP_AIR;
+		VEH_INVENTORY
+		CARGO_L
 		faction = "RB205_empire";
 		editorSubCategory = "RB205_veh_air";
 	};
@@ -324,8 +347,9 @@ class cfgVehicles
 		ACCESS_TRUE
 		displayName = "Zeta-Class Heavy Cargo Shuttle";
 		author = AUTHOR;
-		CARGO_XXL
 		crew = CREW_EMP_AIR;
+		VEH_INVENTORY
+		CARGO_XXL
 		faction = "RB205_empire";
 		editorSubCategory = "RB205_veh_air";
 	};
@@ -334,6 +358,7 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		crew = CREW_EMP_AIR;
+		VEH_INVENTORY_LIGHT
 		faction = "RB205_empire";
 		hiddenselectionstextures[] = {"3as\3AS_Vwing\data\vwing_imp_co.paa","3as\3AS_Vwing\data\vwing_int_co.paa","#(argb,8,8,3)color(0,0,0,1.0,CA)"};
 		hiddenSelectionsMaterials[] = {};
@@ -345,8 +370,9 @@ class cfgVehicles
 		ACCESS_TRUE
 		displayName = "TIE/LN (Fighter)";
 		author = AUTHOR;
-		CARGO_NONE
 		crew = CREW_EMP_AIR;
+		VEH_INVENTORY_LIGHT
+		CARGO_NONE
 		faction = "RB205_empire";
 		editorSubCategory = "RB205_veh_air";
 	};
@@ -356,8 +382,9 @@ class cfgVehicles
 		ACCESS_TRUE
 		displayName = "TIE/IN (Interceptor)";
 		author = AUTHOR;
-		CARGO_NONE
 		crew = CREW_EMP_AIR;
+		VEH_INVENTORY_LIGHT
+		CARGO_NONE
 		faction = "RB205_empire";
 		editorSubCategory = "RB205_veh_air";
 	};
@@ -367,8 +394,9 @@ class cfgVehicles
 		ACCESS_TRUE
 		displayName = "TIE/SA (Bomber)";
 		author = AUTHOR;
-		CARGO_NONE
 		crew = CREW_EMP_AIR;
+		VEH_INVENTORY_LIGHT
+		CARGO_NONE
 		faction = "RB205_empire";
 		editorSubCategory = "RB205_veh_air";
 	};
@@ -378,8 +406,9 @@ class cfgVehicles
 		ACCESS_TRUE
 		displayName = "TIE/SA (Bomber - Cluster)";
 		author = AUTHOR;
-		CARGO_NONE
 		crew = CREW_EMP_AIR;
+		VEH_INVENTORY_LIGHT
+		CARGO_NONE
 		faction = "RB205_empire";
 		editorSubCategory = "RB205_veh_air";
 	};
@@ -389,8 +418,9 @@ class cfgVehicles
 		ACCESS_TRUE
 		displayName = "TIE/D (Defender)";
 		author = AUTHOR;
-		CARGO_NONE
 		crew = CREW_EMP_AIR;
+		VEH_INVENTORY_LIGHT
+		CARGO_NONE
 		faction = "RB205_empire";
 		editorSubCategory = "RB205_veh_air";
 	};
@@ -400,8 +430,9 @@ class cfgVehicles
 		ACCESS_TRUE
 		displayName = "TIE/AD (Advanced)";
 		author = AUTHOR;
-		CARGO_NONE
 		crew = CREW_EMP_AIR;
+		VEH_INVENTORY_LIGHT
+		CARGO_NONE
 		faction = "RB205_empire";
 		editorSubCategory = "RB205_veh_air";
 	};
@@ -415,6 +446,7 @@ class cfgVehicles
 		displayName = "'Catfish' Water Glider";
 		author = AUTHOR;
 		crew = CREW_EMP_DEFAULT;
+		VEH_INVENTORY
 		CARGO_S
 		hiddenSelectionsTextures[] = {"\OPTRE_Vehicles\catfish\data\optre_catfish_boat_co.paa","\OPTRE_Vehicles\catfish\data\optre_catfish_interior_co.paa","\OPTRE_Vehicles\catfish\data\optre_catfish_seats_co.paa","\OPTRE_Vehicles\catfish\data\optre_catfish_windscreen_ca.paa"};
 		hiddenSelectionsMaterials[] = {};
@@ -429,6 +461,7 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		crew = CREW_EMP_DEFAULT;
+		VEH_INVENTORY
 		faction = "RB205_empire";
 		hiddenSelectionsTextures[] = {"\OPTRE_Vehicles\catfish\data\optre_catfish_boat_co.paa","\OPTRE_Vehicles\catfish\data\optre_catfish_interior_co.paa","\OPTRE_Vehicles\catfish\data\optre_catfish_seats_co.paa","\OPTRE_Vehicles\catfish\data\optre_catfish_windscreen_ca.paa","\OPTRE_Vehicles\Warthog\data\snow\m12_turret_snow_co.paa","\optre_vehicles\warthog\data\turrets\sight_co.paa","\optre_vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"};
 		hiddenSelectionsMaterials[] = {};
@@ -438,6 +471,7 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		crew = CREW_EMP_DEFAULT;
+		VEH_INVENTORY
 		faction = "RB205_empire";
 		hiddenSelectionsTextures[] = {"\OPTRE_Vehicles\catfish\data\optre_catfish_boat_co.paa","\OPTRE_Vehicles\catfish\data\optre_catfish_interior_co.paa","\OPTRE_Vehicles\catfish\data\optre_catfish_seats_co.paa","\OPTRE_Vehicles\catfish\data\optre_catfish_windscreen_ca.paa","\OPTRE_Vehicles\Warthog\data\snow\m12_turret_snow_co.paa","\optre_vehicles\warthog\data\turrets\m39_turret_co.paa","\optre_vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"};
 		hiddenSelectionsMaterials[] = {};
@@ -447,6 +481,7 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		crew = CREW_EMP_DEFAULT;
+		VEH_INVENTORY
 		faction = "RB205_empire";
 		hiddenSelectionsTextures[] = {"\OPTRE_Vehicles\catfish\data\optre_catfish_boat_co.paa","\OPTRE_Vehicles\catfish\data\optre_catfish_interior_co.paa","\OPTRE_Vehicles\catfish\data\optre_catfish_seats_co.paa","\OPTRE_Vehicles\catfish\data\optre_catfish_windscreen_ca.paa","\OPTRE_Vehicles\Warthog\data\snow\m12_turret_snow_co.paa","\OPTRE_Vehicles\Warthog\data\snow\m79_turret_snow_co.paa"};
 		hiddenSelectionsMaterials[] = {};
@@ -459,6 +494,7 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		crew = CREW_EMP_DEFAULT;
+		VEH_INVENTORY
 		faction = "RB205_empire";
 		hiddenSelectionsTextures[] = {"3as\3as_republic_heli\rho_class\data\crate_ext_Imp_co.paa","3as\3as_republic_heli\rho_class\data\crate_int_co.paa","3as\3as_republic_heli\rho_class\data\variant_barracks_co.paa","3as\3as_republic_heli\rho_class\data\clone_bed_co.paa","3as\3as_republic_heli\rho_class\data\interior_co.paa"};
 		hiddenSelectionsMaterials[] = {};
@@ -469,6 +505,7 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		crew = CREW_EMP_DEFAULT;
+		VEH_INVENTORY
 		faction = "RB205_empire";
 		hiddenSelectionsTextures[] = {"3as\3as_republic_heli\rho_class\data\crate_ext_Imp_co.paa","3as\3as_republic_heli\rho_class\data\crate_int_co.paa","3as\3as_republic_heli\rho_class\data\variant_barracks_co.paa","3as\3as_republic_heli\rho_class\data\clone_bed_co.paa","3as\3as_republic_heli\rho_class\data\interior_co.paa"};
 		hiddenSelectionsMaterials[] = {};

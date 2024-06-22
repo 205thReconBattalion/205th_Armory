@@ -44,7 +44,7 @@ class cfgVehicles
 		displayName = "'Catfish' Water Glider (MG)";
 		author = AUTHOR;
 		crew = CREW_DEFAULT;
-		VEH_INVENTORY_LIGHT
+		VEH_INVENTORY
 		CARGO_S
 		//Editor/ Zeus
 		side = 1;
@@ -128,7 +128,7 @@ class cfgVehicles
 		displayName = "'Catfish' Water Glider (AA)";
 		author = AUTHOR;
 		crew = CREW_DEFAULT;
-		VEH_INVENTORY_LIGHT
+		VEH_INVENTORY
 		CARGO_S
 		//Editor/ Zeus
 		side = 1;
@@ -189,7 +189,7 @@ class cfgVehicles
 		displayName = "'Catfish' Water Glider (AT)";
 		author = AUTHOR;
 		crew = CREW_DEFAULT;
-		VEH_INVENTORY_LIGHT
+		VEH_INVENTORY
 		CARGO_S
 		//Editor/ Zeus
 		side = 1;
