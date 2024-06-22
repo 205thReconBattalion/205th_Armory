@@ -10,6 +10,7 @@ class cfgPatches
 		};
         skipWhenMissingDependencies = 1;
 		requiredVersion = 1.0;
+        author = "205th Recon Battalion";
 		weapons[] =
 		{
 			"RB205_emp_H_trooper",

@@ -273,7 +273,6 @@ class CfgGlasses
 {
 	#include "cfgGlasses.hpp"
 };
-#include "XtdGearModels.hpp"
 
 class CfgFactionClasses
 {

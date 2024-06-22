@@ -1,0 +1,5 @@
+#define IMAGE_CAMO_DEFAULT 	"#(rgb,8,8,3)color(0,0,0,1)"
+#define IMAGE_CAMO_ARCTIC 	"\aceax_compat_rb205\main\data\background_arctic.jpg"
+#define IMAGE_CAMO_DESERT 	"\aceax_compat_rb205\main\data\background_desert.jpg"
+#define IMAGE_CAMO_JUNGLE 	"\aceax_compat_rb205\main\data\background_jungle.jpg"
+#define IMAGE_CAMO_WOODLAND "\aceax_compat_rb205\main\data\background_woodland.jpg"
