@@ -15,9 +15,7 @@ class cfgPatches
             "RB205_uniform_base",
             "RB205_vest_base",
             "RB205_vest_nco_base",
-            "RB205_vest_co_base",
-            "RB205_vest_medic_base",
-            "RB205_vest_grenadier_base"
+            "RB205_vest_co_base"
         };
         units[] =
 		{

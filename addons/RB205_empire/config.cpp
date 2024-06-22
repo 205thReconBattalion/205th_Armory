@@ -198,8 +198,8 @@ class cfgWeapons
     /*
         HELMETS
     */
-    class H_HelmetB;
-    class RB205_helmet_base: H_HelmetB
+    class help_helmet_base;
+    class RB205_helmet_base: help_helmet_base
     {
         class ItemInfo;
     };
@@ -468,8 +468,8 @@ class cfgWeapons
     /*
         UNIFORMS
     */
-    class Uniform_Base;
-    class RB205_uniform_base: Uniform_Base
+    class help_uniform_base;
+    class RB205_uniform_base: help_uniform_base
     {
         class ItemInfo;
     };
@@ -691,8 +691,8 @@ class cfgWeapons
     /*
         VESTS
     */
-    class Vest_Camo_Base;
-    class RB205_vest_base: Vest_Camo_Base
+    class help_vest_base;
+    class RB205_vest_base: help_vest_base
     {
         class ItemInfo;
     };
@@ -701,14 +701,6 @@ class cfgWeapons
         class ItemInfo;
     };
     class RB205_vest_co_base: RB205_vest_base
-    {
-        class ItemInfo;
-    };
-    class RB205_vest_medic_base: RB205_vest_base
-    {
-        class ItemInfo;
-    };
-    class RB205_vest_grenadier_base: RB205_vest_base
     {
         class ItemInfo;
     };
@@ -1240,48 +1232,51 @@ class cfgVehicles
         BACKPACKS
     */
     class RB205_backpack_base;
-    class RB205_backpack_heavy_base;
-    class RB205_backpack_medic_base;
-    class RB205_backpack_rocket_base;
-    class RB205_backpack_eod_base;
-    class RB205_backpack_radio_base;
-    class RB205_backpack_scout_base;
-    class RB205_backpack_sof_base;
 
-    class RB205_B_emp_heavy: RB205_backpack_heavy_base
+    class RB205_B_emp_heavy: RB205_backpack_base
     {
         ACCESS_TRUE
         displayName = "[205|EMP] Stormtrooper Backpack <Heavy>";
         model = "\JMSLLTE_empire\back_imp.p3d";
         picture = "\JMSLLTE_empire\data\ico\ico_b_imp.paa";
+	    mass = MASS_BACKPACK;
+	    maximumload = INV_BACK;
     };
-    class RB205_B_emp_medic: RB205_backpack_medic_base
+    class RB205_B_emp_medic: RB205_backpack_base
     {
         ACCESS_TRUE
         displayName = "[205|EMP] Stormtrooper Backpack <Medic>";
         model = "\JMSLLTE_empire\back_imp_surv.p3d";
         picture = "\JMSLLTE_empire\data\ico\ico_b_imp.paa";
+	    mass = MASS_BACKPACK;
+	    maximumload = INV_BACK_MEDIC;
     };
-    class RB205_B_emp_rocket: RB205_backpack_rocket_base
+    class RB205_B_emp_rocket: RB205_backpack_base
     {
         ACCESS_TRUE
         displayName = "[205|EMP] Stormtrooper Backpack <AT/AA>";
         model = "\JMSLLTE_empire\back_imp.p3d";
         picture = "\JMSLLTE_empire\data\ico\ico_b_imp.paa";
+	    mass = MASS_BACKPACK;
+	    maximumload = INV_BACK_ROCKET;
     };
-    class RB205_B_emp_eod: RB205_backpack_eod_base
+    class RB205_B_emp_eod: RB205_backpack_base
     {
         ACCESS_TRUE
         displayName = "[205|EMP] Stormtrooper Backpack <EOD>";
         model = "\JMSLLTE_scum\back_small_imp.p3d";
         picture = "\JMSLLTE_scum\data\ico\ico_b_small.paa";
+	    mass = MASS_BACKPACK;
+	    maximumload = INV_BACK_EOD;
     };
-    class RB205_B_emp_radio: RB205_backpack_radio_base
+    class RB205_B_emp_radio: RB205_backpack_base
     {
         ACCESS_TRUE
         displayName = "[205|EMP] Stormtrooper Backpack <RTO>";
         model = "\JMSLLTE_empire\back_rad.p3d";
         picture = "\JMSLLTE_empire\data\ico\ico_b_imp.paa";
+	    mass = MASS_BACKPACK;
+	    maximumload = INV_BACK_RADIO;
     };
     class RB205_B_emp_ab: RB205_backpack_base
     {
@@ -1291,9 +1286,11 @@ class cfgVehicles
         picture = "\JMSLLTE_empire\data\ico\ico_b_snow.paa";
         hiddenSelections[] = {"Camo1"};
         hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\back_skypack_co.paa"};
+	    mass = MASS_BACKPACK;
+	    maximumload = INV_BACK_NONE;
         JETPACK_TRUE
     };
-    class RB205_B_emp_ab_heavy: RB205_backpack_heavy_base
+    class RB205_B_emp_ab_heavy: RB205_backpack_base
     {
         ACCESS_TRUE
         displayName = "[205|EMP] Rockettrooper Jetpack <Heavy>";
@@ -1301,9 +1298,11 @@ class cfgVehicles
         picture = "\JMSLLTE_empire\data\ico\ico_b_snow.paa";
         hiddenSelections[] = {"Camo1"};
         hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\back_skypack_co.paa"};
+	    mass = MASS_BACKPACK;
+	    maximumload = INV_BACK;
         JETPACK_TRUE
     };
-    class RB205_B_emp_ab_medic: RB205_backpack_medic_base
+    class RB205_B_emp_ab_medic: RB205_backpack_base
     {
         ACCESS_TRUE
         displayName = "[205|EMP] Rockettrooper Jetpack <Medic>";
@@ -1311,9 +1310,11 @@ class cfgVehicles
         picture = "\JMSLLTE_empire\data\ico\ico_b_snow.paa";
         hiddenSelections[] = {"Camo1"};
         hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\back_skypack_co.paa"};
+	    mass = MASS_BACKPACK;
+	    maximumload = INV_BACK_MEDIC;
         JETPACK_TRUE
     };
-    class RB205_B_emp_ab_rocket: RB205_backpack_rocket_base
+    class RB205_B_emp_ab_rocket: RB205_backpack_base
     {
         ACCESS_TRUE
         displayName = "[205|EMP] Rockettrooper Jetpack <AT/AA>";
@@ -1321,9 +1322,11 @@ class cfgVehicles
         picture = "\JMSLLTE_empire\data\ico\ico_b_snow.paa";
         hiddenSelections[] = {"Camo1"};
         hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\back_skypack_co.paa"};
+	    mass = MASS_BACKPACK;
+	    maximumload = INV_BACK_ROCKET;
         JETPACK_TRUE
     };
-    class RB205_B_emp_ab_eod: RB205_backpack_eod_base
+    class RB205_B_emp_ab_eod: RB205_backpack_base
     {
         ACCESS_TRUE
         displayName = "[205|EMP] Rockettrooper Jetpack <EOD>";
@@ -1331,9 +1334,11 @@ class cfgVehicles
         picture = "\JMSLLTE_empire\data\ico\ico_b_snow.paa";
         hiddenSelections[] = {"Camo1"};
         hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\back_skypack_co.paa"};
+	    mass = MASS_BACKPACK;
+	    maximumload = INV_BACK_EOD;
         JETPACK_TRUE
     };
-    class RB205_B_emp_ab_radio: RB205_backpack_radio_base
+    class RB205_B_emp_ab_radio: RB205_backpack_base
     {
         ACCESS_TRUE
         displayName = "[205|EMP] Rockettrooper Jetpack <RTO>";
@@ -1341,20 +1346,26 @@ class cfgVehicles
         picture = "\JMSLLTE_empire\data\ico\ico_b_snow.paa";
         hiddenSelections[] = {"Camo1"};
         hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\back_skypack_co.paa"};
+	    mass = MASS_BACKPACK;
+	    maximumload = INV_BACK_RADIO;
         JETPACK_TRUE
     };
-    class RB205_B_emp_scout: RB205_backpack_scout_base
+    class RB205_B_emp_scout: RB205_backpack_base
     {
         ACCESS_TRUE
         displayName = "[205|EMP] Scout Trooper Backpack";
+	    mass = MASS_BACKPACK;
+	    maximumload = INV_BACK;
     };
     class RB205_B_emp_plt: RB205_backpack_base
     {
         ACCESS_TRUE
         displayName = "[205|EMP] Tie Pilot Transmitter";
+	    mass = MASS_BACKPACK;
+	    maximumload = INV_BACK_SCOUT;
         TFAR_RADIO_SMALL
     };
-    class RB205_B_emp_snow_heavy: RB205_backpack_heavy_base
+    class RB205_B_emp_snow_heavy: RB205_backpack_base
     {
         ACCESS_TRUE
         displayName = "[205|EMP] Snowtrooper Backpack <Heavy>";
@@ -1362,8 +1373,10 @@ class cfgVehicles
         picture = "\JMSLLTE_empire\data\ico\ico_b_snow.paa";
         hiddenSelections[] = {"Camo1"};
         hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\back_snow_co.paa"};
+	    mass = MASS_BACKPACK;
+	    maximumload = INV_BACK;
     };
-    class RB205_B_emp_snow_medic: RB205_backpack_medic_base
+    class RB205_B_emp_snow_medic: RB205_backpack_base
     {
         ACCESS_TRUE
         displayName = "[205|EMP] Snowtrooper Backpack <Medic>";
@@ -1371,8 +1384,10 @@ class cfgVehicles
         picture = "\JMSLLTE_empire\data\ico\ico_b_snow.paa";
         hiddenSelections[] = {"Camo1"};
         hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\back_snowMed_co.paa"};
+	    mass = MASS_BACKPACK;
+	    maximumload = INV_BACK_MEDIC;
     };
-    class RB205_B_emp_snow_rocket: RB205_backpack_rocket_base
+    class RB205_B_emp_snow_rocket: RB205_backpack_base
     {
         ACCESS_TRUE
         displayName = "[205|EMP] Snowtrooper Backpack <AT/AA>";
@@ -1380,8 +1395,10 @@ class cfgVehicles
         picture = "\JMSLLTE_empire\data\ico\ico_b_snow.paa";
         hiddenSelections[] = {"Camo1"};
         hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\back_snow_co.paa"};
+	    mass = MASS_BACKPACK;
+	    maximumload = INV_BACK_ROCKET;
     };
-    class RB205_B_emp_snow_eod: RB205_backpack_eod_base
+    class RB205_B_emp_snow_eod: RB205_backpack_base
     {
         ACCESS_TRUE
         displayName = "[205|EMP] Snowtrooper Backpack <EOD>";
@@ -1389,8 +1406,10 @@ class cfgVehicles
         picture = "\JMSLLTE_empire\data\ico\ico_b_snow.paa";
         hiddenSelections[] = {"Camo1"};
         hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\back_snow_co.paa"};
+	    mass = MASS_BACKPACK;
+	    maximumload = INV_BACK_EOD;
     };
-    class RB205_B_emp_snow_radio: RB205_backpack_radio_base
+    class RB205_B_emp_snow_radio: RB205_backpack_base
     {
         ACCESS_TRUE
         displayName = "[205|EMP] Snowtrooper Backpack <RTO>";
@@ -1398,11 +1417,15 @@ class cfgVehicles
         picture = "\JMSLLTE_empire\data\ico\ico_b_snow.paa";
         hiddenSelections[] = {"Camo1"};
         hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\back_snow_co.paa"};
+	    mass = MASS_BACKPACK;
+	    maximumload = INV_BACK_RADIO;
     };
-    class RB205_B_emp_death: RB205_backpack_sof_base
+    class RB205_B_emp_death: RB205_backpack_base
     {
         ACCESS_TRUE
         displayName = "[205|EMP] Death Trooper Transmitter";
+	    mass = MASS_BACKPACK;
+	    maximumload = INV_BACK_SOF;
     };
     /*
         UNITS
