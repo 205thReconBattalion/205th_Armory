@@ -22,13 +22,14 @@ class XtdGearModels
     {
         class RB205_aceax_compat_base
         {
+            author = AUTHOR;
             label = "BASE";
             options[] = 
             {
                 "type",
-                //"rank",
+                "rank",
                 "role",
-                "variation"
+                "variant"
             };
             class type
             {
@@ -85,7 +86,7 @@ class XtdGearModels
                     description = "Schutzausrüstung";
                 };
             };
-            /*class rank
+            class rank
             {
                 label = "Rank";
                 values[] =
@@ -100,37 +101,97 @@ class XtdGearModels
                     "co",
                     "cc"
 				};
-            };*/
+                class cr
+                {
+                    label = "CR";
+                    description = "Recruit";
+                };
+                class ct
+                {
+                    label = "CT";
+                    description = "Trooper - Specialist";
+                    image = IMAGE_CT;
+                };
+                class clc
+                {
+                    label = "CLC";
+                    description = "Lance-Corporal (Fireteam-Lead)";
+                    image = IMAGE_CT;
+                };
+                class cp
+                {
+                    label = "CP";
+                    description = "Corporal (Asst. Squad-Lead)";
+                    image = IMAGE_CT;
+                };
+                class cs
+                {
+                    label = "CS";
+                    description = "Sergeant (Squad-Lead)";
+                    image = IMAGE_CS;
+                };
+                class csm
+                {
+                    label = "CSM";
+                    description = "Sergeant-Major (Asst. Platoon-Lead)";
+                    image = IMAGE_CS;
+                };
+                class cl
+                {
+                    label = "CL";
+                    description = "Lieutenant (Platoon-Lead)";
+                    image = IMAGE_CL;
+                };
+                class co
+                {
+                    label = "CO";
+                    description = "Captain (Asst. Company-Lead)";
+                    image = IMAGE_CO;
+                };
+                class cc
+                {
+                    label = "CC";
+                    description = "Commander (Company-Lead)";
+                    image = IMAGE_CC;
+                };
+            };
             class role
             {
                 label = "Combat Role";
                 values[] =
 				{
                     "rifleman",
+                    "heavy",
                     "rocket",
                     "eod",
                     "grenadier",
-                    "heavy",
                     "marksman",
                     "medic",
-                    "radio"
+                    "radio",
+                    "scuba"
 				};
                 class rifleman
                 {
                     label = "";
-                    description = "Default";
+                    description = "Default/ Rifleman (Schütze)";
                     image = IMAGE_RIFLEMAN;
+                };
+                class heavy
+                {
+                    label = "";
+                    description = "Heavy (Automatik-Schütze)";
+                    image = IMAGE_HEAVY;
                 };
                 class rocket
                 {
                     label = "";
-                    description = "AT/AA";
+                    description = "AT/AA (Panzer-/ Flugabwehrschütze)";
                     image = IMAGE_ROCKET;
                 };
                 class eod
                 {
                     label = "";
-                    description = "EOD";
+                    description = "EOD (Kampfmittelbeseitiger)";
                     image = IMAGE_EOD;
                 };
                 class grenadier
@@ -139,34 +200,34 @@ class XtdGearModels
                     description = "Grenadier";
                     image = IMAGE_GRENADIER;
                 };
-                class heavy
-                {
-                    label = "";
-                    description = "Heavy";
-                    image = IMAGE_HEAVY;
-                };
                 class marksman
                 {
                     label = "";
-                    description = "Marksman";
+                    description = "Marksman (Gruppenscharfschütze)";
                     image = IMAGE_MARKSMAN;
                 };
                 class medic
                 {
                     label = "";
-                    description = "Medic";
+                    description = "Medic (Sanitäter)";
                     image = IMAGE_MEDIC;
                 };
                 class radio
                 {
                     label = "";
-                    description = "RTO";
+                    description = "RTO (Funker)";
                     image = IMAGE_RADIO;
                 };
+                class scuba
+                {
+                    label = "Scuba";
+                    description = "Scuba (Taucher)";
+                    image = IMAGE_SCUBA;
+                };
             };
-            class variation
+            class variant
             {
-                label = "Variation";
+                label = "Variant";
                 values[] =
 				{
                     "dft",
@@ -192,162 +253,12 @@ class XtdGearModels
                 };
             };
         };
-
-        class RB205_aceax_compat_base_H: RB205_aceax_compat_base
-        {
-            label = "BASE_H";
-            options[] = 
-            {
-                "type",
-                "rank",
-                "variation"
-            };
-            class rank
-            {
-                label = "Rank";
-                values[] =
-				{
-                    "cr",
-                    "ct",
-                    "cp",
-                    "cs",
-                    "cl",
-                    "co",
-                    "cc"
-				};
-                class cr
-                {
-                    label = "CR";
-                    description = "Recruit (CR)";
-                };
-                class ct
-                {
-                    label = "CT";
-                    description = "Trooper (CT) - Specialist (CSP)";
-                    image = IMAGE_CT;
-                };
-                class cp
-                {
-                    label = "CP";
-                    description = "Lance Corporal (CLC) - Corporal (CP)";
-                    image = IMAGE_CT;
-                };
-                class cs
-                {
-                    label = "CS";
-                    description = "Sergeant (CS) - Sergeant-Major (CSM)";
-                    image = IMAGE_CS;
-                };
-                class cl
-                {
-                    label = "CL";
-                    description = "Lieutenant (CL)";
-                    image = IMAGE_CL;
-                };
-                class co
-                {
-                    label = "CO";
-                    description = "Captain (CO)";
-                    image = IMAGE_CO;
-                };
-                class cc
-                {
-                    label = "CC";
-                    description = "Commander (CC)";
-                    image = IMAGE_CC;
-                };
-            };
-        };
-
-        class RB205_aceax_compat_base_U: RB205_aceax_compat_base
-        {
-            label = "BASE_U";
-            options[] = 
-            {
-                "type",
-                "rank",
-                "variation"
-            };
-        };
-
-        class RB205_aceax_compat_base_V: RB205_aceax_compat_base
-        {
-            label = "BASE_V";
-            options[] = 
-            {
-                "type",
-                "rank",
-                "role"
-            };
-            class rank
-            {
-                label = "Rank";
-                values[] =
-				{
-                    "ct",
-					"clc",
-					"cp",
-					"cs",
-					"csm",
-					"cl",
-					"co",
-					"cc"
-				};
-                class ct
-                {
-                    label = "CT";
-                    description = "Recruit (CR) - Specialist (CSP)";
-                    image = IMAGE_CT;
-                };
-                class clc
-                {
-                    label = "CLC";
-                    description = "Lance Corporal (CLC)";
-                    image = IMAGE_CT;
-                };
-                class cp
-                {
-                    label = "CP";
-                    description = "Corporal (CP)";
-                    image = IMAGE_CT;
-                };
-                class cs
-                {
-                    label = "CS";
-                    description = "Sergeant (CS)";
-                    image = IMAGE_CS;
-                };
-                class csm
-                {
-                    label = "CSM";
-                    description = "Sergeant-Major (CSM)";
-                    image = IMAGE_CS;
-                };
-                class cl
-                {
-                    label = "CL";
-                    description = "Lieutenant (CL)";
-                    image = IMAGE_CL;
-                };
-                class co
-                {
-                    label = "CO";
-                    description = "Captain (CO)";
-                    image = IMAGE_CO;
-                };
-                class cc
-                {
-                    label = "CC";
-                    description = "Commander (CC)";
-                    image = IMAGE_CC;
-                };
-            };
-        };
     };
     class cfgVehicles
     {
         class RB205_aceax_compat_base_B
         {
+            author = AUTHOR;
             label = "BASE_B";
             options[] = 
             {
@@ -398,6 +309,11 @@ class XtdGearModels
                     label = "SOF";
                     description = "Spezialeinheit";
                 };
+                class snw
+                {
+                    label = "Snow";
+                    description = "Spezialausrüstung für Einsätze im Schnee";
+                };
                 class hzd
                 {
                     label = "Hazard";
@@ -410,30 +326,37 @@ class XtdGearModels
                 values[] =
 				{
                     "rifleman",
+                    "heavy",
                     "rocket",
                     "eod",
                     "grenadier",
-                    "heavy",
                     "marksman",
                     "medic",
-                    "radio"
+                    "radio",
+                    "scuba"
 				};
                 class rifleman
                 {
                     label = "";
-                    description = "Default";
+                    description = "Default/ Rifleman (Schütze)";
                     image = IMAGE_RIFLEMAN;
+                };
+                class heavy
+                {
+                    label = "";
+                    description = "Heavy (Automatik-Schütze)";
+                    image = IMAGE_HEAVY;
                 };
                 class rocket
                 {
                     label = "";
-                    description = "AT/AA";
+                    description = "AT/AA (Panzer-/ Flugabwehrschütze)";
                     image = IMAGE_ROCKET;
                 };
                 class eod
                 {
                     label = "";
-                    description = "EOD";
+                    description = "EOD (Kampfmittelbeseitiger)";
                     image = IMAGE_EOD;
                 };
                 class grenadier
@@ -442,29 +365,29 @@ class XtdGearModels
                     description = "Grenadier";
                     image = IMAGE_GRENADIER;
                 };
-                class heavy
-                {
-                    label = "";
-                    description = "Heavy";
-                    image = IMAGE_HEAVY;
-                };
                 class marksman
                 {
                     label = "";
-                    description = "Marksman";
+                    description = "Marksman (Gruppenscharfschütze)";
                     image = IMAGE_MARKSMAN;
                 };
                 class medic
                 {
                     label = "";
-                    description = "Medic";
+                    description = "Medic (Sanitäter)";
                     image = IMAGE_MEDIC;
                 };
                 class radio
                 {
                     label = "";
-                    description = "RTO";
+                    description = "RTO (Funker)";
                     image = IMAGE_RADIO;
+                };
+                class scuba
+                {
+                    label = "Scuba";
+                    description = "Scuba (Taucher)";
+                    image = IMAGE_SCUBA;
                 };
             };
         };
