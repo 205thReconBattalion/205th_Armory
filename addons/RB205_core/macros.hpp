@@ -90,6 +90,18 @@
 #define CAMOUFLAGE_SCOUT 0.4
 
 
+/* UNIT ICONS */
+#define ICON_DEFAULT 	"iconMan"
+#define ICON_NCO 		"iconManLeader"
+#define ICON_CO 		"iconManOfficer"
+
+#define ICON_ROCKET		"iconManAT"
+#define ICON_EOD		"iconManExplosive"
+#define ICON_HEAVY		"iconManMG"
+#define ICON_MEDIC		"iconManMedic"
+#define ICON_CREWMAN	"iconManEngineer"
+
+
 /* TASK FORCE ARROWHEAD RADIO (TFAR) */
 #define TFAR_RADIO \
 tf_dialog="JLTS_clone_rto_radio_dialog"; \

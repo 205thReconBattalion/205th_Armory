@@ -204,9 +204,8 @@ class cfgVehicles
     {
         ACCESS_FALSE
         author = AUTHOR;
-        picture = LOGO;
         //Combat Role:
-        icon = "iconMan";
+        icon = ICON_DEFAULT;
         identityTypes[] = {"LanguageENG_F","WhiteHead_01"};
         engineer = "false";
         canDeactivateMines = "false";

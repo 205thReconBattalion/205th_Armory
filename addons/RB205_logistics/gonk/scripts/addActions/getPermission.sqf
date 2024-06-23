@@ -44,7 +44,7 @@ private _roles = [
 					player setVariable ["ace_medical_medicClass", 0, true];
 				};
 				case "ARF": {
-					player setVariable ["ACE_IsEngineer", 1, true];
+					player setVariable ["ACE_IsEngineer", 0, true];
 					player setVariable ["ACE_isEOD", 1, true];
 					player setVariable ["ace_medical_medicClass", 1, true];
 				};

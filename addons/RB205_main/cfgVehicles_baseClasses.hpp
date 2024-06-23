@@ -256,6 +256,13 @@ class RB205_arc_base: RB205_clone_base
 	};
 };
 
+class RB205_clone_officer_base: RB205_clone_base
+{
+	ACCESS_FALSE
+	icon = ICON_CO;
+	camouflage = CAMOUFLAGE_SCOUT;
+};
+
 /*
 	BACKPACKS
 */
