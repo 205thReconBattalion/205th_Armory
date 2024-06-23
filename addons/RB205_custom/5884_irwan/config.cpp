@@ -25,19 +25,13 @@ class cfgPatches
 class cfgWeapons
 {
     class RB205_H_trooper;
-    class RB205_H_irwan : RB205_H_trooper
+    class RB205_H_irwan: RB205_H_trooper
     {
         displayName = "[205] Clone Trooper Helmet [5884]";
         hiddenSelectionsTextures[] =
         {
             "RB205_custom\5884_irwan\data\H_irwan.paa",
             "RB205_main\data\default\visor_p2_co.paa"
-        };
-        class XtdGearInfo
-        {
-            model = "RB205_H_custom";
-            id = "5884";
-            var = "dft";
         };
     };
 
@@ -46,18 +40,12 @@ class cfgWeapons
     {
         class ItemInfo;
     };
-    class RB205_U_irwan : RB205_U_trooper
+    class RB205_U_irwan: RB205_U_trooper
     {
         displayName = "[205] Clone Trooper Armor [5884]";
         class ItemInfo : ItemInfo
         {
             uniformClass = RB205_clone_irwan;
-        };
-        class XtdGearInfo
-        {
-            model = "RB205_U_custom";
-            id = "5884";
-            var = "dft";
         };
     };
 };
@@ -65,7 +53,7 @@ class cfgWeapons
 class cfgVehicles
 {
     class RB205_clone_trooper;
-    class RB205_clone_irwan : RB205_clone_trooper
+    class RB205_clone_irwan: RB205_clone_trooper
     {
         displayName = "CTF-5884 Irwan";
         uniformClass = "RB205_U_irwan";

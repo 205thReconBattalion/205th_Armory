@@ -33,12 +33,6 @@ class cfgWeapons
             "RB205_custom\3369_phantom\data\H_phantom.paa",
             "RB205_main\data\airborne\visor_ab_co.paa"
         };
-        class XtdGearInfo
-        {
-            model = "RB205_H_custom";
-            id = "3369";
-            var = "dft";
-        };
     };
 
     class RB205_U_base;
@@ -52,12 +46,6 @@ class cfgWeapons
         class ItemInfo : ItemInfo
         {
             uniformClass = RB205_clone_phantom;
-        };
-        class XtdGearInfo
-        {
-            model = "RB205_U_custom";
-            id = "3369";
-            var = "dft";
         };
     };
 };

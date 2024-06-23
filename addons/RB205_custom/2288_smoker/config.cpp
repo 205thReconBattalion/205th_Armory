@@ -35,12 +35,6 @@ class cfgWeapons
             "RB205_custom\2288_smoker\data\H_smoker.paa", 
             "RB205_main\data\arc\visor_arc_co.paa" 
         };
-        class XtdGearInfo
-        {
-            model = "RB205_H_custom";
-            id = "2288";
-            var = "dft";
-        };
     }; 
 
     class RB205_H_ab_trooper; 
@@ -51,12 +45,6 @@ class cfgWeapons
         { 
             "RB205_custom\2288_smoker\data\H_smoker_airborne.paa",
             "RB205_main\data\airborne\visor_ab_co.paa"
-        };
-        class XtdGearInfo
-        {
-            model = "RB205_H_custom";
-            id = "2288";
-            var = "var1";
         };
     };
  
@@ -72,12 +60,6 @@ class cfgWeapons
         { 
             uniformClass = RB205_clone_smoker; 
         };
-        class XtdGearInfo
-        {
-            model = "RB205_U_custom";
-            id = "2288";
-            var = "dft";
-        };
     }; 
  
     class RB205_V_arc; 
@@ -88,12 +70,6 @@ class cfgWeapons
         { 
             "RB205_custom\2288_smoker\data\V_arc_smoker.paa", 
             "RB205_custom\2288_smoker\data\V_smoker.paa" 
-        };
-        class XtdGearInfo
-        {
-            model = "RB205_V_custom";
-            id = "2288";
-            var = "dft";
         };
     }; 
 }; 

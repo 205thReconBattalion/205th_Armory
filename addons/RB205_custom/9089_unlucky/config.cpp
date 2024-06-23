@@ -33,12 +33,6 @@ class cfgWeapons
             "RB205_custom\9089_unlucky\data\H_unlucky.paa",
             "RB205_main\data\default\visor_p2_co.paa"
         };
-        class XtdGearInfo
-        {
-            model = "RB205_H_custom";
-            id = "9089";
-            var = "dft";
-        };
     };
 
     class RB205_U_base;
@@ -52,12 +46,6 @@ class cfgWeapons
         class ItemInfo: ItemInfo
         {
             uniformClass = RB205_clone_unlucky;
-        };
-        class XtdGearInfo
-        {
-            model = "RB205_U_custom";
-            id = "9089";
-            var = "dft";
         };
     };
 };

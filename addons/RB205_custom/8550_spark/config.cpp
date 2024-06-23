@@ -38,15 +38,6 @@ class cfgWeapons
             "RB205_custom\8550_spark\data\H_spark.paa",
             "RB205_main\data\default\visor_p2_co.paa"
         };
-        class XtdGearInfo
-        {
-            model = "RB205_H";
-            phase = "p2";
-            type = "dft";
-            rank = "cc";
-            camo = "default";
-            var = "default";
-        };
     };
     class RB205_H_arf_lieutenant;
     class RB205_H_arf_spark: RB205_H_arf_lieutenant
@@ -57,15 +48,6 @@ class cfgWeapons
             "RB205_custom\8550_spark\data\H_spark_arf.paa",
             "",
             "RB205_main\data\arf\visor_arf_co.paa"
-        };
-        class XtdGearInfo
-        {
-            model = "RB205_H";
-            phase = "p2";
-            type = "arf";
-            rank = "cc";
-            camo = "default";
-            var = "default";
         };
     };
 
@@ -82,15 +64,6 @@ class cfgWeapons
         {
             uniformClass = RB205_clone_spark;
         };
-        class XtdGearInfo
-        {
-            model = "RB205_U";
-            phase = "p2";
-            type = "dft";
-            rank = "cc";
-            camo = "default";
-            squad = "default";
-        };
     };
 
     class RB205_V_commander_base;
@@ -102,14 +75,6 @@ class cfgWeapons
         {
             "RB205_custom\8550_spark\data\V_spark.paa",
             "RB205_custom\8550_spark\data\V_spark_rank.paa"
-        };
-        class XtdGearInfo
-        {
-            model = "RB205_V";
-            phase = "p2";
-            type = "dft";
-            rank = "cc";
-            special = "default";
         };
     };
 };
@@ -123,11 +88,6 @@ class cfgVehicles
         displayName = "[205] Clone Commander Radio Transmitter [8550]";
         picture = "\RB205_custom\8550_spark\data\ui\icon_B_spark.paa";
 		TFAR_RADIO_SMALL
-        class XtdGearInfo
-        {
-            model = "RB205_custom_B_spark";
-            type = "default";
-        };
     };
 
     class RB205_B_arc_jetpack;
@@ -147,11 +107,6 @@ class cfgVehicles
         hiddenSelectionsTextures[] =
         {
             "RB205_custom\8550_spark\data\B_spark.paa"
-        };
-        class XtdGearInfo
-        {
-            model = "RB205_custom_B_spark";
-            type = "jetpack";
         };
     };
 
@@ -189,46 +144,5 @@ class CfgGlasses
             "RB205_custom\8550_spark\data\VIS_spark.paa"
         };*/
         identityTypes[] = { "RB205_VIS_spark",1 };
-        /*class XtdGearInfo
-        {
-            model = "RB205_G_custom";
-            type = "8550";
-            var = "dft";
-        };*/
-    };
-};
-
-class XtdGearModels
-{
-    class CfgVehicles
-    {
-        class RB205_custom_B_spark
-        {
-            label = "8550";
-            author = "205th Recon Battalion";
-            options[] =
-			{
-				"type"
-			};
-            class type
-            {
-                label = "Variante";
-                values[] =
-				{
-                    "default",
-                    "jetpack"
-                };
-                class default
-                {
-                    label = "Standard";
-                    description = "";
-                };
-                class jetpack
-                {
-                    label = "Jetpack";
-                    description = "";
-                };
-            };
-        };
     };
 };

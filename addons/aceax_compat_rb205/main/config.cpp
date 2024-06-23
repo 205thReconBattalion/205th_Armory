@@ -147,37 +147,37 @@ class XtdGearModels
                 {
                     label = "Default";
                     description = "Kein Squad";
-                    image = "#(rgb,8,8,3)color(0,0,0,1)";
+                    image = IMAGE_NONE;
                 };
                 class 1_1
                 {
                     label = "";
                     description = "Zillo (1-1)";
-                    image = "\RB205_main\data\ui\other\1_1_zillo.jpg";
+                    image = IMAGE_ZILLO;
                 };
                 class 1_2
                 {
                     label = "";
                     description = "Chimaera (1-2)";
-                    image = "\RB205_main\data\ui\other\1_2_chimaera.jpg";
+                    image = IMAGE_CHIMAERA;
                 };
                 class 1_3
                 {
                     label = "";
                     description = "Rancor (1-3)";
-                    image = "\RB205_main\data\ui\other\1_3_rancor.jpg";
+                    image = IMAGE_RANCOR;
                 };
                 class 2_1
                 {
                     label = "";
                     description = "Krayt (2-1)";
-                    image = "\RB205_main\data\ui\other\2_1_krayt.jpg";
+                    image = IMAGE_KRAYT;
                 };
                 class 3_1
                 {
                     label = "";
                     description = "Raven (3-1)";
-                    image = "\RB205_main\data\ui\other\3_1_raven.jpg";
+                    image = IMAGE_RAVEN;
                 };
             };
         };

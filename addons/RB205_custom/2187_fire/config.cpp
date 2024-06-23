@@ -33,12 +33,6 @@ class cfgWeapons
             "RB205_custom\2187_fire\data\H_fire.paa",
             "RB205_main\data\default\visor_p2_co.paa"
         };
-        class XtdGearInfo
-        {
-            model = "RB205_H_custom";
-            id = "2187";
-            var = "dft";
-        };
     };
 
     class RB205_U_base;
@@ -52,12 +46,6 @@ class cfgWeapons
         class ItemInfo: ItemInfo
         {
             uniformClass = RB205_clone_fire;
-        };
-        class XtdGearInfo
-        {
-            model = "RB205_U_custom";
-            id = "2187";
-            var = "dft";
         };
     };
 };

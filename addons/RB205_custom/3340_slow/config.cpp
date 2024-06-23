@@ -34,12 +34,6 @@ class cfgWeapons
             "RB205_custom\3340_slow\data\H_slow.paa",
             "RB205_main\data\default\visor_p2_co.paa"
         };
-        class XtdGearInfo
-        {
-            model = "RB205_H_custom";
-            id = "3340";
-            var = "dft";
-        };
     };
 
     class RB205_U_sgt_base;
@@ -54,12 +48,6 @@ class cfgWeapons
         {
             uniformClass = RB205_clone_slow;
         };
-        class XtdGearInfo
-        {
-            model = "RB205_U_custom";
-            id = "3340";
-            var = "dft";
-        };
     };
 
     class RB205_V_cs;
@@ -70,12 +58,6 @@ class cfgWeapons
         {
             "RB205_custom\3340_slow\data\V_slow.paa",
             ""
-        };
-        class XtdGearInfo
-        {
-            model = "RB205_V_custom";
-            id = "3340";
-            var = "dft";
         };
     };
 };

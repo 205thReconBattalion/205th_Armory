@@ -33,12 +33,6 @@ class cfgWeapons
             "RB205_custom\3234_paso\data\H_paso.paa",
             "RB205_main\data\pilot\visor_plt_co.paa"
         };
-        class XtdGearInfo
-        {
-            model = "RB205_H_custom";
-            id = "3234";
-            var = "dft";
-        };
     };
 
     class RB205_U_base;
@@ -52,12 +46,6 @@ class cfgWeapons
         class ItemInfo: ItemInfo
         {
             uniformClass = RB205_clone_paso;
-        };
-        class XtdGearInfo
-        {
-            model = "RB205_U_custom";
-            id = "3234";
-            var = "dft";
         };
     };
 };

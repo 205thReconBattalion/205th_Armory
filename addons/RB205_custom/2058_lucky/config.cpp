@@ -34,12 +34,6 @@ class cfgWeapons
             "RB205_custom\2058_lucky\data\H_lucky.paa",
 		    "RB205_main\data\pilot\visor_plt_co.paa"
         };
-        class XtdGearInfo
-        {
-            model = "RB205_H_custom";
-            id = "2058";
-            var = "dft";
-        };
 	};
 
     class RB205_U_sgt_base;
@@ -54,12 +48,6 @@ class cfgWeapons
         {
             uniformClass = RB205_clone_lucky;
         };
-        class XtdGearInfo
-        {
-            model = "RB205_U_custom";
-            id = "2058";
-            var = "dft";
-        };
     };
 
     class RB205_V_plt_cs;
@@ -70,12 +58,6 @@ class cfgWeapons
         {
             "RB205_custom\2058_lucky\data\V_lucky.paa",
             ""
-        };
-        class XtdGearInfo
-        {
-            model = "RB205_V_custom";
-            id = "2058";
-            var = "dft";
         };
     };
 };

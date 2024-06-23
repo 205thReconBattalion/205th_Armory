@@ -25,7 +25,7 @@ class cfgPatches
 class cfgWeapons
 {
     class RB205_H_ab_trooper;
-    class RB205_H_fugger : RB205_H_ab_trooper
+    class RB205_H_fugger: RB205_H_ab_trooper
     {
         displayName = "[205] Clone Airborne Trooper Helmet [1618]";
         hiddenSelectionsTextures[] =
@@ -33,28 +33,16 @@ class cfgWeapons
             "RB205_custom\1618_fugger\data\H_fugger.paa",
             "RB205_main\data\airborne\visor_ab_co.paa"
         };
-        class XtdGearInfo
-        {
-            model = "RB205_H_custom";
-            id = "1618";
-            var = "dft";
-        };
     };
 
     class RB205_U_trooper;
     class ItemInfo;
-    class RB205_U_fugger : RB205_U_trooper
+    class RB205_U_fugger: RB205_U_trooper
     {
         displayName = "[205] Clone Trooper Armor [1618]";
         class ItemInfo : ItemInfo
         {
             uniformClass = RB205_clone_fugger;
-        };
-        class XtdGearInfo
-        {
-            model = "RB205_U_custom";
-            id = "1618";
-            var = "dft";
         };
     };
 };
@@ -62,7 +50,7 @@ class cfgWeapons
 class cfgVehicles
 {
     class RB205_clone_ab_trooper;
-    class RB205_clone_fugger : RB205_clone_ab_trooper
+    class RB205_clone_fugger: RB205_clone_ab_trooper
     {
         displayName = "CST-1618 Fugger";
         uniformclass = "RB205_U_fugger";

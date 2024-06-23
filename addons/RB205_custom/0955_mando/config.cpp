@@ -25,19 +25,13 @@ class cfgPatches
 class cfgWeapons
 {
     class RB205_H_corporal;
-    class RB205_H_mando : RB205_H_corporal
+    class RB205_H_mando: RB205_H_corporal
     {
         displayName = "[205] Clone Trooper Helmet [0955]";
         hiddenSelectionsTextures[] =
         {
             "RB205_custom\0955_mando\data\H_mando.paa",
             "RB205_main\data\default\visor_p2_co.paa"
-        };
-        class XtdGearInfo
-        {
-            model = "RB205_H_custom";
-            id = "0955";
-            var = "dft";
         };
     };
 
@@ -46,18 +40,12 @@ class cfgWeapons
     {
         class ItemInfo;
     };
-    class RB205_U_mando : RB205_U_corporal
+    class RB205_U_mando: RB205_U_corporal
     {
         displayName = "[205] Clone Trooper Armor [0955]";
         class ItemInfo : ItemInfo
         {
             uniformClass = RB205_clone_mando;
-        };
-        class XtdGearInfo
-        {
-            model = "RB205_U_custom";
-            id = "0955";
-            var = "dft";
         };
     };
 };
@@ -65,7 +53,7 @@ class cfgWeapons
 class cfgVehicles
 {
     class RB205_clone_lanceCorporal;
-    class RB205_clone_mando : RB205_clone_lanceCorporal
+    class RB205_clone_mando: RB205_clone_lanceCorporal
     {
         displayName = "CLC-0955 Mando";
         uniformclass = "RB205_U_mando";

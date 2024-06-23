@@ -233,7 +233,8 @@ class XtdGearModels
                     "dft",
                     "var1",
                     "var2",
-                    "var3"
+                    "var3",
+                    "dmg"
 				};
                 class dft
                 {
@@ -250,6 +251,10 @@ class XtdGearModels
                 class var3
                 {
                     label = "III";
+                };
+                class dmg
+                {
+                    label = "Damaged";
                 };
             };
         };

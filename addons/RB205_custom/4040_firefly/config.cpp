@@ -33,12 +33,6 @@ class cfgWeapons
             "RB205_custom\4040_firefly\data\H_firefly.paa",
             "RB205_main\data\airborne\visor_ab_co.paa"
         };
-        class XtdGearInfo
-        {
-            model = "RB205_H_custom";
-            id = "4040";
-            var = "dft";
-        };
     };
 
     class RB205_U_base;
@@ -52,12 +46,6 @@ class cfgWeapons
         class ItemInfo : ItemInfo
         {
             uniformClass = RB205_clone_firefly;
-        };
-        class XtdGearInfo
-        {
-            model = "RB205_U_custom";
-            id = "4040";
-            var = "dft";
         };
     };
 };

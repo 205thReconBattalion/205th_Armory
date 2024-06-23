@@ -34,12 +34,6 @@ class cfgWeapons
             "RB205_custom\2441_gentleman\data\H_gentleman.paa",
             "RB205_main\data\arc\visor_arc_co.paa"
         };
-        class XtdGearInfo
-        {
-            model = "RB205_H_custom";
-            id = "2441";
-            var = "dft";
-        };
     };
 
     class RB205_U_base;
@@ -54,12 +48,6 @@ class cfgWeapons
         {
             uniformClass = RB205_clone_gentleman;
         };
-        class XtdGearInfo
-        {
-            model = "RB205_U_custom";
-            id = "2441";
-            var = "dft";
-        };
     };
 
     class RB205_V_arc;
@@ -70,12 +58,6 @@ class cfgWeapons
         {
             "RB205_custom\2441_gentleman\data\V_arc_gentleman.paa",
             "RB205_custom\2441_gentleman\data\V_gentleman.paa"
-        };
-        class XtdGearInfo
-        {
-            model = "RB205_V_custom";
-            id = "2441";
-            var = "dft";
         };
     };
 };

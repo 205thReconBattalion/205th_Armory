@@ -35,12 +35,6 @@ class cfgWeapons
             "RB205_custom\5577_scythe\data\H_scythe.paa",
 		    "RB205_custom\5577_scythe\data\visor_scythe.paa"
         };
-        class XtdGearInfo
-        {
-            model = "RB205_H_custom";
-            id = "5577";
-            var = "dft";
-        };
 	};
 
     class RB205_U_lt_base;
@@ -55,12 +49,6 @@ class cfgWeapons
         {
             uniformClass = RB205_clone_scythe;
         };
-        class XtdGearInfo
-        {
-            model = "RB205_U_custom";
-            id = "5577";
-            var = "dft";
-        };
     };
 
     class RB205_V_cl;
@@ -70,12 +58,6 @@ class cfgWeapons
         hiddenSelectionsTextures[] =
         {
             "RB205_custom\5577_scythe\data\V_scythe.paa"
-        };
-        class XtdGearInfo
-        {
-            model = "RB205_V_custom";
-            id = "5577";
-            var = "dft";
         };
     };
 };

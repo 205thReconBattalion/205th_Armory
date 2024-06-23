@@ -33,12 +33,6 @@ class cfgWeapons
             "RB205_custom\6666_sixes\data\H_sixes.paa",
             "RB205_main\data\pilot\visor_plt_co.paa"
         };
-        class XtdGearInfo
-        {
-            model = "RB205_H_custom";
-            id = "6666";
-            var = "dft";
-        };
     };
 
     class RB205_U_base;
@@ -52,12 +46,6 @@ class cfgWeapons
         class ItemInfo: ItemInfo
         {
             uniformClass = RB205_clone_sixes;
-        };
-        class XtdGearInfo
-        {
-            model = "RB205_U_custom";
-            id = "6666";
-            var = "dft";
         };
     };
 };

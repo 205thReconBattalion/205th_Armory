@@ -34,12 +34,6 @@ class cfgWeapons
             "RB205_custom\5283_putzi\data\H_putzi.paa",
             "RB205_main\data\airborne\visor_ab_co.paa"
         };
-        class XtdGearInfo
-        {
-            model = "RB205_H_custom";
-            id = "5283";
-            var = "dft";
-        };
     };
 
     class RB205_U_sgt_base;
@@ -54,18 +48,12 @@ class cfgWeapons
         {
             uniformClass = RB205_clone_putzi;
         };
-        class XtdGearInfo
-        {
-            model = "RB205_U_custom";
-            id = "5283";
-            var = "dft";
-        };
     };
 
     class RB205_V_ab_cs;
     class RB205_V_putzi: RB205_V_ab_cs
     {
-        displayName = "[205] Clone Airborne Trooper Vest (Sergeant)";
+        displayName = "[205] Clone Trooper Vest [5283]";
         hiddenSelectionsTextures[] =
         {
             "RB205_main\data\airborne\V_ab_accessories_co.paa",

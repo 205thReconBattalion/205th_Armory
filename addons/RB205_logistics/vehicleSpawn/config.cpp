@@ -11,7 +11,7 @@ class CfgPatches
 			"RB205_vehicles_atte",
 			"ace_interact_menu"
 		};
-		author = "205th Recon Battalion"
+		author = "205th Recon Battalion";
 		requiredVersion = 1.0;
 		units[] = {};
 		weapons[] = {};

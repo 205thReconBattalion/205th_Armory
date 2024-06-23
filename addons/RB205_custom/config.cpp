@@ -516,7 +516,6 @@ class cfgVehicles
 		};
 	};
 };
-#include "XtdGearModels.hpp"
 
 class CfgEditorSubcategories
 {

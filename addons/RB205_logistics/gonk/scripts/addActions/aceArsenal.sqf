@@ -84,7 +84,7 @@ params ["_this"];
 		"RB205_H_paso","RB205_U_paso",
 		"RB205_H_slow","RB205_U_slow","RB205_V_slow",
 		"RB205_H_phantom","RB205_U_phantom",
-		"RB205_H_lightning","RB205_U_lightning","RB205_V_lightning",
+		"RB205_H_lightning","RB205_U_lightning",
 		"RB205_H_firefly","RB205_U_firefly",
 		"RB205_H_banger","RB205_U_banger",
 		"RB205_H_crossfire","RB205_U_crossfire",
@@ -96,7 +96,7 @@ params ["_this"];
 		"RB205_H_sixes","RB205_U_sixes",
 		"RB205_H_doc","RB205_H_doc_damaged","RB205_H_arf_doc","RB205_U_doc","RB205_V_doc","RB205_VIS_doc","RB205_VIS_doc_damaged",
 		"RB205_H_norway","RB205_U_norway",
-		"RB205_H_jumper","RB205_U_jumper","RB205_V_jumper",
+		"RB205_H_jumper","RB205_U_jumper",
 		"RB205_H_spark","RB205_H_arf_spark","RB205_U_spark","RB205_V_spark","RB205_B_spark","RB205_B_spark_jetpack","RB205_VIS_spark",
 		"RB205_H_unlucky","RB205_U_unlucky",
 
