@@ -1278,6 +1278,7 @@ class cfgVehicles
         picture = "\JMSLLTE_empire\data\ico\ico_b_imp.paa";
 	    mass = MASS_BACKPACK;
 	    maximumload = INV_BACK_RADIO;
+        TFAR_RADIO
     };
     class RB205_B_emp_ab: RB205_backpack_base
     {
@@ -1350,6 +1351,7 @@ class cfgVehicles
 	    mass = MASS_BACKPACK;
 	    maximumload = INV_BACK_RADIO;
         JETPACK_TRUE
+        TFAR_RADIO
     };
     class RB205_B_emp_scout: RB205_backpack_base
     {
@@ -1357,6 +1359,7 @@ class cfgVehicles
         displayName = "[205|EMP] Scout Trooper Backpack";
 	    mass = MASS_BACKPACK;
 	    maximumload = INV_BACK;
+        TFAR_RADIO_SMALL
     };
     class RB205_B_emp_plt: RB205_backpack_base
     {
@@ -1420,6 +1423,7 @@ class cfgVehicles
         hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\back_snow_co.paa"};
 	    mass = MASS_BACKPACK;
 	    maximumload = INV_BACK_RADIO;
+        TFAR_RADIO
     };
     class RB205_B_emp_death: RB205_backpack_base
     {
@@ -1427,6 +1431,7 @@ class cfgVehicles
         displayName = "[205|EMP] Death Trooper Transmitter";
 	    mass = MASS_BACKPACK;
 	    maximumload = INV_BACK_SOF;
+        TFAR_RADIO
     };
     /*
         UNITS

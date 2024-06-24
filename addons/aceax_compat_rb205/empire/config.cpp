@@ -1,8 +1,3 @@
-#define NAVY_GREY "#(rgb,8,8,3)color(0.408,0.412,0.42,1)"
-#define NAVY_GREEN "#(rgb,8,8,3)color(0.235,0.255,0.227,1)"
-#define ARMY_BLACK "#(rgb,8,8,3)color(0,0,0,1)"
-#define ISB_WHITE "#(rgb,8,8,3)color(0.878,0.878,0.863,1)"
-
 class cfgPatches
 {
     class RB205_arsenalExtendedCompability
@@ -15,11 +10,14 @@ class cfgPatches
 	};
 };
 
+#include "macros.hpp"
+
 class XtdGearModels
 {
     class CfgWeapons 
     {
-        class RB205_emp_officer_base
+        class RB205_aceax_compat_base;
+        class aceax_compat_RB205_empire_base_officer: RB205_aceax_compat_base
         {
             label = "Imperial Officer";
             options[] =
@@ -30,7 +28,7 @@ class XtdGearModels
 			};
             class affiliation
             {
-                label = "Zugehörigkeit";
+                label = "Affiliation";
                 values[] =
 				{
                     "navy1",
@@ -65,7 +63,7 @@ class XtdGearModels
             };
             class rank
             {
-                label = "Rang";
+                label = "Rank";
                 values[] =
 				{
                     "ens",
@@ -108,7 +106,7 @@ class XtdGearModels
             };
             class variant
             {
-                label = "Variante";
+                label = "Variant";
                 values[] =
 				{
                     "dft",
@@ -119,19 +117,19 @@ class XtdGearModels
 				};
                 class dft
                 {
-                    label = "Standard";
+                    label = "Default";
                 };
                 class lowered
                 {
-                    label = "Gesenkt";
+                    label = "Lowered";
                 };
                 class armored
                 {
-                    label = "Gepanzert";
+                    label = "Armored";
                 };
                 class coat
                 {
-                    label = "Mantel";
+                    label = "Coat";
                 };
                 class agent
                 {
@@ -139,7 +137,7 @@ class XtdGearModels
                 };
             };
         };
-        class RB205_emp_H_officer: RB205_emp_officer_base
+        class aceax_compat_RB205_empire_H_officer: aceax_compat_RB205_empire_base_officer
         {
             options[] =
 			{
@@ -147,7 +145,7 @@ class XtdGearModels
                 "variant"
 			};
         };
-        class RB205_emp_U_officer: RB205_emp_officer_base
+        class aceax_compat_RB205_empire_U_officer: aceax_compat_RB205_empire_base_officer
         {
             options[] =
 			{
@@ -155,7 +153,7 @@ class XtdGearModels
                 "variant"
 			};
         };
-        class RB205_emp_V_officer: RB205_emp_officer_base
+        class aceax_compat_RB205_empire_V_officer: aceax_compat_RB205_empire_base_officer
         {
             options[] =
 			{
@@ -165,7 +163,7 @@ class XtdGearModels
 			};
         };
 
-        class RB205_emp_base
+        class aceax_compat_RB205_empire_base: RB205_aceax_compat_base
         {
             label = "Imperial Soldier";
             options[] =
@@ -173,32 +171,33 @@ class XtdGearModels
 				"type",
                 "rank",
                 "variant",
-                "spec"
+                "role"
 			};
             class type
             {
-                label = "Typ";
+                label = "Type";
                 values[] =
 				{
                     "dft",
-                    "ab",
-                    "scout",
+                    "jet",
+                    "sct",
                     "plt",
-                    "snow",
-                    "tank",
-                    "death"
+                    "crw",
+                    "sof",
+                    "snw",
+                    "hzd"
 				};
                 class dft
                 {
-                    label = "Standard";
+                    label = "Default";
                     description = "Stormtrooper";
                 };
-                class ab
+                class jet
                 {
                     label = "Airborne";
                     description = "Rockettrooper";
                 };
-                class scout
+                class sct
                 {
                     label = "Scout";
                     description = "Scout Trooper";
@@ -208,23 +207,28 @@ class XtdGearModels
                     label = "Pilot";
                     description = "Tie Pilot";
                 };
-                class snow
-                {
-                    label = "Snow";
-                    description = "Snowtrooper";
-                };
-                class tank
+                class crw
                 {
                     label = "Tank";
                     description = "Tank Trooper";
                 };
-                class death
+                class sof
                 {
                     label = "Death";
                     description = "Death Trooper";
                 };
+                class snw
+                {
+                    label = "Snow";
+                    description = "Snowtrooper";
+                };
+                class hzd
+                {
+                    label = "Hazard";
+                    description = "";
+                };
             };
-            class rank
+            /*class rank
             {
                 label = "Rang";
                 values[] =
@@ -278,10 +282,10 @@ class XtdGearModels
                     label = "CC";
                     description = "Commander (CC)";
                 };
-            };
+            };*/
             class variant
             {
-                label = "Variante";
+                label = "Variant";
                 values[] =
 				{
                     "dft",
@@ -297,11 +301,11 @@ class XtdGearModels
 				};
                 class dft
                 {
-                    label = "Standard";
+                    label = "Default";
                 };
                 class dirt
                 {
-                    label = "Dreck";
+                    label = "Dirt";
                 };
                 class sand
                 {
@@ -309,11 +313,11 @@ class XtdGearModels
                 };
                 class mud
                 {
-                    label = "Schlamm";
+                    label = "Mud";
                 };
                 class shadow
                 {
-                    label = "Schwarz";
+                    label = "Black";
                 };
                 class grenadier
                 {
@@ -321,22 +325,22 @@ class XtdGearModels
                 };
                 class medic
                 {
-                    label = "Sanitäter";
+                    label = "Medic";
                 };
                 class rebreather
                 {
-                    label = "Atemgerät";
+                    label = "Scuba";
                 };
                 class var1
                 {
-                    label = "Var. I";
+                    label = "I";
                 };
                 class var2
                 {
-                    label = "Var. II";
+                    label = "II";
                 };
             };
-            class spec
+            /*class spec
             {
                 label = "Spezialisierung";
                 values[] =
@@ -372,9 +376,9 @@ class XtdGearModels
                 {
                     label = "EOD";
                 };
-            };
+            };*/
         };
-        class RB205_emp_H: RB205_emp_base
+        class aceax_compat_RB205_empire_H: aceax_compat_RB205_empire_base
         {
             options[] =
 			{
@@ -382,7 +386,7 @@ class XtdGearModels
                 "variant"
 			};
         };
-        class RB205_emp_U: RB205_emp_base
+        class aceax_compat_RB205_empire_U: aceax_compat_RB205_empire_base
         {
             options[] =
 			{
@@ -390,7 +394,7 @@ class XtdGearModels
                 "variant"
 			};
         };
-        class RB205_emp_V: RB205_emp_base
+        class aceax_compat_RB205_empire_V: aceax_compat_RB205_empire_base
         {
             options[] =
 			{
@@ -402,38 +406,40 @@ class XtdGearModels
     };
     class cfgVehicles
     {
-        class RB205_emp_B
+        class RB205_aceax_compat_base_B;
+        class aceax_compat_RB205_empire_B: RB205_aceax_compat_base_B
         {
             label = "Imperial Backpack";
             options[] =
 			{
 				"type",
-                "spec"
+                "role"
 			};
             class type
             {
-                label = "Typ";
+                label = "Type";
                 values[] =
 				{
                     "dft",
-                    "ab",
-                    "scout",
+                    "jet",
+                    "sct",
                     "plt",
-                    "snow",
-                    "tank",
-                    "death"
+                    "crw",
+                    "sof",
+                    "snw",
+                    "hzd"
 				};
                 class dft
                 {
-                    label = "Standard";
+                    label = "Default";
                     description = "Stormtrooper";
                 };
-                class ab
+                class jet
                 {
                     label = "Airborne";
                     description = "Rockettrooper";
                 };
-                class scout
+                class sct
                 {
                     label = "Scout";
                     description = "Scout Trooper";
@@ -443,23 +449,28 @@ class XtdGearModels
                     label = "Pilot";
                     description = "Tie Pilot";
                 };
-                class snow
-                {
-                    label = "Snow";
-                    description = "Snowtrooper";
-                };
-                class tank
+                class crw
                 {
                     label = "Tank";
                     description = "Tank Trooper";
                 };
-                class death
+                class sof
                 {
                     label = "Death";
                     description = "Death Trooper";
                 };
+                class snw
+                {
+                    label = "Snow";
+                    description = "Snowtrooper";
+                };
+                class hzd
+                {
+                    label = "Hazard";
+                    description = "";
+                };
             };
-            class spec
+            /*class spec
             {
                 label = "Spezialisierung";
                 values[] =
@@ -495,658 +506,9 @@ class XtdGearModels
                 {
                     label = "EOD";
                 };
-            };
+            };*/
         };
     };
 };
 
-class XtdGearInfos
-{
-    class CfgWeapons
-	{
-        class RB205_emp_H_officer_grey
-        {
-            model = "RB205_emp_H_officer";
-            affiliation = "navy1";
-            variant = "dft";
-        };
-        class RB205_emp_H_officer_grey_lowered
-        {
-            model = "RB205_emp_H_officer";
-            affiliation = "navy1";
-            variant = "lowered";
-        };
-        class RB205_emp_H_officer_green
-        {
-            model = "RB205_emp_H_officer";
-            affiliation = "navy2";
-            variant = "dft";
-        };
-        class RB205_emp_H_officer_green_lowered
-        {
-            model = "RB205_emp_H_officer";
-            affiliation = "navy2";
-            variant = "lowered";
-        };
-        class RB205_emp_H_officer_helmet_green
-        {
-            model = "RB205_emp_H_officer";
-            affiliation = "navy2";
-            variant = "armored";
-        };
-        class RB205_emp_H_officer_black
-        {
-            model = "RB205_emp_H_officer";
-            affiliation = "army";
-            variant = "dft";
-        };
-        class RB205_emp_H_officer_black_lowered
-        {
-            model = "RB205_emp_H_officer";
-            affiliation = "army";
-            variant = "lowered";
-        };
-        class RB205_emp_H_officer_helmet_black
-        {
-            model = "RB205_emp_H_officer";
-            affiliation = "army";
-            variant = "armored";
-        };
-        class RB205_emp_H_officer_isb_agent
-        {
-            model = "RB205_emp_H_officer";
-            affiliation = "isb";
-            variant = "armored";
-        };
-
-        class RB205_emp_U_officer_grey
-        {
-            model = "RB205_emp_U_officer";
-            affiliation = "navy1";
-            variant = "dft";
-        };
-        class RB205_emp_U_officer_coat_grey
-        {
-            model = "RB205_emp_U_officer";
-            affiliation = "navy1";
-            variant = "coat";
-        };
-        class RB205_emp_U_officer_green
-        {
-            model = "RB205_emp_U_officer";
-            affiliation = "navy2";
-            variant = "dft";
-        };
-        class RB205_emp_U_officer_coat_green
-        {
-            model = "RB205_emp_U_officer";
-            affiliation = "navy2";
-            variant = "coat";
-        };
-        class RB205_emp_U_officer_black
-        {
-            model = "RB205_emp_U_officer";
-            affiliation = "army";
-            variant = "dft";
-        };
-        class RB205_emp_U_officer_coat_black
-        {
-            model = "RB205_emp_U_officer";
-            affiliation = "army";
-            variant = "coat";
-        };
-        class RB205_emp_U_officer_isb
-        {
-            model = "RB205_emp_U_officer";
-            affiliation = "isb";
-            variant = "dft";
-        };
-        class RB205_emp_U_officer_coat_isb
-        {
-            model = "RB205_emp_U_officer";
-            affiliation = "isb";
-            variant = "coat";
-        };
-        class RB205_emp_U_officer_isb_agent
-        {
-            model = "RB205_emp_U_officer";
-            affiliation = "isb";
-            variant = "agent";
-        };
-        
-        class RB205_emp_V_navy_ensign
-        {
-            model = "RB205_emp_V_officer";
-            affiliation = "navy1";
-            rank = "ens";
-            variant = "dft";
-        };
-        class RB205_emp_V_navy_lieutenant
-        {
-            model = "RB205_emp_V_officer";
-            affiliation = "navy1";
-            rank = "lt";
-            variant = "dft";
-        };
-        class RB205_emp_V_navy_seniorLieutenant
-        {
-            model = "RB205_emp_V_officer";
-            affiliation = "navy1";
-            rank = "srlt";
-            variant = "dft";
-        };
-        class RB205_emp_V_navy_captain
-        {
-            model = "RB205_emp_V_officer";
-            affiliation = "navy2";
-            rank = "cpt";
-            variant = "dft";
-        };
-        class RB205_emp_V_navy_admiral
-        {
-            model = "RB205_emp_V_officer";
-            affiliation = "navy2";
-            rank = "adm";
-            variant = "dft";
-        };
-        class RB205_emp_V_army_sergeantMajor
-        {
-            model = "RB205_emp_V_officer";
-            affiliation = "army";
-            rank = "ens";
-            variant = "dft";
-        };
-        class RB205_emp_V_army_lieutenant
-        {
-            model = "RB205_emp_V_officer";
-            affiliation = "army";
-            rank = "lt";
-            variant = "dft";
-        };
-        class RB205_emp_V_army_captain
-        {
-            model = "RB205_emp_V_officer";
-            affiliation = "army";
-            rank = "cpt";
-            variant = "dft";
-        };
-        class RB205_emp_V_army_commander
-        {
-            model = "RB205_emp_V_officer";
-            affiliation = "army";
-            rank = "cmdr";
-            variant = "dft";
-        };
-        class RB205_emp_V_isb_agent
-        {
-            model = "RB205_emp_V_officer";
-            affiliation = "isb";
-            rank = "ens";
-            variant = "dft";
-        };
-        class RB205_emp_V_isb_lieutenant
-        {
-            model = "RB205_emp_V_officer";
-            affiliation = "isb";
-            rank = "lt";
-            variant = "dft";
-        };
-        class RB205_emp_V_isb_captain
-        {
-            model = "RB205_emp_V_officer";
-            affiliation = "isb";
-            rank = "cpt";
-            variant = "dft";
-        };
-        class RB205_emp_V_isb_major
-        {
-            model = "RB205_emp_V_officer";
-            affiliation = "isb";
-            rank = "cmdr";
-            variant = "dft";
-        };
-        class RB205_emp_V_officer_armor_black
-        {
-            model = "RB205_emp_V_officer";
-            affiliation = "army";
-            rank = "ens";
-            variant = "armored";
-        };
-        class RB205_emp_V_officer_armor_green
-        {
-            model = "RB205_emp_V_officer";
-            affiliation = "navy2";
-            rank = "ens";
-            variant = "armored";
-        };
-
-        class RB205_emp_H_trooper
-        {
-            model = "RB205_emp_H";
-            type = "dft";
-            variant = "dft";
-        };
-        class RB205_emp_H_ab_trooper
-        {
-            model = "RB205_emp_H";
-            type = "ab";
-            variant = "dft";
-        };
-        class RB205_emp_H_scout_trooper
-        {
-            model = "RB205_emp_H";
-            type = "scout";
-            variant = "dft";
-        };
-        class RB205_emp_H_plt_trooper
-        {
-            model = "RB205_emp_H";
-            type = "plt";
-            variant = "dft";
-        };
-        class RB205_emp_H_snow_trooper
-        {
-            model = "RB205_emp_H";
-            type = "snow";
-            variant = "dft";
-        };
-        class RB205_emp_H_tank_trooper
-        {
-            model = "RB205_emp_H";
-            type = "tank";
-            variant = "dft";
-        };
-        class RB205_emp_H_death_trooper
-        {
-            model = "RB205_emp_H";
-            type = "death";
-            variant = "dft";
-        };
-        class RB205_emp_H_trooper_dirt
-        {
-            model = "RB205_emp_H";
-            type = "dft";
-            variant = "dirt";
-        };
-        class RB205_emp_H_trooper_sand
-        {
-            model = "RB205_emp_H";
-            type = "dft";
-            variant = "sand";
-        };
-        class RB205_emp_H_trooper_mud
-        {
-            model = "RB205_emp_H";
-            type = "dft";
-            variant = "mud";
-        };
-        class RB205_emp_H_trooper_shadow
-        {
-            model = "RB205_emp_H";
-            type = "dft";
-            variant = "shadow";
-        };
-        class RB205_emp_H_scout_trooper_camo
-        {
-            model = "RB205_emp_H";
-            type = "scout";
-            variant = "dirt";
-        };
-        class RB205_emp_H_scout_trooper_mud
-        {
-            model = "RB205_emp_H";
-            type = "scout";
-            variant = "mud";
-        };
-        class RB205_emp_H_scout_trooper_shadow
-        {
-            model = "RB205_emp_H";
-            type = "scout";
-            variant = "shadow";
-        };
-        
-        class RB205_emp_U_trooper
-        {
-            model = "RB205_emp_U";
-            type = "dft";
-            variant = "dft";
-        };
-        class RB205_emp_U_scout_trooper
-        {
-            model = "RB205_emp_U";
-            type = "scout";
-            variant = "dft";
-        };
-        class RB205_emp_U_plt_trooper
-        {
-            model = "RB205_emp_U";
-            type = "plt";
-            variant = "dft";
-        };
-        class RB205_emp_U_snow_trooper
-        {
-            model = "RB205_emp_U";
-            type = "snow";
-            variant = "dft";
-        };
-        class RB205_emp_U_tank_trooper
-        {
-            model = "RB205_emp_U";
-            type = "tank";
-            variant = "dft";
-        };
-        class RB205_emp_U_death_trooper
-        {
-            model = "RB205_emp_U";
-            type = "death";
-            variant = "dft";
-        };
-        class RB205_emp_U_trooper_dirt
-        {
-            model = "RB205_emp_U";
-            type = "dft";
-            variant = "dirt";
-        };
-        class RB205_emp_U_trooper_sand
-        {
-            model = "RB205_emp_U";
-            type = "dft";
-            variant = "sand";
-        };
-        class RB205_emp_U_trooper_mud
-        {
-            model = "RB205_emp_U";
-            type = "dft";
-            variant = "mud";
-        };
-        class RB205_emp_U_trooper_shadow
-        {
-            model = "RB205_emp_U";
-            type = "dft";
-            variant = "shadow";
-        };
-        class RB205_emp_U_scout_trooper_camo
-        {
-            model = "RB205_emp_U";
-            type = "scout";
-            variant = "dirt";
-        };
-        class RB205_emp_U_scout_trooper_mud
-        {
-            model = "RB205_emp_U";
-            type = "scout";
-            variant = "mud";
-        };
-        class RB205_emp_U_scout_trooper_shadow
-        {
-            model = "RB205_emp_U";
-            type = "scout";
-            variant = "shadow";
-        };
-        
-        class RB205_emp_V_ct
-        {
-            model = "RB205_emp_V";
-            type = "dft";
-            rank = "ct";
-            variant = "dft";
-        };
-        class RB205_emp_V_clc
-        {
-            model = "RB205_emp_V";
-            type = "dft";
-            rank = "clc";
-            variant = "dft";
-        };
-        class RB205_emp_V_cp
-        {
-            model = "RB205_emp_V";
-            type = "dft";
-            rank = "cp";
-            variant = "dft";
-        };
-        class RB205_emp_V_cs
-        {
-            model = "RB205_emp_V";
-            type = "dft";
-            rank = "cs";
-            variant = "dft";
-        };
-        class RB205_emp_V_csm
-        {
-            model = "RB205_emp_V";
-            type = "dft";
-            rank = "csm";
-            variant = "dft";
-        };
-        class RB205_emp_V_cl
-        {
-            model = "RB205_emp_V";
-            type = "dft";
-            rank = "cl";
-            variant = "dft";
-        };
-        class RB205_emp_V_co
-        {
-            model = "RB205_emp_V";
-            type = "dft";
-            rank = "co";
-            variant = "dft";
-        };
-        class RB205_emp_V_cc
-        {
-            model = "RB205_emp_V";
-            type = "dft";
-            rank = "cc";
-            variant = "dft";
-        };
-        class RB205_emp_V_medic
-        {
-            model = "RB205_emp_V";
-            type = "dft";
-            rank = "ct";
-            variant = "medic";
-        };
-        class RB205_emp_V_grenadier
-        {
-            model = "RB205_emp_V";
-            type = "dft";
-            rank = "ct";
-            variant = "grenadier";
-        };
-        class RB205_emp_V_rebreather
-        {
-            model = "RB205_emp_V";
-            type = "dft";
-            rank = "ct";
-            variant = "rebreather";
-        };
-        class RB205_emp_V_scout_ct
-        {
-            model = "RB205_emp_V";
-            type = "scout";
-            rank = "ct";
-            variant = "dft";
-        };
-        class RB205_emp_V_plt_ct
-        {
-            model = "RB205_emp_V";
-            type = "plt";
-            rank = "ct";
-            variant = "dft";
-        };
-        class RB205_emp_V_snow_ct
-        {
-            model = "RB205_emp_V";
-            type = "snow";
-            rank = "ct";
-            variant = "dft";
-        };
-        class RB205_emp_V_tank_ct
-        {
-            model = "RB205_emp_V";
-            type = "tank";
-            rank = "ct";
-            variant = "dft";
-        };
-        class RB205_emp_V_shadow_ct
-        {
-            model = "RB205_emp_V";
-            type = "dft";
-            rank = "ct";
-            variant = "shadow";
-        };
-        class RB205_emp_V_death
-        {
-            model = "RB205_emp_V";
-            type = "death";
-            rank = "ct";
-            variant = "dft";
-        };
-        class RB205_emp_V_death_grenadier
-        {
-            model = "RB205_emp_V";
-            type = "death";
-            rank = "ct";
-            variant = "grenadier";
-        };
-        class RB205_emp_V_death_lead
-        {
-            model = "RB205_emp_V";
-            type = "death";
-            rank = "cc";
-            variant = "dft";
-        };
-        class RB205_emp_V_death_lead2
-        {
-            model = "RB205_emp_V";
-            type = "death";
-            rank = "cc";
-            variant = "var1";
-        };
-        class RB205_emp_V_death_lead3
-        {
-            model = "RB205_emp_V";
-            type = "death";
-            rank = "cc";
-            variant = "var2";
-        };
-    };
-    class CfgVehicles
-	{
-        class RB205_B_emp_heavy
-        {
-            model = "RB205_emp_B";
-            type = "dft";
-            spec = "heavy";
-        };
-        class RB205_B_emp_medic
-        {
-            model = "RB205_emp_B";
-            type = "dft";
-            spec = "medic";
-        };
-        class RB205_B_emp_radio
-        {
-            model = "RB205_emp_B";
-            type = "dft";
-            spec = "radio";
-        };
-        class RB205_B_emp_rocket
-        {
-            model = "RB205_emp_B";
-            type = "dft";
-            spec = "rocket";
-        };
-        class RB205_B_emp_eod
-        {
-            model = "RB205_emp_B";
-            type = "dft";
-            spec = "eod";
-        };
-        class RB205_B_emp_ab
-        {
-            model = "RB205_emp_B";
-            type = "ab";
-            spec = "dft";
-        };
-        class RB205_B_emp_ab_heavy
-        {
-            model = "RB205_emp_B";
-            type = "ab";
-            spec = "heavy";
-        };
-        class RB205_B_emp_ab_medic
-        {
-            model = "RB205_emp_B";
-            type = "ab";
-            spec = "medic";
-        };
-        class RB205_B_emp_ab_radio
-        {
-            model = "RB205_emp_B";
-            type = "ab";
-            spec = "radio";
-        };
-        class RB205_B_emp_ab_rocket
-        {
-            model = "RB205_emp_B";
-            type = "ab";
-            spec = "rocket";
-        };
-        class RB205_B_emp_ab_eod
-        {
-            model = "RB205_emp_B";
-            type = "ab";
-            spec = "eod";
-        };
-        class RB205_B_emp_scout
-        {
-            model = "RB205_emp_B";
-            type = "scout";
-            spec = "dft";
-        };
-        class RB205_B_emp_plt
-        {
-            model = "RB205_emp_B";
-            type = "plt";
-            spec = "dft";
-        };
-        class RB205_B_emp_snow_heavy
-        {
-            model = "RB205_emp_B";
-            type = "snow";
-            spec = "heavy";
-        };
-        class RB205_B_emp_snow_medic
-        {
-            model = "RB205_emp_B";
-            type = "snow";
-            spec = "medic";
-        };
-        class RB205_B_emp_snow_radio
-        {
-            model = "RB205_emp_B";
-            type = "snow";
-            spec = "radio";
-        };
-        class RB205_B_emp_snow_rocket
-        {
-            model = "RB205_emp_B";
-            type = "snow";
-            spec = "rocket";
-        };
-        class RB205_B_emp_snow_eod
-        {
-            model = "RB205_emp_B";
-            type = "snow";
-            spec = "eod";
-        };
-        class RB205_B_emp_death
-        {
-            model = "RB205_emp_B";
-            type = "death";
-            spec = "dft";
-        };
-    };
-};
+#include "XtdGearInfos.hpp"
