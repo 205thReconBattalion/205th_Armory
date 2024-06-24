@@ -39,6 +39,11 @@ class XtdGearInfos
 		H(RB205_H_plt_sergeant,"plt","cs","default","dft")
 		H(RB205_H_plt_lieutenant,"plt","cl","default","dft")
 
+		H(RB205_H_crew_trooper,"crw","ct","default","dft")
+		H(RB205_H_crew_corporal,"crw","cp","default","dft")
+		H(RB205_H_crew_sergeant,"crw","cs","default","dft")
+		H(RB205_H_crew_lieutenant,"crw","cl","default","dft")
+
 		H(RB205_H_snow_recruit,"snw","cr","default","dft")
 		H(RB205_H_snow_trooper,"snw","ct","default","dft")
 		H(RB205_H_snow_corporal,"snw","cp","default","dft")

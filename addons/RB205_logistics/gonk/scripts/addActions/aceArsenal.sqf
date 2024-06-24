@@ -23,6 +23,7 @@ params ["_this"];
 		"RB205_H_ab_recruit","RB205_H_ab_trooper","RB205_H_ab_corporal","RB205_H_ab_sergeant","RB205_H_ab_lieutenant",
 		"RB205_H_arf_recruit","RB205_H_arf_trooper","RB205_H_arfF_trooper","RB205_H_arf_corporal","RB205_H_arfF_corporal","RB205_H_arf_sergeant","RB205_H_arfF_sergeant","RB205_H_arf_lieutenant","RB205_H_arfF_lieutenant","RB205_H_arf_trooper_arctic","RB205_H_arf_trooper_desert","RB205_H_arf_trooper_jungle","RB205_H_arf_trooper_woodland",
 		"RB205_H_plt_recruit","RB205_H_plt_trooper","RB205_H_plt_corporal","RB205_H_plt_sergeant","RB205_H_plt_lieutenant",
+		"RB205_H_crew_trooper","RB205_H_crew_corporal","RB205_H_crew_sergeant","RB205_H_crew_lieutenant",
 		"RB205_H_snow_recruit","RB205_H_snow_trooper","RB205_H_snow_corporal","RB205_H_snow_sergeant","RB205_H_snow_lieutenant",
 		"RB205_H_arc_trooper",
 		"RB205_H_navy_ensign","RB205_H_navy_officer","RB205_H_navy_pettyOfficer","RB205_H_navy_chiefPettyOfficer","RB205_H_navy_admiral",

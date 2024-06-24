@@ -109,7 +109,36 @@ class RB205_H_plt_base: RB205_helmet_base
 	};
 };
 
-//crewman/ engineer
+class RB205_H_crew_base: RB205_helmet_base
+{
+	ACCESS_FALSE
+	picture = "\RB205_main\data\ui\helmets\icon_H_crew.paa";
+	model = "\ls_armor_bluefor\helmet\gar\engineer\ls_gar_engineer_helmet.p3d";
+	hiddenSelections[] =
+	{
+		"camo1",
+		"illum",
+		"visor"
+	};
+	hiddenSelectionsMaterials[] =
+	{
+		"RB205_main\data\materials\H_crew.rvmat",
+		"a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat",
+		"\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+	};
+	ace_hearing_lowerVolume = ACE_HEARING_VOLUME_LOWERED;
+	ls_lighting_hasLight = 1;
+	ls_lighting_itemType = "headgear";
+	ls_lighting_attachedBone = "head";
+	ls_lighting_offset[] = {-0.0575,0.087,0.2};
+	class ItemInfo: ItemInfo
+	{
+		uniformModel = "\ls_armor_bluefor\helmet\gar\engineer\ls_gar_engineer_helmet.p3d";
+		hiddenSelections[] = {"camo1","illum","visor"};
+		mountAction = "MountSide";
+		unmountAction = "DismountSide";
+	};
+};
 
 class RB205_H_snow_base: RB205_helmet_base
 {

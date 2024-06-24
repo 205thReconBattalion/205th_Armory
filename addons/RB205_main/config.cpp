@@ -60,6 +60,11 @@ class cfgPatches
 			"RB205_H_plt_sergeant",
 			"RB205_H_plt_lieutenant",
 
+			"RB205_H_crew_trooper",
+			"RB205_H_crew_corporal",
+			"RB205_H_crew_sergeant",
+			"RB205_H_crew_lieutenant",
+
 			"RB205_H_snow_recruit",
 			"RB205_H_snow_trooper",
 			"RB205_H_snow_corporal",

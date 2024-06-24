@@ -361,6 +361,55 @@ class RB205_H_plt_lieutenant: RB205_H_plt_base
 };
 
 /*
+	CREWMAN HELMETS
+*/
+
+class RB205_H_crew_trooper: RB205_H_crew_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Crewman Trooper Helmet";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\crewman\H_crew_enl_co.paa",
+		"RB205_main\data\crewman\light_crew_co.paa",
+		"RB205_main\data\crewman\visor_crew_co.paa"
+	};
+};
+class RB205_H_crew_corporal: RB205_H_crew_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Crewman Trooper Helmet (Corporal)";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\crewman\H_crew_nco_co.paa",
+		"RB205_main\data\crewman\light_crew_co.paa",
+		"RB205_main\data\crewman\visor_crew_co.paa"
+	};
+};
+class RB205_H_crew_sergeant: RB205_H_crew_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Crewman Trooper Helmet (Sergeant)";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\crewman\H_crew_nco_co.paa",
+		"RB205_main\data\crewman\light_crew_co.paa",
+		"RB205_main\data\crewman\visor_crew_co.paa"
+	};
+};
+class RB205_H_crew_lieutenant: RB205_H_crew_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Crewman Trooper Helmet (Lieutenant)";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\crewman\H_crew_nco_co.paa",
+		"RB205_main\data\crewman\light_crew_co.paa",
+		"RB205_main\data\crewman\visor_crew_co.paa"
+	};
+};
+
+/*
 	SNOW HELMETS
 */
 
