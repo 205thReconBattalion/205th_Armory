@@ -30,20 +30,18 @@ class RB205_clone_trooper: RB205_clone_base
 	};
 	LINKED_ITEMS("RB205_H_trooper","RB205_V_ct","RB205_NV_chip")
 };
-class RB205_clone_lanceCorporal: RB205_clone_base
+class RB205_clone_lanceCorporal: RB205_clone_nco_base
 {
 	ACCESS_TRUE
 	displayName = "(3-CLC) Clone Lance-Corporal";
-	icon = ICON_NCO;
 	uniformclass = "RB205_U_corporal";
 	LINKED_ITEMS("RB205_H_corporal","RB205_V_clc","RB205_NV_chip")
 	identityTypes[] = IDENTITY_TYPES_GLASSES("RB205_VIS");
 };
-class RB205_clone_corporal: RB205_clone_base
+class RB205_clone_corporal: RB205_clone_nco_base
 {
 	ACCESS_TRUE
 	displayName = "(4-CP) Clone Corporal";
-	icon = ICON_NCO;
 	uniformclass = "RB205_U_corporal";
 	hiddenselectionsTextures[] =
 	{
@@ -54,11 +52,10 @@ class RB205_clone_corporal: RB205_clone_base
 	LINKED_ITEMS("RB205_H_corporal","RB205_V_cp","RB205_NV_chip")
 	identityTypes[] = IDENTITY_TYPES_GLASSES("RB205_VIS");
 };
-class RB205_clone_sergeant: RB205_clone_base
+class RB205_clone_sergeant: RB205_clone_nco_base
 {
 	ACCESS_TRUE
 	displayName = "(5-CS) Clone Sergeant";
-	icon = ICON_NCO;
 	uniformclass = "RB205_U_sergeant";
 	hiddenselectionsTextures[] =
 	{
@@ -69,17 +66,16 @@ class RB205_clone_sergeant: RB205_clone_base
 	LINKED_ITEMS("RB205_H_sergeant","RB205_V_cs","RB205_NV_chip")
 	identityTypes[] = IDENTITY_TYPES_GLASSES("RB205_VIS");
 };
-class RB205_clone_sergeantMajor: RB205_clone_base
+class RB205_clone_sergeantMajor: RB205_clone_nco_base
 {
 	ACCESS_TRUE
 	displayName = "(6-CSM) Clone Sergeant-Major";
-	icon = ICON_NCO;
 	uniformclass = "RB205_U_sergeant";
 	LINKED_ITEMS("RB205_H_sergeant","RB205_V_csm","RB205_NV_chip")
 	identityTypes[] = IDENTITY_TYPES_GLASSES("RB205_VIS");
 	backpack="RB205_B_radio_mini";
 };
-class RB205_clone_lieutenant: RB205_clone_officer_base
+class RB205_clone_lieutenant: RB205_clone_co_base
 {
 	ACCESS_TRUE
 	displayName = "(7-CL) Clone Lieutenant";
@@ -94,7 +90,7 @@ class RB205_clone_lieutenant: RB205_clone_officer_base
 	identityTypes[] = IDENTITY_TYPES_GLASSES("RB205_VIS");
 	backpack="RB205_B_radio_mini";
 };
-class RB205_clone_captain: RB205_clone_officer_base
+class RB205_clone_captain: RB205_clone_co_base
 {
 	ACCESS_FALSE
 	displayName = "(8-CO) Clone Captain";
@@ -103,7 +99,7 @@ class RB205_clone_captain: RB205_clone_officer_base
 	identityTypes[] = IDENTITY_TYPES_GLASSES("RB205_VIS");
 	backpack="RB205_B_radio_mini";
 };
-class RB205_clone_commander: RB205_clone_officer_base
+class RB205_clone_commander: RB205_clone_co_base
 {
 	ACCESS_FALSE
 	displayName = "(9-CC) Clone Commander";
@@ -127,44 +123,39 @@ class RB205_clone_ab_trooper: RB205_ab_base
 	uniformclass = "RB205_U_trooper";
 	LINKED_ITEMS("RB205_H_ab_trooper","RB205_V_ab_ct","RB205_NV_chip")
 };
-class RB205_clone_ab_lanceCorporal: RB205_ab_base
+class RB205_clone_ab_lanceCorporal: RB205_ab_nco_base
 {
 	ACCESS_TRUE
 	displayName = "(3-CLC) Clone Airborne Lance-Corporal";
-	icon = ICON_NCO;
 	uniformclass = "RB205_U_corporal";
 	LINKED_ITEMS("RB205_H_ab_corporal","RB205_V_ab_clc","RB205_NV_chip")
 };
-class RB205_clone_ab_corporal: RB205_ab_base
+class RB205_clone_ab_corporal: RB205_ab_nco_base
 {
 	ACCESS_TRUE
 	displayName = "(4-CP) Clone Airborne Corporal";
-	icon = ICON_NCO;
 	uniformclass = "RB205_U_corporal";
 	LINKED_ITEMS("RB205_H_ab_corporal","RB205_V_ab_cp","RB205_NV_chip")
 };
-class RB205_clone_ab_sergeant: RB205_ab_base
+class RB205_clone_ab_sergeant: RB205_ab_nco_base
 {
 	ACCESS_TRUE
 	displayName = "(5-CS) Clone Airborne Sergeant";
-	icon = ICON_NCO;
 	uniformclass = "RB205_U_sergeant";
 	LINKED_ITEMS("RB205_H_ab_sergeant","RB205_V_ab_cs","RB205_NV_chip")
 };
-class RB205_clone_ab_sergeantMajor: RB205_ab_base
+class RB205_clone_ab_sergeantMajor: RB205_ab_nco_base
 {
 	ACCESS_TRUE
 	displayName = "(6-CSM) Clone Airborne Sergeant-Major";
-	icon = ICON_NCO;
 	uniformclass = "RB205_U_sergeant";
 	LINKED_ITEMS("RB205_H_ab_sergeant","RB205_V_ab_csm","RB205_NV_chip")
 	backpack = "RB205_B_ab_radio";
 };
-class RB205_clone_ab_lieutenant: RB205_ab_base
+class RB205_clone_ab_lieutenant: RB205_ab_co_base
 {
 	ACCESS_TRUE
 	displayName = "(7-CL) Clone Airborne Lieutenant";
-	icon = ICON_CO;
 	uniformclass = "RB205_U_lieutenant";
 	LINKED_ITEMS("RB205_H_ab_lieutenant","RB205_V_ab_cl","RB205_NV_chip")
 	backpack = "RB205_B_ab_radio";
@@ -190,19 +181,17 @@ class RB205_clone_arf_trooper: RB205_arf_base
 	};
 	LINKED_ITEMS("RB205_H_arf_trooper","RB205_V_arf_ct","RB205_NV_arf_antenna")
 };
-class RB205_clone_arf_lanceCorporal: RB205_arf_base
+class RB205_clone_arf_lanceCorporal: RB205_arf_nco_base
 {
 	ACCESS_TRUE
 	displayName = "(3-CLC) Clone ARF Lance-Corporal";
-	icon = ICON_NCO;
 	uniformclass = "RB205_U_arf_corporal";
 	LINKED_ITEMS("RB205_H_arf_corporal","RB205_V_arf_clc","RB205_NV_arf_antenna")
 };
-class RB205_clone_arf_corporal: RB205_arf_base
+class RB205_clone_arf_corporal: RB205_arf_nco_base
 {
 	ACCESS_TRUE
 	displayName = "(4-CP) Clone ARF Corporal";
-	icon = ICON_NCO;
 	uniformclass = "RB205_U_arf_corporal";
 	hiddenselectionsTextures[] =
 	{
@@ -212,11 +201,10 @@ class RB205_clone_arf_corporal: RB205_arf_base
 	};
 	LINKED_ITEMS("RB205_H_arf_corporal","RB205_V_arf_cp","RB205_NV_arf_antenna")
 };
-class RB205_clone_arf_sergeant: RB205_arf_base
+class RB205_clone_arf_sergeant: RB205_arf_nco_base
 {
 	ACCESS_TRUE
 	displayName = "(5-CS) Clone ARF Sergeant";
-	icon = ICON_NCO;
 	uniformclass = "RB205_U_arf_sergeant";
 	hiddenselectionsTextures[] =
 	{
@@ -226,19 +214,17 @@ class RB205_clone_arf_sergeant: RB205_arf_base
 	};
 	LINKED_ITEMS("RB205_H_arf_sergeant","RB205_V_arf_cs","RB205_NV_arf_antenna")
 };
-class RB205_clone_arf_sergeantMajor: RB205_arf_base
+class RB205_clone_arf_sergeantMajor: RB205_arf_nco_base
 {
 	ACCESS_TRUE
 	displayName = "(6-CSM) Clone ARF Sergeant-Major";
-	icon = ICON_NCO;
 	uniformclass = "RB205_U_arf_sergeant";
 	LINKED_ITEMS("RB205_H_arf_sergeant","RB205_V_arf_csm","RB205_NV_arf_antenna")
 };
-class RB205_clone_arf_lieutenant: RB205_arf_base
+class RB205_clone_arf_lieutenant: RB205_arf_co_base
 {
 	ACCESS_TRUE
 	displayName = "(7-CL) Clone ARF Lieutenant";
-	icon = ICON_CO;
 	uniformclass = "RB205_U_arf_lieutenant";
 	hiddenselectionsTextures[] =
 	{
@@ -326,19 +312,17 @@ class RB205_clone_plt_trooper: RB205_plt_base
 	};
 	LINKED_ITEMS("RB205_H_plt_trooper","RB205_V_plt_ct","RB205_NV_chip")
 };
-class RB205_clone_plt_lanceCorporal: RB205_plt_base
+class RB205_clone_plt_lanceCorporal: RB205_plt_nco_base
 {
 	ACCESS_TRUE
 	displayName = "(3-CLC) Clone Pilot Lance-Corporal";
-	icon = ICON_NCO;
 	uniformclass = "RB205_U_plt_corporal";
 	LINKED_ITEMS("RB205_H_plt_corporal","RB205_V_plt_clc","RB205_NV_chip")
 };
-class RB205_clone_plt_corporal: RB205_plt_base
+class RB205_clone_plt_corporal: RB205_plt_nco_base
 {
 	ACCESS_TRUE
 	displayName = "(4-CP) Clone Pilot Corporal";
-	icon = ICON_NCO;
 	uniformclass = "RB205_U_plt_corporal";
 	hiddenselectionsTextures[] =
 	{
@@ -348,11 +332,10 @@ class RB205_clone_plt_corporal: RB205_plt_base
 	};
 	LINKED_ITEMS("RB205_H_plt_corporal","RB205_V_plt_cp","RB205_NV_chip")
 };
-class RB205_clone_plt_sergeant: RB205_plt_base
+class RB205_clone_plt_sergeant: RB205_plt_nco_base
 {
 	ACCESS_TRUE
 	displayName = "(5-CS) Clone Pilot Sergeant";
-	icon = ICON_NCO;
 	uniformclass = "RB205_U_plt_sergeant";
 	hiddenselectionsTextures[] =
 	{
@@ -362,19 +345,17 @@ class RB205_clone_plt_sergeant: RB205_plt_base
 	};
 	LINKED_ITEMS("RB205_H_plt_sergeant","RB205_V_plt_cs","RB205_NV_chip")
 };
-class RB205_clone_plt_sergeantMajor: RB205_plt_base
+class RB205_clone_plt_sergeantMajor: RB205_plt_nco_base
 {
 	ACCESS_TRUE
 	displayName = "(6-CSM) Clone Pilot Sergeant-Major";
-	icon = ICON_NCO;
 	uniformclass = "RB205_U_plt_sergeant";
 	LINKED_ITEMS("RB205_H_plt_sergeant","RB205_V_plt_csm","RB205_NV_chip")
 };
-class RB205_clone_plt_lieutenant: RB205_plt_base
+class RB205_clone_plt_lieutenant: RB205_plt_co_base
 {
 	ACCESS_TRUE
 	displayName = "(7-CL) Clone Pilot Lieutenant";
-	icon = ICON_CO;
 	uniformclass = "RB205_U_plt_lieutenant";
 	hiddenselectionsTextures[] =
 	{
@@ -411,19 +392,17 @@ class RB205_clone_snow_trooper: RB205_snow_base
 	};
 	LINKED_ITEMS("RB205_H_snow_trooper","RB205_V_snow_ct","RB205_NV_chip")
 };
-class RB205_clone_snow_lanceCorporal: RB205_snow_base
+class RB205_clone_snow_lanceCorporal: RB205_snow_nco_base
 {
 	ACCESS_TRUE
 	displayName = "(3-CLC) Clone Snow Lance-Corporal";
-	icon = ICON_NCO;
 	uniformclass = "RB205_U_snow_corporal";
 	LINKED_ITEMS("RB205_H_snow_corporal","RB205_V_snow_clc","RB205_NV_chip")
 };
-class RB205_clone_snow_corporal: RB205_snow_base
+class RB205_clone_snow_corporal: RB205_snow_nco_base
 {
 	ACCESS_TRUE
 	displayName = "(4-CP) Clone Snow Corporal";
-	icon = ICON_NCO;
 	uniformclass = "RB205_U_snow_corporal";
 	hiddenselectionsTextures[] =
 	{
@@ -433,11 +412,10 @@ class RB205_clone_snow_corporal: RB205_snow_base
 	};
 	LINKED_ITEMS("RB205_H_snow_corporal","RB205_V_snow_cp","RB205_NV_chip")
 };
-class RB205_clone_snow_sergeant: RB205_snow_base
+class RB205_clone_snow_sergeant: RB205_snow_nco_base
 {
 	ACCESS_TRUE
 	displayName = "(5-CS) Clone Snow Sergeant";
-	icon = ICON_NCO;
 	uniformclass = "RB205_U_snow_sergeant";
 	hiddenselectionsTextures[] =
 	{
@@ -447,20 +425,18 @@ class RB205_clone_snow_sergeant: RB205_snow_base
 	};
 	LINKED_ITEMS("RB205_H_snow_sergeant","RB205_V_snow_cs","RB205_NV_chip")
 };
-class RB205_clone_snow_sergeantMajor: RB205_snow_base
+class RB205_clone_snow_sergeantMajor: RB205_snow_nco_base
 {
 	ACCESS_TRUE
 	displayName = "(6-CSM) Clone Snow Sergeant-Major";
-	icon = ICON_NCO;
 	uniformclass = "RB205_U_snow_sergeant";
 	LINKED_ITEMS("RB205_H_snow_sergeant","RB205_V_snow_csm","RB205_NV_chip")
 	backpack = "RB205_B_radio_mini";
 };
-class RB205_clone_snow_lieutenant: RB205_snow_base
+class RB205_clone_snow_lieutenant: RB205_snow_co_base
 {
 	ACCESS_TRUE
 	displayName = "(7-CL) Clone Snow Lieutenant";
-	icon = ICON_CO;
 	uniformclass = "RB205_U_snow_lieutenant";
 	hiddenselectionsTextures[] =
 	{

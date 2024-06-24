@@ -256,7 +256,60 @@ class RB205_arc_base: RB205_clone_base
 	};
 };
 
-class RB205_clone_officer_base: RB205_clone_base
+class RB205_clone_nco_base: RB205_clone_base
+{
+	ACCESS_FALSE
+	icon = ICON_NCO;
+};
+class RB205_clone_co_base: RB205_clone_base
+{
+	ACCESS_FALSE
+	icon = ICON_CO;
+	camouflage = CAMOUFLAGE_SCOUT;
+};
+
+class RB205_ab_nco_base: RB205_ab_base
+{
+	ACCESS_FALSE
+	icon = ICON_NCO;
+};
+class RB205_ab_co_base: RB205_ab_base
+{
+	ACCESS_FALSE
+	icon = ICON_CO;
+	camouflage = CAMOUFLAGE_SCOUT;
+};
+
+class RB205_arf_nco_base: RB205_arf_base
+{
+	ACCESS_FALSE
+	icon = ICON_NCO;
+};
+class RB205_arf_co_base: RB205_arf_base
+{
+	ACCESS_FALSE
+	icon = ICON_CO;
+	camouflage = CAMOUFLAGE_SCOUT;
+};
+
+class RB205_plt_nco_base: RB205_plt_base
+{
+	ACCESS_FALSE
+	icon = ICON_NCO;
+};
+class RB205_plt_co_base: RB205_plt_base
+{
+	ACCESS_FALSE
+	icon = ICON_CO;
+	camouflage = CAMOUFLAGE_SCOUT;
+};
+
+class RB205_snow_nco_base: RB205_snow_base
+{
+	ACCESS_FALSE
+	icon = ICON_NCO;
+};
+class RB205_snow_co_base: RB205_snow_base
 {
 	ACCESS_FALSE
 	icon = ICON_CO;
