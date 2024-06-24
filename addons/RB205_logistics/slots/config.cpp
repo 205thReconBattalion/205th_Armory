@@ -1,6 +1,6 @@
-/*class cfgPatches
+class cfgPatches
 {
-    class RB205_slots
+    class RB205_logistics_slots
 	{
 		requiredAddons[]=
 		{
@@ -10,61 +10,15 @@
 		requiredVersion = 1.0;
         author = "205th Recon Battalion";
 		weapons[] = {};
-		units[] =
-		{
-
-		};
+		units[] = {};
 	};
 };
 
-#include "\RB205_core\macros.hpp"
-#include "\RB205_main\macros.hpp"
-
-#define SLOT(CLASS,DISPLAYNAME) \
-class ##CLASS##; \
-class ##CLASS##_unarmed: ##CLASS## \
-{ \
-	displayName = ##DISPLAYNAME##; \
-	editorSubCategory = "RB205_slots"; \
-	weapons[] = { "Throw","Put" }; \
-	respawnweapons[] = { "Throw","Put" }; \
-	magazines[] = {}; \
-	respawnmagazines[] = {}; \
-	items[] = { "JLTS_ids_gar_army" }; \
-	respawnitems[] = { "JLTS_ids_gar_army" }; \
-};
-#define SLOT_MED(CLASS,DISPLAYNAME) \
-class ##CLASS##; \
-class ##CLASS##_unarmed: ##CLASS## \
-{ \
-	displayName = ##DISPLAYNAME##; \
-	editorSubCategory = "RB205_slots"; \
-	weapons[] = { "Throw","Put" }; \
-	respawnweapons[] = { "Throw","Put" }; \
-	magazines[] = {}; \
-	respawnmagazines[] = {}; \
-	items[] = { "JLTS_ids_gar_army","JLTS_ids_gar_medical" }; \
-	respawnitems[] = { "JLTS_ids_gar_army","JLTS_ids_gar_medical" }; \
-};
-
-#define SLOT_NAVY(CLASS,DISPLAYNAME) \
-class ##CLASS##; \
-class ##CLASS##_unarmed: ##CLASS## \
-{ \
-	displayName = ##DISPLAYNAME##; \
-	editorSubCategory = "RB205_slots"; \
-	weapons[] = { "Throw","Put" }; \
-	respawnweapons[] = { "Throw","Put" }; \
-	magazines[] = {}; \
-	respawnmagazines[] = {}; \
-	items[] = { "JLTS_ids_gar_navy" }; \
-	respawnitems[] = { "JLTS_ids_gar_navy" }; \
-};
+#include "macros.hpp"
 
 class cfgVehicles
 {
 	SLOT(RB205_clone_spark,							"(0-0) Clone Commander 'CC-8550 Spark'")
-	SLOT(RB205_clone_lucky,							"(0-0) Clone Lieuteant 'CL-2058 Lucky")
 
 	SLOT(RB205_clone_doc,							"(1-0) Clone Captain 'CO-7005 Doc'")
 	SLOT(RB205_clone_scythe,						"(1-0) Clone Lieutenant 'CL-5577 Scythe'")
@@ -98,10 +52,7 @@ class cfgVehicles
 	SLOT(RB205_clone_plt_corporal_raven,			"(3-1-B) Clone Corporal")
 	SLOT(RB205_clone_plt_trooper_raven,				"(3-1-C) Clone Trooper")
 
-	SLOT_NAVY(RB205_navy_chiefPettyOfficer, 		"(4-0-A) Chief Petty Officer")
-	SLOT_NAVY(RB205_navy_pettyOfficer, 				"(4-0-B) Petty Officer")
-	SLOT_NAVY(RB205_navy_officer, 					"(4-0-C) Officer")
-	SLOT_NAVY(RB205_navy_ensign, 					"(4-0-D) Ensign")
+	//NAVY -> empire
 
 	SLOT(RB205_clone_recruit,						"(5-0) Clone Recruit")
 	
@@ -121,6 +72,5 @@ class CfgEditorSubcategories
 	class RB205_slots
 	{
 		displayName = "Slots (Unarmed)";
-		ACCESS_TRUE
 	};
-};*/
+};
