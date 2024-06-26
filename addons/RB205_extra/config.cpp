@@ -1,6 +1,6 @@
 class cfgPatches
 {
-    class RB205_accessories
+    class RB205_extra
 	{
 		requiredAddons[] = {};
 		requiredVersion = 1.0;
@@ -24,18 +24,18 @@ class cfgWeapons
         descriptionShort = "";
 		descriptionUse = "";
 		picture = "\RB205_main\data\ui\other\RB205_logo.paa";
-		model = "\RB205_accessories\medal.p3d";
+		model = "\RB205_extra\medal.p3d";
         hiddenSelections[] = {"camo1"};
 		hiddenSelectionsMaterial[] =
         {
-            "\RB205_accessories\data\medal\medal.rvmat"
+            "\RB205_extra\data\medal\medal.rvmat"
         };
         visionMode[] = {"Normal"};
         class ItemInfo
         {
             type = 616;
-            uniformModel = "\RB205_accessories\medal.p3d";
-            modelOff = "\RB205_accessories\medal.p3d";
+            uniformModel = "\RB205_extra\medal.p3d";
+            modelOff = "\RB205_extra\medal.p3d";
             mass = 1;
             hiddenSelections[] = {"camo1"};
         };
@@ -47,7 +47,7 @@ class cfgWeapons
         displayname = "[205|Medal] Veteran of War Medal";
         hiddenSelectionsTextures[] =
         {
-            "\RB205_accessories\data\medal\medal_service1.paa"
+            "\RB205_extra\data\medal\medal_service1.paa"
         };
     };
     class RB205_medal_service2: RB205_medal_base
@@ -56,7 +56,7 @@ class cfgWeapons
         displayname = "[205|Medal] Distinctive Veteran of War Medal";
         hiddenSelectionsTextures[] =
         {
-            "\RB205_accessories\data\medal\medal_service2.paa"
+            "\RB205_extra\data\medal\medal_service2.paa"
         };
     };
     class RB205_medal_service3: RB205_medal_base
@@ -65,7 +65,7 @@ class cfgWeapons
         displayname = "[205|Medal] Outstanding Veteran of War Medal";
         hiddenSelectionsTextures[] =
         {
-            "\RB205_accessories\data\medal\medal_service3.paa"
+            "\RB205_extra\data\medal\medal_service3.paa"
         };
     };
     class RB205_medal_serviceKIA: RB205_medal_base
@@ -74,7 +74,7 @@ class cfgWeapons
         displayname = "[205|Medal] Crescent of Service Medal";
         hiddenSelectionsTextures[] =
         {
-            "\RB205_accessories\data\medal\medal_serviceKIA.paa"
+            "\RB205_extra\data\medal\medal_serviceKIA.paa"
         };
     };
 
@@ -84,7 +84,7 @@ class cfgWeapons
         displayname = "[205|Medal] Medal of Bravery";
         hiddenSelectionsTextures[] =
         {
-            "\RB205_accessories\data\medal\medal_bravery.paa"
+            "\RB205_extra\data\medal\medal_bravery.paa"
         };
     };
     class RB205_medal_infiltration: RB205_medal_base
@@ -93,7 +93,7 @@ class cfgWeapons
         displayname = "[205|Medal] Medal of Infiltration";
         hiddenSelectionsTextures[] =
         {
-            "\RB205_accessories\data\medal\medal_infiltration.paa"
+            "\RB205_extra\data\medal\medal_infiltration.paa"
         };
     };
     class RB205_medal_medical: RB205_medal_base
@@ -103,7 +103,7 @@ class cfgWeapons
         descriptionShort = "Trotz vieler Verletzte und großem Stress sind die Träger des Medical Aid Cross über sich hinausgewachsen und haben durch ihren Einsatz vielen Klonen das Leben gerettet.";
         hiddenSelectionsTextures[] =
         {
-            "\RB205_accessories\data\medal\medal_medical.paa"
+            "\RB205_extra\data\medal\medal_medical.paa"
         };
     };
     class RB205_medal_melee: RB205_medal_base
@@ -112,7 +112,7 @@ class cfgWeapons
         displayname = "[205|Medal] Melee Combat Medal";
         hiddenSelectionsTextures[] =
         {
-            "\RB205_accessories\data\medal\medal_melee.paa"
+            "\RB205_extra\data\medal\medal_melee.paa"
         };
     };
     class RB205_medal_recruitment: RB205_medal_base
@@ -121,7 +121,7 @@ class cfgWeapons
         displayname = "[205|Medal] Medal of Recruitment";
         hiddenSelectionsTextures[] =
         {
-            "\RB205_accessories\data\medal\medal_recruitment.paa"
+            "\RB205_extra\data\medal\medal_recruitment.paa"
         };
     };
     class RB205_medal_pow: RB205_medal_base
@@ -130,7 +130,7 @@ class cfgWeapons
         displayname = "[205|Medal] Prisoner of War Medal";
         hiddenSelectionsTextures[] =
         {
-            "\RB205_accessories\data\medal\medal_pow.paa"
+            "\RB205_extra\data\medal\medal_pow.paa"
         };
     };
     class RB205_medal_aircraft: RB205_medal_base
@@ -139,7 +139,7 @@ class cfgWeapons
         displayname = "[205|Medal] Ace Aircraft Medal";
         hiddenSelectionsTextures[] =
         {
-            "\RB205_accessories\data\medal\medal_aircraft.paa"
+            "\RB205_extra\data\medal\medal_aircraft.paa"
         };
     };
     class RB205_medal_tank: RB205_medal_base
@@ -148,7 +148,7 @@ class cfgWeapons
         displayname = "[205|Medal] Ace Tankery Medal";
         hiddenSelectionsTextures[] =
         {
-            "\RB205_accessories\data\medal\medal_tank.paa"
+            "\RB205_extra\data\medal\medal_tank.paa"
         };
     };
     
@@ -158,7 +158,7 @@ class cfgWeapons
         displayname = "[205|Medal] Chancellor Palpetine Award for Clarity in Crisis";
         hiddenSelectionsTextures[] =
         {
-            "\RB205_accessories\data\medal\medal_clarityInCrisis.paa"
+            "\RB205_extra\data\medal\medal_clarityInCrisis.paa"
         };
     };
     class RB205_medal_heroes: RB205_medal_base
@@ -167,7 +167,7 @@ class cfgWeapons
         displayname = "[205|Medal] Cross of Heroes";
         hiddenSelectionsTextures[] =
         {
-            "\RB205_accessories\data\medal\medal_heroes.paa"
+            "\RB205_extra\data\medal\medal_heroes.paa"
         };
     };
     class RB205_medal_oriramikad: RB205_medal_base
@@ -176,7 +176,7 @@ class cfgWeapons
         displayname = "[205|Medal] Award of Ori'Ramikad";
         hiddenSelectionsTextures[] =
         {
-            "\RB205_accessories\data\medal\medal_oriramikad.paa"
+            "\RB205_extra\data\medal\medal_oriramikad.paa"
         };
     };
 };
@@ -184,7 +184,7 @@ class cfgWeapons
 class CfgGlasses
 {
     class G_Combat;
-    class RB205_accessories_base: G_Combat
+    class RB205_extra_base: G_Combat
     {
         ACCESS_FALSE
         picture = "\RB205_main\data\ui\other\RB205_logo.paa";
@@ -194,33 +194,33 @@ class CfgGlasses
         identityTypes[] = {};
     };
 
-	class RB205_arc_bracer: RB205_accessories_base
+	class RB205_arc_bracer: RB205_extra_base
 	{
         ACCESS_TRUE
 		displayname = "[205] Clone ARC Bracer";
-		picture="\RB205_accessories\data\ui\arc_bracer.paa";
+		picture="\RB205_extra\data\ui\arc_bracer.paa";
         descriptionShort = "";
 		descriptionUse = "";
 
-		model = "\RB205_accessories\arc_bracer.p3d";
+		model = "\RB205_extra\arc_bracer.p3d";
         hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsMaterial[] =
         {
-            "\RB205_accessories\data\arc_bracer\camo1.rvmat",
-            "\RB205_accessories\data\arc_bracer\camo2.rvmat"
+            "\RB205_extra\data\arc_bracer\camo1.rvmat",
+            "\RB205_extra\data\arc_bracer\camo2.rvmat"
         };
 		hiddenSelectionsTextures[] =
         {
-            "\RB205_accessories\data\arc_bracer\camo1_co.paa",
-            "\RB205_accessories\data\arc_bracer\camo2_co.paa"
+            "\RB205_extra\data\arc_bracer\camo1_co.paa",
+            "\RB205_extra\data\arc_bracer\camo2_co.paa"
         };
 	};
 
-    class RB205_scythe_attachments: RB205_accessories_base
+    class RB205_scythe_attachments: RB205_extra_base
     {
         ACCESS_TRUE
         displayname = "[205] Clone Lieutenant Scythe's Attachments";
-		model = "\RB205_accessories\scythe_attachments.p3d";
+		model = "\RB205_extra\scythe_attachments.p3d";
         hiddenSelections[] =
         {
             "pouch",
@@ -229,15 +229,15 @@ class CfgGlasses
         };
 		hiddenSelectionsMaterial[] =
         {
-            "\RB205_accessories\data\scythe\pouch.rvmat",
-            "\RB205_accessories\data\scythe\insignialt.rvmat",
-            "\RB205_accessories\data\scythe\knife.rvmat"
+            "\RB205_extra\data\scythe\pouch.rvmat",
+            "\RB205_extra\data\scythe\insignialt.rvmat",
+            "\RB205_extra\data\scythe\knife.rvmat"
         };
 		hiddenSelectionsTextures[] =
         {
-            "\RB205_accessories\data\scythe\pouch_co.paa",
-            "\RB205_accessories\data\scythe\insignialt_co.paa",
-            "\RB205_accessories\data\scythe\knife_co.paa"
+            "\RB205_extra\data\scythe\pouch_co.paa",
+            "\RB205_extra\data\scythe\insignialt_co.paa",
+            "\RB205_extra\data\scythe\knife_co.paa"
         };
     };
 };
