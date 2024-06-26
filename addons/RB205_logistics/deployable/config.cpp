@@ -5,7 +5,8 @@ class CfgPatches
 		requiredAddons[] =
 		{
 			"RB205_main",
-			"RB205_vehicles_prowler"
+			"RB205_vehicles_prowler",
+			"JLTS_C_Intel"
 		};
 		requiredVersion=1.0;
 		author="205th Recon Battalion";
@@ -18,7 +19,13 @@ class CfgPatches
 
 			"RB205_heavyRepeater",
 			"RB205_autoTurret",
-			"RB205_squadShield"
+			"RB205_squadShield",
+
+			"RB205_prowler_packed"
+		};
+		weapons[] =
+		{
+			"RB205_prowler_item"
 		};
 	};
 };
@@ -149,6 +156,70 @@ class CfgVehicles
 			dissasembleTo[] = {"RB205_B_prowler"};
 			primary = 0;
 			base = "";
+		};
+		class UserActions
+		{
+			class pick_up
+			{
+				userActionID = 52;
+				displayName = "Pack up Prowler 1000";
+				displayNameDefault = "<t align='center'><img image='\a3\missions_f_oldman\data\img\holdactions\holdAction_box_ca.paa' size='2' /><br/></t><t align='center'>Pack up Prowler 1000</t>";
+				condition = "alive this && vehicle player == player && ((UAVControl this) select 1 isEqualto '')";
+				statement = "[this] call RB205_uav_fnc_pick_drone";
+				position = "";
+				priority = 5;
+				radius = 1.8;
+				animPeriod = 2;
+				onlyForplayer = 1;
+				showWindow = 1;
+			};
+		};
+	};
+
+
+	class JLTS_GH_intel_briefcase;
+	class RB205_prowler_packed: JLTS_GH_intel_briefcase
+	{
+		displayName = "Prowler 1000 (Packed)";
+		class TransportItems
+		{
+			class RB205_prowler_item
+			{
+				name = "RB205_prowler_item";
+				count = 1;
+			};
+		};
+	};
+};
+
+class CfgWeapons
+{
+	class JLTS_intel_briefcase;
+	class InventoryWeapon_Base_F;
+	class RB205_prowler_item: JLTS_intel_briefcase
+	{
+		displayName = "Prowler 1000 (Packed)";
+		descriptionShort = "Auseinandergebaute Prowler 1000 Drohne<br/>Doppelklick zum aufbauen";
+		class ItemInfo: InventoryWeapon_Base_F
+		{
+			mass = 100;
+		};
+	};
+};
+
+class CfgFunctions
+{
+	class RB205_uav
+	{
+		class UAV
+		{
+			file="\RB205_logistics\deployable\functions";
+			class uav_init
+			{
+				postInit = 1;
+			};
+			class deploy_uav {};
+			class pick_drone {};
 		};
 	};
 };
