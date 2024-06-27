@@ -9,7 +9,8 @@
 
 /* ACE CARGO */
 #define CARGO_NONE \
-	ace_cargo_hasCargo = 0;
+	ace_cargo_hasCargo = 0; \
+	ace_cargo_space = 0;
 #define CARGO_S \
 	ace_cargo_hasCargo = 1; \
 	ace_cargo_space = 5;

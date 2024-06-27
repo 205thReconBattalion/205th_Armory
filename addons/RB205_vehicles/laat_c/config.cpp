@@ -98,5 +98,23 @@ class cfgVehicles
 		};
 		#include "\RB205_vehicles\laat\laat_sounds.hpp"
 		#include "\RB205_vehicles\sounds_aircraft_alarm.hpp"
+		//Vehicle Transport
+		class VehicleTransport
+		{
+			class Carrier
+			{
+				loadingDistance = 10;
+				loadingAngle = 60;
+				cargoAlignment[] = {"center","front"};
+				cargoBayDimensions[] = {"Limit1","limit2"};
+				cargoSpacing[] = {0,0.15,0};
+				disableHeightLimit = 1;
+				exits[] = {"exit"};
+				maxLoadMass = 200000;
+				parachuteClassDefault = "B_Parachute_02_F";
+				parachuteHeightLimitDefault = 50;
+				unloadingInterval = 2;
+			};
+		};
 	};
 };
