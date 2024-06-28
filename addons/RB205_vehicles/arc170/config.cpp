@@ -20,17 +20,15 @@ class cfgPatches
 #include "\RB205_vehicles\macros.hpp"
 #include "\RB205_vehicles\inventory.hpp"
 
-class cfgWeapons {};
 class cfgVehicles
 {
 	class 3as_arc_170_base;
-
 	class RB205_arc170: 3as_arc_170_base
 	{
 		ACCESS_TRUE
 		displayName = "ARC-170";
-		author = "205th Recon Battalion";
-		crew = "RB205_clone_plt_trooper";
+		author = AUTHOR;
+		crew = CREW_AIR;
 		VEH_INVENTORY_LIGHT
 		CARGO_NONE
 		//Editor/ Zeus
@@ -38,7 +36,7 @@ class cfgVehicles
 		faction = "RB205";
 		editorSubcategory = "RB205_veh_air";
 		editorPreview = "";
-		//Textures
+		//Texture
 		hiddenselectionstextures[] =
 		{
 			"RB205_vehicles\arc170\data\arc170_main_frame_co.paa",

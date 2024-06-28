@@ -1,0 +1,17 @@
+#define AUTHOR "205th Recon Battalion"
+
+#define IMAGE_CT "#(rgb,8,8,3)color(1,1,1,1)"
+#define IMAGE_CS "#(rgb,8,8,3)color(0.349,0.325,0.122,1)"
+#define IMAGE_CL "#(rgb,8,8,3)color(0.133,0.31,0.376,1)"
+#define IMAGE_CO "#(rgb,8,8,3)color(0.396,0.149,0.161,1)"
+#define IMAGE_CC "#(rgb,8,8,3)color(0.733,0.612,0.212,1)"
+
+#define IMAGE_RIFLEMAN 	"\aceax_compat_rb205\data\role_rifleman.jpg"
+#define IMAGE_ROCKET 	"\aceax_compat_rb205\data\role_rocket.jpg"
+#define IMAGE_EOD 		"\aceax_compat_rb205\data\role_eod.jpg"
+#define IMAGE_GRENADIER "\aceax_compat_rb205\data\role_grenadier.jpg"
+#define IMAGE_HEAVY 	"\aceax_compat_rb205\data\role_heavy.jpg"
+#define IMAGE_MARKSMAN 	"\aceax_compat_rb205\data\role_marksman.jpg"
+#define IMAGE_MEDIC 	"\aceax_compat_rb205\data\role_medic.jpg"
+#define IMAGE_RADIO 	"\aceax_compat_rb205\data\role_radio.jpg"
+#define IMAGE_SCUBA		"#(rgb,8,8,3)color(0,0,0,1)"

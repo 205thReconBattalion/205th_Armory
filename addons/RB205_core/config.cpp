@@ -6,47 +6,47 @@ class cfgPatches
         {
             "A3_Characters_F"
         };
+
 		requiredVersion = 1.0;
+        author = "205th Recon Battalion";
         weapons[] =
 		{
             "RB205_helmet_base",
             "RB205_uniform_base",
             "RB205_vest_base",
             "RB205_vest_nco_base",
-            "RB205_vest_co_base",
-            "RB205_vest_medic_base",
-            "RB205_vest_grenadier_base"
+            "RB205_vest_co_base"
         };
         units[] =
 		{
-            "RB205_unit_base"
+            "RB205_unit_base",
+            "RB205_backpack_base"
         };
 	};
 };
 
-//#include "\RB205_core\macros.hpp"
-//#include "\RB205_core\macros_extArsenal.hpp"
 #include "macros.hpp"
 
 class cfgWeapons
 {
-    class ItemCore;
-    class H_HelmetB: ItemCore
+    class H_HelmetB;
+    class help_helmet_base: H_HelmetB
     {
         class ItemInfo;
     };
-    class RB205_helmet_base: H_HelmetB
+    class RB205_helmet_base: help_helmet_base
     {
         ACCESS_FALSE
         author = AUTHOR;
-        picture = PICTURE;
+        picture = LOGO;
         descriptionShort = "";
         ace_hearing_protection = 1;
-        ace_hearing_lowerVolume = 0.1;
+        ace_hearing_lowerVolume = ACE_HEARING_VOLUME;
         subItems[] = {};
         class ItemInfo: ItemInfo
         {
-            mass = 20;
+            mass = MASS_HELMET;
+            allowedSlots[] = {605,901};
             modelSides[] = {6};
             class HitpointsProtectionInfo
             {
@@ -65,20 +65,22 @@ class cfgWeapons
             };
         };
     };
-    class Uniform_Base: ItemCore
+
+    class Uniform_Base;
+    class help_uniform_base: Uniform_Base
     {
         class ItemInfo;
     };
-    class RB205_uniform_base: Uniform_Base
+    class RB205_uniform_base: help_uniform_base
     {
         ACCESS_FALSE
         author = AUTHOR;
-        picture = PICTURE;
+        picture = LOGO;
         descriptionShort = "";
         class ItemInfo: ItemInfo
         {
-            mass = 150;
-            containerClass = "Supply80";
+            mass = MASS_UNIFORM;
+            containerClass = INV_UNIFORM;
             modelSides[] = {6};
             uniformClass = "RB205_unit_base";
             uniformModel = "-";
@@ -86,20 +88,21 @@ class cfgWeapons
         };
     };
 
-    class Vest_Camo_Base: ItemCore
+    class Vest_Camo_Base;
+    class help_vest_base: Vest_Camo_Base
     {
         class ItemInfo;
     };
-    class RB205_vest_base: Vest_Camo_Base
+    class RB205_vest_base: help_vest_base
     {
         ACCESS_FALSE
         author = AUTHOR;
-        picture = PICTURE;
+        picture = LOGO;
         descriptionShort = "";
         class ItemInfo: ItemInfo
         {
-            mass = 10;
-            containerClass = "Supply200";
+            mass = MASS_VEST;
+            containerClass = INV_VEST;
             class HitpointsProtectionInfo{};
         };
     };
@@ -108,8 +111,8 @@ class cfgWeapons
         ACCESS_FALSE
         class ItemInfo: ItemInfo
         {
-            mass = 20;
-            containerClass = "Supply250";
+            mass = MASS_VEST_NCO;
+            containerClass = INV_VEST_NCO;
             class HitpointsProtectionInfo
             {
                 class Chest
@@ -138,8 +141,8 @@ class cfgWeapons
         ACCESS_FALSE
         class ItemInfo: ItemInfo
         {
-            mass = 40;
-            containerClass = "Supply300";
+            mass = MASS_VEST_CO;
+            containerClass = INV_VEST_CO;
             class HitpointsProtectionInfo
             {
                 class Chest
@@ -163,43 +166,57 @@ class cfgWeapons
             };
         };
     };
-    class RB205_vest_medic_base: RB205_vest_base
+
+    class NVGoggles;
+    class help_nvg_base: NVGoggles
+    {
+        class ItemInfo;
+    };
+    class RB205_nvg_base: help_nvg_base
     {
         ACCESS_FALSE
+        author = AUTHOR;
+        picture = LOGO;
+        descriptionShort = "NV";
+        visionMode[] = { "Normal", "NVG" };
         class ItemInfo: ItemInfo
         {
-            containerClass = "Supply250";
+            mass = MASS_NVG;
         };
     };
-    class RB205_vest_grenadier_base: RB205_vest_base
+    class RB205_nvg_ti_base: RB205_nvg_base
     {
         ACCESS_FALSE
-        class ItemInfo: ItemInfo
-        {
-            containerClass = "Supply250";
-        };
+        descriptionShort = "NV/TI";
+        visionMode[] = { "Normal", "NVG", "TI" };
+	    thermalMode[] = {0};
     };
 };
 
 class cfgVehicles
 {
-    class B_Soldier_base_F;
+    class SoldierWB;
+    class B_Soldier_base_F: SoldierWB
+    {
+        class HitPoints;
+    };
     class RB205_unit_base: B_Soldier_base_F
     {
         ACCESS_FALSE
         author = AUTHOR;
-        picture = PICTURE;
-        //icon = "iconMan";
+        //Combat Role:
+        icon = ICON_DEFAULT;
         identityTypes[] = {"LanguageENG_F","WhiteHead_01"};
-        //engineer = "false";
-        //canDeactivateMines = "false";
-        //camouflage = 1.4;
+        engineer = "false";
+        canDeactivateMines = "false";
+        camouflage = CAMOUFLAGE_DEFAULT;
+        //Armor Values:
         armor = 2;
         armorStructural = 4;
         explosionShielding = 0.40000001;
         minTotalDamageThreshold = 0.001;
         impactDamageMultiplier = 0.5;
-        class HitPoints
+        class HitPoints: HitPoints
         {
             class HitFace
             {
@@ -370,54 +387,15 @@ class cfgVehicles
         };
     };
 
-    class B_Kitbag_rgr;
     class Bag_Base;
     class RB205_backpack_base: Bag_Base
     {
         ACCESS_FALSE
         author = AUTHOR;
-        picture = PICTURE;
-        descriptionShort = "";
+        picture = LOGO;
 		model = "\RB205_core\data\B_invisible.p3d";
+        descriptionShort = "";
 	    maximumLoad = 0;
 		mass = 0;
-    };
-    class RB205_backpack_heavy_base: RB205_backpack_base
-    {
-        ACCESS_FALSE
-        maximumLoad = 150;
-    };
-    class RB205_backpack_medic_base: RB205_backpack_base
-    {
-        ACCESS_FALSE
-        maximumLoad = 250;
-    };
-    class RB205_backpack_rocket_base: RB205_backpack_base
-    {
-        ACCESS_FALSE
-        maximumLoad = 200;
-    };
-    class RB205_backpack_eod_base: RB205_backpack_base
-    {
-        ACCESS_FALSE
-        maximumLoad = 150;
-    };
-    class RB205_backpack_radio_base: RB205_backpack_base
-    {
-        ACCESS_FALSE
-        maximumLoad = 50;
-        TFAR_RADIO
-    };
-    class RB205_backpack_scout_base: RB205_backpack_base
-    {
-        ACCESS_FALSE
-        maximumLoad = 200;
-        TFAR_RADIO_SMALL
-    };
-    class RB205_backpack_sof_base: RB205_backpack_base
-    {
-        ACCESS_FALSE
-        maximumLoad = 300;
-        TFAR_RADIO_SMALL
     };
 };

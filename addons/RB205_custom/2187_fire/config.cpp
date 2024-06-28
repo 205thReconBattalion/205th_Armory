@@ -33,16 +33,13 @@ class cfgWeapons
             "RB205_custom\2187_fire\data\H_fire.paa",
             "RB205_main\data\default\visor_p2_co.paa"
         };
-        class XtdGearInfo
-        {
-            model = "RB205_H_custom";
-            id = "2187";
-            var = "dft";
-        };
     };
 
-    class RB205_U_trooper;
-    class ItemInfo;
+    class RB205_U_base;
+    class RB205_U_trooper: RB205_U_base
+    {
+        class ItemInfo;
+    };
     class RB205_U_fire: RB205_U_trooper
     {
         displayName = "[205] Clone Trooper Armor [2187]";
@@ -50,30 +47,24 @@ class cfgWeapons
         {
             uniformClass = RB205_clone_fire;
         };
-        class XtdGearInfo
-        {
-            model = "RB205_U_custom";
-            id = "2187";
-            var = "dft";
-        };
     };
 };
 
 class cfgVehicles
 {
-class RB205_clone_trooper;
-class RB205_clone_fire: RB205_clone_trooper
-{
-    displayName = "CSP-2187 Fire";
-    uniformclass = "RB205_U_fire";
-    editorSubCategory = "RB205_lore";
-    hiddenselectionsTextures[] =
+    class RB205_clone_trooper;
+    class RB205_clone_fire: RB205_clone_trooper
+    {
+        displayName = "CSP-2187 Fire";
+        uniformclass = "RB205_U_fire";
+        editorSubCategory = "RB205_lore";
+        hiddenselectionsTextures[] =
         {
-        "RB205_custom\2187_fire\data\U_fire_upper.paa",
-        "RB205_custom\2187_fire\data\U_fire_lower.paa",
-        "RB205_main\data\default\U_undersuit_co.paa"
+            "RB205_custom\2187_fire\data\U_fire_upper.paa",
+            "RB205_custom\2187_fire\data\U_fire_lower.paa",
+            "RB205_main\data\default\U_undersuit_co.paa"
         };
-    LINKED_ITEMS("RB205_H_fire","RB205_V_ct","RB205_NV_chip")
-    backpack = "RB205_B_radio";
-};
+        LINKED_ITEMS("RB205_H_fire","RB205_V_ct","RB205_NV_chip")
+        backpack = "RB205_B_radio";
+    };
 };

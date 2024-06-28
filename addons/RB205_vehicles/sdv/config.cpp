@@ -27,10 +27,10 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		displayName = "SDV";
-		author = "205th Recon Battalion";
-		crew = "RB205_clone_trooper";
+		author = AUTHOR;
+		crew = CREW_DEFAULT;
 		VEH_INVENTORY
-        CARGO_M
+        CARGO_S
 		//Editor/ Zeus
 		side = 1;
 		faction = "RB205";

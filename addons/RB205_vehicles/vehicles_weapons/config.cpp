@@ -7,7 +7,7 @@ class cfgPatches
 			"RB205_vehicles"
 		};
 		requiredVersion = 1.0;
-    author = "205th Recon Battalion";
+    	author = "205th Recon Battalion";
 		weapons[] =
 		{
 			"RB205_Missile_AA_SR",
@@ -86,25 +86,25 @@ class CfgWeapons
 			1
 		};
 	};
-  class HMG_127;
-  class OPTRE_M41_LAAG: HMG_127
+  	class HMG_127;
+  	class OPTRE_M41_LAAG: HMG_127
 	{
-    class FullAuto;
-  }
-  class RB205_wth_mg: OPTRE_M41_LAAG
+    	class FullAuto;
+  	}
+  	class RB205_wth_mg: OPTRE_M41_LAAG
 	{
-    magazines[] =
+		magazines[] =
 		{
-      "RB205_wth_mg_mag_1000rnd",
-    };
-    class FullAuto: FullAuto
+			"RB205_wth_mg_mag_1000rnd",
+		};
+		class FullAuto: FullAuto
 		{
-      class StandardSound
+			class StandardSound
 			{
-        soundsetshot[] = { "3AS_Z6_SoundSet" };
-      };
-    };
-  };
+				soundsetshot[] = { "3AS_Z6_SoundSet" };
+			};
+		};
+  	};
 };
 
 class CfgMagazines
@@ -120,9 +120,9 @@ class CfgMagazines
 
 class CfgAmmo
 {
-  class OPTRE_B_127x99_Ball;
-  class RB205_wth_mg_ammo: OPTRE_B_127x99_Ball
+  	class OPTRE_B_127x99_Ball;
+  	class RB205_wth_mg_ammo: OPTRE_B_127x99_Ball
 	{
-    model = "\3AS\3AS_Weapons\Data\tracer_blue.p3d";
-  };
+    	model = "\3AS\3AS_Weapons\Data\tracer_blue.p3d";
+  	};
 };

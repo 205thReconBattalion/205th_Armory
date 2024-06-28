@@ -34,28 +34,19 @@ class cfgWeapons
             "RB205_custom\3340_slow\data\H_slow.paa",
             "RB205_main\data\default\visor_p2_co.paa"
         };
-        class XtdGearInfo
-        {
-            model = "RB205_H_custom";
-            id = "3340";
-            var = "dft";
-        };
     };
 
-    class RB205_U_sergeant;
-    class ItemInfo;
+    class RB205_U_sgt_base;
+    class RB205_U_sergeant: RB205_U_sgt_base
+    {
+        class ItemInfo;
+    };
     class RB205_U_slow: RB205_U_sergeant
     {
         displayName = "[205] Clone Trooper Armor [3340]";
         class ItemInfo: ItemInfo
         {
             uniformClass = RB205_clone_slow;
-        };
-        class XtdGearInfo
-        {
-            model = "RB205_U_custom";
-            id = "3340";
-            var = "dft";
         };
     };
 
@@ -67,12 +58,6 @@ class cfgWeapons
         {
             "RB205_custom\3340_slow\data\V_slow.paa",
             ""
-        };
-        class XtdGearInfo
-        {
-            model = "RB205_V_custom";
-            id = "3340";
-            var = "dft";
         };
     };
 };
@@ -92,6 +77,6 @@ class cfgVehicles
             "RB205_main\data\default\U_undersuit_co.paa"
         };
         LINKED_ITEMS("RB205_H_slow","RB205_V_slow","RB205_NV_rangefinder")
-	    identityTypes[] = {"LanguageENG_F","SWLB_JH_Head_Hair"};
+	    identityTypes[] = IDENTITY_TYPES;
     };
 };

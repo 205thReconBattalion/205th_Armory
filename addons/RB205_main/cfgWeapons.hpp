@@ -361,6 +361,55 @@ class RB205_H_plt_lieutenant: RB205_H_plt_base
 };
 
 /*
+	CREWMAN HELMETS
+*/
+
+class RB205_H_crew_trooper: RB205_H_crew_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Crewman Trooper Helmet";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\crewman\H_crew_enl_co.paa",
+		"RB205_main\data\crewman\light_crew_co.paa",
+		"RB205_main\data\crewman\visor_crew_co.paa"
+	};
+};
+class RB205_H_crew_corporal: RB205_H_crew_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Crewman Trooper Helmet (Corporal)";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\crewman\H_crew_nco_co.paa",
+		"RB205_main\data\crewman\light_crew_co.paa",
+		"RB205_main\data\crewman\visor_crew_co.paa"
+	};
+};
+class RB205_H_crew_sergeant: RB205_H_crew_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Crewman Trooper Helmet (Sergeant)";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\crewman\H_crew_nco_co.paa",
+		"RB205_main\data\crewman\light_crew_co.paa",
+		"RB205_main\data\crewman\visor_crew_co.paa"
+	};
+};
+class RB205_H_crew_lieutenant: RB205_H_crew_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Crewman Trooper Helmet (Lieutenant)";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\crewman\H_crew_nco_co.paa",
+		"RB205_main\data\crewman\light_crew_co.paa",
+		"RB205_main\data\crewman\visor_crew_co.paa"
+	};
+};
+
+/*
 	SNOW HELMETS
 */
 
@@ -1120,129 +1169,52 @@ class RB205_V_arc: RB205_V_arc_base
 	};
 };
 
+/*
+	NIGHTVISION GOGGLES
+*/
 
-
-class ls_nvg_base;
-class lsd_gar_standard_nvg: ls_nvg_base
-{
-	class ItemInfo;
-};
-class RB205_NV: lsd_gar_standard_nvg
+class RB205_NV: RB205_NV_visor_base
 {
 	ACCESS_TRUE
-	author = "205th Recon Battalion";
-	displayName = "[205] Clone Trooper Visor";
-	descriptionShort = "NV";
-	modelOptics = MODEL_OPTICS;
-	VIS_NV
-	picture = "\RB205_main\data\ui\other\icon_NV.paa";
-	hiddenSelectionsMaterials[] =
-	{
-		"RB205_main\data\materials\NV_dft.rvmat"
-	};
+	displayName = "[205] Clone Trooper NV Visor";
 	hiddenSelectionsTextures[] =
 	{
 		"RB205_main\data\default\NV_default_co.paa"
 	};
-	class ItemInfo: ItemInfo
-	{
-		mass = 10;
-	};
 };
 
-class lsd_gar_standardSPC_nvg: lsd_gar_standard_nvg
-{
-	class ItemInfo;
-};
-class RB205_NV_marksman: lsd_gar_standardSPC_nvg
+class RB205_NV_marksman: RB205_NV_visor2_base
 {
 	ACCESS_TRUE
-	author = "205th Recon Battalion";
-	displayName = "[205] Clone Trooper Visor <Marksman>";
-	descriptionShort = "NV/TI";
-	modelOptics = MODEL_OPTICS;
-	VIS_NV_T
-	picture = "\RB205_main\data\ui\other\icon_NV_marksman.paa";
-	hiddenSelectionsMaterials[] =
-	{
-		"RB205_main\data\materials\NV_dft.rvmat"
-	};
+	displayName = "[205] Clone Trooper NV Visor <Marksman>";
 	hiddenSelectionsTextures[] =
 	{
 		"RB205_main\data\default\NV_default_co.paa"
 	};
-	class ItemInfo: ItemInfo
-	{
-		mass = 10;
-	};
 };
 
-class lsd_gar_rangefinder_nvg: ls_nvg_base
-{
-	class ItemInfo;
-};
-class RB205_NV_rangefinder: lsd_gar_rangefinder_nvg
+class RB205_NV_rangefinder: RB205_NV_rangefinder_base
 {
 	ACCESS_TRUE
-	author = "205th Recon Battalion";
 	displayName = "[205] Clone Trooper Rangefinder";
-	descriptionShort = "NV";
-	modelOptics = MODEL_OPTICS;
-	VIS_NV
-	picture = "\RB205_main\data\ui\other\icon_NV_rangefinder.paa";
-	hiddenSelectionsMaterials[] =
-	{
-		"RB205_main\data\materials\NV_dft.rvmat"
-	};
 	hiddenSelectionsTextures[] =
 	{
 		"RB205_main\data\default\NV_default_co.paa"
 	};
-	class ItemInfo: ItemInfo
-	{
-		mass = 5;
-	};
 };
-class RB205_NV_arf_antenna: lsd_gar_rangefinder_nvg
+
+class RB205_NV_arf_antenna: RB205_NV_arf_antenna_base
 {
 	ACCESS_TRUE
-	author = "205th Recon Battalion";
 	displayName = "[205] Clone ARF Trooper Antenna";
-	descriptionShort = "NV/TI";
-	modelOptics = MODEL_OPTICS;
-	VIS_NV_T
-	picture = "\RB205_main\data\ui\other\icon_NV_arf.paa";
-	model = "\SWLB_equipment\facewears\helmet_ARF_antenna.p3d";
-	hiddenSelections[] = {};
 	hiddenSelectionsTextures[] =
 	{
 		"RB205_main\data\arf\NV_arf_co.paa"
 	};
-	class ItemInfo
-	{
-		type = 616;
-		uniformModel = "\SWLB_equipment\facewears\helmet_ARF_antenna.p3d";
-		modelOff = "\SWLB_equipment\facewears\helmet_ARF_antenna.p3d";
-		mass = 5;
-		hiddenSelections[] = {};
-	};
 };
 
-class NVGoggles;
-class JLTS_NVG_droid_chip_1: NVGoggles
-{
-	class ItemInfo;
-};
-class RB205_NV_chip: JLTS_NVG_droid_chip_1
+class RB205_NV_chip: RB205_NV_chip_base
 {
 	ACCESS_TRUE
-	author = "205th Recon Battalion";
 	displayName = "[205] Integrated Nightvision";
-	descriptionShort = "NV";
-	modelOptics = MODEL_OPTICS;
-	VIS_NV
-	class ItemInfo: ItemInfo
-	{
-		mass = 0;
-	};
 };

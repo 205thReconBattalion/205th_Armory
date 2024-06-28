@@ -35,7 +35,7 @@ class CfgWeapons
 		{
 			"\RB205_weapons\data\RB205_binocular_co.paa"
 		};
-		visionMode[] = {"Normal","NVG"};
+		visionMode[] = { "Normal", "NVG" };
 	};
 
 	class SWLB_clone_commander_binocular;
@@ -54,6 +54,7 @@ class CfgWeapons
 		{
 			"\RB205_weapons\data\RB205_binocular_arf_blk_co.paa"
 		};
-		visionMode[] = {"Normal","NVG","TI"};
+		visionMode[] = { "Normal", "NVG", "TI" };
+	    thermalMode[] = {0};
 	};
 };

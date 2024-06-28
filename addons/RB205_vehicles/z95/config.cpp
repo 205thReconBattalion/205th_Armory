@@ -20,7 +20,6 @@ class cfgPatches
 #include "\RB205_vehicles\macros.hpp"
 #include "\RB205_vehicles\inventory.hpp"
 
-class cfgWeapons {};
 class cfgVehicles
 {
 	class 3as_Z95_Republic;
@@ -29,8 +28,8 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		displayName = "Z-95 Headhunter";
-		author = "205th Recon Battalion";
-		crew = "RB205_clone_plt_trooper";
+		author = AUTHOR;
+		crew = CREW_AIR;
 		VEH_INVENTORY_LIGHT
 		CARGO_NONE
 		//Editor/ Zeus

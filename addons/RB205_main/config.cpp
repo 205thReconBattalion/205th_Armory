@@ -4,15 +4,23 @@ class cfgPatches
 	{
 		requiredAddons[]=
 		{
-			"ls_armor_bluefor",
-			"ls_equipment_bluefor",
+			"RB205_core",
 			"lsd_armor_bluefor",
+			"ls_armor_bluefor",
+			"SWLB_clones",
+			"SWLB_CEE",
 			"lsd_equipment_bluefor",
+			"3AS_Intel",
+			"ls_armor_bluefor_deprecated",
+			"ls_equipment_bluefor",
 			"SWLB_equipment_backpacks",
-			"JLTS_core",
 			"JLTS_characters_CloneArmor2",
-			"JLTS_jumppacks"//,
-			//"LS_Armor" //by Last Force Project
+			"JLTS_jumppacks",
+			"SWLB_equipment_backpacks",
+			"A3_Characters_F_Heads",
+			"A3_Characters_F",
+			"RB205_weapons"
+			//"LS_Armor" //by Last Force Project*/
 		};
 		requiredVersion = 1.0;
         author = "205th Recon Battalion";
@@ -51,6 +59,11 @@ class cfgPatches
 			"RB205_H_plt_corporal",
 			"RB205_H_plt_sergeant",
 			"RB205_H_plt_lieutenant",
+
+			"RB205_H_crew_trooper",
+			"RB205_H_crew_corporal",
+			"RB205_H_crew_sergeant",
+			"RB205_H_crew_lieutenant",
 
 			"RB205_H_snow_recruit",
 			"RB205_H_snow_trooper",
@@ -189,6 +202,34 @@ class cfgPatches
 
 			"RB205_clone_arc_trooper",
 
+			"RB205_clone_trooper_aa",
+			"RB205_clone_trooper_at",
+			"RB205_clone_trooper_eod",
+			"RB205_clone_trooper_grenadier",
+			"RB205_clone_trooper_heavy",
+			"RB205_clone_trooper_marksman",
+			"RB205_clone_trooper_medic",
+			"RB205_clone_trooper_rto",
+			
+			"RB205_clone_ab_trooper_eod",
+			"RB205_clone_ab_trooper_grenadier",
+			"RB205_clone_ab_trooper_heavy",
+			"RB205_clone_ab_trooper_marksman",
+			"RB205_clone_ab_trooper_medic",
+			"RB205_clone_ab_trooper_rto",
+
+			"RB205_clone_arf_trooper_medic",
+			"RB205_clone_arf_trooper_sniper",
+
+			"RB205_clone_snow_trooper_aa",
+			"RB205_clone_snow_trooper_at",
+			"RB205_clone_snow_trooper_eod",
+			"RB205_clone_snow_trooper_grenadier",
+			"RB205_clone_snow_trooper_heavy",
+			"RB205_clone_snow_trooper_marksman",
+			"RB205_clone_snow_trooper_medic",
+			"RB205_clone_snow_trooper_rto",
+
 			"RB205_B_heavy",
 			"RB205_B_medic",
 			"RB205_B_rocket",
@@ -237,31 +278,34 @@ class CfgGlasses
 {
 	#include "cfgGlasses.hpp"
 };
-#include "XtdGearModels.hpp"
 
 class CfgFactionClasses
 {
 	class RB205
 	{
 		displayName = "205th Recon Battalion";
-		ACCESS_TRUE
 	};
 };
 class CfgEditorSubcategories
 {
-	class RB205_1AP
+	class RB205_cloneTrooper
 	{
-		displayName = "1st Attack Platoon";
-		ACCESS_TRUE
+		displayName = "Clone Trooper";
 	};
-	class RB205_70MRP
+	class RB205_cloneAirborneTrooper
 	{
-		displayName = "70th Mobile Response Platoon";
-		ACCESS_TRUE
+		displayName = "Clone Airborne Trooper";
 	};
-	class RB205_35HSP
+	class RB205_cloneSnowTrooper
 	{
-		displayName = "35th Heavy Support Platoon";
-		ACCESS_TRUE
+		displayName = "Clone Snow Trooper";
+	};
+	class RB205_cloneArfTrooper
+	{
+		displayName = "Clone ARF Trooper";
+	};
+	class RB205_clonePilotTrooper
+	{
+		displayName = "Clone Pilot Trooper";
 	};
 };

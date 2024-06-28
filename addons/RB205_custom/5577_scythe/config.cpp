@@ -35,28 +35,19 @@ class cfgWeapons
             "RB205_custom\5577_scythe\data\H_scythe.paa",
 		    "RB205_custom\5577_scythe\data\visor_scythe.paa"
         };
-        class XtdGearInfo
-        {
-            model = "RB205_H_custom";
-            id = "5577";
-            var = "dft";
-        };
 	};
 
-    class RB205_U_lieutenant;
-    class ItemInfo;
+    class RB205_U_lt_base;
+    class RB205_U_lieutenant: RB205_U_lt_base
+    {
+        class ItemInfo;
+    };
     class RB205_U_scythe: RB205_U_lieutenant
     {
         displayName = "[205] Clone Trooper Armor [5577]";
         class ItemInfo: ItemInfo
         {
             uniformClass = RB205_clone_scythe;
-        };
-        class XtdGearInfo
-        {
-            model = "RB205_U_custom";
-            id = "5577";
-            var = "dft";
         };
     };
 
@@ -67,12 +58,6 @@ class cfgWeapons
         hiddenSelectionsTextures[] =
         {
             "RB205_custom\5577_scythe\data\V_scythe.paa"
-        };
-        class XtdGearInfo
-        {
-            model = "RB205_V_custom";
-            id = "5577";
-            var = "dft";
         };
     };
 };
@@ -91,8 +76,8 @@ class cfgVehicles
             "RB205_custom\5577_scythe\data\U_scythe_lower.paa",
             "RB205_main\data\default\U_undersuit_co.paa"
         };
-        LINKED_ITEMS(RB205_H_scythe,"RB205_V_scythe","RB205_NV_chip")
+        LINKED_ITEMS("RB205_H_scythe","RB205_V_scythe","RB205_NV_chip")
 	    backpack = "RB205_B_radio_mini_blk";
-        identityTypes[]={"LanguageENG_F","SWLB_JH_Head_Hair"};
+        identityTypes[] = IDENTITY_TYPES;
     };
 };

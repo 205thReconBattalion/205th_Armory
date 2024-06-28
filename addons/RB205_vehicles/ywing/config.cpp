@@ -20,17 +20,15 @@ class cfgPatches
 #include "\RB205_vehicles\macros.hpp"
 #include "\RB205_vehicles\inventory.hpp"
 
-class cfgWeapons {};
 class cfgVehicles
 {
 	class 3AS_BTLB_Bomber_ShadowLeader;
-
 	class RB205_ywing: 3AS_BTLB_Bomber_ShadowLeader
 	{
 		ACCESS_TRUE
 		displayName = "BTL-B Y-Wing Bomber";
-		author = "205th Recon Battalion";
-		crew = "RB205_clone_plt_trooper";
+		author = AUTHOR;
+		crew = CREW_AIR;
 		VEH_INVENTORY_LIGHT
 		CARGO_NONE
 		//Editor/ Zeus

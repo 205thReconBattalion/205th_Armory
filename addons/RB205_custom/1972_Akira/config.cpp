@@ -33,28 +33,19 @@ class cfgWeapons
             "RB205_custom\1972_akira\data\H_akira.paa",
             "RB205_main\data\pilot\visor_plt_co.paa"
         };
-        class XtdGearInfo
-        {
-            model = "RB205_H_custom";
-            id = "1972";
-            var = "dft";
-        };
     };
 
-    class RB205_U_plt_trooper;
-    class ItemInfo;
+    class RB205_U_base;
+    class RB205_U_plt_trooper: RB205_U_base
+    {
+        class ItemInfo;
+    };
     class RB205_U_akira: RB205_U_plt_trooper
     {
         displayName = "[205] Clone Pilot Trooper Armor [1972]";
         class ItemInfo: ItemInfo
         {
             uniformClass = RB205_clone_akira;
-        };
-        class XtdGearInfo
-        {
-            model = "RB205_U_custom";
-            id = "1972";
-            var = "dft";
         };
     };
 };

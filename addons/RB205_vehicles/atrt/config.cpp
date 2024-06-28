@@ -31,12 +31,24 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		displayName = "AT-RT";
+		author = AUTHOR;
 		icon = "RB205_vehicles\atrt\data\icon_atrt.paa";
 		//Editor/ Zeus
 		side = 1;
 		faction = "RB205";
 		editorSubcategory = "RB205_veh_ground";
 		editorPreview = "";
+		//Texture
+		hiddenSelectionsMaterials[] =
+		{
+			"RB205_vehicles\atrt\data\atrt.rvmat"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"RB205_vehicles\atrt\data\atrt_co.paa"
+		};
+		nakedUniform = "RB205_atrt_uniform";
+		uniformClass = "RB205_atrt_uniform";
 		//Weapons
 		weapons[] =
 		{
@@ -50,16 +62,6 @@ class cfgVehicles
 			"RB205_barc_mag",
 			"RB205_barc_mag"
 		};
-		hiddenSelectionsTextures[]=
-		{
-			"RB205_vehicles\atrt\data\atrt_co.paa"
-		};
-		hiddenSelectionsMaterials[] =
-		{
-			"RB205_vehicles\atrt\data\atrt.rvmat"
-		};
-		nakedUniform="RB205_atrt_uniform";
-		uniformClass="RB205_atrt_uniform";
 	};
 };
 
@@ -70,13 +72,13 @@ class cfgWeapons
 	class 3AS_ATRT_Uniform;
 	class RB205_atrt_uniform: 3AS_ATRT_Uniform
 	{
-		displayName="AT-RT";
+		displayName = "AT-RT";
 		class ItemInfo: UniformItem
 		{
-			uniformModel="-";
-			uniformClass="RB205_atrt";
-			containerClass="Supply10";
-			mass=5;
+			uniformModel = "-";
+			uniformClass = "RB205_atrt";
+			containerClass = "Supply10";
+			mass = 5;
 		};
 	};
 	

@@ -20,7 +20,6 @@ class cfgPatches
 #include "\RB205_vehicles\macros.hpp"
 #include "\RB205_vehicles\inventory.hpp"
 
-class cfgWeapons {};
 class cfgVehicles
 {
 	class 3as_ATAP_base;
@@ -28,8 +27,8 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		displayName = "AT-AP";
-		author = "205th Recon Battalion";
-		crew = "RB205_clone_trooper";
+		author = AUTHOR;
+		crew = CREW_ARMORED;
 		VEH_INVENTORY
 		CARGO_S
 		//Editor/ Zeus

@@ -54,144 +54,144 @@ class CfgMarkers
 	//1st Attack Platoon
 	class b_RB205_BFT_11_a: b_RB205_BFT_lead
 	{
-		name="1-1 Zillo";
-		color[]={0,0.8,0,1};
-		icon="RB205_marker\data\1-1_A.paa";
+		name = "1-1 Zillo";
+		color[] = {0,0.8,0,1};
+		icon = "RB205_marker\data\1-1_A.paa";
 	};
 	class b_RB205_BFT_11_b: b_RB205_BFT_11_a
 	{
-		name="1-1-B Zillo";
-		icon="RB205_marker\data\1-1_B.paa";
+		name = "1-1-B Zillo";
+		icon = "RB205_marker\data\1-1_B.paa";
 	};
 	class b_RB205_BFT_11_c: b_RB205_BFT_11_a
 	{
-		name="1-1-C Zillo";
-		icon="RB205_marker\data\1-1_C.paa";
+		name = "1-1-C Zillo";
+		icon = "RB205_marker\data\1-1_C.paa";
 	};
 	class b_RB205_BFT_11_d: b_RB205_BFT_11_a
 	{
-		name="1-1-D Zillo";
-		icon="RB205_marker\data\1-1_D.paa";
+		name = "1-1-D Zillo";
+		icon = "RB205_marker\data\1-1_D.paa";
 	};
 
 	class b_RB205_BFT_12_a: b_RB205_BFT_lead
 	{
-		name="1-2 Chimaera";
-		color[]={0.9,0,0,1};
-		icon="RB205_marker\data\1-2_A.paa";
+		name = "1-2 Chimaera";
+		color[] = {0.9,0,0,1};
+		icon = "RB205_marker\data\1-2_A.paa";
 	};
 	class b_RB205_BFT_12_b: b_RB205_BFT_12_a
 	{
-		name="1-2-B Chimaera";
-		icon="RB205_marker\data\1-2_B.paa";
+		name = "1-2-B Chimaera";
+		icon = "RB205_marker\data\1-2_B.paa";
 	};
 	class b_RB205_BFT_12_c: b_RB205_BFT_12_a
 	{
-		name="1-2-C Chimaera";
-		icon="RB205_marker\data\1-2_C.paa";
+		name = "1-2-C Chimaera";
+		icon = "RB205_marker\data\1-2_C.paa";
 	};
 	class b_RB205_BFT_12_d: b_RB205_BFT_12_a
 	{
-		name="1-2-D Chimaera";
-		icon="RB205_marker\data\1-2_D.paa";
+		name = "1-2-D Chimaera";
+		icon = "RB205_marker\data\1-2_D.paa";
 	};
 
 	class b_RB205_BFT_13_a: b_RB205_BFT_lead
 	{
-		name="1-3 Rancor";
-		color[]={0,0,1,1};
-		icon="RB205_marker\data\1-3_A.paa";
+		name = "1-3 Rancor";
+		color[] = {0,0,1,1};
+		icon = "RB205_marker\data\1-3_A.paa";
 	};
 	class b_RB205_BFT_13_b: b_RB205_BFT_13_a
 	{
-		name="1-3-B Rancor";
-		icon="RB205_marker\data\1-3_B.paa";
+		name = "1-3-B Rancor";
+		icon = "RB205_marker\data\1-3_B.paa";
 	};
 	class b_RB205_BFT_13_c: b_RB205_BFT_13_a
 	{
-		name="1-3-C Rancor";
-		icon="RB205_marker\data\1-3_C.paa";
+		name = "1-3-C Rancor";
+		icon = "RB205_marker\data\1-3_C.paa";
 	};
 	class b_RB205_BFT_13_d: b_RB205_BFT_13_a
 	{
-		name="1-3-D Rancor";
-		icon="RB205_marker\data\1-3_D.paa";
+		name = "1-3-D Rancor";
+		icon = "RB205_marker\data\1-3_D.paa";
 	};
 
 	//70th Mobile Response Platoon
 	class b_RB205_BFT_21_a: b_RB205_BFT_lead
 	{
-		name="2-1 Krayt";
-		color[]={0.5,0.6,0.4,1};
-		icon="RB205_marker\data\2-1_A.paa";
+		name = "2-1 Krayt";
+		color[] = {0.5,0.6,0.4,1};
+		icon = "RB205_marker\data\2-1_A.paa";
 	};
 	class b_RB205_BFT_21_b: b_RB205_BFT_21_a
 	{
-		name="2-1-B Krayt";
-		icon="RB205_marker\data\2-1_B.paa";
+		name = "2-1-B Krayt";
+		icon = "RB205_marker\data\2-1_B.paa";
 	};
 	class b_RB205_BFT_21_c: b_RB205_BFT_21_a
 	{
-		name="2-1-C Krayt";
-		icon="RB205_marker\data\2-1_C.paa";
+		name = "2-1-C Krayt";
+		icon = "RB205_marker\data\2-1_C.paa";
 	};
 
 	//35th Heavy Support Platoon
 	class b_RB205_BFT_31_unknown: b_RB205_BFT_lead
 	{
-		name="3-1 Raven [Unknown]";
-		color[]={0.5,0.5,0.5,1};
-		icon="RB205_marker\data\3-1.paa";
+		name = "3-1 Raven [Unknown]";
+		color[] = {0.5,0.5,0.5,1};
+		icon = "RB205_marker\data\3-1.paa";
 	};
 	class b_RB205_BFT_31_laat: b_RB205_BFT_31_unknown
 	{
-		name="3-1 Raven [LAAT/I]";
-		icon="RB205_marker\data\3-1_LAAT.paa";
+		name = "3-1 Raven [LAAT/I]";
+		icon = "RB205_marker\data\3-1_LAAT.paa";
 	};
 	class b_RB205_BFT_31_laatc: b_RB205_BFT_31_unknown
 	{
-		name="3-1 Raven [LAAT/C]";
-		icon="RB205_marker\data\3-1_LAATC.paa";
+		name = "3-1 Raven [LAAT/C]";
+		icon = "RB205_marker\data\3-1_LAATC.paa";
 	};
 	class b_RB205_BFT_31_laatle: b_RB205_BFT_31_unknown
 	{
-		name="3-1 Raven [LAAT/LE]";
-		icon="RB205_marker\data\3-1_LAATLE.paa";
+		name = "3-1 Raven [LAAT/LE]";
+		icon = "RB205_marker\data\3-1_LAATLE.paa";
 	};
 	class b_RB205_BFT_31_nu: b_RB205_BFT_31_unknown
 	{
-		name="3-1 Raven [Nu-Class]";
-		icon="RB205_marker\data\3-1_NU.paa";
+		name = "3-1 Raven [Nu-Class]";
+		icon = "RB205_marker\data\3-1_NU.paa";
 	};
 	class b_RB205_BFT_31_purrgil: b_RB205_BFT_31_unknown
 	{
-		name="3-1 Raven [Purrgil]";
-		icon="RB205_marker\data\3-1_PURRGIL.paa";
+		name = "3-1 Raven [Purrgil]";
+		icon = "RB205_marker\data\3-1_PURRGIL.paa";
 	};
 	class b_RB205_BFT_31_arc170: b_RB205_BFT_31_unknown
 	{
-		name="3-1 Raven [ARC-170]";
-		icon="RB205_marker\data\3-1_ARC170.paa";
+		name = "3-1 Raven [ARC-170]";
+		icon = "RB205_marker\data\3-1_ARC170.paa";
 	};
 	class b_RB205_BFT_31_z95: b_RB205_BFT_31_unknown
 	{
-		name="3-1 Raven [Z-95]";
-		icon="RB205_marker\data\3-1_Z95.paa";
+		name = "3-1 Raven [Z-95]";
+		icon = "RB205_marker\data\3-1_Z95.paa";
 	};
 	class b_RB205_BFT_31_vwing: b_RB205_BFT_31_unknown
 	{
-		name="3-1 Raven [V-Wing]";
-		icon="RB205_marker\data\3-1_VWING.paa";
+		name = "3-1 Raven [V-Wing]";
+		icon = "RB205_marker\data\3-1_VWING.paa";
 	};
 	class b_RB205_BFT_31_v19: b_RB205_BFT_31_unknown
 	{
-		name="3-1 Raven [V-19]";
-		icon="RB205_marker\data\3-1_V19.paa";
+		name = "3-1 Raven [V-19]";
+		icon = "RB205_marker\data\3-1_V19.paa";
 	};
 	class b_RB205_BFT_31_ywing: b_RB205_BFT_31_unknown
 	{
-		name="3-1 Raven [Y-Wing]";
-		icon="RB205_marker\data\3-1_YWING.paa";
+		name = "3-1 Raven [Y-Wing]";
+		icon = "RB205_marker\data\3-1_YWING.paa";
 	};
     
     class hd_dot;

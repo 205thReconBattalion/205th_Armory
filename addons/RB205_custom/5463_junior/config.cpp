@@ -33,28 +33,19 @@ class cfgWeapons
             "RB205_custom\5463_junior\data\H_junior.paa",
             "RB205_main\data\default\visor_p2_co.paa"
         };
-        class XtdGearInfo
-        {
-            model = "RB205_H_custom";
-            id = "5463";
-            var = "dft";
-        };
     };
 
-    class RB205_U_trooper;
-    class ItemInfo;
+    class RB205_U_base;
+    class RB205_U_trooper: RB205_U_base
+    {
+        class ItemInfo;
+    };
     class RB205_U_junior: RB205_U_trooper
     {
         displayName = "[205] Clone Trooper Uniform [5463]";
         class ItemInfo: ItemInfo
         {
             uniformClass = RB205_clone_junior;
-        };
-        class XtdGearInfo
-        {
-            model = "RB205_U_custom";
-            id = "5463";
-            var = "dft";
         };
     };
 };

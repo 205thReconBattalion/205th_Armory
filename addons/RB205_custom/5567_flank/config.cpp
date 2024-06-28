@@ -33,28 +33,19 @@ class cfgWeapons
             "RB205_custom\5567_flank\data\H_flank.paa",
             "RB205_main\data\default\visor_p2_co.paa"
         };
-        class XtdGearInfo
-        {
-            model = "RB205_H_custom";
-            id = "5567";
-            var = "dft";
-        };
     };
 
-    class RB205_U_trooper;
-    class ItemInfo;
+    class RB205_U_base;
+    class RB205_U_trooper: RB205_U_base
+    {
+        class ItemInfo;
+    };
     class RB205_U_flank: RB205_U_trooper
     {
         displayName = "[205] Clone Trooper Armor [5567]";
         class ItemInfo: ItemInfo
         {
             uniformClass = RB205_clone_flank;
-        };
-        class XtdGearInfo
-        {
-            model = "RB205_U_custom";
-            id = "5567";
-            var = "dft";
         };
     };
 };
@@ -73,6 +64,6 @@ class cfgVehicles
             "RB205_custom\5567_flank\data\U_flank_lower.paa",
             "RB205_main\data\default\U_undersuit_co.paa"
         };
-        LINKED_ITEMS(RB205_H_flank, "RB205_V_ct", "RB205_NV_chip")
+        LINKED_ITEMS("RB205_H_flank", "RB205_V_ct", "RB205_NV_chip")
     };
 };

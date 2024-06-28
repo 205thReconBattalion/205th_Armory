@@ -21,7 +21,6 @@ class cfgPatches
 #include "\RB205_vehicles\macros.hpp"
 #include "\RB205_vehicles\inventory.hpp"
 
-class cfgWeapons {};
 class cfgVehicles
 {
 	class 3AS_ISP;
@@ -29,8 +28,8 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		displayName = "Swamp Speeder";
-		author = "205th Recon Battalion";
-		crew = "RB205_clone_trooper";
+		author = AUTHOR;
+		crew = CREW_DEFAULT;
 		VEH_INVENTORY
 		CARGO_S
 		//Editor/ Zeus
@@ -45,8 +44,8 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		displayName = "Swamp Speeder (Transport)";
-		author = "205th Recon Battalion";
-		crew = "RB205_clone_trooper";
+		author = AUTHOR;
+		crew = CREW_DEFAULT;
 		VEH_INVENTORY
 		CARGO_S
 		//Editor/ Zeus

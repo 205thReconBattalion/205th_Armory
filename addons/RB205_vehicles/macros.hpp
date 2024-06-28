@@ -1,24 +1,28 @@
-#define ACCESS_TRUE \
-	scope = 2; \
-	scopeArsenal = 2;
-#define ACCESS_FALSE \
-	scope = 0; \
-	scopeArsenal = 0;
+#include "\RB205_core\macros.hpp"
 
+
+/* VEHICLE CREW */
+#define CREW_DEFAULT	"RB205_clone_trooper"
+#define CREW_ARMORED	"RB205_clone_trooper"
+#define CREW_AIR		"RB205_clone_plt_trooper"
+
+
+/* ACE CARGO */
 #define CARGO_NONE \
-	ace_cargo_hasCargo = 0;
+	ace_cargo_hasCargo = 0; \
+	ace_cargo_space = 0;
 #define CARGO_S \
 	ace_cargo_hasCargo = 1; \
-	ace_cargo_size = 5;
+	ace_cargo_space = 5;
 #define CARGO_M \
 	ace_cargo_hasCargo = 1; \
-	ace_cargo_size = 10;
+	ace_cargo_space = 10;
 #define CARGO_L \
 	ace_cargo_hasCargo = 1; \
-	ace_cargo_size = 20;
+	ace_cargo_space = 20;
 #define CARGO_XL \
 	ace_cargo_hasCargo = 1; \
-	ace_cargo_size = 50;
+	ace_cargo_space = 50;
 #define CARGO_XXL \
 	ace_cargo_hasCargo = 1; \
-	ace_cargo_size = 100;
+	ace_cargo_space = 100;

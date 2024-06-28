@@ -20,7 +20,6 @@ class cfgPatches
 #include "\RB205_vehicles\macros.hpp"
 #include "\RB205_vehicles\inventory.hpp"
 
-class cfgWeapons {};
 class cfgVehicles
 {
 	class 3as_Vwing_base;
@@ -29,8 +28,8 @@ class cfgVehicles
 	{
 		ACCESS_TRUE
 		displayName = "V-Wing Fighter";
-		author = "205th Recon Battalion";
-		crew = "RB205_clone_plt_trooper";
+		author = AUTHOR;
+		crew = CREW_AIR;
 		VEH_INVENTORY_LIGHT
 		CARGO_NONE
 		//Editor/ Zeus
@@ -39,7 +38,7 @@ class cfgVehicles
 		editorSubcategory = "RB205_veh_air";
 		editorPreview = "";
 		//Textures
-		hiddenselectionstextures[] = 
+		hiddenSelectionsTextures[] = 
 		{
 			"RB205_vehicles\vwing\data\vwing_co.paa",
 			"3as\3AS_Vwing\data\vwing_int_co.paa",
