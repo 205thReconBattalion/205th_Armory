@@ -43,7 +43,7 @@ class XtdGearInfos
 		H(RB205_H_arf_doc,"sct","co","default","dft")
 
 		H(RB205_H_spark,"dft","cc","default","dft")
-		H(RB205_H_arf_spark,"sct","cc","default","dft")
+		H(RB205_H_spark_arf,"sct","cc","default","dft")
 
 		//UNIFORMS
 
@@ -82,6 +82,7 @@ class XtdGearInfos
 		U(RB205_U_doc,"dft","co","default","none")
 
 		U(RB205_U_spark,"dft","cc","default","none")
+		U(RB205_U_spark_arf,"sct","cc","default","none")
 
 		//VESTS
 
@@ -95,6 +96,7 @@ class XtdGearInfos
 		V(RB205_V_doc,"dft","co","rifleman")
 		
 		V(RB205_V_spark,"dft","cc","rifleman")
+		V(RB205_V_spark_arf,"sct","cc","rifleman")
 
 		//SQUAD SPECIFIC
 		
