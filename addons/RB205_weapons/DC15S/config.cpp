@@ -108,6 +108,13 @@ class CfgWeapons
 		};
 	};
 	FRIED_WEAPON(RB205_DC15S,"\RB205_weapons\data\ui\dc15s_fried.paa")
+
+
+	class arifle_MX_Base_F;
+	class JLTS_DC15S: arifle_MX_Base_F
+	{
+		magazines[] = {"JLTS_DC15A_mag","JLTS_DC15S_mag","RB205_Standard_Energy_Pack"};
+	};
 };
 
 class cfgSoundShaders
