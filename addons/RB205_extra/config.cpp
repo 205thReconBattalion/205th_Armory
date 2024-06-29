@@ -26,7 +26,7 @@ class cfgWeapons
 		picture = "\RB205_main\data\ui\other\RB205_logo.paa";
 		model = "\RB205_extra\medal.p3d";
         hiddenSelections[] = {"camo1"};
-		hiddenSelectionsMaterial[] =
+		hiddenSelectionsMaterials[] =
         {
             "\RB205_extra\data\medal\medal.rvmat"
         };
@@ -201,10 +201,9 @@ class CfgGlasses
 		picture="\RB205_extra\data\ui\arc_bracer.paa";
         descriptionShort = "";
 		descriptionUse = "";
-
 		model = "\RB205_extra\arc_bracer.p3d";
         hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsMaterial[] =
+		hiddenSelectionsMaterials[] =
         {
             "\RB205_extra\data\arc_bracer\camo1.rvmat",
             "\RB205_extra\data\arc_bracer\camo2.rvmat"
@@ -220,14 +219,14 @@ class CfgGlasses
     {
         ACCESS_TRUE
         displayname = "[205] Clone Lieutenant Scythe's Attachments";
-		model = "\RB205_extra\scythe_attachments.p3d";
+		model = "\RB205_extra\scythe_accessories.p3d";
         hiddenSelections[] =
         {
             "pouch",
             "insignialt",
             "knife"
         };
-		hiddenSelectionsMaterial[] =
+		hiddenSelectionsMaterials[] =
         {
             "\RB205_extra\data\scythe\pouch.rvmat",
             "\RB205_extra\data\scythe\insignialt.rvmat",
