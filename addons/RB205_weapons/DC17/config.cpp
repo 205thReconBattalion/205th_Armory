@@ -173,6 +173,13 @@ class CfgWeapons
 		};
 	};
 	FRIED_WEAPON_SECONDARY(RB205_DC17_alt,"\RB205_weapons\data\ui\dc17_fried.paa")
+
+
+	class hgun_P07_F;
+	class JLTS_DC17SA: hgun_P07_F
+	{
+		magazines[] = {"JLTS_DC17SA_mag","JLTS_EMP_mag","RB205_Compact_Energy_Pack"};
+	};
 };
 
 class cfgSoundShaders

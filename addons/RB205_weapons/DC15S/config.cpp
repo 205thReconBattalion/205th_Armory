@@ -12,7 +12,9 @@ class cfgPatches
 		units[] = {};
 		weapons[]=
 		{
-			"RB205_DC15S"
+			"RB205_DC15S",
+			"RB205_DC15S_JLTS",
+			"RB205_DC15S_JLTS_shield"
 		};
 	};
 };
@@ -108,6 +110,151 @@ class CfgWeapons
 		};
 	};
 	FRIED_WEAPON(RB205_DC15S,"\RB205_weapons\data\ui\dc15s_fried.paa")
+
+
+
+	class Rifle_Base_F;
+	class arifle_MX_Base_F: Rifle_Base_F
+	{
+		class WeaponSlotsInfo;
+	};
+	class JLTS_DC15S: arifle_MX_Base_F
+	{
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class CowsSlot;
+		};
+		class Single: Mode_SemiAuto
+		{
+			class StandardSound;
+		};
+		class FullAuto: Mode_FullAuto
+		{
+			class StandardSound;
+		};
+	};
+	class RB205_DC15S_JLTS: JLTS_DC15S
+	{
+		author = "205th Recon Battalion";
+		displayName = "$STR_205_DC15S_JLTS_DisplayName";
+		displayNameShort = "$STR_205_DC15S_DisplayNameShort";
+		descriptionShort = "Standard-Blasterkarabiner der GAR<br />Freigegeben für: Alle";
+		picture = "\3AS\3AS_Weapons\DC15S\Data\UI\3as_dc15s.paa";
+		fireLightDiffuse[] = {0,0,1};
+		magazines[] =
+		{
+			"RB205_Standard_Energy_Pack"
+		};
+		magazineWell[] = {};
+		muzzles[] = {"this"};
+		baseWeapon = "RB205_DC15S_JLTS";
+		JLTS_hasElectronics = 1;
+		JLTS_hasEMPProtection = 0;
+		JLTS_friedItem = "RB205_DC15S_JLTS_fried";
+		JLTS_canHaveShield = 1;
+		JLTS_shieldedWeapon = "RB205_DC15S_JLTS_shield";
+		opticsZoomInit = 0.75;
+		opticsZoomMax = 1.25;
+		opticsZoomMin = 0.25;
+		class LinkedItems
+		{
+			item = "3AS_optic_holo_DC15S";
+			slot = "CowsSlot";
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class CowsSlot: CowsSlot
+			{
+				compatibleItems[] = { "3AS_optic_holo_DC15S" };
+			};
+		};
+		class Single: Single
+		{
+			class StandardSound//: StandardSound
+			{
+				soundSetShot[] = { "RB205_DC15S_Shot_SoundSet" };
+			};
+			class SilencedSound {};
+		};
+		class FullAuto: FullAuto
+		{
+			class StandardSound//: StandardSound
+			{
+				soundSetShot[] = { "RB205_DC15S_Shot_SoundSet" };
+			};
+			class SilencedSound {};
+		};
+	};
+	FRIED_WEAPON(RB205_DC15S_JLTS,"\RB205_weapons\data\ui\dc15s_fried.paa")
+
+	class JLTS_DC15S_shield: JLTS_DC15S
+	{
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class CowsSlot;
+		};
+		class Single: Mode_SemiAuto
+		{
+			class StandardSound;
+		};
+		class FullAuto: Mode_FullAuto
+		{
+			class StandardSound;
+		};
+	};
+	class RB205_DC15S_JLTS_shield: JLTS_DC15S_shield
+	{
+		author = "205th Recon Battalion";
+		displayName = "$STR_205_DC15S_JLTS_shield_DisplayName";
+		displayNameShort = "$STR_205_DC15S_DisplayNameShort";
+		descriptionShort = "Standard-Blasterkarabiner der GAR<br />Freigegeben für: Alle";
+		picture = "\3AS\3AS_Weapons\DC15S\Data\UI\3as_dc15s.paa";
+		fireLightDiffuse[] = {0,0,1};
+		magazines[] =
+		{
+			"RB205_Standard_Energy_Pack"
+		};
+		magazineWell[] = {};
+		muzzles[] = {"this"};
+		baseWeapon = "RB205_DC15S_JLTS_shield";
+		JLTS_hasElectronics = 1;
+		JLTS_hasEMPProtection = 0;
+		JLTS_friedItem = "RB205_DC15S_JLTS_shield_fried";
+		JLTS_isShielded = 1;
+		JLTS_baseWeapon = "RB205_DC15S_JLTS";
+		opticsZoomInit = 0.75;
+		opticsZoomMax = 1.25;
+		opticsZoomMin = 0.25;
+		class LinkedItems
+		{
+			item = "3AS_optic_holo_DC15S";
+			slot = "CowsSlot";
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class CowsSlot: CowsSlot
+			{
+				compatibleItems[] = { "3AS_optic_holo_DC15S" };
+			};
+		};
+		class Single: Single
+		{
+			class StandardSound: StandardSound
+			{
+				soundSetShot[] = { "RB205_DC15S_Shot_SoundSet" };
+			};
+			class SilencedSound {};
+		};
+		class FullAuto: FullAuto
+		{
+			class StandardSound: StandardSound
+			{
+				soundSetShot[] = { "RB205_DC15S_Shot_SoundSet" };
+			};
+			class SilencedSound {};
+		};
+	};
+	FRIED_WEAPON(RB205_DC15S_JLTS_shield,"\RB205_weapons\data\ui\dc15s_fried.paa")
 };
 
 class cfgSoundShaders

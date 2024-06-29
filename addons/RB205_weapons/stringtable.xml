@@ -26,6 +26,14 @@
             <English>[205] DC-15S Blaster Carbine</English>
             <German>[205] DC-15S Blasterkarabiner</German>
         </Key>
+        <Key ID="STR_205_DC15S_JLTS_DisplayName">
+            <English>[205] DC-15S Blaster Carbine (JLTS)</English>
+            <German>[205] DC-15S Blasterkarabiner (JLTS)</German>
+        </Key>
+        <Key ID="STR_205_DC15S_JLTS_shield_DisplayName">
+            <English>[205] DC-15S Blaster Carbine (JLTS) (Shielded)</English>
+            <German>[205] DC-15S Blasterkarabiner (JLTS) (Beschildet)</German>
+        </Key>
         <Key ID="STR_205_DC15X_DisplayName">
             <English>[205] DC-15X Sniper Rifle</English>
             <German>[205] DC-15X Scharfschützengewehr</German>
