@@ -92,6 +92,16 @@ class CfgWeapons
 	{
 		cursor = "RB205_CH_default";
 	};
+	class JLTS_DC15S;
+	class RB205_DC15S_JLTS: JLTS_DC15S
+	{
+		cursor = "RB205_CH_default";
+	};
+	class JLTS_DC15S_shield;
+	class RB205_DC15S_JLTS_shield: JLTS_DC15S_shield
+	{
+		cursor = "RB205_CH_default";
+	};
 	
 	class JLTS_DC15X;
 	class RB205_DC15X: JLTS_DC15X
