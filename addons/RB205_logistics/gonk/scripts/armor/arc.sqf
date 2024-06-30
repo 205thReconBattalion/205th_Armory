@@ -35,10 +35,6 @@ player addSecondaryWeaponItem "JLTS_stun_mag_long";
 player addWeapon "RB205_RPS6_disposable_base";
 
 // UNIFORM
-player setVariable ["ACE_IsEngineer", 1, true]; 
-player setVariable ["ACE_isEOD", 1, true]; 
-player setVariable ["ace_medical_medicClass", 1, true]; 
-
 player addItemToUniform "JLTS_ids_gar_army";
 player addItemToUniform "ACE_EntrenchingTool";
 player addItemToUniform "ACE_Flashlight_XL50";
@@ -47,7 +43,7 @@ for "_i" from 1 to 3 do {player addItemToUniform "ACE_CableTie";};
 
 for "_i" from 1 to 30 do {player addItemToUniform "ACE_packingBandage";};
 for "_i" from 1 to 4 do {player addItemToUniform "ACE_tourniquet";};
-for "_i" from 1 to 3 do {player addItemToUniform "ACE_morphine";};
+for "_i" from 1 to 2 do {player addItemToUniform "ACE_painkillers";};
 
 // VEST
 for "_i" from 1 to 10 do {player addItemToVest "RB205_Experimental_Energy_Pack";};
@@ -69,7 +65,7 @@ for "_i" from 1 to 2 do {player addItemToBackpack "ACE_salineIV";};
 player addItemToBackpack "ACE_salineIV_500";
 for "_i" from 1 to 20 do {player addItemToBackpack "ACE_elasticBandage";};
 for "_i" from 1 to 2 do {player addItemToBackpack "ACE_splint";};
-for "_i" from 1 to 2 do {player addItemToBackpack "ACE_morphine";};
+for "_i" from 1 to 3 do {player addItemToBackpack "ACE_morphine";};
 for "_i" from 1 to 3 do {player addItemToBackpack "ACE_epinephrine";};
 player addItemToBackpack "ACE_surgicalKit";
 for "_i" from 1 to 2 do {player addItemToBackpack "RB205_sonicDet";};

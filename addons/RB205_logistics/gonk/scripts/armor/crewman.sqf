@@ -10,14 +10,14 @@ removeGoggles player;
 // ARMOR
 player forceAddUniform "RB205_U_trooper";
 player addVest "RB205_V_ct";
-player addHeadgear "RB205_H_trooper";
+player addHeadgear "RB205_H_crew_trooper";
 
 player linkItem "ItemMap";
 player linkItem "ItemGPS";
 player linkItem "JLTS_clone_comlink";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
-player linkItem "RB205_NV";
+player linkItem "RB205_NV_chip";
 player addWeapon "RB205_binocular";
 
 // PRIMARY WEAPON
@@ -30,10 +30,6 @@ player addSecondaryWeaponItem "RB205_Compact_Energy_Pack";
 player addSecondaryWeaponItem "JLTS_stun_mag_long";
 
 // UNIFORM
-player setVariable ["ACE_IsEngineer", 1, true]; 
-player setVariable ["ACE_isEOD", 0, true]; 
-player setVariable ["ace_medical_medicClass", 0, true]; 
-
 player addItemToUniform "JLTS_ids_gar_army";
 player addItemToUniform "ACE_EntrenchingTool";
 player addItemToUniform "ACE_Flashlight_XL50";
@@ -43,7 +39,7 @@ for "_i" from 1 to 3 do {player addItemToUniform "ACE_CableTie";};
 
 for "_i" from 1 to 30 do {player addItemToUniform "ACE_packingBandage";};
 for "_i" from 1 to 4 do {player addItemToUniform "ACE_tourniquet";};
-for "_i" from 1 to 3 do {player addItemToUniform "ACE_morphine";};
+for "_i" from 1 to 2 do {player addItemToUniform "ACE_painkillers";};
 
 // VEST
 for "_i" from 1 to 10 do {player addItemToVest "RB205_Standard_Energy_Pack";};
