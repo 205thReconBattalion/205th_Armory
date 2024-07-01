@@ -67,7 +67,7 @@ class Stage6 {
 	};
 };
 class Stage7 {
-	texture = "a3\data\medal_f\env_land_ca.paa";
+	texture = "a3\data_f\env_land_ca.paa";
 	useWorldEnvMap = "true";
 	uvSource = "tex";
 	class uvTransform {
@@ -78,5 +78,5 @@ class Stage7 {
 	};
 };
 class StageTI {
-	texture = "a3\data\medal_f\default_vehicle_ti_ca.paa";
+	texture = "a3\data_f\default_vehicle_ti_ca.paa";
 };
