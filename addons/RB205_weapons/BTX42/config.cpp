@@ -38,6 +38,9 @@ class CfgWeapons
 		{
 			"RB205_BTX42_mag"
 		};
+		JLTS_hasElectronics = 1;
+		JLTS_hasEMPProtection = 0;
+		JLTS_friedItem = "RB205_BTX42_fried";
 		model = "3AS\3AS_Weapons\X42\BX42.p3d";
 		handAnim[] = {"OFP2_ManSkeleton","3AS\3AS_Weapons\Data\Anim\BX42.rtm"};
 		drySound[] = {"MRC\JLTS\weapons\Core\sounds\weapon_dry.wss",5,1,10};
@@ -49,6 +52,7 @@ class CfgWeapons
 		WBK_BurnEm_FlamethrowerSoundArray = "['flamethrower_start','flamethrower_looping',4.8,'flamethrower_end']";
 		WBK_BurnEm_RequiredBackpack = "";
 	};
+	FRIED_WEAPON(RB205_BTX42,"\RB205_weapons\data\ui\btx42_fried.paa")
 };
 
 class CfgMagazines
