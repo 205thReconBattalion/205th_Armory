@@ -1018,12 +1018,12 @@ class RB205_V_plt_ct: RB205_V_base
 {
 	ACCESS_TRUE
 	displayName = "[205] Clone Pilot Trooper Vest";
-	hiddenSelectionsTextures[] =
+	/*hiddenSelectionsTextures[] =
 	{
 		"RB205_main\data\pilot\V_plt_light_co.paa",
 		"RB205_main\data\pilot\V_plt_heavy_co.paa",
 		"RB205_main\data\pilot\V_plt_ct_co.paa"
-	};
+	};*/
 };
 class RB205_V_plt_clc: RB205_V_fireTeamLead_base
 {
