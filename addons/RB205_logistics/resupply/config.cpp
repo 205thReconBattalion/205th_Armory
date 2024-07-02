@@ -15,11 +15,14 @@ class CfgPatches
 			"RB205_resupply_medical",
 			"RB205_resupply_equipment",
 			"RB205_resupply_arsenal",
+
 			"RB205_resupply_base",
 			"RB205_resupply_weapons_empty",
 			"RB205_resupply_medical_empty",
+			"RB205_resupply_red_empty",
+			"RB205_resupply_green_empty",
 			"RB205_resupply_blue_empty",
-			"RB205_resupply_red_empty"
+			"RB205_resupply_orange_empty"
 		};
 		weapons[]={};
 	};
@@ -126,29 +129,43 @@ class CfgVehicles
 		displayName = "[205] Resupply Crate (Weapons/Ammo)";
 		editorPreview = "\3as\3as_props\Crates\EditorPreviews\3AS_Supply_Large_Ammo_Prop.jpg";
 		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsMaterials[] = {"3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo.rvmat"};
+		//hiddenSelectionsMaterials[] = {"3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo.rvmat"};
 		hiddenSelectionsTextures[] = {"3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo_co.paa"};
 	};
 	class RB205_resupply_medical_empty: RB205_resupply_base
 	{
 		displayName = "[205] Resupply Crate (Medical)";
 		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsMaterials[] = {"3AS\3AS_Props\Crates\Data\Supply_Large_Medical\Supply_Large_Medical.rvmat"};
+		//hiddenSelectionsMaterials[] = {"3AS\3AS_Props\Crates\Data\Supply_Large_Medical\Supply_Large_Medical.rvmat"};
 		hiddenSelectionsTextures[] = {"3AS\3AS_Props\Crates\Data\Supply_Large_Medical\Supply_Large_Medical_co.paa"};
-	};
-	class RB205_resupply_blue_empty: RB205_resupply_base
-	{
-		displayName = "[205] Resupply Crate (Blue)";
-		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsMaterials[] = {"3AS\3AS_Props\Crates\Data\Supply_Large_Blue\Supply_Large_Blue.rvmat"};
-		hiddenSelectionsTextures[] = {"3AS\3AS_Props\Crates\Data\Supply_Large_Blue\Supply_Large_Blue_co.paa"};
 	};
 	class RB205_resupply_red_empty: RB205_resupply_base
 	{
 		displayName = "[205] Resupply Crate (Red)";
 		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsMaterials[] = {"3AS\3AS_Props\Crates\Data\Supply_Large_Red\Supply_Large_Red.rvmat"};
+		//hiddenSelectionsMaterials[] = {"3AS\3AS_Props\Crates\Data\Supply_Large_Red\Supply_Large_Red.rvmat"};
 		hiddenSelectionsTextures[] = {"3AS\3AS_Props\Crates\Data\Supply_Large_Red\Supply_Large_Red_co.paa"};
+	};
+	class RB205_resupply_green_empty: RB205_resupply_base
+	{
+		displayName = "[205] Resupply Crate (Green)";
+		hiddenSelections[] = {"camo1"};
+		//hiddenSelectionsMaterials[] = {"3AS\3AS_Props\Crates\Data\Supply_Large_Red\Supply_Large_Red.rvmat"};
+		hiddenSelectionsTextures[] = {"3AS\3AS_Props\Crates\Data\Supply_Large_Green\Supply_Large_green_co.paa"};
+	};
+	class RB205_resupply_blue_empty: RB205_resupply_base
+	{
+		displayName = "[205] Resupply Crate (Blue)";
+		hiddenSelections[] = {"camo1"};
+		//hiddenSelectionsMaterials[] = {"3AS\3AS_Props\Crates\Data\Supply_Large_Blue\Supply_Large_Blue.rvmat"};
+		hiddenSelectionsTextures[] = {"3AS\3AS_Props\Crates\Data\Supply_Large_Blue\Supply_Large_Blue_co.paa"};
+	};
+	class RB205_resupply_orange_empty: RB205_resupply_base
+	{
+		displayName = "[205] Resupply Crate (Orange)";
+		hiddenSelections[] = {"camo1"};
+		//hiddenSelectionsMaterials[] = {"3AS\3AS_Props\Crates\Data\Supply_Large_Blue\Supply_Large_Blue.rvmat"};
+		hiddenSelectionsTextures[] = {"3AS\3AS_Props\Crates\Data\Supply_Large_orange\Supply_Large_orange_co.paa"};
 	};
 };
 
