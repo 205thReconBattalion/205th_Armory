@@ -5,7 +5,8 @@ class cfgPatches
 		requiredAddons[]=
 		{
 			"RB205_vehicles",
-			"3AS_ATRT"
+			"3AS_ATRT",
+			"3AS_Main_Function_Library"
 		};
 		requiredVersion = 1.0;
         author = "205th Recon Battalion";
@@ -24,10 +25,12 @@ class cfgPatches
 #include "\RB205_vehicles\macros.hpp"
 #include "\RB205_vehicles\inventory.hpp"
 
+//class CBA_Extended_EventHandlers_base;
+
 class cfgVehicles
 {
-	class 3AS_ATRT;
-	class RB205_atrt: 3AS_ATRT
+	class 3AS_ATRT_Base;
+	class RB205_atrt: 3AS_ATRT_Base
 	{
 		ACCESS_TRUE
 		displayName = "AT-RT";
@@ -39,6 +42,8 @@ class cfgVehicles
 		editorSubcategory = "RB205_veh_ground";
 		editorPreview = "";
 		//Texture
+		model="\3AS\ATRT\3AS_ATRT.p3d";
+		modelSides[]={3,1,0,2};
 		hiddenSelectionsMaterials[] =
 		{
 			"RB205_vehicles\atrt\data\atrt.rvmat"
@@ -61,6 +66,21 @@ class cfgVehicles
 			"RB205_barc_mag",
 			"RB205_barc_mag",
 			"RB205_barc_mag"
+		};
+		linkedItems[]=
+		{
+			"ItemMap",
+			"ItemCompass",
+			"ItemGPS",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnWeapons[]={};
+		respawnMagazines[]={};
+		class Wounds
+		{
+			tex[]={};
+			mat[]={};
 		};
 	};
 };
@@ -102,6 +122,7 @@ class cfgWeapons
 				item = "acc_flashlight";
 			};
 		};
+		fireLightDiffuse[] = {0,0,1};
 	};
 };
 
@@ -111,5 +132,45 @@ class CfgWeaponCursors
 	class RB205_CH_atrt: throw
 	{
 		texture = "\A3\ui_f\data\igui\cfg\weaponcursors\rocket_gs.paa";
+	};
+};
+
+class cfgFunctions
+{
+	class RB205
+	{
+		class RB205_ATRT
+		{
+			file = "\RB205_vehicles\atrt\functions";
+			class initATRT
+			{
+			};
+			/*class mountATRT
+			{
+			};*/
+			class unstuckATRT
+			{
+			};
+			class repairAfterCollisionATRT
+			{
+			};
+			class disassembleATRT
+			{
+			};
+			class repairATRT
+			{
+			};
+		};
+	};
+};
+
+class Extended_Init_EventHandlers
+{
+	class RB205_atrt
+	{
+		class RB205_atrt_Init
+		{
+			init = "(_this select 0) call RB205_fnc_initATRT";
+		};
 	};
 };
