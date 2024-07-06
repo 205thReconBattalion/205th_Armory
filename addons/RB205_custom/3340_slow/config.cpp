@@ -11,6 +11,7 @@ class cfgPatches
         weapons[] =
         {
             "RB205_H_slow",
+            "RB205_H_crew_slow",
             "RB205_U_slow",
             "RB205_V_slow"
         };
@@ -33,6 +34,17 @@ class cfgWeapons
         {
             "RB205_custom\3340_slow\data\H_slow.paa",
             "RB205_main\data\default\visor_p2_co.paa"
+        };
+    };
+    class RB205_H_crew_sergeant;
+    class RB205_H_crew_slow: RB205_H_crew_sergeant
+    {
+        displayName = "[205] Clone Crewman Trooper Helmet [3340]";
+        hiddenSelectionsTextures[] =
+        {
+            "RB205_custom\3340_slow\data\H_slow_crewman.paa",
+            "RB205_main\data\crewman\light_crew_co.paa",
+            "RB205_main\data\crewman\visor_crew_co.paa"
         };
     };
 
@@ -77,6 +89,22 @@ class cfgVehicles
             "RB205_main\data\default\U_undersuit_co.paa"
         };
         LINKED_ITEMS("RB205_H_slow","RB205_V_slow","RB205_NV_rangefinder")
-	    identityTypes[] = IDENTITY_TYPES;
+	    identityTypes[] = IDENTITY_TYPES_GLASSES("RB205_VIS_slow");
+    };
+};
+
+class CfgGlasses
+{
+    class RB205_VIS;
+    class RB205_VIS_slow: RB205_VIS
+    {
+        displayName = "[205] Clone Visor [3340]";
+        hiddenSelectionsTextures[] =
+        {
+            "RB205_custom\3340_slow\data\VIS_slow.paa",
+            "",
+            ""
+        };
+        identityTypes[] = { "RB205_VIS_slow",1 };
     };
 };
