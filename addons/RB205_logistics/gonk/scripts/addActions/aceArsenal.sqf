@@ -83,7 +83,7 @@ params ["_this"];
 		"RB205_H_kamaz","RB205_U_kamaz",
 		"RB205_H_ark","RB205_U_ark",
 		"RB205_H_paso","RB205_U_paso",
-		"RB205_H_slow","RB205_U_slow","RB205_V_slow",
+		"RB205_H_slow","RB205_H_crew_slow","RB205_U_slow","RB205_V_slow","RB205_VIS_slow",
 		"RB205_H_phantom","RB205_U_phantom",
 		"RB205_H_lightning","RB205_U_lightning",
 		"RB205_H_firefly","RB205_U_firefly",
