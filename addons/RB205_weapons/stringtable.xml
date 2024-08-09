@@ -86,6 +86,10 @@
             <English>[205] DC-17M Blaster</English>
             <German>[205] DC-17M Blasterkarabiner</German>
         </Key>
+        <Key ID="STR_205_MPL57_DisplayName">
+            <English>[205] MPL-57 Grenade Launcher</English>
+            <German>[205] MPL-57 Granatwerfer</German>
+        </Key>
         <Key ID="STR_205_BTX42_DisplayName">
             <English>[205] BT X-42 Heavy Flamethrower</English>
             <German>[205] BT X-42 Schwerer Flammenwerfer</German>
@@ -202,6 +206,10 @@
         <Key ID="STR_205_DC17M_DisplayNameShort">
             <English>DC-17M</English>
             <German>DC-17M</German>
+        </Key>
+        <Key ID="STR_205_MPL57_DisplayNameShort">
+            <English>MPL-57</English>
+            <German>MPL-57</German>
         </Key>
         <Key ID="STR_205_BTX42_DisplayNameShort">
             <English>BT X-42</English>
