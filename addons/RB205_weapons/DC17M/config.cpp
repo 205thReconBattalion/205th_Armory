@@ -50,7 +50,7 @@ class CfgAmmo
 	
 	class RB205_ammo_40mm_at: SWLW_ammo_40mm_at
 	{
-		hit = 550;
+		hit = 1000;//550;
 	};
 };
 class CfgMagazines
@@ -88,7 +88,7 @@ class CfgMagazines
 		descriptionShort = "$STR_205_DC17M_at_Energy_Pack_DescriptionShort";
 		ammo = "RB205_ammo_40mm_at";
 		count = 1;
-		mass = 30;
+		mass = 15;//30;
 	};
 };
 class CfgWeapons
