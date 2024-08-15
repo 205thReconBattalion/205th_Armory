@@ -22,19 +22,19 @@
             <English>[205] Smoke Grenade (Green)</English>
             <German>[205] Rauchgranate (Grün)</German>
         </Key>
-        <Key ID="STR_SmokeR_DisplayName">
+        <Key ID="STR_205_SmokeR_DisplayName">
             <English>[205] Smoke Grenade (Red)</English>
             <German>[205] Rauchgranate (Rot)</German>
         </Key>
-        <Key ID="STR_SmokeY_DisplayName">
+        <Key ID="STR_205_SmokeY_DisplayName">
             <English>[205] Smoke Grenade (Yellow)</English>
             <German>[205] Rauchgranate (Gelb)</German>
         </Key>
-        <Key ID="STR_SmokeP_DisplayName">
+        <Key ID="STR_205_SmokeP_DisplayName">
             <English>[205] Smoke Grenade (Purple)</English>
             <German>[205] Rauchgranate (Lila)</German>
         </Key>
-        <Key ID="STR_SmokeO_DisplayName">
+        <Key ID="STR_205_SmokeO_DisplayName">
             <English>[205] Smoke Grenade (Orange)</English>
             <German>[205] Rauchgranate (Orange)</German>
         </Key>
@@ -45,6 +45,110 @@
         <Key ID="STR_205_DroidPopper_DisplayName">
             <English>[205] Droid Popper</English>
             <German>[205] Droidenkracher</German>
+        </Key>
+        <Key ID="STR_205_UGL_SmokeW_DisplayName">
+            <English>[205] UGL Smoke Grenade (White)</English>
+            <German>[205] UGL Rauchgranate (Weiß)</German>
+        </Key>
+        <Key ID="STR_205_UGL_SmokeB_DisplayName">
+            <English>[205] UGL Smoke Grenade (Blue)</English>
+            <German>[205] UGL Rauchgranate (Blau)</German>
+        </Key>
+        <Key ID="STR_205_UGL_SmokeG_DisplayName">
+            <English>[205] UGL Smoke Grenade (Green)</English>
+            <German>[205] UGL Rauchgranate (Grün)</German>
+        </Key>
+        <Key ID="STR_205_UGL_SmokeR_DisplayName">
+            <English>[205] UGL Smoke Grenade (Red)</English>
+            <German>[205] UGL Rauchgranate (Rot)</German>
+        </Key>
+        <Key ID="STR_205_UGL_SmokeY_DisplayName">
+            <English>[205] UGL Smoke Grenade (Yellow)</English>
+            <German>[205] UGL Rauchgranate (Gelb)</German>
+        </Key>
+        <Key ID="STR_205_UGL_SmokeP_DisplayName">
+            <English>[205] UGL Smoke Grenade (Purple)</English>
+            <German>[205] UGL Rauchgranate (Lila)</German>
+        </Key>
+        <Key ID="STR_205_UGL_SmokeO_DisplayName">
+            <English>[205] UGL Smoke Grenade (Orange)</English>
+            <German>[205] UGL Rauchgranate (Orange)</German>
+        </Key>
+        <Key ID="STR_205_UGL3_SmokeW_DisplayName">
+            <English>[205] UGL Smoke Grenade (White) (3Rnd)</English>
+            <German>[205] UGL Rauchgranate (Weiß) (3 Sch.)</German>
+        </Key>
+        <Key ID="STR_205_UGL3_SmokeB_DisplayName">
+            <English>[205] UGL Smoke Grenade (Blue) (3Rnd)</English>
+            <German>[205] UGL Rauchgranate (Blau) (3 Sch.)</German>
+        </Key>
+        <Key ID="STR_205_UGL3_SmokeG_DisplayName">
+            <English>[205] UGL Smoke Grenade (Green) (3Rnd)</English>
+            <German>[205] UGL Rauchgranate (Grün) (3 Sch.)</German>
+        </Key>
+        <Key ID="STR_205_UGL3_SmokeR_DisplayName">
+            <English>[205] UGL Smoke Grenade (Red) (3Rnd)</English>
+            <German>[205] UGL Rauchgranate (Rot) (3 Sch.)</German>
+        </Key>
+        <Key ID="STR_205_UGL3_SmokeY_DisplayName">
+            <English>[205] UGL Smoke Grenade (Yellow) (3Rnd)</English>
+            <German>[205] UGL Rauchgranate (Gelb) (3 Sch.)</German>
+        </Key>
+        <Key ID="STR_205_UGL3_SmokeP_DisplayName">
+            <English>[205] UGL Smoke Grenade (Purple) (3Rnd)</English>
+            <German>[205] UGL Rauchgranate (Lila) (3 Sch.)</German>
+        </Key>
+        <Key ID="STR_205_UGL3_SmokeO_DisplayName">
+            <English>[205] UGL Smoke Grenade (Orange) (3Rnd)</English>
+            <German>[205] UGL Rauchgranate (Orange) (3 Sch.)</German>
+        </Key>
+        <Key ID="STR_205_UGL_FlareW_DisplayName">
+            <English>[205] UGL Signal Flare (White)</English>
+            <German>[205] UGL Leuchtsignal (Weiß)</German>
+        </Key>
+        <Key ID="STR_205_UGL_FlareG_DisplayName">
+            <English>[205] UGL Signal Flare (Green)</English>
+            <German>[205] UGL Leuchtsignal (Grün)</German>
+        </Key>
+        <Key ID="STR_205_UGL_FlareR_DisplayName">
+            <English>[205] UGL Signal Flare (Red)</English>
+            <German>[205] UGL Leuchtsignal (Rot)</German>
+        </Key>
+        <Key ID="STR_205_UGL_FlareIR_DisplayName">
+            <English>[205] UGL Signal Flare (IR)</English>
+            <German>[205] UGL Leuchtsignal (IR)</German>
+        </Key>
+        <Key ID="STR_205_UGL3_FlareW_DisplayName">
+            <English>[205] UGL Signal Flare (White) (3Rnd)</English>
+            <German>[205] UGL Leuchtsignal (Weiß) (3 Sch.)</German>
+        </Key>
+        <Key ID="STR_205_UGL3_FlareG_DisplayName">
+            <English>[205] UGL Signal Flare (Green) (3Rnd)</English>
+            <German>[205] UGL Leuchtsignal (Grün) (3 Sch.)</German>
+        </Key>
+        <Key ID="STR_205_UGL3_FlareR_DisplayName">
+            <English>[205] UGL Signal Flare (Red) (3Rnd)</English>
+            <German>[205] UGL Leuchtsignal (Rot) (3 Sch.)</German>
+        </Key>
+        <Key ID="STR_205_UGL3_FlareIR_DisplayName">
+            <English>[205] UGL Signal Flare (IR) (3Rnd)</English>
+            <German>[205] UGL Leuchtsignal (IR) (3 Sch.)</German>
+        </Key>
+        <Key ID="STR_205_UGL_HE_DisplayName">
+            <English>[205] UGL HE Grenade</English>
+            <German>[205] UGL HE Granate</German>
+        </Key>
+        <Key ID="STR_205_UGL3_HE_DisplayName">
+            <English>[205] UGL HE Grenade (3Rnd)</English>
+            <German>[205] UGL HE Granate (3 Sch.)</German>
+        </Key>
+        <Key ID="STR_205_UGL6_HE_DisplayName">
+            <English>[205] UGL HE Grenade (6Rnd)</English>
+            <German>[205] UGL HE Granate (6 Sch.)</German>
+        </Key>
+        <Key ID="STR_205_HuntIR_DisplayName">
+            <English>[205] Surveillance Drone (HuntIR)</English>
+            <German>[205] Überwachungs-Drohne (HuntIR)</German>
         </Key>
 <!--displayNameShort-->
         <Key ID="STR_205_ThermalDetonator_DisplayNameShort">
@@ -90,6 +194,30 @@
         <Key ID="STR_205_DroidPopper_DisplayNameShort">
             <English>Droid Popper</English>
             <German>Droidenkracher</German>
+        </Key>
+        <Key ID="STR_205_FlareW_DisplayNameShort">
+            <English>Flare (White)</English>
+            <German>Licht (Weiß)</German>
+        </Key>
+        <Key ID="STR_205_FlareG_DisplayNameShort">
+            <English>Flare (Green)</English>
+            <German>Licht (Grün)</German>
+        </Key>
+        <Key ID="STR_205_FlareR_DisplayNameShort">
+            <English>Flare (Red)</English>
+            <German>Licht (Rot)</German>
+        </Key>
+        <Key ID="STR_205_FlareIR_DisplayNameShort">
+            <English>Flare (IR)</English>
+            <German>Licht (IR)</German>
+        </Key>
+        <Key ID="STR_205_HE_DisplayNameShort">
+            <English>HE</English>
+            <German>HE</German>
+        </Key>
+        <Key ID="STR_205_HuntIR_DisplayNameShort">
+            <English>HuntIR</English>
+            <German>HuntIR</German>
         </Key>
     </Package>
 </Project>
