@@ -23,7 +23,7 @@ player addWeapon "RB205_binocular";
 // PRIMARY WEAPON
 player addWeapon "RB205_DC15A_GL";
 player addPrimaryWeaponItem "RB205_Standard_Energy_Pack";
-player addPrimaryWeaponItem "3Rnd_HE_Grenade_shell";
+player addPrimaryWeaponItem "RB205_ugl_he";
 // SECONDARY WEAPON
 player addWeapon "RB205_DC17_alt";
 player addSecondaryWeaponItem "RB205_Compact_Energy_Pack";
@@ -39,6 +39,7 @@ for "_i" from 1 to 3 do {player addItemToUniform "ACE_CableTie";};
 for "_i" from 1 to 30 do {player addItemToUniform "ACE_packingBandage";};
 for "_i" from 1 to 4 do {player addItemToUniform "ACE_tourniquet";};
 for "_i" from 1 to 2 do {player addItemToUniform "ACE_painkillers";};
+for "_i" from 1 to 1 do {player addItemToUniform "ACE_HuntIR_monitor";};
 
 // VEST
 for "_i" from 1 to 10 do {player addItemToVest "RB205_Standard_Energy_Pack";};
@@ -50,6 +51,8 @@ for "_i" from 1 to 2 do {player addItemToVest "RB205_smokeWhite";};
 for "_i" from 1 to 1 do {player addItemToVest "RB205_smokeGreen";};
 for "_i" from 1 to 3 do {player addItemToVest "ACE_IR_Strobe_Item";};
 
-for "_i" from 1 to 5 do {player addItemToVest "3Rnd_HE_Grenade_shell";};
-for "_i" from 1 to 2 do {player addItemToVest "3Rnd_SmokeRed_Grenade_shell";};
-for "_i" from 1 to 5 do {player addItemToVest "ACE_40mm_Flare_white";};
+for "_i" from 1 to 5 do {player addItemToVest "RB205_ugl_he";};
+for "_i" from 1 to 5 do {player addItemToVest "RB205_ugl_smoke_white";};
+for "_i" from 1 to 4 do {player addItemToVest "RB205_ugl_smoke_red";};
+for "_i" from 1 to 5 do {player addItemToVest "RB205_ugl_flare_white";};
+for "_i" from 1 to 1 do {player addItemToVest "RB205_ugl_huntir";};
