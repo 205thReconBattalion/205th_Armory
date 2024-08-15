@@ -134,6 +134,18 @@
             <English>[205] UGL Signal Flare (IR) (3Rnd)</English>
             <German>[205] UGL Leuchtsignal (IR) (3 Sch.)</German>
         </Key>
+        <Key ID="STR_205_UGL_HE_DisplayName">
+            <English>[205] UGL HE Grenade</English>
+            <German>[205] UGL HE Granate</German>
+        </Key>
+        <Key ID="STR_205_UGL3_HE_DisplayName">
+            <English>[205] UGL HE Grenade (3Rnd)</English>
+            <German>[205] UGL HE Granate (3 Sch.)</German>
+        </Key>
+        <Key ID="STR_205_UGL6_HE_DisplayName">
+            <English>[205] UGL HE Grenade (6Rnd)</English>
+            <German>[205] UGL HE Granate (6 Sch.)</German>
+        </Key>
 <!--displayNameShort-->
         <Key ID="STR_205_ThermalDetonator_DisplayNameShort">
             <English>Thermal Det</English>
@@ -194,6 +206,10 @@
         <Key ID="STR_205_FlareIR_DisplayNameShort">
             <English>Flare (IR)</English>
             <German>Licht (IR)</German>
+        </Key>
+        <Key ID="STR_205_HE_DisplayNameShort">
+            <English>HE</English>
+            <German>HE</German>
         </Key>
     </Package>
 </Project>

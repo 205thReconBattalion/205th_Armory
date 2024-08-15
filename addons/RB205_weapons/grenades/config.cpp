@@ -50,7 +50,11 @@ class cfgPatches
 			"RB205_ugl_flare_red",
 			"RB205_ugl_flare_red_3rnd",
 			"RB205_ugl_flare_ir",
-			"RB205_ugl_flare_ir_3rnd"
+			"RB205_ugl_flare_ir_3rnd",
+
+			"RB205_ugl_he",
+			"RB205_ugl_he_3rnd",
+			"RB205_ugl_he_6rnd"
 		};
 		ammo[] =
 		{
@@ -431,6 +435,28 @@ class CfgMagazines
 	{
 		displayName = "$STR_205_UGL3_FlareIR_DisplayName";
 		count = 3;
+	};
+
+	class 1Rnd_HE_Grenade_shell;
+	class RB205_ugl_he: 1Rnd_HE_Grenade_shell
+	{
+		displayName = "$STR_205_UGL_HE_DisplayName";
+		displayNameShort = "$STR_205_HE_DisplayNameShort";
+		descriptionShort = "Wirkung: Explosiv<br />Anzahl: 1";
+		MASS_EXP
+        author = "205th Recon Battalion";
+	};
+	class RB205_ugl_he_3rnd: RB205_ugl_he
+	{
+		displayName = "$STR_205_UGL3_HE_DisplayName";
+		descriptionShort = "Wirkung: Explosiv<br />Anzahl: 3";
+		count = 3;
+	};
+	class RB205_ugl_he_6rnd: RB205_ugl_he
+	{
+		displayName = "$STR_205_UGL6_HE_DisplayName";
+		descriptionShort = "Wirkung: Explosiv<br />Anzahl: 6";
+		count = 6;
 	};
 };
 
