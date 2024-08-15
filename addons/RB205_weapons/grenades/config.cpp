@@ -391,6 +391,7 @@ class CfgMagazines
 		displayName = "$STR_205_UGL_FlareW_DisplayName";
 		displayNameShort = "$STR_205_FlareW_DisplayNameShort";
 		descriptionShort = "Wirkung: Licht<br />Farbe: Weiß<br />Dauer: 45 Sekunden";
+		picture = "\3AS\3AS_Weapons\Data\UI\3as_nade_flw.paa";
 		MASS_LUM
         author = "205th Recon Battalion";
 	};
@@ -404,6 +405,7 @@ class CfgMagazines
 		displayName = "$STR_205_UGL_FlareG_DisplayName";
 		displayNameShort = "$STR_205_FlareG_DisplayNameShort";
 		descriptionShort = "Wirkung: Licht<br />Farbe: Grün<br />Dauer: 45 Sekunden";
+		picture = "\3AS\3AS_Weapons\Data\UI\3as_nade_flg.paa";
 		MASS_LUM
         author = "205th Recon Battalion";
 	};
@@ -417,6 +419,7 @@ class CfgMagazines
 		displayName = "$STR_205_UGL_FlareR_DisplayName";
 		displayNameShort = "$STR_205_FlareR_DisplayNameShort";
 		descriptionShort = "Wirkung: Licht<br />Farbe: Rot<br />Dauer: 45 Sekunden";
+		picture = "\3AS\3AS_Weapons\Data\UI\3as_nade_flr.paa";
 		MASS_LUM
         author = "205th Recon Battalion";
 	};
@@ -430,6 +433,7 @@ class CfgMagazines
 		displayName = "$STR_205_UGL_FlareIR_DisplayName";
 		displayNameShort = "$STR_205_FlareIR_DisplayNameShort";
 		descriptionShort = "Wirkung: Licht<br />Farbe: IR<br />Dauer: 45 Sekunden";
+		picture = "\3AS\3AS_Weapons\Data\UI\3as_nade_ir.paa";
 		MASS_LUM
         author = "205th Recon Battalion";
 	};
@@ -445,6 +449,7 @@ class CfgMagazines
 		displayName = "$STR_205_UGL_HE_DisplayName";
 		displayNameShort = "$STR_205_HE_DisplayNameShort";
 		descriptionShort = "Wirkung: Explosiv<br />Anzahl: 1";
+		picture = "\3AS\3AS_Weapons\Data\UI\3as_nade_he.paa";
 		MASS_EXP
         author = "205th Recon Battalion";
 	};
@@ -467,6 +472,7 @@ class CfgMagazines
 		displayName = "$STR_205_HuntIR_DisplayName";
 		displayNameShort = "$STR_205_HuntIR_DisplayNameShort";
 		descriptionShort = "";
+		picture = "\3AS\3AS_Weapons\Data\UI\3as_nade_proto.paa";
 		MASS_EMP
         author = "205th Recon Battalion";
 	};
