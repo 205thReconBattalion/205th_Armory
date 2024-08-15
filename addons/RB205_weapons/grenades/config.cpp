@@ -29,27 +29,27 @@ class cfgPatches
 			"RB205_droidPopper",
 
 			"RB205_ugl_smoke_white",
-			"RB205_ugl_smoke_white_3rnd",
 			"RB205_ugl_smoke_blue",
-			"RB205_ugl_smoke_blue_3rnd",
 			"RB205_ugl_smoke_green",
-			"RB205_ugl_smoke_green_3rnd",
 			"RB205_ugl_smoke_red",
-			"RB205_ugl_smoke_red_3rnd",
 			"RB205_ugl_smoke_yellow",
-			"RB205_ugl_smoke_yellow_3rnd",
 			"RB205_ugl_smoke_purple",
-			"RB205_ugl_smoke_purple_3rnd",
 			"RB205_ugl_smoke_orange",
+			"RB205_ugl_smoke_white_3rnd",
+			"RB205_ugl_smoke_blue_3rnd",
+			"RB205_ugl_smoke_green_3rnd",
+			"RB205_ugl_smoke_red_3rnd",
+			"RB205_ugl_smoke_yellow_3rnd",
+			"RB205_ugl_smoke_purple_3rnd",
 			"RB205_ugl_smoke_orange_3rnd",
 
 			"RB205_ugl_flare_white",
-			"RB205_ugl_flare_white_3rnd",
 			"RB205_ugl_flare_green",
-			"RB205_ugl_flare_green_3rnd",
 			"RB205_ugl_flare_red",
-			"RB205_ugl_flare_red_3rnd",
 			"RB205_ugl_flare_ir",
+			"RB205_ugl_flare_white_3rnd",
+			"RB205_ugl_flare_green_3rnd",
+			"RB205_ugl_flare_red_3rnd",
 			"RB205_ugl_flare_ir_3rnd",
 
 			"RB205_ugl_he",
@@ -469,6 +469,94 @@ class CfgMagazines
 		descriptionShort = "";
 		MASS_EMP
         author = "205th Recon Battalion";
+	};
+};
+
+class CfgMagazineWells
+{
+	class RB205_ugl_1rnd
+	{
+		RB205_Smokes[] =
+		{
+			"RB205_ugl_smoke_white",
+			"RB205_ugl_smoke_blue",
+			"RB205_ugl_smoke_green",
+			"RB205_ugl_smoke_red",
+			"RB205_ugl_smoke_yellow",
+			"RB205_ugl_smoke_purple",
+			"RB205_ugl_smoke_orange"
+		};
+		RB205_Flares[] =
+		{
+			"RB205_ugl_flare_white",
+			"RB205_ugl_flare_green",
+			"RB205_ugl_flare_red",
+			"RB205_ugl_flare_ir"
+		};
+		RB205_Explosives[] =
+		{
+			"RB205_ugl_he"
+		};
+		RB205_Other[] =
+		{
+			"RB205_ugl_huntir"
+		};
+	};
+	class RB205_ugl_3rnd
+	{
+		RB205_Smokes[] =
+		{
+			"RB205_ugl_smoke_white_3rnd",
+			"RB205_ugl_smoke_blue_3rnd",
+			"RB205_ugl_smoke_green_3rnd",
+			"RB205_ugl_smoke_red_3rnd",
+			"RB205_ugl_smoke_yellow_3rnd",
+			"RB205_ugl_smoke_purple_3rnd",
+			"RB205_ugl_smoke_orange_3rnd"
+		};
+		RB205_Flares[] =
+		{
+			"RB205_ugl_flare_white_3rnd",
+			"RB205_ugl_flare_green_3rnd",
+			"RB205_ugl_flare_red_3rnd",
+			"RB205_ugl_flare_ir_3rnd"
+		};
+		RB205_Explosives[] =
+		{
+			"RB205_ugl_he_3rnd"
+		};
+		RB205_Other[] =
+		{
+			"RB205_ugl_huntir"
+		};
+	};
+	class RB205_ugl_arc
+	{
+		RB205_Smokes[] =
+		{
+			"RB205_ugl_smoke_white",
+			"RB205_ugl_smoke_blue",
+			"RB205_ugl_smoke_green",
+			"RB205_ugl_smoke_red",
+			"RB205_ugl_smoke_yellow",
+			"RB205_ugl_smoke_purple",
+			"RB205_ugl_smoke_orange"
+		};
+		RB205_Flares[] =
+		{
+			"RB205_ugl_flare_white",
+			"RB205_ugl_flare_green",
+			"RB205_ugl_flare_red",
+			"RB205_ugl_flare_ir"
+		};
+		RB205_Explosives[] =
+		{
+			"RB205_ugl_he_6rnd"
+		};
+		RB205_Other[] =
+		{
+			"RB205_ugl_huntir"
+		};
 	};
 };
 

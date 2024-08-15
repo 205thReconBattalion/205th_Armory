@@ -152,20 +152,12 @@ class CfgWeapons
 			displayName = "Westar-M5-GL";
 			magazines[] =
 			{
-                "3AS_6Rnd_HE_Grenade_shell",
-				"3Rnd_Smoke_Grenade_shell",
-				"3Rnd_SmokeBlue_Grenade_shell",
-				"3Rnd_SmokeGreen_Grenade_shell",
-				"3Rnd_SmokeOrange_Grenade_shell",
-				"3Rnd_SmokePurple_Grenade_shell",
-				"3Rnd_SmokeRed_Grenade_shell",
-				"3Rnd_SmokeYellow_Grenade_shell",
-				"ACE_HuntIR_M203",
-				"ACE_40mm_Flare_white",
-				"ACE_40mm_Flare_green",
-				"ACE_40mm_Flare_red"
+				"RB205_ugl_he_6rnd"
 			};
-			magazineWell[] = {};
+			magazineWell[] =
+			{
+				"RB205_ugl_arc"
+			};
 			modes[] =
 			{
 				"Single"
