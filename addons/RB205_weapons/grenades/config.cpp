@@ -54,7 +54,9 @@ class cfgPatches
 
 			"RB205_ugl_he",
 			"RB205_ugl_he_3rnd",
-			"RB205_ugl_he_6rnd"
+			"RB205_ugl_he_6rnd",
+
+			"RB205_ugl_huntir"
 		};
 		ammo[] =
 		{
@@ -457,6 +459,16 @@ class CfgMagazines
 		displayName = "$STR_205_UGL6_HE_DisplayName";
 		descriptionShort = "Wirkung: Explosiv<br />Anzahl: 6";
 		count = 6;
+	};
+
+	class ACE_HuntIR_M203;
+	class RB205_ugl_huntir: ACE_HuntIR_M203
+	{
+		displayName = "$STR_205_HuntIR_DisplayName";
+		displayNameShort = "$STR_205_HuntIR_DisplayNameShort";
+		descriptionShort = "";
+		MASS_EMP
+        author = "205th Recon Battalion";
 	};
 };
 

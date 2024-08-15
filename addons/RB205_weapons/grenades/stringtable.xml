@@ -146,6 +146,10 @@
             <English>[205] UGL HE Grenade (6Rnd)</English>
             <German>[205] UGL HE Granate (6 Sch.)</German>
         </Key>
+        <Key ID="STR_205_HuntIR_DisplayName">
+            <English>[205] Surveillance Drone (HuntIR)</English>
+            <German>[205] Überwachungs-Drohne (HuntIR)</German>
+        </Key>
 <!--displayNameShort-->
         <Key ID="STR_205_ThermalDetonator_DisplayNameShort">
             <English>Thermal Det</English>
@@ -210,6 +214,10 @@
         <Key ID="STR_205_HE_DisplayNameShort">
             <English>HE</English>
             <German>HE</German>
+        </Key>
+        <Key ID="STR_205_HuntIR_DisplayNameShort">
+            <English>HuntIR</English>
+            <German>HuntIR</German>
         </Key>
     </Package>
 </Project>
