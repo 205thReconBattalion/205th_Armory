@@ -102,6 +102,38 @@
             <English>[205] UGL Smoke Grenade (Orange) (3Rnd)</English>
             <German>[205] UGL Rauchgranate (Orange) (3 Sch.)</German>
         </Key>
+        <Key ID="STR_205_UGL_FlareW_DisplayName">
+            <English>[205] UGL Signal Flare (White)</English>
+            <German>[205] UGL Leuchtsignal (Weiß)</German>
+        </Key>
+        <Key ID="STR_205_UGL_FlareG_DisplayName">
+            <English>[205] UGL Signal Flare (Green)</English>
+            <German>[205] UGL Leuchtsignal (Grün)</German>
+        </Key>
+        <Key ID="STR_205_UGL_FlareR_DisplayName">
+            <English>[205] UGL Signal Flare (Red)</English>
+            <German>[205] UGL Leuchtsignal (Rot)</German>
+        </Key>
+        <Key ID="STR_205_UGL_FlareIR_DisplayName">
+            <English>[205] UGL Signal Flare (IR)</English>
+            <German>[205] UGL Leuchtsignal (IR)</German>
+        </Key>
+        <Key ID="STR_205_UGL3_FlareW_DisplayName">
+            <English>[205] UGL Signal Flare (White) (3Rnd)</English>
+            <German>[205] UGL Leuchtsignal (Weiß) (3 Sch.)</German>
+        </Key>
+        <Key ID="STR_205_UGL3_FlareG_DisplayName">
+            <English>[205] UGL Signal Flare (Green) (3Rnd)</English>
+            <German>[205] UGL Leuchtsignal (Grün) (3 Sch.)</German>
+        </Key>
+        <Key ID="STR_205_UGL3_FlareR_DisplayName">
+            <English>[205] UGL Signal Flare (Red) (3Rnd)</English>
+            <German>[205] UGL Leuchtsignal (Rot) (3 Sch.)</German>
+        </Key>
+        <Key ID="STR_205_UGL3_FlareIR_DisplayName">
+            <English>[205] UGL Signal Flare (IR) (3Rnd)</English>
+            <German>[205] UGL Leuchtsignal (IR) (3 Sch.)</German>
+        </Key>
 <!--displayNameShort-->
         <Key ID="STR_205_ThermalDetonator_DisplayNameShort">
             <English>Thermal Det</English>
@@ -146,6 +178,22 @@
         <Key ID="STR_205_DroidPopper_DisplayNameShort">
             <English>Droid Popper</English>
             <German>Droidenkracher</German>
+        </Key>
+        <Key ID="STR_205_FlareW_DisplayNameShort">
+            <English>Flare (White)</English>
+            <German>Licht (Weiß)</German>
+        </Key>
+        <Key ID="STR_205_FlareG_DisplayNameShort">
+            <English>Flare (Green)</English>
+            <German>Licht (Grün)</German>
+        </Key>
+        <Key ID="STR_205_FlareR_DisplayNameShort">
+            <English>Flare (Red)</English>
+            <German>Licht (Rot)</German>
+        </Key>
+        <Key ID="STR_205_FlareIR_DisplayNameShort">
+            <English>Flare (IR)</English>
+            <German>Licht (IR)</German>
         </Key>
     </Package>
 </Project>

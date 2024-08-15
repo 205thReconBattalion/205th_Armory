@@ -41,7 +41,16 @@ class cfgPatches
 			"RB205_ugl_smoke_purple",
 			"RB205_ugl_smoke_purple_3rnd",
 			"RB205_ugl_smoke_orange",
-			"RB205_ugl_smoke_orange_3rnd"
+			"RB205_ugl_smoke_orange_3rnd",
+
+			"RB205_ugl_flare_white",
+			"RB205_ugl_flare_white_3rnd",
+			"RB205_ugl_flare_green",
+			"RB205_ugl_flare_green_3rnd",
+			"RB205_ugl_flare_red",
+			"RB205_ugl_flare_red_3rnd",
+			"RB205_ugl_flare_ir",
+			"RB205_ugl_flare_ir_3rnd"
 		};
 		ammo[] =
 		{
@@ -363,6 +372,64 @@ class CfgMagazines
 	class RB205_ugl_smoke_orange_3rnd: RB205_ugl_smoke_orange
 	{
 		displayName = "$STR_205_UGL3_SmokeO_DisplayName";
+		count = 3;
+	};
+	
+	class ACE_40mm_Flare_white;
+	class ACE_40mm_Flare_green;
+	class ACE_40mm_Flare_red;
+	class ACE_40mm_Flare_ir;
+
+	class RB205_ugl_flare_white: ACE_40mm_Flare_white
+	{
+		displayName = "$STR_205_UGL_FlareW_DisplayName";
+		displayNameShort = "$STR_205_FlareW_DisplayNameShort";
+		descriptionShort = "Wirkung: Licht<br />Farbe: Weiß<br />Dauer: 45 Sekunden";
+		MASS_LUM
+        author = "205th Recon Battalion";
+	};
+	class RB205_ugl_flare_white_3rnd: RB205_ugl_flare_white
+	{
+		displayName = "$STR_205_UGL3_FlareW_DisplayName";
+		count = 3;
+	};
+	class RB205_ugl_flare_green: ACE_40mm_Flare_green
+	{
+		displayName = "$STR_205_UGL_FlareG_DisplayName";
+		displayNameShort = "$STR_205_FlareG_DisplayNameShort";
+		descriptionShort = "Wirkung: Licht<br />Farbe: Grün<br />Dauer: 45 Sekunden";
+		MASS_LUM
+        author = "205th Recon Battalion";
+	};
+	class RB205_ugl_flare_green_3rnd: RB205_ugl_flare_green
+	{
+		displayName = "$STR_205_UGL3_FlareG_DisplayName";
+		count = 3;
+	};
+	class RB205_ugl_flare_red: ACE_40mm_Flare_red
+	{
+		displayName = "$STR_205_UGL_FlareR_DisplayName";
+		displayNameShort = "$STR_205_FlareR_DisplayNameShort";
+		descriptionShort = "Wirkung: Licht<br />Farbe: Rot<br />Dauer: 45 Sekunden";
+		MASS_LUM
+        author = "205th Recon Battalion";
+	};
+	class RB205_ugl_flare_red_3rnd: RB205_ugl_flare_red
+	{
+		displayName = "$STR_205_UGL3_FlareR_DisplayName";
+		count = 3;
+	};
+	class RB205_ugl_flare_ir: ACE_40mm_Flare_ir
+	{
+		displayName = "$STR_205_UGL_FlareIR_DisplayName";
+		displayNameShort = "$STR_205_FlareIR_DisplayNameShort";
+		descriptionShort = "Wirkung: Licht<br />Farbe: IR<br />Dauer: 45 Sekunden";
+		MASS_LUM
+        author = "205th Recon Battalion";
+	};
+	class RB205_ugl_flare_ir_3rnd: RB205_ugl_flare_ir
+	{
+		displayName = "$STR_205_UGL3_FlareIR_DisplayName";
 		count = 3;
 	};
 };
