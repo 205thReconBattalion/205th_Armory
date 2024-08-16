@@ -56,9 +56,9 @@ class cfgWeapons
         displayName = "[205] Clone Trooper Vest [5283]";
         hiddenSelectionsTextures[] =
         {
-            "RB205_main\data\airborne\V_ab_accessories_co.paa",
-            "RB205_main\data\airborne\V_ab_cs_co.paa",
-            "RB205_main\data\airborne\V_ab_accessories_co.paa"
+            "RB205_custom\5283_putzi\data\V_putzi_acc.paa",
+            "RB205_custom\5283_putzi\data\V_putzi.paa",
+            "RB205_custom\5283_putzi\data\V_putzi_acc.paa"
         };
     };
 };
