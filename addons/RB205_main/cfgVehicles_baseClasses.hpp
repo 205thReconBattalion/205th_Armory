@@ -205,7 +205,7 @@ class RB205_snow_base: RB205_clone_base
 		"Throw","Put"
 	};
 	//Model Values:
-	model="\LFP_marine\armor.p3d";
+	model="\armor_unit\21\21.p3d";
 	hiddenSelections[]=
 	{
 		"Camo1",
@@ -506,7 +506,7 @@ class RB205_B_snow_base: RB205_backpack_base
 {
 	ACCESS_FALSE
 	picture = "\RB205_main\data\ui\backpacks\icon_B_snow.paa";
-	model = "\LFP_marine\backpack.p3d";
+	model = "\armor_unit\21\BackPack_21.p3d";
 	hiddenSelections[] =
 	{
 		"backpack",

@@ -498,7 +498,7 @@ class RB205_V_snow_base: RB205_V_base
 {
 	ACCESS_FALSE
 	picture = "\RB205_main\data\ui\vests\icon_V_snow.paa";
-	model = "\LFP_marine\vest.p3d";
+	model = "\armor_unit\21\21st_Vest_V2.p3d";
 	hiddenSelections[] =
 	{
 		"Camo1"
@@ -509,7 +509,7 @@ class RB205_V_snow_base: RB205_V_base
 	};
 	class ItemInfo: ItemInfo
 	{
-		uniformModel = "\LFP_marine\vest.p3d";
+		uniformModel = "\armor_unit\21\21st_Vest_V2.p3d";
 		hiddenSelections[] = {"Camo1"};
 	};
 };
@@ -517,7 +517,7 @@ class RB205_V_snow_fireTeamLead_base: RB205_V_fireTeamLead_base
 {
 	ACCESS_FALSE
 	picture = "\RB205_main\data\ui\vests\icon_V_snow.paa";
-	model = "\LFP_marine\vest.p3d";
+	model = "\armor_unit\21\21st_Vest_V2.p3d";
 	hiddenSelections[] =
 	{
 		"Camo1"
@@ -528,7 +528,7 @@ class RB205_V_snow_fireTeamLead_base: RB205_V_fireTeamLead_base
 	};
 	class ItemInfo: ItemInfo
 	{
-		uniformModel = "\LFP_marine\vest.p3d";
+		uniformModel = "\armor_unit\21\21st_Vest_V2.p3d";
 		hiddenSelections[] = {"Camo1"};
 	};
 };
@@ -536,7 +536,7 @@ class RB205_V_snow_squadLead_base: RB205_V_squadLead_base
 {
 	ACCESS_FALSE
 	picture = "\RB205_main\data\ui\vests\icon_V_snow.paa";
-	model = "\LFP_marine\vest.p3d";
+	model = "\armor_unit\21\21st_Vest_V2.p3d";
 	hiddenSelections[] =
 	{
 		"Camo1"
@@ -547,7 +547,7 @@ class RB205_V_snow_squadLead_base: RB205_V_squadLead_base
 	};
 	class ItemInfo: ItemInfo
 	{
-		uniformModel = "\LFP_marine\vest.p3d";
+		uniformModel = "\armor_unit\21\21st_Vest_V2.p3d";
 		hiddenSelections[] = {"Camo1"};
 	};
 };
@@ -555,7 +555,7 @@ class RB205_V_snow_platoonLead_base: RB205_V_platoonLead_base
 {
 	ACCESS_FALSE
 	picture = "\RB205_main\data\ui\vests\icon_V_snow.paa";
-	model = "\LFP_marine\vest.p3d";
+	model = "\armor_unit\21\21st_Vest_V2.p3d";
 	hiddenSelections[] =
 	{
 		"Camo1"
@@ -566,7 +566,7 @@ class RB205_V_snow_platoonLead_base: RB205_V_platoonLead_base
 	};
 	class ItemInfo: ItemInfo
 	{
-		uniformModel = "\LFP_marine\vest.p3d";
+		uniformModel = "\armor_unit\21\21st_Vest_V2.p3d";
 		hiddenSelections[] = {"Camo1"};
 	};
 };
