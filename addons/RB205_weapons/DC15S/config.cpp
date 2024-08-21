@@ -168,10 +168,14 @@ class CfgWeapons
 			class CowsSlot: CowsSlot
 			{
 				compatibleItems[] = { "3AS_optic_holo_DC15S" };
+				iconScale = 0;
+				iconPosition[] = {0,0};
+				iconPicture = "";
 			};
 		};
 		class Single: Single
 		{
+			dispersion = 0.0012;
 			class StandardSound//: StandardSound
 			{
 				soundSetShot[] = { "RB205_DC15S_Shot_SoundSet" };
@@ -180,6 +184,7 @@ class CfgWeapons
 		};
 		class FullAuto: FullAuto
 		{
+			dispersion = 0.0012;
 			class StandardSound//: StandardSound
 			{
 				soundSetShot[] = { "RB205_DC15S_Shot_SoundSet" };
@@ -237,10 +242,14 @@ class CfgWeapons
 			class CowsSlot: CowsSlot
 			{
 				compatibleItems[] = { "3AS_optic_holo_DC15S" };
+				iconScale = 0;
+				iconPosition[] = {0,0};
+				iconPicture = "";
 			};
 		};
 		class Single: Single
 		{
+			dispersion = 0.0012;
 			class StandardSound: StandardSound
 			{
 				soundSetShot[] = { "RB205_DC15S_Shot_SoundSet" };
@@ -249,6 +258,7 @@ class CfgWeapons
 		};
 		class FullAuto: FullAuto
 		{
+			dispersion = 0.0012;
 			class StandardSound: StandardSound
 			{
 				soundSetShot[] = { "RB205_DC15S_Shot_SoundSet" };

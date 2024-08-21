@@ -6,9 +6,17 @@
             <English>[205] DC-15A Blaster Rifle</English>
             <German>[205] DC-15A Blastergewehr</German>
         </Key>
+        <Key ID="STR_205_DC15A_JLTS_DisplayName">
+            <English>[205] DC-15A Blaster Rifle (JLTS)</English>
+            <German>[205] DC-15A Blastergewehr (JLTS)</German>
+        </Key>
         <Key ID="STR_205_DC15A_GL_DisplayName">
             <English>[205] DC-15A GL Blaster Rifle</English>
             <German>[205] DC-15A GL Blastergewehr</German>
+        </Key>
+        <Key ID="STR_205_DC15A_GL_JLTS_DisplayName">
+            <English>[205] DC-15A GL Blaster Rifle (JLTS)</English>
+            <German>[205] DC-15A GL Blastergewehr (JLTS)</German>
         </Key>
         <Key ID="STR_205_DC15C_DisplayName">
             <English>[205] DC-15C Blaster Carbine</English>

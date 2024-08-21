@@ -218,7 +218,7 @@ class CfgWeapons
 				{
 					soundSetShot[]=
 					{
-						"205_UGL_Shot_SoundSet"
+						"RB205_UGL_Shot_SoundSet"
 					};
 				};
 				sounds[]=
