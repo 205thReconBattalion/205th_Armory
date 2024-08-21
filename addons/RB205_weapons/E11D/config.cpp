@@ -17,6 +17,8 @@ class cfgPatches
 	};
 };
 
+#include "\RB205_weapons\macros.hpp"
+
 class cfgWeapons
 {
 	class JMSLLTE_BlasterRifle_Base;
@@ -30,6 +32,7 @@ class cfgWeapons
 		displayName = "$STR_205_E11D_DisplayName";
 		displayNameShort = "$STR_205_E11D_DisplayNameShort";
 		descriptionShort = "Blasterkarabiner des Imperium";
+		mass = MASS_WP_CARBINE;
 		magazines[] =
 		{
 			"RB205_Experimental_Energy_Pack_red"

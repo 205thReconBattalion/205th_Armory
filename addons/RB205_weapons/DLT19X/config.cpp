@@ -17,6 +17,8 @@ class cfgPatches
 	};
 };
 
+#include "\RB205_weapons\macros.hpp"
+
 class cfgWeapons
 {
 	class 3AS_DLT19X_Base_F;
@@ -29,6 +31,7 @@ class cfgWeapons
 		displayName = "$STR_205_DLT19X_DisplayName";
 		displayNameShort = "$STR_205_DLT19X_DisplayNameShort";
 		descriptionShort = "Scharfschützengewehr des Imperium<br />Freigegeben für: Marksman";
+		mass = MASS_WP_RIFLE;
 		magazines[] =
 		{
 			"RB205_Overcharged_Energy_Pack_red"

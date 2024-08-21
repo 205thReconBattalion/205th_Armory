@@ -19,7 +19,7 @@ class cfgPatches
 	};
 };
 
-#include "\RB205_weapons\emp_compat.hpp"
+#include "\RB205_weapons\macros.hpp"
 
 class Mode_FullAuto;
 
@@ -34,6 +34,7 @@ class CfgWeapons
 		displayNameShort = "$STR_205_BTX42_DisplayNameShort";
 		descriptionShort = "Flammenwerfer der GAR";
 		picture = "3AS\3AS_Weapons\X42\Data\UI\3as_btx42.paa";
+		mass = MASS_WP_HEAVY;
 		magazines[] =
 		{
 			"RB205_BTX42_mag"

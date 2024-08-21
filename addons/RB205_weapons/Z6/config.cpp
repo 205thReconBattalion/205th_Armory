@@ -17,7 +17,7 @@ class cfgPatches
 	};
 };
 
-#include "\RB205_weapons\emp_compat.hpp"
+#include "\RB205_weapons\macros.hpp"
 
 class Mode_FullAuto;
 
@@ -31,6 +31,7 @@ class CfgWeapons
 		displayNameShort = "$STR_205_Z6_DisplayNameShort";
 		descriptionShort = "Rotationsblaster der GAR<br />Freigegeben für: Heavy";
 		picture = "\RB205_weapons\data\ui\z6.paa";
+		mass = MASS_WP_HEAVY;
 		fireLightDiffuse[] = {0,0,1};
 		baseWeapon = "RB205_Z6";
 		magazines[] =

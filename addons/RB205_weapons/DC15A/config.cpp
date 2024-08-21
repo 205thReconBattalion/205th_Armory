@@ -18,7 +18,7 @@ class cfgPatches
 	};
 };
 
-#include "\RB205_weapons\emp_compat.hpp"
+#include "\RB205_weapons\macros.hpp"
 
 class WeaponSlotsInfo;
 class MuzzleSlot;
@@ -36,6 +36,7 @@ class CfgWeapons
 		displayNameShort = "$STR_205_DC15A_DisplayNameShort";
 		descriptionShort = "Standard-Blastergewehr der GAR<br />Freigegeben für: Alle";
 		picture = "\3AS\3AS_Weapons\DC15A\Data\UI\3as_dc15a.paa";
+		mass = MASS_WP_RIFLE;
 		fireLightDiffuse[] = {0,0,1};
 		magazines[] =
 		{
@@ -145,6 +146,7 @@ class CfgWeapons
 		displayNameShort = "$STR_205_DC15A_GL_DisplayNameShort";
 		descriptionShort = "Standard-Blastergewehr der GAR<br />Freigegeben für: Grenadier";
 		picture = "\3AS\3AS_Weapons\DC15A\Data\UI\3as_dc15agl.paa";
+		mass = MASS_WP_RIFLE_GL;
 		fireLightDiffuse[] = {0,0,1};
 		magazines[] =
 		{
