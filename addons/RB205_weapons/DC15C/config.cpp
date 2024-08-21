@@ -18,7 +18,7 @@ class cfgPatches
 	};
 };
 
-#include "\RB205_weapons\emp_compat.hpp"
+#include "\RB205_weapons\macros.hpp"
 
 class GunParticles;
 class Mode_Burst;
@@ -34,6 +34,7 @@ class CfgWeapons
 		displayNameShort = "$STR_205_DC15C_DisplayNameShort";
 		descriptionShort = "Blasterkarabiner der GAR<br />Freigegeben für: Alle<br />(Unterwasser-Fähig)";
 		picture = "\3AS\3AS_Weapons\DC15C\Data\UI\3as_dc15c.paa";
+		mass = MASS_WP_CARBINE;
 		fireLightDiffuse[] = {0,0,1};
 		canShootInWater = 1;
 		magazines[] =
@@ -123,6 +124,7 @@ class CfgWeapons
 		displayNameShort = "$STR_205_DC15C_GL_DisplayNameShort";
 		descriptionShort = "Blasterkarabiner der GAR<br />Freigegeben für: Alle<br />(Unterwasser-Fähig)";
 		picture = "\3AS\3AS_Weapons\DC15C\Data\UI\3as_dc15cgl.paa";
+		mass = MASS_WP_CARBINE_GL;
 		fireLightDiffuse[] = {0,0,1};
 		canShootInWater = 1;
 		magazines[] =

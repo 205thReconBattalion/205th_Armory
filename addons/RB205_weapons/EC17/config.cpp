@@ -18,6 +18,8 @@ class cfgPatches
 	};
 };
 
+#include "\RB205_weapons\macros.hpp"
+
 class cfgWeapons
 {
 	class JMSLLTE_BlasterPistol_Base;
@@ -30,6 +32,7 @@ class cfgWeapons
 		displayName = "$STR_205_EC17_DisplayName";
 		displayNameShort = "$STR_205_EC17_DisplayNameShort";
 		descriptionShort = "Blasterpistole des Imperium<br />Freigegeben für: Scout";
+		mass = MASS_WP_PISTOL;
 		magazines[] =
 		{
 			"RB205_Compact_Energy_Pack_red"

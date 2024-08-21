@@ -19,6 +19,8 @@ class cfgPatches
 	};
 };
 
+#include "\RB205_weapons\macros.hpp"
+
 class cfgWeapons
 {
 	class 3AS_E11;
@@ -27,6 +29,7 @@ class cfgWeapons
 		displayName = "$STR_205_E11_DisplayName";
 		displayNameShort = "$STR_205_E11_DisplayNameShort";
 		descriptionShort = "Blastergewehr des Imperium<br />Freigegeben für: Alle";
+		mass = MASS_WP_CARBINE;
 		magazines[] =
 		{
 			"RB205_Standard_Energy_Pack_red"
@@ -53,6 +56,7 @@ class cfgWeapons
 		displayName = "$STR_205_E11_STOCK_DisplayName";
 		displayNameShort = "$STR_205_E11_DisplayNameShort";
 		descriptionShort = "Blastergewehr des Imperium<br />Freigegeben für: Alle";
+		mass = MASS_WP_CARBINE;
 		magazines[] =
 		{
 			"RB205_Standard_Energy_Pack_red"
@@ -71,6 +75,7 @@ class cfgWeapons
 		displayName = "$STR_205_E11_GL_DisplayName";
 		displayNameShort = "$STR_205_E11_GL_DisplayNameShort";
 		descriptionShort = "Blastergewehr des Imperium<br />Freigegeben für: Grenadier";
+		mass = MASS_WP_CARBINE_GL;
 		magazines[] =
 		{
 			"RB205_Standard_Energy_Pack_red"

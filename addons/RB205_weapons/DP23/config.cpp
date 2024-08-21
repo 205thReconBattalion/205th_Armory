@@ -17,7 +17,7 @@ class cfgPatches
 	};
 };
 
-#include "\RB205_weapons\emp_compat.hpp"
+#include "\RB205_weapons\macros.hpp"
 
 class CfgWeapons
 {	
@@ -34,6 +34,7 @@ class CfgWeapons
 		displayNameShort = "$STR_205_DP23_DisplayNameShort";
 		descriptionShort = "Freigegeben für: 1-3 'Rancor'";
 		picture = "\3AS\3AS_Weapons\MPL\Data\UI\3as_mpl.paa";
+		mass = MASS_WP_CARBINE;
 		magazines[] =
 		{
 			"RB205_Scatter_Energy_Pack"

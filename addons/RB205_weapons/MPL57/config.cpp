@@ -17,7 +17,7 @@ class cfgPatches
 	};
 };
 
-#include "\RB205_weapons\emp_compat.hpp"
+#include "\RB205_weapons\macros.hpp"
 
 class GunParticles;
 class Mode_Burst;
@@ -37,6 +37,7 @@ class CfgWeapons
 		displayNameShort = "$STR_205_MPL57_DisplayNameShort";
 		descriptionShort = "Granatwerder der GAR<br />Freigegeben für: Grenadier";
 		picture = "\3AS\3AS_Weapons\MPL\Data\UI\3as_mpl.paa";
+		mass = MASS_WP_CARBINE;
 		fireLightDiffuse[] = {0,0,1};
 		magazines[] =
 		{

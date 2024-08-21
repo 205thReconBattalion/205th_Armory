@@ -16,6 +16,8 @@ class cfgPatches
 	};
 };
 
+#include "\RB205_weapons\macros.hpp"
+
 class cfgWeapons
 {
 	class Rifle_Base_F;
@@ -35,6 +37,7 @@ class cfgWeapons
 		displayName = "$STR_205_DLT19_DisplayName";
 		displayNameShort = "$STR_205_DLT19_DisplayNameShort";
 		descriptionShort = "Blastergewehr des Imperium<br />Freigegeben für: Heavy";
+		mass = MASS_WP_RIFLE;
 		magazines[] =
 		{
 			"RB205_Heavy_Energy_Pack_red"

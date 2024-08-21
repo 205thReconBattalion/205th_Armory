@@ -18,7 +18,7 @@ class cfgPatches
 	};
 };
 
-#include "\RB205_weapons\emp_compat.hpp"
+#include "\RB205_weapons\macros.hpp"
 
 class Mode_SemiAuto;
 class Mode_Burst;
@@ -40,6 +40,7 @@ class CfgWeapons
 		displayNameShort = "$STR_205_DC15L_DisplayNameShort";
 		descriptionShort = "Blastergewehr der GAR<br />Freigegeben für: Heavy";
 		picture = "\3AS\3AS_Weapons\DC15L\Data\UI\3as_dc15l.paa";
+		mass = MASS_WP_RIFLE;
 		fireLightDiffuse[] = {0,0,1};
 		magazines[] =
 		{

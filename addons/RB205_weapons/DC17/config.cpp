@@ -18,7 +18,7 @@ class cfgPatches
 	};
 };
 
-#include "\RB205_weapons\emp_compat.hpp"
+#include "\RB205_weapons\macros.hpp"
 
 class WeaponSlotsInfo;
 class MuzzleSlot;
@@ -39,6 +39,7 @@ class CfgWeapons
 		displayNameShort = "$STR_205_DC17_DisplayNameShort";
 		descriptionShort = "Blasterpistole der GAR<br />Freigegeben für: Alle";
 		picture = "\3AS\3AS_Weapons\DC17S\Data\UI\3as_dc17s.paa";
+		mass = MASS_WP_PISTOL;
 		fireLightDiffuse[] = {0,0,1};
 		magazines[] =
 		{
@@ -97,6 +98,7 @@ class CfgWeapons
 		displayNameShort = "$STR_205_DC17_DUAL_DisplayNameShort";
 		descriptionShort = "Blasterpistolen der GAR<br />Freigegeben für: ARC, CS+";
 		picture = "\3AS\3AS_Weapons\DC17S\Data\UI\3as_dc17s_d.paa";
+		mass = MASS_WP_PISTOL;
 		fireLightDiffuse[] = {0,0,1};
 		model = "3AS\3AS_Weapons\DC17S\3AS_DC17S_Dual_F.p3d";
 		weaponInfoType = "RscWeaponZeroing";
@@ -125,6 +127,7 @@ class CfgWeapons
 		displayNameShort = "$STR_205_DC17_ALT_DisplayNameShort";
 		descriptionShort = "Blasterpistole der GAR<br />Freigegeben für: Alle";
 		picture = "\3AS\3AS_Weapons\DC17S\Data\UI\3as_dc17s.paa";
+		mass = MASS_WP_PISTOL;
 		fireLightDiffuse[] = {0,0,1};
 		magazines[] =
 		{

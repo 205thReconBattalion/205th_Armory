@@ -19,7 +19,7 @@ class cfgPatches
 	};
 };
 
-#include "\RB205_weapons\emp_compat.hpp"
+#include "\RB205_weapons\macros.hpp"
 
 class WeaponSlotsInfo;
 class CowsSlot;
@@ -37,6 +37,7 @@ class CfgWeapons
 		displayNameShort = "$STR_205_DC15S_DisplayNameShort";
 		descriptionShort = "Standard-Blasterkarabiner der GAR<br />Freigegeben für: Alle";
 		picture = "\3AS\3AS_Weapons\DC15S\Data\UI\3as_dc15s.paa";
+		mass = MASS_WP_CARBINE;
 		fireLightDiffuse[] = {0,0,1};
 		magazines[] =
 		{
@@ -140,6 +141,7 @@ class CfgWeapons
 		displayNameShort = "$STR_205_DC15S_DisplayNameShort";
 		descriptionShort = "Standard-Blasterkarabiner der GAR<br />Freigegeben für: Alle";
 		picture = "\3AS\3AS_Weapons\DC15S\Data\UI\3as_dc15s.paa";
+		mass = MASS_WP_CARBINE;
 		fireLightDiffuse[] = {0,0,1};
 		magazines[] =
 		{
