@@ -169,6 +169,8 @@ class CfgWeapons
 			{
 				compatibleItems[] = { "3AS_optic_holo_DC15S" };
 				iconScale = 0;
+				iconPosition[] = {0,0};
+				iconPicture = "";
 			};
 		};
 		class Single: Single
@@ -241,6 +243,8 @@ class CfgWeapons
 			{
 				compatibleItems[] = { "3AS_optic_holo_DC15S" };
 				iconScale = 0;
+				iconPosition[] = {0,0};
+				iconPicture = "";
 			};
 		};
 		class Single: Single
