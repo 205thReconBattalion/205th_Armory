@@ -168,6 +168,7 @@ class CfgWeapons
 			class CowsSlot: CowsSlot
 			{
 				compatibleItems[] = { "3AS_optic_holo_DC15S" };
+				iconScale = 0;
 			};
 		};
 		class Single: Single
@@ -237,6 +238,7 @@ class CfgWeapons
 			class CowsSlot: CowsSlot
 			{
 				compatibleItems[] = { "3AS_optic_holo_DC15S" };
+				iconScale = 0;
 			};
 		};
 		class Single: Single
