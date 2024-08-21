@@ -69,6 +69,16 @@ class CfgWeapons
 	{
 		cursor = "RB205_CH_default";
 	};
+	class JLTS_DC15A_plastic;
+	class RB205_DC15A_JLTS: JLTS_DC15A_plastic
+	{
+		cursor = "RB205_CH_default";
+	};
+	class JLTS_DC15A_ugl_plastic;
+	class RB205_DC15A_GL_JLTS: JLTS_DC15A_ugl_plastic
+	{
+		cursor = "RB205_CH_default";
+	};
 	
 	class 3AS_DC15C_F;
 	class RB205_DC15C: 3AS_DC15C_F
