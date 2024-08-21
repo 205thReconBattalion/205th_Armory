@@ -173,6 +173,7 @@ class CfgWeapons
 		};
 		class Single: Single
 		{
+			dispersion = 0.0012;
 			class StandardSound//: StandardSound
 			{
 				soundSetShot[] = { "RB205_DC15S_Shot_SoundSet" };
@@ -181,6 +182,7 @@ class CfgWeapons
 		};
 		class FullAuto: FullAuto
 		{
+			dispersion = 0.0012;
 			class StandardSound//: StandardSound
 			{
 				soundSetShot[] = { "RB205_DC15S_Shot_SoundSet" };
@@ -243,6 +245,7 @@ class CfgWeapons
 		};
 		class Single: Single
 		{
+			dispersion = 0.0012;
 			class StandardSound: StandardSound
 			{
 				soundSetShot[] = { "RB205_DC15S_Shot_SoundSet" };
@@ -251,6 +254,7 @@ class CfgWeapons
 		};
 		class FullAuto: FullAuto
 		{
+			dispersion = 0.0012;
 			class StandardSound: StandardSound
 			{
 				soundSetShot[] = { "RB205_DC15S_Shot_SoundSet" };
