@@ -80,7 +80,7 @@ params ["_this"];
 		"RB205_H_tyr","RB205_U_tyr",
 		"RB205_H_smoker","RB205_H_ab_smoker","RB205_U_smoker","RB205_V_smoker",
 		"RB205_H_zeegers","RB205_U_zeegers",
-		"RB205_H_arc_gentleman","RB205_U_gentleman","RB205_V_gentleman",
+		"RB205_H_gentleman","RB205_U_gentleman","RB205_V_gentleman",
 		"RB205_H_kamaz","RB205_U_kamaz",
 		"RB205_H_ark","RB205_U_ark",
 		"RB205_H_paso","RB205_U_paso",
