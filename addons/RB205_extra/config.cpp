@@ -2,7 +2,10 @@ class CfgPatches
 {
     class RB205_extra
 	{
-		requiredAddons[] = {};
+		requiredAddons[] =
+        {
+            "RB205_logistics"
+        };
 		requiredVersion = 1.0;
         author = "205th Recon Battalion";
 		weapons[] =
@@ -25,11 +28,16 @@ class CfgPatches
             "RB205_medal_heroes",
             "RB205_medal_oriramikad"
         };
-		units[] = {};
+		units[] =
+        {
+            "RB205_carbonite"
+        };
 	};
 };
 
 #include "\RB205_main\macros.hpp"
+
+class CBA_Extended_EventHandlers_base;
 
 class CfgGlasses
 {
@@ -283,6 +291,51 @@ class CfgWeapons
         hiddenSelectionsTextures[] =
         {
             "\RB205_extra\data\medal\medal_oriramikad.paa"
+        };
+    };
+};
+
+class CfgVehicles
+{
+    class Land_Basketball_01_F;
+    class RB205_carbonite: Land_Basketball_01_F
+    {
+        ACCESS_TRUE
+        displayname= "Carbonite";
+        editorcategory = "RB205_prop";
+        editorsubcategory = "RB205_other";
+		editorPreview = "";
+        model="\RB205_extra\carbonite.p3d";
+        hiddenSelections[] =
+        {
+            "camo1",
+            "camo2",
+            "camo3"
+        };
+        hiddenSelectionsTextures[] =
+        {
+            "\RB205_extra\data\carbonite\camo1_co.paa",
+            "\RB205_extra\data\carbonite\camo2_co.paa",
+            "\RB205_extra\data\carbonite\camo3_co.paa"
+        };
+        hiddenSelectionsMaterial[] =
+        {
+            "\RB205_extra\data\carbonite\camo1.rvmat",
+            "\RB205_extra\data\carbonite\camo2.rvmat",
+            "\RB205_extra\data\carbonite\camo3.rvmat"
+        };
+        description= "";
+        destrType= "DestructNo";
+        ace_dragging_canCarry = 1;
+        ace_dragging_carryPosition[] = {0,1.5,0};
+        ace_Dragging_carryDirection = 0;
+        ace_dragging_ignoreWeight = 1;
+        ace_cargo_size = 1;
+        ace_cargo_canLoad = 1;
+        armor = 10000;
+        class SimpleObject
+        {
+            eden = 1;
         };
     };
 };
