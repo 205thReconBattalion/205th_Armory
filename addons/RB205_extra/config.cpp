@@ -1,4 +1,4 @@
-class cfgPatches
+class CfgPatches
 {
     class RB205_extra
 	{
@@ -7,7 +7,23 @@ class cfgPatches
         author = "205th Recon Battalion";
 		weapons[] =
         {
-            "RB205_medal_base"
+            "RB205_rebreather",
+
+            "RB205_medal_service1",
+            "RB205_medal_service2",
+            "RB205_medal_service3",
+            "RB205_medal_serviceKIA",
+            "RB205_medal_bravery",
+            "RB205_medal_infiltration",
+            "RB205_medal_medical",
+            "RB205_medal_melee",
+            "RB205_medal_recruitment",
+            "RB205_medal_pow",
+            "RB205_medal_aircraft",
+            "RB205_medal_tank",
+            "RB205_medal_clarityInCrisis",
+            "RB205_medal_heroes",
+            "RB205_medal_oriramikad"
         };
 		units[] = {};
 	};
@@ -15,28 +31,118 @@ class cfgPatches
 
 #include "\RB205_main\macros.hpp"
 
-class cfgWeapons
+class CfgGlasses
 {
-    class NVGoggles;
-    class RB205_medal_base: NVGoggles
+    class G_Combat;
+    class RB205_extra_base: G_Combat
     {
         ACCESS_FALSE
+        picture = "\RB205_main\data\ui\other\RB205_logo.paa";
         descriptionShort = "";
 		descriptionUse = "";
-		picture = "\RB205_main\data\ui\other\RB205_logo.paa";
+        mass = 1;
+        mode = 4;
+        identityTypes[] = {};
+    };
+
+	class RB205_arc_bracer: RB205_extra_base
+	{
+        ACCESS_TRUE
+		displayname = "[205] Clone ARC Bracer";
+		picture="\RB205_extra\data\ui\arc_bracer.paa";
+		model = "\RB205_extra\arc_bracer.p3d";
+        hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsMaterials[] =
+        {
+            "\RB205_extra\data\arc_bracer\camo1.rvmat",
+            "\RB205_extra\data\arc_bracer\camo2.rvmat"
+        };
+		hiddenSelectionsTextures[] =
+        {
+            "\RB205_extra\data\arc_bracer\camo1_co.paa",
+            "\RB205_extra\data\arc_bracer\camo2_co.paa"
+        };
+	};
+
+    class RB205_scythe_attachments: RB205_extra_base
+    {
+        ACCESS_TRUE
+        displayname = "[205] Clone Lieutenant Scythe's Attachments";
+		model = "\RB205_extra\scythe_accessories.p3d";
+        hiddenSelections[] =
+        {
+            "pouch",
+            "insignialt",
+            "knife"
+        };
+		hiddenSelectionsMaterials[] =
+        {
+            "\RB205_extra\data\scythe\pouch.rvmat",
+            "\RB205_extra\data\scythe\insignialt.rvmat",
+            "\RB205_extra\data\scythe\knife.rvmat"
+        };
+		hiddenSelectionsTextures[] =
+        {
+            "\RB205_extra\data\scythe\pouch_co.paa",
+            "\RB205_extra\data\scythe\insignialt_co.paa",
+            "\RB205_extra\data\scythe\knife_co.paa"
+        };
+    };
+};
+
+class CfgWeapons
+{
+    class NVGoggles;
+    class RB205_extra_base_nvg: NVGoggles
+    {
+        ACCESS_FALSE
+        picture = "\RB205_main\data\ui\other\RB205_logo.paa";
+        descriptionShort = "";
+		descriptionUse = "";
+        class ItemInfo
+        {
+            type = 616;
+            mass = 1;
+        };
+    };
+
+    class RB205_rebreather: RB205_extra_base_nvg
+    {
+        ACCESS_TRUE
+        displayname = "[205] Rebreather";
+        model = "\RB205_extra\rebreather.p3d";
+        hiddenSelections[] = {"camo1"};
+		hiddenSelectionsMaterials[] =
+        {
+            "\RB205_extra\data\rebreather\camo1.rvmat"
+        };
+        hiddenSelectionsTextures[] =
+        {
+            "\RB205_extra\data\rebreather\camo1_co.paa"
+        };
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\RB205_extra\rebreather.p3d";
+            modelOff = "\RB205_extra\rebreather.p3d";
+            hiddenSelections[] = {"camo1"};
+        };
+        CBRN_protectionLevel = "2";
+    };
+
+    class RB205_medal_base: RB205_extra_base_nvg
+    {
+        ACCESS_FALSE
 		model = "\RB205_extra\medal.p3d";
         hiddenSelections[] = {"camo1"};
 		hiddenSelectionsMaterials[] =
         {
-            "\RB205_extra\data\medal\medal.rvmat"
+            "\RB205_extra\data\medal\camo1.rvmat"
         };
         visionMode[] = {"Normal"};
-        class ItemInfo
+        class ItemInfo: ItemInfo
         {
-            type = 616;
             uniformModel = "\RB205_extra\medal.p3d";
             modelOff = "\RB205_extra\medal.p3d";
-            mass = 1;
             hiddenSelections[] = {"camo1"};
         };
     };
@@ -177,66 +283,6 @@ class cfgWeapons
         hiddenSelectionsTextures[] =
         {
             "\RB205_extra\data\medal\medal_oriramikad.paa"
-        };
-    };
-};
-
-class CfgGlasses
-{
-    class G_Combat;
-    class RB205_extra_base: G_Combat
-    {
-        ACCESS_FALSE
-        picture = "\RB205_main\data\ui\other\RB205_logo.paa";
-		descriptionUse = "";
-        mass = 1;
-        mode = 4;
-        identityTypes[] = {};
-    };
-
-	class RB205_arc_bracer: RB205_extra_base
-	{
-        ACCESS_TRUE
-		displayname = "[205] Clone ARC Bracer";
-		picture="\RB205_extra\data\ui\arc_bracer.paa";
-        descriptionShort = "";
-		descriptionUse = "";
-		model = "\RB205_extra\arc_bracer.p3d";
-        hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsMaterials[] =
-        {
-            "\RB205_extra\data\arc_bracer\camo1.rvmat",
-            "\RB205_extra\data\arc_bracer\camo2.rvmat"
-        };
-		hiddenSelectionsTextures[] =
-        {
-            "\RB205_extra\data\arc_bracer\camo1_co.paa",
-            "\RB205_extra\data\arc_bracer\camo2_co.paa"
-        };
-	};
-
-    class RB205_scythe_attachments: RB205_extra_base
-    {
-        ACCESS_TRUE
-        displayname = "[205] Clone Lieutenant Scythe's Attachments";
-		model = "\RB205_extra\scythe_accessories.p3d";
-        hiddenSelections[] =
-        {
-            "pouch",
-            "insignialt",
-            "knife"
-        };
-		hiddenSelectionsMaterials[] =
-        {
-            "\RB205_extra\data\scythe\pouch.rvmat",
-            "\RB205_extra\data\scythe\insignialt.rvmat",
-            "\RB205_extra\data\scythe\knife.rvmat"
-        };
-		hiddenSelectionsTextures[] =
-        {
-            "\RB205_extra\data\scythe\pouch_co.paa",
-            "\RB205_extra\data\scythe\insignialt_co.paa",
-            "\RB205_extra\data\scythe\knife_co.paa"
         };
     };
 };
