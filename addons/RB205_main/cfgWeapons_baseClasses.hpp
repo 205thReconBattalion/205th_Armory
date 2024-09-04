@@ -160,7 +160,27 @@ class RB205_H_snow_base: RB205_helmet_base
 	};
 };
 
-//hazard
+class RB205_H_hazard_base: RB205_helmet_base
+{
+	ACCESS_FALSE
+	picture = "\RB205_main\data\ui\helmets\icon_H_default.paa";
+	model = "ls_armor_bluefor\helmet\gar\desert\ls_gar_desert_helmet.p3d";
+	hiddenSelections[] =
+	{
+		"camo1",
+		"visor"
+	};
+	hiddenSelectionsMaterials[] =
+	{
+		"RB205_main\data\materials\H_hazard.rvmat",
+		"\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+	};
+	class ItemInfo: ItemInfo
+	{
+		uniformModel = "ls_armor_bluefor\helmet\gar\desert\ls_gar_desert_helmet.p3d";
+		hiddenSelections[] = {"camo1","visor"};
+	};
+};
 
 class RB205_H_arc_base: RB205_helmet_base
 {
