@@ -22,6 +22,10 @@ class cfgPatches
 			"RB205_U_corporal_rancor",
 			"RB205_U_sergeant_rancor",
 			
+			"RB205_U_trooper_wampa",
+			"RB205_U_corporal_wampa",
+			"RB205_U_sergeant_wampa",
+			
 			"RB205_U_arf_trooper_nexu",
 			"RB205_U_arf_corporal_nexu",
 			"RB205_U_arf_sergeant_nexu",
@@ -52,6 +56,13 @@ class cfgPatches
 			"RB205_clone_sergeant_rancor",
 			"RB205_clone_trooper_rancor_medic",
 			"RB205_clone_trooper_rancor_rto",
+
+			"RB205_clone_trooper_wampa",
+			"RB205_clone_lanceCorporal_wampa",
+			"RB205_clone_corporal_wampa",
+			"RB205_clone_sergeant_wampa",
+			"RB205_clone_trooper_wampa_medic",
+			"RB205_clone_trooper_wampa_rto",
 
 			"RB205_clone_arf_trooper_nexu",
 			"RB205_clone_arf_lanceCorporal_nexu",
@@ -166,6 +177,34 @@ class cfgWeapons
 		class ItemInfo: ItemInfo
 		{
 			uniformClass = RB205_clone_sergeant_rancor;
+		};
+	};
+
+	class RB205_U_trooper_wampa: RB205_U_trooper
+	{
+		ACCESS_TRUE
+		displayName = "[205] Clone Trooper Armor <1-3 Rancor>";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass = RB205_clone_trooper_wampa;
+		};
+	};
+	class RB205_U_corporal_wampa: RB205_U_corporal
+	{
+		ACCESS_TRUE
+		displayName = "[205] Clone Trooper Armor (Corporal) <1-3 Rancor>";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass = RB205_clone_corporal_wampa;
+		};
+	};
+	class RB205_U_sergeant_wampa: RB205_U_sergeant
+	{
+		ACCESS_TRUE
+		displayName = "[205] Clone Trooper Armor (Sergeant) <1-3 Rancor>";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass = RB205_clone_sergeant_wampa;
 		};
 	};
 
@@ -421,6 +460,61 @@ class cfgVehicles
 	{
 		displayName = "(1-3 Rancor) Clone Trooper <RTO>";
 		uniformclass = "RB205_U_trooper_rancor";
+		editorSubcategory = "RB205_squadVariants";
+	};
+
+	class RB205_clone_trooper_wampa: RB205_clone_trooper
+	{
+		displayName = "(1-3 Wampa) (2-CT) Clone Trooper";
+		uniformclass = "RB205_U_trooper_wampa";
+		editorSubcategory = "RB205_squadVariants";
+		hiddenselectionsTextures[] =
+		{
+			"RB205_custom\data\U_enl_upper_wampa.paa",
+			"RB205_main\data\default\U_enl_lower_co.paa",
+			"RB205_main\data\default\U_undersuit_co.paa"
+		};
+	};
+	class RB205_clone_lanceCorporal_wampa: RB205_clone_lanceCorporal
+	{
+		displayName = "(1-3 Wampa) (3-CLC) Clone Lance-Corporal";
+		uniformclass = "RB205_U_corporal_wampa";
+		editorSubcategory = "RB205_squadVariants";
+	};
+	class RB205_clone_corporal_wampa: RB205_clone_corporal
+	{
+		displayName = "(1-3 Wampa) (4-CP) Clone Corporal";
+		uniformclass = "RB205_U_corporal_wampa";
+		editorSubcategory = "RB205_squadVariants";
+		hiddenselectionsTextures[] =
+		{
+			"RB205_custom\data\U_enl_upper_wampa.paa",
+			"RB205_main\data\default\U_nco_lower_co.paa",
+			"RB205_main\data\default\U_undersuit_co.paa"
+		};
+	};
+	class RB205_clone_sergeant_wampa: RB205_clone_sergeant
+	{
+		displayName = "(1-3 Wampa) (5-CS) Clone Sergeant";
+		uniformclass = "RB205_U_sergeant_wampa";
+		editorSubcategory = "RB205_squadVariants";
+		hiddenselectionsTextures[] =
+		{
+			"RB205_custom\data\U_enl_upper_wampa.paa",
+			"RB205_main\data\default\U_nco_lower_co.paa",
+			"RB205_main\data\default\U_undersuit_co.paa"
+		};
+	};
+	class RB205_clone_trooper_wampa_medic: RB205_clone_trooper_medic
+	{
+		displayName = "(1-3 Wampa) Clone Trooper <Medic>";
+		uniformclass = "RB205_U_trooper_wampa";
+		editorSubcategory = "RB205_squadVariants";
+	};
+	class RB205_clone_trooper_wampa_rto: RB205_clone_trooper_rto
+	{
+		displayName = "(1-3 Wampa) Clone Trooper <RTO>";
+		uniformclass = "RB205_U_trooper_wampa";
 		editorSubcategory = "RB205_squadVariants";
 	};
 	
