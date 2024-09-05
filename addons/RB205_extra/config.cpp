@@ -370,3 +370,11 @@ class CfgVehicles
         };
     };
 };
+
+class Extended_PostInit_EventHandlers
+{
+	class RB205_extra_carbonite_postInit
+	{
+		init = "call compile preProcessFileLineNumbers '\RB205_extra\functions\XEH_postInit.sqf'";
+	};
+};
