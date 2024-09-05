@@ -38,6 +38,7 @@ class XtdGearInfos
 		
 		H_CUSTOM(RB205_H_ab_smoker,"2288","var1")
 		H_CUSTOM(RB205_H_crew_slow,"3340","var1")
+		H_CUSTOM(RB205_H_arf_firefly,"4040","var1")
 
 		H(RB205_H_doc,"dft","co","default","dft")
 		H(RB205_H_doc_damaged,"dft","co","default","dmg")
