@@ -1,42 +1,156 @@
-class cfgPatches
+class CfgPatches
 {
     class RB205_extra
 	{
-		requiredAddons[] = {};
+		requiredAddons[] =
+        {
+            "RB205_logistics"
+        };
 		requiredVersion = 1.0;
         author = "205th Recon Battalion";
 		weapons[] =
         {
-            "RB205_medal_base"
+            "RB205_rebreather",
+
+            "RB205_medal_service1",
+            "RB205_medal_service2",
+            "RB205_medal_service3",
+            "RB205_medal_serviceKIA",
+            "RB205_medal_bravery",
+            "RB205_medal_infiltration",
+            "RB205_medal_medical",
+            "RB205_medal_melee",
+            "RB205_medal_recruitment",
+            "RB205_medal_pow",
+            "RB205_medal_aircraft",
+            "RB205_medal_tank",
+            "RB205_medal_clarityInCrisis",
+            "RB205_medal_heroes",
+            "RB205_medal_oriramikad"
         };
-		units[] = {};
+		units[] =
+        {
+            "RB205_carbonite"
+        };
 	};
 };
 
 #include "\RB205_main\macros.hpp"
 
-class cfgWeapons
+class CBA_Extended_EventHandlers_base;
+
+class CfgGlasses
 {
-    class NVGoggles;
-    class RB205_medal_base: NVGoggles
+    class G_Combat;
+    class RB205_extra_base: G_Combat
     {
         ACCESS_FALSE
+        picture = "\RB205_main\data\ui\other\RB205_logo.paa";
         descriptionShort = "";
 		descriptionUse = "";
-		picture = "\RB205_main\data\ui\other\RB205_logo.paa";
+        mass = 1;
+        mode = 4;
+        identityTypes[] = {};
+    };
+
+	class RB205_arc_bracer: RB205_extra_base
+	{
+        ACCESS_TRUE
+		displayname = "[205] Clone ARC Bracer";
+		picture="\RB205_extra\data\ui\arc_bracer.paa";
+		model = "\RB205_extra\arc_bracer.p3d";
+        hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsMaterials[] =
+        {
+            "\RB205_extra\data\arc_bracer\camo1.rvmat",
+            "\RB205_extra\data\arc_bracer\camo2.rvmat"
+        };
+		hiddenSelectionsTextures[] =
+        {
+            "\RB205_extra\data\arc_bracer\camo1_co.paa",
+            "\RB205_extra\data\arc_bracer\camo2_co.paa"
+        };
+	};
+
+    class RB205_scythe_attachments: RB205_extra_base
+    {
+        ACCESS_TRUE
+        displayname = "[205] Clone Lieutenant Scythe's Attachments";
+		model = "\RB205_extra\scythe_accessories.p3d";
+        hiddenSelections[] =
+        {
+            "pouch",
+            "insignialt",
+            "knife"
+        };
+		hiddenSelectionsMaterials[] =
+        {
+            "\RB205_extra\data\scythe\pouch.rvmat",
+            "\RB205_extra\data\scythe\insignialt.rvmat",
+            "\RB205_extra\data\scythe\knife.rvmat"
+        };
+		hiddenSelectionsTextures[] =
+        {
+            "\RB205_extra\data\scythe\pouch_co.paa",
+            "\RB205_extra\data\scythe\insignialt_co.paa",
+            "\RB205_extra\data\scythe\knife_co.paa"
+        };
+    };
+};
+
+class CfgWeapons
+{
+    class NVGoggles;
+    class RB205_extra_base_nvg: NVGoggles
+    {
+        ACCESS_FALSE
+        picture = "\RB205_main\data\ui\other\RB205_logo.paa";
+        descriptionShort = "";
+		descriptionUse = "";
+        class ItemInfo
+        {
+            type = 616;
+            mass = 1;
+        };
+    };
+
+    class RB205_rebreather: RB205_extra_base_nvg
+    {
+        ACCESS_TRUE
+        displayname = "[205] Rebreather";
+        model = "\RB205_extra\rebreather.p3d";
+        hiddenSelections[] = {"camo1"};
+		hiddenSelectionsMaterials[] =
+        {
+            "\RB205_extra\data\rebreather\camo1.rvmat"
+        };
+        hiddenSelectionsTextures[] =
+        {
+            "\RB205_extra\data\rebreather\camo1_co.paa"
+        };
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\RB205_extra\rebreather.p3d";
+            modelOff = "\RB205_extra\rebreather.p3d";
+            hiddenSelections[] = {"camo1"};
+        };
+        CBRN_protectionLevel = "2";
+    };
+
+    class RB205_medal_base: RB205_extra_base_nvg
+    {
+        ACCESS_FALSE
 		model = "\RB205_extra\medal.p3d";
         hiddenSelections[] = {"camo1"};
 		hiddenSelectionsMaterials[] =
         {
-            "\RB205_extra\data\medal\medal.rvmat"
+            "\RB205_extra\data\medal\camo1.rvmat"
         };
         visionMode[] = {"Normal"};
-        class ItemInfo
+        class ItemInfo: ItemInfo
         {
-            type = 616;
             uniformModel = "\RB205_extra\medal.p3d";
             modelOff = "\RB205_extra\medal.p3d";
-            mass = 1;
             hiddenSelections[] = {"camo1"};
         };
     };
@@ -179,64 +293,88 @@ class cfgWeapons
             "\RB205_extra\data\medal\medal_oriramikad.paa"
         };
     };
-};
-
-class CfgGlasses
-{
-    class G_Combat;
-    class RB205_extra_base: G_Combat
-    {
-        ACCESS_FALSE
-        picture = "\RB205_main\data\ui\other\RB205_logo.paa";
-		descriptionUse = "";
-        mass = 1;
-        mode = 4;
-        identityTypes[] = {};
-    };
-
-	class RB205_arc_bracer: RB205_extra_base
-	{
-        ACCESS_TRUE
-		displayname = "[205] Clone ARC Bracer";
-		picture="\RB205_extra\data\ui\arc_bracer.paa";
-        descriptionShort = "";
-		descriptionUse = "";
-		model = "\RB205_extra\arc_bracer.p3d";
-        hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsMaterials[] =
-        {
-            "\RB205_extra\data\arc_bracer\camo1.rvmat",
-            "\RB205_extra\data\arc_bracer\camo2.rvmat"
-        };
-		hiddenSelectionsTextures[] =
-        {
-            "\RB205_extra\data\arc_bracer\camo1_co.paa",
-            "\RB205_extra\data\arc_bracer\camo2_co.paa"
-        };
-	};
-
-    class RB205_scythe_attachments: RB205_extra_base
+    
+    class RB205_medal_crimsonStar: RB205_medal_base
     {
         ACCESS_TRUE
-        displayname = "[205] Clone Lieutenant Scythe's Attachments";
-		model = "\RB205_extra\scythe_accessories.p3d";
+        displayname = "[205|Medal] Crimson Star";
+		model = "\RB205_extra\navymedal.p3d";
         hiddenSelections[] =
         {
-            "pouch",
-            "insignialt",
-            "knife"
+            "medaille",
+            "band",
+            "edelstein"
         };
-		hiddenSelectionsMaterials[] =
+        hiddenSelectionsMaterials[] =
         {
-            "\RB205_extra\data\scythe\pouch.rvmat",
-            "\RB205_extra\data\scythe\insignialt.rvmat",
-            "\RB205_extra\data\scythe\knife.rvmat"
+            "\RB205_extra\data\navymedal\medaille.rvmat",
+            "\RB205_extra\data\navymedal\band.rvmat",
+            "\RB205_extra\data\navymedal\edelstein.rvmat"
         };
-		hiddenSelectionsTextures[] =
+        hiddenSelectionsTextures[] =
         {
-            "\RB205_extra\data\scythe\pouch_co.paa",
-            "\RB205_extra\data\scythe\insignialt_co.paa",
-            "\RB205_extra\data\scythe\knife_co.paa"
+            "\RB205_extra\data\navymedal\medaille_co.paa",
+            "\RB205_extra\data\navymedal\band_co.paa",
+            "\RB205_extra\data\navymedal\edelstein_co.paa"
+        };
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\RB205_extra\navymedal.p3d";
+            modelOff = "\RB205_extra\navymedal.p3d";
+            hiddenSelections[] = {"medaille","band","edelstein"};
         };
     };
+};
+
+class CfgVehicles
+{
+    class Land_Basketball_01_F;
+    class RB205_carbonite: Land_Basketball_01_F
+    {
+        ACCESS_TRUE
+        displayname= "Carbonite";
+        editorcategory = "RB205_prop";
+        editorsubcategory = "RB205_other";
+		editorPreview = "";
+        model="\RB205_extra\carbonite.p3d";
+        hiddenSelections[] =
+        {
+            "camo1",
+            "camo2",
+            "camo3"
+        };
+        hiddenSelectionsTextures[] =
+        {
+            "\RB205_extra\data\carbonite\camo1_co.paa",
+            "\RB205_extra\data\carbonite\camo2_co.paa",
+            "\RB205_extra\data\carbonite\camo3_co.paa"
+        };
+        hiddenSelectionsMaterial[] =
+        {
+            "\RB205_extra\data\carbonite\camo1.rvmat",
+            "\RB205_extra\data\carbonite\camo2.rvmat",
+            "\RB205_extra\data\carbonite\camo3.rvmat"
+        };
+        description= "";
+        destrType= "DestructNo";
+        ace_dragging_canCarry = 1;
+        ace_dragging_carryPosition[] = {0,1.5,0};
+        ace_Dragging_carryDirection = 0;
+        ace_dragging_ignoreWeight = 1;
+        ace_cargo_size = 1;
+        ace_cargo_canLoad = 1;
+        armor = 10000;
+        class SimpleObject
+        {
+            eden = 1;
+        };
+    };
+};
+
+class Extended_PostInit_EventHandlers
+{
+	class RB205_extra_carbonite_postInit
+	{
+		init = "call compile preProcessFileLineNumbers '\RB205_extra\functions\XEH_postInit.sqf'";
+	};
 };

@@ -4,6 +4,7 @@ class CfgPatches
 	{
 		requiredAddons[] =
 		{
+			"RB205_core",
 			"RB205_main",
 			"RB205_weapons",
 			"RB205_custom"
@@ -12,14 +13,6 @@ class CfgPatches
 		author = "205th Recon Battalion";
 		units[] = {};
 		weapons[] = {};
-	};
-};
-
-class CfgEditorCategories
-{
-	class RB205_prop
-	{
-		displayName = "[205] Props";
 	};
 };
 

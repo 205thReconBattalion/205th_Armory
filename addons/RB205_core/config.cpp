@@ -399,3 +399,18 @@ class cfgVehicles
 		mass = 0;
     };
 };
+
+class CfgEditorCategories
+{
+	class RB205_prop
+	{
+		displayName = "[205] Props";
+	};
+};
+class CfgEditorSubcategories
+{
+	class RB205_other
+	{
+		displayName = "Other";
+	};
+};
