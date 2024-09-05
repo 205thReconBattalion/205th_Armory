@@ -460,6 +460,66 @@ class RB205_H_snow_lieutenant: RB205_H_snow_base
 };
 
 /*
+	HAZARD HELMETS
+*/
+
+class RB205_H_hazard_recruit: RB205_H_hazard_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Hazard Recruit Helmet";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\hazard\H_hazard_recruit_co.paa",
+		"ls_armor_bluefor\helmet\gar\desert\data\visor_co.paa"
+	};
+	hiddenSelectionsMaterials[] =
+	{
+		"RB205_main\data\materials\H_hazard.rvmat",
+		""
+	};
+};
+class RB205_H_hazard_trooper: RB205_H_hazard_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Hazard Trooper Helmet";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\hazard\H_hazard_enl_co.paa",
+		"RB205_main\data\hazard\visor_hazard_co.paa"
+	};
+};
+class RB205_H_hazard_corporal: RB205_H_hazard_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Hazard Trooper Helmet (Corporal)";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\hazard\H_hazard_nco_co.paa",
+		"RB205_main\data\hazard\visor_hazard_co.paa"
+	};
+};
+class RB205_H_hazard_sergeant: RB205_H_hazard_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Hazard Trooper Helmet (Sergeant)";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\hazard\H_hazard_nco_co.paa",
+		"RB205_main\data\hazard\visor_hazard_co.paa"
+	};
+};
+class RB205_H_hazard_lieutenant: RB205_H_hazard_base
+{
+	ACCESS_TRUE
+	displayName = "[205] Clone Hazard Trooper Helmet (Lieutenant)";
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\hazard\H_hazard_cl_co.paa",
+		"RB205_main\data\hazard\visor_hazard_co.paa"
+	};
+};
+
+/*
 	ARC HELMET
 */
 

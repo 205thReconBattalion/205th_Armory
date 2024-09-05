@@ -44,9 +44,9 @@ class XtdGearModels
                     "sct",
                     "plt",
                     "crw",
-                    "sof",
                     "snw",
-                    "hzd"
+                    "hzd",
+                    "sof"
 				};
                 class dft
                 {
@@ -78,15 +78,15 @@ class XtdGearModels
                     label = "Snow";
                     description = "Schneeausrüstung";
                 };
-                class sof
-                {
-                    label = "ARC";
-                    description = "(Advanced Recon Commando), Spezialeinheit";
-                };
                 class hzd
                 {
                     label = "Hazard";
                     description = "Schutzausrüstung";
+                };
+                class sof
+                {
+                    label = "ARC";
+                    description = "(Advanced Recon Commando), Spezialeinheit";
                 };
             };
             class camo
@@ -240,9 +240,9 @@ class XtdGearModels
                     "sct",
                     "plt",
                     "crw",
-                    "sof",
                     "snw",
-                    "hzd"
+                    "hzd",
+                    "sof"
 				};
                 class dft
                 {
@@ -274,15 +274,15 @@ class XtdGearModels
                     label = "Snow";
                     description = "Schneeausrüstung";
                 };
-                class sof
-                {
-                    label = "ARC";
-                    description = "(Advanced Recon Commando), Spezialeinheit";
-                };
                 class hzd
                 {
                     label = "Hazard";
                     description = "Schutzausrüstung";
+                };
+                class sof
+                {
+                    label = "ARC";
+                    description = "(Advanced Recon Commando), Spezialeinheit";
                 };
             };
             class camo

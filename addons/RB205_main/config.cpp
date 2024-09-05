@@ -70,6 +70,12 @@ class cfgPatches
 			"RB205_H_snow_corporal",
 			"RB205_H_snow_sergeant",
 			"RB205_H_snow_lieutenant",
+
+			"RB205_H_hazard_recruit",
+			"RB205_H_hazard_trooper",
+			"RB205_H_hazard_corporal",
+			"RB205_H_hazard_sergeant",
+			"RB205_H_hazard_lieutenant",
 			
 			"RB205_H_arc_trooper",
 
@@ -296,10 +302,6 @@ class CfgEditorSubcategories
 	{
 		displayName = "Clone Airborne Trooper";
 	};
-	class RB205_cloneSnowTrooper
-	{
-		displayName = "Clone Snow Trooper";
-	};
 	class RB205_cloneArfTrooper
 	{
 		displayName = "Clone ARF Trooper";
@@ -307,5 +309,9 @@ class CfgEditorSubcategories
 	class RB205_clonePilotTrooper
 	{
 		displayName = "Clone Pilot Trooper";
+	};
+	class RB205_cloneSnowTrooper
+	{
+		displayName = "Clone Snow Trooper";
 	};
 };
