@@ -470,7 +470,12 @@ class RB205_H_hazard_recruit: RB205_H_hazard_base
 	hiddenSelectionsTextures[] =
 	{
 		"RB205_main\data\hazard\H_hazard_recruit_co.paa",
-		"RB205_main\data\hazard\visor_hazard_co.paa"
+		"ls_armor_bluefor\helmet\gar\desert\data\visor_co.paa"
+	};
+	hiddenSelectionsMaterials[] =
+	{
+		"RB205_main\data\materials\H_hazard.rvmat",
+		""
 	};
 };
 class RB205_H_hazard_trooper: RB205_H_hazard_base
