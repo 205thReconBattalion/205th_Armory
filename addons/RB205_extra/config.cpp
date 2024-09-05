@@ -293,6 +293,37 @@ class CfgWeapons
             "\RB205_extra\data\medal\medal_oriramikad.paa"
         };
     };
+    
+    class RB205_medal_crimsonStar: RB205_medal_base
+    {
+        ACCESS_TRUE
+        displayname = "[205|Medal] Crimson Star";
+		model = "\RB205_extra\navymedal.p3d";
+        hiddenSelections[] =
+        {
+            "medaille",
+            "band",
+            "edelstein"
+        };
+        hiddenSelectionsMaterials[] =
+        {
+            "\RB205_extra\data\navymedal\medaille.rvmat",
+            "\RB205_extra\data\navymedal\band.rvmat",
+            "\RB205_extra\data\navymedal\edelstein.rvmat"
+        };
+        hiddenSelectionsTextures[] =
+        {
+            "\RB205_extra\data\navymedal\medaille_co.paa",
+            "\RB205_extra\data\navymedal\band_co.paa",
+            "\RB205_extra\data\navymedal\edelstein_co.paa"
+        };
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\RB205_extra\navymedal.p3d";
+            modelOff = "\RB205_extra\navymedal.p3d";
+            hiddenSelections[] = {"medaille","band","edelstein"};
+        };
+    };
 };
 
 class CfgVehicles
