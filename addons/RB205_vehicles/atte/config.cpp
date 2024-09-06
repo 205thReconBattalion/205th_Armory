@@ -12,7 +12,8 @@ class cfgPatches
 		weapons[] =	{};
 		units[] =
 		{
-			"RB205_atte"
+			"RB205_atte",
+			"RB205_atte_pathfinder"
 		};
 	};
 };
@@ -50,7 +51,7 @@ class cfgVehicles
 		{
 			"RB205_vehicles\atte\data\atte_shell.paa",
 			"RB205_vehicles\atte\data\atte_cockpit.paa",
-			"RB205_vehicles\atte\data\atte_detail.paa",
+			"RB205_vehicles\atte\data\atte_details.paa",
 			"RB205_vehicles\atte\data\atte_legs.paa",
 			"3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
 			"3as\3as_atte\data\textures\3as_atte_armor_co.paa"
@@ -65,7 +66,7 @@ class cfgVehicles
 				{
 					"RB205_vehicles\atte\data\atte_shell.paa",
 					"RB205_vehicles\atte\data\atte_cockpit.paa",
-					"RB205_vehicles\atte\data\atte_detail.paa",
+					"RB205_vehicles\atte\data\atte_details.paa",
 					"RB205_vehicles\atte\data\atte_legs.paa",
 					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
 					"3as\3as_atte\data\textures\3as_atte_armor_co.paa"
@@ -105,4 +106,10 @@ class cfgVehicles
 			};
 		};
 	};
+	/*class RB205_atte_pathfinder: RB205_atte
+	{
+		ACCESS_TRUE
+		displayName = "AT-TE [Pathfinder]";
+		animationList[] = {"ShowATTENuts",1,"ShowATTEIntPassenger",1,"ShowATTEIntBackPassenger",0,"ShowATTEIntCommand",0,"ShowATTERebelMod",1};
+	};*/
 };
