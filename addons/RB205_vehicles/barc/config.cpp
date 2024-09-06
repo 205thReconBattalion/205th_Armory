@@ -505,7 +505,10 @@ class cfgVehicles
 		faction = "RB205";
 		editorSubcategory = "RB205_veh_ground";
 		editorPreview = "";
-		//Textures
+		hiddenSelectionsMaterials[] =
+		{
+			"RB205_vehicles\barc\data\barc2.rvmat"
+		};
 		hiddenSelectionsTextures[] =
 		{
 			"RB205_vehicles\barc\data\barc2.paa"
@@ -569,7 +572,11 @@ class cfgVehicles
 		faction = "RB205";
 		editorSubcategory = "RB205_veh_ground";
 		editorPreview = "";
-		//Textures
+		hiddenSelectionsMaterials[] =
+		{
+			"RB205_vehicles\barc\data\barc2.rvmat",
+			"RB205_vehicles\barc\data\barc2_sidecar.rvmat"
+		};
 		hiddenSelectionsTextures[] =
 		{
 			"RB205_vehicles\barc\data\barc2.paa",
