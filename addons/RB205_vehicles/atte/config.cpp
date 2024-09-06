@@ -37,13 +37,21 @@ class cfgVehicles
 		faction = "RB205";
 		editorSubcategory = "RB205_veh_tank";
 		editorPreview = "";
-		//Texture
-		hiddenselectionstextures[]=
+		hiddenSelectionsMaterials[] =
 		{
-			"3as\3AS_ATTE\data\Textures\3AS_ATTE_Shell_co.paa",
-			"3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
-			"3as\3AS_ATTE\data\Textures\3AS_ATTE_Detail_co.paa",
-			"3as\3AS_ATTE\data\Textures\3AS_ATTE_Legs_co.paa",
+			"RB205_vehicles\atte\data\atte_shell.rvmat",
+			"3as\3as_atte\data\textures\Cockpit.rvmat",
+			"RB205_vehicles\atte\data\atte_detail.rvmat",
+			"RB205_vehicles\atte\data\atte_legs.rvmat",
+			"3as\3as_atte\data\textures\Glass.rvmat",
+			"3as\3as_atte\data\textures\Armor.rvmat"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"RB205_vehicles\atte\data\atte_shell.paa",
+			"RB205_vehicles\atte\data\atte_cockpit.paa",
+			"RB205_vehicles\atte\data\atte_detail.paa",
+			"RB205_vehicles\atte\data\atte_legs.paa",
 			"3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
 			"3as\3as_atte\data\textures\3as_atte_armor_co.paa"
 		};
@@ -55,10 +63,10 @@ class cfgVehicles
 				author = "205th Recon Battalion";
 				textures[] =
 				{
-					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Shell_co.paa",
-					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
-					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Detail_co.paa",
-					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Legs_co.paa",
+					"RB205_vehicles\atte\data\atte_shell.paa",
+					"RB205_vehicles\atte\data\atte_cockpit.paa",
+					"RB205_vehicles\atte\data\atte_detail.paa",
+					"RB205_vehicles\atte\data\atte_legs.paa",
 					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
 					"3as\3as_atte\data\textures\3as_atte_armor_co.paa"
 				};
