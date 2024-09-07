@@ -44,9 +44,16 @@ class cfgVehicles
 	SLOT_MED(RB205_clone_trooper_rancor_medic,		"(1-3-D) Clone Trooper <Medic>")
 	SLOT(RB205_clone_trooper_rancor_rto,			"(1-3-D) Clone Trooper <RTO>")
 
-	SLOT(RB205_clone_arf_sergeant_krayt,			"(2-1-A) Clone Sergeant")
-	SLOT(RB205_clone_arf_corporal_krayt,			"(2-1-B) Clone Corporal")
-	SLOT(RB205_clone_arf_trooper_krayt,				"(2-1-C) Clone Trooper")
+	SLOT(RB205_clone_sergeant_wampa,				"(1-4-A) Clone Sergeant")
+	SLOT(RB205_clone_corporal_wampa,				"(1-4-B) Clone Corporal")
+	SLOT(RB205_clone_lanceCorporal_wampa,			"(1-4-C) Clone Lance Corporal")
+	SLOT(RB205_clone_trooper_wampa,					"(1-4-D) Clone Trooper")
+	SLOT_MED(RB205_clone_trooper_wampa_medic,		"(1-4-D) Clone Trooper <Medic>")
+	SLOT(RB205_clone_trooper_wampa_rto,				"(1-4-D) Clone Trooper <RTO>")
+
+	SLOT(RB205_clone_arf_sergeant_nexu,				"(2-1-A) Clone Sergeant")
+	SLOT(RB205_clone_arf_corporal_nexu,				"(2-1-B) Clone Corporal")
+	SLOT(RB205_clone_arf_trooper_nexu,				"(2-1-C) Clone Trooper")
 
 	SLOT(RB205_clone_plt_sergeant_raven,			"(3-1-A) Clone Sergeant")
 	SLOT(RB205_clone_plt_corporal_raven,			"(3-1-B) Clone Corporal")

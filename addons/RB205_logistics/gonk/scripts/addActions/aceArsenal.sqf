@@ -26,6 +26,7 @@ params ["_this"];
 		"RB205_H_plt_recruit","RB205_H_plt_trooper","RB205_H_plt_corporal","RB205_H_plt_sergeant","RB205_H_plt_lieutenant",
 		"RB205_H_crew_trooper","RB205_H_crew_corporal","RB205_H_crew_sergeant","RB205_H_crew_lieutenant",
 		"RB205_H_snow_recruit","RB205_H_snow_trooper","RB205_H_snow_corporal","RB205_H_snow_sergeant","RB205_H_snow_lieutenant",
+		"RB205_H_hazard_recruit","RB205_H_hazard_trooper","RB205_H_hazard_corporal","RB205_H_hazard_sergeant","RB205_H_hazard_lieutenant",
 		"RB205_H_arc_trooper",
 		"RB205_H_navy_ensign","RB205_H_navy_officer","RB205_H_navy_pettyOfficer","RB205_H_navy_chiefPettyOfficer","RB205_H_navy_admiral",
 		
@@ -54,7 +55,7 @@ params ["_this"];
 
 		"RB205_diving_inv","RB205_VIS",
 
-		"RB205_NV","RB205_NV_marksman","RB205_NV_rangefinder","RB205_NV_arf_antenna","RB205_NV_chip",
+		"RB205_NV","RB205_NV_marksman","RB205_NV_rangefinder","RB205_NV_arf_antenna","RB205_NV_chip","RB205_rebreather",
 
 		"RB205_binocular","RB205_binocular_arf",
 
@@ -88,7 +89,7 @@ params ["_this"];
 		"RB205_H_slow","RB205_H_crew_slow","RB205_U_slow","RB205_V_slow","RB205_VIS_slow",
 		"RB205_H_phantom","RB205_U_phantom",
 		"RB205_H_lightning","RB205_U_lightning",
-		"RB205_H_firefly","RB205_U_firefly",
+		"RB205_H_firefly","RB205_H_arf_firefly","RB205_U_firefly",
 		"RB205_H_banger","RB205_U_banger",
 		"RB205_H_crossfire","RB205_U_crossfire",
 		"RB205_H_putzi","RB205_U_putzi","RB205_V_putzi",
