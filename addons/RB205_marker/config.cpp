@@ -118,21 +118,43 @@ class CfgMarkers
 		icon = "RB205_marker\data\1-3_D.paa";
 	};
 
+	class b_RB205_BFT_14_a: b_RB205_BFT_lead
+	{
+		name = "1-4 Wampa";
+		color[] = {0.85,0.85,0,1};
+		icon = "RB205_marker\data\1-4_A.paa";
+	};
+	class b_RB205_BFT_14_b: b_RB205_BFT_14_a
+	{
+		name = "1-4-B Wampa";
+		icon = "RB205_marker\data\1-4_B.paa";
+	};
+	class b_RB205_BFT_14_c: b_RB205_BFT_14_a
+	{
+		name = "1-4-C Wampa";
+		icon = "RB205_marker\data\1-4_C.paa";
+	};
+	class b_RB205_BFT_14_d: b_RB205_BFT_14_a
+	{
+		name = "1-4-D Wampa";
+		icon = "RB205_marker\data\1-4_D.paa";
+	};
+
 	//70th Mobile Response Platoon
 	class b_RB205_BFT_21_a: b_RB205_BFT_lead
 	{
-		name = "2-1 Krayt";
+		name = "2-1 Nexu";
 		color[] = {0.5,0.6,0.4,1};
 		icon = "RB205_marker\data\2-1_A.paa";
 	};
 	class b_RB205_BFT_21_b: b_RB205_BFT_21_a
 	{
-		name = "2-1-B Krayt";
+		name = "2-1-B Nexu";
 		icon = "RB205_marker\data\2-1_B.paa";
 	};
 	class b_RB205_BFT_21_c: b_RB205_BFT_21_a
 	{
-		name = "2-1-C Krayt";
+		name = "2-1-C Nexu";
 		icon = "RB205_marker\data\2-1_C.paa";
 	};
 
