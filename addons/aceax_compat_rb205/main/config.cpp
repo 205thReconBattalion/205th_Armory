@@ -140,6 +140,7 @@ class XtdGearModels
                     "1_1",
 					"1_2",
 					"1_3",
+                    "1_4",
 					"2_1",
 					"3_1"
 				};
@@ -167,11 +168,17 @@ class XtdGearModels
                     description = "Rancor (1-3)";
                     image = IMAGE_RANCOR;
                 };
+                class 1_4
+                {
+                    label = "";
+                    description = "Wampa (1-4)";
+                    image = IMAGE_WAMPA;
+                };
                 class 2_1
                 {
                     label = "";
-                    description = "Krayt (2-1)";
-                    image = IMAGE_KRAYT;
+                    description = "Nexu (2-1)";
+                    image = IMAGE_NEXU;
                 };
                 class 3_1
                 {

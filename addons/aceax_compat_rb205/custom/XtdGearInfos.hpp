@@ -114,9 +114,13 @@ class XtdGearInfos
 		U(RB205_U_corporal_rancor,"dft","cp","default","1_3")
 		U(RB205_U_sergeant_rancor,"dft","cs","default","1_3")
 		
-		U(RB205_U_arf_trooper_krayt,"sct","ct","default","2_1")
-		U(RB205_U_arf_corporal_krayt,"sct","cp","default","2_1")
-		U(RB205_U_arf_sergeant_krayt,"sct","cs","default","2_1")
+		U(RB205_U_trooper_wampa,"dft","ct","default","1_4")
+		U(RB205_U_corporal_wampa,"dft","cp","default","1_4")
+		U(RB205_U_sergeant_wampa,"dft","cs","default","1_4")
+		
+		U(RB205_U_arf_trooper_nexu,"sct","ct","default","2_1")
+		U(RB205_U_arf_corporal_nexu,"sct","cp","default","2_1")
+		U(RB205_U_arf_sergeant_nexu,"sct","cs","default","2_1")
 		
 		U(RB205_U_plt_trooper_raven,"plt","ct","default","3_1")
 		U(RB205_U_plt_corporal_raven,"plt","cp","default","3_1")
