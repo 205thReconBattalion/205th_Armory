@@ -465,7 +465,7 @@ class cfgVehicles
 
 	class RB205_clone_trooper_wampa: RB205_clone_trooper
 	{
-		displayName = "(1-3 Wampa) (2-CT) Clone Trooper";
+		displayName = "(1-4 Wampa) (2-CT) Clone Trooper";
 		uniformclass = "RB205_U_trooper_wampa";
 		editorSubcategory = "RB205_squadVariants";
 		hiddenselectionsTextures[] =
@@ -477,13 +477,13 @@ class cfgVehicles
 	};
 	class RB205_clone_lanceCorporal_wampa: RB205_clone_lanceCorporal
 	{
-		displayName = "(1-3 Wampa) (3-CLC) Clone Lance-Corporal";
+		displayName = "(1-4 Wampa) (3-CLC) Clone Lance-Corporal";
 		uniformclass = "RB205_U_corporal_wampa";
 		editorSubcategory = "RB205_squadVariants";
 	};
 	class RB205_clone_corporal_wampa: RB205_clone_corporal
 	{
-		displayName = "(1-3 Wampa) (4-CP) Clone Corporal";
+		displayName = "(1-4 Wampa) (4-CP) Clone Corporal";
 		uniformclass = "RB205_U_corporal_wampa";
 		editorSubcategory = "RB205_squadVariants";
 		hiddenselectionsTextures[] =
@@ -495,7 +495,7 @@ class cfgVehicles
 	};
 	class RB205_clone_sergeant_wampa: RB205_clone_sergeant
 	{
-		displayName = "(1-3 Wampa) (5-CS) Clone Sergeant";
+		displayName = "(1-4 Wampa) (5-CS) Clone Sergeant";
 		uniformclass = "RB205_U_sergeant_wampa";
 		editorSubcategory = "RB205_squadVariants";
 		hiddenselectionsTextures[] =
@@ -507,13 +507,13 @@ class cfgVehicles
 	};
 	class RB205_clone_trooper_wampa_medic: RB205_clone_trooper_medic
 	{
-		displayName = "(1-3 Wampa) Clone Trooper <Medic>";
+		displayName = "(1-4 Wampa) Clone Trooper <Medic>";
 		uniformclass = "RB205_U_trooper_wampa";
 		editorSubcategory = "RB205_squadVariants";
 	};
 	class RB205_clone_trooper_wampa_rto: RB205_clone_trooper_rto
 	{
-		displayName = "(1-3 Wampa) Clone Trooper <RTO>";
+		displayName = "(1-4 Wampa) Clone Trooper <RTO>";
 		uniformclass = "RB205_U_trooper_wampa";
 		editorSubcategory = "RB205_squadVariants";
 	};
