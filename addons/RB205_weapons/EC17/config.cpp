@@ -37,6 +37,7 @@ class cfgWeapons
 		{
 			"RB205_Compact_Energy_Pack_red"
 		};
+		cursor = "RB205_CH_sidearm";
 		magazineWell[] = {};
 		class Single: Single
 		{

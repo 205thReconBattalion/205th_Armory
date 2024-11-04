@@ -39,6 +39,7 @@ class CfgWeapons
 		{
 			"RB205_Scatter_Energy_Pack"
 		};
+		cursor = "RB205_CH_shotgun";
 		JLTS_canHaveShield=1;
 		JLTS_shieldedWeapon="RB205_DP23_shield";
 		JLTS_hasElectronics = 1;

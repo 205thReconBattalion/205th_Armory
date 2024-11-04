@@ -43,6 +43,7 @@ class CfgWeapons
 		{
 			"RB205_Standard_Energy_Pack"
 		};
+		cursor = "RB205_CH_default";
 		magazineWell[] = {};
 		JLTS_hasElectronics = 1;
 		JLTS_hasEMPProtection = 0;
@@ -147,6 +148,7 @@ class CfgWeapons
 		{
 			"RB205_Standard_Energy_Pack"
 		};
+		cursor = "RB205_CH_default";
 		magazineWell[] = {};
 		muzzles[] = {"this"};
 		baseWeapon = "RB205_DC15S_JLTS";
@@ -221,6 +223,7 @@ class CfgWeapons
 		{
 			"RB205_Standard_Energy_Pack"
 		};
+		cursor = "RB205_CH_default";
 		magazineWell[] = {};
 		muzzles[] = {"this"};
 		baseWeapon = "RB205_DC15S_JLTS_shield";

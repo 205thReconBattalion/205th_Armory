@@ -55,6 +55,7 @@ class CfgWeapons
 		{
 			"RB205_Overcharged_Energy_Pack"
 		};
+		cursor = "RB205_CH_sniper";
 		class Single: Mode_SemiAuto
 		{
 			sounds[] =

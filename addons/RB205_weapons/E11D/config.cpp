@@ -37,6 +37,7 @@ class cfgWeapons
 		{
 			"RB205_Experimental_Energy_Pack_red"
 		};
+		cursor = "RB205_CH_default";
 		magazineWell[] = {};
 		modes[] = {"FullAuto","Single"};
 		class Single: Single

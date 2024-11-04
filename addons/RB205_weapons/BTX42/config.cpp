@@ -39,6 +39,7 @@ class CfgWeapons
 		{
 			"RB205_BTX42_mag"
 		};
+		cursor = "RB205_CH_flame";
 		JLTS_hasElectronics = 1;
 		JLTS_hasEMPProtection = 0;
 		JLTS_friedItem = "RB205_BTX42_fried";

@@ -50,6 +50,7 @@ class CfgWeapons
 		{
 			"RB205_Overcharged_Energy_Pack"
 		};
+		cursor = "RB205_CH_sniper";
 		magazineWell[] = {};
 		JLTS_hasElectronics = 1;
 		JLTS_hasEMPProtection = 0;
