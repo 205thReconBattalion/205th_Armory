@@ -43,6 +43,7 @@ class CfgWeapons
 		{
 			"RB205_ugl_he_3rnd"
 		};
+		cursor = "RB205_CH_gl";
 		magazineWell[] =
 		{
 			"RB205_ugl_3rnd"

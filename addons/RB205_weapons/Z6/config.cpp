@@ -38,6 +38,7 @@ class CfgWeapons
 		{
 			"RB205_RapidFire_Energy_Pack"
 		};
+		cursor = "RB205_CH_default";
 		JLTS_hasElectronics = 1;
 		JLTS_hasEMPProtection = 0;
 		JLTS_friedItem = "RB205_Z6_fried";

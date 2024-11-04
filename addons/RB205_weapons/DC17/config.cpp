@@ -45,6 +45,7 @@ class CfgWeapons
 		{
 			"RB205_Compact_Energy_Pack"
 		};
+		cursor = "RB205_CH_sidearm";
 		magazineWell[] = {};
 		JLTS_hasElectronics = 1;
 		JLTS_hasEMPProtection = 0;
@@ -112,6 +113,7 @@ class CfgWeapons
 		{
 			"RB205_Compact_Energy_Pack"
 		};
+		cursor = "RB205_CH_sidearm_dual";
 		magazineWell[] = {};
 		JLTS_hasElectronics = 1;
 		JLTS_hasEMPProtection = 0;
@@ -133,6 +135,7 @@ class CfgWeapons
 		{
 			"RB205_Compact_Energy_Pack"
 		};
+		cursor = "RB205_CH_sidearm";
 		magazineWell[] = {};
 		JLTS_hasElectronics = 1;
 		JLTS_hasEMPProtection = 0;

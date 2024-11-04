@@ -34,6 +34,7 @@ class cfgWeapons
 		{
 			"RB205_Standard_Energy_Pack_red"
 		};
+		cursor = "RB205_CH_default";
 		magazineWell[] = {};
 		modes[] = {"FullAuto","Single"};
 	};
@@ -61,6 +62,7 @@ class cfgWeapons
 		{
 			"RB205_Standard_Energy_Pack_red"
 		};
+		cursor = "RB205_CH_default";
 		magazineWell[] = {};
 		modes[] = {"FullAuto","Single"};
 	};
@@ -80,6 +82,7 @@ class cfgWeapons
 		{
 			"RB205_Standard_Energy_Pack_red"
 		};
+		cursor = "RB205_CH_default";
 		magazineWell[] = {};
 		modes[] = {"FullAuto","Single"};
 		muzzles[] =

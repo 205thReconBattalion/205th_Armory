@@ -5,9 +5,8 @@ class cfgPatches
 		requiredAddons[]=
 		{
 			"RB205_weapons",
-			"JMSLLTE_rk3"
+			"3AS_Weapons_EC17"
 		};
-        skipWhenMissingDependencies = 1;
 		requiredVersion = 1.0;
 		units[] = {};
 		weapons[] =
@@ -22,12 +21,12 @@ class cfgPatches
 
 class cfgWeapons
 {
-	class JMSLLTE_BlasterPistol_Base;
-	class JMSLLTE_ec17pistol: JMSLLTE_BlasterPistol_Base
+	class 3AS_EC17_Base_F;
+	class 3AS_EC17_F: 3AS_EC17_Base_F
 	{
 		class Single;
 	};
-	class RB205_EC17: JMSLLTE_ec17pistol
+	class RB205_EC17: 3AS_EC17_F
 	{
 		displayName = "$STR_205_EC17_DisplayName";
 		displayNameShort = "$STR_205_EC17_DisplayNameShort";
@@ -37,6 +36,7 @@ class cfgWeapons
 		{
 			"RB205_Compact_Energy_Pack_red"
 		};
+		cursor = "RB205_CH_sidearm";
 		magazineWell[] = {};
 		class Single: Single
 		{
@@ -50,7 +50,7 @@ class cfgWeapons
 		{
 			class LinkedItemsOptic
 			{
-				item = "JMSLLTE_ec17_holo_Scope";
+				item = "3AS_Optic_EC17_1_F";
 				slot = "CowsSlot";
 			};
 		};

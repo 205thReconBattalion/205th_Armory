@@ -201,6 +201,7 @@ class CfgWeapons
 			"RB205_DC17M_Sniper_Mag",
 			"RB205_DC17M_AT_Mag"
 		};
+		cursor = "RB205_CH_default";
 		JLTS_hasElectronics = 1;
 		JLTS_hasEMPProtection = 1;
 		JLTS_friedItem = "RB205_DC17M_fried";

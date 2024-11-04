@@ -42,6 +42,7 @@ class cfgWeapons
 		{
 			"RB205_Heavy_Energy_Pack_red"
 		};
+		cursor = "RB205_CH_default";
 		magazineWell[] = {};
 		modes[] = {"FullAuto","Single"};
 		class WeaponSlotsInfo: WeaponSlotsInfo

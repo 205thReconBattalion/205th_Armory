@@ -36,6 +36,7 @@ class cfgWeapons
 		{
 			"RB205_Overcharged_Energy_Pack_red"
 		};
+		cursor = "RB205_CH_sniper";
 		magazineWell[] = {};
 		modes[] = {"Single"};
 		class Single: Single
