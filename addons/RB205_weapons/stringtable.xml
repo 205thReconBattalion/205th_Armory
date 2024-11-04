@@ -86,6 +86,10 @@
             <English>[205] Z-6 Rotary Blaster</English>
             <German>[205] Z-6 Rotationsblaster</German>
         </Key>
+        <Key ID="STR_205_Chaingun_DisplayName">
+            <English>[205] Chaingun</English>
+            <German>[205] Chaingun</German>
+        </Key>
         <Key ID="STR_205_DP23_DisplayName">
             <English>[205] DP-23 Scatter Blaster</English>
             <German>[205] DP-23 Streu-Blaster</German>
@@ -207,6 +211,10 @@
             <English>Z-6</English>
             <German>Z-6</German>
         </Key>
+        <Key ID="STR_205_Chaingun_DisplayNameShort">
+            <English>Chaingun</English>
+            <German>Chaingun</German>
+        </Key>
         <Key ID="STR_205_DP23_DisplayNameShort">
             <English>DP-23</English>
             <German>DP-23</German>
@@ -308,6 +316,10 @@
             <English>[205] Flamethrower Fuel</English>
             <German>[205] Flammenwerfer Benzin</German>
         </Key>
+        <Key ID="STR_205_Chaingun_Energy_Pack_DisplayName">
+            <English>[205] Rapid Fire Energy Pack (600 Ch.)</English>
+            <German>[205] Schnellschuss Energiepaket (600 Lad.)</German>
+        </Key>
 <!--displayNameShort magazines-->
         <Key ID="STR_205_Standard_Energy_Pack_DisplayNameShort">
             <English>Laser (Standard)</English>
@@ -360,6 +372,10 @@
         <Key ID="STR_205_RB205_BTX42_mag_DisplayNameShort">
             <English>Fuel</English>
             <German>Benzin</German>
+        </Key>
+        <Key ID="STR_205_Chaingun_Energy_Pack_DisplayNameShort">
+            <English>Laser (Chaingun)</English>
+            <German>Laser (Chaingun)</German>
         </Key>
 <!--descriptionShort magazines-->
         <Key ID="STR_205_Standard_Energy_Pack_DescriptionShort">
@@ -433,6 +449,10 @@
         <Key ID="STR_205_RB205_BTX42_mag_DescriptionShort">
             <English>Fuel for flamethrowers used by the BT X-42</English>
             <German>Benzin für Flammenwerfer genutzt vom BT X-42</German>
+        </Key>
+        <Key ID="STR_205_Chaingun_Energy_Pack_DescriptionShort">
+            <English>Heavy energy pack used by the Chaingun</English>
+            <German>Schnellschuss Energiepaket genutzt von der Chaingun</German>
         </Key>
 <!--displayName attachments etc.-->
     </Package>
