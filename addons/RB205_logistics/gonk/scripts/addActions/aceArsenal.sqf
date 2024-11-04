@@ -3,9 +3,9 @@ params ["_this"];
 [_this,
 	[
 		//WEAPONS / ATTACHMENTS / AMMO
-		"RB205_DC15A","RB205_DC15A_GL","RB205_DC15A_JLTS","RB205_DC15A_GL_JLTS","RB205_DC15C","RB205_DC15C_GL","RB205_DC15L","RB205_DC15S","RB205_DC15X","RB205_DC17M","RB205_DP23","RB205_Valken38X","RB205_WestarM5","RB205_Z6","RB205_BTX42","RB205_DC15S_JLTS","twc_2inch_bag","RB205_PLX1_F","RB205_RPS6","RB205_RPS6_disposable","RB205_DC17","RB205_DC17_alt","RB205_DC17_Dual","JLTS_DC17SA","RB205_MPL57","UNSC_Knife","UNSC_Knife_reversed","ACE_Flashlight_Maglite_ML300L","hgun_esd_01_F","ACE_VMM3",
-		"3AS_optic_holo_DC15S","3AS_Optic_Scope_WestarM5","SEA_Optic_Holo_Two_Red","SEA_Optic_Holo_Two_Blue","SEA_Optic_Holo_Two_Green","SEA_Optic_Holo_One_Green","JLTS_DC15X_scope","SEA_Optic_Holo_One_Red","3AS_optic_acog_DC15C","3AS_optic_reflex_DC15C","RB205_Optic_DC15L","SEA_Optic_Holo_One_Blue","RB205_attachment_scope_DC17M_sniper","SEA_Optic_Holo_One_Yellow","RB205_Optic_VK38X","SEA_Optic_Holo_Two_Yellow","OPTRE_M7_Laser","acc_pointer_IR","OPTRE_BMR_Laser","JLTS_DC17SA_flashlight","acc_flashlight","ACE_DBAL_A3_Green","acc_flashlight_pistol","OPTRE_M45_Flashlight","OPTRE_M7_Flashlight","OPTRE_M6C_Laser","OPTRE_M6G_Flashlight","OPTRE_M12_Laser","ACE_DBAL_A3_Red","ACE_SPIR","ACE_acc_pointer_green","RB205_DC15X_Suppressor","RB205_attachment_DC17M_blaster","RB205_attachment_DC17M_at","RB205_attachment_DC17M_sniper","3AS_Bipod_VK38X_f","3AS_Bipod_DC15L_f","muzzle_antenna_03_f","muzzle_antenna_01_f","muzzle_antenna_02_f","acc_esd_01_flashlight",
-		"RB205_Standard_Energy_Pack","RB205_Compact_Energy_Pack","RB205_Overcharged_Energy_Pack","RB205_Heavy_Energy_Pack","RB205_RapidFire_Energy_Pack","RB205_Scatter_Energy_Pack","RB205_BTX42_mag","RB205_Experimental_Energy_Pack","RB205_DC17M_Blaster_Mag","RB205_DC17M_Sniper_Mag","RB205_DC17M_AT_Mag","JLTS_stun_mag_long","JLTS_stun_mag_short","twc_2inch_he_1rnd","RB205_MAG_RPS6","RB205_MK39_AA","WBK_Cybercrystal",
+		"RB205_DC15A","RB205_DC15A_GL","RB205_DC15A_JLTS","RB205_DC15A_GL_JLTS","RB205_DC15C","RB205_DC15C_GL","RB205_DC15L","RB205_DC15S","RB205_DC15X","RB205_DC17M","RB205_DP23","RB205_Valken38X","RB205_WestarM5","RB205_Z6","RB205_BTX42","RB205_Chaingun","RB205_DC15S_JLTS","twc_2inch_bag","RB205_PLX1_F","RB205_RPS6","RB205_RPS6_disposable","RB205_DC17","RB205_DC17_alt","RB205_DC17_Dual","JLTS_DC17SA","RB205_MPL57","UNSC_Knife","UNSC_Knife_reversed","WBK_SciFi_Sword_1","ACE_VMM3",
+		"3AS_optic_holo_DC15S","3AS_Optic_Scope_WestarM5","SEA_Optic_Holo_Two_Red","SEA_Optic_Holo_Two_Blue","SEA_Optic_Holo_Two_Green","SEA_Optic_Holo_One_Green","JLTS_DC15X_scope","SEA_Optic_Holo_One_Red","3AS_optic_acog_DC15C","3AS_optic_reflex_DC15C","RB205_Optic_DC15L","SEA_Optic_Holo_One_Blue","RB205_attachment_scope_DC17M_sniper","SEA_Optic_Holo_One_Yellow","RB205_Optic_VK38X","SEA_Optic_Holo_Two_Yellow","OPTRE_M7_Laser","acc_pointer_IR","OPTRE_BMR_Laser","JLTS_DC17SA_flashlight","acc_flashlight","ACE_DBAL_A3_Green","acc_flashlight_pistol","OPTRE_M45_Flashlight","OPTRE_M7_Flashlight","OPTRE_M6C_Laser","OPTRE_M6G_Flashlight","OPTRE_M12_Laser","ACE_DBAL_A3_Red","ACE_SPIR","ACE_acc_pointer_green","RB205_DC15X_Suppressor","RB205_attachment_DC17M_blaster","RB205_attachment_DC17M_at","RB205_attachment_DC17M_sniper","3AS_Bipod_VK38X_f","3AS_Bipod_DC15L_f","acc_esd_01_flashlight",
+		"RB205_Standard_Energy_Pack","RB205_Compact_Energy_Pack","RB205_Overcharged_Energy_Pack","RB205_Heavy_Energy_Pack","RB205_RapidFire_Energy_Pack","RB205_chaingun_mag","RB205_Scatter_Energy_Pack","RB205_BTX42_mag","RB205_Experimental_Energy_Pack","RB205_DC17M_Blaster_Mag","RB205_DC17M_Sniper_Mag","RB205_DC17M_AT_Mag","JLTS_stun_mag_long","JLTS_stun_mag_short","twc_2inch_he_1rnd","RB205_MAG_RPS6","RB205_MK39_AA","WBK_Cybercrystal",
 		"RB205_ugl_smoke_white","RB205_ugl_smoke_blue","RB205_ugl_smoke_green","RB205_ugl_smoke_red","RB205_ugl_smoke_yellow","RB205_ugl_smoke_purple","RB205_ugl_smoke_orange","RB205_ugl_smoke_white_3rnd","RB205_ugl_smoke_blue_3rnd","RB205_ugl_smoke_green_3rnd","RB205_ugl_smoke_red_3rnd","RB205_ugl_smoke_yellow_3rnd","RB205_ugl_smoke_purple_3rnd","RB205_ugl_smoke_orange_3rnd","RB205_ugl_flare_white","RB205_ugl_flare_green","RB205_ugl_flare_red","RB205_ugl_flare_ir","RB205_ugl_flare_white_3rnd","RB205_ugl_flare_green_3rnd","RB205_ugl_flare_red_3rnd","RB205_ugl_flare_ir_3rnd","RB205_ugl_he","RB205_ugl_he_3rnd","RB205_ugl_he_6rnd","RB205_ugl_huntir",
 		
 		//IMPERIAL WEAPONS / ATTACHMENTS / AMMO
@@ -17,6 +17,7 @@ params ["_this"];
 		"RB205_thermalDet","RB205_impactGren","RB205_sonicDet","RB205_droidPopper","RB205_smokeWhite","RB205_smokeBlue","RB205_smokeGreen","RB205_smokeRed","RB205_smokeYellow","RB205_smokePurple","RB205_smokeOrange",
 		"ACE_Chemlight_White","Chemlight_blue","Chemlight_green","Chemlight_red","ACE_Chemlight_Orange","Chemlight_yellow","ACE_Chemlight_HiWhite","ACE_Chemlight_HiBlue","ACE_Chemlight_HiGreen","ACE_Chemlight_HiRed","ACE_Chemlight_HiYellow","ACE_Chemlight_UltraHiOrange","ACE_Chemlight_IR",
 		"ShieldGrenade_Mag","ShieldGrenadePersonal_Mag","SquadShieldMagazine",
+		"GrenadeInsiendPSENG",
 		"APERSMine_Range_Mag","ACE_FlareTripMine_Mag","TrainingMine_Mag","IEDUrbanSmall_Remote_Mag","IEDLandSmall_Remote_Mag","APERSTripMine_Wire_Mag","SLAMDirectionalMine_Wire_Mag","M41_IED_B_Remote_Mag","M41_IED_Remote_Mag","M41_IED_C_Remote_Mag","ClaymoreDirectionalMine_Remote_Mag","APERSBoundingMine_Range_Mag","SatchelCharge_Remote_Mag","M168_Remote_Mag","UNSCMine_Range_Mag","ATMine_Range_Mag","DemoCharge_Remote_Mag","IEDUrbanBig_Remote_Mag","IEDLandBig_Remote_Mag","JLTS_explosive_emp_50_mag","JLTS_explosive_emp_20_mag","JLTS_explosive_emp_10_mag","ls_mag_demo_remoteCharge","JMSLLTE_Detonitecharge_imp_Mag","ls_mag_detPack_remoteCharge","SWLW_DetPack_remote_mag","SWLW_clones_spec_demo_mag","LFP_mine_ap_Mag","LFP_mine_at_Mag","ls_mag_caltrops_dispenser","ls_mag_caltrops_mine","C12_Remote_Mag","C7_Remote_Mag","SWLW_clones_spec_breach_mag","ls_mag_breach_remoteCharge","APERSMineDispenser_Mag","RTX_RemoteMagazine","HX_AT_Mine_Mag","EC01_RemoteMagazine","3AS_DetPack","Aux212_X3_Thermal_Disruptor","Aux212_X10_Thermal_Disruptor","Aux212_7PrG_Proton_Charge","knd_ATMine_Mag","knd_ClassC_Plant_Mag","knd_ClassB_Plant_Mag","knd_ClassA_Plant_Mag","knd_BoundingMines_Mag","knd_Daisy_Mag","knd_Claymore_Mag","knd_Breacher_Mag","LFP_type_A_Remote_Mag","LFP_type_B_Remote_Mag","LFP_type_C_Remote_Mag","212th_MPC_MK1_F",
 
 		//REGULAR ARMOR / EQUIPMENT
@@ -146,11 +147,28 @@ params ["_this"];
 		"ACE_Humanitarian_Ration","ACE_MRE_BeefStew","ACE_MRE_ChickenTikkaMasala","ACE_MRE_ChickenHerbDumplings","ACE_MRE_CreamChickenSoup","ACE_MRE_CreamTomatoSoup","ACE_MRE_LambCurry","ACE_MRE_MeatballsPasta","ACE_MRE_SteakVegetables","ACE_Banana",
 
 		//EXTERNAL MODS
+		"WBK_HeadLampItem_Narrow","WBK_HandFlashlight",
+		"jen_jetpacks_example_refuelItemMedium",
+		"knd_repulsor","knd_camoNetArid","knd_camoNetLush","knd_camoNetAlpine",
 		"tfd_ls1","tfd_pager1",
-		"crowsew_ctrack","crowsew_tfar_icom",
-		"knd_jetpackfuel","knd_repulsor","knd_camoNetArid","knd_camoNetLush","knd_camoNetAlpine",
 
 		//OTHER
-		"ItemMap","ItemCompass","JLTS_clone_comlink","ACE_Altimeter","ChemicalDetector_01_watch_F","ItemWatch","B_UavTerminal","ItemGPS","JLTS_ids_license_driver_large","JLTS_ids_license_driver_medium","JLTS_ids_license_driver_small","JLTS_ids_license_weapon_secondary","JLTS_ids_license_weapon_primary","JLTS_ids_gar_army","JLTS_ids_gar_medical","JLTS_ids_gar_navy","ACE_Chemlight_Shield","ACE_DefusalKit","ACE_EarPlugs","ACE_EntrenchingTool","ACE_Fortify","ACE_Flashlight_MX991","ACE_HuntIR_monitor","ACE_IR_Strobe_Item","ACE_Flashlight_KSF1","ACE_M26_Clacker","ACE_Clacker","ACE_Flashlight_XL50","ACE_MapTools","ace_marker_flags_black","ace_marker_flags_blue","ace_marker_flags_green","ace_marker_flags_orange","ace_marker_flags_red","ace_marker_flags_purple","ace_marker_flags_white","ace_marker_flags_yellow","ACE_microDAGR","ACE_PlottingBoard","ACE_rope12","ACE_rope15","ACE_rope18","ACE_rope27","ACE_rope3","ACE_rope36","ACE_rope6","ACE_Sandbag_empty","ACE_SpottingScope","ACE_SpraypaintBlack","ACE_SpraypaintBlue","ACE_SpraypaintRed","ACE_SpraypaintWhite","ACE_SpraypaintYellow","ACE_Tripod","ACE_UAVBattery","ACE_wirecutter","ACE_CableTie","JLTS_droidCaller","JLTS_riot_shield_item","MineDetector","JLTS_MSE6_toolkit","JLTS_MSE6_manual","JLTS_scanner_police","RB205_prowler_item","ACE_SpraypaintGreen","ToolKit","JLTS_repairkit_weapon_mini","JLTS_repairkit_weapon","JLTS_ids_police","Laserbatteries"
+		"ItemMap",
+		"ItemGPS","B_UavTerminal",
+		"JLTS_clone_comlink",
+		"ItemCompass",
+		"ItemWatch","ACE_Altimeter","ChemicalDetector_01_watch_F",
+
+		"ACE_EarPlugs","ACE_EntrenchingTool","ACE_Fortify","ACE_wirecutter","ACE_CableTie","ACE_Flashlight_XL50","ACE_Flashlight_KSF1","ACE_Flashlight_MX991","ACE_IR_Strobe_Item","ACE_Chemlight_Shield","ACE_DefusalKit","ACE_Clacker","ACE_M26_Clacker","ACE_HuntIR_monitor","ACE_MapTools","ACE_PlottingBoard","ACE_SpottingScope","ACE_Tripod","ACE_Sandbag_empty","ACE_microDAGR","ACE_UAVBattery",
+		"ACE_SpraypaintBlack","ACE_SpraypaintWhite","ACE_SpraypaintRed","ACE_SpraypaintGreen","ACE_SpraypaintBlue","ACE_SpraypaintYellow",
+		"ace_marker_flags_white","ace_marker_flags_black","ace_marker_flags_red","ace_marker_flags_green","ace_marker_flags_blue","ace_marker_flags_yellow","ace_marker_flags_orange","ace_marker_flags_purple",
+		"ACE_rope3","ACE_rope6","ACE_rope12","ACE_rope15","ACE_rope18","ACE_rope27","ACE_rope36",
+		
+		"JLTS_repairkit_weapon_mini","JLTS_repairkit_weapon","JLTS_riot_shield_item","JLTS_MSE6_manual","JLTS_MSE6_toolkit","JLTS_droidCaller","JLTS_scanner_police",
+		"JLTS_ids_gar_army","JLTS_ids_gar_medical","JLTS_ids_gar_navy","JLTS_ids_police","JLTS_ids_license_weapon_primary","JLTS_ids_license_weapon_secondary","JLTS_ids_license_driver_large","JLTS_ids_license_driver_medium","JLTS_ids_license_driver_small",
+
+		"RB205_prowler_item",
+
+		"MineDetector","ToolKit","Laserbatteries"
 	]
 ] call ace_arsenal_fnc_initBox;
