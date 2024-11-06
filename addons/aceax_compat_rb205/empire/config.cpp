@@ -183,9 +183,9 @@ class XtdGearModels
                     "sct",
                     "plt",
                     "crw",
-                    "sof",
                     "snw",
-                    "hzd"
+                    "hzd",
+                    "sof"
 				};
                 class dft
                 {
@@ -212,11 +212,6 @@ class XtdGearModels
                     label = "Tank";
                     description = "Tank Trooper";
                 };
-                class sof
-                {
-                    label = "Death";
-                    description = "Death Trooper";
-                };
                 class snw
                 {
                     label = "Snow";
@@ -226,6 +221,11 @@ class XtdGearModels
                 {
                     label = "Hazard";
                     description = "";
+                };
+                class sof
+                {
+                    label = "Death";
+                    description = "Death Trooper";
                 };
             };
             /*class rank
@@ -425,9 +425,9 @@ class XtdGearModels
                     "sct",
                     "plt",
                     "crw",
-                    "sof",
                     "snw",
-                    "hzd"
+                    "hzd",
+                    "sof"
 				};
                 class dft
                 {
@@ -454,11 +454,6 @@ class XtdGearModels
                     label = "Tank";
                     description = "Tank Trooper";
                 };
-                class sof
-                {
-                    label = "Death";
-                    description = "Death Trooper";
-                };
                 class snw
                 {
                     label = "Snow";
@@ -468,6 +463,11 @@ class XtdGearModels
                 {
                     label = "Hazard";
                     description = "";
+                };
+                class sof
+                {
+                    label = "Death";
+                    description = "Death Trooper";
                 };
             };
             /*class spec
