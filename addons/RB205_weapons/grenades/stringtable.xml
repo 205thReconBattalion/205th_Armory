@@ -10,6 +10,14 @@
             <English>[205] Impact Grenade</English>
             <German>[205] Kontaktgranate</German>
         </Key>
+        <Key ID="STR_205_SonicDetonator_DisplayName">
+            <English>[205] Sonic Detonator</English>
+            <German>[205] Schockgranate</German>
+        </Key>
+        <Key ID="STR_205_DroidPopper_DisplayName">
+            <English>[205] Droid Popper</English>
+            <German>[205] Droidenkracher</German>
+        </Key>
         <Key ID="STR_205_SmokeW_DisplayName">
             <English>[205] Smoke Grenade (White)</English>
             <German>[205] Rauchgranate (Weiß)</German>
@@ -38,13 +46,21 @@
             <English>[205] Smoke Grenade (Orange)</English>
             <German>[205] Rauchgranate (Orange)</German>
         </Key>
-        <Key ID="STR_205_SonicDetonator_DisplayName">
-            <English>[205] Sonic Detonator</English>
-            <German>[205] Schockgranate</German>
+        <Key ID="STR_205_LumaW_DisplayName">
+            <English>[205] Luma Grenade (White)</English>
+            <German>[205] Leuchtgranate (Weiß)</German>
         </Key>
-        <Key ID="STR_205_DroidPopper_DisplayName">
-            <English>[205] Droid Popper</English>
-            <German>[205] Droidenkracher</German>
+        <Key ID="STR_205_LumaG_DisplayName">
+            <English>[205] Luma Grenade (Green)</English>
+            <German>[205] Leuchtgranate (Grün)</German>
+        </Key>
+        <Key ID="STR_205_LumaR_DisplayName">
+            <English>[205] Luma Grenade (Red)</English>
+            <German>[205] Leuchtgranate (Rot)</German>
+        </Key>
+        <Key ID="STR_205_LumaY_DisplayName">
+            <English>[205] Luma Grenade (Yellow)</English>
+            <German>[205] Leuchtgranate (Gelb)</German>
         </Key>
         <Key ID="STR_205_UGL_SmokeW_DisplayName">
             <English>[205] UGL Smoke Grenade (White)</English>
@@ -159,6 +175,14 @@
             <English>Impact Grenade</English>
             <German>Kontaktgranate</German>
         </Key>
+        <Key ID="STR_205_SonicDetonator_DisplayNameShort">
+            <English>Sonic Det</English>
+            <German>Schockgranate</German>
+        </Key>
+        <Key ID="STR_205_DroidPopper_DisplayNameShort">
+            <English>Droid Popper</English>
+            <German>Droidenkracher</German>
+        </Key>
         <Key ID="STR_205_SmokeW_DisplayNameShort">
             <English>Smoke (White)</English>
             <German>Rauch (Weiß)</German>
@@ -187,14 +211,6 @@
             <English>Smoke (Orange)</English>
             <German>Rauch (Orange)</German>
         </Key>
-        <Key ID="STR_205_SonicDetonator_DisplayNameShort">
-            <English>Sonic Det</English>
-            <German>Schockgranate</German>
-        </Key>
-        <Key ID="STR_205_DroidPopper_DisplayNameShort">
-            <English>Droid Popper</English>
-            <German>Droidenkracher</German>
-        </Key>
         <Key ID="STR_205_FlareW_DisplayNameShort">
             <English>Flare (White)</English>
             <German>Licht (Weiß)</German>
@@ -206,6 +222,10 @@
         <Key ID="STR_205_FlareR_DisplayNameShort">
             <English>Flare (Red)</English>
             <German>Licht (Rot)</German>
+        </Key>
+        <Key ID="STR_205_FlareY_DisplayNameShort">
+            <English>Flare (Yellow)</English>
+            <German>Licht (Gelb)</German>
         </Key>
         <Key ID="STR_205_FlareIR_DisplayNameShort">
             <English>Flare (IR)</English>

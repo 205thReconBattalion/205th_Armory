@@ -18,6 +18,9 @@ class cfgPatches
 		{
 			"RB205_thermalDet",
 			"RB205_impactGren",
+			"RB205_sonicDet",
+			"RB205_droidPopper",
+
 			"RB205_smokeWhite",
 			"RB205_smokeBlue",
 			"RB205_smokeGreen",
@@ -25,8 +28,11 @@ class cfgPatches
 			"RB205_smokeYellow",
 			"RB205_smokePurple",
 			"RB205_smokeOrange",
-			"RB205_sonicDet",
-			"RB205_droidPopper",
+
+			"RB205_lumaWhite",
+			"RB205_lumaGreen",
+			"RB205_lumaRed",
+			"RB205_lumaYellow",
 
 			"RB205_ugl_smoke_white",
 			"RB205_ugl_smoke_blue",
@@ -76,10 +82,10 @@ class cfgPatches
 };
 
 #define MASS_EXP	mass = 10;
-#define MASS_SMK	mass = 3;
-#define MASS_LUM	mass = 3;
 #define MASS_SON	mass = 10;
 #define MASS_EMP	mass = 10;
+#define MASS_SMK	mass = 3;
+#define MASS_LUM	mass = 3;
 #define MASS_SNW	mass = 1;
 
 class CfgAmmo
@@ -147,6 +153,8 @@ class CfgAmmo
 class CfgMagazines
 {
 	class 3AS_ThermalDetonator;
+	class ACE_M84;
+	class JLTS_grenade_emp_mag;
 
 	class 3AS_SmokeWhite;
 	class 3AS_SmokeBlue;
@@ -155,9 +163,11 @@ class CfgMagazines
 	class 3AS_SmokeYellow;
 	class 3AS_SmokePurple;
 	class 3AS_SmokeOrange;
-	
-	class ACE_M84;
-	class HandGrenade;
+
+	class ACE_HandFlare_White;
+	class ACE_HandFlare_Green;
+	class ACE_HandFlare_Red;
+	class ACE_HandFlare_Yellow;
 
 
 	class RB205_thermalDet: 3AS_ThermalDetonator
@@ -179,6 +189,27 @@ class CfgMagazines
 		MASS_EXP
         author = "205th Recon Battalion";
 	};
+	class RB205_sonicDet: ACE_M84
+	{
+		displayName = "$STR_205_SonicDetonator_DisplayName";
+		displayNameShort = "$STR_205_SonicDetonator_DisplayNameShort";
+		descriptionShort = "Wirkung: Schock<br />(Nur freigegeben für ARC Soldaten)";
+		picture = "\RB205_weapons\grenades\data\sonicDet.paa";
+		model = "\ls_weapons\grenades\thermalDet\ls_grenade_thermalDet";
+		modelSpecial = "";
+		MASS_SON
+        author = "205th Recon Battalion";
+	};
+	class RB205_droidPopper: JLTS_grenade_emp_mag
+	{
+		displayName = "$STR_205_DroidPopper_DisplayName";
+		displayNameShort = "$STR_205_DroidPopper_DisplayNameShort";
+		descriptionShort = "Wirkung: EMP<br />Radius: 10 Meter<br />(Nur freigegeben für ARC Soldaten)";
+		ammo = "RB205_droidPopper_ammo";
+		MASS_EMP
+        author = "205th Recon Battalion";
+	};
+
 	class RB205_smokeWhite: 3AS_SmokeWhite
 	{
 		displayName = "$STR_205_SmokeW_DisplayName";
@@ -243,25 +274,45 @@ class CfgMagazines
 		MASS_SMK
         author = "205th Recon Battalion";
 	};
-	class RB205_sonicDet: ACE_M84
+
+	class RB205_lumaWhite: ACE_HandFlare_White
 	{
-		displayName = "$STR_205_SonicDetonator_DisplayName";
-		displayNameShort = "$STR_205_SonicDetonator_DisplayNameShort";
-		descriptionShort = "Wirkung: Schock<br />(Nur freigegeben für ARC Soldaten)";
-		picture = "\RB205_weapons\grenades\data\sonicDet.paa";
-		model = "\ls_weapons\grenades\thermalDet\ls_grenade_thermalDet";
-		modelSpecial = "";
-		MASS_SON
+		displayName = "$STR_205_LumaW_DisplayName";
+		displayNameShort = "$STR_205_FlareW_DisplayNameShort";
+		descriptionShort = "Wirkung: Licht<br />Farbe: Weiß<br />Dauer: 1 Minute";
+		picture = "\3AS\3AS_Equipment\UI\Luma_UI_ca.paa";
+		model = "3AS\3AS_Equipment\model\lumagrenade.p3d";
+		MASS_LUM
         author = "205th Recon Battalion";
 	};
-	class JLTS_grenade_emp_mag;
-	class RB205_droidPopper: JLTS_grenade_emp_mag
+	class RB205_lumaGreen: ACE_HandFlare_Green
 	{
-		displayName = "$STR_205_DroidPopper_DisplayName";
-		displayNameShort = "$STR_205_DroidPopper_DisplayNameShort";
-		descriptionShort = "Wirkung: EMP<br />Radius: 10 Meter<br />(Nur freigegeben für ARC Soldaten)";
-		ammo = "RB205_droidPopper_ammo";
-		MASS_EMP
+		displayName = "$STR_205_LumaG_DisplayName";
+		displayNameShort = "$STR_205_FlareG_DisplayNameShort";
+		descriptionShort = "Wirkung: Licht<br />Farbe: Grün<br />Dauer: 1 Minute";
+		picture = "\3AS\3AS_Equipment\UI\Luma_UI_ca.paa";
+		model = "3AS\3AS_Equipment\model\lumagrenade.p3d";
+		MASS_LUM
+        author = "205th Recon Battalion";
+	};
+	class RB205_lumaRed: ACE_HandFlare_Red
+	{
+		displayName = "$STR_205_LumaR_DisplayName";
+		displayNameShort = "$STR_205_FlareR_DisplayNameShort";
+		descriptionShort = "Wirkung: Licht<br />Farbe: Rot<br />Dauer: 1 Minute";
+		picture = "\3AS\3AS_Equipment\UI\Luma_UI_ca.paa";
+		model = "3AS\3AS_Equipment\model\lumagrenade.p3d";
+		MASS_LUM
+        author = "205th Recon Battalion";
+	};
+	class RB205_lumaYellow: ACE_HandFlare_Yellow
+	{
+		displayName = "$STR_205_LumaY_DisplayName";
+		displayNameShort = "$STR_205_FlareY_DisplayNameShort";
+		descriptionShort = "Wirkung: Licht<br />Farbe: Gelb<br />Dauer: 1 Minute";
+		picture = "\3AS\3AS_Equipment\UI\Luma_UI_ca.paa";
+		model = "3AS\3AS_Equipment\model\lumagrenade.p3d";
+		MASS_LUM
         author = "205th Recon Battalion";
 	};
 
@@ -575,6 +626,8 @@ class CfgWeapons
 		{
 			"RB205_thermalDet_muzzle",
 			"RB205_impactGren_muzzle",
+			"RB205_sonicDet_muzzle",
+			"RB205_droidPopper_muzzle",
 			"RB205_smokeWhite_muzzle",
 			"RB205_smokeBlue_muzzle",
 			"RB205_smokeGreen_muzzle",
@@ -582,8 +635,10 @@ class CfgWeapons
 			"RB205_smokeYellow_muzzle",
 			"RB205_smokePurple_muzzle",
 			"RB205_smokeOrange_muzzle",
-			"RB205_sonicDet_muzzle",
-			"RB205_droidPopper_muzzle"
+			"RB205_lumaWhite_muzzle",
+			"RB205_lumaGreen_muzzle",
+			"RB205_lumaRed_muzzle",
+			"RB205_lumaYellow_muzzle"
 		};
 		class ThrowMuzzle;
 		class RB205_thermalDet_muzzle: ThrowMuzzle
@@ -598,6 +653,20 @@ class CfgWeapons
 			magazines[] =
 			{
 				"RB205_impactGren"
+			};
+		};
+		class RB205_sonicDet_muzzle: ThrowMuzzle
+		{
+			magazines[] =
+			{
+				"RB205_sonicDet"
+			};
+		};
+		class RB205_droidPopper_muzzle: ThrowMuzzle
+		{
+			magazines[] =
+			{
+				"RB205_droidPopper"
 			};
 		};
 		class RB205_smokeWhite_muzzle: ThrowMuzzle
@@ -649,18 +718,32 @@ class CfgWeapons
 				"RB205_smokeOrange"
 			};
 		};
-		class RB205_sonicDet_muzzle: ThrowMuzzle
+		class RB205_lumaWhite_muzzle: ThrowMuzzle
 		{
 			magazines[] =
 			{
-				"RB205_sonicDet"
+				"RB205_lumaWhite"
 			};
 		};
-		class RB205_droidPopper_muzzle: ThrowMuzzle
+		class RB205_lumaGreen_muzzle: ThrowMuzzle
 		{
 			magazines[] =
 			{
-				"RB205_droidPopper"
+				"RB205_lumaGreen"
+			};
+		};
+		class RB205_lumaRed_muzzle: ThrowMuzzle
+		{
+			magazines[] =
+			{
+				"RB205_lumaRed"
+			};
+		};
+		class RB205_lumaYellow_muzzle: ThrowMuzzle
+		{
+			magazines[] =
+			{
+				"RB205_lumaYellow"
 			};
 		};
 	};

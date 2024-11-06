@@ -14,7 +14,7 @@ params ["_this"];
 		"RB205_Heavy_Energy_Pack_red","RB205_Compact_Energy_Pack_red","RB205_Standard_Energy_Pack_red","RB205_Overcharged_Energy_Pack_red","RB205_Experimental_Energy_Pack_red",
 		
 		//GRENADES / EXPLOSIVES
-		"RB205_thermalDet","RB205_impactGren","RB205_sonicDet","RB205_droidPopper","RB205_smokeWhite","RB205_smokeBlue","RB205_smokeGreen","RB205_smokeRed","RB205_smokeYellow","RB205_smokePurple","RB205_smokeOrange",
+		"RB205_thermalDet","RB205_impactGren","RB205_sonicDet","RB205_droidPopper","RB205_smokeWhite","RB205_smokeBlue","RB205_smokeGreen","RB205_smokeRed","RB205_smokeYellow","RB205_smokePurple","RB205_smokeOrange","RB205_lumaWhite","RB205_lumaGreen","RB205_lumaRed","RB205_lumaYellow",
 		"ACE_Chemlight_White","Chemlight_blue","Chemlight_green","Chemlight_red","ACE_Chemlight_Orange","Chemlight_yellow","ACE_Chemlight_HiWhite","ACE_Chemlight_HiBlue","ACE_Chemlight_HiGreen","ACE_Chemlight_HiRed","ACE_Chemlight_HiYellow","ACE_Chemlight_UltraHiOrange","ACE_Chemlight_IR",
 		"ShieldGrenade_Mag","ShieldGrenadePersonal_Mag","SquadShieldMagazine",
 		"GrenadeInsiendPSENG",
