@@ -28,6 +28,7 @@ class cfgPatches
 			"RB205_emp_tx130_gl",
 			"RB205_emp_tx130_recon",
 			"RB205_emp_tx130_super",
+			"RB205_emp_atte",
 			"RB205_ATAT",
 			"RB205_ATST",
 			//STARFIGHTER
@@ -35,8 +36,9 @@ class cfgPatches
 			"RB205_emp_laatle",
 			"RB205_emp_nuclass",
 			"RB205_emp_rhoclass",
-			"RB205_emp_purrgil",
 			"RB205_emp_lambda",
+			"RB205_emp_purrgil",
+			"RB205_emp_gozanti",
 			"RB205_emp_zetaclass",
 			"RB205_emp_vwing",
 			"RB205_emp_TIE_LN",
@@ -52,7 +54,10 @@ class cfgPatches
 			"RB205_emp_catfish_aa",
 			//OTHER
 			"RB205_emp_rhoclass_crate_barracks",
-			"RB205_emp_rhoclass_crate_transport"
+			"RB205_emp_rhoclass_crate_transport",
+			"RB205_emp_keeradak",
+			"RB205_emp_xx9",
+			"RB205_emp_xx10"
 		};
 	};
 };
@@ -73,28 +78,28 @@ class cfgVehicles
 		CARGO_NONE
 		faction = "RB205_empire";
 		editorSubCategory = "RB205_veh_ground";
-		hiddenSelectionsTextures[] = {"\JMSLLTE_vehicles_gr\74Z\data\74z_white_co.paa"};
+		hiddenSelectionsTextures[] = {"\JMSLLTE_veh_gr\74Z\data\74z_white_co.paa"};
 		class TextureSources
 		{
 			class White
 			{
 				displayName = "White";
 				author = "JMax";
-				textures[] = {"\JMSLLTE_vehicles_gr\74Z\data\74z_white_co.paa"};
+				textures[] = {"\JMSLLTE_veh_gr\74Z\data\74z_white_co.paa"};
 				factions[] = {"RB205_empire"};
 			};
 			class Grey
 			{
 				displayName = "Grey";
 				author = "JMax";
-				textures[] = {"\JMSLLTE_vehicles_gr\74Z\data\74z_grey_co.paa"};
+				textures[] = {"\JMSLLTE_veh_gr\74Z\data\74z_grey_co.paa"};
 				factions[] = {};
 			};
 			class Brown
 			{
 				displayName = "Brown";
 				author = "JMax";
-				textures[] = {"\JMSLLTE_vehicles_gr\74Z\data\74z_brown_co.paa"};
+				textures[] = {"\JMSLLTE_veh_gr\74Z\data\74z_brown_co.paa"};
 				factions[] = {};
 			};
 		};
@@ -318,17 +323,6 @@ class cfgVehicles
 		hiddenSelectionsMaterials[] = {};
 		class textureSources {};
 	};
-	class RB205_purrgil;
-	class RB205_emp_purrgil: RB205_purrgil
-	{
-		ACCESS_TRUE
-		crew = CREW_EMP_AIR;
-		VEH_INVENTORY
-		faction = "RB205_empire";
-		hiddenselectionstextures[] = {"3as\3as_starships\data\hs_imp_ext_co.paa","3as\3as_starships\data\hs_int_co.paa"};
-		hiddenSelectionsMaterials[] = {};
-		class textureSources {};
-	};
 	class WM_Lambda;
 	class RB205_emp_lambda: WM_Lambda
 	{
@@ -340,6 +334,31 @@ class cfgVehicles
 		CARGO_L
 		faction = "RB205_empire";
 		editorSubCategory = "RB205_veh_air";
+	};
+	class RB205_purrgil;
+	class RB205_emp_purrgil: RB205_purrgil
+	{
+		ACCESS_TRUE
+		crew = CREW_EMP_AIR;
+		VEH_INVENTORY
+		faction = "RB205_empire";
+		hiddenselectionstextures[] = {"3as\3as_starships\data\hs_imp_ext_co.paa","3as\3as_starships\data\hs_int_co.paa"};
+		hiddenSelectionsMaterials[] = {};
+		class textureSources {};
+	};
+	class 3AS_Gozanti_F;
+	class RB205_emp_gozanti: 3AS_Gozanti_F
+	{
+		ACCESS_TRUE
+		displayName = "Gozanti Cruiser";
+		author = AUTHOR;
+		crew = CREW_EMP_AIR;
+		VEH_INVENTORY
+		faction = "RB205_empire";
+		editorSubcategory = "RB205_veh_air";
+		hiddenselectionstextures[] = {"3as\3AS_Imperial_Air\Gozanti\data\Camo_co.paa","3as\3AS_Imperial_Air\Gozanti\data\Gozanti_Int_co.paa","3as\3AS_Imperial_Air\Gozanti\data\Camo2_co.paa","3as\3AS_Imperial_Air\Gozanti\data\Camo3_co.paa","3as\3AS_Imperial_Air\Gozanti\data\Camo4_co.paa","3as\3AS_Imperial_Air\Gozanti\data\Camo5_co.paa","3as\3AS_Imperial_Air\Gozanti\data\Camo6_co.paa"};
+		hiddenSelectionsMaterials[] = {};
+		class textureSources {};
 	};
 	class JMSLLTE_veh_ZetaClass_inf_emp;
 	class RB205_emp_zetaclass: JMSLLTE_veh_ZetaClass_inf_emp
@@ -510,5 +529,36 @@ class cfgVehicles
 		hiddenSelectionsTextures[] = {"3as\3as_republic_heli\rho_class\data\crate_ext_Imp_co.paa","3as\3as_republic_heli\rho_class\data\crate_int_co.paa","3as\3as_republic_heli\rho_class\data\variant_barracks_co.paa","3as\3as_republic_heli\rho_class\data\clone_bed_co.paa","3as\3as_republic_heli\rho_class\data\interior_co.paa"};
 		hiddenSelectionsMaterials[] = {};
 		class textureSources {};
+	};
+	class RB205_keeradak;
+	class RB205_emp_keeradak: RB205_keeradak
+	{
+		ACCESS_TRUE
+		crew = CREW_EMP_DEFAULT;
+		VEH_INVENTORY
+		faction = "RB205_empire";
+		hiddenSelectionsTextures[] = {"3as\3as_republic_static\keeradak\data\Imp_aa_base_co.paa","3as\3as_republic_static\keeradak\data\Imp_aa_Gun_co.paa"};
+		hiddenSelectionsMaterials[] = {};
+		class textureSources {};
+	};
+	class 3as_XX9;
+	class RB205_emp_xx9: 3as_XX9
+	{
+		ACCESS_TRUE
+		displayName = "XX-9 Heavy Turbolaser";
+		author = AUTHOR;
+		crew = CREW_EMP_DEFAULT;
+		faction = "RB205_empire";
+		editorSubcategory = "RB205_veh_other";
+	};
+	class 3as_XX10;
+	class RB205_emp_xx10: 3as_XX10
+	{
+		ACCESS_TRUE
+		displayName = "XX-10 Heavy Turbolaser";
+		author = AUTHOR;
+		crew = CREW_EMP_DEFAULT;
+		faction = "RB205_empire";
+		editorSubcategory = "RB205_veh_other";
 	};
 };
