@@ -471,8 +471,7 @@ class cfgVehicles
 		};
 		weapons[] =
 		{
-			"RB205_barc_repeater",
-			"RB205_barc_repeater_he"
+			"RB205_barc_repeater"
 		};
 		magazines[] =
 		{
@@ -480,12 +479,7 @@ class cfgVehicles
 			"RB205_barc_mag",
 			"RB205_barc_mag",
 			"RB205_barc_mag",
-			"RB205_barc_he_mag",
-			"RB205_barc_he_mag",
-			"RB205_barc_he_mag",
-			"RB205_barc_he_mag",
-			"RB205_barc_he_mag",
-			"RB205_barc_he_mag"
+            "RB205_barc_mag"
 		};
 		BARC_SOUND
 		BARC_FLIP
@@ -537,8 +531,7 @@ class cfgVehicles
 		};
 		weapons[] =
 		{
-			"RB205_barc_repeater",
-			"RB205_barc_repeater_he"
+			"RB205_barc_repeater"
 		};
 		magazines[] =
 		{
@@ -546,12 +539,7 @@ class cfgVehicles
 			"RB205_barc_mag",
 			"RB205_barc_mag",
 			"RB205_barc_mag",
-			"RB205_barc_he_mag",
-			"RB205_barc_he_mag",
-			"RB205_barc_he_mag",
-			"RB205_barc_he_mag",
-			"RB205_barc_he_mag",
-			"RB205_barc_he_mag"
+            "RB205_barc_mag"
 		};
 		BARC_SOUND
 		BARC_FLIP
@@ -604,8 +592,7 @@ class cfgVehicles
 		};
 		weapons[] =
 		{
-			"RB205_barc_repeater",
-			"RB205_barc_repeater_he"
+			"RB205_barc_repeater"
 		};
 		magazines[] =
 		{
@@ -613,12 +600,7 @@ class cfgVehicles
 			"RB205_barc_mag",
 			"RB205_barc_mag",
 			"RB205_barc_mag",
-			"RB205_barc_he_mag",
-			"RB205_barc_he_mag",
-			"RB205_barc_he_mag",
-			"RB205_barc_he_mag",
-			"RB205_barc_he_mag",
-			"RB205_barc_he_mag"
+            "RB205_barc_mag"
 		};
 		BARC_SOUND
 		BARC_FLIP
@@ -715,10 +697,10 @@ class cfgAmmo
 	class 3AS_Barc_Ammo;
 	class RB205_barc_ammo: 3AS_Barc_Ammo
 	{
-		hit = 200;//150
+		hit = 100;//200
 		indirectHit = 8;
-		indirectHitRange = 0.4;
-		caliber = 7;//4
+		indirectHitRange = 0.4;//0.4
+		caliber = 4;//7
 		class CamShakeFire
 		{
 			distance = 0;
