@@ -25,12 +25,32 @@ class ACEX_Fortify_Presets
             {"3AS_Shield_1_Prop", 2},
             {"3AS_Shield_3_Prop", 6},
 			{"3AS_Shield_5_Prop", 10},
-			{"3AS_Shield_C_Prop", 20}
+			{"3AS_Shield_C_Prop", 20},
+			{"Land_lsb_fob_hBarrier_ramp", 3},
+			{"land_3as_Ladder3", 3}
         };
     };
-    class RB205_fort_metal
+	class RB205_fort_medium
 	{
-        displayName = "Republic Fortifications (Metal)";
+        displayName = "Republic Fortifications (Medium)";
+        objects[] = {
+            {"3AS_Shield_1_Prop", 2},
+            {"3AS_Shield_3_Prop", 5},
+			{"3AS_Shield_5_Prop", 8},
+			{"3AS_Shield_C_Prop", 10},
+			{"3AS_Short_Wall", 3},
+            {"3AS_Short_Wall_Long", 3},
+			{"3AS_Short_Wall_Curved", 3},
+			{"3AS_Short_Wall_Post", 3},
+			{"3AS_Short_Wall_Bunker", 10},
+			{"land_3AS_light_s_reb", 3},
+			{"Land_lsb_fob_hBarrier_ramp", 3},
+			{"land_3as_Ladder3", 3}
+        };
+    };
+    class RB205_fort_heavy
+	{
+        displayName = "Republic Fortifications (Heavy)";
         objects[] = {
             {"3AS_Short_Wall", 3},
             {"3AS_Short_Wall_Long", 3},
@@ -53,7 +73,9 @@ class ACEX_Fortify_Presets
 			{"Aux212_Mobile_Support_Bridge_Straight", 15},
 			{"Land_ConcreteHedgehog_01_F", 3},
 			{"land_3AS_light_s_reb", 3},
-			{"3as_FOB_Banner_prop", 1}
+			{"3as_FOB_Banner_prop", 1},
+			{"land_3as_Ladder3", 3},
+			{"land_3as_Ladder5", 3}
         };
     };
 };

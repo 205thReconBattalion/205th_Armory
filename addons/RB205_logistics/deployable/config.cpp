@@ -6,7 +6,8 @@ class CfgPatches
 		{
 			"RB205_main",
 			"RB205_vehicles_prowler",
-			"JLTS_C_Intel"
+			"JLTS_C_Intel",
+			"3AS_Mortar"
 		};
 		requiredVersion=1.0;
 		author="205th Recon Battalion";
@@ -16,10 +17,12 @@ class CfgPatches
 			"RB205_B_autoTurret",
 			"RB205_B_squadShield",
 			"RB205_B_prowler",
+			"RB205_B_mortar",
 
 			"RB205_heavyRepeater",
 			"RB205_autoTurret",
 			"RB205_squadShield",
+			"RB205_mortar",
 
 			"RB205_prowler_packed"
 		};
@@ -97,6 +100,23 @@ class CfgVehicles
 			base = "";
 		};
 	};
+	class 3AS_Republic_Mortar_Bag;
+	class RB205_B_mortar: 3AS_Republic_Mortar_Bag
+	{
+		ACCESS_TRUE
+		displayName = "[205] Disassembled Mortar";
+		picture = "\RB205_main\data\ui\backpacks\icon_B.paa";
+		maximumload = 0;
+		mass = MASS_BACKPACK;
+		class assembleInfo
+		{
+			displayName = "Mortar";
+			assembleTo = "RB205_mortar";
+			dissasembleTo[] = {};
+			primary = 1;
+			base = "";
+		};
+	};
 
 
 	class 3AS_HeavyRepeater_Unarmoured;
@@ -138,7 +158,10 @@ class CfgVehicles
 	class RB205_squadShield: JLTS_portable_shield_gar
 	{
 		ACCESS_TRUE
-		displayName = "[205] Portable shield generator";
+		displayName = "Portable shield generator";
+		editorCategory = "RB205_prop";
+		editorSubcategory = "RB205_other";
+		editorPreview = "";
 		class assembleInfo
 		{
 			displayName = "";
@@ -148,6 +171,48 @@ class CfgVehicles
 			base = "";
 		};
 	};
+	class Mortar_01_base_F;
+	class B_Mortar_01_F: Mortar_01_base_F
+	{
+		class Turrets;
+	};
+	class 3AS_Republic_Mortar: B_Mortar_01_F
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret;
+		};
+	};
+	class RB205_mortar: 3AS_Republic_Mortar
+	{
+		ACCESS_TRUE
+		displayName = "Mortar";
+		faction = "RB205";
+		editorSubcategory = "RB205_veh_other";
+		editorPreview = "";
+		crew = CREW_DEFAULT;
+		class assembleInfo
+		{
+			displayName = "";
+			assembleTo = "";
+			dissasembleTo[] = {"RB205_B_mortar"};
+			primary = 0;
+			base = "";
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				magazines[] =
+				{
+					"3AS_8Rnd_82mm_Mo_shells","3AS_8Rnd_82mm_Mo_shells",
+					"3AS_8Rnd_82mm_Mo_Flare_white","3AS_8Rnd_82mm_Mo_Flare_white",
+					"3AS_8Rnd_82mm_Mo_Smoke_white","3AS_8Rnd_82mm_Mo_Smoke_white"
+				};
+			};
+		};
+	};
+
 	class JLTS_UAV_prowler_gar;
 	class RB205_prowler: JLTS_UAV_prowler_gar
 	{
