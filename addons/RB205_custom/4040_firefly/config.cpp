@@ -63,10 +63,10 @@ class cfgWeapons
 
 class cfgVehicles
 {
-    class RB205_clone_arf_trooper;
-    class RB205_clone_firefly: RB205_clone_arf_trooper
+    class RB205_clone_arf_corporal;
+    class RB205_clone_firefly: RB205_clone_arf_corporal
     {
-        displayName = "CSP-4040 Firefly";
+        displayName = "CP-4040 Firefly";
         uniformclass = "RB205_U_firefly";
         editorSubCategory = "RB205_lore";
         hiddenselectionsTextures[] =
@@ -75,6 +75,6 @@ class cfgVehicles
             "RB205_custom\4040_firefly\data\U_firefly_lower.paa",
             "RB205_main\data\default\U_undersuit_co.paa"
         };
-        LINKED_ITEMS("RB205_H_firefly", "RB205_V_arf_ct", "RB205_NV_arf_antenna")
+        LINKED_ITEMS("RB205_H_firefly", "RB205_V_arf_cp", "RB205_NV_arf_antenna")
     };
 };
