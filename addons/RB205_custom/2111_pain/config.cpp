@@ -12,7 +12,8 @@ class cfgPatches
         weapons[] =
         {
             "RB205_H_pain",
-            "RB205_U_pain"
+            "RB205_U_pain",
+            "RB205_V_pain"
         };
         units[] =
         {
@@ -25,38 +26,50 @@ class cfgPatches
 
 class cfgWeapons
 {
-    class RB205_H_trooper;
-    class RB205_H_pain : RB205_H_trooper
+    class RB205_H_arf_trooper;
+    class RB205_H_pain : RB205_H_arf_trooper
     {
-        displayName = "[205] Clone Trooper Helmet [2111]";
+        displayName = "[205] Clone ARF Trooper Helmet [2111]";
         hiddenSelectionsTextures[] =
         {
             "RB205_custom\2111_pain\data\H_pain.paa",
-            "RB205_main\data\default\visor_p2_co.paa"
+            "",
+            "RB205_main\data\arf\visor_arf_co.paa"
         };
     };
     
     class RB205_U_base;
-    class RB205_U_trooper: RB205_U_base
+    class RB205_U_arf_trooper: RB205_U_base
     {
         class ItemInfo;
     };
-    class RB205_U_pain : RB205_U_trooper
+    class RB205_U_pain : RB205_U_arf_trooper
     {
-        displayName = "[205] Clone Trooper Armor [2111]";
+        displayName = "[205] Clone ARF Trooper Armor [2111]";
         class ItemInfo : ItemInfo
         {
             uniformClass = RB205_clone_pain;	 
+        };
+    };
+
+    class RB205_V_cs;
+    class RB205_V_pain: RB205_V_cs
+    {
+        displayName = "[205] Clone ARF Trooper Vest [2111]";
+        hiddenSelectionsTextures[] =
+        {
+            "RB205_custom\2111_pain\data\V_pain.paa",
+            ""
         };
     };
 };
 
 class cfgVehicles
 {
-    class RB205_clone_trooper;
-    class RB205_clone_pain: RB205_clone_trooper
+    class RB205_clone_arf_sergeant;
+    class RB205_clone_pain: RB205_clone_arf_sergeant
     {   
-        displayName = "CSP-2111 Pain";
+        displayName = "CS-2111 Pain";
         uniformClass = "RB205_U_pain";
         editorSubCategory = "RB205_lore";
         hiddenSelectionsTextures[] = 
@@ -65,6 +78,6 @@ class cfgVehicles
             "RB205_custom\2111_pain\data\U_pain_lower.paa",
             "RB205_main\data\default\U_undersuit_co.paa"
         };
-        LINKED_ITEMS("RB205_H_pain","RB205_V_ct","RB205_NV_chip")
+        LINKED_ITEMS("RB205_H_pain","RB205_V_pain","RB205_NV_arf_antenna")
     }; 
 };
