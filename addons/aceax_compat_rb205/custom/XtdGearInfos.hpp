@@ -10,6 +10,7 @@ class XtdGearInfos
 		H_CUSTOM(RB205_H_rambo,"1510","dft")
 		H_CUSTOM(RB205_H_fugger,"1618","dft")
 		H_CUSTOM(RB205_H_akira,"1972","dft")
+		H_CUSTOM(RB205_H_lost,"2004","dft")
 		H_CUSTOM(RB205_H_lucky,"2058","dft")
 		H_CUSTOM(RB205_H_pain,"2111","dft")
 		H_CUSTOM(RB205_H_fire,"2187","dft")
@@ -55,6 +56,7 @@ class XtdGearInfos
 		U_CUSTOM(RB205_U_rambo,"1510","dft")
 		U_CUSTOM(RB205_U_fugger,"1618","dft")
 		U_CUSTOM(RB205_U_akira,"1972","dft")
+		U_CUSTOM(RB205_U_lost,"2004","dft")
 		U_CUSTOM(RB205_U_lucky,"2058","dft")
 		U_CUSTOM(RB205_U_pain,"2111","dft")
 		U_CUSTOM(RB205_U_fire,"2187","dft")
@@ -89,6 +91,7 @@ class XtdGearInfos
 		//VESTS
 
 		V_CUSTOM(RB205_V_lucky,"2058","dft")
+		V_CUSTOM(RB205_V_pain,"2111","dft")
 		V_CUSTOM(RB205_V_smoker,"2288","dft")
 		V_CUSTOM(RB205_V_gentleman,"2441","dft")
 		V_CUSTOM(RB205_V_slow,"3340","dft")
