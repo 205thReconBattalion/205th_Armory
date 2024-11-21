@@ -43,6 +43,7 @@ class XtdGearModels
                     "1510",
                     "1618",
                     "1972",
+                    "2004",
                     "2058",
                     "2111",
                     "2187",
@@ -94,6 +95,10 @@ class XtdGearModels
                 class 1972
                 {
                     description = "Akira";
+                };
+                class 2004
+                {
+                    description = "Lost";
                 };
                 class 2058
                 {
