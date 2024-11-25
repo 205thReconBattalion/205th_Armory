@@ -35,16 +35,6 @@ class cfgWeapons
             "RB205_main\data\arf\visor_arf_co.paa"
         };
     };
-    class RB205_H_arf_firefly: RB205_H_arf_trooper
-    {
-        displayName = "[205] Clone ARF Trooper Helmet [4040]";
-        hiddenSelectionsTextures[] =
-        {
-            "RB205_custom\4040_firefly\data\H_firefly.paa",
-            "RB205_custom\4040_firefly\data\H_firefly_flaps.paa",
-            "RB205_main\data\arf\visor_arf_co.paa"
-        };
-    };
 
     class RB205_U_base;
     class RB205_U_arf_trooper: RB205_U_base
