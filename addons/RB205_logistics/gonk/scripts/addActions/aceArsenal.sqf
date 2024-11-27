@@ -78,7 +78,7 @@ params ["_this"];
 		"RB205_H_fugger","RB205_U_fugger",
 		"RB205_H_akira","RB205_U_akira",
 		"RB205_H_lucky","RB205_U_lucky","RB205_V_lucky",
-		"RB205_H_pain","RB205_U_pain","RB205_V_pain"
+		"RB205_H_pain","RB205_U_pain","RB205_V_pain",
 		"RB205_H_fire","RB205_U_fire",
 		"RB205_H_tyr","RB205_U_tyr",
 		"RB205_H_smoker","RB205_H_ab_smoker","RB205_U_smoker","RB205_V_smoker",
@@ -92,6 +92,7 @@ params ["_this"];
 		"RB205_H_lightning","RB205_U_lightning",
 		"RB205_H_firefly","RB205_U_firefly",
 		"RB205_H_banger","RB205_U_banger",
+		"RB205_H_recker","RB205_U_recker",
 		"RB205_H_crossfire","RB205_U_crossfire",
 		"RB205_H_putzi","RB205_U_putzi","RB205_V_putzi",
 		"RB205_H_junior","RB205_U_junior",
