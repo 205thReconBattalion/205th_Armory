@@ -59,6 +59,7 @@ class XtdGearModels
                     "4030",
                     "4040",
                     "4137",
+                    "4562",
                     "4600",
                     "5283",
                     "5463",
@@ -159,6 +160,10 @@ class XtdGearModels
                 class 4137
                 {
                     description = "Banger";
+                };
+                class 4562
+                {
+                    description = "Recker";
                 };
                 class 4600
                 {
