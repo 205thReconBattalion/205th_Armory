@@ -96,7 +96,7 @@ class XtdGearInfos
 		V_CUSTOM(RB205_V_gentleman,"2441","dft")
 		V_CUSTOM(RB205_V_slow,"3340","dft")
 		V_CUSTOM(RB205_V_putzi,"5283","dft")
-		U_CUSTOM(RB205_V_junior,"5463","dft")
+		V_CUSTOM(RB205_V_junior,"5463","dft")
 		V_CUSTOM(RB205_V_scythe,"5577","dft")
 		
 		V(RB205_V_doc,"dft","co","rifleman")
