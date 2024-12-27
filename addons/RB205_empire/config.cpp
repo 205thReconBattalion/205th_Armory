@@ -1358,7 +1358,7 @@ class cfgVehicles
         ACCESS_TRUE
         displayName = "[205|EMP] Scout Trooper Backpack";
 	    mass = MASS_BACKPACK;
-	    maximumload = INV_BACK;
+	    maximumload = INV_BACK_SCOUT;
         TFAR_RADIO_SMALL
     };
     class RB205_B_emp_plt: RB205_backpack_base
@@ -1366,7 +1366,7 @@ class cfgVehicles
         ACCESS_TRUE
         displayName = "[205|EMP] Tie Pilot Transmitter";
 	    mass = MASS_BACKPACK;
-	    maximumload = INV_BACK_SCOUT;
+	    maximumload = INV_BACK_NONE;
         TFAR_RADIO_SMALL
     };
     class RB205_B_emp_snow_heavy: RB205_backpack_base

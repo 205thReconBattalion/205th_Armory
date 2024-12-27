@@ -3,7 +3,7 @@ params ["_this"];
 [_this,
 	[
 		//WEAPONS / ATTACHMENTS / AMMO
-		"RB205_DC15A","RB205_DC15A_GL","RB205_DC15A_JLTS","RB205_DC15A_GL_JLTS","RB205_DC15C","RB205_DC15C_GL","RB205_DC15L","RB205_DC15S","RB205_DC15X","RB205_DC17M","RB205_DP23","RB205_Valken38X","RB205_WestarM5","RB205_Z6","RB205_BTX42","RB205_Chaingun","RB205_DC15S_JLTS","twc_2inch_bag","RB205_PLX1_F","RB205_RPS6","RB205_RPS6_disposable","RB205_DC17","RB205_DC17_alt","RB205_DC17_Dual","JLTS_DC17SA","RB205_MPL57","UNSC_Knife","UNSC_Knife_reversed","ACE_VMM3",
+		"RB205_DC15A","RB205_DC15A_GL","RB205_DC15A_JLTS","RB205_DC15A_GL_JLTS","RB205_DC15C","RB205_DC15C_GL","RB205_DC15L","RB205_DC15S","RB205_DC15X","RB205_DC17M","RB205_DP23","RB205_Valken38X","RB205_WestarM5","RB205_Z6","RB205_BTX42","RB205_Chaingun","RB205_DC15S_JLTS","twc_2inch_bag","RB205_PLX1_F","RB205_RPS6","RB205_RPS6_disposable","RB205_DC17","RB205_DC17_alt","RB205_DC17_Dual","JLTS_DC17SA","RB205_MPL57","UNSC_Knife","UNSC_Knife_reversed","ACE_VMM3","knd_datapad_f",
 		"3AS_optic_holo_DC15S","3AS_Optic_Scope_WestarM5","SEA_Optic_Holo_Two_Red","SEA_Optic_Holo_Two_Blue","SEA_Optic_Holo_Two_Green","SEA_Optic_Holo_One_Green","JLTS_DC15X_scope","SEA_Optic_Holo_One_Red","3AS_optic_acog_DC15C","3AS_optic_reflex_DC15C","RB205_Optic_DC15L","SEA_Optic_Holo_One_Blue","RB205_attachment_scope_DC17M_sniper","SEA_Optic_Holo_One_Yellow","RB205_Optic_VK38X","SEA_Optic_Holo_Two_Yellow","OPTRE_M7_Laser","acc_pointer_IR","OPTRE_BMR_Laser","JLTS_DC17SA_flashlight","acc_flashlight","ACE_DBAL_A3_Green","acc_flashlight_pistol","OPTRE_M45_Flashlight","OPTRE_M7_Flashlight","OPTRE_M6C_Laser","OPTRE_M6G_Flashlight","OPTRE_M12_Laser","ACE_DBAL_A3_Red","ACE_SPIR","ACE_acc_pointer_green","RB205_DC15X_Suppressor","RB205_attachment_DC17M_blaster","RB205_attachment_DC17M_at","RB205_attachment_DC17M_sniper","3AS_Bipod_VK38X_f","3AS_Bipod_DC15L_f","acc_esd_01_flashlight","3AS_Imp_Bipod_DLT19","3AS_Imp_Muzzle_DLT19x","3AS_Imp_Optic_SE14R","3AS_Optic_EC17_1_F","3AS_Flashlight_EC17_1_F",
 		"RB205_Standard_Energy_Pack","RB205_Compact_Energy_Pack","RB205_Overcharged_Energy_Pack","RB205_Heavy_Energy_Pack","RB205_RapidFire_Energy_Pack","RB205_chaingun_mag","RB205_Scatter_Energy_Pack","RB205_BTX42_mag","RB205_Experimental_Energy_Pack","RB205_DC17M_Blaster_Mag","RB205_DC17M_Sniper_Mag","RB205_DC17M_AT_Mag","JLTS_stun_mag_long","JLTS_stun_mag_short","twc_2inch_he_1rnd","twc_2inch_smoke_1rnd","twc_2inch_illum_1rnd","RB205_MAG_RPS6","RB205_MK39_AA","WBK_Cybercrystal",
 		"RB205_ugl_smoke_white","RB205_ugl_smoke_blue","RB205_ugl_smoke_green","RB205_ugl_smoke_red","RB205_ugl_smoke_yellow","RB205_ugl_smoke_purple","RB205_ugl_smoke_orange","RB205_ugl_smoke_white_3rnd","RB205_ugl_smoke_blue_3rnd","RB205_ugl_smoke_green_3rnd","RB205_ugl_smoke_red_3rnd","RB205_ugl_smoke_yellow_3rnd","RB205_ugl_smoke_purple_3rnd","RB205_ugl_smoke_orange_3rnd","RB205_ugl_flare_white","RB205_ugl_flare_green","RB205_ugl_flare_red","RB205_ugl_flare_ir","RB205_ugl_flare_white_3rnd","RB205_ugl_flare_green_3rnd","RB205_ugl_flare_red_3rnd","RB205_ugl_flare_ir_3rnd","RB205_ugl_he","RB205_ugl_he_3rnd","RB205_ugl_he_6rnd","RB205_ugl_huntir",
@@ -74,9 +74,9 @@ params ["_this"];
 		"RB205_H_tachanka","RB205_U_tachanka",
 		"RB205_H_mando","RB205_U_mando",
 		"RB205_H_shadow","RB205_U_shadow",
-		"RB205_H_rambo","RB205_U_rambo",
 		"RB205_H_fugger","RB205_U_fugger",
 		"RB205_H_akira","RB205_U_akira",
+		"RB205_H_lost","RB205_U_lost",
 		"RB205_H_lucky","RB205_U_lucky","RB205_V_lucky",
 		"RB205_H_pain","RB205_U_pain","RB205_V_pain",
 		"RB205_H_fire","RB205_U_fire",
@@ -95,7 +95,7 @@ params ["_this"];
 		"RB205_H_recker","RB205_U_recker",
 		"RB205_H_crossfire","RB205_U_crossfire",
 		"RB205_H_putzi","RB205_U_putzi","RB205_V_putzi",
-		"RB205_H_junior","RB205_U_junior",
+		"RB205_H_junior","RB205_U_junior","RB205_V_junior",
 		"RB205_H_flank","RB205_U_flank",
 		"RB205_H_scythe","RB205_U_scythe","RB205_V_scythe","RB205_scythe_attachments",
 		"RB205_H_irwan","RB205_U_irwan",
@@ -131,15 +131,13 @@ params ["_this"];
 		"RB205_B_emp_snow_heavy","RB205_B_emp_snow_medic","RB205_B_emp_snow_rocket","RB205_B_emp_snow_eod","RB205_B_emp_snow_radio",
 		"RB205_B_emp_scout","RB205_B_emp_plt","RB205_B_emp_death",
 
-		"RB205_emp_N_death",
+		"RB205_emp_N_death","RB205_emp_G_stormtooper",
 
 		"RB205_emp_binocular","RB205_emp_binocular_scout",
 		
 		//MEDICAL
 		"ACE_fieldDressing","ACE_packingBandage","ACE_elasticBandage","ACE_quikclot",
 		"ACE_salineIV","ACE_salineIV_250","ACE_salineIV_500",
-		"ACE_bloodIV","ACE_bloodIV_250","ACE_bloodIV_500",
-		"ACE_plasmaIV","ACE_plasmaIV_250","ACE_plasmaIV_500",
 		"ACE_morphine","ACE_epinephrine","ACE_adenosine","ACE_painkillers",
 		"ACE_surgicalKit","ACE_personalAidKit","ACE_tourniquet","ACE_splint","ACE_suture","ACE_bodyBag","ACE_bodyBag_blue","ACE_bodyBag_white",
 		
