@@ -36,7 +36,7 @@ class CfgWeapons
 	{
 		class WeaponSlotsInfo;
 	};
-    class RB205_T7ION: OPTRE_LongRifle_Base //OPTRE_M99A2S3
+    class RB205_T7ION: OPTRE_LongRifle_Base
 	{
 		scope = 2;
 		scopeArsenal = 2;
@@ -48,6 +48,7 @@ class CfgWeapons
 		description = "";
 		descriptionShort = "";
         picture = "\RB205_weapons\T7ION\data\t7ion_ui.paa";
+		cursor = "RB205_CH_t7ion";
 		/*HUD_BulletInARows=7;
 		HUD_TotalPosibleBullet=7;
 		picture="\OPTRE_Weapons\Sniper\icons\stanchion_icon.paa";
@@ -62,10 +63,6 @@ class CfgWeapons
 		{
 			"\RB205_weapons\T7ION\data\camo_co.paa"
 		};
-		/*hiddenSelectionsMaterials[]=
-		{
-			"\RB205_weapons\T7ION\data\camo.rvmat"
-		};*/
 		handAnim[] =
 		{
 			"OFP2_ManSkeleton",
@@ -80,15 +77,6 @@ class CfgWeapons
 			"RB205_T7ION_mag"
 		};
 		magazineWell[] = {};
-		/*class EventHandlers
-		{
-			fired="if (isPlayer (_this select 0)) then {_this spawn RB205_T7ION_WeaponFiredHandler_BlueParticles;};";
-		};
-		selectionFireAnim="muzzleFlash";
-		fireLightDuration=0.05;
-		fireLightIntensity=0.5;
-		fireLightDiffuse[]={0,0,1};
-		fireLightAmbient[]={0,0,0};*/
 
         modelOptics = "\RB205_weapons\T7ION\t7ion_optic";
 		opticType = 1;
@@ -167,7 +155,7 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"RB205_weapons\T7ION\data\sounds\fire_sound.ogg",
+					"RB205_weapons\T7ION\data\sounds\fire3_sound.ogg",
 					3,
 					1,
 					1800
@@ -259,9 +247,9 @@ class CfgWeapons
 
 class CfgMagazines
 {
-	class OPTRE_7Rnd_20mm_APFSDS_Mag;
-	//class FIG_LasGun_Standart_Tzeench;
-	class RB205_T7ION_mag: OPTRE_7Rnd_20mm_APFSDS_Mag
+	//class OPTRE_7Rnd_20mm_APFSDS_Mag;
+	class RB205_Overcharged_Energy_Pack;
+	class RB205_T7ION_mag: RB205_Overcharged_Energy_Pack
 	{
 		displayname = "$STR_205_T7ION_mag_DisplayName";
 		displayNameShort = "$STR_205_RB205_T7ION_mag_DisplayNameShort";
@@ -281,16 +269,16 @@ class CfgMagazines
 
 class CfgAmmo
 {
-	//class OPTRE_B_20mm_APFSDS;
-	//class FIG_LasGun_Ammo_Tzeench;
-	class B_127x108_APDS;
-	class RB205_T7ION_ammo: B_127x108_APDS
+	//class B_127x108_APDS;
+	class RB205_ammo_overcharged;
+	class RB205_T7ION_ammo: RB205_ammo_overcharged
 	{
 		hit = 5;
 		indirectHit = 1;
 		indirectHitRange = 2;
-		caliber = 1;
+		caliber = 0.1;
 		deflecting = 0;
+		cartridge = "";
 		explosive = 0.25;
 		ExplosionEffects = "RB205_T7ION_EMPExplosion";
 		explosionTime = -1;
@@ -326,8 +314,30 @@ class CfgAmmo
 		tracerEndTime=0.1;
 		tracerStartTime=0;
 		tracerScale=0.1;
-		cartridge="";
 		hit=10;*/
+	};
+	class ace_ammoExplosionLarge;
+	class RB205_T7ION_electrocuteGrenade: ace_ammoExplosionLarge
+	{
+		hit=0;
+		indirectHit=0;
+		indirectHitRange=0;
+		CraterEffects="GrenadeCrater";
+		ace_frag_enabled=0;
+		explosionEffects="BoundingMineExplosion";
+		soundFly[]=
+		{
+			""
+		};
+		SoundSetExplosion[]=
+		{
+			""
+		};
+		model="\A3\weapons_f\empty.p3d";
+		craterShape="\A3\weapons_f\empty.p3d";
+		class CamShakeExplode
+		{
+		};
 	};
 };
 
@@ -369,59 +379,6 @@ class CfgGesturesMale
     };
 };
 
-/*class CfgCloudlets
-{
-	class AirFireSparks;
-	class RB205_T7ION_FlyingEffect: AirFireSparks
-	{
-		lifeTime=0.60000002;
-		interval=0.001;
-		color[]=
-		{
-			{1,0,0,1},
-			{1,0,0,1},
-			{1,0,0,1}
-		};
-		emissiveColor[]=
-		{
-			{255,0,0,255},
-			{1,0,0,1}
-		};
-		weight=1.3;
-		volume=0.80000001;
-		rubbing=0.5;
-		ignoreWind=1;
-	};
-};
-class CfgLights
-{
-	class CruiseMissileLight;
-	class RB205_T7ION_light: CruiseMissileLight
-	{
-		intensity = 2500;
-		flareSize = 0.80000001;
-		color[] = {0,0.050000001,1,1};
-		diffuse[] = {0,0.050000001,1,1};
-		ambient[] = {0,0.050000001,1,1};
-		dayLight = 1;
-		useFlare = 1;
-		flareMaxDistance = 2500;
-		drawLight = 1;
-	};
-};
-class RB205_T7ION_FlyingEffectS
-{
-	class RB205_T7ION_lightS
-	{
-		simulation = "light";
-		type = "RB205_T7ION_light";
-		position[] = {0,0,0};
-		intensity = 1;
-		interval = 1;
-		lifeTime = 2;
-	};
-};*/
-
 class CfgCloudlets
 {
 	class Default;
@@ -455,7 +412,7 @@ class CfgCloudlets
 		randomDirectionPeriod = 0.01;
 		randomDirectionIntensity = 0.08;
 		onTimerScript = ""; 
-		beforeDestroyScript = "\RB205_weapons\T7ION\data\scripts\emp_effect.sqf";
+		beforeDestroyScript = "\RB205_weapons\T7ION\data\scripts\fn_ion_effect.sqf";
 		lifeTimeVar = 0;
 		rotationVelocityVar = 1;
 		sizeVar = 0;
@@ -612,7 +569,6 @@ class CfgCloudlets
 		emissiveColor[] = {{5000,5000,5000,1},{100,100,100,1}};	
 		destroyOnWaterSurface = 1;
 	};
-
 };
 class CfgLights
 {
@@ -696,24 +652,66 @@ class RB205_T7ION_EMPExplosion
 		lifeTime = 0.75;
 	};
 };
-
-/*class Extended_PreInit_EventHandlers
+class CfgSounds
 {
-	class RB205_T7ION_WeaponsScript_PreInit
+	sounds[] = {};
+	class spark1
 	{
-		init="call compile preprocessFileLineNumbers '\RB205_weapons\T7ION\data\scripts\XEH_preInit.sqf'";
+		name = "spark1";
+		sound[] = {"\RB205_weapons\T7ION\data\sounds\ion\spark1.wss", db+10, 1};
+		titles[] = {};
 	};
-};*/
-class Extended_PreInit_EventHandlers
+	class spark11
+	{
+		name = "spark11";
+		sound[] = {"\RB205_weapons\T7ION\data\sounds\ion\spark11.wss", db+10, 1};
+		titles[] = {};
+	};
+	class spark2
+	{
+		name = "spark2";
+		sound[] = {"\RB205_weapons\T7ION\data\sounds\ion\spark2.wss", db+10, 1};
+		titles[] = {};
+	};		
+	class spark22
+	{
+		name = "spark22";
+		sound[] = {"\RB205_weapons\T7ION\data\sounds\ion\spark22.wss", db+10, 1};
+		titles[] = {};
+	};	
+	class spark4
+	{
+		name = "spark4";
+		sound[] = {"\RB205_weapons\T7ION\data\sounds\ion\spark4.wss", db+10, 1};
+		titles[] = {};
+	};
+};
+class CfgSoundShaders
 {
-    class RB205_T7ION_PreInit
-    {
-        init="call compile preprocessFileLineNumbers '\RB205_weapons\T7ION\data\scripts\XEH_preInit.sqf'";
-    };
+	class EMP_sparks_SoundShader_GL
+	{
+		samples[] = {{ "\RB205_weapons\T7ION\data\sounds\ion\gl_1.wss", 1 },{ "\RB205_weapons\T7ION\data\sounds\ion\gl_2.wss", 1 },{ "\RB205_weapons\T7ION\data\sounds\ion\gl_3.wss", 1 },{ "\RB205_weapons\T7ION\data\sounds\ion\gl_4.wss", 1 }};
+		volume = 1.2;
+		range = 1000;
+	};
+};
+class CfgSoundSets
+{
+	class EMP_Sparks_SoundSet_GL
+	{
+		soundShaders[] = {"EMP_sparks_SoundShader_GL"};
+		volumeFactor = 2;
+		volumeCurve = "InverseSquare2Curve";
+		sound3DProcessingType = "ExplosionLight3DProcessingType";
+		distanceFilter = "explosionDistanceFreqAttenuationFilter";
+		spatial = 1;
+		doppler = 0;
+		loop = 0;
+	};
 };
 class Extended_PostInit_EventHandlers
 {
-	class knd_postinit
+	class RB205_T7ION_PostInit
 	{
 		init="call compile preprocessFileLineNumbers '\RB205_weapons\T7ION\data\scripts\xeh_postinit.sqf'";
 	};
