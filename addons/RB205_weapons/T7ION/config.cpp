@@ -242,6 +242,22 @@ class CfgWeapons
 		};
 		caseless[] = {"",1,1,1};
 		soundBullet[] = {"caseless",1};
+		
+		/*muzzles[] = {"this"};
+		muzzleEffect = "BIS_fnc_effectFired"; // Optional: Effekt zuweisen
+		muzzleFlash = "zasleh"; // Stellt sicher, dass der Proxy verwendet wird
+		muzzlePos = "usti hlavne";
+		muzzleEnd = "konec hlavne";*/
+		fireLightDiffuse[] = {0,0,1};
+		/*class GunParticles
+		{
+			class FirstEffect
+			{
+				directionName = "Konec hlavne";
+				effectName = "RifleAssaultCloud";
+				positionName = "Usti hlavne";
+			};
+		};*/
 	};
 };
 
