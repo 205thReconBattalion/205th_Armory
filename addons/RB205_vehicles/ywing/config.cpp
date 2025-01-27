@@ -26,7 +26,7 @@ class cfgVehicles
 	class RB205_ywing: 3AS_BTLB_Bomber_ShadowLeader
 	{
 		ACCESS_TRUE
-		displayName = "BTL-B Y-Wing Bomber";
+		displayName = "Y-Wing Bomber";
 		author = AUTHOR;
 		crew = CREW_AIR;
 		VEH_INVENTORY_LIGHT

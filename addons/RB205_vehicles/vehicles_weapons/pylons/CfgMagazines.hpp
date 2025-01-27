@@ -43,4 +43,47 @@ class CfgMagazines
 		count = 2;
         model = "\A3\Weapons_F_Jets\Ammo\PylonPod_Missile_AA_06_DualRail_x2_F";
 	};
+
+	class magazine_Missile_AGM_02_x1;
+	class RB205_AGM65_missile: magazine_Missile_AGM_02_x1
+	{
+		scope = 2;
+        displayName = "[205] AGM-65 Maverick";
+        displayNameShort = "AGM (IR)";
+
+        ammo = "RB205_AGM65_ammo";
+	};
+	class RB205_AGM65_missilePylon: RB205_AGM65_missile
+	{
+		pylonWeapon = "RB205_AGM65_weapon";
+        hardpoints[] = {"B_AGM65_RAIL"};
+		count = 1;
+        model = "\A3\Weapons_F_Jets\Ammo\PylonPod_Missile_AGM_02_Rail_x1_F";
+	};
+	class RB205_AGM65_missilePylon_2rnd: RB205_AGM65_missilePylon
+	{
+		displayName="[205] AGM-65 Maverick (x2)";
+        hardpoints[] = {"B_AGM65_DUAL_RAIL"};
+		count = 2;
+        model = "\A3\Weapons_F_Jets\Ammo\PylonPod_Missile_AGM_02_DualRail_x2_F";
+	};
+
+	//AGM65L - AGM (L) TODO
+
+	class magazine_Missile_HARM_x1;
+	class RB205_AGMHARM_missile: magazine_Missile_HARM_x1
+	{
+		scope = 2;
+        displayName = "[205] AGM-88C HARM";
+        displayNameShort = "AGM (AR)";
+
+        ammo = "RB205_AGMHARM_ammo";
+	};
+	class RB205_AGMHARM_missilePylon: RB205_AGMHARM_missile
+	{
+		pylonWeapon = "RB205_AGMHARM_weapon";
+        hardpoints[] = {"B_HARM_RAIL"}; //TODO
+		count = 1;
+        model = "\A3\Weapons_F_Jets\Ammo\PylonPod_Missile_AGM_02_Rail_x1_F";//model = "\A3\Weapons_F_Sams\Ammo\PylonPod_Missile_AR_01_Rail_x1_F";
+	};
 };
