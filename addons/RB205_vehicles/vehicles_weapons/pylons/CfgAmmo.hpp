@@ -32,13 +32,36 @@ class CfgAmmo
 		effectFly = "3AS_Rocket_effect_Purple_fly";
 	};
 
-	/*
-		model = "3as\3AS_VehicleWeapons\model\3AS_High_Energy_Missile.p3d";
-		proxyShape = "3as\3AS_VehicleWeapons\model\3AS_High_Energy_Missile.p3d";
-		effectsMissile = "3AS_Rocket_effect_Yellow_fly";
+	class ace_maverick_L: Missile_AGM_02_F
+	{
+		class ace_missileguidance;
+	};
+	class RB205_AGM65L_ammo: ace_maverick_L
+	{
+		model = "3as\3AS_VehicleWeapons\model\3AS_Concussion_Missile.p3d";
+		proxyShape = "3as\3AS_VehicleWeapons\model\3AS_Concussion_Missile.p3d";
+		effectsMissile = "3AS_Rocket_effect_Purple_fly";
 		effectsMissileInit = "PylonBackEffects";
-		effectFly = "3AS_Rocket_effect_Yellow_fly";
-	*/
+		effectFly = "3AS_Rocket_effect_Purple_fly";
+		
+        autoSeekTarget = 0;
+        irLock = 0;
+        laserLock = 0;
+        manualControl = 0;
+        missileLockMaxDistance = 16000;
+        weaponLockSystem = 4;
+		class ace_missileguidance: ace_missileguidance
+		{
+			enabled = 1;
+            defaultSeekerType = "SALH";
+            seekerTypes[] = {"SALH"};
+
+            defaultSeekerLockMode = "LOAL";
+            seekerLockModes[] = {"LOAL"};
+
+            seekerMaxRange = 16000;
+		};
+	};
 
 	class ammo_Missile_HARM;
 	class RB205_AGMHARM_ammo: ammo_Missile_HARM
@@ -49,4 +72,10 @@ class CfgAmmo
 		effectsMissileInit = "PylonBackEffects";
 		effectFly = "3AS_Rocket_effect_Purple_fly";
 	};
+	
+	/*
+		effectsMissile = "3AS_Rocket_effect_Yellow_fly";
+		effectsMissileInit = "PylonBackEffects";
+		effectFly = "3AS_Rocket_effect_Yellow_fly";
+	*/
 };

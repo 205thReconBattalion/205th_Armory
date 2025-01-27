@@ -5,6 +5,7 @@ class cfgPatches
 		requiredAddons[]=
 		{
 			"A3_Weapons_F_Jets",
+			"ace_maverick",
 			"3AS_VehicleWeapons"
 		};
 		requiredVersion = 1.0;
@@ -15,7 +16,7 @@ class cfgPatches
 			"RB205_BIM9X_weapon",
 			"RB205_AMRAAM_weapon",
 			"RB205_AGM65_weapon",
-			//AGM65L
+			"RB205_AGM65L_weapon",
 			"RB205_AGMHARM_weapon"
 		};
 		magazines[]=
@@ -31,7 +32,9 @@ class cfgPatches
             "RB205_AGM65_missilePylon",
             "RB205_AGM65_missilePylon_2rnd",
 
-			//AGM65L
+			"RB205_AGM65L_missile",
+            "RB205_AGM65L_missilePylon",
+            "RB205_AGM65L_missilePylon_2rnd",
 
 			"RB205_AGMHARM_missile",
             "RB205_AGMHARM_missilePylon"
@@ -41,7 +44,7 @@ class cfgPatches
 			"RB205_BIM9X_ammo",
 			"RB205_AMRAAM_ammo",
 			"RB205_AGM65_ammo",
-			//AGM65L
+			"RB205_AGM65L_ammo",
 			"RB205_AGMHARM_ammo"
 		};
 	};
