@@ -93,7 +93,8 @@ class CfgAmmo
 	class JLTS_grenade_emp_ammo;
 	class RB205_droidPopper_ammo: JLTS_grenade_emp_ammo
 	{
-		JLTS_isEMPAmmo = 1;
+		JLTS_isEMPAmmo = 0;
+		RB205_isEMPGrenade = 1;
 		indirectHitRange = 10;
 		explosionTime = 0;
 	};
@@ -745,6 +746,98 @@ class CfgWeapons
 			{
 				"RB205_lumaYellow"
 			};
+		};
+	};
+};
+
+class CfgFunctions
+{
+	class RB205W_grenades
+	{
+		class Weapons
+		{
+			file="\RB205_weapons\grenades\scripts";
+			class onHit
+			{
+			};
+			class onHitEMP
+			{
+			};
+		};
+	};
+};
+
+class Extended_HitPart_EventHandlers
+{
+	class CAManBase
+	{
+		RB205_weapons_grenades = "if (JLTS_settings_EMP_mainSwitch == 1) then {(_this select 0) call RB205W_grenades_fnc_onHit}";
+	};
+};
+
+
+class CfgMovesBasic
+{
+	class Actions
+	{
+		class Acts_CarFixingWheel_actions;
+		class EmpGrenade_shock_Moveset: Acts_CarFixingWheel_actions
+		{
+			Default="empGrenade_shock";
+		};
+	};
+};
+class CfgMovesMaleSdr: CfgMovesBasic
+{
+	class States
+	{
+		class HubShootingRangeKneel_move1;
+		class empGrenade_shock: HubShootingRangeKneel_move1
+		{
+			actions="EmpGrenade_shock_Moveset";
+			file="\RB205_weapons\grenades\anims\empGrenade_shock.rtm";
+			speed=-3;
+
+			duty=0.69999999;
+			stamina=-0.1;
+			looped=0;
+			minPlayTime=1;
+			relSpeedMin=0.60000002;
+			relSpeedMax=1;
+			showHandGun=0;
+			mask="BodyFull";
+			leftHandIKBeg=0;
+			leftHandIKCurve[]={0};
+			leftHandIKEnd=0;
+			rightHandIKBeg=0;
+			rightHandIKCurve[]={0};
+			rightHandIKEnd=0;
+			weaponIK=1;
+			enableOptics=0;
+			showWeaponAim=0;
+			disableWeapons=1;
+			disableWeaponsLong=1;
+			leaning="empty";
+			aimingBody="empty";
+			aiming="empty";
+			limitGunMovement=9.1000004;
+			headBobMode=2;
+			headBobStrength=-1;
+			forceAim=1;
+			head="headDefault";
+			canPullTrigger=0;
+			enableDirectControl=0;
+			weaponLowered=0;
+			variantsPlayer[]={};
+			variantsAI[]={};
+			ConnectTo[]=
+			{
+				"Unconscious",
+				0.89999998
+			};
+			connectFrom[]={};
+			interpolateFrom[]={};
+			InterpolateTo[]={};
 		};
 	};
 };

@@ -24,6 +24,10 @@ class cfgPatches
 #include "\RB205_vehicles\macros.hpp"
 #include "\RB205_vehicles\inventory.hpp"
 
+#define LAATC_LIFTABLE \
+	tas_canBlift = 1; \
+	tas_liftVars = "[[[[0,-2,-5]]], [0.2], [-0.15]]";
+
 class cfgVehicles
 {
 	class O_Truck_03_transport_F;
@@ -41,6 +45,7 @@ class cfgVehicles
 		crew = CREW_DEFAULT;
 		VEH_INVENTORY
 		CARGO_L
+		LAATC_LIFTABLE
 		//Editor/ Zeus
 		side = 1;
 		faction = "RB205";
@@ -80,6 +85,7 @@ class cfgVehicles
 		crew = CREW_DEFAULT;
 		VEH_INVENTORY
 		CARGO_L
+		LAATC_LIFTABLE
 		//Editor/ Zeus
 		side = 1;
 		faction = "RB205";
@@ -121,6 +127,7 @@ class cfgVehicles
 		crew = CREW_DEFAULT;
 		VEH_INVENTORY_LIGHT
 		CARGO_S
+		LAATC_LIFTABLE
 		//Editor/ Zeus
 		side = 1;
 		faction = "RB205";
@@ -160,6 +167,7 @@ class cfgVehicles
 		crew = CREW_DEFAULT;
 		VEH_INVENTORY_LIGHT
 		CARGO_S
+		LAATC_LIFTABLE
 		//Editor/ Zeus
 		side = 1;
 		faction = "RB205";
@@ -201,6 +209,7 @@ class cfgVehicles
 		crew = CREW_DEFAULT;
 		VEH_INVENTORY_LIGHT
 		CARGO_S
+		LAATC_LIFTABLE
 		//Editor/ Zeus
 		side = 1;
 		faction = "RB205";
@@ -240,6 +249,7 @@ class cfgVehicles
 		crew = CREW_DEFAULT;
 		VEH_INVENTORY_LIGHT
 		CARGO_S
+		LAATC_LIFTABLE
 		//Editor/ Zeus
 		side = 1;
 		faction = "RB205";
