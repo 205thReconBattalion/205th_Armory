@@ -85,8 +85,12 @@ class CfgAmmo
 	{
 		model = "3as\3AS_VehicleWeapons\model\3AS_Proton_Bomb_C.p3d";
 		proxyShape = "3as\3AS_VehicleWeapons\model\3AS_Proton_Bomb_C.p3d";
-		//effectsMissile = "3AS_Rocket_effect_Yellow_fly";
-		//effectsMissileInit = "PylonBackEffects";
-		//effectFly = "3AS_Rocket_effect_Yellow_fly";
+	};
+
+	class Bo_Mk82;
+	class RB205_Mk82_ammo: Bo_Mk82
+	{
+		model = "3as\3AS_VehicleWeapons\model\3AS_Proton_Bomb.p3d";
+		proxyShape = "3as\3AS_VehicleWeapons\model\3AS_Proton_Bomb.p3d";
 	};
 };

@@ -108,15 +108,20 @@ class CfgWeapons
         {
             "RB205_GBU12_bomb",
             "RB205_GBU12_bombPylon"
-            /*"4Rnd_Bomb_04_F",
-            "PylonMissile_1Rnd_Bomb_04_F"*/
         };
-		/*lockingTargetSound[] = { "RB205_vehicles\vehicles_weapons\data\sounds\missile_target.ogg", 4, 1 };
-		lockedTargetSound[] = { "RB205_vehicles\vehicles_weapons\data\sounds\missile_lock.ogg", 4, 1 };
-		sounds[] = {"StandardSound"};
-		class StandardSound
-		{
-			soundsetshot[] = {"RB205_missile_shot_SoundSet"};
-		};*/
+    };
+
+    class Mk82BombLauncher;
+    class RB205_Mk82_weapon: Mk82BombLauncher
+    {
+        displayName = "[205] Mk82";
+        magazines[] =
+        {
+            "RB205_Mk82_bomb",
+            "RB205_Mk82_bombPylon"
+            /*"2Rnd_Mk82",
+            "2Rnd_Mk82_MI08",
+            "PylonMissile_1Rnd_Mk82_F"*/
+        };
     };
 };

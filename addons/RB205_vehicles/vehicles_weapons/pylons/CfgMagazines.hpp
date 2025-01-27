@@ -129,7 +129,23 @@ class CfgMagazines
 	{
 		pylonWeapon = "RB205_GBU12_weapon";
 		hardpoints[] = {"B_BOMB_PYLON"};
-		//hardpoints[] = {"B_BOMB_PYLON","REP_BOMB_RAIL","CIS_BOMB_RAIL","IMP_BOMB_RAIL","REBEL_BOMB_RAIL"};
+		model = "\A3\Weapons_F\DynamicLoadout\PylonMissile_1x_Bomb_04_F.p3d";
+	};
+
+	class 2Rnd_Mk82;
+	class RB205_Mk82_bomb: 2Rnd_Mk82
+	{
+		scope = 2;
+        displayName = "[205] Mk82";
+        displayNameShort = "Mk82 (UGB)";
+
+        ammo = "RB205_Mk82_ammo";
+		count = 1;
+	};
+	class RB205_Mk82_bombPylon: RB205_Mk82_bomb
+	{
+		pylonWeapon = "RB205_Mk82_weapon";
+		hardpoints[] = {"B_BOMB_PYLON"};
 		model = "\A3\Weapons_F\DynamicLoadout\PylonMissile_1x_Bomb_04_F.p3d";
 	};
 };
