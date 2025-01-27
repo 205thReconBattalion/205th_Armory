@@ -23,9 +23,16 @@ class cfgPatches
 class cfgWeapons {};
 class cfgVehicles
 {
-	class 3as_LAATC;
+	class 3AS_LAAT_Cargo_Base;
+	class 3AS_LAATC: 3AS_LAAT_Cargo_Base
+	{
+		class VehicleTransport
+		{
+			class Carrier;
+		};
+	};
 
-	class RB205_laatc: 3as_LAATC
+	class RB205_laatc: 3AS_LAATC
 	{
 		ACCESS_TRUE
 		displayName = "LAAT/C";
@@ -99,21 +106,33 @@ class cfgVehicles
 		#include "\RB205_vehicles\laat\laat_sounds.hpp"
 		#include "\RB205_vehicles\sounds_aircraft_alarm.hpp"
 		//Vehicle Transport
+		availableforsupporttypes[] = {"Transport"};
 		class VehicleTransport
 		{
 			class Carrier
 			{
+				cargoBayDimensions[] =
+				{
+					"Limit1",
+					"limit2"
+				};
+				cargoAlignment[]=
+				{
+					"center",
+					"front"
+				};
+				cargoSpacing[] = {0,0.15,0};
+				exits[] =
+				{
+					"exit"
+				};
+				maxLoadMass = 200000;
+				disableHeightLimit = 1;
 				loadingDistance = 10;
 				loadingAngle = 60;
-				cargoAlignment[] = {"center","front"};
-				cargoBayDimensions[] = {"Limit1","limit2"};
-				cargoSpacing[] = {0,0.15,0};
-				disableHeightLimit = 1;
-				exits[] = {"exit"};
-				maxLoadMass = 200000;
+				unloadingInterval = 2;
 				parachuteClassDefault = "B_Parachute_02_F";
 				parachuteHeightLimitDefault = 50;
-				unloadingInterval = 2;
 			};
 		};
 	};
