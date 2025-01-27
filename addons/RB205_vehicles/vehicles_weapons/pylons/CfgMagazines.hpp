@@ -91,7 +91,6 @@ class CfgMagazines
         model = "\A3\Weapons_F_Jets\Ammo\PylonPod_Missile_AGM_02_DualRail_x2_F";
 	};
 
-
 	class magazine_Missile_HARM_x1;
 	class RB205_AGMHARM_missile: magazine_Missile_HARM_x1
 	{
@@ -107,5 +106,30 @@ class CfgMagazines
         hardpoints[] = {"B_HARM_RAIL"};
 		count = 1;
         model = "\A3\Weapons_F_Jets\Ammo\PylonPod_Missile_AGM_02_Rail_x1_F";
+	};
+
+	/*
+		[[1,"pylons1",[-1],"PylonMissile_1Rnd_Mk82_F",1,"0:10000385"],
+		[2,"pylons2",[-1],"PylonMissile_1Rnd_Bomb_04_F",1,"0:10000387"],
+		[3,"pylons3",[-1],"PylonRack_Bomb_SDB_x4",4,"0:10000388"],
+		[4,"pylons4",[-1],"PylonMissile_1Rnd_BombCluster_01_F",1,"0:10000390"]
+	*/
+
+	class 4Rnd_Bomb_04_F;
+	class RB205_GBU12_bomb: 4Rnd_Bomb_04_F
+	{
+		scope = 2;
+        displayName = "[205] GBU-12";
+        displayNameShort = "GBU-12 (LGB)";
+
+        ammo = "RB205_GBU12_ammo";
+		count = 1;
+	};
+	class RB205_GBU12_bombPylon: RB205_GBU12_bomb
+	{
+		pylonWeapon = "RB205_GBU12_weapon";
+		hardpoints[] = {"B_BOMB_PYLON"};
+		//hardpoints[] = {"B_BOMB_PYLON","REP_BOMB_RAIL","CIS_BOMB_RAIL","IMP_BOMB_RAIL","REBEL_BOMB_RAIL"};
+		model = "\A3\Weapons_F\DynamicLoadout\PylonMissile_1x_Bomb_04_F.p3d";
 	};
 };

@@ -98,4 +98,25 @@ class CfgWeapons
 			soundsetshot[] = {"RB205_missile_shot_SoundSet"};
 		};
     };
+
+
+	class Bomb_04_Plane_CAS_01_F;
+    class RB205_GBU12_weapon: Bomb_04_Plane_CAS_01_F
+    {
+        displayName = "[205] GBU-12";
+        magazines[] =
+        {
+            "RB205_GBU12_bomb",
+            "RB205_GBU12_bombPylon"
+            /*"4Rnd_Bomb_04_F",
+            "PylonMissile_1Rnd_Bomb_04_F"*/
+        };
+		/*lockingTargetSound[] = { "RB205_vehicles\vehicles_weapons\data\sounds\missile_target.ogg", 4, 1 };
+		lockedTargetSound[] = { "RB205_vehicles\vehicles_weapons\data\sounds\missile_lock.ogg", 4, 1 };
+		sounds[] = {"StandardSound"};
+		class StandardSound
+		{
+			soundsetshot[] = {"RB205_missile_shot_SoundSet"};
+		};*/
+    };
 };

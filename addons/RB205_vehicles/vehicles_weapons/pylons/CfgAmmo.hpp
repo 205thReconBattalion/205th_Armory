@@ -43,7 +43,7 @@ class CfgAmmo
 		effectsMissile = "3AS_Rocket_effect_Purple_fly";
 		effectsMissileInit = "PylonBackEffects";
 		effectFly = "3AS_Rocket_effect_Purple_fly";
-		
+
         autoSeekTarget = 0;
         irLock = 0;
         laserLock = 0;
@@ -78,4 +78,15 @@ class CfgAmmo
 		effectsMissileInit = "PylonBackEffects";
 		effectFly = "3AS_Rocket_effect_Yellow_fly";
 	*/
+
+
+	class Bomb_04_F;
+	class RB205_GBU12_ammo: Bomb_04_F
+	{
+		model = "3as\3AS_VehicleWeapons\model\3AS_Proton_Bomb_C.p3d";
+		proxyShape = "3as\3AS_VehicleWeapons\model\3AS_Proton_Bomb_C.p3d";
+		//effectsMissile = "3AS_Rocket_effect_Yellow_fly";
+		//effectsMissileInit = "PylonBackEffects";
+		//effectFly = "3AS_Rocket_effect_Yellow_fly";
+	};
 };

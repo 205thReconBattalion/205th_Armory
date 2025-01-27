@@ -17,7 +17,9 @@ class cfgPatches
 			"RB205_AMRAAM_weapon",
 			"RB205_AGM65_weapon",
 			"RB205_AGM65L_weapon",
-			"RB205_AGMHARM_weapon"
+			"RB205_AGMHARM_weapon",
+
+			"RB205_GBU12_weapon"
 		};
 		magazines[]=
 		{
@@ -37,7 +39,11 @@ class cfgPatches
             "RB205_AGM65L_missilePylon_2rnd",
 
 			"RB205_AGMHARM_missile",
-            "RB205_AGMHARM_missilePylon"
+            "RB205_AGMHARM_missilePylon",
+
+
+			"RB205_GBU12_bomb",
+            "RB205_GBU12_bombPylon"
 		};
 		ammo[]=
 		{
@@ -45,7 +51,9 @@ class cfgPatches
 			"RB205_AMRAAM_ammo",
 			"RB205_AGM65_ammo",
 			"RB205_AGM65L_ammo",
-			"RB205_AGMHARM_ammo"
+			"RB205_AGMHARM_ammo",
+
+			"RB205_GBU12_ammo"
 		};
 	};
 };
