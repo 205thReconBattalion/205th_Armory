@@ -72,12 +72,6 @@ class CfgAmmo
 		effectsMissileInit = "PylonBackEffects";
 		effectFly = "3AS_Rocket_effect_Purple_fly";
 	};
-	
-	/*
-		effectsMissile = "3AS_Rocket_effect_Yellow_fly";
-		effectsMissileInit = "PylonBackEffects";
-		effectFly = "3AS_Rocket_effect_Yellow_fly";
-	*/
 
 
 	class Bomb_04_F;
@@ -87,10 +81,29 @@ class CfgAmmo
 		proxyShape = "3as\3AS_VehicleWeapons\model\3AS_Proton_Bomb_C.p3d";
 	};
 
+	class ammo_Bomb_SDB;
+	class RB205_GBUSDB_ammo: ammo_Bomb_SDB
+	{
+		model = "3as\3AS_VehicleWeapons\model\3AS_AV_Round.p3d";
+		proxyShape = "3as\3AS_VehicleWeapons\model\3AS_AV_Round.p3d";
+	};
+
+	class BombCluster_01_Ammo_F;
+	class RB205_CBU85_ammo: BombCluster_01_Ammo_F
+	{
+		model = "3as\3AS_VehicleWeapons\model\3AS_Proton_Shell.p3d";
+		proxyShape = "3as\3AS_VehicleWeapons\model\3AS_Proton_Shell.p3d";
+	};
+
 	class Bo_Mk82;
 	class RB205_Mk82_ammo: Bo_Mk82
 	{
-		model = "3as\3AS_VehicleWeapons\model\3AS_Proton_Bomb.p3d";
-		proxyShape = "3as\3AS_VehicleWeapons\model\3AS_Proton_Bomb.p3d";
+		//model = "3as\3AS_VehicleWeapons\model\3AS_Proton_Bomb.p3d";
+		//proxyShape = "3as\3AS_VehicleWeapons\model\3AS_Proton_Bomb.p3d";
+
+		model = "\RB205_vehicles\vehicles_weapons\data\plasma_bomb_fly.p3d";
+		proxyShape = "\RB205_vehicles\vehicles_weapons\data\plasma_bomb.p3d";
+		effectflare = "FlareShell";
+		effectfly = "RB205_bomb_blue";
 	};
 };

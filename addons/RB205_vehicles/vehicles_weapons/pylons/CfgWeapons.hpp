@@ -111,17 +111,35 @@ class CfgWeapons
         };
     };
 
+    class weapon_SDBLauncher;
+    class RB205_GBUSDB_weapon: weapon_SDBLauncher
+    {
+        displayName = "[205] GBU SDB";
+        magazines[] =
+        {
+            "RB205_GBUSDB_bomb",
+            "RB205_GBUSDB_bombPylon"
+        };
+    };
+
+    class BombCluster_01_F;
+    class RB205_CBU85_weapon: BombCluster_01_F
+    {
+        displayName = "[205] CBU-85 Cluster Bomb";
+        magazines[] =
+        {
+            "RB205_CBU85_bombPylon"
+        };
+    };
+
     class Mk82BombLauncher;
     class RB205_Mk82_weapon: Mk82BombLauncher
     {
-        displayName = "[205] Mk82";
+        displayName = "[205] Plasma Bomb";
         magazines[] =
         {
             "RB205_Mk82_bomb",
             "RB205_Mk82_bombPylon"
-            /*"2Rnd_Mk82",
-            "2Rnd_Mk82_MI08",
-            "PylonMissile_1Rnd_Mk82_F"*/
         };
     };
 };

@@ -20,6 +20,8 @@ class cfgPatches
 			"RB205_AGMHARM_weapon",
 
 			"RB205_GBU12_weapon",
+			"RB205_GBUSDB_weapon",
+			"RB205_CBU85_weapon",
 			"RB205_Mk82_weapon"
 		};
 		magazines[]=
@@ -46,6 +48,11 @@ class cfgPatches
 			"RB205_GBU12_bomb",
             "RB205_GBU12_bombPylon",
 
+			"RB205_GBUSDB_bomb",
+            "RB205_GBUSDB_bombPylon",
+
+            "RB205_CBU85_bombPylon",
+
 			"RB205_Mk82_bomb",
 			"RB205_Mk82_bombPylon"
 		};
@@ -58,6 +65,8 @@ class cfgPatches
 			"RB205_AGMHARM_ammo",
 
 			"RB205_GBU12_ammo",
+			"RB205_GBUSDB_ammo",
+			"RB205_CBU85_ammo",
 			"RB205_Mk82_ammo"
 		};
 	};
@@ -129,5 +138,38 @@ class CfgSoundShaders
 		};
 		volume = 1;
 		range = 1600;
+	};
+};
+
+class CfgLights
+{
+	class RB205_plasmaBlue
+	{
+		color[]={0,0,1,1};
+		ambient[]={0,0,1,0};
+		brightness=10;
+		intensity=1000;
+		drawLight=0;
+		class Attenuation
+		{
+			start=0;
+			constant=1;
+			linear=0;
+			quadratic=40;
+		};
+		position[]={0,0.2,0};
+		diffuse[]={0,0,0.1};
+	};
+};
+class RB205_bomb_blue
+{
+	class RB205_bombBlue
+	{
+		simulation="light";
+		type="RB205_plasmaBlue";
+		position[]={0,0,0};
+		intensity=0;
+		interval=1;
+		lifeTime=6;
 	};
 };
