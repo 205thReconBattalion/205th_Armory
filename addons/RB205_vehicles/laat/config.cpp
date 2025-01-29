@@ -25,9 +25,20 @@ class cfgPatches
 class cfgWeapons {};
 class cfgVehicles
 {
-	class 3as_LAAT_Mk1;
-	class 3as_LAAT_Mk1Lights;
-	class 3as_LAAT_Mk2;
+	class 3AS_laat_Base;
+	class 3AS_LAAT_LampBase;
+	class 3as_LAAT_Mk1: 3AS_laat_Base
+	{
+		class Components;
+	};
+	class 3as_LAAT_Mk1Lights: 3AS_LAAT_LampBase
+	{
+		class Components;
+	};
+	class 3as_LAAT_Mk2: 3AS_laat_Base
+	{
+		class Components;
+	};
 
 	class RB205_laat: 3as_LAAT_Mk2
 	{
@@ -124,13 +135,7 @@ class cfgVehicles
 			};
 		};
 		//Weapons
-		weapons[] =
-		{
-			"3as_LAAT_Medium_Canon",
-			"RB205_Missile_AG",
-			"RB205_Missile_AA_SR",
-			"CMFlareLauncher"
-		};
+		#include "\RB205_vehicles\laat\laat_weapons.hpp"
 		#include "\RB205_vehicles\laat\laat_sounds.hpp"
 		#include "\RB205_vehicles\sounds_aircraft_alarm.hpp"
 	};
@@ -229,13 +234,7 @@ class cfgVehicles
 			};
 		};
 		//Weapons
-		weapons[] =
-		{
-			"3as_LAAT_Medium_Canon",
-			"RB205_Missile_AG",
-			"RB205_Missile_AA_SR",
-			"CMFlareLauncher"
-		};
+		#include "\RB205_vehicles\laat\laat_weapons.hpp"
 		#include "\RB205_vehicles\laat\laat_sounds.hpp"
 		#include "\RB205_vehicles\sounds_aircraft_alarm.hpp"
 	};
@@ -334,13 +333,7 @@ class cfgVehicles
 			};
 		};
 		//Weapons
-		weapons[] =
-		{
-			"3as_LAAT_Medium_Canon",
-			"RB205_Missile_AG",
-			"RB205_Missile_AA_SR",
-			"CMFlareLauncher"
-		};
+		#include "\RB205_vehicles\laat\laat_weapons.hpp"
 		#include "\RB205_vehicles\laat\laat_sounds.hpp"
 		#include "\RB205_vehicles\sounds_aircraft_alarm.hpp"
 	};
