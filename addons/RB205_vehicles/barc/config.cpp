@@ -27,6 +27,10 @@ class cfgPatches
 #include "\RB205_vehicles\macros.hpp"
 #include "\RB205_vehicles\inventory.hpp"
 
+#define LAATC_LIFTABLE \
+    tas_canBlift = 2; \
+    tas_liftVars = "[[[[0,-3.7,-6]],[[-1,-3.7,-6],[1,-3.7,-6]]], [0.5,0.25], [-0.1,0.05]]";
+
 #define BARC_SOUND \
     soundGetIn[]=	{"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_door",0.56234133,1}; \
     soundGetOut[]=	{"A3\Sounds_F\vehicles\soft\Hatchback_01\Hatchback_01_door",0.56234133,1,40}; \
@@ -439,6 +443,7 @@ class cfgVehicles
 		crew = CREW_DEFAULT;
 		VEH_INVENTORY_LIGHT
 		CARGO_NONE
+        LAATC_LIFTABLE
 		//Editor/ Zeus
 		side = 1;
 		faction = "RB205";
