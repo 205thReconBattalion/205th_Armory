@@ -11,7 +11,7 @@
 
 	createVehicle ["RB205_T7ION_electrocuteGrenade", getPosATL _target];
 	_target setDamage [1,true,_projectileOwner,_projectileOwner];
-	sleep 1;
+	//sleep 1;
 	hideObjectGlobal _target;
 	deleteVehicle _e_static;
 }] call CBA_fnc_addEventHandler;
@@ -62,7 +62,7 @@
 	_target setHit ["light_3_hitpoint", 0.97];
 	_target setHit ["light_4_hitpoint", 0.97];
 	_target setVehicleAmmo 0;
-	sleep 1;
+	//sleep 1;
 	deleteVehicle _e_static;
 }] call CBA_fnc_addEventHandler;
 
@@ -78,7 +78,7 @@
 	_e_static setDropInterval 0.35;
 
 	_target setDamage [1,true,_projectileOwner,_projectileOwner];
-	sleep 1;
+	//sleep 1;
 	deleteVehicle _e_static;
 }] call CBA_fnc_addEventHandler;
 

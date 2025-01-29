@@ -274,7 +274,7 @@ class CfgMagazines
 
 		model = "\MRC\JLTS\weapons\DC15x\DC15x_mag.p3d";
 		picture = "\3AS\3AS_Weapons\Data\UI\3as_sniper_b.paa";
-		mass = 4;
+		mass = 20;
 
 		ammo = "RB205_T7ION_ammo";
 		count = 1;
