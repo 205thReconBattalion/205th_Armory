@@ -106,6 +106,10 @@
             <English>[205] BT X-42 Heavy Flamethrower</English>
             <German>[205] BT X-42 Schwerer Flammenwerfer</German>
         </Key>
+        <Key ID="STR_205_T7ION_DisplayName">
+            <English>[205] T-7 Ion Disruptor Rifle</English>
+            <German>[205] T-7 Ionendisruptor</German>
+        </Key>
         <Key ID="STR_205_E11_DisplayName">
             <English>[205|EMP] E-11 Blaster Rifle</English>
             <German>[205|EMP] E-11 Blastergewehr</German>
@@ -231,6 +235,10 @@
             <English>BT X-42</English>
             <German>BT X-42</German>
         </Key>
+        <Key ID="STR_205_T7ION_DisplayNameShort">
+            <English>T-7</English>
+            <German>T-7</German>
+        </Key>
         <Key ID="STR_205_E11_DisplayNameShort">
             <English>E-11</English>
             <German>E-11</German>
@@ -316,6 +324,10 @@
             <English>[205] Flamethrower Fuel</English>
             <German>[205] Flammenwerfer Benzin</German>
         </Key>
+        <Key ID="STR_205_T7ION_mag_DisplayName">
+            <English>[205] Ion Energy Pack (1 Ch.)</English>
+            <German>[205] Ionen Energiepaket (1 Lad.)</German>
+        </Key>
         <Key ID="STR_205_Chaingun_Energy_Pack_DisplayName">
             <English>[205] Rapid Fire Energy Pack (600 Ch.)</English>
             <German>[205] Schnellschuss Energiepaket (600 Lad.)</German>
@@ -372,6 +384,10 @@
         <Key ID="STR_205_RB205_BTX42_mag_DisplayNameShort">
             <English>Fuel</English>
             <German>Benzin</German>
+        </Key>
+        <Key ID="STR_205_RB205_T7ION_mag_DisplayNameShort">
+            <English>Ion</English>
+            <German>Ionen</German>
         </Key>
         <Key ID="STR_205_Chaingun_Energy_Pack_DisplayNameShort">
             <English>Laser (Chaingun)</English>
@@ -449,6 +465,10 @@
         <Key ID="STR_205_RB205_BTX42_mag_DescriptionShort">
             <English>Fuel for flamethrowers used by the BT X-42</English>
             <German>Benzin für Flammenwerfer genutzt vom BT X-42</German>
+        </Key>
+        <Key ID="STR_205_T7ION_mag_DescriptionShort">
+            <English>Ion energy pack used by T-7 Ion Disruptor Rifle</English>
+            <German>Ionen Energiepaket genutzt von dem T-7 Ionendisruptor</German>
         </Key>
         <Key ID="STR_205_Chaingun_Energy_Pack_DescriptionShort">
             <English>Heavy energy pack used by the Chaingun</English>

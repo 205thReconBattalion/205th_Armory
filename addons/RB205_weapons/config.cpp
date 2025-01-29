@@ -326,6 +326,11 @@ class CfgWeaponCursors
 	
 	class RB205_CH_gl: throw{};
 
+	class RB205_CH_t7ion: throw
+	{
+		texture = "RB205_weapons\data\t7ion_ch.paa";
+	};
+
 	class RB205_CH_sidearm: throw
 	{
 		texture = "RB205_weapons\data\sidearm.paa";
