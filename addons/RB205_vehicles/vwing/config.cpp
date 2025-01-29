@@ -99,18 +99,18 @@ class cfgVehicles
 		weapons[] =
 		{
 			"3as_Vwing_Medium_Cannon",
-			"RB205_Missile_AA_SR",
-			"RB205_Missile_AA_MR",
-			"RB205_Missile_AG",
+			"RB205_BIM9X_weapon",
+			"RB205_AMRAAM_weapon",
+			"RB205_AGM65_weapon",
 			"CMFlareLauncher"
 		};
 		magazines[] =
 		{
 			"3as_Vwing_700Rnd_Medium_shells","3as_Vwing_700Rnd_Medium_shells","3as_Vwing_700Rnd_Medium_shells","3as_Vwing_700Rnd_Medium_shells","3as_Vwing_700Rnd_Medium_shells",
-			"3as_PylonMissile_ARC_2Rnd_Missile_AA","3as_PylonMissile_ARC_2Rnd_Missile_AA","3as_PylonMissile_ARC_2Rnd_Missile_AA","3as_PylonMissile_ARC_2Rnd_Missile_AA","3as_PylonMissile_ARC_2Rnd_Missile_AA","3as_PylonMissile_ARC_2Rnd_Missile_AA","3as_PylonMissile_ARC_2Rnd_Missile_AA","3as_PylonMissile_ARC_2Rnd_Missile_AA",
-			"PylonMissile_Missile_AMRAAM_D_x1","PylonMissile_Missile_AMRAAM_D_x1","PylonMissile_Missile_AMRAAM_D_x1","PylonMissile_Missile_AMRAAM_D_x1",
-			"6Rnd_Missile_AGM_02_F",
-			"240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine"
+			"RB205_BIM9X_missile","RB205_BIM9X_missile","RB205_BIM9X_missile","RB205_BIM9X_missile","RB205_BIM9X_missile","RB205_BIM9X_missile","RB205_BIM9X_missile","RB205_BIM9X_missile",
+			"RB205_AMRAAM_missile","RB205_AMRAAM_missile","RB205_AMRAAM_missile","RB205_AMRAAM_missile",
+			"RB205_AGM65_missile","RB205_AGM65_missile",
+			"240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine"
 		};
 		#include "\RB205_vehicles\sounds_aircraft_alarm.hpp"
 	};
