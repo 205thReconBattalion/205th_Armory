@@ -20,6 +20,10 @@ class cfgPatches
 #include "\RB205_vehicles\macros.hpp"
 #include "\RB205_vehicles\inventory.hpp"
 
+#define LAATC_LIFTABLE \
+	tas_canBlift = 1; \
+	tas_liftVars = "[[[[0,-4,-6.5]]], [-0.001], [-0.4]]";
+
 class cfgVehicles
 {
 	class 3AS_Keeradak_F;
@@ -31,6 +35,7 @@ class cfgVehicles
 		crew = CREW_DEFAULT;
 		VEH_INVENTORY
         CARGO_NONE
+		LAATC_LIFTABLE
 		//Editor/ Zeus
 		side = 1;
 		faction = "RB205";
