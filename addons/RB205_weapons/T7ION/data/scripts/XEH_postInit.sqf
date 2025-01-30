@@ -26,7 +26,20 @@
 	_e_static setParticleRandom [0.35, [0.5, 0.5, 0.5], [0.175, 0.175, 0.175], 0.15, 0.05, [0, 0, 0, 1], 1, 0];
 	_e_static setParticleParams [["\A3\data_f\blesk1", 1, 0, 1], "", "SpaceObject", 1, 0.35, [0, 0, 0], [0, 0, -2], 0.05, 10, 7.9,0, [0, 0.0175, 0], [[1, 1, 0.1, 1], [1, 1, 1, 1]], [0.01], 1, 0, "", "", _target, 0, false, -1, [[100,100,100,1],[0,0,1,0.01]]];
 	_e_static setDropInterval 0.35;
-	if (!((typeOf _target) == "RB205_MTT" || (typeOf _target) == "3AS_MTT")) then {
+
+	_target_isLargeVehicle = false;
+	{
+		if ((typeOf _target) == _x) exitWith { _target_isLargeVehicle = true };
+	} forEach [
+		"RB205_MTT","3AS_MTT","ls_ground_mtt_cisBlue","ls_ground_mtt_federation",
+		"RB205_dragonFly","lsd_largeVTOL_cisDropship",
+		"RB205_ATAT","3AS_ATAT","WM_ATAT",
+		"RB205_emp_gozanti","3AS_Gozanti_F",
+		"RB205_purrgil","RB205_emp_purrgil","3AS_Republic_Transport_01","3AS_Imperial_Transport_01",
+		"RB205_civ_veh_purrgil_blue","RB205_civ_veh_purrgil_green","RB205_civ_veh_purrgil_yellow","3AS_Civilian_Transport_01","3AS_Civilian_Transport_03","3AS_Civilian_Transport_02"
+	];
+
+	if (!_target_isLargeVehicle) then {
 		_target setHitPointDamage ["hitturret",1]; 
 		_target setHitPointDamage ["hitcomturret",1];
 		_target setHitPointDamage ["hitgun",1];
