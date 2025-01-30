@@ -62,7 +62,8 @@ class cfgPatches
 			"RB205_ugl_he_3rnd",
 			"RB205_ugl_he_6rnd",
 
-			"RB205_ugl_huntir"
+			"RB205_ugl_huntir",
+			"RB205_ugl_pike"
 		};
 		ammo[] =
 		{
@@ -528,6 +529,16 @@ class CfgMagazines
 		MASS_EMP
         author = "205th Recon Battalion";
 	};
+	class ACE_40mm_Pike;
+	class RB205_ugl_pike: ACE_40mm_Pike
+	{
+		displayName = "$STR_205_Pike_DisplayName";
+		displayNameShort = "$STR_205_Pike_DisplayNameShort";
+		descriptionShort = "Wirkung: Explosiv (Laser Gelenkt)<br />Anzahl: 1";
+		picture = "\3AS\3AS_Weapons\Data\UI\3as_nade_proto.paa";
+		MASS_EMP
+        author = "205th Recon Battalion";
+	};
 };
 
 class CfgMagazineWells
@@ -557,7 +568,8 @@ class CfgMagazineWells
 		};
 		RB205_Other[] =
 		{
-			"RB205_ugl_huntir"
+			"RB205_ugl_huntir",
+			"RB205_ugl_pike"
 		};
 	};
 	class RB205_ugl_3rnd
@@ -585,7 +597,8 @@ class CfgMagazineWells
 		};
 		RB205_Other[] =
 		{
-			"RB205_ugl_huntir"
+			"RB205_ugl_huntir",
+			"RB205_ugl_pike"
 		};
 	};
 	class RB205_ugl_arc
@@ -613,7 +626,8 @@ class CfgMagazineWells
 		};
 		RB205_Other[] =
 		{
-			"RB205_ugl_huntir"
+			"RB205_ugl_huntir",
+			"RB205_ugl_pike"
 		};
 	};
 };
