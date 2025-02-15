@@ -24,8 +24,8 @@ class cfgPatches
 
 class cfgWeapons
 {
-    class RB205_H_plt_corporal;
-    class RB205_H_sixes: RB205_H_plt_corporal
+    class RB205_H_plt_trooper;
+    class RB205_H_sixes: RB205_H_plt_trooper
     {
         displayName = "[205] Clone Pilot Trooper Helmet [6666]";
         hiddenSelectionsTextures[] =
@@ -36,11 +36,11 @@ class cfgWeapons
     };
 
     class RB205_U_base;
-    class RB205_U_plt_corporal: RB205_U_base
+    class RB205_U_plt_trooper: RB205_U_base
     {
         class ItemInfo;
     };
-    class RB205_U_sixes: RB205_U_plt_corporal
+    class RB205_U_sixes: RB205_U_plt_trooper
     {
         displayName = "[205] Clone Pilot Trooper Armor [6666]";
         class ItemInfo: ItemInfo
@@ -52,10 +52,10 @@ class cfgWeapons
 
 class cfgVehicles
 {
-    class RB205_clone_plt_corporal;
-    class RB205_clone_sixes: RB205_clone_plt_corporal
+    class RB205_clone_plt_trooper;
+    class RB205_clone_sixes: RB205_clone_plt_trooper
     {
-        displayName = "CP-6666 Sixes";
+        displayName = "CT-6666 Sixes";
         uniformclass = "RB205_U_sixes";
         editorSubCategory = "RB205_lore";
         hiddenselectionsTextures[] =
@@ -64,7 +64,6 @@ class cfgVehicles
             "RB205_custom\6666_sixes\data\U_sixes_lower.paa",
             "RB205_main\data\default\U_undersuit_co.paa"
         };
-        LINKED_ITEMS("RB205_H_sixes","RB205_V_plt_cp","RB205_NV_chip")
-	    identityTypes[] = IDENTITY_TYPES;
+        LINKED_ITEMS("RB205_H_sixes","RB205_V_ct","RB205_NV_chip")
     };
 };
