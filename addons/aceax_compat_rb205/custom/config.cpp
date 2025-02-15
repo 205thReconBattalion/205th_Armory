@@ -69,6 +69,7 @@ class XtdGearModels
                     "7005",
                     "7300",
                     "7565",
+                    "7576",
                     "8550",
                     "9089"
 				};
@@ -199,6 +200,10 @@ class XtdGearModels
                 class 7565
                 {
                     description = "Jumper";
+                };
+                class 7576
+                {
+                    description = "Jay";
                 };
                 class 8550
                 {

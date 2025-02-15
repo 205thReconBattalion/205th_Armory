@@ -78,7 +78,7 @@ params ["_this"];
 		"RB205_H_akira","RB205_U_akira",
 		"RB205_H_lost","RB205_U_lost",
 		"RB205_H_lucky","RB205_U_lucky","RB205_V_lucky",
-		"RB205_H_pain","RB205_U_pain","RB205_V_pain",
+		"RB205_H_pain","RB205_U_pain",
 		"RB205_H_fire","RB205_U_fire",
 		"RB205_H_tyr","RB205_U_tyr",
 		"RB205_H_smoker","RB205_H_ab_smoker","RB205_U_smoker","RB205_V_smoker",
@@ -103,6 +103,7 @@ params ["_this"];
 		"RB205_H_doc","RB205_H_doc_damaged","RB205_H_arf_doc","RB205_U_doc","RB205_V_doc","RB205_VIS_doc","RB205_VIS_doc_damaged",
 		"RB205_H_norway","RB205_U_norway",
 		"RB205_H_jumper","RB205_U_jumper",
+		"RB205_H_jay","RB205_U_jay",
 		"RB205_H_spark","RB205_H_spark_arf","RB205_U_spark","RB205_U_spark_arf","RB205_V_spark","RB205_V_spark_arf","RB205_B_spark","RB205_B_spark_jetpack","RB205_VIS_spark",
 		"RB205_H_unlucky","RB205_U_unlucky",
 
