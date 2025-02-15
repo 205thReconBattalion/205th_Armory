@@ -55,7 +55,7 @@ class cfgVehicles
     class RB205_clone_trooper;
     class RB205_clone_jay: RB205_clone_trooper
     {
-        displayName = "CT-7576 Jay";
+        displayName = "CST-7576 Jay";
         uniformclass = "RB205_U_jay";
         editorSubCategory = "RB205_lore";
         hiddenselectionsTextures[] =
