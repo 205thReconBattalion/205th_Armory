@@ -93,7 +93,6 @@ class XtdGearInfos
 		//VESTS
 
 		V_CUSTOM(RB205_V_lucky,"2058","dft")
-		V_CUSTOM(RB205_V_pain,"2111","dft")
 		V_CUSTOM(RB205_V_smoker,"2288","dft")
 		V_CUSTOM(RB205_V_gentleman,"2441","dft")
 		V_CUSTOM(RB205_V_slow,"3340","dft")
