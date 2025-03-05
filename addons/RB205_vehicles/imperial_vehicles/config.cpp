@@ -346,16 +346,13 @@ class cfgVehicles
 		hiddenSelectionsMaterials[] = {};
 		class textureSources {};
 	};
-	class 3AS_Gozanti_F;
-	class RB205_emp_gozanti: 3AS_Gozanti_F
+	class RB205_gozanti;
+	class RB205_emp_gozanti: RB205_gozanti
 	{
 		ACCESS_TRUE
-		displayName = "Gozanti Cruiser";
-		author = AUTHOR;
 		crew = CREW_EMP_AIR;
 		VEH_INVENTORY
 		faction = "RB205_empire";
-		editorSubcategory = "RB205_veh_air";
 		hiddenselectionstextures[] = {"3as\3AS_Imperial_Air\Gozanti\data\Camo_co.paa","3as\3AS_Imperial_Air\Gozanti\data\Gozanti_Int_co.paa","3as\3AS_Imperial_Air\Gozanti\data\Camo2_co.paa","3as\3AS_Imperial_Air\Gozanti\data\Camo3_co.paa","3as\3AS_Imperial_Air\Gozanti\data\Camo4_co.paa","3as\3AS_Imperial_Air\Gozanti\data\Camo5_co.paa","3as\3AS_Imperial_Air\Gozanti\data\Camo6_co.paa"};
 		hiddenSelectionsMaterials[] = {};
 		class textureSources {};
