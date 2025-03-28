@@ -142,6 +142,7 @@ class cfgWeapons
         {
             mass = MASS_VEST_CO;
             containerClass = INV_VEST_CO;
+            vestType = "Rebreather";
             class HitpointsProtectionInfo
             {
                 class Chest

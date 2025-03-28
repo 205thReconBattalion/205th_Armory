@@ -24,14 +24,14 @@ class cfgPatches
 
 class cfgWeapons
 {
-    class RB205_H_ab_trooper;
-    class RB205_H_lightning: RB205_H_ab_trooper
+    class RB205_H_trooper;
+    class RB205_H_lightning: RB205_H_trooper
     {
-        displayName = "[205] Clone Airborne Trooper Helmet [3697]";
+        displayName = "[205] Clone Trooper Helmet [3697]";
         hiddenSelectionsTextures[] =
         {
             "RB205_custom\3697_lightning\data\H_lightning.paa",
-            "RB205_main\data\airborne\visor_ab_co.paa"
+            "RB205_main\data\default\visor_p2_co.paa"
         };
     };
 
@@ -52,8 +52,8 @@ class cfgWeapons
 
 class cfgVehicles
 {
-    class RB205_clone_ab_trooper;
-    class RB205_clone_lightning: RB205_clone_ab_trooper
+    class RB205_clone_trooper;
+    class RB205_clone_lightning: RB205_clone_trooper
     {
         displayName = "CSP-3697 Lightning";
         uniformclass = "RB205_U_lightning";
