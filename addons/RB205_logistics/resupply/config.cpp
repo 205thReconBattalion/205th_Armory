@@ -104,7 +104,7 @@ class CfgVehicles
 		ACE_CARGO
 		class EventHandlers: DefaultEventhandlers
 		{
-			init = "[_this select 0] execVM '\RB205_logistics\resupply\scripts\weapons.sqf';";
+			init = "[_this select 0] execVM '\RB205_logistics\resupply\scripts\arsenal_weapons.sqf';";
 		};
 		class TransportWeapons{};
 		class TransportMagazines{};
@@ -123,7 +123,7 @@ class CfgVehicles
 		ACE_CARGO
 		class EventHandlers: DefaultEventhandlers
 		{
-			init = "[_this select 0] execVM '\RB205_logistics\resupply\scripts\medical.sqf';";
+			init = "[_this select 0] execVM '\RB205_logistics\resupply\scripts\arsenal_medical.sqf';";
 		};
 		class TransportWeapons{};
 		class TransportMagazines{};
@@ -142,7 +142,7 @@ class CfgVehicles
 		ACE_CARGO
 		class EventHandlers: DefaultEventhandlers
 		{
-			init = "[_this select 0] execVM '\RB205_logistics\resupply\scripts\equipment.sqf';";
+			init = "[_this select 0] execVM '\RB205_logistics\resupply\scripts\arsenal_equipment.sqf';";
 		};
 		class TransportWeapons{};
 		class TransportMagazines{};
@@ -161,7 +161,7 @@ class CfgVehicles
 		ACE_CARGO
 		class EventHandlers: DefaultEventhandlers
 		{
-			init = "[_this select 0] execVM '\RB205_logistics\gonk\scripts\arsenal.sqf';";
+			init = "[_this select 0] execVM '\RB205_logistics\resupply\scripts\arsenal_complete.sqf';";
 		};
 		class TransportWeapons{};
 		class TransportMagazines{};

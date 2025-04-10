@@ -9,7 +9,6 @@ params ["_this"];
 
 		"WBK_HeadLampItem_Narrow","WBK_HandFlashlight",
 		"jen_jetpacks_example_refuelItemMedium",
-		"knd_repulsor","knd_camoNetArid","knd_camoNetLush","knd_camoNetAlpine",
 		"tfd_ls1","tfd_pager1",
 
 		"ItemMap",
