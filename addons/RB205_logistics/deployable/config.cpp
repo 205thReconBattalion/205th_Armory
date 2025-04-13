@@ -271,6 +271,9 @@ class CfgWeapons
 		{
 			mass = 100;
 		};
+		simulation = "ItemMineDetector";
+		type = 4096;
+		detectRange = -1;
 	};
 };
 
