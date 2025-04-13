@@ -12,7 +12,9 @@ class CfgPatches
 		units[] =
 		{
 			"RB205_droid_gonk",
-			"RB205_droid_med"
+			"RB205_droid_med",
+
+			"RB205_console_admin"
 		};
 		weapons[] = {};
 	};
@@ -53,6 +55,18 @@ class CfgVehicles
 		ACE_CARGO
 		CARRYABLE
 		DRAGGABLE
+	};
+	class 3AS_Terminal_Short_Communicator;
+	class RB205_console_admin: 3AS_Terminal_Short_Communicator
+	{
+		displayName = "Admin Console";
+		class EventHandlers: DefaultEventhandlers
+		{
+			init = "[_this select 0] execVM '\RB205_logistics\utilities\scripts\addActions_admin.sqf';";
+		};
+		author = AUTHOR;
+		editorCategory = "RB205_prop";
+		editorSubcategory = "RB205_utilities";
 	};
 };
 
