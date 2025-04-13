@@ -40,6 +40,7 @@ class CfgVehicles
 		ACE_CARGO
 		CARRYABLE
 		DRAGGABLE
+		scopeCurator = 2;
 	};
 	class Land_3AS_Medical_Droid;
 	class RB205_droid_med: Land_3AS_Medical_Droid
