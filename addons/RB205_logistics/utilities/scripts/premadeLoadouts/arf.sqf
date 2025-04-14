@@ -35,26 +35,26 @@ player addItemToUniform "JLTS_ids_gar_army";
 player addItemToUniform "ACE_EntrenchingTool";
 player addItemToUniform "ACE_Flashlight_XL50";
 player addItemToUniform "JLTS_repairkit_weapon_mini";
-for "_i" from 1 to 3 do {player addItemToUniform "ACE_CableTie";};
+for "_i" from 1 to 5 do {player addItemToUniform "ACE_CableTie";};
 
-for "_i" from 1 to 30 do {player addItemToUniform "ACE_packingBandage";};
+for "_i" from 1 to 50 do {player addItemToUniform "ACE_packingBandage";};
 for "_i" from 1 to 4 do {player addItemToUniform "ACE_tourniquet";};
 for "_i" from 1 to 2 do {player addItemToUniform "ACE_painkillers";};
+player addItemToUniform "ACE_HuntIR_monitor";
 
 // VEST
-for "_i" from 1 to 10 do {player addItemToVest "RB205_Standard_Energy_Pack";};
-for "_i" from 1 to 3 do {player addItemToVest "RB205_Compact_Energy_Pack";};
+for "_i" from 1 to 15 do {player addItemToVest "RB205_Standard_Energy_Pack";};
+for "_i" from 1 to 5 do {player addItemToVest "RB205_Compact_Energy_Pack";};
 for "_i" from 1 to 3 do {player addItemToVest "JLTS_stun_mag_long";};
 
 for "_i" from 1 to 3 do {player addItemToVest "RB205_thermalDet";};
-for "_i" from 1 to 2 do {player addItemToVest "RB205_smokeWhite";};
+for "_i" from 1 to 3 do {player addItemToVest "RB205_smokeWhite";};
 for "_i" from 1 to 1 do {player addItemToVest "RB205_smokeGreen";};
-for "_i" from 1 to 3 do {player addItemToVest "ACE_IR_Strobe_Item";};
+for "_i" from 1 to 2 do {player addItemToVest "ACE_IR_Strobe_Item";};
 
 // BACKPACK
-for "_i" from 1 to 20 do {player addItemToBackpack "ACE_packingBandage";};
+for "_i" from 1 to 25 do {player addItemToBackpack "ACE_packingBandage";};
 for "_i" from 1 to 3 do {player addItemToBackpack "ACE_salineIV";};
 player addItemToBackpack "ACE_salineIV_500";
 for "_i" from 1 to 2 do {player addItemToBackpack "ACE_splint";};
-for "_i" from 1 to 3 do {player addItemToBackpack "ACE_bodyBag";};
 player addItemToBackpack "ACE_wirecutter";

@@ -8,10 +8,10 @@ private _loadout = [
 	"Heavy",
 	"Marksman",
 	"Medic",
-	"RTO/JTAC",
-	"ARF",
-	"Pilot",
+	"RTO",
 	"Crewman",
+	"Pilot",
+	"ARF",
 	"ARC"
 ] apply { [[_x], [], [], [], _x, _x] };
 
@@ -51,17 +51,17 @@ private _loadout = [
 				case "Medic": {
 					execVM "\RB205_logistics\utilities\scripts\premadeLoadouts\medic.sqf";
 				};
-				case "RTO/JTAC": {
+				case "RTO": {
 					execVM "\RB205_logistics\utilities\scripts\premadeLoadouts\rto.sqf";
 				};
-				case "ARF": {
-					execVM "\RB205_logistics\utilities\scripts\premadeLoadouts\arf.sqf";
+				case "Crewman": {
+					execVM "\RB205_logistics\utilities\scripts\premadeLoadouts\crewman.sqf";
 				};
 				case "Pilot": {
 					execVM "\RB205_logistics\utilities\scripts\premadeLoadouts\pilot.sqf";
 				};
-				case "Crewman": {
-					execVM "\RB205_logistics\utilities\scripts\premadeLoadouts\crewman.sqf";
+				case "ARF": {
+					execVM "\RB205_logistics\utilities\scripts\premadeLoadouts\arf.sqf";
 				};
 				case "ARC": {
 					execVM "\RB205_logistics\utilities\scripts\premadeLoadouts\arc.sqf";
