@@ -12,6 +12,7 @@ player forceAddUniform "RB205_U_arc_trooper";
 player addVest "RB205_V_arc";
 player addHeadgear "RB205_H_arc_trooper";
 player addBackpack "RB205_B_arc";
+player addGoggles "RB205_arc_bracer";
 
 player linkItem "ItemMap";
 player linkItem "ItemGPS";
@@ -26,7 +27,7 @@ player addWeapon "RB205_WestarM5";
 player addPrimaryWeaponItem "acc_pointer_IR";
 player addPrimaryWeaponItem "3AS_Optic_Scope_WestarM5";
 player addPrimaryWeaponItem "RB205_Experimental_Energy_Pack";
-player addPrimaryWeaponItem "3AS_6Rnd_HE_Grenade_shell";
+player addPrimaryWeaponItem "RB205_ugl_he_6rnd";
 // SECONDARY WEAPON
 player addWeapon "RB205_DC17_Dual";
 player addSecondaryWeaponItem "RB205_Compact_Energy_Pack";
@@ -69,6 +70,6 @@ for "_i" from 1 to 3 do {player addItemToBackpack "ACE_morphine";};
 for "_i" from 1 to 3 do {player addItemToBackpack "ACE_epinephrine";};
 player addItemToBackpack "ACE_surgicalKit";
 for "_i" from 1 to 2 do {player addItemToBackpack "RB205_sonicDet";};
-for "_i" from 1 to 5 do {player addItemToBackpack "3AS_6Rnd_HE_Grenade_shell";};
-for "_i" from 1 to 3 do {player addItemToBackpack "3Rnd_SmokeRed_Grenade_shell";};
-for "_i" from 1 to 5 do {player addItemToBackpack "ACE_40mm_Flare_white";};
+for "_i" from 1 to 5 do {player addItemToBackpack "RB205_ugl_he_6rnd";};
+for "_i" from 1 to 3 do {player addItemToBackpack "RB205_ugl_smoke_red";};
+for "_i" from 1 to 5 do {player addItemToBackpack "RB205_ugl_flare_white";};
