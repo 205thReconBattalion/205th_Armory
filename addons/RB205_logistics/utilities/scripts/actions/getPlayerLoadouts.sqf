@@ -3,7 +3,7 @@ rb205_players = (allPlayers - entities "HeadlessClient_F");
 _playersApplied = rb205_players apply { 
 	[ 
 		[name _x], 
-		[format["%1-%2-%3", _x getVariable ["ace_medical_medicClass", 0], _x getVariable ["ACE_IsEngineer", 0], if (_x getVariable ["ACE_isEOD", false]) then {"1"} else {"0"}]], 
+		[format["%1-%2-%3", _x getVariable ["ace_medical_medicClass", 0], _x getVariable ["ACE_IsEngineer", 0], _x getVariable ["ACE_isEOD", 0]]], 
 		[], 
 		[], 
 		groupId group _x, 

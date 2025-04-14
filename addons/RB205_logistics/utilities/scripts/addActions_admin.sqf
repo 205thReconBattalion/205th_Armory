@@ -14,12 +14,13 @@ _this addAction
 	"<t color='#191919'>Ace Fortify Einstellungen anzeigen</t>",
 	{
 		hint parseText "ACE FORTIFY SETTINGS<br/><br/>
-			<t align='left'>#ace-fortify on/off<br/>
-			#ace-fortify west -PRESET-<br/><br/>
-			Presets:<br/>
-			- RB205_fort_light<br/>
-			- RB205_fort_medium<br/>
-			- RB205_fort_heavy</t>"
+<t align='left'>
+#ace-fortify on/off<br/>
+#ace-fortify west -PRESET-<br/><br/>
+Presets:<br/>
+- RB205_fort_light<br/>
+- RB205_fort_medium<br/>
+- RB205_fort_heavy</t>"
 	},
 	nil, 16, false,	true, "", "", 5
 ];
