@@ -650,7 +650,7 @@ class RB205_NV_visor_base: RB205_nvg_base
 		hiddenSelections[] = {"camo1","camo2"};
 	};
 };
-class RB205_NV_visor2_base: RB205_nvg_base
+class RB205_NV_visor2_base: RB205_nvg_ti_base
 {
 	ACCESS_FALSE
 	picture = "\RB205_main\data\ui\other\icon_NV_marksman.paa";

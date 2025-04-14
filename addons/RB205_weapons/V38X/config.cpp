@@ -151,8 +151,8 @@ class CfgWeapons
 					visionMode[] =
 					{
 						"Normal",
-						"NVG"/*,
-						"TI"*/
+						"NVG",
+						"TI"
 					};
 					thermalMode[] = {0,1};
 					opticsFlare = 1;
