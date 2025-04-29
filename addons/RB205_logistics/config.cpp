@@ -35,8 +35,8 @@ class ACEX_Fortify_Presets
 			{"3AS_Short_Wall_Curved", 3},
 			{"3AS_Short_Wall_Post", 3},
 			{"3AS_Short_Wall_Bunker", 10},
+			
 			{"land_3AS_light_s_reb", 3},
-			{"Land_lsb_walkway_rectangle", 3},
 			{"land_3as_Ladder3", 3}
         };
     };
@@ -44,29 +44,31 @@ class ACEX_Fortify_Presets
 	{
         displayName = "Republic Fortifications (Heavy)";
         objects[] = {
-            {"3AS_Short_Wall", 3},
-            {"3AS_Short_Wall_Long", 3},
-			{"3AS_Short_Wall_Curved", 3},
-			{"3AS_Short_Wall_Post", 3},
-			{"3AS_Short_Wall_Bunker", 10},
-			{"Land_lsb_fob_hBarrier_1", 3},
-			{"Land_lsb_fob_hBarrier_3", 4},
-			{"Land_lsb_fob_hBarrier_5", 5},
-			{"Land_lsb_fob_hBarrier_wall", 5},
-			{"Land_lsb_fob_hBarrierWall_4", 7},
-			{"Land_lsb_fob_hBarrierWall_7", 10},
-			{"Land_lsb_fob_hBarrier_ramp", 3},
-			{"Land_lsb_fob_hBarrierWall_ramp", 7},
-			{"Land_lsb_fob_hBarrierWall_exvertedCorner", 7},
-			{"Land_lsb_fob_hBarrierWall_invertedCorner", 7},
-			{"Land_lsb_fob_hBarrier_corridor", 7},
-			{"Land_lsb_fob_hBarrier_tower", 30},
+			{"3as_hbarrier_1", 3},
+			{"3as_hbarrier_3", 3},
+			{"3as_hbarrier_5", 3},
+			{"3as_hbarricade", 3},
+			{"3as_hbarrierwall_1", 5},
+			{"3as_hbarrierWall_4", 5},
+			{"3as_hbarrierWall_6", 5},
+			{"3as_hbarrierWall_corner3", 5},
+			{"3as_hbarrierWall_cornerinv3", 5},
+			{"3as_hbarrierWall_Corridor", 5},
+			{"3as_hbarrier_Ramp", 3},
+
+            {"3as_hbarrier_big", 8},
+            {"3as_hbarrier_big4", 8},
+			{"3as_hbarrier_big6", 8},
+			{"3as_hbarrier_bunker", 15},
+			{"3as_hbarrier_Tower", 30},
+
+			{"land_3as_GuardShack", 20},
 			{"Land_OPTRE_hard_tent_urban", 20},
 			{"Aux212_Mobile_Support_Bridge_Straight", 15},
-			{"Land_ConcreteHedgehog_01_F", 3},
+			{"land_3as_Hedgehog", 1},
+			{"land_3as_Dragonstooth", 1},
 			{"land_3AS_light_s_reb", 3},
 			{"3as_FOB_Banner_prop", 1},
-			{"Land_lsb_walkway_rectangle", 3},
 			{"land_3as_Ladder3", 3},
 			{"land_3as_Ladder5", 3}
         };
