@@ -442,7 +442,7 @@ class cfgVehicles
 		author = AUTHOR;
 		crew = CREW_DEFAULT;
 		VEH_INVENTORY_LIGHT
-		CARGO_NONE
+		CARGO_1
         LAATC_LIFTABLE
 		//Editor/ Zeus
 		side = 1;
@@ -498,7 +498,7 @@ class cfgVehicles
 		author = AUTHOR;
 		crew = CREW_DEFAULT;
 		VEH_INVENTORY_LIGHT
-		CARGO_NONE
+		CARGO_1
 		//Editor/ Zeus
 		side = 1;
 		faction = "RB205";
@@ -556,7 +556,7 @@ class cfgVehicles
 		author = AUTHOR;
 		crew = CREW_DEFAULT;
 		VEH_INVENTORY_LIGHT
-		CARGO_NONE
+		CARGO_1
 		//Editor/ Zeus
 		side = 1;
 		faction = "RB205";
