@@ -27,7 +27,8 @@ class cfgVehicles
 	class 3AS_ITT;
 	class RB205_itt: 3AS_ITT
 	{
-		ACCESS_TRUE
+		scope = 0;
+		scopeCurator = 0;
 		displayName = "ITT";
 		author = AUTHOR;
 		crew = CREW_ARMORED;
@@ -43,7 +44,8 @@ class cfgVehicles
 	class 3AS_ITT_Logistic;
 	class RB205_itt_logistic: 3AS_ITT_Logistic
 	{
-		ACCESS_TRUE
+		scope = 0;
+		scopeCurator = 0;
 		displayName = "ITT (Logistic)";
 		author = AUTHOR;
 		crew = CREW_ARMORED;
@@ -59,7 +61,8 @@ class cfgVehicles
 	class 3AS_ITT_Medical;
 	class RB205_itt_medic: 3AS_ITT_Medical
 	{
-		ACCESS_TRUE
+		scope = 0;
+		scopeCurator = 0;
 		displayName = "ITT (Medical)";
 		author = AUTHOR;
 		crew = CREW_ARMORED;
