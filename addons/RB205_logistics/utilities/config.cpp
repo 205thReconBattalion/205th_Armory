@@ -13,8 +13,8 @@ class CfgPatches
 		{
 			"RB205_droid_gonk",
 			"RB205_droid_med",
-
-			"RB205_console_admin"
+			"RB205_console_admin",
+			"RB205_fuel_barrel"
 		};
 		weapons[] = {};
 	};
@@ -68,6 +68,20 @@ class CfgVehicles
 		author = AUTHOR;
 		editorCategory = "RB205_prop";
 		editorSubcategory = "RB205_utilities";
+	};
+	class 3AS_Small_Fuel_Barrel;
+	class RB205_fuel_barrel: 3AS_Small_Fuel_Barrel
+	{
+		displayName = "Fuel Barrel";
+		ace_refuel_fuelCargo = 200;
+		ace_refuel_hooks[] = {{0,0,0}};
+		ace_refuel_hoseLength = 5;
+		author = AUTHOR;
+		editorCategory = "RB205_prop";
+		editorSubcategory = "RB205_utilities";
+		ACE_CARGO
+		CARRYABLE
+		DRAGGABLE
 	};
 };
 
