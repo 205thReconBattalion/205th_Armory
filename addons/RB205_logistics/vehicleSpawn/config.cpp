@@ -23,7 +23,8 @@ class CfgFunctions
             class createVehSpawnerLand {};
             class createVehSpawnerArmor {};
             class createVehSpawnerAir {};
-            class createVehSpawnerLNaval {};
+            class createVehSpawnerNaval {};
+            class createVehSpawnerAll {};
 		};
 	};
 };

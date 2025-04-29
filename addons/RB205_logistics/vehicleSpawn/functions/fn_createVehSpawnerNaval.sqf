@@ -1,8 +1,8 @@
 /* ----------------------------------------------------------------------------
-Function: RB205_VS_fnc_createVehSpawnerAir
+Function: RB205_VS_fnc_createVehSpawnerNaval
 
 Description:
-    creates a spawner for air vehicles
+    creates a spawner for naval vehicles
 
 Parameters:
     terminal   - terminal to which the addaction is added
@@ -20,37 +20,23 @@ terminal = _terminal;
 landingPad = _landingPad;
 
 // select which vehicles to be spawnable
-rb205_vehicles_spawnArray_air = [];
+rb205_vehicles_spawnArray_naval = [];
 {
     if (_x select 1) then {
-        rb205_vehicles_spawnArray_air append [_x select 0];
+        rb205_vehicles_spawnArray_naval append [_x select 0];
     };
 
 } forEach [
-    ["RB205_laat", true],
-    ["RB205_laat_turrets",true],
-    ["RB205_laat_lights",true],
-    ["RB205_laatc",true],
-    ["RB205_laatle",true],
+    ["RB205_catfish_mg", true],
+    ["RB205_catfish_at",true],
+    ["RB205_catfish_aa",true],
 
-    ["RB205_z95",true],
-    ["RB205_vwing",true],
-    ["RB205_v19",true],
-    ["RB205_arc170",true],
-    ["RB205_ywing",true],
-
-    ["RB205_nuclass",true],
-    ["RB205_rhoclass",true],
-    ["RB205_purrgil",true],
-    ["RB205_gozanti",true],
-
-    ["RB205_rhoclass_crate_transport",true],
-    ["RB205_rhoclass_crate_medical",true],
-    ["RB205_rhoclass_crate_barracks",true]
+    ["RB205_sdv",true],
+    ["RB205_seabob",true]
 ];
 
 // prepare array for interface function
-rb205_vehicles_spawnArray_air_applied = rb205_vehicles_spawnArray_air apply {
+rb205_vehicles_spawnArray_naval_applied = rb205_vehicles_spawnArray_naval apply {
     [
         [getText (configFile >> "CfgVehicles" >> _x >> "displayName")],
         [str getNumber (configFile >> "CfgVehicles" >> _x >> "ace_cargo_space")],
@@ -64,19 +50,19 @@ rb205_vehicles_spawnArray_air_applied = rb205_vehicles_spawnArray_air apply {
 
 // create interface (via fuction) that spawns selected vehicle
 terminal addaction [
-    "Fahrzeug Spawner (Sternenjäger)",
+    "Fahrzeug Spawner (Wasser)",
     {
         [
             [
-                rb205_vehicles_spawnArray_air_applied,
+                rb205_vehicles_spawnArray_naval_applied,
                 0,
                 false
             ],
-            "Spawner (Sternenjäger)",
+            "Spawner (Wasserfahrzeuge)",
             {
                 if (!_confirmed) exitWith {};
                 
-                _vehicle = (rb205_vehicles_spawnArray_air select _index);
+                _vehicle = (rb205_vehicles_spawnArray_naval select _index);
                 
                 _spawnPad = nil;
                 if (surfaceIsWater position landingPad)

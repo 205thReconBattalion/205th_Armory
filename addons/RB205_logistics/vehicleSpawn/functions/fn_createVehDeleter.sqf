@@ -21,7 +21,7 @@ landingPad = _landingPad;
 
 terminal addaction ["<t color='#6a0f0f'>Fahrzeug einlagern</t>",
     {
-        _allVehiclesInSpawnArea = nearestObjects [landingPad, ["Land", "Air"], 5];
+        _allVehiclesInSpawnArea = nearestObjects [landingPad, ["Land", "Air", "Ship"], 5];
         if ((count _allVehiclesInSpawnArea) >= 1) then {
             
             deleteVehicle (_allVehiclesInSpawnArea select 0);

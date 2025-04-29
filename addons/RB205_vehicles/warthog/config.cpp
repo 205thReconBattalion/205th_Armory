@@ -15,7 +15,7 @@ class cfgPatches
 			"RB205_WH_TT",
 			"RB205_WH_Repair",
 			"RB205_WH_MG",
-			"RB205_WH_Rocket",
+			"RB205_WH_AT",
 			"RB205_WH_AA"
 		};
 	};
@@ -244,7 +244,7 @@ class cfgVehicles
 			};
 		};
 	};
-	class RB205_WH_Rocket: OPTRE_M12A1_LRV
+	class RB205_WH_AT: OPTRE_M12A1_LRV
 	{
 		ACCESS_TRUE
 		displayName = "WTH/AT";
