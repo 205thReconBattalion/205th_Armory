@@ -29,8 +29,6 @@ class PointerSlot;
 class MuzzleSlot;
 class UnderBarrelSlot;
 
-class Mode_SemiAuto;
-
 class CfgWeapons
 {
 	class 3AS_DC15X_Base_F;
