@@ -9,10 +9,7 @@ class cfgPatches
 		};
 		requiredVersion = 1.0;
         author = "205th Recon Battalion";
-		units[] =
-		{
-			"RB205_GH_DC15X"
-		};
+		units[] = {};
 		weapons[] =
 		{
 			"RB205_DC15X",
