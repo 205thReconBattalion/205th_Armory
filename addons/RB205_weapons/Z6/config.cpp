@@ -19,39 +19,51 @@ class cfgPatches
 
 #include "\RB205_weapons\macros.hpp"
 
-class Mode_FullAuto;
+class WeaponSlotsInfo;
+class CowsSlot;
+class PointerSlot;
+class MuzzleSlot;
 
 class CfgWeapons
 {
-	class JLTS_Z6;
+	class LMG_Mk200_F;
+	class JLTS_Z6: LMG_Mk200_F
+	{
+		class manual;
+	};
 	class RB205_Z6: JLTS_Z6
 	{
+		baseWeapon = "RB205_Z6";
 		author = "205th Recon Battalion";
 		displayName = "$STR_205_Z6_DisplayName";
 		displayNameShort = "$STR_205_Z6_DisplayNameShort";
 		descriptionShort = "Rotationsblaster der GAR<br />Freigegeben für: Heavy";
 		picture = "\RB205_weapons\data\ui\z6.paa";
+		cursor = "RB205_CH_default";
 		mass = MASS_WP_HEAVY;
-		fireLightDiffuse[] = {0,0,1};
-		baseWeapon = "RB205_Z6";
 		magazines[] =
 		{
 			"RB205_RapidFire_Energy_Pack"
 		};
-		cursor = "RB205_CH_default";
-		JLTS_hasElectronics = 1;
-		JLTS_hasEMPProtection = 0;
-		JLTS_friedItem = "RB205_Z6_fried";
-		modes[] =
+		magazineWell[] = {};
+		fireLightDiffuse[] = {0,0,1};
+		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
-			"FullAuto"
-		};
-		class FullAuto: Mode_FullAuto
-		{
-			sounds[] =
+			class CowsSlot: CowsSlot
 			{
-				"StandardSound"
+				compatibleItems[] = {};
 			};
+			class PointerSlot: PointerSlot
+			{
+				compatibleItems[] = {};
+			};
+			class MuzzleSlot: MuzzleSlot
+			{
+				compatibleItems[] = {};
+			};
+		};
+		class manual: manual
+		{
 			class BaseSoundModeType;
 			class StandardSound: BaseSoundModeType
 			{
@@ -60,16 +72,11 @@ class CfgWeapons
 					"RB205_Z6_Shot_SoundSet"
 				};
 			};
-			displayname = "FullAuto";
-			reloadTime = 0.059999999;
-			dispersion = 0.005;//0.001
-			minRange = 0;
-			minRangeProbab = 0.89999998;
-			midRange = 15;
-			midRangeProbab = 0.69999999;
-			maxRange = 30;
-			maxRangeProbab = 0.1;
+			dispersion = 0.005;
 		};
+		JLTS_hasElectronics = 1;
+		JLTS_hasEMPProtection = 0;
+		JLTS_friedItem = "RB205_Z6_fried";
 	};
 	FRIED_WEAPON(RB205_Z6,"\RB205_weapons\data\ui\z6_fried.paa")
 };
