@@ -5,7 +5,7 @@ class cfgPatches
 		requiredAddons[]=
 		{
 			"RB205_weapons",
-			"JLTS_weapons_DC15X"
+			"3AS_Weapons_Republic_DC15X"
 		};
 		requiredVersion = 1.0;
         author = "205th Recon Battalion";
@@ -16,123 +16,146 @@ class cfgPatches
 		weapons[] =
 		{
 			"RB205_DC15X",
-			"RB205_DC15X_scoped",
-			"RB205_DC15X_Suppressor"
+			"RB205_optic_DC15X",
+			"RB205_muzzle_DC15X",
+			"RB205_bipod_DC15X"
 		};
 	};
 };
 
 #include "\RB205_weapons\macros.hpp"
 
-class Mode_SemiAuto;
-class Mode_Burst;
-class Mode_FullAuto;
-class SlotInfo;
-class CowsSlot;
-class MuzzleSlot;
-class PointerSlot;
-class UnderBarrelSlot;
 
 class WeaponSlotsInfo;
+class CowsSlot;
+class PointerSlot;
+class MuzzleSlot;
+class UnderBarrelSlot;
+
+class Mode_SemiAuto;
 
 class CfgWeapons
 {
-	class JLTS_DC15X;
-	class RB205_DC15X: JLTS_DC15X
+	class 3AS_DC15X_Base_F;
+	class 3AS_DC15X_F: 3AS_DC15X_Base_F
 	{
+		class Single;
+	};
+	class RB205_DC15X: 3AS_DC15X_F
+	{
+		baseWeapon = "RB205_DC15X";
 		author = "205th Recon Battalion";
 		displayName = "$STR_205_DC15X_DisplayName";
 		displayNameShort = "$STR_205_DC15X_DisplayNameShort";
 		descriptionShort = "Scharfschützengewehr der GAR<br />Freigegeben für: ARF";
-		picture = "\3AS\3AS_Weapons\Imperial\data\UI\3as_dlt19x.paa";
+		cursor = "RB205_CH_sniper";
 		mass = MASS_WP_RIFLE;
-		fireLightDiffuse[] = {0,0,1};
-		baseWeapon = "RB205_DC15X";
-		JLTS_hasElectronics = 1;
-		JLTS_hasEMPProtection = 0;
-		JLTS_friedItem = "RB205_DC15X_fried";
 		magazines[] =
 		{
 			"RB205_Overcharged_Energy_Pack"
 		};
-		cursor = "RB205_CH_sniper";
-		class Single: Mode_SemiAuto
-		{
-			sounds[] =
-			{
-				"StandardSound",
-				"SilencedSound"
-			};
-			class BaseSoundModeType;
-			class StandardSound: BaseSoundModeType
-			{
-				soundSetShot[] =
-				{
-					"RB205_DC15X_Shot_SoundSet"
-				};
-			};
-			class SilencedSound: BaseSoundModeType
-			{
-				soundSetShot[] =
-				{
-					"RB205_Suppressed_DC15X_Shot_SoundSet"
-				};
-			};
-			reloadTime = 0.5;
-			recoil = "recoil_single_mx";
-			recoilProne = "recoil_single_prone_mx";
-			dispersion = 0;
-			minRange = 2;
-			minRangeProbab = 0.5;
-			midRange = 250;
-			midRangeProbab = 0.69999999;
-			maxRange = 450;
-			maxRangeProbab = 0.30000001;
-		};
+		magazineWell[] = {};
+		fireLightDiffuse[] = {0,0,1};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
-			class MuzzleSlot: SlotInfo
-			{
-				compatibleItems[] =
-				{
-					"RB205_DC15X_Suppressor"
-				};
-			};
 			class CowsSlot: CowsSlot
 			{
 				compatibleItems[] =
 				{
-					"jlts_dc15x_scope"
+					"RB205_optic_DC15X"
 				};
+				iconPicture = "";
 			};
-			class UnderBarrelSlot
+			class PointerSlot: PointerSlot
 			{
-				linkProxy = "\a3\data_f_mark\Proxies\Weapon_Slots\UNDERBARREL";
 				compatibleItems[] = {};
 			};
-			mass = 130;
+			class MuzzleSlot: MuzzleSlot
+			{
+				compatibleItems[] =
+				{
+					"RB205_muzzle_DC15X"
+				};
+				iconPicture = "";
+			};
+			class UnderBarrelSlot: UnderBarrelSlot
+			{
+				compatibleItems[] =
+				{
+					"RB205_bipod_DC15X"
+				};
+				iconPicture = "";
+			};
 		};
-	};
-	FRIED_WEAPON(RB205_DC15X,"\RB205_weapons\data\ui\dc15x_fried.paa")
-	class RB205_DC15X_scoped: RB205_DC15X
-	{
 		class LinkedItems
 		{
 			class LinkedItemsOptic
 			{
 				slot = "CowsSlot";
-				item = "JLTS_DC15X_scope";
+				item = "RB205_optic_DC15X";
+			};
+			class LinkedItemsUnderBarrel
+			{
+				slot = "UnderBarrelSlot";
+				item = "RB205_bipod_DC15X";
+			};
+		};
+		class Single: Single
+		{
+			class BaseSoundModeType;
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[] = { "RB205_DC15X_Shot_SoundSet" };
+			};
+			class SilencedSound: BaseSoundModeType
+			{
+				soundSetShot[] = { "RB205_Suppressed_DC15X_Shot_SoundSet" };
+			};
+			dispersion = 0;
+		};
+		JLTS_hasElectronics = 1;
+		JLTS_hasEMPProtection = 0;
+		JLTS_friedItem = "RB205_DC15X_fried";
+	};
+	FRIED_WEAPON(RB205_DC15X,"\RB205_weapons\data\ui\dc15x_fried.paa")
+
+	class ItemCore;
+	class InventoryOpticsItem_Base_F;
+	class 3AS_optic_DC15X_F: ItemCore
+	{
+		class ItemInfo: InventoryOpticsItem_Base_F
+		{
+			class OpticsModes
+			{
+				class Snip;
+			};
+		};
+	};
+	class RB205_optic_DC15X: 3AS_optic_DC15X_F
+	{
+		author = "205th Recon Battalion";
+		displayName = "$STR_205_OPTIC_DC15X_DisplayName";
+		descriptionShort = "Vergrößerung: 6x-25x";
+		class ItemInfo: ItemInfo
+		{
+			mass = MASS_ACC_OPTIC;
+			class OpticsModes: OpticsModes
+			{
+				class Snip: Snip
+				{
+					visionMode[] = {"Normal","NVG","TI"};
+					discretefov[] = {0.042,0.02,0.01};
+				};
 			};
 		};
 	};
 
 	class muzzle_snds_338_black;
 	class InventoryMuzzleItem_Base_F;
-	class RB205_DC15X_Suppressor: muzzle_snds_338_black
+	class RB205_muzzle_DC15X: muzzle_snds_338_black
 	{
 		author = "205th Recon Battalion";
-		scope = 2;
-		displayName = "$STR_205_SUPPRESSOR_DC15X_DisplayName";
+		displayName = "$STR_205_MUZZLE_DC15X_DisplayName";
 		picture = "\a3\Weapons_F_Mark\Data\UI\icon_muzzle_snds_338_black_ca.paa";
 		model = "\A3\Weapons_F\Acc\acca_snds_338_black_F";
 		class ItemInfo: InventoryMuzzleItem_Base_F
@@ -171,31 +194,20 @@ class CfgWeapons
 			};
 		};
 	};
-};
-class CfgVehicles
-{
-	class JLTS_GH_DC15X;
-
-	class RB205_GH_DC15X: JLTS_GH_DC15X
+	
+	class 3AS_bipod_DC15X_F: ItemCore
+	{
+		class ItemInfo;
+	};
+	class RB205_bipod_DC15X: 3AS_bipod_DC15X_F
 	{
 		author = "205th Recon Battalion";
-		displayName = "[205] DC-15X Sniper Rifle";
-		scope = 2;
-		class TransportWeapons
+		displayName = "$STR_205_BIPOD_DC15X_DisplayName";
+		descriptionShort = "";
+		picture = "\a3\Weapons_F_Mark\Data\UI\icon_bipod_02_F_blk_ca.paa";
+		class ItemInfo: ItemInfo
 		{
-			class JLTS_DC15X_scoped
-			{
-				count = 1;
-				weapon = "RB205_DC15X_scoped";
-			};
-		};
-		class TransportMagazines
-		{
-			class JLTS_DC15X_mag
-			{
-				count = 1;
-				magazine = "RB205_DC15X_mag";
-			};
+			mass = MASS_ACC_BIPOD;
 		};
 	};
 };

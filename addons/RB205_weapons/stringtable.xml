@@ -496,9 +496,17 @@
             <English>[205] DC-15L Bipod</English>
             <German>[205] DC-15L Zweibein</German>
         </Key>
-        <Key ID="STR_205_SUPPRESSOR_DC15X_DisplayName">
+        <Key ID="STR_205_OPTIC_DC15X_DisplayName">
+            <English>[205] DC-15X Scope</English>
+            <German>[205] DC-15X Zielfernrohr</German>
+        </Key>
+        <Key ID="STR_205_MUZZLE_DC15X_DisplayName">
             <English>[205] DC-15X Suppressor</English>
             <German>[205] DC-15X Schalldämpfer</German>
+        </Key>
+        <Key ID="STR_205_BIPOD_DC15X_DisplayName">
+            <English>[205] DC-15X Bipod</English>
+            <German>[205] DC-15X Zweibein</German>
         </Key>
         <Key ID="STR_205_OPTIC_V38X_DisplayName">
             <English>[205] Valken-38X Scope</English>
