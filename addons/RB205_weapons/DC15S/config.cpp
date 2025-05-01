@@ -13,6 +13,7 @@ class cfgPatches
 		weapons[]=
 		{
 			"RB205_DC15S",
+			"RB205_DC15S_GL",
 			"RB205_DC15S_JLTS",
 			"RB205_DC15S_JLTS_shield"
 		};
@@ -99,6 +100,106 @@ class CfgWeapons
 	};
 	FRIED_WEAPON(RB205_DC15S,"\RB205_weapons\data\ui\dc15s_fried.paa")
 
+	class 3AS_DC15S_GL: 3AS_DC15S_Base_F
+	{
+		class Single;
+		class FullAuto;
+		class GL_1GL_F;
+	};
+	class RB205_DC15S_GL: 3AS_DC15S_GL
+	{
+		baseWeapon = "RB205_DC15S_GL";
+		author = "205th Recon Battalion";
+		displayName = "$STR_205_DC15S_GL_DisplayName";
+		displayNameShort = "$STR_205_DC15S_GL_DisplayNameShort";
+		descriptionShort = "Standard-Blasterkarabiner der GAR<br />Freigegeben für: Grenadier";
+		cursor = "RB205_CH_default";
+		mass = MASS_WP_CARBINE_GL;
+		magazines[] =
+		{
+			"RB205_Standard_Energy_Pack"
+		};
+		magazineWell[] = {};
+		reloadAction = "GestureReload_JLTS_DC15S";
+		reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\Reload_Mx",1,1,10};
+		fireLightDiffuse[] = {0,0,1};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class CowsSlot: CowsSlot
+			{
+				compatibleItems[] = {};
+			};
+			class PointerSlot: PointerSlot
+			{
+				compatibleItems[] = {};
+			};
+			class MuzzleSlot: MuzzleSlot
+			{
+				compatibleItems[] = {};
+			};
+		};
+		class Single: Single
+		{
+			class BaseSoundModeType;
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[] = { "RB205_DC15S_Shot_SoundSet" };
+			};
+			class SilencedSound: BaseSoundModeType
+			{
+				soundSetShot[] = { "RB205_DC15S_Shot_SoundSet" };
+			};
+		};
+		class FullAuto: FullAuto
+		{
+			class BaseSoundModeType;
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[] = { "RB205_DC15S_Shot_SoundSet" };
+			};
+			class SilencedSound: BaseSoundModeType
+			{
+				soundSetShot[] = { "RB205_DC15S_Shot_SoundSet" };
+			};
+		};
+		class GL_1GL_F: GL_1GL_F
+		{
+			displayName = "DC-15S (UGL)";
+			magazines[] =
+			{
+				"RB205_ugl_he"
+			};
+			magazineWell[] =
+			{
+				"RB205_ugl_1rnd"
+			};
+			class Single: Mode_SemiAuto
+			{
+				sounds[] = {"StandardSound"};
+				class BaseSoundModeType;
+				class StandardSound: BaseSoundModeType
+				{
+					soundSetShot[] =
+					{
+						"RB205_UGL_Shot_SoundSet"
+					};
+				};
+				recoil = "M240Recoil";
+				recoilProne = "M240Recoil";
+				maxRange = 400;
+				maxRangeProbab = 0.05;
+				midRange = 200;
+				midRangeProbab = 0.7;
+				minRange = 30;
+				minRangeProbab = 0.1;
+			};
+		};
+		JLTS_hasElectronics = 1;
+		JLTS_hasEMPProtection = 0;
+		JLTS_friedItem = "RB205_DC15S_fried";
+	};
+	FRIED_WEAPON(RB205_DC15S_GL,"\RB205_weapons\data\ui\dc15s_fried.paa")
+
 
 
 	class Rifle_Base_F;
@@ -138,7 +239,6 @@ class CfgWeapons
 		cursor = "RB205_CH_default";
 		magazineWell[] = {};
 		muzzles[] = {"this"};
-		baseWeapon = "RB205_DC15S_JLTS";
 		JLTS_hasElectronics = 1;
 		JLTS_hasEMPProtection = 0;
 		JLTS_friedItem = "RB205_DC15S_JLTS_fried";
@@ -200,6 +300,7 @@ class CfgWeapons
 	};
 	class RB205_DC15S_JLTS_shield: JLTS_DC15S_shield
 	{
+		baseWeapon = "RB205_DC15S_JLTS_shield";
 		author = "205th Recon Battalion";
 		displayName = "$STR_205_DC15S_JLTS_shield_DisplayName";
 		displayNameShort = "$STR_205_DC15S_DisplayNameShort";
@@ -213,7 +314,6 @@ class CfgWeapons
 		cursor = "RB205_CH_default";
 		magazineWell[] = {};
 		muzzles[] = {"this"};
-		baseWeapon = "RB205_DC15S_JLTS_shield";
 		JLTS_hasElectronics = 1;
 		JLTS_hasEMPProtection = 0;
 		JLTS_friedItem = "RB205_DC15S_JLTS_shield_fried";
