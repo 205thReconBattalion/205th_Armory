@@ -485,8 +485,12 @@
 <!--displayName attachments etc.-->
     </Package>
         <Key ID="STR_205_OPTIC_DC15L_DisplayName">
-            <English>[205] DC-15L Optic</English>
-            <German>[205] DC-15L Visier</German>
+            <English>[205] DC-15L Scope</English>
+            <German>[205] DC-15L Zielfernrohr</German>
+        </Key>
+        <Key ID="STR_205_BIPOD_DC15L_DisplayName">
+            <English>[205] DC-15L Bipod</English>
+            <German>[205] DC-15L Zweibein</German>
         </Key>
         <Key ID="STR_205_SUPPRESSOR_DC15X_DisplayName">
             <English>[205] DC-15X Suppressor</English>

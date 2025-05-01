@@ -5,7 +5,7 @@ class cfgPatches
 		requiredAddons[] =
 		{
 			"RB205_weapons",
-			"3AS_Weapons_DC15L"
+			"3AS_Weapons_Republic_DC15L"
 		};
 		requiredVersion = 1.0;
         author = "205th Recon Battalion";
@@ -13,164 +13,105 @@ class cfgPatches
 		weapons[] =
 		{
 			"RB205_DC15L",
-			"RB205_Optic_DC15L"
+			"RB205_optic_DC15L",
+			"RB205_bipod_DC15L"
 		};
 	};
 };
 
 #include "\RB205_weapons\macros.hpp"
 
-class Mode_SemiAuto;
-class Mode_Burst;
-class Mode_FullAuto;
-class SlotInfo;
-class CowsSlot;
-class MuzzleSlot;
-class PointerSlot;
-class UnderBarrelSlot;
 class WeaponSlotsInfo;
+class CowsSlot;
+class PointerSlot;
+class MuzzleSlot;
+class UnderBarrelSlot;
 
 class CfgWeapons
 {
-	class 3AS_DC15L_F;
+	class 3AS_DC15L_Base_F;
+	class 3AS_DC15L_F: 3AS_DC15L_Base_F
+	{
+		class FullAuto;
+	};
 	class RB205_DC15L: 3AS_DC15L_F
 	{
+		baseWeapon = "RB205_DC15L";
 		author = "205th Recon Battalion";
 		displayName = "$STR_205_DC15L_DisplayName";
 		displayNameShort = "$STR_205_DC15L_DisplayNameShort";
 		descriptionShort = "Blastergewehr der GAR<br />Freigegeben für: Heavy";
-		picture = "\3AS\3AS_Weapons\DC15L\Data\UI\3as_dc15l.paa";
+		cursor = "RB205_CH_default";
 		mass = MASS_WP_RIFLE;
-		fireLightDiffuse[] = {0,0,1};
 		magazines[] =
 		{
 			"RB205_Heavy_Energy_Pack",
 			"RB205_Standard_Energy_Pack"
 		};
-		cursor = "RB205_CH_default";
 		magazineWell[] = {};
-		JLTS_hasElectronics = 1;
-		JLTS_hasEMPProtection = 0;
-		JLTS_friedItem = "RB205_DC15L_fried";
-		modes[] =
-		{
-			"FullAuto"
-		};
-		class FullAuto: Mode_FullAuto
-		{
-			sounds[] =
-			{
-				"StandardSound"
-			};
-			class BaseSoundModeType;
-			class StandardSound: BaseSoundModeType
-			{
-				soundSetShot[] =
-				{
-					"RB205_DC15L_Shot_SoundSet"
-				};
-			};
-			reloadTime = 0.1;
-			dispersion = 0.00133;
-			minRange = 0;
-			minRangeProbab = 0.89999998;
-			midRange = 15;
-			midRangeProbab = 0.69999999;
-			maxRange = 30;
-			maxRangeProbab = 0.1;
-			soundContinuous = 0;
-			soundBurst = 0;
-		};
+		reloadAction = "GestureReload_JLTS_DC15A";
+		reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\Reload_Mx",1,1,10};
+		fireLightDiffuse[] = {0,0,1};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			class CowsSlot: CowsSlot
 			{
-				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
-				compatibleItems[]  =
+				compatibleItems[] =
 				{
-					"RB205_Optic_DC15L"
+					"RB205_optic_DC15L"
 				};
+				iconPicture = "";
 			};
 			class PointerSlot: PointerSlot
 			{
-				linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
-				compatibleItems[] =
-				{
-					"acc_flashlight",
-					"acc_pointer_IR"
-				};
+				compatibleItems[] = {};
+			};
+			class MuzzleSlot: MuzzleSlot
+			{
+				compatibleItems[] = {};
 			};
 			class UnderBarrelSlot: UnderBarrelSlot
 			{
-				linkProxy = "\A3\data_f_mark\proxies\weapon_slots\UNDERBARREL";
 				compatibleItems[] =
 				{
-					"3AS_Bipod_DC15L_f"
+					"RB205_bipod_DC15L"
 				};
+				iconPicture = "";
 			};
 		};
+		class FullAuto: FullAuto
+		{
+			class BaseSoundModeType;
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[] = { "RB205_DC15S_Shot_SoundSet" };
+			};
+			class SilencedSound: BaseSoundModeType
+			{
+				soundSetShot[] = { "RB205_DC15S_Shot_SoundSet" };
+			};
+		};
+		JLTS_hasElectronics = 1;
+		JLTS_hasEMPProtection = 0;
+		JLTS_friedItem = "RB205_DC15L_fried";
 	};
 	FRIED_WEAPON(RB205_DC15L,"\RB205_weapons\data\ui\dc15l_fried.paa")
 
-	class 3AS_Optic_DC15L;
-	class InventoryOpticsItem_Base_F;
-
-	class RB205_Optic_DC15L: 3AS_Optic_DC15L
-	{
+	class 3AS_optic_DC15L_F;
+	class RB205_optic_DC15L : 3AS_optic_DC15L_F
+	{	
 		author = "205th Recon Battalion";
 		displayName = "$STR_205_OPTIC_DC15L_DisplayName";
-		class ItemInfo: InventoryOpticsItem_Base_F
-		{
-			mass = 7;
-			modelOptics = "\3AS\3AS_Weapons\Data\3AS_2D_Optic.p3d";
-			class OpticsModes
-			{
-				class RB205_DC15L_Optic
-				{
-					opticsID = 1;
-					useModelOptics = 1;
-					opticsPPEffects[] =
-					{
-						"OpticsCHAbera1",
-						"OpticsBlur1"
-					};
-					opticsZoomMin = 0.122173;
-					opticsZoomMax = 0.122173;
-					opticsZoomInit = 0.122173;
-					distanceZoomMin = 100;
-					distanceZoomMax = 100;
-					nFovLimit = 0.07;
-					discreteFov[] = {0.122173};
-					discreteInitIndex = 0;
-					modelOptics[] =
-					{
-						"\3AS\3AS_Weapons\Data\3AS_2D_Optic.p3d"
-					};
-					memoryPointCamera = "opticView";
-					visionMode[] =
-					{
-						"Normal",
-						"NVG"
-					};
-					opticsFlare = 1;
-					opticsDisablePeripherialVision = 1;
-					cameraDir = "";
-				};
-				class IronOnTopOfMyOptics: RB205_DC15L_Optic
-				{
-					opticsID = 2;
-					useModelOptics = 0;
-					opticsFlare = 0;
-					opticsDisablePeripherialVision = 0;
-					opticsZoomMin = 0.375;
-					opticsZoomMax = 1.1;
-					opticsZoomInit = 0.75;
-					memoryPointCamera = "eye";
-					visionMode[] = {};
-					discretefov[] = {};
-				};
-			};
-		};
+		descriptionShort = "Vergrößerung: 1x-3x";
+	};
+
+	class 3AS_bipod_DC15L_F;
+	class RB205_bipod_DC15L : 3AS_bipod_DC15L_F
+	{
+		author = "205th Recon Battalion";
+		displayName = "$STR_205_BIPOD_DC15L_DisplayName";
+		descriptionShort = "";
+		picture = "\a3\Weapons_F_Mark\Data\UI\icon_bipod_02_F_blk_ca.paa";
 	};
 };
 
