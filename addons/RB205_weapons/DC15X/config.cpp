@@ -150,48 +150,19 @@ class CfgWeapons
 		};
 	};
 
-	class muzzle_snds_338_black;
-	class InventoryMuzzleItem_Base_F;
+	class muzzle_snds_338_black: ItemCore
+	{
+		class ItemInfo;
+	};
 	class RB205_muzzle_DC15X: muzzle_snds_338_black
 	{
 		author = "205th Recon Battalion";
 		displayName = "$STR_205_MUZZLE_DC15X_DisplayName";
 		picture = "\a3\Weapons_F_Mark\Data\UI\icon_muzzle_snds_338_black_ca.paa";
-		model = "\A3\Weapons_F\Acc\acca_snds_338_black_F";
-		class ItemInfo: InventoryMuzzleItem_Base_F
+		model = "\3AS\3AS_Weapons\Republic\ACC\3AS_acca_DC15LE_Muzzle_F";
+		class ItemInfo: ItemInfo
 		{
-			soundTypeIndex = 1;
-			class MagazineCoef
-			{
-				initSpeed = 0.67000002;
-			};
-			class AmmoCoef
-			{
-				hit = 1;
-				visibleFire = 0.1;
-				audibleFire = 0.1;
-				visibleFireTime = 1;
-				audibleFireTime = 1;
-				cost = 1;
-				typicalSpeed = 1;
-				airFriction = 1;
-			};
-			muzzleEnd = "zaslehPoint";
-			alternativeFire = "Zasleh2";
-			class MuzzleCoef
-			{
-				dispersionCoef = "1.0f";
-				artilleryDispersionCoef = "1.0f";
-				fireLightCoef = "0.1f";
-				recoilCoef = "1.0f";
-				recoilProneCoef = "1.0f";
-				minRangeCoef = "1.0f";
-				minRangeProbabCoef = "1.0f";
-				midRangeCoef = "1.0f";
-				midRangeProbabCoef = "1.0f";
-				maxRangeCoef = "1.0f";
-				maxRangeProbabCoef = "1.0f";
-			};
+			mass = MASS_ACC_MUZZLE;
 		};
 	};
 	

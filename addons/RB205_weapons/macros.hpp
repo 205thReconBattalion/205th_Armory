@@ -7,6 +7,7 @@
 #define MASS_WP_PISTOL		20
 
 #define MASS_ACC_OPTIC		5
+#define MASS_ACC_MUZZLE		5
 #define MASS_ACC_BIPOD		5
 
 /* EMP COMPAT */
