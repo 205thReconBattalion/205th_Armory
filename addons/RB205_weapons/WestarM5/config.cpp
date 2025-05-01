@@ -70,6 +70,14 @@ class CfgWeapons
 				compatibleItems[] = {};
 			};
 		};
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "RB205_optic_WM5";
+			};
+		};
 		modes[] =
 		{
 			"Single",
@@ -156,7 +164,7 @@ class CfgWeapons
 	{
 		author = "205th Recon Battalion";
 		displayName = "$STR_205_OPTIC_WM5_DisplayName";
-		descriptionShort = "Vergrößerung: 4x-12x";
+		descriptionShort = "Vergrößerung: 2x-8x";
 		class ItemInfo: ItemInfo
 		{
 			mass = MASS_ACC_OPTIC;
@@ -164,10 +172,11 @@ class CfgWeapons
 			{
 				class 3AS_Scope_Optics: 3AS_Scope_Optics
 				{
+					modelOptics[] = {"\3AS\3AS_Weapons\Republic\ACC\3AS_reticle_DC15LE_F"};
 					visionMode[] = {"Normal","NVG","TI"};
 					discreteFov[] = {0.125,0.05,0.03125};
 					opticsZoomInit = "0.25/2";
-					opticsZoomMax = "0.25";
+					opticsZoomMax = "0.25/2";
 					opticsZoomMin = "0.25/8";
 				};
 			};
