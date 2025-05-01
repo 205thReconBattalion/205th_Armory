@@ -12,167 +12,148 @@ class cfgPatches
 		units[] = {};
 		weapons[] =
 		{
-			"RB205_Valken38X"
+			"RB205_Valken38X",
+			"RB205_optic_VK38X",
+			"RB205_bipod_VK38X"
 		};
 	};
 };
 
 #include "\RB205_weapons\macros.hpp"
 
-class Mode_SemiAuto;
-class Mode_Burst;
-class Mode_FullAuto;
-class SlotInfo;
-class CowsSlot;
-class MuzzleSlot;
-class PointerSlot;
-class UnderBarrelSlot;
+
 class WeaponSlotsInfo;
+class CowsSlot;
+class PointerSlot;
+class MuzzleSlot;
+class UnderBarrelSlot;
+
+class Mode_SemiAuto;
 
 class CfgWeapons
 {
-	class 3AS_Valken38X_F;
-	class 3AS_Optic_VK38X;
-
-	class BaseSoundModeType;
-	class InventoryOpticsItem_Base_F;
-
+	class 3AS_Valken38X_Base_F;
+	class 3AS_Valken38X_F: 3AS_Valken38X_Base_F
+	{
+		class Single;
+	};
 	class RB205_Valken38X: 3AS_Valken38X_F
 	{
+		baseWeapon = "RB205_Valken38X";
 		author = "205th Recon Battalion";
 		displayName = "$STR_205_V38X_DisplayName";
 		displayNameShort = "$STR_205_V38X_DisplayNameShort";
 		descriptionShort = "Blastergewehr der GAR<br />Freigegeben für: Marksman";
-		picture = "\3AS\3AS_Weapons\Valken38X\Data\UI\3as_valken.paa";
+		cursor = "RB205_CH_sniper";
 		mass = MASS_WP_RIFLE;
-		fireLightDiffuse[] = {0,0,1};
 		magazines[] =
 		{
 			"RB205_Overcharged_Energy_Pack"
 		};
-		cursor = "RB205_CH_sniper";
 		magazineWell[] = {};
-		JLTS_hasElectronics = 1;
-		JLTS_hasEMPProtection = 0;
-		JLTS_friedItem = "RB205_Valken38X_fried";
-		modes[] =
-		{
-			"Single"
-		};
+		fireLightDiffuse[] = {0,0,1};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			class CowsSlot: CowsSlot
 			{
-				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
 				compatibleItems[] =
 				{
-					"RB205_Optic_VK38X"
+					"RB205_optic_VK38X"
 				};
+				iconPicture = "";
 			};
 			class PointerSlot: PointerSlot
 			{
-				linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
-				compatibleItems[] =
-				{
-					"acc_flashlight",
-					"acc_pointer_IR"
-				};
+				compatibleItems[] = {};
+			};
+			class MuzzleSlot: MuzzleSlot
+			{
+				compatibleItems[] = {};
 			};
 			class UnderBarrelSlot: UnderBarrelSlot
 			{
-				linkProxy = "\A3\data_f_mark\proxies\weapon_slots\UNDERBARREL";
 				compatibleItems[] =
 				{
-					"3AS_Bipod_VK38X_f"
+					"RB205_bipod_VK38X"
 				};
+				iconPicture = "";
 			};
 		};
-		class Single: Mode_SemiAuto
+		class LinkedItems
 		{
-			sounds[]=
+			class LinkedItemsOptic
 			{
-				"StandardSound"
+				slot = "CowsSlot";
+				item = "RB205_optic_VK38X";
 			};
+			class LinkedItemsUnderBarrel
+			{
+				slot = "UnderBarrelSlot";
+				item = "RB205_bipod_VK38X";
+			};
+		};
+		class Single: Single
+		{
 			class BaseSoundModeType;
 			class StandardSound: BaseSoundModeType
 			{
-				soundSetShot[]=
-				{
-					"RB205_V38X_Shot_SoundSet"
-				};
+				soundSetShot[] = { "RB205_V38X_Shot_SoundSet" };
 			};
-			reloadTime = 0.2;
+			class SilencedSound: BaseSoundModeType
+			{
+				soundSetShot[] = { "RB205_V38X_Shot_SoundSet" };
+			};
 			dispersion = 0;
-			minRange = 2;
-			minRangeProbab = 0.5;
-			midRange = 200;
-			midRangeProbab = 0.69999999;
-			maxRange = 400;
-			maxRangeProbab = 0.30000001;
-			soundContinuous = 0;
-			soundBurst = 0;
 		};
+		JLTS_hasElectronics = 1;
+		JLTS_hasEMPProtection = 0;
+		JLTS_friedItem = "RB205_Valken38X_fried";
 	};
 	FRIED_WEAPON(RB205_Valken38X,"\RB205_weapons\data\ui\v38x_fried.paa")
 
-	class RB205_Optic_VK38X: 3AS_Optic_VK38X
+	class ItemCore;
+	class InventoryOpticsItem_Base_F;
+	class 3AS_optic_VK38X_F: ItemCore
+	{
+		class ItemInfo: InventoryOpticsItem_Base_F
+		{
+			class OpticsModes
+			{
+				class Snip;
+			};
+		};
+	};
+	class RB205_optic_VK38X: 3AS_optic_VK38X_F
 	{
 		author = "205th Recon Battalion";
 		displayName = "$STR_205_OPTIC_V38X_DisplayName";
-		class ItemInfo: InventoryOpticsItem_Base_F
+		descriptionShort = "Vergrößerung: 4x-12x";
+		class ItemInfo: ItemInfo
 		{
-			mass = 7;
-			modelOptics = "\3AS\3AS_Weapons\Data\3AS_2D_Optic.p3d";
-			class OpticsModes
+			mass = MASS_ACC_OPTIC;
+			class OpticsModes: OpticsModes
 			{
-				class RB205_VK38X_Optic
+				class Snip: Snip
 				{
-					opticsID = 1;
-					useModelOptics = 1;
-					opticsPPEffects[] =
-					{
-						"OpticsCHAbera1",
-						"OpticsBlur1"
-					};
-					opticsZoomMin = 0.01;
-					opticsZoomMax = 0.0625;
-					opticsZoomInit = 0.0625;
-					discreteDistance[] = {100,300,400,500,600,700,800,900,1000};
-					discreteDistanceInitIndex = 1;
-					distanceZoomMin = 100;
-					distanceZoomMax = 1000;
-					discreteFov[] = {0.125,0.0625,0.025,0.01};
-					discreteInitIndex = 0;
-					modelOptics[] =
-					{
-						"\3AS\3AS_Weapons\Data\3AS_2D_Optic.p3d"
-					};
-					memoryPointCamera = "opticView";
-					visionMode[] =
-					{
-						"Normal",
-						"NVG",
-						"TI"
-					};
-					thermalMode[] = {0,1};
-					opticsFlare = 1;
-					opticsDisablePeripherialVision = 1;
-					cameraDir = "";
-				};
-				class IronOnTopOfMyOptics: RB205_VK38X_Optic
-				{
-					opticsID = 2;
-					useModelOptics = 0;
-					opticsFlare = 0;
-					opticsDisablePeripherialVision = 0;
-					opticsZoomMin = 0.375;
-					opticsZoomMax = 1.1;
-					opticsZoomInit = 0.75;
-					memoryPointCamera = "eye";
-					visionMode[] = {};
-					discretefov[] = {};
+					visionMode[] = {"Normal","NVG","TI"};
 				};
 			};
+		};
+	};
+
+	class 3AS_Bipod_VK38X_f: ItemCore
+	{
+		class ItemInfo;
+	};
+	class RB205_bipod_VK38X: 3AS_Bipod_VK38X_f
+	{
+		author = "205th Recon Battalion";
+		displayName = "$STR_205_BIPOD_V38X_DisplayName";
+		descriptionShort = "";
+		picture = "\a3\Weapons_F_Mark\Data\UI\icon_bipod_02_F_blk_ca.paa";
+		class ItemInfo: ItemInfo
+		{
+			mass = MASS_ACC_BIPOD;
 		};
 	};
 };

@@ -501,8 +501,12 @@
             <German>[205] DC-15X Schalldämpfer</German>
         </Key>
         <Key ID="STR_205_OPTIC_V38X_DisplayName">
-            <English>[205] Valken-38X Optic</English>
-            <German>[205] Valken-38X Visier</German>
+            <English>[205] Valken-38X Scope</English>
+            <German>[205] Valken-38X Zielfernrohr</German>
+        </Key>
+        <Key ID="STR_205_BIPOD_V38X_DisplayName">
+            <English>[205] Valken-38X Bipod</English>
+            <German>[205] Valken-38X Zweibein</German>
         </Key>
         <Key ID="STR_205_OPTIC_DC17M_DisplayName">
             <English>[205] DC-17M Optic</English>
