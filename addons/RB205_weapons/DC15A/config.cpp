@@ -5,7 +5,7 @@ class cfgPatches
 		requiredAddons[] =
 		{
 			"RB205_weapons",
-			"3AS_Weapons_DC15A",
+			"3AS_Weapons_Republic_DC15A",
 			"JLTS_weapons_DC15A"
 		};
 		requiredVersion = 1.0;
@@ -25,181 +25,121 @@ class cfgPatches
 #include "\RB205_weapons\macros.hpp"
 
 class WeaponSlotsInfo;
-class MuzzleSlot;
 class CowsSlot;
 class PointerSlot;
+class MuzzleSlot;
+
 class Mode_SemiAuto;
 
 class CfgWeapons
 {
-	class 3AS_DC15A_F;
+	class 3AS_DC15A_Base_F;
+	class 3AS_DC15A_F: 3AS_DC15A_Base_F
+	{
+		class Single;
+	};
 	class RB205_DC15A: 3AS_DC15A_F
 	{
+		baseWeapon = "RB205_DC15A";
 		author = "205th Recon Battalion";
 		displayName = "$STR_205_DC15A_DisplayName";
 		displayNameShort = "$STR_205_DC15A_DisplayNameShort";
 		descriptionShort = "Standard-Blastergewehr der GAR<br />Freigegeben für: Alle";
-		picture = "\3AS\3AS_Weapons\DC15A\Data\UI\3as_dc15a.paa";
+		cursor = "RB205_CH_default";
 		mass = MASS_WP_RIFLE;
-		fireLightDiffuse[] = {0,0,1};
 		magazines[] =
 		{
 			"RB205_Standard_Energy_Pack"
 		};
-		cursor = "RB205_CH_default";
 		magazineWell[] = {};
-		JLTS_hasElectronics = 1;
-		JLTS_hasEMPProtection = 0;
-		JLTS_friedItem = "RB205_DC15A_fried";
-		modes[] =
-		{
-			"Single"
-		};
-		muzzles[] =
-		{
-			"this"
-		};
-		class Single: Mode_SemiAuto
-		{
-			sounds[] =
-			{
-				"StandardSound"
-			};
-			class BaseSoundModeType;
-			class StandardSound: BaseSoundModeType
-			{
-				soundSetShot[] =
-				{
-					"RB205_DC15A_Shot_SoundSet"
-				};
-			};
-			reloadTime = 0.1;
-			dispersion = 0.00066;
-			minRange = 2;
-			minRangeProbab = 0.5;
-			midRange = 200;
-			midRangeProbab = 0.69999999;
-			maxRange = 400;
-			maxRangeProbab = 0.30000001;
-			soundContinuous = 0;
-			soundBurst = 0;
-		};
-		class OpticsModes
-		{
-			class Ironsights
-			{
-				opticsID = 1;
-				opticsZoomInit = 0.75;
-				opticsZoomMax = 1.1;
-				opticsZoomMin = 0.25;
-				distanceZoomMax = 100;
-				distanceZoomMin = 100;
-				memoryPointCamera = "eye";
-				opticsDisablePeripherialVision = 0.67;
-				opticsFlare = "true";
-				opticsPPEffects[] = {"OpticsCHAbera5","OpticsBlur5"};
-				useModelOptics = 0;
-				visionMode[] = {};
-			};
-			class Scopes: Ironsights
-			{
-				opticsID = 2;
-				opticsZoomInit = 0.125;
-				opticsZoomMax = 0.125;
-				opticsZoomMin = 0.0625;
-				distanceZoomMax = 100;
-				distanceZoomMin = 100;
-				cameraDir = "";
-				memoryPointCamera = "opticView";
-				opticsDisablePeripherialVision = 0.67;
-				opticsFlare = "true";
-				opticsPPEffects[] = {"OpticsCHAbera5","OpticsBlur5"};
-				useModelOptics = 1;
-				visionMode[] = {"Normal","NVG"};
-			};
-		};
+		reloadAction = "GestureReload_JLTS_DC15A";
+		reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\Reload_Mx",1,1,10};
+		fireLightDiffuse[] = {0,0,1};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
-			class MuzzleSlot: MuzzleSlot
-			{
-				linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
-				compatibleItems[] = {};
-			};
 			class CowsSlot: CowsSlot
 			{
-				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
 				compatibleItems[] = {};
 			};
 			class PointerSlot: PointerSlot
 			{
-				linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
-				compatibleItems[] =
-				{
-					"acc_flashlight",
-					"acc_pointer_IR"
-				};
+				compatibleItems[] = {};
+			};
+			class MuzzleSlot: MuzzleSlot
+			{
+				compatibleItems[] = {};
 			};
 		};
+		class Single: Single
+		{
+			class BaseSoundModeType;
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[] = { "RB205_DC15A_Shot_SoundSet" };
+			};
+			class SilencedSound: BaseSoundModeType
+			{
+				soundSetShot[] = { "RB205_DC15A_Shot_SoundSet" };
+			};
+		};
+		JLTS_hasElectronics = 1;
+		JLTS_hasEMPProtection = 0;
+		JLTS_friedItem = "RB205_DC15A_fried";
 	};
 	FRIED_WEAPON(RB205_DC15A,"\RB205_weapons\data\ui\dc15a_fried.paa")
 	
-	class 3AS_DC15A_GL;
+	class 3AS_DC15A_GL: 3AS_DC15A_Base_F
+	{
+		class Single;
+		class GL_3GL_F;
+	};
 	class RB205_DC15A_GL: 3AS_DC15A_GL
 	{
+		baseWeapon = "RB205_DC15A_GL";
 		author = "205th Recon Battalion";
 		displayName = "$STR_205_DC15A_GL_DisplayName";
 		displayNameShort = "$STR_205_DC15A_GL_DisplayNameShort";
 		descriptionShort = "Standard-Blastergewehr der GAR<br />Freigegeben für: Grenadier";
-		picture = "\3AS\3AS_Weapons\DC15A\Data\UI\3as_dc15agl.paa";
+		cursor = "RB205_CH_default";
 		mass = MASS_WP_RIFLE_GL;
-		fireLightDiffuse[] = {0,0,1};
 		magazines[] =
 		{
 			"RB205_Standard_Energy_Pack"
 		};
-		cursor = "RB205_CH_default";
 		magazineWell[] = {};
-		JLTS_hasElectronics = 1;
-		JLTS_hasEMPProtection = 0;
-		JLTS_friedItem = "RB205_DC15A_GL_fried";
-		modes[] =
+		reloadAction = "GestureReload_JLTS_DC15A";
+		reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\Reload_Mx",1,1,10};
+		fireLightDiffuse[] = {0,0,1};
+		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
-			"Single"
-		};
-		muzzles[] =
-		{
-			"this",
-			"RB205_GL_F"
-		};
-		class Single: Mode_SemiAuto
-		{
-			sounds[] =
+			class CowsSlot: CowsSlot
 			{
-				"StandardSound"
+				compatibleItems[] = {};
 			};
+			class PointerSlot: PointerSlot
+			{
+				compatibleItems[] = {};
+			};
+			class MuzzleSlot: MuzzleSlot
+			{
+				compatibleItems[] = {};
+			};
+		};
+		class Single: Single
+		{
 			class BaseSoundModeType;
 			class StandardSound: BaseSoundModeType
 			{
-				soundSetShot[] =
-				{
-					"RB205_DC15A_Shot_SoundSet"
-				};
+				soundSetShot[] = { "RB205_DC15A_Shot_SoundSet" };
 			};
-			reloadTime = 0.1;
-			dispersion = 0.00066;
-			minRange = 2;
-			minRangeProbab = 0.5;
-			midRange = 200;
-			midRangeProbab = 0.69999999;
-			maxRange = 400;
-			maxRangeProbab = 0.30000001;
-			soundContinuous = 0;
-			
+			class SilencedSound: BaseSoundModeType
+			{
+				soundSetShot[] = { "RB205_DC15A_Shot_SoundSet" };
+			};
 		};
-		class 3AS_GL_F;
-		class RB205_GL_F: 3AS_GL_F
+		class GL_3GL_F: GL_3GL_F
 		{
-			displayName = "DC-15A-GL";
+			displayName = "DC-15A (UGL)";
 			magazines[] =
 			{
 				"RB205_ugl_he"
@@ -208,12 +148,9 @@ class CfgWeapons
 			{
 				"RB205_ugl_1rnd"
 			};
-			modes[] =
-			{
-				"Single"
-			};
 			class Single: Mode_SemiAuto
 			{
+				sounds[] = {"StandardSound"};
 				class BaseSoundModeType;
 				class StandardSound: BaseSoundModeType
 				{
@@ -222,84 +159,19 @@ class CfgWeapons
 						"RB205_UGL_Shot_SoundSet"
 					};
 				};
-				sounds[] =
-				{
-					"StandardSound"
-				};
-				reloadtime = 0.5;
-				multiplier = 1;
-				showtoplayer = 1;
-				burst = 1;
-				dispersion = 8.9999997e-007;
-				displayName = "UGL";
-				textureType = "semi";//textureType="fullAuto";
-				aiRateOfFire = 5;
-				aiRateOfFireDistance = 500;
-				aiRateOfFireDispersion = 2;
-				minRange = 10;
-				minRangeProbab = 0.30000001;
-				midRange = 40;
-				midRangeProbab = 0.85000002;
-				maxRange = 600;
-				maxRangeProbab = 0.85000002;
+				recoil = "M240Recoil";
+				recoilProne = "M240Recoil";
+				maxRange = 400;
+				maxRangeProbab = 0.05;
+				midRange = 200;
+				midRangeProbab = 0.7;
+				minRange = 30;
+				minRangeProbab = 0.1;
 			};
 		};
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			class MuzzleSlot: MuzzleSlot
-			{
-				linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
-				compatibleItems[] = {};
-			};
-			class CowsSlot: CowsSlot
-			{
-				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
-				compatibleItems[] = {};
-			};
-			class PointerSlot: PointerSlot
-			{
-				linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
-				compatibleItems[] =
-				{
-					"acc_flashlight",
-					"acc_pointer_IR"
-				};
-			};
-		};
-		class OpticsModes
-		{
-			class Ironsights
-			{
-				opticsID = 1;
-				opticsZoomInit = 0.75;
-				opticsZoomMax = 1.1;
-				opticsZoomMin = 0.25;
-				distanceZoomMax = 100;
-				distanceZoomMin = 100;
-				memoryPointCamera = "eye";
-				opticsDisablePeripherialVision = 0.67;
-				opticsFlare = "true";
-				opticsPPEffects[] = {"OpticsCHAbera5","OpticsBlur5"};
-				useModelOptics = 0;
-				visionMode[] = {};
-			};
-			class Scopes: Ironsights
-			{
-				opticsID = 2;
-				opticsZoomInit = 0.125;
-				opticsZoomMax = 0.125;
-				opticsZoomMin = 0.0625;
-				distanceZoomMax = 100;
-				distanceZoomMin = 100;
-				cameraDir = "";
-				memoryPointCamera = "opticView";
-				opticsDisablePeripherialVision = 0.67;
-				opticsFlare = "true";
-				opticsPPEffects[] = {"OpticsCHAbera5","OpticsBlur5"};
-				useModelOptics = 1;
-				visionMode[] = {"Normal","NVG"};
-			};
-		};
+		JLTS_hasElectronics = 1;
+		JLTS_hasEMPProtection = 0;
+		JLTS_friedItem = "RB205_DC15A_GL_fried";
 	};
 	FRIED_WEAPON(RB205_DC15A_GL,"\RB205_weapons\data\ui\dc15a_gl_fried.paa")
 
@@ -329,7 +201,7 @@ class CfgWeapons
 		displayName = "$STR_205_DC15A_JLTS_DisplayName";
 		displayNameShort = "$STR_205_DC15A_DisplayNameShort";
 		descriptionShort = "Standard-Blastergewehr der GAR<br />Freigegeben für: Alle";
-		picture = "\3AS\3AS_Weapons\DC15A\Data\UI\3as_dc15a.paa";
+		picture = "\3AS\3AS_Weapons\Republic\DC15A\Data\UI\3as_dc15a.paa";
 		mass = MASS_WP_RIFLE;
 		fireLightDiffuse[] = {0,0,1};
 		magazines[] =
@@ -454,7 +326,7 @@ class CfgWeapons
 		displayName = "$STR_205_DC15A_GL_JLTS_DisplayName";
 		displayNameShort = "$STR_205_DC15A_GL_DisplayNameShort";
 		descriptionShort = "Standard-Blastergewehr der GAR<br />Freigegeben für: Grenadier";
-		picture = "\3AS\3AS_Weapons\DC15A\Data\UI\3as_dc15agl.paa";
+		picture = "\3AS\3AS_Weapons\Republic\DC15A\Data\UI\3as_dc15a.paa";
 		mass = MASS_WP_RIFLE_GL;
 		fireLightDiffuse[] = {0,0,1};
 		magazines[] =
