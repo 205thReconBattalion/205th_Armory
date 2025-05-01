@@ -4,7 +4,8 @@ class cfgPatches
 	{
 		requiredAddons[]=
 		{
-			"RB205_weapons"
+			"RB205_weapons",
+			"3AS_Weapons_DC17M"
 		};
 		requiredVersion = 1.0;
         author = "205th Recon Battalion";
@@ -28,16 +29,10 @@ class cfgPatches
 
 #include "\RB205_weapons\macros.hpp"
 
-class Mode_SemiAuto;
-class Mode_Burst;
-class Mode_FullAuto;
-class SlotInfo;
-class CowsSlot;
-class MuzzleSlot;
-class PointerSlot;
-class UnderBarrelSlot;
 class WeaponSlotsInfo;
-class BaseSoundModeType;
+class CowsSlot;
+class PointerSlot;
+class MuzzleSlot;
 
 class CfgAmmo
 {
@@ -92,6 +87,8 @@ class CfgWeapons
 	class 3AS_DC17M_Base_F;
 	class 3AS_DC17M_F: 3AS_DC17M_Base_F
 	{
+		class Single;
+		class FullAuto;
 		class OpticsModes
 		{
 			class Ironsights;
@@ -100,16 +97,13 @@ class CfgWeapons
 	};
 	class RB205_DC17M: 3AS_DC17M_F
 	{
+		baseWeapon = "RB205_DC17M";
 		author = "205th Recon Battalion";
 		displayName="$STR_205_DC17M_DisplayName";
 		displayNameShort = "STR_205_DC17M_DisplayNameShort";
-		descriptionShort = "Blasterkarabiner der GAR<br />Freigegeben für: Pathfinder, ARC";
-		picture = "\3AS\3AS_Weapons\DC17M\data\UI\3as_dc17m.paa";
+		descriptionShort = "Blasterkarabiner der GAR<br />Freigegeben für: Pathfinder (0-0), Tamer (1-0)";
+		cursor = "RB205_CH_default";
 		mass = MASS_WP_CARBINE;
-		hiddenSelectionsTextures[] =
-		{
-			"RB205_weapons\data\RB205_DC17M.paa"
-		};
 		magazines[] =
 		{
 			"RB205_DC17M_Blaster_Mag",
@@ -117,18 +111,25 @@ class CfgWeapons
 			"RB205_DC17M_AT_Mag"
 		};
 		magazineWell[] = {};
-		cursor = "RB205_CH_default";
-		JLTS_hasElectronics = 1;
-		JLTS_hasEMPProtection = 1;
-		JLTS_friedItem = "RB205_DC17M_fried";
-		modes[] =
+		fireLightDiffuse[] = {0,0,1};
+		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
-			"Single",
-			"FullAuto"
+			class CowsSlot: CowsSlot
+			{
+				compatibleItems[] = {};
+			};
+			class PointerSlot: PointerSlot
+			{
+				compatibleItems[] = {};
+			};
+			class MuzzleSlot: MuzzleSlot
+			{
+				compatibleItems[] = {};
+			};
 		};
-		class Single: Mode_SemiAuto
+		class Single: Single
 		{
-			sounds[]=
+			sounds[] =
 			{
 				"StandardSound"
 			};
@@ -173,29 +174,21 @@ class CfgWeapons
 					0.33000001
 				};
 			};
+			dispersion = 0;
 			reloadTime = 0.1;
-			dispersion = 0; //dispersion = 0.0012;
-			minRange = 5;
-			minRangeProbab = 0.30000001;
-			midRange = 25;
-			midRangeProbab = 0.60000002;
-			maxRange = 50;
-			maxRangeProbab = 0.1;
-			aiRateOfFire = 2;
-			aiRateOfFireDistance = 25;
 		};
-		class FullAuto: Mode_FullAuto
+		class FullAuto: FullAuto
 		{
-			sounds[]=
+			sounds[] =
 			{
 				"StandardSound"
 			};
 			class BaseSoundModeType
 			{
 				weaponSoundEffect = "";
-				closure1[]={};
-				closure2[]={};
-				soundClosure[]={};
+				closure1[] = {};
+				closure2[] = {};
+				soundClosure[] = {};
 			};
 			class StandardSound: BaseSoundModeType
 			{
@@ -231,16 +224,8 @@ class CfgWeapons
 					0.33000001
 				};
 			};
+			dispersion = 0;
 			reloadTime = 0.1;
-			dispersion = 0.0012;
-			minRange = 5;
-			minRangeProbab = 0.30000001;
-			midRange = 25;
-			midRangeProbab = 0.60000002;
-			maxRange = 50;
-			maxRangeProbab = 0.1;
-			aiRateOfFire = 2;
-			aiRateOfFireDistance = 25;
 		};
 		class OpticsModes: OpticsModes
 		{
@@ -251,10 +236,9 @@ class CfgWeapons
 				discreteInitIndex = 0;
 			};
 		};
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			mass = 60;
-		};
+		JLTS_hasElectronics = 1;
+		JLTS_hasEMPProtection = 1;
+		JLTS_friedItem = "RB205_DC17M_fried";
 	};
 	FRIED_WEAPON(RB205_DC17M,"\RB205_weapons\data\ui\dc17m_fried.paa")
 };
