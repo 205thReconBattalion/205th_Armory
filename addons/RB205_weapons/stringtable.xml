@@ -516,6 +516,10 @@
             <English>[205] Valken-38X Bipod</English>
             <German>[205] Valken-38X Zweibein</German>
         </Key>
+        <Key ID="STR_205_OPTIC_WM5_DisplayName">
+            <English>[205] Westar-M5 Scope</English>
+            <German>[205] Westar-M5 Zielfernrohr</German>
+        </Key>
         <Key ID="STR_205_OPTIC_DC17M_DisplayName">
             <English>[205] DC-17M Optic</English>
             <German>[205] DC-17M Visier</German>
