@@ -5,7 +5,7 @@ class cfgPatches
 		requiredAddons[] =
 		{
 			"RB205_weapons",
-			"3AS_Weapons_DC15S"
+			"3AS_Weapons_Republic_DC15S"
 		};
 		requiredVersion = 1.0;
         author = "205th Recon Battalion";
@@ -24,92 +24,78 @@ class cfgPatches
 class WeaponSlotsInfo;
 class CowsSlot;
 class PointerSlot;
-class Mode_FullAuto;
+class MuzzleSlot;
+
 class Mode_SemiAuto;
+class Mode_FullAuto;
 
 class CfgWeapons
 {
-	class 3AS_DC15S_F;
+	class 3AS_DC15S_Base_F;
+	class 3AS_DC15S_F: 3AS_DC15S_Base_F
+	{
+		class Single;
+		class FullAuto;
+	};
 	class RB205_DC15S: 3AS_DC15S_F
 	{
+		baseWeapon = "RB205_DC15S";
 		author = "205th Recon Battalion";
 		displayName = "$STR_205_DC15S_DisplayName";
 		displayNameShort = "$STR_205_DC15S_DisplayNameShort";
 		descriptionShort = "Standard-Blasterkarabiner der GAR<br />Freigegeben für: Alle";
-		picture = "\3AS\3AS_Weapons\DC15S\Data\UI\3as_dc15s.paa";
+		cursor = "RB205_CH_default";
 		mass = MASS_WP_CARBINE;
-		fireLightDiffuse[] = {0,0,1};
 		magazines[] =
 		{
 			"RB205_Standard_Energy_Pack"
 		};
-		cursor = "RB205_CH_default";
 		magazineWell[] = {};
+		reloadAction = "GestureReload_JLTS_DC15S";
+		reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\Reload_Mx",1,1,10};
+		fireLightDiffuse[] = {0,0,1};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class CowsSlot: CowsSlot
+			{
+				compatibleItems[] = {};
+			};
+			class PointerSlot: PointerSlot
+			{
+				compatibleItems[] = {};
+			};
+			class MuzzleSlot: MuzzleSlot
+			{
+				compatibleItems[] = {};
+			};
+		};
+		class Single: Single
+		{
+			class BaseSoundModeType;
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[] = { "RB205_DC15S_Shot_SoundSet" };
+			};
+			class SilencedSound: BaseSoundModeType
+			{
+				soundSetShot[] = { "RB205_DC15S_Shot_SoundSet" };
+			};
+		};
+		class FullAuto: FullAuto
+		{
+			class BaseSoundModeType;
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[] = { "RB205_DC15S_Shot_SoundSet" };
+			};
+			class SilencedSound: BaseSoundModeType
+			{
+				soundSetShot[] = { "RB205_DC15S_Shot_SoundSet" };
+			};
+		};
 		JLTS_hasElectronics = 1;
 		JLTS_hasEMPProtection = 0;
 		JLTS_friedItem = "RB205_DC15S_fried";
-		opticsZoomInit = 0.75;//0.5
-		opticsZoomMax = 1.25;
-		opticsZoomMin = 0.25;//0.5
-		modes[] =
-		{
-			"FullAuto",
-			"Single"
-		};
-		muzzles[] =
-		{
-			"this"
-		};
-		class Single: Mode_SemiAuto
-		{
-			sounds[] =
-			{
-				"StandardSound"
-			};
-			class BaseSoundModeType;
-			class StandardSound: BaseSoundModeType
-			{
-				soundSetShot[] =
-				{
-					"RB205_DC15S_Shot_SoundSet"
-				};
-			};
-			reloadTime = 0.1;
-			dispersion = 0.0012;
-			minRange = 2;
-			minRangeProbab = 0.30000001;
-			midRange = 150;
-			midRangeProbab = 0.69999999;
-			maxRange = 350;
-			maxRangeProbab = 0.1;
-			soundContinuous = 0;
-			soundBurst = 0;
-		};
-		class FullAuto: Mode_FullAuto
-		{
-			sounds[] =
-			{
-				"StandardSound"
-			};
-			class BaseSoundModeType;
-			class StandardSound: BaseSoundModeType
-			{
-				soundSetShot[] =
-				{
-					"RB205_DC15S_Shot_SoundSet"
-				};
-			};
-			reloadTime = 0.1;
-			dispersion = 0.0012;
-			minRange = 0;
-			minRangeProbab = 0.89999998;
-			midRange = 15;
-			midRangeProbab = 0.69999999;
-			maxRange = 30;
-			maxRangeProbab = 0.1;
-			soundContinuous = 0;
-			soundBurst = 0;
-		};
 	};
 	FRIED_WEAPON(RB205_DC15S,"\RB205_weapons\data\ui\dc15s_fried.paa")
 
@@ -137,11 +123,12 @@ class CfgWeapons
 	};
 	class RB205_DC15S_JLTS: JLTS_DC15S
 	{
+		baseWeapon = "RB205_DC15S_JLTS";
 		author = "205th Recon Battalion";
 		displayName = "$STR_205_DC15S_JLTS_DisplayName";
 		displayNameShort = "$STR_205_DC15S_DisplayNameShort";
 		descriptionShort = "Standard-Blasterkarabiner der GAR<br />Freigegeben für: Alle";
-		picture = "\3AS\3AS_Weapons\DC15S\Data\UI\3as_dc15s.paa";
+		picture = "\3AS\3AS_Weapons\Republic\DC15S\Data\UI\3as_dc15s.paa";
 		mass = MASS_WP_CARBINE;
 		fireLightDiffuse[] = {0,0,1};
 		magazines[] =
@@ -169,7 +156,7 @@ class CfgWeapons
 		{
 			class CowsSlot: CowsSlot
 			{
-				compatibleItems[] = { "3AS_optic_holo_DC15S" };
+				compatibleItems[] = {};
 				iconScale = 0;
 				iconPosition[] = {0,0};
 				iconPicture = "";
@@ -217,7 +204,7 @@ class CfgWeapons
 		displayName = "$STR_205_DC15S_JLTS_shield_DisplayName";
 		displayNameShort = "$STR_205_DC15S_DisplayNameShort";
 		descriptionShort = "Standard-Blasterkarabiner der GAR<br />Freigegeben für: Alle";
-		picture = "\3AS\3AS_Weapons\DC15S\Data\UI\3as_dc15s.paa";
+		picture = "\3AS\3AS_Weapons\Republic\DC15S\Data\UI\3as_dc15s.paa";
 		fireLightDiffuse[] = {0,0,1};
 		magazines[] =
 		{
