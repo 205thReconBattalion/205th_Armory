@@ -5,7 +5,7 @@ class cfgPatches
 		requiredAddons[] =
 		{
 			"RB205_weapons",
-			"3AS_Weapons_Valken38X"
+			"3AS_Weapons_Republic_Valken38X"
 		};
 		requiredVersion = 1.0;
         author = "205th Recon Battalion";
@@ -27,8 +27,6 @@ class CowsSlot;
 class PointerSlot;
 class MuzzleSlot;
 class UnderBarrelSlot;
-
-class Mode_SemiAuto;
 
 class CfgWeapons
 {
