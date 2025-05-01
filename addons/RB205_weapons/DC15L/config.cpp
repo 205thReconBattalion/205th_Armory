@@ -97,21 +97,36 @@ class CfgWeapons
 	};
 	FRIED_WEAPON(RB205_DC15L,"\RB205_weapons\data\ui\dc15l_fried.paa")
 
-	class 3AS_optic_DC15L_F;
+	class ItemCore;
+	class 3AS_optic_DC15L_F: ItemCore
+	{
+		class ItemInfo;
+	};
 	class RB205_optic_DC15L : 3AS_optic_DC15L_F
 	{	
 		author = "205th Recon Battalion";
 		displayName = "$STR_205_OPTIC_DC15L_DisplayName";
 		descriptionShort = "Vergrößerung: 1x-3x";
+		class ItemInfo: ItemInfo
+		{
+			mass = MASS_ACC_OPTIC;
+		};
 	};
 
-	class 3AS_bipod_DC15L_F;
+	class 3AS_bipod_DC15L_F: ItemCore
+	{
+		class ItemInfo;
+	};
 	class RB205_bipod_DC15L : 3AS_bipod_DC15L_F
 	{
 		author = "205th Recon Battalion";
 		displayName = "$STR_205_BIPOD_DC15L_DisplayName";
 		descriptionShort = "";
 		picture = "\a3\Weapons_F_Mark\Data\UI\icon_bipod_02_F_blk_ca.paa";
+		class ItemInfo: ItemInfo
+		{
+			mass = MASS_ACC_BIPOD;
+		};
 	};
 };
 

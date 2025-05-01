@@ -223,12 +223,20 @@ class CfgWeapons
 	};
 	FRIED_WEAPON(RB205_DC15C_GL,"\RB205_weapons\data\ui\dc15c_gl_fried.paa")
 
-	class 3AS_optic_DC15C_F;
+	class ItemCore;
+	class 3AS_optic_DC15C_F: ItemCore
+	{
+		class ItemInfo;
+	};
 	class RB205_optic_DC15C: 3AS_optic_DC15C_F
 	{
 		author = "205th Recon Battalion";
 		displayName = "$STR_205_OPTIC_DC15C_DisplayName";
 		descriptionShort = "Vergrößerung: 1x-3x";
+		class ItemInfo: ItemInfo
+		{
+			mass = MASS_ACC_OPTIC;
+		};
 	};
 };
 

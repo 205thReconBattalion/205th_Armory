@@ -6,6 +6,9 @@
 #define MASS_WP_HEAVY		150
 #define MASS_WP_PISTOL		20
 
+#define MASS_ACC_OPTIC		5
+#define MASS_ACC_BIPOD		5
+
 /* EMP COMPAT */
 #define FRIED_WEAPON(CLASSNAME,PICTURE) \
 	class ##CLASSNAME##_fried: ##CLASSNAME## \
