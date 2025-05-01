@@ -13,7 +13,8 @@ class cfgPatches
 		weapons[] =
 		{
 			"RB205_DC15C",
-			"RB205_DC15C_GL"
+			"RB205_DC15C_GL",
+			"RB205_optic_DC15C"
 		};
 	};
 };
@@ -57,8 +58,9 @@ class CfgWeapons
 			{
 				compatibleItems[] =
 				{
-					"3AS_optic_DC15C_F"
+					"RB205_optic_DC15C"
 				};
+				iconPicture = "";
 			};
 			class PointerSlot: PointerSlot
 			{
@@ -136,8 +138,9 @@ class CfgWeapons
 			{
 				compatibleItems[] =
 				{
-					"3AS_optic_DC15C_F"
+					"RB205_optic_DC15C"
 				};
+				iconPicture = "";
 			};
 			class PointerSlot: PointerSlot
 			{
@@ -219,6 +222,14 @@ class CfgWeapons
 		JLTS_friedItem = "RB205_DC15C_GL_fried";
 	};
 	FRIED_WEAPON(RB205_DC15C_GL,"\RB205_weapons\data\ui\dc15c_gl_fried.paa")
+
+	class 3AS_optic_DC15C_F;
+	class RB205_optic_DC15C: 3AS_optic_DC15C_F
+	{
+		author = "205th Recon Battalion";
+		displayName = "$STR_205_OPTIC_DC15C_DisplayName";
+		descriptionShort = "Vergrößerung: 1x-3x";
+	};
 };
 
 class cfgSoundShaders

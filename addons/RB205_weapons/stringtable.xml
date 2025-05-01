@@ -484,6 +484,10 @@
         </Key>
 <!--displayName attachments etc.-->
     </Package>
+        <Key ID="STR_205_OPTIC_DC15C_DisplayName">
+            <English>[205] DC-15C Scope</English>
+            <German>[205] DC-15C Zielfernrohr</German>
+        </Key>
         <Key ID="STR_205_OPTIC_DC15L_DisplayName">
             <English>[205] DC-15L Scope</English>
             <German>[205] DC-15L Zielfernrohr</German>
