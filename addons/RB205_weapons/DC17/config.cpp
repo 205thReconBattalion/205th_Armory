@@ -16,7 +16,8 @@ class cfgPatches
 		{
 			"RB205_DC17",
 			"RB205_DC17_Dual",
-			"RB205_DC17_alt"
+			"RB205_DC17_alt",
+			"RB205_DC17_shield"
 		};
 	};
 };
@@ -27,6 +28,7 @@ class WeaponSlotsInfo;
 class CowsSlot;
 class PointerSlot;
 class MuzzleSlot;
+class UnderBarrelSlot;
 
 class CfgWeapons
 {
@@ -85,6 +87,8 @@ class CfgWeapons
 			"Stun"
 		};
 		class Stun: JLTS_stun_muzzle {};
+		JLTS_canHaveShield = 1;
+		JLTS_shieldedWeapon = "RB205_DC17_shield";
 		JLTS_hasElectronics = 1;
 		JLTS_hasEMPProtection = 0;
 		JLTS_friedItem = "RB205_DC17_fried";
@@ -96,18 +100,18 @@ class CfgWeapons
 		baseWeapon = "RB205_DC17_Dual";
 		author = "205th Recon Battalion";
 		displayName = "$STR_205_DC17_DUAL_DisplayName";
-		displayNameShort = "$STR_205_DC17_DUAL_DisplayNameShort";
+		displayNameShort = "$STR_205_DC17_DisplayNameShort";
 		descriptionShort = "Blasterpistolen der GAR<br />Freigegeben für: ARC, CS+";
 		cursor = "RB205_CH_sidearm_dual";
 		mass = MASS_WP_PISTOL;
 		model = "\3AS\3AS_Weapons\Republic\DC17S\3AS_DC17S_Dual_F.p3d";
-		//weaponInfoType = "RscWeaponZeroing";
 		reloadAction = "ls_dualPistol_reload";
 		handAnim[] =
 		{
 			"OFP2_ManSkeleton",
 			"3AS\3AS_Weapons\Republic\DC17S\Data\Anim\DC17S_Dual_Handanim.rtm"
 		};
+		JLTS_canHaveShield = 0;
 		JLTS_hasElectronics = 1;
 		JLTS_hasEMPProtection = 0;
 		JLTS_friedItem = "RB205_DC17_Dual_fried";
@@ -124,7 +128,7 @@ class CfgWeapons
 		baseWeapon = "RB205_DC17_alt";
 		author = "205th Recon Battalion";
 		displayName = "$STR_205_DC17_ALT_DisplayName";
-		displayNameShort = "$STR_205_DC17_ALT_DisplayNameShort";
+		displayNameShort = "$STR_205_DC17_DisplayNameShort";
 		descriptionShort = "Blasterpistole der GAR<br />Freigegeben für: Alle";
 		picture = "\3AS\3AS_Weapons\Republic\DC17S\Data\UI\3as_dc17s.paa";
 		cursor = "RB205_CH_sidearm";
@@ -175,12 +179,40 @@ class CfgWeapons
 	};
 	FRIED_WEAPON_SECONDARY(RB205_DC17_alt,"\RB205_weapons\data\ui\dc17_fried.paa")
 
-	class hgun_P07_F;
-	class JLTS_DC17SA: hgun_P07_F
+	class RB205_DC17_shield: RB205_DC17
 	{
-		//magazines[] = {"JLTS_DC17SA_mag","JLTS_EMP_mag","RB205_Compact_Energy_Pack"};
-		magazines[] += {"RB205_Compact_Energy_Pack"};
+		scope = 1;
+		baseWeapon = "RB205_DC17_shield";
+		displayName = "$STR_205_DC17_shield_DisplayName";
+		model = "\MRC\JLTS\weapons\DC17SA\DC17SA_shielded.p3d";
+		hiddenSelections[] = {"camo1","illum"};
+		hiddenSelectionsMaterials[] = {"","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
+		hiddenSelectionsTextures[] = {"\MRC\JLTS\weapons\DC17SA\data\DC17SA_co.paa"};
+		handAnim[] = {"OFP2_ManSkeleton","\MRC\JLTS\weapons\DC17SA\anims\DC17SA_shielded_handanim.rtm"};
+		reloadAction = "GestureReload";
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class UnderBarrelSlot: UnderBarrelSlot
+			{
+				compatibleItems[] =
+				{
+					"JLTS_riot_shield_attachment",
+					"JLTS_riot_shield_101_attachment",
+					"JLTS_riot_shield_212_attachment",
+					"JLTS_riot_shield_501_attachment",
+					"JLTS_riot_shield_CG_attachment",
+					"JLTS_riot_shield_GD_attachment",
+					"JLTS_riot_shield_droid_attachment"
+				};
+			};
+		};
+		JLTS_isShielded = 1;
+		JLTS_baseWeapon = "RB205_DC17";
+		JLTS_hasElectronics = 1;
+		JLTS_hasEMPProtection = 0;
+		JLTS_friedItem = "RB205_DC17_shield_fried";
 	};
+	FRIED_WEAPON_SECONDARY(RB205_DC17_shield,"\RB205_weapons\data\ui\dc17_fried.paa")
 };
 
 class cfgSoundShaders

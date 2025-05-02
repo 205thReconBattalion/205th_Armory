@@ -54,6 +54,10 @@
             <English>[205] DC-17 Blaster Pistol (Alt.)</English>
             <German>[205] DC-17 Blasterpistole (Alt.)</German>
         </Key>
+        <Key ID="STR_205_DC17_shield_DisplayName">
+            <English>[205] DC-17 Blaster Pistol (Shielded)</English>
+            <German>[205] DC-17 Blasterpistole (Beschildet)</German>
+        </Key>
         <Key ID="STR_205_PLX1_DisplayName">
             <English>[205] PLX-1 Missile Launcher</English>
             <German>[205] PLX-1 Raketenwerfer</German>
@@ -180,14 +184,6 @@
             <German>DC-15X</German>
         </Key>
         <Key ID="STR_205_DC17_DisplayNameShort">
-            <English>DC-17</English>
-            <German>DC-17</German>
-        </Key>
-        <Key ID="STR_205_DC17_DUAL_DisplayNameShort">
-            <English>DC-17</English>
-            <German>DC-17</German>
-        </Key>
-        <Key ID="STR_205_DC17_ALT_DisplayNameShort">
             <English>DC-17</English>
             <German>DC-17</German>
         </Key>
