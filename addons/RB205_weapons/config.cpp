@@ -6,7 +6,6 @@ class cfgPatches
 		{
 			"3AS_Weapons",
 			"JLTS_weapons_Z6",
-			"JLTS_weapons_DP23",
 			"CBA_Extended_EventHandlers",
 			"CBA_MAIN"
 		};
@@ -23,9 +22,11 @@ class cfgPatches
 			"RB205_ammo_heavy",
 			"RB205_ammo_heavy_red",
 			"RB205_ammo_rapidFire",
+			"RB205_ammo_rapidFire_red",
 			"RB205_ammo_experimental",
 			"RB205_ammo_experimental_red",
-			"RB205_ammo_scatter"
+			"RB205_ammo_scatter",
+			"RB205_ammo_scatter_red"
 		};
 		magazines[] =
 		{
@@ -60,7 +61,8 @@ class CfgAmmo
 	{
 		hit = 15;
 		caliber = 1.95;
-		waterFriction = -0.0099999998;
+		coefgravity = 0;
+		waterFriction = -0.01;
 	};
 	class RB205_ammo_standard_red: RB205_ammo_standard
 	{
@@ -74,6 +76,7 @@ class CfgAmmo
 	{
 		hit = 15;
 		caliber = 1.95;
+		coefgravity = 0;
 	};
 	class RB205_ammo_compact_red: RB205_ammo_compact
 	{
@@ -86,7 +89,8 @@ class CfgAmmo
 	class RB205_ammo_overcharged: 3AS_EC80_BluePlasma
 	{
 		hit = 25;
-		caliber = 1.95;//3.21;
+		caliber = 1.95;
+		coefgravity = 0;
 	};
 	class RB205_ammo_overcharged_red: RB205_ammo_overcharged
 	{
@@ -100,6 +104,7 @@ class CfgAmmo
 	{
 		hit = 10;
 		caliber = 1.65;
+		coefgravity = 0;
 	};
 	class RB205_ammo_heavy_red: RB205_ammo_heavy
 	{
@@ -108,10 +113,16 @@ class CfgAmmo
 	};
 
 	/* ROTARY ENERGY PACK */
-	class RB205_ammo_rapidFire: 3AS_EC40_BluePlasma//JLTS_bullet_carbine_blue
+	class RB205_ammo_rapidFire: 3AS_EC40_BluePlasma
 	{
 		hit = 15;
 		caliber = 1.65;
+		coefgravity = 0;
+	};
+	class RB205_ammo_rapidFire_red: RB205_ammo_rapidFire
+	{
+		model = "\3AS\3AS_Weapons\Data\tracer_red.p3d";
+		effectFly = "3AS_PlasmaBolt_Red_Fly";
 	};
 
 	/* EXPERIMENTAL ENERGY PACK */
@@ -119,6 +130,7 @@ class CfgAmmo
 	{
 		hit = 20;
 		caliber = 1.95;
+		coefgravity = 0;
 	};
 	class RB205_ammo_experimental_red: RB205_ammo_experimental
 	{
@@ -126,12 +138,17 @@ class CfgAmmo
 		effectFly = "3AS_PlasmaBolt_Red_Fly";
 	};
 
-	class JLTS_bullet_scatter_blue;
-	class RB205_ammo_scatter: JLTS_bullet_scatter_blue
+	class 3AS_EC30_Pellets_Submunition;
+	class RB205_ammo_scatter: 3AS_EC30_Pellets_Submunition
 	{
-		hit = 5;
+		hit = 20;
 		caliber = 1.2;
-		timetolive = 1;
+		coefgravity = 0;
+	};
+	class RB205_ammo_scatter_red: RB205_ammo_scatter
+	{
+		model = "\3AS\3AS_Weapons\Data\tracer_red.p3d";
+		effectFly = "3AS_PlasmaBolt_Red_Fly";
 	};
 };
 
@@ -288,8 +305,8 @@ class CfgMagazines
 	};
 
 	//DP-23
-	class JLTS_DP23_mag;
-	class RB205_Scatter_Energy_Pack: JLTS_DP23_mag//3AS_45Rnd_EC50_Mag
+	class 3AS_10Rnd_EC30_Pellets;
+	class RB205_Scatter_Energy_Pack: 3AS_10Rnd_EC30_Pellets//3AS_45Rnd_EC50_Mag
 	{
 		displayName = "$STR_205_Scatter_Energy_Pack_DisplayName";
 		displayNameShort = "$STR_205_Scatter_Energy_Pack_DisplayNameShort";
