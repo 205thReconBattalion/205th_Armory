@@ -95,7 +95,7 @@ class CfgWeapons
 			{
 				soundSetShot[] = { "RB205_WestarM5_Shot_SoundSet" };
 			};
-			dispersion = 0;
+			dispersion = DISPERSION_SPECIAL;
 		};
 		class FullAuto: FullAuto
 		{
@@ -108,7 +108,7 @@ class CfgWeapons
 			{
 				soundSetShot[] = { "RB205_WestarM5_Shot_SoundSet" };
 			};
-			dispersion = 0;
+			dispersion = DISPERSION_SPECIAL;
 		};
 		class 3AS_WestarM5_GL_F: 3AS_WestarM5_GL_F
 		{

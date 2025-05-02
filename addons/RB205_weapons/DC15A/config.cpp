@@ -5,8 +5,7 @@ class cfgPatches
 		requiredAddons[] =
 		{
 			"RB205_weapons",
-			"3AS_Weapons_Republic_DC15A",
-			"JLTS_weapons_DC15A"
+			"3AS_Weapons_Republic_DC15A"
 		};
 		requiredVersion = 1.0;
         author = "205th Recon Battalion";
@@ -18,10 +17,7 @@ class cfgPatches
 
 			"RB205_DC15LE",
 			"RB205_optic_DC15LE",
-			"RB205_muzzle_DC15LE",
-
-			"RB205_DC15A_JLTS",
-			"RB205_DC15A_GL_JLTS"
+			"RB205_muzzle_DC15LE"
 		};
 	};
 };
@@ -89,6 +85,7 @@ class CfgWeapons
 			{
 				soundSetShot[] = { "RB205_DC15A_Shot_SoundSet" };
 			};
+			dispersion = DISPERSION_DC15A;
 		};
 		class OpticsModes: OpticsModes
 		{
@@ -148,6 +145,7 @@ class CfgWeapons
 			{
 				soundSetShot[] = { "RB205_DC15A_Shot_SoundSet" };
 			};
+			dispersion = DISPERSION_DC15A;
 		};
 		class GL_3GL_F: GL_3GL_F
 		{

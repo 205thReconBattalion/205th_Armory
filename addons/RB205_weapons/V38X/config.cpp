@@ -101,7 +101,7 @@ class CfgWeapons
 			{
 				soundSetShot[] = { "RB205_V38X_Shot_SoundSet" };
 			};
-			dispersion = 0;
+			dispersion = DISPERSION_SNIPER;
 		};
 		JLTS_hasElectronics = 1;
 		JLTS_hasEMPProtection = 0;

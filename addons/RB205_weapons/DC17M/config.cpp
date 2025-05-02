@@ -174,7 +174,7 @@ class CfgWeapons
 					0.33000001
 				};
 			};
-			dispersion = 0;
+			dispersion = DISPERSION_SPECIAL;
 			reloadTime = 0.1;
 		};
 		class FullAuto: FullAuto
@@ -224,7 +224,7 @@ class CfgWeapons
 					0.33000001
 				};
 			};
-			dispersion = 0;
+			dispersion = DISPERSION_SPECIAL;
 			reloadTime = 0.1;
 		};
 		class OpticsModes: OpticsModes

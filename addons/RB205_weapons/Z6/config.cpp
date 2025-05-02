@@ -72,7 +72,7 @@ class CfgWeapons
 					"RB205_Z6_Shot_SoundSet"
 				};
 			};
-			dispersion = 0.005;
+			dispersion = DISPERSION_Z6;
 		};
 		JLTS_hasElectronics = 1;
 		JLTS_hasEMPProtection = 0;

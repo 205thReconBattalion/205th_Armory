@@ -79,7 +79,7 @@ class CfgWeapons
 			{
 				soundSetShot[] = { "RB205_DC17_Shot_SoundSet" };
 			};
-			dispersion = 0;
+			dispersion = DISPERSION_DC17;
 		};
 		muzzles[] =
 		{

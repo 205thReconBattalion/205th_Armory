@@ -81,6 +81,7 @@ class CfgWeapons
 			{
 				soundSetShot[] = { "RB205_DC15S_Shot_SoundSet" };
 			};
+			dispersion = DISPERSION_DC15S;
 		};
 		class FullAuto: FullAuto
 		{
@@ -93,6 +94,7 @@ class CfgWeapons
 			{
 				soundSetShot[] = { "RB205_DC15S_Shot_SoundSet" };
 			};
+			dispersion = DISPERSION_DC15S;
 		};
 		JLTS_canHaveShield = 1;
 		JLTS_shieldedWeapon = "RB205_DC15S_shield";
@@ -151,6 +153,7 @@ class CfgWeapons
 			{
 				soundSetShot[] = { "RB205_DC15S_Shot_SoundSet" };
 			};
+			dispersion = DISPERSION_DC15S;
 		};
 		class FullAuto: FullAuto
 		{
@@ -163,6 +166,7 @@ class CfgWeapons
 			{
 				soundSetShot[] = { "RB205_DC15S_Shot_SoundSet" };
 			};
+			dispersion = DISPERSION_DC15S;
 		};
 		class GL_1GL_F: GL_1GL_F
 		{

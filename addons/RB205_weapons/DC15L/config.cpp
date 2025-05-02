@@ -90,6 +90,7 @@ class CfgWeapons
 			{
 				soundSetShot[] = { "RB205_DC15S_Shot_SoundSet" };
 			};
+			dispersion = DISPERSION_DC15A;
 		};
 		JLTS_hasElectronics = 1;
 		JLTS_hasEMPProtection = 0;
