@@ -30,6 +30,10 @@
             <English>[205] DC-15L Blaster Rifle</English>
             <German>[205] DC-15L Blastergewehr</German>
         </Key>
+        <Key ID="STR_205_DC15LE_DisplayName">
+            <English>[205] DC-15LE Blaster Rifle</English>
+            <German>[205] DC-15LE Blastergewehr</German>
+        </Key>
         <Key ID="STR_205_DC15S_DisplayName">
             <English>[205] DC-15S Blaster Carbine</English>
             <German>[205] DC-15S Blasterkarabiner</German>
@@ -170,6 +174,10 @@
         <Key ID="STR_205_DC15L_DisplayNameShort">
             <English>DC-15L</English>
             <German>DC-15L</German>
+        </Key>
+        <Key ID="STR_205_DC15L_DisplayNameShort">
+            <English>DC-15LE</English>
+            <German>DC-15LE</German>
         </Key>
         <Key ID="STR_205_DC15S_DisplayNameShort">
             <English>DC-15S</English>
@@ -495,6 +503,14 @@
         <Key ID="STR_205_BIPOD_DC15L_DisplayName">
             <English>[205] DC-15L Bipod</English>
             <German>[205] DC-15L Zweibein</German>
+        </Key>
+        <Key ID="STR_205_OPTIC_DC15LE_DisplayName">
+            <English>[205] DC-15LE Scope</English>
+            <German>[205] DC-15LE Zielfernrohr</German>
+        </Key>
+        <Key ID="STR_205_MUZZLE_DC15LE_DisplayName">
+            <English>[205] DC-15LE Suppressor</English>
+            <German>[205] DC-15LE Schalldämpfer</German>
         </Key>
         <Key ID="STR_205_OPTIC_DC15X_DisplayName">
             <English>[205] DC-15X Scope</English>

@@ -16,6 +16,10 @@ class cfgPatches
 			"RB205_DC15A",
 			"RB205_DC15A_GL",
 
+			"RB205_DC15LE",
+			"RB205_optic_DC15LE",
+			"RB205_muzzle_DC15LE",
+
 			"RB205_DC15A_JLTS",
 			"RB205_DC15A_GL_JLTS"
 		};
@@ -37,6 +41,10 @@ class CfgWeapons
 	class 3AS_DC15A_F: 3AS_DC15A_Base_F
 	{
 		class Single;
+		class OpticsModes
+		{
+			class Ironsights;
+		}
 	};
 	class RB205_DC15A: 3AS_DC15A_F
 	{
@@ -81,6 +89,10 @@ class CfgWeapons
 			{
 				soundSetShot[] = { "RB205_DC15A_Shot_SoundSet" };
 			};
+		};
+		class OpticsModes: OpticsModes
+		{
+			class Ironsights: Ironsights {};
 		};
 		JLTS_hasElectronics = 1;
 		JLTS_hasEMPProtection = 0;
@@ -174,6 +186,97 @@ class CfgWeapons
 		JLTS_friedItem = "RB205_DC15A_GL_fried";
 	};
 	FRIED_WEAPON(RB205_DC15A_GL,"\RB205_weapons\data\ui\dc15a_gl_fried.paa")
+
+	class RB205_DC15LE: RB205_DC15A
+	{
+		baseWeapon = "RB205_DC15LE";
+		author = "205th Recon Battalion";
+		displayName = "$STR_205_DC15LE_DisplayName";
+		displayNameShort = "$STR_205_DC15LE_DisplayNameShort";
+		descriptionShort = "Blastergewehr der GAR<br />Freigegeben für: Marksman";
+		cursor = "RB205_CH_default";
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class CowsSlot: CowsSlot
+			{
+				compatibleItems[] =
+				{
+					"RB205_optic_DC15LE"
+				};
+				iconPicture = "";
+			};
+			class PointerSlot: PointerSlot
+			{
+				compatibleItems[] = {};
+			};
+			class MuzzleSlot: MuzzleSlot
+			{
+				compatibleItems[] =
+				{
+					"RB205_muzzle_DC15LE"
+				};
+				iconPicture = "";
+			};
+		};
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "RB205_optic_DC15LE";
+			};
+		};
+	};
+
+	class ItemCore;
+	class InventoryOpticsItem_Base_F;
+	class 3AS_optic_DC15LE_F: ItemCore
+	{
+		class ItemInfo: InventoryOpticsItem_Base_F
+		{
+			class OpticsModes
+			{
+				class Scope;
+			};
+		};
+	};
+	class RB205_optic_DC15LE: 3AS_optic_DC15LE_F
+	{
+		author = "205th Recon Battalion";
+		displayName = "$STR_205_OPTIC_DC15LE_DisplayName";
+		descriptionShort = "Vergrößerung: 2x-8x";
+		class ItemInfo: ItemInfo
+		{
+			mass = MASS_ACC_OPTIC;
+			class OpticsModes: OpticsModes
+			{
+				class Scope: Scope
+				{
+					visionMode[] = {"Normal","NVG"};
+					discreteFov[] = {0.125,0.05,0.03125};
+					discreteInitIndex = 0;
+					opticsZoomInit = "0.25/2";
+					opticsZoomMax = "0.25/2";
+					opticsZoomMin = "0.25/8";
+				};
+			};
+		};
+	}
+	class muzzle_snds_338_black: ItemCore
+	{
+		class ItemInfo;
+	};
+	class RB205_muzzle_DC15LE: muzzle_snds_338_black
+	{
+		author = "205th Recon Battalion";
+		displayName = "$STR_205_MUZZLE_DC15LE_DisplayName";
+		picture = "\a3\Weapons_F_Mark\Data\UI\icon_muzzle_snds_338_black_ca.paa";
+		model = "\3AS\3AS_Weapons\Republic\ACC\3AS_acca_DC15LE_Muzzle_F";
+		class ItemInfo: ItemInfo
+		{
+			mass = MASS_ACC_MUZZLE;
+		};
+	};
 
 
 
