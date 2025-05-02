@@ -5,7 +5,8 @@ class cfgPatches
 		requiredAddons[] =
 		{
 			"RB205_weapons",
-			"3AS_Weapons_Republic_DC15S"
+			"3AS_Weapons_Republic_DC15S",
+			"JLTS_weapons_DC15S"
 		};
 		requiredVersion = 1.0;
         author = "205th Recon Battalion";
