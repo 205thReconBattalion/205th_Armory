@@ -196,7 +196,7 @@ class CfgWeapons
 		};
 		JLTS_hasElectronics = 1;
 		JLTS_hasEMPProtection = 0;
-		JLTS_friedItem = "RB205_DC15S_fried";
+		JLTS_friedItem = "RB205_DC15S_GL_fried";
 	};
 	FRIED_WEAPON(RB205_DC15S_GL,"\RB205_weapons\data\ui\dc15s_fried.paa")
 
