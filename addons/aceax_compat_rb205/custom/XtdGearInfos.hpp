@@ -14,7 +14,6 @@ class XtdGearInfos
 		H_CUSTOM(RB205_H_pain,"2111","dft")
 		H_CUSTOM(RB205_H_fire,"2187","dft")
 		H_CUSTOM(RB205_H_tyr,"2209","dft")
-		H_CUSTOM(RB205_H_smoker,"2288","dft")
 		H_CUSTOM(RB205_H_zeegers,"2420","dft")
 		H_CUSTOM(RB205_H_gentleman,"2441","dft")
 		H_CUSTOM(RB205_H_kamaz,"2609","dft")
@@ -38,7 +37,6 @@ class XtdGearInfos
 		H_CUSTOM(RB205_H_jay,"7576","dft")
 		H_CUSTOM(RB205_H_unlucky,"9089","dft")
 		
-		H_CUSTOM(RB205_H_ab_smoker,"2288","var1")
 		H_CUSTOM(RB205_H_crew_slow,"3340","var1")
 		H_CUSTOM(RB205_H_arf_firefly,"4040","var1")
 
@@ -61,7 +59,6 @@ class XtdGearInfos
 		U_CUSTOM(RB205_U_pain,"2111","dft")
 		U_CUSTOM(RB205_U_fire,"2187","dft")
 		U_CUSTOM(RB205_U_tyr,"2209","dft")
-		U_CUSTOM(RB205_U_smoker,"2288","dft")
 		U_CUSTOM(RB205_U_zeegers,"2420","dft")
 		U_CUSTOM(RB205_U_gentleman,"2441","dft")
 		U_CUSTOM(RB205_U_kamaz,"2609","dft")
@@ -93,7 +90,6 @@ class XtdGearInfos
 		//VESTS
 
 		V_CUSTOM(RB205_V_lucky,"2058","dft")
-		V_CUSTOM(RB205_V_smoker,"2288","dft")
 		V_CUSTOM(RB205_V_gentleman,"2441","dft")
 		V_CUSTOM(RB205_V_slow,"3340","dft")
 		V_CUSTOM(RB205_V_putzi,"5283","dft")
