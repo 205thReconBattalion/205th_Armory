@@ -44,6 +44,13 @@ class cfgVehicles
 			"3as\3AS_Vwing\data\vwing_int_co.paa",
 			"#(argb,8,8,3)color(0,0,0,1.0,CA)"
 		};
+		textureList[] =
+		{
+			"Default", 1,
+			"RB205_Pathfinder", 0,
+			"Republic", 0,
+			"Empire", 0
+		};
 		class TextureSources
 		{
 			class Default
