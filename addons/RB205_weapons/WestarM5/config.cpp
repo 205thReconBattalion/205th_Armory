@@ -43,6 +43,7 @@ class CfgWeapons
 		displayName = "$STR_205_WESTARM5_DisplayName";
 		displayNameShort = "$STR_205_WESTARM5_DisplayNameShort";
 		descriptionShort = "Blastergewehr der GAR<br />Freigegeben für: ARC";
+		picture = "\3AS\3AS_Weapons\WestarM5\Data\UI\3as_westar.paa";
 		cursor = "RB205_CH_default";
 		mass = MASS_WP_RIFLE;
 		magazines[] =
@@ -167,6 +168,7 @@ class CfgWeapons
 		author = "205th Recon Battalion";
 		displayName = "$STR_205_OPTIC_WM5_DisplayName";
 		descriptionShort = "Vergrößerung: 2x-8x";
+		picture = "\A3\Weapons_F_EPB\Acc\Data\UI\gear_acco_sniper02_CA.paa";
 		class ItemInfo: ItemInfo
 		{
 			mass = MASS_ACC_OPTIC;
