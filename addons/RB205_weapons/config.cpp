@@ -547,6 +547,14 @@ class CfgMovesBasic
 			Stand="Rotary_Proper_WalkBR";
 		};
 	};
+	class ManActions
+	{
+		RB205_reload_charge[]=
+		{
+			"RB205_reload_charge",
+			"Gesture"
+		};
+	};
 };
 class CfgMovesMaleSdr: CfgMovesBasic
 {
@@ -679,6 +687,28 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			speed=-4.7;
 			actions = "WBK_RotaryCanon_Moveset_WalkBR";
 			file="RB205_weapons\data\anims\Rotary_Proper_Walk_BR.rtm";
+		};
+	};
+};
+class CfgGesturesMale
+{
+	class ManActions {};
+	class Default;
+	class States
+	{
+		class RB205_reload_charge: Default
+		{
+			enableOptics=0;
+			file="RB205_weapons\data\anims\reload_charge.rtm";
+			speed=-2.9;
+			looped=0;
+			mask="handsWeapon";
+			headBobStrength=0.3;
+			headBobMode=1;
+			rightHandIKCurve[]={1};
+			leftHandIKBeg=1;
+			leftHandIKEnd=1;
+			leftHandIKCurve[]={1};
 		};
 	};
 };

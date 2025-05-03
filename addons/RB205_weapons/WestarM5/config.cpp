@@ -50,6 +50,8 @@ class CfgWeapons
 			"RB205_Experimental_Energy_Pack"
 		};
 		magazineWell[] = {};
+		reloadAction = "RB205_reload_charge";
+		reloadMagazineSound[] = {"RB205_weapons\data\sounds\reload_charge.ogg",2,1,30};
 		fireLightDiffuse[] = {0,0,1};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{

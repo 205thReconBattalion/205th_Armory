@@ -42,6 +42,8 @@ class CfgWeapons
 			"RB205_Scatter_Energy_Pack"
 		};
 		magazineWell[] = {};
+		reloadAction = "GestureReload_JLTS_DC15S";
+		reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\Reload_Mx",1,1,10};
 		fireLightDiffuse[] = {0,0,1};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
