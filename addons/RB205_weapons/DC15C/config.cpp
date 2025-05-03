@@ -5,7 +5,7 @@ class cfgPatches
 		requiredAddons[] =
 		{
 			"RB205_weapons",
-			"3AS_Weapons_DC15C"
+			"3AS_Weapons_Republic_DC15C"
 		};
 		requiredVersion = 1.0;
         author = "205th Recon Battalion";
@@ -13,44 +13,68 @@ class cfgPatches
 		weapons[] =
 		{
 			"RB205_DC15C",
-			"RB205_DC15C_GL"
+			"RB205_DC15C_GL",
+			"RB205_optic_DC15C"
 		};
 	};
 };
 
 #include "\RB205_weapons\macros.hpp"
 
-class GunParticles;
-class Mode_Burst;
+class WeaponSlotsInfo;
+class CowsSlot;
+class PointerSlot;
+class MuzzleSlot;
+
 class Mode_SemiAuto;
+class GunParticles;
 
 class CfgWeapons
 {
-	class 3AS_DC15C_F;
+	class 3AS_DC15C_Base_F;
+	class 3AS_DC15C_F: 3AS_DC15C_Base_F
+	{
+		class Single;
+		class FullAuto;
+	};
 	class RB205_DC15C: 3AS_DC15C_F
 	{
+		baseWeapon = "RB205_DC15C";
 		author = "205th Recon Battalion";
 		displayName = "$STR_205_DC15C_DisplayName";
 		displayNameShort = "$STR_205_DC15C_DisplayNameShort";
 		descriptionShort = "Blasterkarabiner der GAR<br />Freigegeben für: Alle<br />(Unterwasser-Fähig)";
-		picture = "\3AS\3AS_Weapons\DC15C\Data\UI\3as_dc15c.paa";
+		cursor = "RB205_CH_default";
 		mass = MASS_WP_CARBINE;
-		fireLightDiffuse[] = {0,0,1};
-		canShootInWater = 1;
 		magazines[] =
 		{
 			"RB205_Standard_Energy_Pack"
 		};
-		cursor = "RB205_CH_default";
 		magazineWell[] = {};
-		JLTS_hasElectronics = 1;
-		JLTS_hasEMPProtection = 0;
-		JLTS_friedItem = "RB205_DC15C_fried";
-		muzzles[] =
+		reloadAction = "GestureReload_JLTS_DC15S";
+		reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\Reload_Mx",1,1,10};
+		fireLightDiffuse[] = {0,0,1};
+		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
-			"this"
+			class CowsSlot: CowsSlot
+			{
+				compatibleItems[] =
+				{
+					"RB205_optic_DC15C"
+				};
+				iconPicture = "";
+			};
+			class PointerSlot: PointerSlot
+			{
+				compatibleItems[] = {};
+			};
+			class MuzzleSlot: MuzzleSlot
+			{
+				compatibleItems[] = {};
+			};
 		};
-		class GunParticles : GunParticles
+		canShootInWater = 1;
+		class GunParticles: GunParticles
 		{
 			class SecondEffect 
 			{
@@ -59,148 +83,119 @@ class CfgWeapons
 				directionName = "konec hlavne";
 			};
 		};
-		modes[] =
+		class Single: Single
 		{
-			"Burst",
-			"Single"
-		};
-		class Burst: Mode_Burst
-		{
-			sounds[] =
-			{
-				"StandardSound"
-			};
 			class BaseSoundModeType;
 			class StandardSound: BaseSoundModeType
 			{
-				soundSetShot[] =
-				{
-					"RB205_DC15C_Shot_SoundSet"
-				};
+				soundSetShot[] = { "RB205_DC15S_Shot_SoundSet" };
 			};
-			reloadTime = 0.05;
-			dispersion = 0.0011;
-			minRange = 0;
-			minRangeProbab = 0.89999998;
-			midRange = 15;
-			midRangeProbab = 0.69999999;
-			maxRange = 30;
-			maxRangeProbab = 0.1;
-			soundContinuous = 0;
-			soundBurst = 0;
-		};
-		class Single: Mode_SemiAuto
-		{
-			sounds[] =
+			class SilencedSound: BaseSoundModeType
 			{
-				"StandardSound"
+				soundSetShot[] = { "RB205_DC15S_Shot_SoundSet" };
 			};
+			dispersion = DISPERSION_DC15C;
+		};
+		class FullAuto: FullAuto
+		{
 			class BaseSoundModeType;
 			class StandardSound: BaseSoundModeType
 			{
-				soundSetShot[] =
-				{
-					"RB205_DC15C_Shot_SoundSet"
-				};
+				soundSetShot[] = { "RB205_DC15S_Shot_SoundSet" };
 			};
-			reloadTime = 0.1;
-			dispersion = 0.0011;
-			minRange = 2;
-			minRangeProbab = 0.30000001;
-			midRange = 150;
-			midRangeProbab = 0.69999999;
-			maxRange = 350;
-			maxRangeProbab = 0.1;
-			soundContinuous = 0;
-			soundBurst = 0;
+			class SilencedSound: BaseSoundModeType
+			{
+				soundSetShot[] = { "RB205_DC15S_Shot_SoundSet" };
+			};
+			dispersion = DISPERSION_DC15C;
 		};
+		JLTS_hasElectronics = 1;
+		JLTS_hasEMPProtection = 0;
+		JLTS_friedItem = "RB205_DC15C_fried";
 	};
 	FRIED_WEAPON(RB205_DC15C,"\RB205_weapons\data\ui\dc15c_fried.paa")
 	
-	class 3AS_DC15C_GL;
+	class 3AS_DC15C_GL: 3AS_DC15C_Base_F
+	{
+		class Single;
+		class FullAuto;
+		class GL_3GL_F;
+	};
 	class RB205_DC15C_GL: 3AS_DC15C_GL
 	{
+		baseWeapon = "RB205_DC15C_GL";
 		author = "205th Recon Battalion";
 		displayName = "$STR_205_DC15C_GL_DisplayName";
 		displayNameShort = "$STR_205_DC15C_GL_DisplayNameShort";
 		descriptionShort = "Blasterkarabiner der GAR<br />Freigegeben für: Alle<br />(Unterwasser-Fähig)";
-		picture = "\3AS\3AS_Weapons\DC15C\Data\UI\3as_dc15cgl.paa";
+		cursor = "RB205_CH_default";
 		mass = MASS_WP_CARBINE_GL;
-		fireLightDiffuse[] = {0,0,1};
-		canShootInWater = 1;
 		magazines[] =
 		{
 			"RB205_Standard_Energy_Pack"
 		};
-		cursor = "RB205_CH_default";
 		magazineWell[] = {};
-		JLTS_hasElectronics = 1;
-		JLTS_hasEMPProtection = 0;
-		JLTS_friedItem = "RB205_DC15C_GL_fried";
-		modes[] =
+		reloadAction = "GestureReload_JLTS_DC15S";
+		reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\Reload_Mx",1,1,10};
+		fireLightDiffuse[] = {0,0,1};
+		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
-			"Burst",
-			"Single"
-		};
-		muzzles[] =
-		{
-			"this",
-			"RB205_15CGL"
-		};
-		class Single: Mode_SemiAuto
-		{
-			sounds[]=
+			class CowsSlot: CowsSlot
 			{
-				"StandardSound"
+				compatibleItems[] =
+				{
+					"RB205_optic_DC15C"
+				};
+				iconPicture = "";
 			};
+			class PointerSlot: PointerSlot
+			{
+				compatibleItems[] = {};
+			};
+			class MuzzleSlot: MuzzleSlot
+			{
+				compatibleItems[] = {};
+			};
+		};
+		canShootInWater = 1;
+		class GunParticles: GunParticles
+		{
+			class SecondEffect 
+			{
+				effectName = "ShotUnderwater";
+				positionName = "usti hlavne";
+				directionName = "konec hlavne";
+			};
+		};
+		class Single: Single
+		{
 			class BaseSoundModeType;
 			class StandardSound: BaseSoundModeType
 			{
-				soundSetShot[] =
-				{
-					"RB205_DC15C_Shot_SoundSet"
-				};
+				soundSetShot[] = { "RB205_DC15S_Shot_SoundSet" };
 			};
-			reloadTime = 0.1;
-			dispersion = 0.0011;
-			minRange = 2;
-			minRangeProbab = 0.30000001;
-			midRange = 150;
-			midRangeProbab = 0.69999999;
-			maxRange = 350;
-			maxRangeProbab = 0.1;
-			soundContinuous = 0;
-			soundBurst = 0;
-		};
-		class Burst: Mode_Burst
-		{
-			sounds[] =
+			class SilencedSound: BaseSoundModeType
 			{
-				"StandardSound"
+				soundSetShot[] = { "RB205_DC15S_Shot_SoundSet" };
 			};
+			dispersion = DISPERSION_DC15C;
+		};
+		class FullAuto: FullAuto
+		{
 			class BaseSoundModeType;
 			class StandardSound: BaseSoundModeType
 			{
-				soundSetShot[] =
-				{
-					"RB205_DC15C_Shot_SoundSet"
-				};
+				soundSetShot[] = { "RB205_DC15S_Shot_SoundSet" };
 			};
-			reloadTime = 0.05;
-			dispersion = 0.0011;
-			minRange = 0;
-			minRangeProbab = 0.89999998;
-			midRange = 15;
-			midRangeProbab = 0.69999999;
-			maxRange = 30;
-			maxRangeProbab = 0.1;
-			soundContinuous = 0;
-			soundBurst = 0;
+			class SilencedSound: BaseSoundModeType
+			{
+				soundSetShot[] = { "RB205_DC15S_Shot_SoundSet" };
+			};
+			dispersion = DISPERSION_DC15C;
 		};
-		class 3AS_15CGL;
-		class RB205_15CGL: 3AS_15CGL
+		class GL_3GL_F: GL_3GL_F
 		{
-			displayName = "DC-15C-GL";
+			displayName = "DC-15C (UGL)";
 			magazines[] =
 			{
 				"RB205_ugl_he"
@@ -209,53 +204,48 @@ class CfgWeapons
 			{
 				"RB205_ugl_1rnd"
 			};
-			modes[] =
-			{
-				"Single"
-			};
 			class Single: Mode_SemiAuto
 			{
+				sounds[] = {"StandardSound"};
 				class BaseSoundModeType;
 				class StandardSound: BaseSoundModeType
 				{
-					soundSetShot[]=
+					soundSetShot[] =
 					{
 						"RB205_UGL_Shot_SoundSet"
 					};
 				};
-				sounds[]=
-				{
-					"StandardSound"
-				};
-				reloadtime = 0.5;
-				multiplier = 1;
-				showtoplayer = 1;
-				burst = 1;
-				dispersion = 8.9999997e-007;
-				displayName = "UGL";
-				textureType = "semi";//textureType="fullAuto";
-				aiRateOfFire = 5;
-				aiRateOfFireDistance = 500;
-				aiRateOfFireDispersion = 2;
-				minRange = 10;
-				minRangeProbab = 0.30000001;
-				midRange = 40;
-				midRangeProbab = 0.85000002;
-				maxRange = 600;
-				maxRangeProbab = 0.85000002;
+				recoil = "M240Recoil";
+				recoilProne = "M240Recoil";
+				maxRange = 400;
+				maxRangeProbab = 0.05;
+				midRange = 200;
+				midRangeProbab = 0.7;
+				minRange = 30;
+				minRangeProbab = 0.1;
 			};
 		};
-		class GunParticles : GunParticles
-		{
-			class SecondEffect 
-			{
-				effectName = "ShotUnderwater";
-				positionName = "usti hlavne";
-				directionName = "konec hlavne";
-			};
-		};
+		JLTS_hasElectronics = 1;
+		JLTS_hasEMPProtection = 0;
+		JLTS_friedItem = "RB205_DC15C_GL_fried";
 	};
 	FRIED_WEAPON(RB205_DC15C_GL,"\RB205_weapons\data\ui\dc15c_gl_fried.paa")
+
+	class ItemCore;
+	class 3AS_optic_DC15C_F: ItemCore
+	{
+		class ItemInfo;
+	};
+	class RB205_optic_DC15C: 3AS_optic_DC15C_F
+	{
+		author = "205th Recon Battalion";
+		displayName = "$STR_205_OPTIC_DC15C_DisplayName";
+		descriptionShort = "Vergrößerung: 1x-3x";
+		class ItemInfo: ItemInfo
+		{
+			mass = MASS_ACC_OPTIC;
+		};
+	};
 };
 
 class cfgSoundShaders

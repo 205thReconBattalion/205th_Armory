@@ -6,17 +6,9 @@
             <English>[205] DC-15A Blaster Rifle</English>
             <German>[205] DC-15A Blastergewehr</German>
         </Key>
-        <Key ID="STR_205_DC15A_JLTS_DisplayName">
-            <English>[205] DC-15A Blaster Rifle (JLTS)</English>
-            <German>[205] DC-15A Blastergewehr (JLTS)</German>
-        </Key>
         <Key ID="STR_205_DC15A_GL_DisplayName">
             <English>[205] DC-15A GL Blaster Rifle</English>
             <German>[205] DC-15A GL Blastergewehr</German>
-        </Key>
-        <Key ID="STR_205_DC15A_GL_JLTS_DisplayName">
-            <English>[205] DC-15A GL Blaster Rifle (JLTS)</English>
-            <German>[205] DC-15A GL Blastergewehr (JLTS)</German>
         </Key>
         <Key ID="STR_205_DC15C_DisplayName">
             <English>[205] DC-15C Blaster Carbine</English>
@@ -30,17 +22,21 @@
             <English>[205] DC-15L Blaster Rifle</English>
             <German>[205] DC-15L Blastergewehr</German>
         </Key>
+        <Key ID="STR_205_DC15LE_DisplayName">
+            <English>[205] DC-15LE Blaster Rifle</English>
+            <German>[205] DC-15LE Blastergewehr</German>
+        </Key>
         <Key ID="STR_205_DC15S_DisplayName">
             <English>[205] DC-15S Blaster Carbine</English>
             <German>[205] DC-15S Blasterkarabiner</German>
         </Key>
-        <Key ID="STR_205_DC15S_JLTS_DisplayName">
-            <English>[205] DC-15S Blaster Carbine (JLTS)</English>
-            <German>[205] DC-15S Blasterkarabiner (JLTS)</German>
+        <Key ID="STR_205_DC15S_GL_DisplayName">
+            <English>[205] DC-15S GL Blaster Carbine</English>
+            <German>[205] DC-15S GL Blasterkarabiner</German>
         </Key>
-        <Key ID="STR_205_DC15S_JLTS_shield_DisplayName">
-            <English>[205] DC-15S Blaster Carbine (JLTS) (Shielded)</English>
-            <German>[205] DC-15S Blasterkarabiner (JLTS) (Beschildet)</German>
+        <Key ID="STR_205_DC15S_shield_DisplayName">
+            <English>[205] DC-15S Blaster Carbine (Shielded)</English>
+            <German>[205] DC-15S Blasterkarabiner (Beschildet)</German>
         </Key>
         <Key ID="STR_205_DC15X_DisplayName">
             <English>[205] DC-15X Sniper Rifle</English>
@@ -57,6 +53,10 @@
         <Key ID="STR_205_DC17_ALT_DisplayName">
             <English>[205] DC-17 Blaster Pistol (Alt.)</English>
             <German>[205] DC-17 Blasterpistole (Alt.)</German>
+        </Key>
+        <Key ID="STR_205_DC17_shield_DisplayName">
+            <English>[205] DC-17 Blaster Pistol (Shielded)</English>
+            <German>[205] DC-17 Blasterpistole (Beschildet)</German>
         </Key>
         <Key ID="STR_205_PLX1_DisplayName">
             <English>[205] PLX-1 Missile Launcher</English>
@@ -167,23 +167,23 @@
             <English>DC-15L</English>
             <German>DC-15L</German>
         </Key>
+        <Key ID="STR_205_DC15L_DisplayNameShort">
+            <English>DC-15LE</English>
+            <German>DC-15LE</German>
+        </Key>
         <Key ID="STR_205_DC15S_DisplayNameShort">
             <English>DC-15S</English>
             <German>DC-15S</German>
+        </Key>
+        <Key ID="STR_205_DC15S_GL_DisplayNameShort">
+            <English>DC-15S-GL</English>
+            <German>DC-15S-GL</German>
         </Key>
         <Key ID="STR_205_DC15X_DisplayNameShort">
             <English>DC-15X</English>
             <German>DC-15X</German>
         </Key>
         <Key ID="STR_205_DC17_DisplayNameShort">
-            <English>DC-17</English>
-            <German>DC-17</German>
-        </Key>
-        <Key ID="STR_205_DC17_DUAL_DisplayNameShort">
-            <English>DC-17</English>
-            <German>DC-17</German>
-        </Key>
-        <Key ID="STR_205_DC17_ALT_DisplayNameShort">
             <English>DC-17</English>
             <German>DC-17</German>
         </Key>
@@ -476,17 +476,49 @@
         </Key>
 <!--displayName attachments etc.-->
     </Package>
-        <Key ID="STR_205_OPTIC_DC15L_DisplayName">
-            <English>[205] DC-15L Optic</English>
-            <German>[205] DC-15L Visier</German>
+        <Key ID="STR_205_OPTIC_DC15C_DisplayName">
+            <English>[205] DC-15C Scope</English>
+            <German>[205] DC-15C Zielfernrohr</German>
         </Key>
-        <Key ID="STR_205_SUPPRESSOR_DC15X_DisplayName">
+        <Key ID="STR_205_OPTIC_DC15L_DisplayName">
+            <English>[205] DC-15L Scope</English>
+            <German>[205] DC-15L Zielfernrohr</German>
+        </Key>
+        <Key ID="STR_205_BIPOD_DC15L_DisplayName">
+            <English>[205] DC-15L Bipod</English>
+            <German>[205] DC-15L Zweibein</German>
+        </Key>
+        <Key ID="STR_205_OPTIC_DC15LE_DisplayName">
+            <English>[205] DC-15LE Scope</English>
+            <German>[205] DC-15LE Zielfernrohr</German>
+        </Key>
+        <Key ID="STR_205_MUZZLE_DC15LE_DisplayName">
+            <English>[205] DC-15LE Suppressor</English>
+            <German>[205] DC-15LE Schalldämpfer</German>
+        </Key>
+        <Key ID="STR_205_OPTIC_DC15X_DisplayName">
+            <English>[205] DC-15X Scope</English>
+            <German>[205] DC-15X Zielfernrohr</German>
+        </Key>
+        <Key ID="STR_205_MUZZLE_DC15X_DisplayName">
             <English>[205] DC-15X Suppressor</English>
             <German>[205] DC-15X Schalldämpfer</German>
         </Key>
+        <Key ID="STR_205_BIPOD_DC15X_DisplayName">
+            <English>[205] DC-15X Bipod</English>
+            <German>[205] DC-15X Zweibein</German>
+        </Key>
         <Key ID="STR_205_OPTIC_V38X_DisplayName">
-            <English>[205] Valken-38X Optic</English>
-            <German>[205] Valken-38X Visier</German>
+            <English>[205] Valken-38X Scope</English>
+            <German>[205] Valken-38X Zielfernrohr</German>
+        </Key>
+        <Key ID="STR_205_BIPOD_V38X_DisplayName">
+            <English>[205] Valken-38X Bipod</English>
+            <German>[205] Valken-38X Zweibein</German>
+        </Key>
+        <Key ID="STR_205_OPTIC_WM5_DisplayName">
+            <English>[205] Westar-M5 Scope</English>
+            <German>[205] Westar-M5 Zielfernrohr</German>
         </Key>
         <Key ID="STR_205_OPTIC_DC17M_DisplayName">
             <English>[205] DC-17M Optic</English>
