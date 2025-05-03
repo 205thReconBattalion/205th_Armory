@@ -47,7 +47,6 @@ class XtdGearModels
                     "2111",
                     "2187",
                     "2209",
-                    "2288",
                     "2420",
                     "2441",
                     "2609",
@@ -112,10 +111,6 @@ class XtdGearModels
                 class 2209
                 {
                     description = "Tyr";
-                };
-                class 2288
-                {
-                    description = "Smoker";
                 };
                 class 2420
                 {
