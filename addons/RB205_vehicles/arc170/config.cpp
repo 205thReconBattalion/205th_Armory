@@ -47,6 +47,11 @@ class cfgVehicles
 			"RB205_vehicles\arc170\data\arc170_wings_engines_co.paa",
 			"RB205_vehicles\arc170\data\arc170_guns_co.paa"
 		};
+		textureList[] =
+		{
+			"Default", 1,
+			"Republic", 0
+		};
 		class TextureSources
 		{
 			class Default
