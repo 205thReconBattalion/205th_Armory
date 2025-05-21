@@ -119,13 +119,9 @@ class XtdGearInfos
 		U(RB205_U_corporal_wampa,"dft","cp","default","1_4")
 		U(RB205_U_sergeant_wampa,"dft","cs","default","1_4")
 		
-		U(RB205_U_arf_trooper_nexu,"sct","ct","default","2_1")
-		U(RB205_U_arf_corporal_nexu,"sct","cp","default","2_1")
-		U(RB205_U_arf_sergeant_nexu,"sct","cs","default","2_1")
-		
-		U(RB205_U_plt_trooper_raven,"plt","ct","default","3_1")
-		U(RB205_U_plt_corporal_raven,"plt","cp","default","3_1")
-		U(RB205_U_plt_sergeant_raven,"plt","cs","default","3_1")
+		U(RB205_U_plt_trooper_banshee,"plt","ct","default","3_1")
+		U(RB205_U_plt_corporal_banshee,"plt","cp","default","3_1")
+		U(RB205_U_plt_sergeant_banshee,"plt","cs","default","3_1")
 	};
 
 	class CfgVehicles

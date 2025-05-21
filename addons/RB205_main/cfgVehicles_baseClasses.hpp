@@ -142,14 +142,14 @@ class RB205_arf_base: RB205_clone_base
 	backpack = "RB205_B_arf";
 	weapons[] =
 	{
-		"RB205_DC15S",
+		"RB205_DC15C",
 		"RB205_DC17_alt",
 		"RB205_binocular_arf",
 		"Throw","Put"
 	};
 	respawnweapons[] =
 	{
-		"RB205_DC15S",
+		"RB205_DC15C",
 		"RB205_DC17_alt",
 		"RB205_binocular_arf",
 		"Throw","Put"

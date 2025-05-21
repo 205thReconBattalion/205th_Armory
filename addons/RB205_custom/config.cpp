@@ -26,13 +26,9 @@ class cfgPatches
 			"RB205_U_corporal_wampa",
 			"RB205_U_sergeant_wampa",
 			
-			"RB205_U_arf_trooper_nexu",
-			"RB205_U_arf_corporal_nexu",
-			"RB205_U_arf_sergeant_nexu",
-			
-			"RB205_U_plt_trooper_raven",
-			"RB205_U_plt_corporal_raven",
-			"RB205_U_plt_sergeant_raven"
+			"RB205_U_plt_trooper_banshee",
+			"RB205_U_plt_corporal_banshee",
+			"RB205_U_plt_sergeant_banshee"
 		};
 		units[] =
 		{
@@ -64,16 +60,10 @@ class cfgPatches
 			"RB205_clone_trooper_wampa_medic",
 			"RB205_clone_trooper_wampa_rto",
 
-			"RB205_clone_arf_trooper_nexu",
-			"RB205_clone_arf_lanceCorporal_nexu",
-			"RB205_clone_arf_corporal_nexu",
-			"RB205_clone_arf_sergeant_nexu",
-			"RB205_clone_arf_trooper_nexu_medic",
-
-			"RB205_clone_plt_trooper_raven",
-			"RB205_clone_plt_lanceCorporal_raven",
-			"RB205_clone_plt_corporal_raven",
-			"RB205_clone_plt_sergeant_raven"
+			"RB205_clone_plt_trooper_banshee",
+			"RB205_clone_plt_lanceCorporal_banshee",
+			"RB205_clone_plt_corporal_banshee",
+			"RB205_clone_plt_sergeant_banshee"
 		};
 	};
 };
@@ -208,59 +198,31 @@ class cfgWeapons
 		};
 	};
 
-	class RB205_U_arf_trooper_nexu: RB205_U_arf_trooper
+	class RB205_U_plt_trooper_banshee: RB205_U_plt_trooper
 	{
 		ACCESS_TRUE
-		displayName = "[205] Clone ARF Trooper Armor <2-1 Nexu>";
+		displayName = "[205] Clone Pilot Trooper Armor <3-1 Banshee>";
 		class ItemInfo: ItemInfo
 		{
-			uniformClass = RB205_clone_arf_trooper_nexu;
+			uniformClass = RB205_clone_plt_trooper_banshee;
 		};
 	};
-	class RB205_U_arf_corporal_nexu: RB205_U_arf_corporal
+	class RB205_U_plt_corporal_banshee: RB205_U_plt_corporal
 	{
 		ACCESS_TRUE
-		displayName = "[205] Clone ARF Trooper Armor (Corporal) <2-1 Nexu>";
+		displayName = "[205] Clone Pilot Trooper Armor (Corporal) <3-1 Banshee>";
 		class ItemInfo: ItemInfo
 		{
-			uniformClass = RB205_clone_arf_corporal_nexu;
+			uniformClass = RB205_clone_plt_corporal_banshee;
 		};
 	};
-	class RB205_U_arf_sergeant_nexu: RB205_U_arf_sergeant
+	class RB205_U_plt_sergeant_banshee: RB205_U_plt_sergeant
 	{
 		ACCESS_TRUE
-		displayName = "[205] Clone ARF Trooper Armor (Sergeant) <2-1 Nexu>";
+		displayName = "[205] Clone Pilot Trooper Armor (Sergeant) <3-1 Banshee>";
 		class ItemInfo: ItemInfo
 		{
-			uniformClass = RB205_clone_arf_sergeant_nexu;
-		};
-	};
-
-	class RB205_U_plt_trooper_raven: RB205_U_plt_trooper
-	{
-		ACCESS_TRUE
-		displayName = "[205] Clone Pilot Trooper Armor <3-1 Raven>";
-		class ItemInfo: ItemInfo
-		{
-			uniformClass = RB205_clone_plt_trooper_raven;
-		};
-	};
-	class RB205_U_plt_corporal_raven: RB205_U_plt_corporal
-	{
-		ACCESS_TRUE
-		displayName = "[205] Clone Pilot Trooper Armor (Corporal) <3-1 Raven>";
-		class ItemInfo: ItemInfo
-		{
-			uniformClass = RB205_clone_plt_corporal_raven;
-		};
-	};
-	class RB205_U_plt_sergeant_raven: RB205_U_plt_sergeant
-	{
-		ACCESS_TRUE
-		displayName = "[205] Clone Pilot Trooper Armor (Sergeant) <3-1 Raven>";
-		class ItemInfo: ItemInfo
-		{
-			uniformClass = RB205_clone_plt_sergeant_raven;
+			uniformClass = RB205_clone_plt_sergeant_banshee;
 		};
 	};
 };
@@ -517,94 +479,45 @@ class cfgVehicles
 		uniformclass = "RB205_U_trooper_wampa";
 		editorSubcategory = "RB205_squadVariants";
 	};
-	
-	class RB205_clone_arf_trooper_nexu: RB205_clone_arf_trooper
-	{
-		displayName = "(2-1 Nexu) (2-CT) Clone ARF Trooper";
-		uniformclass = "RB205_U_arf_trooper_nexu";
-		editorSubcategory = "RB205_squadVariants";
-		hiddenselectionsTextures[] =
-		{
-			"RB205_custom\data\U_enl_upper_nexu.paa",
-			"RB205_main\data\arf\U_enl_lower_co.paa",
-			"RB205_main\data\default\U_undersuit_co.paa"
-		};
-	};
-	class RB205_clone_arf_lanceCorporal_nexu: RB205_clone_arf_lanceCorporal
-	{
-		displayName = "(2-1 Nexu) (3-CLC) Clone ARF Lance-Corporal";
-		uniformclass = "RB205_U_arf_corporal_nexu";
-		editorSubcategory = "RB205_squadVariants";
-	};
-	class RB205_clone_arf_corporal_nexu: RB205_clone_arf_corporal
-	{
-		displayName = "(2-1 Nexu) (4-CP) Clone ARF Corporal";
-		uniformclass = "RB205_U_arf_corporal_nexu";
-		editorSubcategory = "RB205_squadVariants";
-		hiddenselectionsTextures[] =
-		{
-			"RB205_custom\data\U_enl_upper_nexu.paa",
-			"RB205_main\data\arf\U_nco_lower_co.paa",
-			"RB205_main\data\default\U_undersuit_co.paa"
-		};
-	};
-	class RB205_clone_arf_sergeant_nexu: RB205_clone_arf_sergeant
-	{
-		displayName = "(2-1 Nexu) (5-CS) Clone ARF Sergeant";
-		uniformclass = "RB205_U_arf_sergeant_nexu";
-		editorSubcategory = "RB205_squadVariants";
-		hiddenselectionsTextures[] =
-		{
-			"RB205_custom\data\U_enl_upper_nexu.paa",
-			"RB205_main\data\arf\U_nco_lower_co.paa",
-			"RB205_main\data\default\U_undersuit_co.paa"
-		};
-	};
-	class RB205_clone_arf_trooper_nexu_medic: RB205_clone_arf_trooper_medic
-	{
-		displayName = "(2-1 Nexu) Clone ARF Trooper <Medic>";
-		uniformclass = "RB205_U_arf_trooper_nexu";
-		editorSubcategory = "RB205_squadVariants";
-	};
 
-	class RB205_clone_plt_trooper_raven: RB205_clone_plt_trooper
+	class RB205_clone_plt_trooper_banshee: RB205_clone_plt_trooper
 	{
-		displayName = "(3-1 Raven) (2-CT) Clone Pilot Trooper ";
-		uniformclass = "RB205_U_plt_trooper_raven";
+		displayName = "(3-1 Banshee) (2-CT) Clone Pilot Trooper ";
+		uniformclass = "RB205_U_plt_trooper_banshee";
 		editorSubcategory = "RB205_squadVariants";
 		hiddenselectionsTextures[] =
 		{
-			"RB205_custom\data\U_enl_upper_raven.paa",
+			"RB205_custom\data\U_enl_upper_banshee.paa",
 			"RB205_main\data\arf\U_enl_lower_co.paa",
 			"RB205_main\data\default\U_undersuit_co.paa"
 		};
 	};
-	class RB205_clone_plt_lanceCorporal_raven: RB205_clone_plt_lanceCorporal
+	class RB205_clone_plt_lanceCorporal_banshee: RB205_clone_plt_lanceCorporal
 	{
-		displayName = "(3-1 Raven) (3-CLC) Clone Pilot Lance-Corporal";
-		uniformclass = "RB205_U_plt_corporal_raven";
+		displayName = "(3-1 Banshee) (3-CLC) Clone Pilot Lance-Corporal";
+		uniformclass = "RB205_U_plt_corporal_banshee";
 		editorSubcategory = "RB205_squadVariants";
 	};
-	class RB205_clone_plt_corporal_raven: RB205_clone_plt_corporal
+	class RB205_clone_plt_corporal_banshee: RB205_clone_plt_corporal
 	{
-		displayName = "(3-1 Raven) (4-CP) Clone Pilot Corporal";
-		uniformclass = "RB205_U_plt_corporal_raven";
+		displayName = "(3-1 Banshee) (4-CP) Clone Pilot Corporal";
+		uniformclass = "RB205_U_plt_corporal_banshee";
 		editorSubcategory = "RB205_squadVariants";
 		hiddenselectionsTextures[] =
 		{
-			"RB205_custom\data\U_enl_upper_raven.paa",
+			"RB205_custom\data\U_enl_upper_banshee.paa",
 			"RB205_main\data\arf\U_nco_lower_co.paa",
 			"RB205_main\data\default\U_undersuit_co.paa"
 		};
 	};
-	class RB205_clone_plt_sergeant_raven: RB205_clone_plt_sergeant
+	class RB205_clone_plt_sergeant_banshee: RB205_clone_plt_sergeant
 	{
 		displayName = "(3-1 Raven) (5-CS) Clone Pilot Sergeant";
-		uniformclass = "RB205_U_plt_sergeant_raven";
+		uniformclass = "RB205_U_plt_sergeant_banshee";
 		editorSubcategory = "RB205_squadVariants";
 		hiddenselectionsTextures[] =
 		{
-			"RB205_custom\data\U_enl_upper_raven.paa",
+			"RB205_custom\data\U_enl_upper_banshee.paa",
 			"RB205_main\data\arf\U_nco_lower_co.paa",
 			"RB205_main\data\default\U_undersuit_co.paa"
 		};
