@@ -43,7 +43,7 @@ class CfgWeapons
 		author = "205th Recon Battalion";
 		displayName = "$STR_205_DC15C_DisplayName";
 		displayNameShort = "$STR_205_DC15C_DisplayNameShort";
-		descriptionShort = "Blasterkarabiner der GAR<br />Freigegeben für: Alle<br />(Unterwasser-Fähig)";
+		descriptionShort = "Blasterkarabiner der GAR<br />Freigegeben für: ARF<br />(Unterwasser-Fähig)";
 		cursor = "RB205_CH_default";
 		mass = MASS_WP_CARBINE;
 		magazines[] =
@@ -127,7 +127,7 @@ class CfgWeapons
 		author = "205th Recon Battalion";
 		displayName = "$STR_205_DC15C_GL_DisplayName";
 		displayNameShort = "$STR_205_DC15C_GL_DisplayNameShort";
-		descriptionShort = "Blasterkarabiner der GAR<br />Freigegeben für: Alle<br />(Unterwasser-Fähig)";
+		descriptionShort = "Blasterkarabiner der GAR<br />Freigegeben für: ARF<br />(Unterwasser-Fähig)";
 		cursor = "RB205_CH_default";
 		mass = MASS_WP_CARBINE_GL;
 		magazines[] =
