@@ -15,7 +15,8 @@ class CfgPatches
 			"RB205_droid_med",
 			"RB205_console_admin",
 			"RB205_fuel_barrel",
-			"RB205_fortification_container"
+			"RB205_fortification_container",
+			"RB205_fortification_container_small"
 		};
 		weapons[] = {};
 	};
@@ -151,6 +152,22 @@ class CfgVehicles
 				statement = "[this,'open_doorb2',0] call BIS_fnc_DoorNoHandleClose;[this,'open_doort2',0] call BIS_fnc_DoorNoHandleClose";
 			};
 		};
+	};
+	class RB205_fortification_container_small: 3AS_Supply_Large_Prop
+	{
+		displayName = "Fortifications Container (Small)";
+		author = AUTHOR;
+		editorCategory = "RB205_prop";
+		editorSubcategory = "RB205_utilities";
+		ace_cargo_size = 5;
+		ace_cargo_canLoad = 1;
+		ace_cargo_noRename = 0;
+		ace_cargo_blockUnloadCarry = 0;
+		ace_dragging_canCarry = 0;
+		DRAGGABLE
+
+		model = "3as\3as_props\crates\models\mediumcrate_gar.p3d";
+		editorPreview = "";
 	};
 };
 
