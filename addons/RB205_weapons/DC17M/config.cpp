@@ -43,6 +43,7 @@ class CfgAmmo
 	class RB205_ammo_40mm_at: SWLW_ammo_40mm_at
 	{
 		hit = 1000;//550;
+		coefgravity = 0;
 	};
 };
 class CfgMagazines
@@ -101,7 +102,7 @@ class CfgWeapons
 		author = "205th Recon Battalion";
 		displayName="$STR_205_DC17M_DisplayName";
 		displayNameShort = "STR_205_DC17M_DisplayNameShort";
-		descriptionShort = "Blasterkarabiner der GAR<br />Freigegeben für: Pathfinder (0-0), Tamer (1-0)";
+		descriptionShort = "Blasterkarabiner der GAR";
 		cursor = "RB205_CH_default";
 		mass = MASS_WP_CARBINE;
 		magazines[] =
