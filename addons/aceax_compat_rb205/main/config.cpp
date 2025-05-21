@@ -141,7 +141,6 @@ class XtdGearModels
 					"1_2",
 					"1_3",
                     "1_4",
-					"2_1",
 					"3_1"
 				};
                 class none
@@ -173,12 +172,6 @@ class XtdGearModels
                     label = "";
                     description = "Wampa (1-4)";
                     image = IMAGE_WAMPA;
-                };
-                class 2_1
-                {
-                    label = "";
-                    description = "Nexu (2-1)";
-                    image = IMAGE_NEXU;
                 };
                 class 3_1
                 {

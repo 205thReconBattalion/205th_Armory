@@ -17,7 +17,6 @@
 #define IMAGE_CHIMAERA	"\aceax_compat_rb205\main\data\1_2_chimaera.jpg"
 #define IMAGE_RANCOR	"\aceax_compat_rb205\main\data\1_3_rancor.jpg"
 #define IMAGE_WAMPA		"\aceax_compat_rb205\main\data\1_4_wampa.jpg"
-#define IMAGE_NEXU		"\aceax_compat_rb205\main\data\2_1_nexu.jpg"
 #define IMAGE_BANSHEE	"\aceax_compat_rb205\main\data\3_1_banshee.jpg"
 
 

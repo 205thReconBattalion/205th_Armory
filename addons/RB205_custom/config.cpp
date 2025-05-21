@@ -26,10 +26,6 @@ class cfgPatches
 			"RB205_U_corporal_wampa",
 			"RB205_U_sergeant_wampa",
 			
-			"RB205_U_arf_trooper_nexu",
-			"RB205_U_arf_corporal_nexu",
-			"RB205_U_arf_sergeant_nexu",
-			
 			"RB205_U_plt_trooper_banshee",
 			"RB205_U_plt_corporal_banshee",
 			"RB205_U_plt_sergeant_banshee"
@@ -63,12 +59,6 @@ class cfgPatches
 			"RB205_clone_sergeant_wampa",
 			"RB205_clone_trooper_wampa_medic",
 			"RB205_clone_trooper_wampa_rto",
-
-			"RB205_clone_arf_trooper_nexu",
-			"RB205_clone_arf_lanceCorporal_nexu",
-			"RB205_clone_arf_corporal_nexu",
-			"RB205_clone_arf_sergeant_nexu",
-			"RB205_clone_arf_trooper_nexu_medic",
 
 			"RB205_clone_plt_trooper_banshee",
 			"RB205_clone_plt_lanceCorporal_banshee",
@@ -205,34 +195,6 @@ class cfgWeapons
 		class ItemInfo: ItemInfo
 		{
 			uniformClass = RB205_clone_sergeant_wampa;
-		};
-	};
-
-	class RB205_U_arf_trooper_nexu: RB205_U_arf_trooper
-	{
-		ACCESS_TRUE
-		displayName = "[205] Clone ARF Trooper Armor <2-1 Nexu>";
-		class ItemInfo: ItemInfo
-		{
-			uniformClass = RB205_clone_arf_trooper_nexu;
-		};
-	};
-	class RB205_U_arf_corporal_nexu: RB205_U_arf_corporal
-	{
-		ACCESS_TRUE
-		displayName = "[205] Clone ARF Trooper Armor (Corporal) <2-1 Nexu>";
-		class ItemInfo: ItemInfo
-		{
-			uniformClass = RB205_clone_arf_corporal_nexu;
-		};
-	};
-	class RB205_U_arf_sergeant_nexu: RB205_U_arf_sergeant
-	{
-		ACCESS_TRUE
-		displayName = "[205] Clone ARF Trooper Armor (Sergeant) <2-1 Nexu>";
-		class ItemInfo: ItemInfo
-		{
-			uniformClass = RB205_clone_arf_sergeant_nexu;
 		};
 	};
 
@@ -515,55 +477,6 @@ class cfgVehicles
 	{
 		displayName = "(1-4 Wampa) Clone Trooper <RTO>";
 		uniformclass = "RB205_U_trooper_wampa";
-		editorSubcategory = "RB205_squadVariants";
-	};
-	
-	class RB205_clone_arf_trooper_nexu: RB205_clone_arf_trooper
-	{
-		displayName = "(2-1 Nexu) (2-CT) Clone ARF Trooper";
-		uniformclass = "RB205_U_arf_trooper_nexu";
-		editorSubcategory = "RB205_squadVariants";
-		hiddenselectionsTextures[] =
-		{
-			"RB205_custom\data\U_enl_upper_nexu.paa",
-			"RB205_main\data\arf\U_enl_lower_co.paa",
-			"RB205_main\data\default\U_undersuit_co.paa"
-		};
-	};
-	class RB205_clone_arf_lanceCorporal_nexu: RB205_clone_arf_lanceCorporal
-	{
-		displayName = "(2-1 Nexu) (3-CLC) Clone ARF Lance-Corporal";
-		uniformclass = "RB205_U_arf_corporal_nexu";
-		editorSubcategory = "RB205_squadVariants";
-	};
-	class RB205_clone_arf_corporal_nexu: RB205_clone_arf_corporal
-	{
-		displayName = "(2-1 Nexu) (4-CP) Clone ARF Corporal";
-		uniformclass = "RB205_U_arf_corporal_nexu";
-		editorSubcategory = "RB205_squadVariants";
-		hiddenselectionsTextures[] =
-		{
-			"RB205_custom\data\U_enl_upper_nexu.paa",
-			"RB205_main\data\arf\U_nco_lower_co.paa",
-			"RB205_main\data\default\U_undersuit_co.paa"
-		};
-	};
-	class RB205_clone_arf_sergeant_nexu: RB205_clone_arf_sergeant
-	{
-		displayName = "(2-1 Nexu) (5-CS) Clone ARF Sergeant";
-		uniformclass = "RB205_U_arf_sergeant_nexu";
-		editorSubcategory = "RB205_squadVariants";
-		hiddenselectionsTextures[] =
-		{
-			"RB205_custom\data\U_enl_upper_nexu.paa",
-			"RB205_main\data\arf\U_nco_lower_co.paa",
-			"RB205_main\data\default\U_undersuit_co.paa"
-		};
-	};
-	class RB205_clone_arf_trooper_nexu_medic: RB205_clone_arf_trooper_medic
-	{
-		displayName = "(2-1 Nexu) Clone ARF Trooper <Medic>";
-		uniformclass = "RB205_U_arf_trooper_nexu";
 		editorSubcategory = "RB205_squadVariants";
 	};
 
