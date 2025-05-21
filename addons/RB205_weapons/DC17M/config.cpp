@@ -43,6 +43,7 @@ class CfgAmmo
 	class RB205_ammo_40mm_at: SWLW_ammo_40mm_at
 	{
 		hit = 1000;//550;
+		coefgravity = 0;
 	};
 };
 class CfgMagazines
