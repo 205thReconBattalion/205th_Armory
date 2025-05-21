@@ -22,8 +22,8 @@ player linkItem "RB205_NV_arf_antenna";
 player addWeapon "RB205_binocular_arf";
 
 // PRIMARY WEAPON
-player addWeapon "RB205_DC15S";
-player addPrimaryWeaponItem "3AS_optic_holo_DC15S";
+player addWeapon "RB205_DC15C";
+player addPrimaryWeaponItem "RB205_optic_DC15C";
 player addPrimaryWeaponItem "RB205_Standard_Energy_Pack";
 // SECONDARY WEAPON
 player addWeapon "RB205_DC17_alt";
