@@ -183,8 +183,8 @@ class XtdGearModels
                 class 3_1
                 {
                     label = "";
-                    description = "Raven (3-1)";
-                    image = IMAGE_RAVEN;
+                    description = "Banshee (3-1)";
+                    image = IMAGE_BANSHEE;
                 };
             };
         };
