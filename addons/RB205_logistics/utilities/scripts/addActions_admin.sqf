@@ -20,7 +20,8 @@ _this addAction
 Presets:<br/>
 - RB205_fort_light<br/>
 - RB205_fort_medium<br/>
-- RB205_fort_heavy</t>"
+- RB205_fort_heavy<br/>
+- RB205_fort_allInOne</t>"
 	},
 	nil, 16, false,	true, "", "", 5
 ];
