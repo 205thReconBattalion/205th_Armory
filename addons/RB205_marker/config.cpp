@@ -34,17 +34,20 @@ class CfgMarkers
         markerClass = "RB205_BFT";
         side = 1;
     };
+
 	class b_RB205_BFT_1AP_lead: b_RB205_BFT_lead
 	{
 		name = "1-0 Tamer";
 		color[] = {0,0,0,1};
 		icon = "RB205_marker\data\1-0.paa";
 	};
+
 	class b_RB205_BFT_70MRP_lead: b_RB205_BFT_lead
 	{
 		name = "2-0 N/A";
 		icon = "RB205_marker\data\2-0.paa";
 	};
+
 	class b_RB205_BFT_35HSP_lead: b_RB205_BFT_lead
 	{
 		name = "3-0 N/A";
@@ -73,6 +76,11 @@ class CfgMarkers
 		name = "1-1-D Zillo";
 		icon = "RB205_marker\data\1-1_D.paa";
 	};
+	class b_RB205_BFT_11_e: b_RB205_BFT_11_a
+	{
+		name = "1-1-E Zillo";
+		icon = "RB205_marker\data\1-1_E.paa";
+	};
 
 	class b_RB205_BFT_12_a: b_RB205_BFT_lead
 	{
@@ -94,6 +102,11 @@ class CfgMarkers
 	{
 		name = "1-2-D Chimaera";
 		icon = "RB205_marker\data\1-2_D.paa";
+	};
+	class b_RB205_BFT_12_e: b_RB205_BFT_12_a
+	{
+		name = "1-2-E Chimaera";
+		icon = "RB205_marker\data\1-2_E.paa";
 	};
 
 	class b_RB205_BFT_13_a: b_RB205_BFT_lead
@@ -117,6 +130,11 @@ class CfgMarkers
 		name = "1-3-D Rancor";
 		icon = "RB205_marker\data\1-3_D.paa";
 	};
+	class b_RB205_BFT_13_e: b_RB205_BFT_13_a
+	{
+		name = "1-3-E Rancor";
+		icon = "RB205_marker\data\1-3_E.paa";
+	};
 
 	class b_RB205_BFT_14_a: b_RB205_BFT_lead
 	{
@@ -139,31 +157,31 @@ class CfgMarkers
 		name = "1-4-D Wampa";
 		icon = "RB205_marker\data\1-4_D.paa";
 	};
+	class b_RB205_BFT_14_e: b_RB205_BFT_14_a
+	{
+		name = "1-4-E Wampa";
+		icon = "RB205_marker\data\1-4_E.paa";
+	};
 
 	//70th Mobile Response Platoon
-	class b_RB205_BFT_21_a: b_RB205_BFT_lead
-	{
-		name = "2-1 Nexu";
-		color[] = {0.5,0.6,0.4,1};
-		icon = "RB205_marker\data\2-1_A.paa";
-	};
-	class b_RB205_BFT_21_b: b_RB205_BFT_21_a
-	{
-		name = "2-1-B Nexu";
-		icon = "RB205_marker\data\2-1_B.paa";
-	};
-	class b_RB205_BFT_21_c: b_RB205_BFT_21_a
-	{
-		name = "2-1-C Nexu";
-		icon = "RB205_marker\data\2-1_C.paa";
-	};
+	
 
 	//35th Heavy Support Platoon
 	class b_RB205_BFT_31_unknown: b_RB205_BFT_lead
 	{
-		name = "3-1 Raven [Unknown]";
+		name = "3-1 Raven (Unknown)";
 		color[] = {0.5,0.5,0.5,1};
 		icon = "RB205_marker\data\3-1.paa";
+	};
+	class b_RB205_BFT_31_air: b_RB205_BFT_31_unknown
+	{
+		name = "3-1 Raven (Transport)";
+		icon = "RB205_marker\data\3-1__air.paa";
+	};
+	class b_RB205_BFT_31_plane: b_RB205_BFT_31_unknown
+	{
+		name = "3-1 Raven (Fighter)";
+		icon = "RB205_marker\data\3-1__plane.paa";
 	};
 	class b_RB205_BFT_31_laat: b_RB205_BFT_31_unknown
 	{
@@ -185,10 +203,20 @@ class CfgMarkers
 		name = "3-1 Raven [Nu-Class]";
 		icon = "RB205_marker\data\3-1_NU.paa";
 	};
+	class b_RB205_BFT_31_rho: b_RB205_BFT_31_unknown
+	{
+		name = "3-1 Raven [Rho-Class]";
+		icon = "RB205_marker\data\3-1_RHO.paa";
+	};
 	class b_RB205_BFT_31_purrgil: b_RB205_BFT_31_unknown
 	{
 		name = "3-1 Raven [Purrgil]";
 		icon = "RB205_marker\data\3-1_PURRGIL.paa";
+	};
+	class b_RB205_BFT_31_gozanti: b_RB205_BFT_31_unknown
+	{
+		name = "3-1 Raven [Gozanti]";
+		icon = "RB205_marker\data\3-1_GOZANTI.paa";
 	};
 	class b_RB205_BFT_31_arc170: b_RB205_BFT_31_unknown
 	{
