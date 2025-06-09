@@ -51,13 +51,10 @@ class cfgVehicles
 	SLOT_MED(RB205_clone_trooper_wampa_medic,		"(1-4-D) Clone Trooper <Medic>")
 	SLOT(RB205_clone_trooper_wampa_rto,				"(1-4-D) Clone Trooper <RTO>")
 
-	SLOT(RB205_clone_arf_sergeant_nexu,				"(2-1-A) Clone Sergeant")
-	SLOT(RB205_clone_arf_corporal_nexu,				"(2-1-B) Clone Corporal")
-	SLOT(RB205_clone_arf_trooper_nexu,				"(2-1-C) Clone Trooper")
-
-	SLOT(RB205_clone_plt_sergeant_raven,			"(3-1-A) Clone Sergeant")
-	SLOT(RB205_clone_plt_corporal_raven,			"(3-1-B) Clone Corporal")
-	SLOT(RB205_clone_plt_trooper_raven,				"(3-1-C) Clone Trooper")
+	SLOT(RB205_clone_plt_sergeant_banshee,			"(3-1-A) Clone Sergeant")
+	SLOT(RB205_clone_plt_corporal_banshee,			"(3-1-B) Clone Corporal")
+	SLOT(RB205_clone_plt_lanceCorporal_banshee,		"(3-1-C) Clone Lance Corporal")
+	SLOT(RB205_clone_plt_trooper_banshee,			"(3-1-D) Clone Trooper")
 
 	//NAVY -> empire
 
