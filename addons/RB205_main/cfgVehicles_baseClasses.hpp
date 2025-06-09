@@ -55,7 +55,7 @@ class RB205_clone_base: RB205_unit_base
 		"JLTS_ids_gar_army"
 	};
 	//Model Values:
-	model = "ls_armor_bluefor\uniform\gar\phase2\ls_gar_phase2_uniform.p3d";
+	model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 	hiddenSelections[] =
 	{
 		"camo1",

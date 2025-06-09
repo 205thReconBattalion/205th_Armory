@@ -253,7 +253,7 @@ class RB205_U_base: RB205_uniform_base
 {
 	ACCESS_FALSE
 	picture = "\RB205_main\data\ui\uniforms\icon_U_default.paa";
-	model = "\ls_armor_bluefor\uniform\gar\phase2\ls_gar_phase2_uniform_groundholder.p3d";
+	model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 	class ItemInfo: ItemInfo
 	{
 		uniformClass = "RB205_clone_base";
@@ -308,10 +308,10 @@ class RB205_V_base: RB205_vest_base
 {
 	ACCESS_FALSE
 	picture = "\RB205_main\data\ui\vests\icon_V_default.paa";
-	model = "\SWLB_clones\SWLB_clone_basic_armor.p3d";
+	model = "\ls\core\addons\characters_clone_legacy\vests\clone\ls_gar_clone_vest.p3d";
 	class ItemInfo: ItemInfo
 	{
-		uniformModel = "\SWLB_clones\SWLB_clone_basic_armor.p3d";
+		uniformModel = "\ls\core\addons\characters_clone_legacy\vests\clone\ls_gar_clone_vest.p3d";
 		hiddenSelections[] = {};
 	};
 };
@@ -319,7 +319,7 @@ class RB205_V_fireTeamLead_base: RB205_vest_nco_base
 {
 	ACCESS_FALSE
 	picture = "\RB205_main\data\ui\vests\icon_V_fireTeamLead.paa";
-	model = "\SWLB_clones\SWLB_clone_recon_armor.p3d";
+	model = "\ls\core\addons\characters_clone_legacy\vests\recon\ls_gar_recon_vest.p3d";
 	hiddenSelections[]=
 	{
 		"camo1",
@@ -336,7 +336,7 @@ class RB205_V_fireTeamLead_base: RB205_vest_nco_base
 	};
 	class ItemInfo: ItemInfo
 	{
-		uniformModel = "\SWLB_clones\SWLB_clone_recon_armor.p3d";
+		uniformModel = "\ls\core\addons\characters_clone_legacy\vests\recon\ls_gar_recon_vest.p3d";
 		hiddenSelections[] = {"camo1","camo2","holster","pauldron"};
 	};
 };
@@ -344,7 +344,7 @@ class RB205_V_squadLead_base: RB205_vest_nco_base
 {
 	ACCESS_FALSE
 	picture = "\RB205_main\data\ui\vests\icon_V_squadLead.paa";
-	model = "\SWLB_clones\SWLB_clone_kama_armor.p3d";
+	model = "\ls\core\addons\characters_clone_legacy\vests\officer\ls_gar_kama_vest.p3d";
 	hiddenSelections[] =
 	{
 		"camo1",
@@ -357,7 +357,7 @@ class RB205_V_squadLead_base: RB205_vest_nco_base
 	};
 	class ItemInfo: ItemInfo
 	{
-		uniformModel = "\SWLB_clones\SWLB_clone_kama_armor.p3d";
+		uniformModel = "\ls\core\addons\characters_clone_legacy\vests\officer\ls_gar_kama_vest.p3d";
 		hiddenSelections[] = {"camo1","rank"};
 	};
 };
@@ -365,7 +365,7 @@ class RB205_V_platoonLead_base: RB205_vest_co_base
 {
 	ACCESS_FALSE
 	picture = "\RB205_main\data\ui\vests\icon_V_platoonLead.paa";
-	model = "\SWLB_clones\SWLB_clone_officer_armor.p3d";
+	model = "\ls\core\addons\characters_clone_legacy\vests\officer\ls_gar_officer_vest.p3d";
 	hiddenSelections[] =
 	{
 		"camo1"
@@ -376,14 +376,14 @@ class RB205_V_platoonLead_base: RB205_vest_co_base
 	};
 	class ItemInfo: ItemInfo
 	{
-		uniformModel = "\SWLB_clones\SWLB_clone_officer_armor.p3d";
+		uniformModel = "\ls\core\addons\characters_clone_legacy\vests\officer\ls_gar_officer_vest.p3d";
 		hiddenSelections[] = {"camo1"};
 	};
 };
 class RB205_V_commander_base: RB205_V_platoonLead_base
 {
 	ACCESS_FALSE
-	model = "\SWLB_clones\SWLB_clone_commander_armor.p3d";
+	model = "\ls\core\addons\characters_clone_legacy\vests\officer\ls_gar_commander_vest.p3d";
 	hiddenSelections[] =
 	{
 		"camo1",
@@ -396,7 +396,7 @@ class RB205_V_commander_base: RB205_V_platoonLead_base
 	};
 	class ItemInfo: ItemInfo
 	{
-		uniformModel = "\SWLB_clones\SWLB_clone_commander_armor.p3d";
+		uniformModel = "\ls\core\addons\characters_clone_legacy\vests\officer\ls_gar_commander_vest.p3d";
 		hiddenSelections[] = {"camo1","rank"};
 	};
 };
@@ -405,7 +405,7 @@ class RB205_V_ab_base: RB205_V_base
 {
 	ACCESS_FALSE
 	picture = "\RB205_main\data\ui\vests\icon_V_ab.paa";
-	model = "\SWLB_clones\SWLB_clone_airborne_armor.p3d";
+	model = "\ls\core\addons\characters_clone_legacy\vests\airborne\ls_gar_airborne_vest.p3d";
 	hiddenSelections[] =
 	{
 		"camo1",
@@ -422,7 +422,7 @@ class RB205_V_ab_base: RB205_V_base
 	};
 	class ItemInfo: ItemInfo
 	{
-		uniformModel = "\SWLB_clones\SWLB_clone_airborne_armor.p3d";
+		uniformModel = "\ls\core\addons\characters_clone_legacy\vests\airborne\ls_gar_airborne_vest.p3d";
 		hiddenSelections[] = {"camo1","camo2","ammo","pauldron"};
 	};
 };
@@ -430,7 +430,7 @@ class RB205_V_ab_fireTeamLead_base: RB205_V_fireTeamLead_base
 {
 	ACCESS_FALSE
 	picture = "\RB205_main\data\ui\vests\icon_V_ab.paa";
-	model = "\SWLB_clones\SWLB_clone_medic_armor.p3d";
+	model = "\ls\core\addons\characters_clone_legacy\vests\airborne\ls_gar_airborne_vest.p3d";
 	hiddenSelections[]=
 	{
 		"camo1",
@@ -447,14 +447,14 @@ class RB205_V_ab_fireTeamLead_base: RB205_V_fireTeamLead_base
 	};
 	class ItemInfo: ItemInfo
 	{
-		uniformModel = "\SWLB_clones\SWLB_clone_airborne_armor.p3d";
+		uniformModel = "\ls\core\addons\characters_clone_legacy\vests\airborne\ls_gar_airborne_vest.p3d";
 		hiddenSelections[] = {"camo1","camo2","ammo","pauldron"};
 	};
 };
 class RB205_V_ab_squadLead_base: RB205_V_squadLead_base
 {
 	ACCESS_FALSE
-	model = "\SWLB_clones\SWLB_clone_airborne_armor.p3d";
+	model = "\ls\core\addons\characters_clone_legacy\vests\airborne\ls_gar_airborne_vest.p3d";
 	hiddenSelections[] =
 	{
 		"camo1",
@@ -471,14 +471,14 @@ class RB205_V_ab_squadLead_base: RB205_V_squadLead_base
 	};
 	class ItemInfo: ItemInfo
 	{
-		uniformModel = "\SWLB_clones\SWLB_clone_airborne_armor.p3d";
+		uniformModel = "\ls\core\addons\characters_clone_legacy\vests\airborne\ls_gar_airborne_vest.p3d";
 		hiddenSelections[] = {"camo1","camo2","ammo","pauldron"};
 	};
 };
 class RB205_V_ab_platoonLead_base: RB205_V_platoonLead_base
 {
 	ACCESS_FALSE
-	model = "ls_armor_bluefor\vest\gar\airborneOfficer\ls_gar_airborneOfficer_vest.p3d";
+	model = "\ls\core\addons\characters_clone_legacy\vests\airborne\ls_gar_airborneOfficer_vest.p3d";
 	hiddenSelections[] =
 	{
 		"ammo",
@@ -497,7 +497,7 @@ class RB205_V_ab_platoonLead_base: RB205_V_platoonLead_base
 	};
 	class ItemInfo: ItemInfo
 	{
-		uniformModel = "ls_armor_bluefor\vest\gar\airborneOfficer\ls_gar_airborneOfficer_vest.p3d";
+		uniformModel = "\ls\core\addons\characters_clone_legacy\vests\airborne\ls_gar_airborneOfficer_vest.p3d";
 		hiddenSelections[] = {"ammo","camo1","camo2","camo3","pauldron"};
 	};
 };
@@ -505,7 +505,7 @@ class RB205_V_ab_platoonLead_base: RB205_V_platoonLead_base
 class RB205_V_arf_base: RB205_V_base
 {
 	ACCESS_FALSE
-	model = "\SWLB_CEE\data\SWLB_CEE_ARF_Vest.p3d";
+	model = "\ls\core\addons\characters_clone_legacy\vests\arf\ls_gar_arf_vest.p3d";
 	hiddenSelections[] =
 	{
 		"camo1",
@@ -520,7 +520,7 @@ class RB205_V_arf_base: RB205_V_base
 	};
 	class ItemInfo: ItemInfo
 	{
-		uniformModel = "\SWLB_CEE\data\SWLB_CEE_ARF_Vest.p3d";
+		uniformModel = "\ls\core\addons\characters_clone_legacy\vests\arf\ls_gar_arf_vest.p3d";
 		hiddenSelections[] = {"camo1","camo2","camo3"};
 	};
 };
@@ -606,7 +606,7 @@ class RB205_V_arc_base: RB205_vest_co_base
 {
 	ACCESS_FALSE
 	picture = "\RB205_main\data\ui\vests\icon_V_arc.paa";
-	model = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
+	model = "\ls\core\addons\characters_clone_legacy\vests\arc\ls_gar_arc_vest.p3d";
 	hiddenSelections[] =
 	{
 		"camo1",
@@ -619,7 +619,7 @@ class RB205_V_arc_base: RB205_vest_co_base
 	};
 	class ItemInfo: ItemInfo
 	{
-		uniformModel = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
+		uniformModel = "\ls\core\addons\characters_clone_legacy\vests\arc\ls_gar_arc_vest.p3d";
 		hiddenSelections[] = {"camo1","camo2"};
         vestType = "Rebreather";
 	};
