@@ -11,7 +11,7 @@ class RB205_H_base: RB205_helmet_base
 {
 	ACCESS_FALSE
 	picture = "\RB205_main\data\ui\helmets\icon_H_default.paa";
-	model = "\lsd_armor_bluefor\helmet\gar\phase2\lsd_gar_phase2_helmet.p3d";
+	model = "\ls\core\addons\characters_clone_legacy\helmets\phase2\ls_gar_phase2_helmet.p3d";
 	hiddenSelections[] =
 	{
 		"camo1",
@@ -24,7 +24,7 @@ class RB205_H_base: RB205_helmet_base
 	};
 	class ItemInfo: ItemInfo
 	{
-		uniformModel = "lsd_armor_bluefor\helmet\gar\phase2\lsd_gar_phase2_helmet.p3d";
+		uniformModel = "\ls\core\addons\characters_clone_legacy\helmets\phase2\ls_gar_phase2_helmet.p3d";
 		hiddenSelections[] = {"camo1","visor"};
 	};
 };
@@ -33,7 +33,7 @@ class RB205_H_ab_base: RB205_helmet_base
 {
 	ACCESS_FALSE
 	picture = "\RB205_main\data\ui\helmets\icon_H_ab.paa";
-	model = "\lsd_armor_bluefor\helmet\gar\airborne\lsd_gar_airborne_helmet.p3d";
+	model = "\ls\core\addons\characters_clone_legacy\helmets\airborne\ls_gar_airborne_helmet.p3d";
 	hiddenSelections[] =
 	{
 		"camo1",
@@ -46,7 +46,7 @@ class RB205_H_ab_base: RB205_helmet_base
 	};
 	class ItemInfo: ItemInfo
 	{
-		uniformModel = "\lsd_armor_bluefor\helmet\gar\airborne\lsd_gar_airborne_helmet.p3d";
+		uniformModel = "\ls\core\addons\characters_clone_legacy\helmets\airborne\ls_gar_airborne_helmet.p3d";
 		hiddenSelections[] = {"camo1","visor"};
 	};
 };
@@ -55,7 +55,7 @@ class RB205_H_arf_base: RB205_helmet_base
 {
 	ACCESS_FALSE
 	picture = "\RB205_main\data\ui\helmets\icon_H_arf.paa";
-	model = "\ls_armor_bluefor\helmet\gar\arf\ls_gar_arf_helmet.p3d";
+	model = "\ls\core\addons\characters_clone_legacy\helmets\arf\ls_gar_arf_helmet.p3d";
 	hiddenSelections[] =
 	{
 		"camo1",
@@ -70,7 +70,7 @@ class RB205_H_arf_base: RB205_helmet_base
 	};
 	class ItemInfo: ItemInfo
 	{
-		uniformModel = "\ls_armor_bluefor\helmet\gar\arf\ls_gar_arf_helmet.p3d";
+		uniformModel = "\ls\core\addons\characters_clone_legacy\helmets\arf\ls_gar_arf_helmet.p3d";
 		hiddenSelections[] = {"camo1","camo2","visor"};
 	};
 };
@@ -90,7 +90,7 @@ class RB205_H_plt_base: RB205_helmet_base
 {
 	ACCESS_FALSE
 	picture = "\RB205_main\data\ui\helmets\icon_H_plt.paa";
-	model = "ls_armor_bluefor\helmet\gar\phase2Pilot\ls_gar_phase2Pilot_helmet.p3d";
+	model = "\ls\core\addons\characters_clone_legacy\helmets\phase2Pilot\ls_gar_phase2Pilot_helmet.p3d";
 	hiddenSelections[] =
 	{
 		"camo1",
@@ -104,7 +104,7 @@ class RB205_H_plt_base: RB205_helmet_base
 	ace_hearing_lowerVolume = ACE_HEARING_VOLUME_LOWERED;
 	class ItemInfo: ItemInfo
 	{
-		uniformModel = "ls_armor_bluefor\helmet\gar\phase2Pilot\ls_gar_phase2Pilot_helmet.p3d";
+		uniformModel = "\ls\core\addons\characters_clone_legacy\helmets\phase2Pilot\ls_gar_phase2Pilot_helmet.p3d";
 		hiddenSelections[] = {"camo1","visor"};
 	};
 };
@@ -113,7 +113,7 @@ class RB205_H_crew_base: RB205_helmet_base
 {
 	ACCESS_FALSE
 	picture = "\RB205_main\data\ui\helmets\icon_H_crew.paa";
-	model = "\ls_armor_bluefor\helmet\gar\engineer\ls_gar_engineer_helmet.p3d";
+	model = "\ls\core\addons\characters_clone_legacy\helmets\engineer\ls_cloneHelmet_engineer.p3d";
 	hiddenSelections[] =
 	{
 		"camo1",
@@ -127,16 +127,27 @@ class RB205_H_crew_base: RB205_helmet_base
 		"\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
 	};
 	ace_hearing_lowerVolume = ACE_HEARING_VOLUME_LOWERED;
-	ls_lighting_hasLight = 1;
-	ls_lighting_itemType = "headgear";
-	ls_lighting_attachedBone = "head";
-	ls_lighting_offset[] = {-0.0575,0.087,0.2};
 	class ItemInfo: ItemInfo
 	{
-		uniformModel = "\ls_armor_bluefor\helmet\gar\engineer\ls_gar_engineer_helmet.p3d";
+		uniformModel = "\ls\core\addons\characters_clone_legacy\helmets\engineer\ls_cloneHelmet_engineer.p3d";
 		hiddenSelections[] = {"camo1","illum","visor"};
-		mountAction = "MountSide";
-		unmountAction = "DismountSide";
+	};
+	class ls_lighting
+	{
+		enabled = 1;
+		lightModes[] = {"ls_lighting_whiteHigh"};
+		soundOn = "ls_lighting_activationRepublic";
+		soundOff = "ls_lighting_deactivationRepublic";
+		soundToggle = "ls_lighting_toggle";
+		sources[] = {"center"};
+		class center
+		{
+			attachBone = "head";
+            attachBoneFollow = 1;
+			attachOffset[] = {-0.0575, 0.087, 0.2};
+			attachVectorDir[] = {0, 0, 0};
+			attachVectorUp[] = {0, 0, 0};
+		};
 	};
 };
 
@@ -144,7 +155,7 @@ class RB205_H_snow_base: RB205_helmet_base
 {
 	ACCESS_FALSE
 	picture = "\RB205_main\data\ui\helmets\icon_H_snow.paa";
-	model = "ls_armor_bluefor\helmet\gar\phase2Insulated\ls_gar_phase2Insulated_helmet.p3d";
+	model = "\ls\core\addons\characters_clone_legacy\helmets\phase2Insulated\ls_gar_phase2Insulated_helmet.p3d";
 	hiddenSelections[] =
 	{
 		"Camo1"
@@ -155,7 +166,7 @@ class RB205_H_snow_base: RB205_helmet_base
 	};
 	class ItemInfo: ItemInfo
 	{
-		uniformModel = "ls_armor_bluefor\helmet\gar\phase2Insulated\ls_gar_phase2Insulated_helmet.p3d";
+		uniformModel = "\ls\core\addons\characters_clone_legacy\helmets\phase2Insulated\ls_gar_phase2Insulated_helmet.p3d";
 		hiddenSelections[] = {"Camo1"};
 	};
 };
@@ -164,7 +175,7 @@ class RB205_H_hazard_base: RB205_helmet_base
 {
 	ACCESS_FALSE
 	picture = "\RB205_main\data\ui\helmets\icon_H_default.paa";
-	model = "ls_armor_bluefor\helmet\gar\desert\ls_gar_desert_helmet.p3d";
+	model = "\ls\core\addons\characters_clone_legacy\helmets\desert\ls_cloneHelmet_desert.p3d";
 	hiddenSelections[] =
 	{
 		"camo1",
@@ -177,7 +188,7 @@ class RB205_H_hazard_base: RB205_helmet_base
 	};
 	class ItemInfo: ItemInfo
 	{
-		uniformModel = "ls_armor_bluefor\helmet\gar\desert\ls_gar_desert_helmet.p3d";
+		uniformModel = "\ls\core\addons\characters_clone_legacy\helmets\desert\ls_cloneHelmet_desert.p3d";
 		hiddenSelections[] = {"camo1","visor"};
 	};
 };
@@ -186,7 +197,7 @@ class RB205_H_arc_base: RB205_helmet_base
 {
 	ACCESS_FALSE
 	picture = "\RB205_main\data\ui\helmets\icon_H_arc.paa";
-	model = "\lsd_armor_bluefor\helmet\gar\arc\lsd_gar_arc_helmet";
+	model = "\ls\core\addons\characters_clone_legacy\helmets\arc\ls_gar_arc_helmet.p3d";
 	hiddenSelections[] =
 	{
 		"camo1",
@@ -201,7 +212,7 @@ class RB205_H_arc_base: RB205_helmet_base
 	};
 	class ItemInfo: ItemInfo
 	{
-		uniformModel = "\lsd_armor_bluefor\helmet\gar\arc\lsd_gar_arc_helmet";
+		uniformModel = "\ls\core\addons\characters_clone_legacy\helmets\arc\ls_gar_arc_helmet.p3d";
 		hiddenSelections[] = {"camo1","visor","illum"};
 	};
 };
@@ -210,7 +221,7 @@ class RB205_H_barc_base: RB205_helmet_base
 {
 	ACCESS_FALSE
 	picture = "\RB205_main\data\ui\helmets\icon_H_barc.paa";
-	model = "\ls_armor_bluefor\helmet\gar\barc\ls_gar_barc_helmet.p3d";
+	model = "\ls\core\addons\characters_clone_legacy\helmets\barc\ls_helmet_clone_barc.p3d";
 	hiddenSelections[] =
 	{
 		"camo1",
@@ -223,7 +234,7 @@ class RB205_H_barc_base: RB205_helmet_base
 	};
 	class ItemInfo: ItemInfo
 	{
-		uniformModel = "ls_armor_bluefor\helmet\gar\barc\ls_gar_barc_helmet.p3d";
+		uniformModel = "\ls\core\addons\characters_clone_legacy\helmets\barc\ls_helmet_clone_barc.p3d";
 		hiddenSelections[] = {"camo1","visor"};
 	};
 };

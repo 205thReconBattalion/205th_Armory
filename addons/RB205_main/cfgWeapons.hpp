@@ -11,7 +11,7 @@ class RB205_H_recruit: RB205_H_base
 	hiddenSelectionsTextures[] =
 	{
 		"RB205_main\data\default\H_recruit_co.paa",
-		"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+		"\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
 	};
 	hiddenSelectionsMaterials[] =
 	{
@@ -71,7 +71,7 @@ class RB205_H_ab_recruit: RB205_H_ab_base
 	hiddenSelectionsTextures[] =
 	{
 		"RB205_main\data\airborne\H_ab_recruit_co.paa",
-		"lsd_armor_bluefor\helmet\gar\airborne\data\visor_co.paa"
+		"\ls\core\addons\characters_clone_legacy\helmets\airborne\data\visor_co.paa"
 	};
 	hiddenSelectionsMaterials[] =
 	{
@@ -132,7 +132,7 @@ class RB205_H_arf_recruit: RB205_H_arf_base
 	{
 		"RB205_main\data\arf\H_arf_recruit_co.paa",
 		"",
-		"ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa"
+		"\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"
 	};
 	hiddenSelectionsMaterials[] =
 	{
@@ -239,7 +239,7 @@ class RB205_H_arf_trooper_arctic: RB205_H_arf_base
 	{
 		"RB205_main\data\arf\H_arf_arctic_co.paa",
 		"",
-		"ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa"
+		"\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"
 	};
 	hiddenSelectionsMaterials[] =
 	{
@@ -256,7 +256,7 @@ class RB205_H_arf_trooper_desert: RB205_H_arf_base
 	{
 		"RB205_main\data\arf\H_arf_desert_co.paa",
 		"",
-		"ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa"
+		"\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"
 	};
 	hiddenSelectionsMaterials[] =
 	{
@@ -273,7 +273,7 @@ class RB205_H_arf_trooper_jungle: RB205_H_arf_base
 	{
 		"RB205_main\data\arf\H_arf_jungle_co.paa",
 		"",
-		"ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa"
+		"\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"
 	};
 	hiddenSelectionsMaterials[] =
 	{
@@ -290,7 +290,7 @@ class RB205_H_arf_trooper_woodland: RB205_H_arf_base
 	{
 		"RB205_main\data\arf\H_arf_woodland_co.paa",
 		"",
-		"ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa"
+		"\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"
 	};
 	hiddenSelectionsMaterials[] =
 	{
@@ -311,7 +311,7 @@ class RB205_H_plt_recruit: RB205_H_plt_base
 	hiddenSelectionsTextures[] =
 	{
 		"RB205_main\data\pilot\H_plt_recruit_co.paa",
-		"ls_armor_bluefor\helmet\gar\phase2Pilot\data\visor_co.paa"
+		"\ls\core\addons\characters_clone_legacy\helmets\phase2Pilot\data\visor_co.paa"
 	};
 	hiddenSelectionsMaterials[] =
 	{
@@ -470,7 +470,7 @@ class RB205_H_hazard_recruit: RB205_H_hazard_base
 	hiddenSelectionsTextures[] =
 	{
 		"RB205_main\data\hazard\H_hazard_recruit_co.paa",
-		"ls_armor_bluefor\helmet\gar\desert\data\visor_co.paa"
+		"\ls\core\addons\characters_clone_legacy\helmets\desert\data\visor_co.paa"
 	};
 	hiddenSelectionsMaterials[] =
 	{
