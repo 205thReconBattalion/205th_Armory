@@ -17,14 +17,14 @@ class RB205_clone_base: RB205_unit_base
 	weapons[] =
 	{
 		"RB205_DC15S",
-		"RB205_DC17_alt",
+		"RB205_DC17",
 		"RB205_binocular",
 		"Throw","Put"
 	};
 	respawnweapons[] =
 	{
 		"RB205_DC15S",
-		"RB205_DC17_alt",
+		"RB205_DC17",
 		"RB205_binocular",
 		"Throw","Put"
 	};
@@ -121,14 +121,14 @@ class RB205_ab_base: RB205_clone_base
 	weapons[] =
 	{
 		"RB205_DC15C",
-		"RB205_DC17_alt",
+		"RB205_DC17",
 		"RB205_binocular",
 		"Throw","Put"
 	};
 	respawnweapons[] =
 	{
 		"RB205_DC15C",
-		"RB205_DC17_alt",
+		"RB205_DC17",
 		"RB205_binocular",
 		"Throw","Put"
 	};
@@ -143,14 +143,14 @@ class RB205_arf_base: RB205_clone_base
 	weapons[] =
 	{
 		"RB205_DC15C",
-		"RB205_DC17_alt",
+		"RB205_DC17",
 		"RB205_binocular_arf",
 		"Throw","Put"
 	};
 	respawnweapons[] =
 	{
 		"RB205_DC15C",
-		"RB205_DC17_alt",
+		"RB205_DC17",
 		"RB205_binocular_arf",
 		"Throw","Put"
 	};
@@ -163,12 +163,12 @@ class RB205_plt_base: RB205_clone_base
 	backpack = "RB205_B_radio_mini";
 	weapons[]=
 	{
-		"RB205_DC17_alt",
+		"RB205_DC17",
 		"Throw","Put"
 	};
 	respawnweapons[]=
 	{
-		"RB205_DC17_alt",
+		"RB205_DC17",
 		"Throw","Put"
 	};
 	magazines[]=
@@ -193,14 +193,14 @@ class RB205_snow_base: RB205_clone_base
 	weapons[] =
 	{
 		"RB205_DC15A",
-		"RB205_DC17_alt",
+		"RB205_DC17",
 		"RB205_binocular",
 		"Throw","Put"
 	};
 	respawnweapons[] =
 	{
 		"RB205_DC15A",
-		"RB205_DC17_alt",
+		"RB205_DC17",
 		"RB205_binocular",
 		"Throw","Put"
 	};
@@ -229,14 +229,14 @@ class RB205_arc_base: RB205_clone_base
 	weapons[] =
 	{
 		"RB205_WestarM5",
-		"RB205_DC17_alt",
+		"RB205_DC17",
 		"RB205_binocular_arf",
 		"Throw","Put"
 	};
 	respawnweapons[] =
 	{
 		"RB205_WestarM5",
-		"RB205_DC17_alt",
+		"RB205_DC17",
 		"RB205_binocular_arf",
 		"Throw","Put"
 	};
