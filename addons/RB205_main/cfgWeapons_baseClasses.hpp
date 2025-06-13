@@ -643,7 +643,7 @@ class RB205_NV_visor_base: RB205_nvg_base
 {
 	ACCESS_FALSE
 	picture = "\RB205_main\data\ui\other\icon_NV.paa";
-	model = "\lsd_equipment_bluefor\accessories\gar\visor\lsd_gar_visor_nvg_on.p3d";
+	model = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\visor\lsd_gar_visor_nvg_on.p3d";
 	modelOptics = MODEL_OPTICS_NV_VISOR;
 	hiddenSelections[] =
 	{
@@ -656,8 +656,8 @@ class RB205_NV_visor_base: RB205_nvg_base
 	};
 	class ItemInfo: ItemInfo
 	{
-		uniformModel = "\lsd_equipment_bluefor\accessories\gar\visor\lsd_gar_visor_nvg_on.p3d";
-		modelOff = "\lsd_equipment_bluefor\accessories\gar\visor\lsd_gar_visor_nvg_off.p3d";
+		uniformModel = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\visor\lsd_gar_visor_nvg_on.p3d";
+		modelOff = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\visor\lsd_gar_visor_nvg_off.p3d";
 		hiddenSelections[] = {"camo1","camo2"};
 	};
 };
@@ -665,7 +665,7 @@ class RB205_NV_visor2_base: RB205_nvg_ti_base
 {
 	ACCESS_FALSE
 	picture = "\RB205_main\data\ui\other\icon_NV_marksman.paa";
-	model = "\lsd_equipment_bluefor\accessories\gar\visor\lsd_gar_visor_nvg_on.p3d";
+	model = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\visor\lsd_gar_visor_nvg_on.p3d";
 	modelOptics = MODEL_OPTICS_NV_VISOR;
 	hiddenSelections[] =
 	{
@@ -678,8 +678,8 @@ class RB205_NV_visor2_base: RB205_nvg_ti_base
 	};
 	class ItemInfo: ItemInfo
 	{
-		uniformModel = "\lsd_equipment_bluefor\accessories\gar\visor\lsd_gar_visor_nvg_on.p3d";
-		modelOff = "\lsd_equipment_bluefor\accessories\gar\visor\lsd_gar_visor_nvg_on.p3d";
+		uniformModel = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\visor\lsd_gar_visor_nvg_on.p3d";
+		modelOff = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\visor\lsd_gar_visor_nvg_on.p3d";
 		hiddenSelections[] = {"camo1","camo2"};
 	};
 };
@@ -687,7 +687,7 @@ class RB205_NV_rangefinder_base: RB205_nvg_base
 {
 	ACCESS_FALSE
 	picture = "\RB205_main\data\ui\other\icon_NV_rangefinder.paa";
-	model = "\lsd_equipment_bluefor\accessories\gar\lsd_gar_rangefinder_nvg_on.p3d";
+	model = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\rangefinder\lsd_gar_rangefinder_nvg_on.p3d";
 	modelOptics = MODEL_OPTICS_RANGEFINDER;
 	hiddenSelections[] =
 	{
@@ -699,8 +699,8 @@ class RB205_NV_rangefinder_base: RB205_nvg_base
 	};
 	class ItemInfo: ItemInfo
 	{
-		uniformModel = "\lsd_equipment_bluefor\accessories\gar\rangefinder\lsd_gar_rangefinder_nvg_on.p3d";
-		modelOff = "\lsd_equipment_bluefor\accessories\gar\rangefinder\lsd_gar_rangefinder_nvg_off.p3d";
+		uniformModel = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\rangefinder\lsd_gar_rangefinder_nvg_on.p3d";
+		modelOff = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\rangefinder\lsd_gar_rangefinder_nvg_off.p3d";
 		hiddenSelections[] = {"camo1"};
 	};
 };
@@ -708,13 +708,13 @@ class RB205_NV_arf_antenna_base: RB205_nvg_ti_base
 {
 	ACCESS_FALSE
 	picture = "\RB205_main\data\ui\other\icon_NV_arf.paa";
-	model = "\SWLB_equipment\facewears\helmet_ARF_antenna.p3d";
+	model = "\ls\core\addons\characters_clone_legacy\equipment\arfAntenna\lsd_gar_arfAntenna.p3d";
 	modelOptics = MODEL_OPTICS;
 	hiddenSelections[] = {};
 	class ItemInfo: ItemInfo
 	{
-		uniformModel = "\SWLB_equipment\facewears\helmet_ARF_antenna.p3d";
-		modelOff = "\SWLB_equipment\facewears\helmet_ARF_antenna.p3d";
+		uniformModel = "\ls\core\addons\characters_clone_legacy\equipment\arfAntenna\lsd_gar_arfAntenna.p3d";
+		modelOff = "\ls\core\addons\characters_clone_legacy\equipment\arfAntenna\lsd_gar_arfAntenna.p3d";
 		hiddenSelections[] = {};
 	};
 };
