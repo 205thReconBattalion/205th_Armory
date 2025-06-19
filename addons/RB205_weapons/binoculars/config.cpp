@@ -19,8 +19,8 @@ class cfgPatches
 
 class CfgWeapons
 {
-	class SWLB_clone_binocular;
-	class RB205_binocular: SWLB_clone_binocular
+	class ls_clone_electrobinoculars;
+	class RB205_binocular: ls_clone_electrobinoculars
 	{
 		displayName = "[205] Clone Trooper Binocular";
 		displayNameShort = "Binocular";
@@ -38,8 +38,8 @@ class CfgWeapons
 		visionMode[] = { "Normal", "NVG" };
 	};
 
-	class SWLB_clone_commander_binocular;
-	class RB205_binocular_arf: SWLB_clone_commander_binocular
+	class ls_clone_electrobinocularsCommander;
+	class RB205_binocular_arf: ls_clone_electrobinocularsCommander
 	{
 		displayName = "[205] Clone ARF Trooper Binocular";
 		displayNameShort = "Binocular";
