@@ -27,9 +27,8 @@ rb205_vehicles_spawnArray_land = [];
     };
 
 } forEach [
-    ["RB205_barc", true],
-    ["RB205_barc2",true],
-    ["RB205_barc2_sidecar",true],
+    ["RB205_barc",true],
+    ["RB205_barc_sidecar",true],
 
     ["RB205_atrt",true],
 
