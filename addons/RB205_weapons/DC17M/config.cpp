@@ -133,7 +133,7 @@ class CfgWeapons
 			};
 			class StandardSound
 			{
-				soundSetShot[] = {"ls_dc17m_sniper_Shot_SoundSet","ls_sniper_Tail_SoundSet"};
+				soundSetShot[] = {"ls_dc17m_sniper_Shot_SoundSet"}; //,"ls_sniper_Tail_SoundSet"
 			};
 			dispersion = DISPERSION_SPECIAL;
 			reloadTime = 0.1;
@@ -146,7 +146,7 @@ class CfgWeapons
 			};
 			class StandardSound
 			{
-				soundSetShot[] = {"ls_dc17m_Shot_SoundSet","ls_mediumBlaster_Tail_SoundSet"};
+				soundSetShot[] = {"ls_dc17m_Shot_SoundSet"}; //,"ls_mediumBlaster_Tail_SoundSet"
 			};
 			dispersion = DISPERSION_SPECIAL;
 			reloadTime = 0.1;
