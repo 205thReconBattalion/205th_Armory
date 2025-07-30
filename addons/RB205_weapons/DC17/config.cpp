@@ -16,7 +16,7 @@ class cfgPatches
 		{
 			"RB205_DC17",
 			"RB205_DC17_Dual",
-			"RB205_DC17_alt",
+			//"RB205_DC17_alt",
 			"RB205_DC17_shield"
 		};
 	};
@@ -118,7 +118,7 @@ class CfgWeapons
 	};
 	FRIED_WEAPON_SECONDARY(RB205_DC17_Dual,"\RB205_weapons\data\ui\dc17_dual_fried.paa")
 
-	class Pistol_Base_F;
+	/*class Pistol_Base_F;
 	class SWLW_DC17: Pistol_Base_F
 	{
 		class Single;
@@ -177,7 +177,7 @@ class CfgWeapons
 		JLTS_hasEMPProtection = 0;
 		JLTS_friedItem = "RB205_DC17_alt_fried";
 	};
-	FRIED_WEAPON_SECONDARY(RB205_DC17_alt,"\RB205_weapons\data\ui\dc17_fried.paa")
+	FRIED_WEAPON_SECONDARY(RB205_DC17_alt,"\RB205_weapons\data\ui\dc17_fried.paa")*/
 
 	class RB205_DC17_shield: RB205_DC17
 	{

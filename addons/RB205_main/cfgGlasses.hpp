@@ -14,7 +14,7 @@ class RB205_VIS_base : G_Combat
 {
 	ACCESS_FALSE
 	author = AUTHOR;
-	model = "\lsd_equipment_bluefor\nvg\gar\commander\lsd_gar_p2Commander_nvg.p3d";
+	model = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\commander\lsd_gar_p2Commander_nvg.p3d";
 	hiddenSelections[] =
 	{
 		"camo1",

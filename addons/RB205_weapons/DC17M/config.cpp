@@ -22,7 +22,7 @@ class cfgPatches
 		};
 		ammo[] =
 		{
-			"RB205_ammo_40mm_at"
+			"RB205_ammo_antiArmorGrenade"
 		};
 	};
 };
@@ -36,11 +36,8 @@ class MuzzleSlot;
 
 class CfgAmmo
 {
-	class SWLW_ammo_smg_blue;
-	class SWLW_ammo_sniper_blue;
-	class SWLW_ammo_40mm_at;
-	
-	class RB205_ammo_40mm_at: SWLW_ammo_40mm_at
+	class G_40MM_AMC;	
+	class RB205_ammo_antiArmorGrenade: G_40MM_AMC
 	{
 		hit = 1000;//550;
 		coefgravity = 0;
@@ -78,7 +75,7 @@ class CfgMagazines
 		displayName = "$STR_205_DC17M_at_Energy_Pack_DisplayName";
 		displayNameShort = "$STR_205_DC17M_at_Energy_Pack_DisplayNameShort";
 		descriptionShort = "$STR_205_DC17M_at_Energy_Pack_DescriptionShort";
-		ammo = "RB205_ammo_40mm_at";
+		ammo = "RB205_ammo_antiArmorGrenade";
 		count = 1;
 		mass = 15;
 	};
@@ -134,46 +131,9 @@ class CfgWeapons
 			{
 				"StandardSound"
 			};
-			class BaseSoundModeType
+			class StandardSound
 			{
-				weaponSoundEffect = "";
-				closure1[] = {};
-				closure2[] = {};
-				soundClosure[] = {};
-			};
-			class StandardSound: BaseSoundModeType
-			{
-				weaponSoundEffect = "";
-				begin1[] =
-				{
-					"\SWLW_clones_spec\sounds\DC17M_blaster_fire.wss",
-					1,
-					1,
-					1800
-				};
-				begin2[] =
-				{
-					"\SWLW_clones_spec\sounds\DC17M_blaster_fire.wss",
-					1,
-					1,
-					1800
-				};
-				begin3[] =
-				{
-					"\SWLW_clones_spec\sounds\DC17M_blaster_fire.wss",
-					1,
-					1,
-					1800
-				};
-				soundBegin[] =
-				{
-					"begin1",
-					0.33000001,
-					"begin2",
-					0.33000001,
-					"begin3",
-					0.33000001
-				};
+				soundSetShot[] = {"ls_dc17m_sniper_Shot_SoundSet"}; //,"ls_sniper_Tail_SoundSet"
 			};
 			dispersion = DISPERSION_SPECIAL;
 			reloadTime = 0.1;
@@ -184,46 +144,9 @@ class CfgWeapons
 			{
 				"StandardSound"
 			};
-			class BaseSoundModeType
+			class StandardSound
 			{
-				weaponSoundEffect = "";
-				closure1[] = {};
-				closure2[] = {};
-				soundClosure[] = {};
-			};
-			class StandardSound: BaseSoundModeType
-			{
-				weaponSoundEffect = "";
-				begin1[] =
-				{
-					"\SWLW_clones_spec\sounds\DC17M_blaster_fire.wss",
-					1,
-					1,
-					1800
-				};
-				begin2[] =
-				{
-					"\SWLW_clones_spec\sounds\DC17M_blaster_fire.wss",
-					1,
-					1,
-					1800
-				};
-				begin3[] =
-				{
-					"\SWLW_clones_spec\sounds\DC17M_blaster_fire.wss",
-					1,
-					1,
-					1800
-				};
-				soundBegin[] =
-				{
-					"begin1",
-					0.33000001,
-					"begin2",
-					0.33000001,
-					"begin3",
-					0.33000001
-				};
+				soundSetShot[] = {"ls_dc17m_Shot_SoundSet"}; //,"ls_mediumBlaster_Tail_SoundSet"
 			};
 			dispersion = DISPERSION_SPECIAL;
 			reloadTime = 0.1;

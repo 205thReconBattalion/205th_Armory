@@ -50,7 +50,7 @@ class CfgVehicles
 	{
 		ACCESS_TRUE
 		displayName = "[205] Disassembled Heavy Repeater";
-		model = "ls_equipment_bluefor\backpack\gar\mrbc\mrbc_folded.p3d";
+		model = "\ls\core\addons\vehicles_mrbc\ls_turret_mrbc_backpack.p3d";
 		picture = "ls_equipment_bluefor\backpack\gar\mrbc\data\ui\mrbc_ui_ca.paa";
 		class assembleInfo
 		{

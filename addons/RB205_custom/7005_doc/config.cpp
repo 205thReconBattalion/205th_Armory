@@ -81,7 +81,7 @@ class cfgWeapons
     {
         ACCESS_TRUE
         displayName = "[205] Clone Trooper Vest [7005]";
-        model = "\SWLB_clones\SWLB_clone_recon_officer_armor.p3d";
+        model = "\ls\core\addons\characters_clone_legacy\vests\recon\ls_gar_reconOfficer_vest.p3d";
         hiddenSelections[] =
         {
             "camo1",
@@ -99,7 +99,7 @@ class cfgWeapons
         };
         class ItemInfo: ItemInfo
         {
-            uniformModel = "\SWLB_clones\SWLB_clone_recon_officer_armor.p3d";
+            uniformModel = "\ls\core\addons\characters_clone_legacy\vests\recon\ls_gar_reconOfficer_vest.p3d";
             hiddenSelections[] = {"camo1","camo2"};
         };
     };
@@ -113,7 +113,7 @@ class cfgVehicles
         ACCESS_TRUE
         displayName = "CO-7005 Doc";
         uniformclass = "RB205_U_doc";
-        model = "ls_armor_bluefor\uniform\gar\marshalCommander\ls_gar_marshalCommander_uniform.p3d";
+        model = "\ls\core\addons\characters_clone_legacy\uniforms\marshalCommander\ls_gar_marshalCommander_uniform.p3d";
 	    editorSubCategory = "RB205_lore";
         hiddenselectionsMaterials[] =
         {

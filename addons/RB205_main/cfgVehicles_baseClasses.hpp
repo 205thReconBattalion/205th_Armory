@@ -17,14 +17,14 @@ class RB205_clone_base: RB205_unit_base
 	weapons[] =
 	{
 		"RB205_DC15S",
-		"RB205_DC17_alt",
+		"RB205_DC17",
 		"RB205_binocular",
 		"Throw","Put"
 	};
 	respawnweapons[] =
 	{
 		"RB205_DC15S",
-		"RB205_DC17_alt",
+		"RB205_DC17",
 		"RB205_binocular",
 		"Throw","Put"
 	};
@@ -55,7 +55,7 @@ class RB205_clone_base: RB205_unit_base
 		"JLTS_ids_gar_army"
 	};
 	//Model Values:
-	model = "ls_armor_bluefor\uniform\gar\phase2\ls_gar_phase2_uniform.p3d";
+	model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 	hiddenSelections[] =
 	{
 		"camo1",
@@ -121,14 +121,14 @@ class RB205_ab_base: RB205_clone_base
 	weapons[] =
 	{
 		"RB205_DC15C",
-		"RB205_DC17_alt",
+		"RB205_DC17",
 		"RB205_binocular",
 		"Throw","Put"
 	};
 	respawnweapons[] =
 	{
 		"RB205_DC15C",
-		"RB205_DC17_alt",
+		"RB205_DC17",
 		"RB205_binocular",
 		"Throw","Put"
 	};
@@ -143,14 +143,14 @@ class RB205_arf_base: RB205_clone_base
 	weapons[] =
 	{
 		"RB205_DC15C",
-		"RB205_DC17_alt",
+		"RB205_DC17",
 		"RB205_binocular_arf",
 		"Throw","Put"
 	};
 	respawnweapons[] =
 	{
 		"RB205_DC15C",
-		"RB205_DC17_alt",
+		"RB205_DC17",
 		"RB205_binocular_arf",
 		"Throw","Put"
 	};
@@ -163,12 +163,12 @@ class RB205_plt_base: RB205_clone_base
 	backpack = "RB205_B_radio_mini";
 	weapons[]=
 	{
-		"RB205_DC17_alt",
+		"RB205_DC17",
 		"Throw","Put"
 	};
 	respawnweapons[]=
 	{
-		"RB205_DC17_alt",
+		"RB205_DC17",
 		"Throw","Put"
 	};
 	magazines[]=
@@ -193,14 +193,14 @@ class RB205_snow_base: RB205_clone_base
 	weapons[] =
 	{
 		"RB205_DC15A",
-		"RB205_DC17_alt",
+		"RB205_DC17",
 		"RB205_binocular",
 		"Throw","Put"
 	};
 	respawnweapons[] =
 	{
 		"RB205_DC15A",
-		"RB205_DC17_alt",
+		"RB205_DC17",
 		"RB205_binocular",
 		"Throw","Put"
 	};
@@ -229,14 +229,14 @@ class RB205_arc_base: RB205_clone_base
 	weapons[] =
 	{
 		"RB205_WestarM5",
-		"RB205_DC17_alt",
+		"RB205_DC17",
 		"RB205_binocular_arf",
 		"Throw","Put"
 	};
 	respawnweapons[] =
 	{
 		"RB205_WestarM5",
-		"RB205_DC17_alt",
+		"RB205_DC17",
 		"RB205_binocular_arf",
 		"Throw","Put"
 	};
@@ -326,7 +326,7 @@ class RB205_B_heavy_base: RB205_backpack_base
 {
 	ACCESS_FALSE
 	picture = "\RB205_main\data\ui\backpacks\icon_B_heavy.paa";
-	model = "ls_equipment_bluefor\backpack\gar\backpack\ls_gar_standard_backpack.p3d";
+	model = "\ls\core\addons\characters_clone_legacy\backpacks\standard\ls_gar_standard_backpack.p3d";
 	hiddenselections[] =
 	{
 		"backpack",
@@ -344,7 +344,7 @@ class RB205_B_medic_base: RB205_backpack_base
 {
 	ACCESS_FALSE
 	picture = "\RB205_main\data\ui\backpacks\icon_B_medic.paa";
-	model = "ls_equipment_bluefor\backpack\gar\backpack\ls_gar_medic_backpack.p3d";
+	model = "\ls\core\addons\characters_clone_legacy\backpacks\standard\ls_gar_medic_backpack.p3d";
 	hiddenselections[] =
 	{
 		"backpack",
@@ -366,7 +366,7 @@ class RB205_B_rocket_base: RB205_backpack_base
 {
 	ACCESS_FALSE
 	picture = "\RB205_main\data\ui\backpacks\icon_B_rocket.paa";
-	model = "ls_equipment_bluefor\backpack\gar\backpack\ls_gar_rocket_backpack.p3d";
+	model = "\ls\core\addons\characters_clone_legacy\backpacks\standard\ls_gar_rocket_backpack.p3d";
 	hiddenselections[] =
 	{
 		"backpack",
@@ -390,7 +390,7 @@ class RB205_B_eod_base: RB205_backpack_base
 {
 	ACCESS_FALSE
 	picture = "\RB205_main\data\ui\backpacks\icon_B_eod.paa";
-	model = "ls_equipment_bluefor\backpack\gar\heavyBackpack\ls_gar_heavy_backpack.p3d";
+	model = "\ls\core\addons\characters_clone_legacy\backpacks\heavy\ls_gar_heavy_backpack.p3d";
 	hiddenselections[] =
 	{
 		"backpack",
@@ -411,7 +411,7 @@ class RB205_B_radio_base: RB205_backpack_base
 {
 	ACCESS_FALSE
 	picture = "\RB205_main\data\ui\backpacks\icon_B_radio.paa";
-	model = "ls_equipment_bluefor\backpack\gar\backpack\ls_gar_radio_backpack.p3d";
+	model = "\ls\core\addons\characters_clone_legacy\backpacks\standard\ls_gar_radio_backpack.p3d";
 	hiddenselections[] =
 	{
 		"backpack",
@@ -432,7 +432,7 @@ class RB205_B_radio_mini_base: RB205_backpack_base
 {
 	ACCESS_FALSE
 	picture = "\RB205_main\data\ui\backpacks\icon_B_radio_mini.paa";
-	model = "\SWLB_equipment\backpacks\SWLB_clone_RTO_mini_backpack.p3d";
+	model = "\ls\core\addons\characters_clone_legacy\backpacks\rto\ls_gar_rto_mini_backpack.p3d";
 	hiddenSelections[] =
 	{
 		"main",
@@ -470,22 +470,22 @@ class RB205_B_arf_base: RB205_backpack_base
 {
 	ACCESS_FALSE
 	picture = "\RB205_main\data\ui\backpacks\icon_B_arf.paa";
-	model = "\SWLB_CEE\data\SWLB_CEE_Recon_RTO_Backpack.p3d";
+	model = "\ls\core\addons\characters_clone_legacy\backpacks\reconRTO\ls_gar_recon_rto_backpack.p3d";
 	hiddenSelections[] =
 	{
-		"Accumulator",
-		"Camo1",
-		"Camo2",
-		"Camo3",
-		"Main"
+		"camo1",
+		"camo2",
+		"camo3",
+		"main",
+		"accumulator"
 	};
 	hiddenSelectionsMaterials[] =
 	{
-		"RB205_main\data\materials\B_radio_mini_acc.rvmat",
 		"",
 		"",
 		"RB205_main\data\materials\light_acc.rvmat",
-		"RB205_main\data\materials\B_radio_mini.rvmat"
+		"RB205_main\data\materials\B_radio_mini.rvmat",
+		"RB205_main\data\materials\B_radio_mini_acc.rvmat"
 	};
 	mass = MASS_BACKPACK_SMALL;
 	maximumload = INV_BACK_SCOUT;
@@ -494,7 +494,7 @@ class RB205_B_arf_base: RB205_backpack_base
 class RB205_B_arf_camo_base: RB205_B_arf_base
 {
 	ACCESS_FALSE
-	model = "\SWLB_equipment\backpacks\SWLB_clone_RTO_mini_backpack.p3d";
+	model = "\ls\core\addons\characters_clone_legacy\backpacks\rto\ls_gar_rto_mini_backpack.p3d";
 	hiddenSelections[] =
 	{
 		"main",
@@ -526,7 +526,7 @@ class RB205_B_arc_base: RB205_backpack_base
 {
 	ACCESS_FALSE
 	picture = "\RB205_main\data\ui\backpacks\icon_B_arc.paa";
-	model = "\SWLB_equipment\backpacks\SWLB_clone_arc_backpack.p3d";
+	model = "\ls\core\addons\characters_clone_legacy\backpacks\arc\ls_gar_arc_backpack.p3d";
 	hiddenSelections[] =
 	{
 		"camo1"

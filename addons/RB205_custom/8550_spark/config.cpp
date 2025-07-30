@@ -106,7 +106,7 @@ class cfgWeapons
             "RB205_main\data\default\V_heavy_co.paa"*/
         };
         //Recon Vest:
-        model = "\SWLB_clones\SWLB_clone_recon_armor.p3d";
+        model = "\ls\core\addons\characters_clone_legacy\vests\recon\ls_gar_recon_vest.p3d";
         picture = "\RB205_main\data\ui\vests\icon_V_fireTeamLead.paa";
         hiddenSelections[]=
         {
@@ -124,7 +124,7 @@ class cfgWeapons
         };
         class ItemInfo: ItemInfo
         {
-            uniformModel = "\SWLB_clones\SWLB_clone_recon_armor.p3d";
+            uniformModel = "\ls\core\addons\characters_clone_legacy\vests\recon\ls_gar_recon_vest.p3d";
             hiddenSelections[] = {"camo1","camo2","holster","pauldron"};
         };
     };
@@ -194,7 +194,7 @@ class cfgVehicles
         backpack = "RB205_B_spark";
         identityTypes[] = IDENTITY_TYPES;
         //MC Armor:
-        model = "ls_armor_bluefor\uniform\gar\marshalCommander\ls_gar_marshalCommander_uniform.p3d";
+        model = "\ls\core\addons\characters_clone_legacy\uniforms\marshalCommander\ls_gar_marshalCommander_uniform.p3d";
         hiddenselectionsMaterials[] =
         {
             "RB205_custom\8550_spark\data\U_spark_arf_upper.rvmat",

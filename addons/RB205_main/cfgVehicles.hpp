@@ -477,7 +477,7 @@ class RB205_clone_trooper_aa: RB205_clone_trooper
 	{
 		"RB205_DC15S",
 		"RB205_PLX1_F",
-		"RB205_DC17_alt",
+		"RB205_DC17",
 		"RB205_binocular",
 		"Throw","Put"
 	};
@@ -485,7 +485,7 @@ class RB205_clone_trooper_aa: RB205_clone_trooper
 	{
 		"RB205_DC15S",
 		"RB205_PLX1_F",
-		"RB205_DC17_alt",
+		"RB205_DC17",
 		"RB205_binocular",
 		"Throw","Put"
 	};
@@ -510,7 +510,7 @@ class RB205_clone_trooper_at: RB205_clone_trooper
 	{
 		"RB205_DC15S",
 		"RB205_RPS6",
-		"RB205_DC17_alt",
+		"RB205_DC17",
 		"RB205_binocular",
 		"Throw","Put"
 	};
@@ -518,7 +518,7 @@ class RB205_clone_trooper_at: RB205_clone_trooper
 	{
 		"RB205_DC15S",
 		"RB205_RPS6",
-		"RB205_DC17_alt",
+		"RB205_DC17",
 		"RB205_binocular",
 		"Throw","Put"
 	};
@@ -548,14 +548,14 @@ class RB205_clone_trooper_grenadier: RB205_clone_trooper
 	weapons[] =
 	{
 		"RB205_DC15A_GL",
-		"RB205_DC17_alt",,
+		"RB205_DC17",,
 		"RB205_binocular",
 		"Throw","Put"
 	};
 	respawnweapons[] =
 	{
 		"RB205_DC15A_GL",
-		"RB205_DC17_alt",,
+		"RB205_DC17",,
 		"RB205_binocular",
 		"Throw","Put"
 	};
@@ -577,14 +577,14 @@ class RB205_clone_trooper_heavy: RB205_clone_trooper
 	weapons[] =
 	{
 		"RB205_Z6",
-		"RB205_DC17_alt",,
+		"RB205_DC17",,
 		"RB205_binocular",
 		"Throw","Put"
 	};
 	respawnweapons[] =
 	{
 		"RB205_Z6",
-		"RB205_DC17_alt",,
+		"RB205_DC17",,
 		"RB205_binocular",
 		"Throw","Put"
 	};
@@ -605,14 +605,14 @@ class RB205_clone_trooper_marksman: RB205_clone_trooper
 	weapons[] =
 	{
 		"RB205_Valken38X",
-		"RB205_DC17_alt",,
+		"RB205_DC17",,
 		"RB205_binocular",
 		"Throw","Put"
 	};
 	respawnweapons[] =
 	{
 		"RB205_Valken38X",
-		"RB205_DC17_alt",,
+		"RB205_DC17",,
 		"RB205_binocular",
 		"Throw","Put"
 	};
@@ -655,14 +655,14 @@ class RB205_clone_ab_trooper_grenadier: RB205_clone_ab_trooper
 	weapons[] =
 	{
 		"RB205_DC15C_GL",
-		"RB205_DC17_alt",,
+		"RB205_DC17",,
 		"RB205_binocular",
 		"Throw","Put"
 	};
 	respawnweapons[] =
 	{
 		"RB205_DC15C_GL",
-		"RB205_DC17_alt",,
+		"RB205_DC17",,
 		"RB205_binocular",
 		"Throw","Put"
 	};
@@ -684,14 +684,14 @@ class RB205_clone_ab_trooper_heavy: RB205_clone_ab_trooper
 	weapons[] =
 	{
 		"RB205_DC15L",
-		"RB205_DC17_alt",,
+		"RB205_DC17",,
 		"RB205_binocular",
 		"Throw","Put"
 	};
 	respawnweapons[] =
 	{
 		"RB205_DC15L",
-		"RB205_DC17_alt",,
+		"RB205_DC17",,
 		"RB205_binocular",
 		"Throw","Put"
 	};
@@ -713,14 +713,14 @@ class RB205_clone_ab_trooper_marksman: RB205_clone_ab_trooper
 	weapons[] =
 	{
 		"RB205_Valken38X",
-		"RB205_DC17_alt",,
+		"RB205_DC17",,
 		"RB205_binocular",
 		"Throw","Put"
 	};
 	respawnweapons[] =
 	{
 		"RB205_Valken38X",
-		"RB205_DC17_alt",,
+		"RB205_DC17",,
 		"RB205_binocular",
 		"Throw","Put"
 	};
@@ -763,14 +763,14 @@ class RB205_clone_arf_trooper_sniper: RB205_clone_arf_trooper
 	weapons[]=
 	{
 		"RB205_DC15X",
-		"RB205_DC17_alt",,
+		"RB205_DC17",,
 		"RB205_binocular_arf",
 		"Throw","Put"
 	};
 	respawnweapons[]=
 	{
 		"RB205_DC15X",
-		"RB205_DC17_alt",,
+		"RB205_DC17",,
 		"RB205_binocular_arf",
 		"Throw","Put"
 	};
@@ -796,7 +796,7 @@ class RB205_clone_snow_trooper_aa: RB205_clone_snow_trooper
 	{
 		"RB205_DC15A",
 		"RB205_PLX1_F",
-		"RB205_DC17_alt",
+		"RB205_DC17",
 		"RB205_binocular",
 		"Throw","Put"
 	};
@@ -804,7 +804,7 @@ class RB205_clone_snow_trooper_aa: RB205_clone_snow_trooper
 	{
 		"RB205_DC15A",
 		"RB205_PLX1_F",
-		"RB205_DC17_alt",
+		"RB205_DC17",
 		"RB205_binocular",
 		"Throw","Put"
 	};
@@ -829,7 +829,7 @@ class RB205_clone_snow_trooper_at: RB205_clone_snow_trooper
 	{
 		"RB205_DC15A",
 		"RB205_RPS6",
-		"RB205_DC17_alt",
+		"RB205_DC17",
 		"RB205_binocular",
 		"Throw","Put"
 	};
@@ -837,7 +837,7 @@ class RB205_clone_snow_trooper_at: RB205_clone_snow_trooper
 	{
 		"RB205_DC15A",
 		"RB205_RPS6",
-		"RB205_DC17_alt",
+		"RB205_DC17",
 		"RB205_binocular",
 		"Throw","Put"
 	};
@@ -867,14 +867,14 @@ class RB205_clone_snow_trooper_grenadier: RB205_clone_snow_trooper
 	weapons[] =
 	{
 		"RB205_DC15A_GL",
-		"RB205_DC17_alt",,
+		"RB205_DC17",,
 		"RB205_binocular",
 		"Throw","Put"
 	};
 	respawnweapons[] =
 	{
 		"RB205_DC15A_GL",
-		"RB205_DC17_alt",,
+		"RB205_DC17",,
 		"RB205_binocular",
 		"Throw","Put"
 	};
@@ -896,14 +896,14 @@ class RB205_clone_snow_trooper_heavy: RB205_clone_snow_trooper
 	weapons[] =
 	{
 		"RB205_Z6",
-		"RB205_DC17_alt",,
+		"RB205_DC17",,
 		"RB205_binocular",
 		"Throw","Put"
 	};
 	respawnweapons[] =
 	{
 		"RB205_Z6",
-		"RB205_DC17_alt",,
+		"RB205_DC17",,
 		"RB205_binocular",
 		"Throw","Put"
 	};
@@ -923,14 +923,14 @@ class RB205_clone_snow_trooper_marksman: RB205_clone_snow_trooper
 	weapons[] =
 	{
 		"RB205_Valken38X",
-		"RB205_DC17_alt",,
+		"RB205_DC17",,
 		"RB205_binocular",
 		"Throw","Put"
 	};
 	respawnweapons[] =
 	{
 		"RB205_Valken38X",
-		"RB205_DC17_alt",,
+		"RB205_DC17",,
 		"RB205_binocular",
 		"Throw","Put"
 	};

@@ -11,7 +11,7 @@ class RB205_H_recruit: RB205_H_base
 	hiddenSelectionsTextures[] =
 	{
 		"RB205_main\data\default\H_recruit_co.paa",
-		"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+		"\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
 	};
 	hiddenSelectionsMaterials[] =
 	{
@@ -71,7 +71,7 @@ class RB205_H_ab_recruit: RB205_H_ab_base
 	hiddenSelectionsTextures[] =
 	{
 		"RB205_main\data\airborne\H_ab_recruit_co.paa",
-		"lsd_armor_bluefor\helmet\gar\airborne\data\visor_co.paa"
+		"\ls\core\addons\characters_clone_legacy\helmets\airborne\data\camo1_co.paa"
 	};
 	hiddenSelectionsMaterials[] =
 	{
@@ -86,7 +86,7 @@ class RB205_H_ab_trooper: RB205_H_ab_base
 	hiddenSelectionsTextures[] =
 	{
 		"RB205_main\data\airborne\H_ab_enl_co.paa",
-		"RB205_main\data\airborne\visor_ab_co.paa"
+		"RB205_main\data\airborne\H_ab_enl_co.paa"
 	};
 };
 class RB205_H_ab_corporal: RB205_H_ab_base
@@ -96,7 +96,7 @@ class RB205_H_ab_corporal: RB205_H_ab_base
 	hiddenSelectionsTextures[] =
 	{
 		"RB205_main\data\airborne\H_ab_nco_co.paa",
-		"RB205_main\data\airborne\visor_ab_co.paa"
+		"RB205_main\data\airborne\H_ab_enl_co.paa"
 	};
 };
 class RB205_H_ab_sergeant: RB205_H_ab_base
@@ -106,7 +106,7 @@ class RB205_H_ab_sergeant: RB205_H_ab_base
 	hiddenSelectionsTextures[] =
 	{
 		"RB205_main\data\airborne\H_ab_nco_co.paa",
-		"RB205_main\data\airborne\visor_ab_co.paa"
+		"RB205_main\data\airborne\H_ab_enl_co.paa"
 	};
 };
 class RB205_H_ab_lieutenant: RB205_H_ab_base
@@ -116,7 +116,7 @@ class RB205_H_ab_lieutenant: RB205_H_ab_base
 	hiddenSelectionsTextures[] =
 	{
 		"RB205_main\data\airborne\H_ab_nco_co.paa",
-		"RB205_main\data\airborne\visor_ab_co.paa"
+		"RB205_main\data\airborne\H_ab_enl_co.paa"
 	};
 };
 
@@ -132,7 +132,7 @@ class RB205_H_arf_recruit: RB205_H_arf_base
 	{
 		"RB205_main\data\arf\H_arf_recruit_co.paa",
 		"",
-		"ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa"
+		"\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"
 	};
 	hiddenSelectionsMaterials[] =
 	{
@@ -239,7 +239,7 @@ class RB205_H_arf_trooper_arctic: RB205_H_arf_base
 	{
 		"RB205_main\data\arf\H_arf_arctic_co.paa",
 		"",
-		"ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa"
+		"\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"
 	};
 	hiddenSelectionsMaterials[] =
 	{
@@ -256,7 +256,7 @@ class RB205_H_arf_trooper_desert: RB205_H_arf_base
 	{
 		"RB205_main\data\arf\H_arf_desert_co.paa",
 		"",
-		"ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa"
+		"\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"
 	};
 	hiddenSelectionsMaterials[] =
 	{
@@ -273,7 +273,7 @@ class RB205_H_arf_trooper_jungle: RB205_H_arf_base
 	{
 		"RB205_main\data\arf\H_arf_jungle_co.paa",
 		"",
-		"ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa"
+		"\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"
 	};
 	hiddenSelectionsMaterials[] =
 	{
@@ -290,7 +290,7 @@ class RB205_H_arf_trooper_woodland: RB205_H_arf_base
 	{
 		"RB205_main\data\arf\H_arf_woodland_co.paa",
 		"",
-		"ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa"
+		"\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"
 	};
 	hiddenSelectionsMaterials[] =
 	{
@@ -311,7 +311,7 @@ class RB205_H_plt_recruit: RB205_H_plt_base
 	hiddenSelectionsTextures[] =
 	{
 		"RB205_main\data\pilot\H_plt_recruit_co.paa",
-		"ls_armor_bluefor\helmet\gar\phase2Pilot\data\visor_co.paa"
+		"\ls\core\addons\characters_clone_legacy\helmets\phase2Pilot\data\visor_co.paa"
 	};
 	hiddenSelectionsMaterials[] =
 	{
@@ -470,7 +470,7 @@ class RB205_H_hazard_recruit: RB205_H_hazard_base
 	hiddenSelectionsTextures[] =
 	{
 		"RB205_main\data\hazard\H_hazard_recruit_co.paa",
-		"ls_armor_bluefor\helmet\gar\desert\data\visor_co.paa"
+		"\ls\core\addons\characters_clone_legacy\helmets\desert\data\visor_co.paa"
 	};
 	hiddenSelectionsMaterials[] =
 	{
@@ -819,7 +819,7 @@ class RB205_V_medic: RB205_V_base
 	ACCESS_TRUE
 	displayName = "[205] Clone Trooper Vest <Medic>";
 	picture = "\RB205_main\data\ui\vests\icon_V_medic.paa";
-	model = "\SWLB_clones\SWLB_clone_medic_armor.p3d";
+	model = "\ls\core\addons\characters_clone_legacy\vests\medic\ls_gar_medic_vest.p3d";
 	hiddenSelections[] =
 	{
 		"camo1"
@@ -835,7 +835,7 @@ class RB205_V_medic: RB205_V_base
 	class ItemInfo: ItemInfo
 	{
 		containerClass = INV_VEST_MEDIC;
-		uniformModel = "\SWLB_clones\SWLB_clone_medic_armor.p3d";
+		uniformModel = "\ls\core\addons\characters_clone_legacy\vests\medic\ls_gar_medic_vest.p3d";
 		hiddenSelections[] = {"camo1"};
 	};
 };
@@ -844,7 +844,7 @@ class RB205_V_grenadier: RB205_V_base
 	ACCESS_TRUE
 	displayName = "[205] Clone Trooper Vest <Grenadier>";
 	picture = "\RB205_main\data\ui\vests\icon_V_grenadier.paa";
-	model = "\SWLB_clones\SWLB_clone_grenadier_armor.p3d";
+	model = "\ls\core\addons\characters_clone_legacy\vests\grenadier\ls_gar_grenadier_vest.p3d";
 	hiddenSelections[] =
 	{
 		"camo1",
@@ -863,7 +863,7 @@ class RB205_V_grenadier: RB205_V_base
 	class ItemInfo: ItemInfo
 	{
 		containerClass = INV_VEST_GRENADIER;
-		uniformModel = "\SWLB_clones\SWLB_clone_grenadier_armor.p3d";
+		uniformModel = "\ls\core\addons\characters_clone_legacy\vests\grenadier\ls_gar_grenadier_vest.p3d";
 		hiddenSelections[] = {"camo1","camo2"};
 	};
 };
@@ -872,30 +872,35 @@ class RB205_V_rebreather: RB205_V_base
 	ACCESS_TRUE
 	displayName = "[205] Clone Trooper Vest <Rebreather>";
 	picture = "\A3\characters_f\Data\UI\icon_V_RebreatherB_CA.paa";//TODO
-	model = "\SWLB_CEE\data\SWLB_CEE_Lightweight_Rebreather.p3d";
+	model = "\ls\core\addons\characters_clone_legacy\vests\rebreather\ls_gar_rebreather_vest.p3d";
 	hiddenSelections[] =
 	{
 		"camo1",
 		"camo2",
-		"camo3"
+		"camo3",
+		"pauldron",
+		"tube",
+		"rbsys"
 	};
 	hiddenSelectionsMaterials[] =
 	{
-		"RB205_main\data\materials\H_plt.rvmat",
+		"RB205_main\data\materials\H_plt.rvmat"/*,
 		"RB205_main\data\materials\officer_acc.rvmat",
-		"RB205_main\data\materials\heavy_acc.rvmat"
+		"RB205_main\data\materials\heavy_acc.rvmat",
+		"RB205_main\data\materials\heavy_acc.rvmat"*/
 	};
 	hiddenSelectionsTextures[] =
 	{
-		"RB205_main\data\default\V_rebreather1_co.paa",
+		"RB205_main\data\default\V_rebreather1_co.paa"/*,
 		"RB205_main\data\default\V_rebreather2_co.paa",
-		"RB205_main\data\default\V_heavy_co.paa"
+		"RB205_main\data\default\V_heavy_co.paa",
+		"RB205_main\data\default\V_heavy_co.paa"*/
 	};
 	class ItemInfo: ItemInfo
 	{
 		containerClass = INV_VEST_MEDIC;
-		uniformModel = "\SWLB_CEE\data\SWLB_CEE_Lightweight_Rebreather.p3d";
-		hiddenSelections[] = {"camo1","camo2","camo3"};
+		uniformModel = "\ls\core\addons\characters_clone_legacy\vests\rebreather\ls_gar_rebreather_vest.p3d";
+		hiddenSelections[] = {"camo1","camo2","camo3","pauldron","tube","rbsys"};
         vestType = "Rebreather";
 	};
 };
