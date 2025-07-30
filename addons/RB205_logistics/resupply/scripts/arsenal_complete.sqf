@@ -174,7 +174,6 @@ params ["_this"];
 		//EXTERNAL MODS
 		"WBK_HeadLampItem_Narrow","WBK_HandFlashlight",
 		"jen_jetpacks_example_refuelItemMedium",
-		"tfd_ls1","tfd_pager1",
 
 		//OTHER
 		"ItemMap",
