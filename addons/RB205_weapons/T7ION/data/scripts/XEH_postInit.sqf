@@ -32,6 +32,7 @@
 		if ((typeOf _target) == _x) exitWith { _target_isLargeVehicle = true };
 	} forEach [
 		"RB205_MTT","3AS_MTT","ls_ground_mtt_cisBlue","ls_ground_mtt_federation",
+		"RB205_triDroid","RB205_triDroid_magna","P_TriBase","P_MangaTri",
 		"RB205_dragonFly","lsd_largeVTOL_cisDropship",
 		"RB205_ATAT","3AS_ATAT","WM_ATAT",
 		"RB205_emp_gozanti","3AS_Gozanti_F",
