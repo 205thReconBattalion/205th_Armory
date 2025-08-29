@@ -1106,6 +1106,54 @@ class RB205_B_ab_radio: RB205_B_ab_base
 		"RB205_main\data\airborne\B_ab_jetpack_co.paa"
 	};
 };
+class RB205_B_ab_camo_arctic: RB205_B_ab_base
+{
+	ACCESS_TRUE
+	displayname = "[205] Clone Airborne Trooper Jetpack <Arctic>";
+	picture = "\RB205_main\data\ui\backpacks\icon_B_ab_radio.paa";
+	maximumload = INV_BACK_SCOUT;
+	TFAR_RADIO_SMALL
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\airborne\B_ab_jetpack_camo_arctic_co.paa"
+	};
+};
+class RB205_B_ab_camo_desert: RB205_B_ab_base
+{
+	ACCESS_TRUE
+	displayname = "[205] Clone Airborne Trooper Jetpack <Desert>";
+	picture = "\RB205_main\data\ui\backpacks\icon_B_ab_radio.paa";
+	maximumload = INV_BACK_SCOUT;
+	TFAR_RADIO_SMALL
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\airborne\B_ab_jetpack_camo_desert_co.paa"
+	};
+};
+class RB205_B_ab_camo_jungle: RB205_B_ab_base
+{
+	ACCESS_TRUE
+	displayname = "[205] Clone Airborne Trooper Jetpack <Jungle>";
+	picture = "\RB205_main\data\ui\backpacks\icon_B_ab_radio.paa";
+	maximumload = INV_BACK_SCOUT;
+	TFAR_RADIO_SMALL
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\airborne\B_ab_jetpack_camo_jungle_co.paa"
+	};
+};
+class RB205_B_ab_camo_woodland: RB205_B_ab_base
+{
+	ACCESS_TRUE
+	displayname = "[205] Clone Airborne Trooper Jetpack <Woodland>";
+	picture = "\RB205_main\data\ui\backpacks\icon_B_ab_radio.paa";
+	maximumload = INV_BACK_SCOUT;
+	TFAR_RADIO_SMALL
+	hiddenSelectionsTextures[] =
+	{
+		"RB205_main\data\airborne\B_ab_jetpack_camo_woodland_co.paa"
+	};
+};
 
 class RB205_B_arf: RB205_B_arf_base
 {

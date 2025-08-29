@@ -192,6 +192,22 @@ class XtdGearInfos
 		{
 			role = "radio";
 		};
+		class RB205_B_ab_camo_arctic: RB205_B_ab
+		{
+			camo = "arctic";
+		};
+		class RB205_B_ab_camo_woodland: RB205_B_ab
+		{
+			camo = "woodland";
+		};
+		class RB205_B_ab_camo_jungle: RB205_B_ab
+		{
+			camo = "jungle";
+		};
+		class RB205_B_ab_camo_desert: RB205_B_ab
+		{
+			camo = "desert";
+		};
 		
 		class RB205_B_snow_heavy
 		{

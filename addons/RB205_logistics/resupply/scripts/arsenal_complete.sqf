@@ -72,7 +72,7 @@ params ["_this"];
 		"RB205_V_navy_ensign","RB205_V_navy_officer","RB205_V_navy_pettyOfficer","RB205_V_navy_chiefPettyOfficer","RB205_V_navy_admiral",
 
 		"RB205_B_heavy","RB205_B_medic","RB205_B_radio","RB205_B_rocket","RB205_B_eod","RB205_B_radio_mini","RB205_B_radio_mini_blk",
-		"RB205_B_ab","RB205_B_ab_heavy","RB205_B_ab_medic","RB205_B_ab_radio","RB205_B_ab_rocket","RB205_B_ab_eod",
+		"RB205_B_ab","RB205_B_ab_heavy","RB205_B_ab_medic","RB205_B_ab_radio","RB205_B_ab_rocket","RB205_B_ab_eod","RB205_B_ab_camo_arctic","RB205_B_ab_camo_desert","RB205_B_ab_camo_jungle","RB205_B_ab_camo_woodland",
 		"RB205_B_arf","RB205_B_arf_arctic","RB205_B_arf_desert","RB205_B_arf_jungle","RB205_B_arf_woodland",
 		"RB205_B_snow_heavy","RB205_B_snow_medic","RB205_B_snow_radio","RB205_B_snow_rocket","RB205_B_snow_eod",
 		"RB205_B_arc","RB205_B_arc_jetpack",
@@ -174,6 +174,7 @@ params ["_this"];
 		//EXTERNAL MODS
 		"WBK_HeadLampItem_Narrow","WBK_HandFlashlight",
 		"jen_jetpacks_example_refuelItemMedium",
+		"RB205_accessCard_gar",	"RB205_accessCard_gar_officer","RB205_accessCard_prison",
 
 		//OTHER
 		"ItemMap",
