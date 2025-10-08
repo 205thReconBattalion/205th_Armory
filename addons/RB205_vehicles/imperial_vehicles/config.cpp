@@ -376,7 +376,7 @@ class cfgVehicles
 		crew = CREW_EMP_AIR;
 		VEH_INVENTORY_LIGHT
 		faction = "RB205_empire";
-		hiddenselectionstextures[] = {"3as\3AS_Vwing\data\vwing_imp_co.paa","3as\3AS_Vwing\data\vwing_int_co.paa","#(argb,8,8,3)color(0,0,0,1.0,CA)"};
+		hiddenselectionstextures[] = {"3AS\3AS_Vwing\data\vwing_main_Imp_co.paa","3AS\3AS_Vwing\data\vwing_astromechdroid_Imp_co.paa","3AS\3AS_Vwing\data\vwing_wings_Imp_co.paa"};
 		hiddenSelectionsMaterials[] = {};
 		class textureSources {};
 	};

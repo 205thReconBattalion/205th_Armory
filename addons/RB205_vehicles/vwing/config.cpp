@@ -38,11 +38,11 @@ class cfgVehicles
 		editorSubcategory = "RB205_veh_air";
 		editorPreview = "";
 		//Textures
-		hiddenSelectionsTextures[] = 
+		hiddenselectionstextures[] =
 		{
-			"RB205_vehicles\vwing\data\vwing_co.paa",
-			"3as\3AS_Vwing\data\vwing_int_co.paa",
-			"#(argb,8,8,3)color(0,0,0,1.0,CA)"
+			"3AS\3AS_Vwing\data\vwing_main_co.paa",
+			"3AS\3AS_Vwing\data\Vwing_AstromechDroid_co.paa",
+			"3AS\3AS_Vwing\data\vwing_wings_co.paa"
 		};
 		textureList[] =
 		{
@@ -53,7 +53,7 @@ class cfgVehicles
 		};
 		class TextureSources
 		{
-			class Default
+			/*class Default
 			{
 				displayName = "205th Recon Battalion";
 				author = "205th Recon Battalion";
@@ -78,16 +78,16 @@ class cfgVehicles
 					"3as\3AS_Vwing\data\vwing_int_co.paa",
 					"#(argb,8,8,3)color(0,0,0,1.0,CA)"
 				};
-			};
+			};*/
 			class Republic
 			{
 				displayName = "Grand Army of the Republic";
 				author = "3AS";
 				textures[] =
 				{
-					"3as\3AS_Vwing\data\vwing_co.paa",
-					"3as\3AS_Vwing\data\vwing_int_co.paa",
-					"#(argb,8,8,3)color(0,0,0,1.0,CA)"
+					"3AS\3AS_Vwing\data\vwing_main_co.paa",
+					"3AS\3AS_Vwing\data\Vwing_AstromechDroid_co.paa",
+					"3AS\3AS_Vwing\data\vwing_wings_co.paa"
 				};
 			};
 			class Empire
@@ -96,9 +96,9 @@ class cfgVehicles
 				author = "3AS";
 				textures[] =
 				{
-					"3as\3AS_Vwing\data\vwing_imp_co.paa",
-					"3as\3AS_Vwing\data\vwing_int_co.paa",
-					"#(argb,8,8,3)color(0,0,0,1.0,CA)"
+					"3AS\3AS_Vwing\data\vwing_main_Imp_co.paa",
+					"3AS\3AS_Vwing\data\vwing_astromechdroid_Imp_co.paa",
+					"3AS\3AS_Vwing\data\vwing_wings_Imp_co.paa"
 				};
 			};
 		};

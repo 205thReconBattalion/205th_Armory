@@ -72,7 +72,7 @@ params ["_this"];
 		"RB205_V_navy_ensign","RB205_V_navy_officer","RB205_V_navy_pettyOfficer","RB205_V_navy_chiefPettyOfficer","RB205_V_navy_admiral",
 
 		"RB205_B_heavy","RB205_B_medic","RB205_B_radio","RB205_B_rocket","RB205_B_eod","RB205_B_radio_mini","RB205_B_radio_mini_blk",
-		"RB205_B_ab","RB205_B_ab_heavy","RB205_B_ab_medic","RB205_B_ab_radio","RB205_B_ab_rocket","RB205_B_ab_eod",
+		"RB205_B_ab","RB205_B_ab_heavy","RB205_B_ab_medic","RB205_B_ab_radio","RB205_B_ab_rocket","RB205_B_ab_eod","RB205_B_ab_camo_arctic","RB205_B_ab_camo_desert","RB205_B_ab_camo_jungle","RB205_B_ab_camo_woodland",
 		"RB205_B_arf","RB205_B_arf_arctic","RB205_B_arf_desert","RB205_B_arf_jungle","RB205_B_arf_woodland",
 		"RB205_B_snow_heavy","RB205_B_snow_medic","RB205_B_snow_radio","RB205_B_snow_rocket","RB205_B_snow_eod",
 		"RB205_B_arc","RB205_B_arc_jetpack",
@@ -165,7 +165,7 @@ params ["_this"];
 		"ACE_fieldDressing","ACE_packingBandage","ACE_elasticBandage","ACE_quikclot",
 		"ACE_salineIV","ACE_salineIV_250","ACE_salineIV_500",
 		"ACE_morphine","ACE_epinephrine","ACE_adenosine","ACE_painkillers",
-		"ACE_surgicalKit","ACE_personalAidKit","ACE_tourniquet","ACE_splint","ACE_suture","ACE_bodyBag","ACE_bodyBag_blue","ACE_bodyBag_white",
+		"ACE_surgicalKit","ACE_personalAidKit","ACE_tourniquet","ACE_splint","ACE_suture","ACE_bodyBag","ACE_bodyBag_blue","ACE_bodyBag_white","rr_stretcher",
 		
 		//FOOD
 		"ACE_Canteen","ACE_Canteen_Half","ACE_Canteen_Empty","ACE_WaterBottle","ACE_WaterBottle_Half","ACE_WaterBottle_Empty",
@@ -174,7 +174,7 @@ params ["_this"];
 		//EXTERNAL MODS
 		"WBK_HeadLampItem_Narrow","WBK_HandFlashlight",
 		"jen_jetpacks_example_refuelItemMedium",
-		"tfd_ls1","tfd_pager1",
+		"RB205_accessCard_gar",	"RB205_accessCard_gar_officer","RB205_accessCard_prison",
 
 		//OTHER
 		"ItemMap",

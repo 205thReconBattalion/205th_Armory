@@ -86,7 +86,7 @@ class RB205_H_ab_trooper: RB205_H_ab_base
 	hiddenSelectionsTextures[] =
 	{
 		"RB205_main\data\airborne\H_ab_enl_co.paa",
-		"RB205_main\data\airborne\H_ab_enl_co.paa"
+		"RB205_main\data\airborne\visor_ab_co.paa"
 	};
 };
 class RB205_H_ab_corporal: RB205_H_ab_base
@@ -96,7 +96,7 @@ class RB205_H_ab_corporal: RB205_H_ab_base
 	hiddenSelectionsTextures[] =
 	{
 		"RB205_main\data\airborne\H_ab_nco_co.paa",
-		"RB205_main\data\airborne\H_ab_enl_co.paa"
+		"RB205_main\data\airborne\visor_ab_co.paa"
 	};
 };
 class RB205_H_ab_sergeant: RB205_H_ab_base
@@ -106,7 +106,7 @@ class RB205_H_ab_sergeant: RB205_H_ab_base
 	hiddenSelectionsTextures[] =
 	{
 		"RB205_main\data\airborne\H_ab_nco_co.paa",
-		"RB205_main\data\airborne\H_ab_enl_co.paa"
+		"RB205_main\data\airborne\visor_ab_co.paa"
 	};
 };
 class RB205_H_ab_lieutenant: RB205_H_ab_base
@@ -116,7 +116,7 @@ class RB205_H_ab_lieutenant: RB205_H_ab_base
 	hiddenSelectionsTextures[] =
 	{
 		"RB205_main\data\airborne\H_ab_nco_co.paa",
-		"RB205_main\data\airborne\H_ab_enl_co.paa"
+		"RB205_main\data\airborne\visor_ab_co.paa"
 	};
 };
 

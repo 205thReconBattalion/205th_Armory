@@ -251,6 +251,11 @@ class cfgPatches
 			"RB205_B_ab_eod",
 			"RB205_B_ab_radio",
 
+			"RB205_B_ab_camo_arctic",
+			"RB205_B_ab_camo_desert",
+			"RB205_B_ab_camo_jungle",
+			"RB205_B_ab_camo_woodland",
+
 			"RB205_B_arf",
 
 			"RB205_B_arf_arctic",
