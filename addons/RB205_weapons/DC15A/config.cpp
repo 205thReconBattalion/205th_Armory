@@ -87,10 +87,10 @@ class CfgWeapons
 			};
 			dispersion = DISPERSION_DC15A;
 		};
-		class OpticsModes: OpticsModes
+		/*class OpticsModes: OpticsModes
 		{
 			class Ironsights: Ironsights {};
-		};
+		};*/
 		JLTS_hasElectronics = 1;
 		JLTS_hasEMPProtection = 0;
 		JLTS_friedItem = "RB205_DC15A_fried";
