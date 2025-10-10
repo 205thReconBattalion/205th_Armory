@@ -36,3 +36,5 @@ class CfgEditorSubcategories
 		displayName = "Vehicles - Other";
 	};
 };
+
+#include "fieldManual.hpp"
