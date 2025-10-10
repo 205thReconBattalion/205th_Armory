@@ -175,6 +175,7 @@ params ["_this"];
 		"WBK_HeadLampItem_Narrow","WBK_HandFlashlight",
 		"jen_jetpacks_example_refuelItemMedium",
 		"RB205_accessCard_gar",	"RB205_accessCard_gar_officer","RB205_accessCard_prison",
+		"RB205_ballisticShield_item",
 
 		//OTHER
 		"ItemMap",
