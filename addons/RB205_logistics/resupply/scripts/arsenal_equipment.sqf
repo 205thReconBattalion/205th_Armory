@@ -9,7 +9,8 @@ params ["_this"];
 
 		"WBK_HeadLampItem_Narrow","WBK_HandFlashlight",
 		"jen_jetpacks_example_refuelItemMedium",
-		"tfd_ls1","tfd_pager1",
+		"RB205_accessCard_gar",	"RB205_accessCard_gar_officer","RB205_accessCard_prison",
+		"RB205_ballisticShield_item",
 
 		"ItemMap",
 		"ItemGPS","B_UavTerminal",

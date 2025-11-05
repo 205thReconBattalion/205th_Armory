@@ -1267,6 +1267,9 @@ class RB205_B_arc_jetpack: RB205_B_ab_base
 	displayname = "[205] Clone ARC Trooper Jetpack";
 	maximumload = INV_BACK_SOF;
 	TFAR_RADIO
+	ace_logistics_wirecutter_hasWirecutter = 1;
+	ace_trenches_entrenchingTool = 1;
+	ace_fortify_fortifyTool = 1;
 	hiddenSelectionsTextures[] =
 	{
 		"RB205_main\data\airborne\B_ab_jetpack_co.paa"

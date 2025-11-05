@@ -30,7 +30,7 @@ params ["_this"];
 		"RB205_ugl_he_3rnd","RB205_ugl_smoke_white_3rnd","RB205_ugl_smoke_red_3rnd","RB205_ugl_smoke_green_3rnd","RB205_ugl_smoke_blue_3rnd","RB205_ugl_smoke_yellow_3rnd","RB205_ugl_smoke_orange_3rnd","RB205_ugl_smoke_purple_3rnd","RB205_ugl_flare_white_3rnd","RB205_ugl_flare_red_3rnd","RB205_ugl_flare_green_3rnd","RB205_ugl_flare_ir_3rnd",
 		"RB205_ugl_he_6rnd","RB205_ugl_huntir","RB205_ugl_pike",
 
-		"ACE_VMM3","3AS_FusionCutter_F","3AS_RepublicDatapadPistol",
+		"RB205_datapad","3AS_FusionCutter_F",
 		"3AS_FusionCutter_Magazine","3AS_FusionCutter_Dewreck_Magazine","3AS_Datapad_Base_Mag",
 		
 		//IMPERIAL WEAPONS / ATTACHMENTS / AMMO
@@ -99,6 +99,7 @@ params ["_this"];
 		"RB205_H_tachanka","RB205_U_tachanka",
 		"RB205_H_mando","RB205_U_mando",
 		"RB205_H_shadow","RB205_U_shadow",
+		"RB205_H_silver","RB205_U_silver",
 		"RB205_H_fugger","RB205_U_fugger",
 		"RB205_H_akira","RB205_U_akira",
 		"RB205_H_lost","RB205_U_lost",
@@ -175,6 +176,7 @@ params ["_this"];
 		"WBK_HeadLampItem_Narrow","WBK_HandFlashlight",
 		"jen_jetpacks_example_refuelItemMedium",
 		"RB205_accessCard_gar",	"RB205_accessCard_gar_officer","RB205_accessCard_prison",
+		"RB205_ballisticShield_item",
 
 		//OTHER
 		"ItemMap",

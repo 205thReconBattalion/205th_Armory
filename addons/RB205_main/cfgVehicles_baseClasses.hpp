@@ -540,4 +540,5 @@ class RB205_B_arc_base: RB205_backpack_base
 	TFAR_RADIO
 	ace_logistics_wirecutter_hasWirecutter = 1;
 	ace_trenches_entrenchingTool = 1;
+	ace_fortify_fortifyTool = 1;
 };

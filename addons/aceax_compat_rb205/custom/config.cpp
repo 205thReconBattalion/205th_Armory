@@ -40,6 +40,7 @@ class XtdGearModels
                     "0113",
                     "0955",
 					"1312",
+                    "1504",
                     "1618",
                     "1972",
                     "2004",
@@ -83,6 +84,10 @@ class XtdGearModels
                 class 1312
                 {
                     description = "Shadow";
+                };
+                class 1504
+                {
+                    description = "Silver";
                 };
                 class 1618
                 {

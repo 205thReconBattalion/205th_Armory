@@ -36,6 +36,10 @@ class cfgVehicles
 		faction = "RB205";
 		editorSubcategory = "RB205_veh_other";
 		editorPreview = "";
+		class UserActions {};
+		tf_hasLRradio = 1;
+		tf_range = 30000;
+		tf_isolatedAmount = 0.6;
 	};
 };
 
@@ -51,7 +55,7 @@ class CfgNotifications
 { 
 	class RB205_RespawnModule_text 
 	{ 
-		title = "Neue Respawnposition";									// Title displayed as text on black background. Filled by arguments. 
+		title = "Forward Command Center";								// Title displayed as text on black background. Filled by arguments. 
 		iconPicture = "\a3\Modules_f\data\iconHQ_ca.paa";  				// Small icon displayed in left part. Colored by "color", filled by arguments. 
 		iconText = "";   												// Short text displayed over the icon. Colored by "color", filled by arguments. 
 		description = "Das Forward Command Center wurde errichtet!";  	// Brief description displayed as structured text. Colored by "color", filled by arguments. 
@@ -62,7 +66,7 @@ class CfgNotifications
 	};
 	class RB205_RespawnModule_text_destroyed
 	{ 
-		title = "Respawnposition verloren";
+		title = "Forward Command Center";
 		iconPicture = "\a3\Modules_f\data\iconModule_ca.paa";
 		iconText = "";
 		description = "Das Forward Command Center wurde zerstört!";
