@@ -55,7 +55,7 @@ class cfgVehicles
     class RB205_clone_trooper;
     class RB205_clone_lightning: RB205_clone_trooper
     {
-        displayName = "CSP-3697 Lightning";
+        displayName = "CT-3697 Lightning";
         uniformclass = "RB205_U_lightning";
         editorSubCategory = "RB205_lore";
         hiddenselectionsTextures[] =

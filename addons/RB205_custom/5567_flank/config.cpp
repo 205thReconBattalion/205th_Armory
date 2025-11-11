@@ -55,7 +55,7 @@ class cfgVehicles
     class RB205_clone_trooper;
     class RB205_clone_flank: RB205_clone_trooper
     {
-        displayName = "CTF-5567 Flank";
+        displayName = "CT-5567 Flank";
         uniformClass = "RB205_U_flank";
         editorSubCategory = "RB205_lore";
         hiddenSelectionsTextures[] =

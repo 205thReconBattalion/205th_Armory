@@ -55,7 +55,7 @@ class cfgVehicles
     class RB205_clone_plt_trooper;
     class RB205_clone_akira: RB205_clone_plt_trooper
     {
-        displayName = "CSP-1972 Akira";
+        displayName = "CT-1972 Akira";
         uniformclass = "RB205_U_akira";
         editorSubCategory = "RB205_lore";
         hiddenselectionsTextures[] =

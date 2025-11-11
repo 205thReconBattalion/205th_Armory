@@ -79,7 +79,7 @@ class cfgVehicles
     class RB205_clone_sergeant;
     class RB205_clone_slow: RB205_clone_sergeant
     {
-        displayName = "CS-3340 Slow";
+        displayName = "CSM-3340 Slow";
         uniformclass = "RB205_U_slow";
         editorSubCategory = "RB205_lore";
         hiddenselectionsTextures[] =

@@ -55,7 +55,7 @@ class cfgVehicles
     class RB205_clone_trooper;
     class RB205_clone_crossfire : RB205_clone_trooper
     {
-        displayName = "CSP-4600 Crossfire";
+        displayName = "CT-4600 Crossfire";
         uniformclass = "RB205_U_crossfire";
         editorSubCategory = "RB205_lore";
         hiddenselectionsTextures[] =

@@ -55,7 +55,7 @@ class cfgVehicles
 class RB205_clone_trooper;
 class RB205_clone_banger: RB205_clone_trooper
 {
-    displayName = "CSP-4137 Banger";
+    displayName = "CT-4137 Banger";
     uniformclass = "RB205_U_banger";
     editorSubCategory = "RB205_lore";
     hiddenselectionsTextures[] =

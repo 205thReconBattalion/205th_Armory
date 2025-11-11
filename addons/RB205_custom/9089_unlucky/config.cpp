@@ -55,7 +55,7 @@ class cfgVehicles
 class RB205_clone_trooper;
 class RB205_clone_unlucky: RB205_clone_trooper
 {
-    displayName = "CSP-9089 Unlucky";
+    displayName = "CT-9089 Unlucky";
     uniformclass = "RB205_U_unlucky";
     editorSubCategory = "RB205_lore";
     hiddenselectionsTextures[] =
