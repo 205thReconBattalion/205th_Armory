@@ -55,7 +55,7 @@ class cfgVehicles
     class RB205_clone_trooper;
     class RB205_clone_irwan: RB205_clone_trooper
     {
-        displayName = "CST-5884 Irwan";
+        displayName = "CT-5884 Irwan";
         uniformClass = "RB205_U_irwan";
         editorSubCategory = "RB205_lore";
         hiddenSelectionsTextures[] =

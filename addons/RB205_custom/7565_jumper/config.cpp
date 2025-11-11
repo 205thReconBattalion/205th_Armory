@@ -56,7 +56,7 @@ class cfgVehicles
     class RB205_clone_trooper;
     class RB205_clone_jumper: RB205_clone_trooper
     {
-        displayName = "CSP-7565 Jumper";
+        displayName = "CT-7565 Jumper";
         uniformclass = "RB205_U_jumper";
         editorSubCategory = "RB205_lore";
         hiddenselectionsTextures[] =

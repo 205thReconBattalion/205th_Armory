@@ -55,7 +55,7 @@ class cfgVehicles
     class RB205_clone_ab_trooper;
     class RB205_clone_silver: RB205_clone_ab_trooper
     {
-        displayName = "CSP-1504 Silver";
+        displayName = "CT-1504 Silver";
         uniformclass = "RB205_U_silver";
         editorSubCategory = "RB205_lore";
         hiddenselectionsTextures[] =

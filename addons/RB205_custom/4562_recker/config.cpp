@@ -55,7 +55,7 @@ class cfgVehicles
     class RB205_clone_plt_trooper;
     class RB205_clone_recker: RB205_clone_plt_trooper
     {
-        displayName = "CSP-4562 Recker";
+        displayName = "CT-4562 Recker";
         uniformclass = "RB205_U_recker";
         editorSubCategory = "RB205_lore";
         hiddenselectionsTextures[] =

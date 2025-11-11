@@ -55,7 +55,7 @@ class cfgVehicles
     class RB205_clone_trooper;
     class RB205_clone_kamaz: RB205_clone_trooper
     {
-        displayName = "CSP-2609 Kamaz";
+        displayName = "CT-2609 Kamaz";
         uniformclass = "RB205_U_kamaz";
         editorSubCategory = "RB205_lore";
         hiddenselectionsTextures[] =

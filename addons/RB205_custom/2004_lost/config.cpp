@@ -55,7 +55,7 @@ class cfgVehicles
     class RB205_clone_ab_trooper;
     class RB205_clone_lost: RB205_clone_ab_trooper
     {
-        displayName = "CSP-2004 Lost";
+        displayName = "CT-2004 Lost";
         uniformclass = "RB205_U_lost";
         editorSubCategory = "RB205_lore";
         hiddenselectionsTextures[] =

@@ -11,7 +11,8 @@ class cfgPatches
         weapons[] =
         {
             "RB205_H_jay",
-            "RB205_U_jay"
+            "RB205_U_jay",
+            "RB205_V_jay"
         };
         units[] =
         {
@@ -48,14 +49,25 @@ class cfgWeapons
             uniformClass = RB205_clone_jay;
         };
     };
+
+    class RB205_V_cs;
+    class RB205_V_jay: RB205_V_cs
+    {
+        displayName = "[205] Clone Trooper Vest [7576]";
+        hiddenSelectionsTextures[] =
+        {
+            "RB205_custom\7576_jay\data\V_jay.paa",
+            ""
+        };
+    };
 };
 
 class cfgVehicles
 {
-    class RB205_clone_trooper;
-    class RB205_clone_jay: RB205_clone_trooper
+    class RB205_clone_sergeant;
+    class RB205_clone_jay: RB205_clone_sergeant
     {
-        displayName = "CST-7576 Jay";
+        displayName = "CS-7576 Jay";
         uniformclass = "RB205_U_jay";
         editorSubCategory = "RB205_lore";
         hiddenselectionsTextures[] =
@@ -64,7 +76,7 @@ class cfgVehicles
             "RB205_custom\7576_jay\data\U_jay_lower.paa",
             "RB205_main\data\default\U_undersuit_co.paa"
         };
-        LINKED_ITEMS("RB205_H_jay", "RB205_V_ct", "RB205_NV_chip")
+        LINKED_ITEMS("RB205_H_jay", "RB205_V_jay", "RB205_NV_chip")
 	    identityTypes[] = IDENTITY_TYPES;
     };
 };

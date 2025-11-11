@@ -55,7 +55,7 @@ class cfgVehicles
     class RB205_clone_ab_trooper;
     class RB205_clone_phantom : RB205_clone_ab_trooper
     {
-        displayName = "CSP-3369 Phantom";
+        displayName = "CT-3369 Phantom";
         uniformclass = "RB205_U_phantom";
         editorSubCategory = "RB205_lore";
         hiddenselectionsTextures[] =

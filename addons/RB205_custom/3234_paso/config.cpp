@@ -24,25 +24,25 @@ class cfgPatches
 
 class cfgWeapons
 {
-    class RB205_H_plt_trooper;
-    class RB205_H_paso: RB205_H_plt_trooper
+    class RB205_H_trooper;
+    class RB205_H_paso: RB205_H_trooper
     {
-        displayName = "[205] Clone Pilot Trooper Helmet [3234]";
+        displayName = "[205] Clone Trooper Helmet [3234]";
         hiddenSelectionsTextures[] =
         {
             "RB205_custom\3234_paso\data\H_paso.paa",
-            "RB205_main\data\pilot\visor_plt_co.paa"
+            "RB205_main\data\default\visor_p2_co.paa"
         };
     };
 
     class RB205_U_base;
-    class RB205_U_plt_trooper: RB205_U_base
+    class RB205_U_trooper: RB205_U_base
     {
         class ItemInfo;
     };
-    class RB205_U_paso: RB205_U_plt_trooper
+    class RB205_U_paso: RB205_U_trooper
     {
-        displayName = "[205] Clone Pilot Trooper Armor [3234]";
+        displayName = "[205] Clone Trooper Armor [3234]";
         class ItemInfo: ItemInfo
         {
             uniformClass = RB205_clone_paso;
@@ -52,10 +52,10 @@ class cfgWeapons
 
 class cfgVehicles
 {
-    class RB205_clone_plt_trooper;
-    class RB205_clone_paso: RB205_clone_plt_trooper
+    class RB205_clone_trooper;
+    class RB205_clone_paso: RB205_clone_trooper
     {
-        displayName = "CSP-3234 Paso";
+        displayName = "CT-3234 Paso";
         uniformclass = "RB205_U_paso";
         editorSubCategory = "RB205_lore";
         hiddenselectionsTextures[] =

@@ -56,7 +56,7 @@ class cfgVehicles
     class RB205_clone_plt_trooper;
     class RB205_clone_pain: RB205_clone_plt_trooper
     {   
-        displayName = "CSP-2111 Pain";
+        displayName = "CT-2111 Pain";
         uniformClass = "RB205_U_pain";
         editorSubCategory = "RB205_lore";
         hiddenSelectionsTextures[] = 

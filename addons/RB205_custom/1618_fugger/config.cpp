@@ -52,7 +52,7 @@ class cfgVehicles
     class RB205_clone_ab_trooper;
     class RB205_clone_fugger: RB205_clone_ab_trooper
     {
-        displayName = "CST-1618 Fugger";
+        displayName = "CT-1618 Fugger";
         uniformclass = "RB205_U_fugger";
         editorSubCategory = "RB205_lore";
         hiddenselectionsTextures[] =

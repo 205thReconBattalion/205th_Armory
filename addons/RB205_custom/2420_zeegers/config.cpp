@@ -55,7 +55,7 @@ class cfgVehicles
     class RB205_clone_trooper;
     class RB205_clone_zeegers : RB205_clone_trooper
     {
-        displayName = "CSP-2420 Zeegers";
+        displayName = "CT-2420 Zeegers";
         uniformclass = "RB205_U_zeegers";
         editorSubCategory = "RB205_lore";
         hiddenselectionsTextures[] =

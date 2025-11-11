@@ -55,7 +55,7 @@ class cfgVehicles
     class RB205_clone_trooper;
     class RB205_clone_fire: RB205_clone_trooper
     {
-        displayName = "CSP-2187 Fire";
+        displayName = "CT-2187 Fire";
         uniformclass = "RB205_U_fire";
         editorSubCategory = "RB205_lore";
         hiddenselectionsTextures[] =
