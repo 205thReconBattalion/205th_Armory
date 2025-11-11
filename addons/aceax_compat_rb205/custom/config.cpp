@@ -50,6 +50,7 @@ class XtdGearModels
                     "2209",
                     "2420",
                     "2441",
+                    "2574",
                     "2609",
                     "3234",
                     "3340",
@@ -71,7 +72,8 @@ class XtdGearModels
                     "7565",
                     "7576",
                     "8550",
-                    "9089"
+                    "9089",
+                    "9294"
 				};
                 class 0113
                 {
@@ -124,6 +126,10 @@ class XtdGearModels
                 class 2441
                 {
                     description = "Gentleman";
+                };
+                class 2574
+                {
+                    description = "Scout";
                 };
                 class 2609
                 {
@@ -212,6 +218,10 @@ class XtdGearModels
                 class 9089
                 {
                     description = "Unlucky";
+                };
+                class 9294
+                {
+                    description = "Tower";
                 };
             };
         };
