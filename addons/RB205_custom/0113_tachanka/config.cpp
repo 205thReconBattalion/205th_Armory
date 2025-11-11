@@ -55,7 +55,7 @@ class cfgVehicles
     class RB205_clone_trooper;
     class RB205_clone_tachanka: RB205_clone_trooper
     {
-        displayName = "CSP-0113 Tachanka";
+        displayName = "CT-0113 Tachanka";
         uniformclass = "RB205_U_tachanka";
         editorSubCategory = "RB205_lore";
         hiddenselectionsTextures[] =
