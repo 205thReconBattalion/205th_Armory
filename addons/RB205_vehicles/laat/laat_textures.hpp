@@ -14,6 +14,15 @@ hiddenSelectionsTextures[] =
 	"RB205_vehicles\laat\data\laat_weapon_details_co.paa",
 	"RB205_vehicles\laat\data\laat_interior_co.paa"
 };
+textureList[] =
+{
+	"Default",			1,
+	"Noseart_twilek",	0,
+	"Republic",			0,
+	"Republic_91",		0,
+	"Republic_ARC",		0,
+	"Empire",			0
+};
 class TextureSources
 {
 	class Default
@@ -29,6 +38,19 @@ class TextureSources
 			"RB205_vehicles\laat\data\laat_interior_co.paa"
 		};
 		factions[] = {"RB205"};
+	};
+	class Noseart_twilek
+	{
+		displayName = "205th Recon Battalion (Twi'lek)";
+		author = "205th Recon Battalion";
+		textures[] =
+		{
+			"RB205_vehicles\laat\data\laat_hull_nart_twilek_co.paa",
+			"RB205_vehicles\laat\data\laat_wings_co.paa",
+			"RB205_vehicles\laat\data\laat_weapons_co.paa",
+			"RB205_vehicles\laat\data\laat_weapon_details_co.paa",
+			"RB205_vehicles\laat\data\laat_interior_co.paa"
+		};
 	};
 	class Republic
 	{
@@ -80,19 +102,6 @@ class TextureSources
 			"3AS\3as_Laat\LAATI\data\weapons_Imp_CO.paa",
 			"3AS\3as_Laat\LAATI\data\weapon_Details_Imp_CO.paa",
 			"3AS\3as_Laat\LAATI\data\interior_Imp_CO.paa"
-		};
-	};
-	class Noseart_twilek
-	{
-		displayName = "205th Recon Battalion (Twi'lek)";
-		author = "205th Recon Battalion";
-		textures[] =
-		{
-			"RB205_vehicles\laat\data\laat_hull_nart_twilek_co.paa",
-			"RB205_vehicles\laat\data\laat_wings_co.paa",
-			"RB205_vehicles\laat\data\laat_weapons_co.paa",
-			"RB205_vehicles\laat\data\laat_weapon_details_co.paa",
-			"RB205_vehicles\laat\data\laat_interior_co.paa"
 		};
 	};
 };
