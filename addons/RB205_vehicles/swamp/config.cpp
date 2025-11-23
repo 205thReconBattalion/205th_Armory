@@ -37,6 +37,7 @@ class cfgVehicles
 		faction = "RB205";
 		editorSubcategory = "RB205_veh_ground";
 		editorPreview = "";
+		#include "\RB205_vehicles\swamp\swamp_textures.hpp"
 	};
 
 	class 3AS_ISP_Transport;
@@ -53,5 +54,6 @@ class cfgVehicles
 		faction = "RB205";
 		editorSubcategory = "RB205_veh_ground";
 		editorPreview = "";
+		#include "\RB205_vehicles\swamp\swamp_textures.hpp"
 	};
 };
