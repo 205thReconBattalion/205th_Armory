@@ -42,5 +42,6 @@ class cfgVehicles
 		faction = "RB205";
 		editorSubcategory = "RB205_veh_tank";
 		editorPreview = "";
+		#include "\RB205_vehicles\rx200\rx200_textures.hpp"
 	};
 };
