@@ -23,14 +23,11 @@ class TextureSources
 		author = "205th Recon Battalion";
 		textures[] =
 		{
-			"RB205_vehicles\z95\data\z95_co.paa",
+			"RB205_vehicles\z95\data\z95_body_co.paa",
 			"3AS\3as_Z95\Data\cockpit_co.paa",
 			"3AS\3as_saber\data\glass\glass_ca"
 		};
-		factions[] =
-		{
-			"RB205"
-		};
+		factions[] = {"RB205"};
 	};
 	class Republic
 	{
