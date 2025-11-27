@@ -43,44 +43,7 @@ class cfgVehicles
 		faction = "RB205";
 		editorSubcategory = "RB205_veh_tank";
 		editorPreview = "";
-		//Texture
-		hiddenSelectionsTextures[] =
-		{
-			"3as\3AS_Rebel_Armor\PX10_Cav\Textures\PX10CAV_Republic_co.paa",
-			"3as\3as_rebel_armor\px10_cav\textures\px10cavintback_co.paa",
-			"3as\3as_rebel_armor\px10_cav\textures\px10cavintfront_co.paa",
-			"3as\3as_rebel_armor\px10_cav\textures\px10fuel_Republic_co.paa",
-			"3as\3as_rebel_armor\px10_cav\textures\px10crane_Republic_co.paa"
-		};
-		class textureSources
-		{
-			class Republic
-			{
-				displayName = "Grand Army of the Republic";
-				author = "3AS";
-				textures[] =
-				{
-					"3as\3AS_Rebel_Armor\PX10_Cav\Textures\PX10CAV_Republic_co.paa",
-					"3as\3as_rebel_armor\px10_cav\textures\px10cavintback_co.paa",
-					"3as\3as_rebel_armor\px10_cav\textures\px10cavintfront_co.paa",
-					"3as\3as_rebel_armor\px10_cav\textures\px10fuel_Republic_co.paa",
-					"3as\3as_rebel_armor\px10_cav\textures\px10crane_Republic_co.paa"
-				};
-			};
-			class Empire
-			{
-				displayName = "Galactic Empire";
-				author = "3AS";
-				textures[] =
-				{
-					"3as\3AS_Rebel_Armor\PX10_Cav\Textures\PX10CAV_Imp_co.paa",
-					"3as\3as_rebel_armor\px10_cav\textures\px10cavintback_co.paa",
-					"3as\3as_rebel_armor\px10_cav\textures\px10cavintfront_co.paa",
-					"3as\3as_rebel_armor\px10_cav\textures\px10fuel_Imp_co.paa",
-					"3as\3as_rebel_armor\px10_cav\textures\px10crane_co.paa"
-				};
-			};
-		};
+		#include "\RB205_vehicles\px10\px10_textures.hpp"
 	};
 
 	class 3AS_PX10_REP_R3;
@@ -98,43 +61,6 @@ class cfgVehicles
 		faction = "RB205";
 		editorSubcategory = "RB205_veh_tank";
 		editorPreview = "";
-		//Texture
-		hiddenSelectionsTextures[] =
-		{
-			"3as\3AS_Rebel_Armor\PX10_Cav\Textures\PX10CAV_Republic_co.paa",
-			"3as\3as_rebel_armor\px10_cav\textures\px10cavintback_co.paa",
-			"3as\3as_rebel_armor\px10_cav\textures\px10cavintfront_co.paa",
-			"3as\3as_rebel_armor\px10_cav\textures\px10fuel_Republic_co.paa",
-			"3as\3as_rebel_armor\px10_cav\textures\px10crane_Republic_co.paa"
-		};
-		class textureSources
-		{
-			class Republic
-			{
-				displayName = "Grand Army of the Republic";
-				author = "3AS";
-				textures[] =
-				{
-					"3as\3AS_Rebel_Armor\PX10_Cav\Textures\PX10CAV_Republic_co.paa",
-					"3as\3as_rebel_armor\px10_cav\textures\px10cavintback_co.paa",
-					"3as\3as_rebel_armor\px10_cav\textures\px10cavintfront_co.paa",
-					"3as\3as_rebel_armor\px10_cav\textures\px10fuel_Republic_co.paa",
-					"3as\3as_rebel_armor\px10_cav\textures\px10crane_Republic_co.paa"
-				};
-			};
-			class Empire
-			{
-				displayName = "Galactic Empire";
-				author = "3AS";
-				textures[] =
-				{
-					"3as\3AS_Rebel_Armor\PX10_Cav\Textures\PX10CAV_Imp_co.paa",
-					"3as\3as_rebel_armor\px10_cav\textures\px10cavintback_co.paa",
-					"3as\3as_rebel_armor\px10_cav\textures\px10cavintfront_co.paa",
-					"3as\3as_rebel_armor\px10_cav\textures\px10fuel_Imp_co.paa",
-					"3as\3as_rebel_armor\px10_cav\textures\px10crane_co.paa"
-				};
-			};
-		};
+		#include "\RB205_vehicles\px10\px10_textures.hpp"
 	};
 };
