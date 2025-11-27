@@ -30,7 +30,7 @@ class cfgVehicles
 	class RB205_sdv: B_SDV_01_F
 	{
 		ACCESS_TRUE
-		displayName = "SDV";
+		displayName = "'Opee' SDV";
 		author = AUTHOR;
 		crew = CREW_DEFAULT;
 		VEH_INVENTORY
@@ -41,10 +41,6 @@ class cfgVehicles
 		faction = "RB205";
 		editorSubcategory = "RB205_veh_naval";
 		editorPreview = "";
-		//Textures
-		hiddenSelectionsTextures[] =
-		{
-			"RB205_vehicles\sdv\data\sdv_ext_co.paa"
-		};
+		#include "\RB205_vehicles\sdv\sdv_textures.hpp"
 	};
 };
