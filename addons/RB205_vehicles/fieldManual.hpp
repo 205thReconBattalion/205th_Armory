@@ -25,11 +25,11 @@ class CfgHints
 			displayName = "Biker Advanced Recon Commando-Speeder (BARC)";
 			description = $STR_Hint_RB205_BARC_Speeder;
 			arguments[] = {
-				"str getNumber (configFile >> 'CfgVehicles' >> 'RB205_barc2' >> 'maxSpeed')", 
-				"if(getNumber(configFile >> 'CfgVehicles' >> 'RB205_barc2' >> 'ace_cargo_hasCargo')==1) then {str getNumber(configFile >> 'CfgVehicles' >> 'RB205_barc2' >> 'ace_cargo_space')} else {str 0}"
+				"str getNumber (configFile >> 'CfgVehicles' >> 'RB205_barc' >> 'maxSpeed')", 
+				"if(getNumber(configFile >> 'CfgVehicles' >> 'RB205_barc' >> 'ace_cargo_hasCargo')==1) then {str getNumber(configFile >> 'CfgVehicles' >> 'RB205_barc' >> 'ace_cargo_space')} else {str 0}"
 			};			
 			image = "RB205_core\data\RB205_logo.paa";
-			vehicle = "RB205_barc2";
+			vehicle = "RB205_barc";
 			logicalOrder = 0;				
 		};
 		class SwampSpeeder 
@@ -347,18 +347,18 @@ class CfgHints
 		category = "205_Vehicle_Info_Hint_Category";
 		displayName = "Naval";
 		logicalOrder = 5;
-		class RB205_catfish_at
+		class RB205_waterGlider
 		{
 			scope = 2;
-			displayName = "Catfish Water Glider";
-			description = $STR_Hint_RB205_Catfish;
+			displayName = "'Aiwha' Water Glider";
+			description = $STR_Hint_RB205_WaterGlider;
 			arguments[] = {
-				"str getNumber (configFile >> 'CfgVehicles' >> 'RB205_catfish_at' >> 'maxSpeed')",
-				"if(getNumber(configFile >> 'CfgVehicles' >> 'RB205_catfish_at' >> 'ace_cargo_hasCargo')==1) then {str getNumber(configFile >> 'CfgVehicles' >> 'RB205_catfish_at' >> 'ace_cargo_space')} else {str 0}"
+				"str getNumber (configFile >> 'CfgVehicles' >> 'RB205_waterGlider_mg' >> 'maxSpeed')",
+				"if(getNumber(configFile >> 'CfgVehicles' >> 'RB205_waterGlider_mg' >> 'ace_cargo_hasCargo')==1) then {str getNumber(configFile >> 'CfgVehicles' >> 'RB205_waterGlider_mg' >> 'ace_cargo_space')} else {str 0}"
 			};
 			image = "RB205_core\data\RB205_logo.paa";
 			logicalOrder = 0;
-			vehicle = "RB205_catfish_at";
+			vehicle = "RB205_waterGlider_mg";
 		};
 		class RB205_SDV
 		{
