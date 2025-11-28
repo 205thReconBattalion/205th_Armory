@@ -8,7 +8,7 @@ hiddenselectionstextures[] =
 {
 	"RB205_vehicles\z95\data\z95_body_co.paa",
 	"3AS\3as_Z95\Data\cockpit_co.paa",
-	"3AS\3as_saber\data\glass\glass_ca"
+	"3AS\3as_saber\data\glass\glass_ca.paa"
 };
 textureList[] =
 {
@@ -25,7 +25,7 @@ class TextureSources
 		{
 			"RB205_vehicles\z95\data\z95_body_co.paa",
 			"3AS\3as_Z95\Data\cockpit_co.paa",
-			"3AS\3as_saber\data\glass\glass_ca"
+			"3AS\3as_saber\data\glass\glass_ca.paa"
 		};
 		factions[] = {"RB205"};
 	};
@@ -37,7 +37,7 @@ class TextureSources
 		{
 			"3AS\3as_Z95\data\body_co.paa",
 			"3AS\3as_Z95\Data\cockpit_co.paa",
-			"3AS\3as_saber\data\glass\glass_ca"
+			"3AS\3as_saber\data\glass\glass_ca.paa"
 		};
 	};
 };
