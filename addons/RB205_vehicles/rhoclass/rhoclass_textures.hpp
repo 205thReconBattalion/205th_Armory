@@ -73,3 +73,33 @@ class TextureSources
 		};
 	};
 };
+class Damage
+{
+	mat[] =
+	{
+		"RB205_vehicles\rhoclass\data\rhoclass_hull.rvmat",
+		"3as\3AS_Republic_Heli\Rho_Class\data\damage\Hull_Rho_damage.rvmat",
+		"A3\Air_F_Gamma\Plane_Fighter_03\Data\Plane_Fighter_03_body_1_destruct.rvmat",
+
+		"RB205_vehicles\rhoclass\data\rhoclass_hull_front.rvmat",
+		"3as\3AS_Republic_Heli\Rho_Class\data\damage\Hull_Front_damage.rvmat",
+		"A3\Air_F_Gamma\Plane_Fighter_03\Data\Plane_Fighter_03_body_1_destruct.rvmat",
+		
+		"RB205_vehicles\rhoclass\data\rhoclass_wings.rvmat",
+		"3as\3AS_Republic_Heli\Rho_Class\data\damage\Wings_Rho_damage.rvmat",
+		"A3\Air_F_Gamma\Plane_Fighter_03\Data\Plane_Fighter_03_body_1_destruct.rvmat",
+		
+		"3as\3as_republic_heli\rho_class\data\glass_cockpit.rvmat",
+		"A3\Air_F_Gamma\Plane_Fighter_03\Data\Plane_Fighter_03_glass_damage.rvmat",
+		"A3\Air_F_Gamma\Plane_Fighter_03\Data\Plane_Fighter_03_glass_destruct.rvmat",
+		
+		"3as\3AS_Republic_Heli\Rho_Class\data\interior.rvmat",
+		"3as\3AS_Republic_Heli\Rho_Class\data\damage\interior_damage.rvmat",
+		"A3\armor_f_gamma\MBT_01\Data\MBT_01_body_destruct.rvmat",
+
+		"3as\3AS_Republic_Heli\Rho_Class\data\Interior_Optional.rvmat",
+		"3as\3AS_Republic_Heli\Rho_Class\data\damage\interior_optional_damage.rvmat",
+		"A3\Air_F_Gamma\Plane_Fighter_03\Data\Plane_Fighter_03_body_1_destruct.rvmat"
+	};
+	tex[] = {};
+};

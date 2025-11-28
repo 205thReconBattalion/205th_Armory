@@ -41,3 +41,21 @@ class textureSources
 		};
 	};
 };
+class Damage
+{
+	mat[] =
+	{
+		"RB205_vehicles\atap\data\atap_hull.rvmat",
+		"3as\3AS_ATAP\data\damage\ATAP_Hull_damage.rvmat",
+		"A3\armor_f_gamma\MBT_01\Data\MBT_01_body_destruct.rvmat",
+		
+		"RB205_vehicles\atap\data\atap_weaponsAndDecals.rvmat",
+		"3as\3AS_ATAP\data\damage\ATAP_Weapons_damage.rvmat",
+		"A3\armor_f_gamma\MBT_01\Data\MBT_01_body_destruct.rvmat",
+		
+		"RB205_vehicles\atap\data\atap_legs.rvmat",
+		"3as\3AS_ATAP\data\damage\ATAP_Legs_damage.rvmat",
+		"A3\armor_f_gamma\MBT_01\Data\MBT_01_body_destruct.rvmat"
+	};
+	tex[] = {};
+};

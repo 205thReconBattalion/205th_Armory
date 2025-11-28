@@ -53,3 +53,29 @@ class TextureSources
 		};
 	};
 };
+class Damage
+{
+	mat[] =
+	{
+		"3AS\3AS_Vwing\data\Main.rvmat",
+		"RB205_vehicles\vwing\data\vwing_main.rvmat",
+		"A3\Air_F_Gamma\Plane_Fighter_03\Data\Plane_Fighter_03_body_1_destruct.rvmat",
+		
+		"3AS\3AS_Vwing\data\Astro.rvmat",
+		"RB205_vehicles\vwing\data\vwing_droid.rvmat",
+		"A3\Air_F_Gamma\Plane_Fighter_03\Data\Plane_Fighter_03_body_1_destruct.rvmat",
+		
+		"3AS\3AS_Vwing\data\Wings.rvmat",
+		"RB205_vehicles\vwing\data\vwing_wings.rvmat",
+		"A3\Air_F_Gamma\Plane_Fighter_03\Data\Plane_Fighter_03_body_1_destruct.rvmat",
+		
+		"3AS\3AS_Vwing\data\Int.rvmat",
+		"3AS\3AS_Vwing\data\Int.rvmat",
+		"A3\Air_F_Gamma\Plane_Fighter_03\Data\Plane_Fighter_03_body_1_destruct.rvmat",
+		
+		"3as\3AS_Vwing\data\Glass.rvmat",
+		"A3\Air_F_Gamma\Plane_Fighter_03\Data\Plane_Fighter_03_glass_damage.rvmat",
+		"A3\Air_F_Gamma\Plane_Fighter_03\Data\Plane_Fighter_03_glass_destruct.rvmat"
+	};
+	tex[] = {};
+};

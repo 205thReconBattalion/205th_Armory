@@ -41,3 +41,25 @@ class TextureSources
 		};
 	};
 };
+class Damage
+{
+	mat[] =
+	{
+		"RB205_vehicles\arc170\data\arc170_main_frame.rvmat",
+		"A3\Air_F_Gamma\Plane_Fighter_03\Data\Plane_Fighter_03_body_1_damage.rvmat",
+		"A3\Air_F_Gamma\Plane_Fighter_03\Data\Plane_Fighter_03_body_1_destruct.rvmat",
+		
+		"RB205_vehicles\arc170\data\arc170_wings_engines.rvmat",
+		"A3\Air_F_Gamma\Plane_Fighter_03\Data\Plane_Fighter_03_body_1_damage.rvmat",
+		"A3\Air_F_Gamma\Plane_Fighter_03\Data\Plane_Fighter_03_body_1_destruct.rvmat",
+		
+		"RB205_vehicles\arc170\data\arc170_guns.rvmat",
+		"A3\Air_F_Gamma\Plane_Fighter_03\Data\Plane_Fighter_03_body_1_damage.rvmat",
+		"A3\Air_F_Gamma\Plane_Fighter_03\Data\Plane_Fighter_03_body_1_destruct.rvmat",
+		
+		"a3\air_f_jets\plane_fighter_01\data\fighter_01_glass.rvmat",
+		"A3\Air_F_Gamma\Plane_Fighter_03\Data\Plane_Fighter_03_glass_damage.rvmat",
+		"A3\Air_F_Gamma\Plane_Fighter_03\Data\Plane_Fighter_03_glass_destruct.rvmat"
+	};
+	tex[] = {};
+};

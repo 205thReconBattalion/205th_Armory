@@ -63,4 +63,30 @@ class TextureSources \
 			"3as\3as_republic_heli\rho_class\data\interior_co.paa" \
 		}; \
 	}; \
+}; \
+class Damage \
+{ \
+	mat[] = \
+	{ \
+		"RB205_vehicles\rhoclass\data\rhoclass_crate_ext.rvmat", \
+		"3as\3as_republic_heli\rho_class\data\damage\crate_ext_damage.rvmat", \
+		"A3\armor_f_gamma\MBT_01\Data\MBT_01_body_destruct.rvmat", \
+		 \
+		"3as\3as_republic_heli\rho_class\data\crate_int.rvmat", \
+		"3as\3as_republic_heli\rho_class\data\damage\crate_int_damage.rvmat", \
+		"A3\armor_f_gamma\MBT_01\Data\MBT_01_body_destruct.rvmat", \
+		 \
+		"3as\3AS_Republic_Heli\Rho_Class\data\variant_barracks.rvmat", \
+		"3as\3AS_Republic_Heli\Rho_Class\data\damage\variant_barracks_damage.rvmat", \
+		"A3\armor_f_gamma\MBT_01\Data\MBT_01_body_destruct.rvmat", \
+		 \
+		"3as\3AS_Republic_Heli\Rho_Class\data\beds.rvmat", \
+		"3as\3AS_Republic_Heli\Rho_Class\data\damage\beds_damage.rvmat", \
+		"A3\armor_f_gamma\MBT_01\Data\MBT_01_body_destruct.rvmat", \
+		 \
+		"3as\3AS_Republic_Heli\Rho_Class\data\interior.rvmat", \
+		"3as\3AS_Republic_Heli\Rho_Class\data\damage\interior_damage.rvmat", \
+		"A3\armor_f_gamma\MBT_01\Data\MBT_01_body_destruct.rvmat" \
+	}; \
+	tex[] = {}; \
 };

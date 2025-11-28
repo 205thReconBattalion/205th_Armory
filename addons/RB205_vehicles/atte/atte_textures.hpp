@@ -68,3 +68,29 @@ class textureSources
 		};
 	};
 };
+class Damage
+{
+	mat[] =
+	{
+		"RB205_vehicles\atte\data\atte_shell.rvmat",
+		"3as\3AS_ATTE\data\Textures\damage\ATTE_shell_damage.rvmat",
+		"A3\armor_f_gamma\MBT_01\Data\MBT_01_body_destruct.rvmat",
+
+		"3as\3AS_ATTE\data\Textures\Cockpit.rvmat",
+		"3as\3AS_ATTE\data\Textures\damage\ATTE_Cockpit_damage.rvmat",
+		"A3\armor_f_gamma\MBT_01\Data\MBT_01_body_destruct.rvmat",
+
+		"RB205_vehicles\atte\data\atte_detail.rvmat",
+		"3as\3AS_ATTE\data\Textures\damage\ATTE_Detail_damage.rvmat",
+		"A3\armor_f_gamma\MBT_01\Data\MBT_01_body_destruct.rvmat",
+
+		"RB205_vehicles\atte\data\atte_legs.rvmat",
+		"3as\3AS_ATTE\data\Textures\damage\ATTE_Legs_damage.rvmat",
+		"A3\armor_f_gamma\MBT_01\Data\MBT_01_body_destruct.rvmat",
+
+		"3as\3AS_ATTE\data\Textures\Glass.rvmat",
+		"3as\3AS_ATTE\data\Textures\damage\ATTE_Glass_damage.rvmat",
+		"3as\3AS_ATTE\data\Textures\damage\ATTE_Glass_damage.rvmat"
+	};
+	tex[] = {};
+};

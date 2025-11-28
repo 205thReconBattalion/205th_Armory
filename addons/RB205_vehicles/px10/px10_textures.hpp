@@ -63,3 +63,21 @@ class textureSources
 		};
 	};
 };
+class Damage
+{
+	mat[] =
+	{
+		"RB205_vehicles\px10\data\px10_hull.rvmat",
+		"3as\3AS_Rebel_Armor\PX10_Cav\Textures\damage\Px10CAV_damage.rvmat",
+		"A3\armor_f_gamma\MBT_01\Data\MBT_01_body_destruct.rvmat",
+		
+		"RB205_vehicles\px10\data\px10_fuel.rvmat",
+		"3as\3AS_Rebel_Armor\PX10_Cav\Textures\damage\Px10CAVFuel_damage.rvmat",
+		"A3\armor_f_gamma\MBT_01\Data\MBT_01_body_destruct.rvmat",
+		
+		"RB205_vehicles\px10\data\px10_crane.rvmat",
+		"3as\3AS_Rebel_Armor\PX10_Cav\Textures\damage\Px10CAVCrane_damage.rvmat",
+		"A3\armor_f_gamma\MBT_01\Data\MBT_01_body_destruct.rvmat"
+	};
+	tex[] = {};
+};

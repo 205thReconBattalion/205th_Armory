@@ -67,14 +67,14 @@ class textureSources \
 			"" \
 		}; \
 	}; \
+}; \
+class Damage \
+{ \
+	mat[]= \
+	{ \
+		"RB205_vehicles\waterGlider\data\waterGlider_boat.rvmat", \
+		"RB205_vehicles\waterGlider\data\waterGlider_boat.rvmat", \
+		"OPTRE_Vehicles\catfish\data\optre_destroyed_boat.rvmat" \
+	}; \
+	tex[]={}; \
 };
-/*class Damage
-{
-	tex[]={};
-	mat[]=
-	{
-		"RB205_vehicles\waterGlider\data\205_waterGlider_boat.rvmat",
-		"RB205_vehicles\waterGlider\data\205_waterGlider_boat.rvmat",
-		"OPTRE_Vehicles\catfish\data\optre_destroyed_boat.rvmat"
-	};
-};*/
