@@ -14,9 +14,9 @@ class cfgPatches
 		units[] =
 		{
 			"RB205_bantha",
-			"RB205_bantha_unarmed",
 			"RB205_bantha_aa",
 			"RB205_bantha_mortar",
+			"RB205_bantha_unarmed",
 			"RB205_bantha_assault",
 			"RB205_bantha_cargo",
 			"RB205_bantha_service"
@@ -26,6 +26,7 @@ class cfgPatches
 
 #include "\RB205_vehicles\macros.hpp"
 #include "\RB205_vehicles\inventory.hpp"
+#include "\RB205_vehicles\bantha\bantha_textures.hpp"
 
 class cfgVehicles
 {
@@ -48,27 +49,7 @@ class cfgVehicles
 		editorSubcategory = "RB205_veh_tank";
 		editorPreview = "";
 		#include "intercom.hpp"
-	};
-
-	class Aux212_Bantha_C_Unarmed_Base;
-	class Aux212_Bantha_C_Unarmed: Aux212_Bantha_C_Unarmed_Base
-	{
-		class ACE_SelfActions;
-	};
-	class RB205_bantha_unarmed: Aux212_Bantha_C_Unarmed
-	{
-		ACCESS_TRUE
-		displayName = "HAVw A2 Bantha (Unarmed)";
-		author = AUTHOR;
-		crew = CREW_ARMORED;
-		VEH_INVENTORY
-		CARGO_S
-		//Editor/ Zeus
-		side = 1;
-		faction = "RB205";
-		editorSubcategory = "RB205_veh_tank";
-		editorPreview = "";
-		#include "intercom.hpp"
+		BANTHA_ARMED_TEXTURES("RB205_vehicles\bantha\data\bantha_turret_ifv.rvmat","RB205_vehicles\bantha\data\bantha_turret_ifv_co.paa","212th\Vehicles\212th_APC02\Data\Textures\Bantha_C\Bantha_C_IFV\Bantha_C_IFV_Turret_Co.paa")
 	};
 
 	class Aux212_Bantha_C_AA_Base;
@@ -90,6 +71,7 @@ class cfgVehicles
 		editorSubcategory = "RB205_veh_tank";
 		editorPreview = "";
 		#include "intercom.hpp"
+		BANTHA_ARMED_TEXTURES("RB205_vehicles\bantha\data\bantha_turret_aa.rvmat","RB205_vehicles\bantha\data\bantha_turret_aa_co.paa","212th\Vehicles\212th_APC02\Data\Textures\Bantha_C\Bantha_C_AA\Bantha_C_AA_Turret_Co.paa")
 	};
 
 	class Aux212_Bantha_C_Mortar_Base;
@@ -111,6 +93,29 @@ class cfgVehicles
 		editorSubcategory = "RB205_veh_tank";
 		editorPreview = "";
 		#include "intercom.hpp"
+		BANTHA_ARMED_TEXTURES("RB205_vehicles\bantha\data\bantha_turret_mortar.rvmat","RB205_vehicles\bantha\data\bantha_turret_mortar_co.paa","212th\Vehicles\212th_APC02\Data\Textures\Bantha_C\Bantha_C_Mortar\Bantha_C_Mortar_Turret_Co.paa")
+	};
+
+	class Aux212_Bantha_C_Unarmed_Base;
+	class Aux212_Bantha_C_Unarmed: Aux212_Bantha_C_Unarmed_Base
+	{
+		class ACE_SelfActions;
+	};
+	class RB205_bantha_unarmed: Aux212_Bantha_C_Unarmed
+	{
+		ACCESS_TRUE
+		displayName = "HAVw A2 Bantha (Unarmed)";
+		author = AUTHOR;
+		crew = CREW_ARMORED;
+		VEH_INVENTORY
+		CARGO_S
+		//Editor/ Zeus
+		side = 1;
+		faction = "RB205";
+		editorSubcategory = "RB205_veh_tank";
+		editorPreview = "";
+		#include "intercom.hpp"
+		#include "bantha_textures_unarmed.hpp"
 	};
 	
 	class Aux212_Bantha_T_Assault_Base;
@@ -132,6 +137,7 @@ class cfgVehicles
 		editorSubcategory = "RB205_veh_tank";
 		editorPreview = "";
 		#include "intercom.hpp"
+		#include "bantha_textures_assault.hpp"
 	};
 	
 	class Aux212_Bantha_T_Cargo_Base;
@@ -153,6 +159,7 @@ class cfgVehicles
 		editorSubcategory = "RB205_veh_tank";
 		editorPreview = "";
 		#include "intercom.hpp"
+		#include "bantha_textures_cargo.hpp"
 	};
 	
 	class Aux212_Bantha_E_MSV_Base;
@@ -174,5 +181,6 @@ class cfgVehicles
 		editorSubcategory = "RB205_veh_tank";
 		editorPreview = "";
 		#include "intercom.hpp"
+		#include "bantha_textures_service.hpp"
 	};
 };
