@@ -37,54 +37,7 @@ class cfgVehicles
 		side = 1;
 		faction = "RB205";
 		editorSubcategory = "RB205_veh_air";
-		//Textures
-		hiddenSelectionsTextures[] =
-		{
-			"RB205_vehicles\laat_le\data\laat_le_base_co.paa"
-		};
-		class TextureSources
-		{
-			class Default
-			{
-				displayName = "205th Recon Battalion";
-				author = "205th Recon Battalion";
-				textures[] =
-				{
-					"RB205_vehicles\laat_le\data\laat_le_base_co.paa"
-				};
-				factions[] =
-				{
-					"RB205"
-				};
-			};
-			class Republic
-			{
-				displayName = "Grand Army of the Republic";
-				author = "3AS";
-				textures[] =
-				{
-					"3AS\3AS_LAAT\LAAT_LE\data\republicpatrol01_co.paa",
-				};
-			};
-			class Police
-			{
-				displayName = "Grand Army of the Republic - Police";
-				author = "3AS";
-				textures[] =
-				{
-					"3AS\3AS_LAAT\LAAT_LE\data\policepatrol01_co.paa",
-				};
-			};
-			class Empire
-			{
-				displayName = "Galactic Empire";
-				author = "3AS";
-				textures[] =
-				{
-					"3AS\3AS_LAAT\LAAT_LE\data\imperialpatrol01_co.paa",
-				};
-			};
-		};
+		#include "\RB205_vehicles\laat_le\laat_le_textures.hpp"
 		#include "\RB205_vehicles\laat\laat_sounds.hpp"
 		#include "\RB205_vehicles\sounds_aircraft_alarm.hpp"
 	};

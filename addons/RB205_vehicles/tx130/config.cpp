@@ -14,7 +14,6 @@ class cfgPatches
 		{
 			"RB205_tx130",
 			"RB205_tx130_gl",
-			//"RB205_tx130_aa",
 			"RB205_tx130_recon",
 			"RB205_tx130_super"
 		};
@@ -23,12 +22,12 @@ class cfgPatches
 
 #include "\RB205_vehicles\macros.hpp"
 #include "\RB205_vehicles\inventory.hpp"
+#include "\RB205_vehicles\tx130\tx130_textures.hpp"
 
 class cfgVehicles
 {
 	class 3as_saber_m1;
 	class 3as_saber_m1G;
-	class 3as_saber_AA;
 	class 3as_saber_m1Recon;
 	class 3as_saber_super;
 
@@ -45,49 +44,7 @@ class cfgVehicles
 		faction = "RB205";
 		editorSubcategory = "RB205_veh_tank";
 		editorPreview = "";
-		//Texture
-		hiddenSelectionsTextures[]=
-		{
-			"RB205_vehicles\tx130\data\tx130_hull_co.paa",
-			"RB205_vehicles\tx130\data\tx130_weapons_co.paa"
-		};
-		class textureSources
-		{
-			class Default
-			{
-				displayName = "205th Recon Battalion";
-				author = "205th Recon Battalion";
-				textures[] =
-				{
-					"RB205_vehicles\tx130\data\tx130_hull_co.paa",
-					"RB205_vehicles\tx130\data\tx130_weapons_co.paa"
-				};
-				factions[] =
-				{
-					"RB205"
-				};
-			};
-			class Republic
-			{
-				displayName = "Grand Army of the Republic";
-				author = "3AS";
-				textures[] =
-				{
-					"3as\3as_saber\data\saber_hull_co.paa",
-					"3as\3as_saber\data\saber_weapons_co.paa"
-				};
-			};
-			class Empire
-			{
-				displayName = "Galactic Empire";
-				author = "3AS";
-				textures[] =
-				{
-					"3AS\3as_saber\data\saber_Imp_hull_co.paa",
-					"3AS\3as_saber\data\saber_Imp_weapons_co.paa"
-				};
-			};
-		};
+		TX130_TEXTURES("RB205_vehicles\tx130\data\tx130_weapons.rvmat","RB205_vehicles\tx130\data\tx130_weapons_co.paa","3as\3as_saber\data\saber_weapons_co.paa","3AS\3as_saber\data\saber_Imp_weapons_co.paa")
 	};
 	class RB205_tx130_gl: 3as_saber_m1G
 	{
@@ -102,49 +59,7 @@ class cfgVehicles
 		faction = "RB205";
 		editorSubcategory = "RB205_veh_tank";
 		editorPreview = "";
-		//Texture
-		hiddenSelectionsTextures[]=
-		{
-			"RB205_vehicles\tx130\data\tx130_hull_co.paa",
-			"RB205_vehicles\tx130\data\tx130_weapons_co.paa"
-		};
-		class textureSources
-		{
-			class Default
-			{
-				displayName = "205th Recon Battalion";
-				author = "205th Recon Battalion";
-				textures[] =
-				{
-					"RB205_vehicles\tx130\data\tx130_hull_co.paa",
-					"RB205_vehicles\tx130\data\tx130_weapons_co.paa"
-				};
-				factions[] =
-				{
-					"RB205"
-				};
-			};
-			class Republic
-			{
-				displayName = "Grand Army of the Republic";
-				author = "3AS";
-				textures[] =
-				{
-					"3as\3as_saber\data\saber_hull_co.paa",
-					"3as\3as_saber\data\saber_weapons_co.paa"
-				};
-			};
-			class Empire
-			{
-				displayName = "Galactic Empire";
-				author = "3AS";
-				textures[] =
-				{
-					"3AS\3as_saber\data\saber_Imp_hull_co.paa",
-					"3AS\3as_saber\data\saber_Imp_weapons_co.paa"
-				};
-			};
-		};
+		TX130_TEXTURES("RB205_vehicles\tx130\data\tx130_weapons_gmg.rvmat","RB205_vehicles\tx130\data\tx130_weapons_gmg_co.paa","3AS\3AS_Saber\data\Saber_weaponsgmg_co.paa","3AS\3AS_Saber\data\Saber_Imp_weapons_co.paa")
 	};
 	class RB205_tx130_recon: 3as_saber_m1Recon
 	{
@@ -159,49 +74,7 @@ class cfgVehicles
 		faction = "RB205";
 		editorSubcategory = "RB205_veh_tank";
 		editorPreview = "";
-		//Texture
-		hiddenSelectionsTextures[]=
-		{
-			"RB205_vehicles\tx130\data\tx130_hull_co.paa",
-			"RB205_vehicles\tx130\data\tx130_weapons_co.paa"
-		};
-		class textureSources
-		{
-			class Default
-			{
-				displayName = "205th Recon Battalion";
-				author = "205th Recon Battalion";
-				textures[] =
-				{
-					"RB205_vehicles\tx130\data\tx130_hull_co.paa",
-					"RB205_vehicles\tx130\data\tx130_weapons_co.paa"
-				};
-				factions[] =
-				{
-					"RB205"
-				};
-			};
-			class Republic
-			{
-				displayName = "Grand Army of the Republic";
-				author = "3AS";
-				textures[] =
-				{
-					"3as\3as_saber\data\saber_hull_co.paa",
-					"3as\3as_saber\data\saber_weapons_co.paa"
-				};
-			};
-			class Empire
-			{
-				displayName = "Galactic Empire";
-				author = "3AS";
-				textures[] =
-				{
-					"3AS\3as_saber\data\saber_Imp_hull_co.paa",
-					"3AS\3as_saber\data\saber_Imp_weapons_co.paa"
-				};
-			};
-		};
+		TX130_TEXTURES("RB205_vehicles\tx130\data\tx130_weapons_scout.rvmat","RB205_vehicles\tx130\data\tx130_weapons_scout_co.paa","3AS\3AS_Saber\data\Saber_weapons_scout_co.paa","3AS\3AS_Saber\data\Saber_weapons_scout_Imp_co.paa")
 	};
 	class RB205_tx130_super: 3as_saber_super
 	{
@@ -216,48 +89,6 @@ class cfgVehicles
 		faction = "RB205";
 		editorSubcategory = "RB205_veh_tank";
 		editorPreview = "";
-		//Texture
-		hiddenSelectionsTextures[]=
-		{
-			"RB205_vehicles\tx130\data\tx130_hull_co.paa",
-			"RB205_vehicles\tx130\data\tx130_weapons_co.paa"
-		};
-		class textureSources
-		{
-			class Default
-			{
-				displayName = "205th Recon Battalion";
-				author = "205th Recon Battalion";
-				textures[] =
-				{
-					"RB205_vehicles\tx130\data\tx130_hull_co.paa",
-					"RB205_vehicles\tx130\data\tx130_weapons_co.paa"
-				};
-				factions[] =
-				{
-					"RB205"
-				};
-			};
-			class Republic
-			{
-				displayName = "Grand Army of the Republic";
-				author = "3AS";
-				textures[] =
-				{
-					"3as\3as_saber\data\saber_hull_co.paa",
-					"3as\3as_saber\data\saber_weapons_co.paa"
-				};
-			};
-			class Empire
-			{
-				displayName = "Galactic Empire";
-				author = "3AS";
-				textures[] =
-				{
-					"3AS\3as_saber\data\saber_Imp_hull_co.paa",
-					"3AS\3as_saber\data\saber_Imp_weapons_co.paa"
-				};
-			};
-		};
+		TX130_TEXTURES("RB205_vehicles\tx130\data\tx130_weapons_super.rvmat","RB205_vehicles\tx130\data\tx130_weapons_super_co.paa","3AS\3AS_Saber\data\Saber_weapons_co.paa","3AS\3as_saber\data\saber_Imp_weapons_co.paa")
 	};
 };

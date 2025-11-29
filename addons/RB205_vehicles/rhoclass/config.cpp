@@ -22,6 +22,7 @@ class cfgPatches
 
 #include "\RB205_vehicles\macros.hpp"
 #include "\RB205_vehicles\inventory.hpp"
+#include "\RB205_vehicles\rhoclass\rhoclass_crate_textures.hpp"
 
 class cfgVehicles
 {
@@ -39,40 +40,7 @@ class cfgVehicles
 		faction = "RB205";
 		editorSubcategory = "RB205_veh_air";
 		editorPreview = "";
-		//Textures		
-		class TextureSources
-		{
-			class Republic
-			{
-				displayName = "Grand Army of the Republic";
-				author = "3AS";
-				textures[] =
-				{
-					"3as\3as_republic_heli\rho_class\data\hull_rho_co.paa",
-					"3as\3as_republic_heli\nu_class\data\hull_front_co.paa",
-					"3as\3as_republic_heli\rho_class\data\wings_rho_co.paa",
-					"3as\3as_republic_heli\rho_class\data\cockpit_co.paa",
-					"3as\3as_republic_heli\rho_class\data\cockpit_interfaces_co.paa",
-					"3as\3as_republic_heli\rho_class\data\interior_co.paa",
-					"3as\3as_republic_heli\rho_class\data\interior_optional_co.paa"
-				};
-			};
-			class Empire
-			{
-				displayName = "Galactic Empire";
-				author = "3AS";
-				textures[] = 
-				{
-					"3as\3as_republic_heli\rho_class\data\hull_rho_Imp_co.paa",
-					"3as\3as_republic_heli\nu_class\data\hull_front_imp_co.paa",
-					"3as\3as_republic_heli\rho_class\data\wings_rho_Imp_co.paa",
-					"3as\3as_republic_heli\rho_class\data\cockpit_co.paa",
-					"3as\3as_republic_heli\rho_class\data\cockpit_interfaces_co.paa",
-					"3as\3as_republic_heli\rho_class\data\interior_co.paa",
-					"3as\3as_republic_heli\rho_class\data\interior_optional_co.paa"
-				};
-			};
-		};
+		#include "\RB205_vehicles\rhoclass\rhoclass_textures.hpp"
 		#include "\RB205_vehicles\sounds_aircraft_alarm.hpp"
 	};
 
@@ -92,44 +60,7 @@ class cfgVehicles
 		faction = "RB205";
 		editorSubcategory = "RB205_veh_other";
 		editorPreview = "";
-		//Textures
-		hiddenSelectionsTextures[] =
-		{
-			"3as\3as_republic_heli\rho_class\data\crate_ext_co.paa",
-			"3as\3as_republic_heli\rho_class\data\crate_int_co.paa",
-			"3as\3as_republic_heli\rho_class\data\variant_barracks_co.paa",
-			"3as\3as_republic_heli\rho_class\data\clone_bed_co.paa",
-			"3as\3as_republic_heli\rho_class\data\interior_co.paa"
-		};
-		class TextureSources
-		{
-			class Republic
-			{
-				displayName = "Grand Army of the Republic";
-				author = "3AS";
-				textures[] = 
-				{
-					"3as\3as_republic_heli\rho_class\data\crate_ext_co.paa",
-					"3as\3as_republic_heli\rho_class\data\crate_int_co.paa",
-					"3as\3as_republic_heli\rho_class\data\variant_barracks_co.paa",
-					"3as\3as_republic_heli\rho_class\data\clone_bed_co.paa",
-					"3as\3as_republic_heli\rho_class\data\interior_co.paa"
-				};
-			};
-			class Empire
-			{
-				displayName = "Galactic Empire";
-				author = "3AS";
-				textures[] = 
-				{
-					"3as\3as_republic_heli\rho_class\data\crate_ext_Imp_co.paa",
-					"3as\3as_republic_heli\rho_class\data\crate_int_co.paa",
-					"3as\3as_republic_heli\rho_class\data\variant_barracks_co.paa",
-					"3as\3as_republic_heli\rho_class\data\clone_bed_co.paa",
-					"3as\3as_republic_heli\rho_class\data\interior_co.paa"
-				};
-			};
-		};
+		RHO_CRATE_TEXTURES("RB205_vehicles\rhoclass\data\rhoclass_crate_ext_co.paa")
 	};
 
 	class 3AS_Rho_Crate_REP_Barracks;
@@ -146,44 +77,7 @@ class cfgVehicles
 		faction = "RB205";
 		editorSubcategory = "RB205_veh_other";
 		editorPreview = "";
-		//Textures
-		hiddenSelectionsTextures[] =
-		{
-			"3as\3as_republic_heli\rho_class\data\crate_ext_co.paa",
-			"3as\3as_republic_heli\rho_class\data\crate_int_co.paa",
-			"3as\3as_republic_heli\rho_class\data\variant_barracks_co.paa",
-			"3as\3as_republic_heli\rho_class\data\clone_bed_co.paa",
-			"3as\3as_republic_heli\rho_class\data\interior_co.paa"
-		};
-		class TextureSources
-		{
-			class Republic
-			{
-				displayName = "Grand Army of the Republic";
-				author = "3AS";
-				textures[] = 
-				{
-					"3as\3as_republic_heli\rho_class\data\crate_ext_co.paa",
-					"3as\3as_republic_heli\rho_class\data\crate_int_co.paa",
-					"3as\3as_republic_heli\rho_class\data\variant_barracks_co.paa",
-					"3as\3as_republic_heli\rho_class\data\clone_bed_co.paa",
-					"3as\3as_republic_heli\rho_class\data\interior_co.paa"
-				};
-			};
-			class Empire
-			{
-				displayName = "Galactic Empire";
-				author = "3AS";
-				textures[] = 
-				{
-					"3as\3as_republic_heli\rho_class\data\crate_ext_Imp_co.paa",
-					"3as\3as_republic_heli\rho_class\data\crate_int_co.paa",
-					"3as\3as_republic_heli\rho_class\data\variant_barracks_co.paa",
-					"3as\3as_republic_heli\rho_class\data\clone_bed_co.paa",
-					"3as\3as_republic_heli\rho_class\data\interior_co.paa"
-				};
-			};
-		};
+		RHO_CRATE_TEXTURES("RB205_vehicles\rhoclass\data\rhoclass_crate_ext_co.paa")
 	};
 	
 	class 3AS_Rho_Crate_REP_Medical;
@@ -200,43 +94,6 @@ class cfgVehicles
 		faction = "RB205";
 		editorSubcategory = "RB205_veh_other";
 		editorPreview = "";
-		//Textures
-		hiddenSelectionsTextures[] =
-		{
-			"3as\3as_republic_heli\rho_class\data\crate_ext_co.paa",
-			"3as\3as_republic_heli\rho_class\data\crate_int_co.paa",
-			"3as\3as_republic_heli\rho_class\data\variant_barracks_co.paa",
-			"3as\3as_republic_heli\rho_class\data\clone_bed_co.paa",
-			"3as\3as_republic_heli\rho_class\data\interior_co.paa"
-		};
-		class TextureSources
-		{
-			class Republic
-			{
-				displayName = "Grand Army of the Republic";
-				author = "3AS";
-				textures[] = 
-				{
-					"3as\3as_republic_heli\rho_class\data\crate_ext_co.paa",
-					"3as\3as_republic_heli\rho_class\data\crate_int_co.paa",
-					"3as\3as_republic_heli\rho_class\data\variant_barracks_co.paa",
-					"3as\3as_republic_heli\rho_class\data\clone_bed_co.paa",
-					"3as\3as_republic_heli\rho_class\data\interior_co.paa"
-				};
-			};
-			class Empire
-			{
-				displayName = "Galactic Empire";
-				author = "3AS";
-				textures[] = 
-				{
-					"3as\3as_republic_heli\rho_class\data\crate_ext_Imp_co.paa",
-					"3as\3as_republic_heli\rho_class\data\crate_int_co.paa",
-					"3as\3as_republic_heli\rho_class\data\variant_barracks_co.paa",
-					"3as\3as_republic_heli\rho_class\data\clone_bed_co.paa",
-					"3as\3as_republic_heli\rho_class\data\interior_co.paa"
-				};
-			};
-		};
+		RHO_CRATE_TEXTURES("RB205_vehicles\rhoclass\data\rhoclass_crate_ext_med_co.paa")
 	};
 };

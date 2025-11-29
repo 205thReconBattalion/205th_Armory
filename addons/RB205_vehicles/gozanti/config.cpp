@@ -39,7 +39,8 @@ class cfgVehicles
 		editorSubcategory = "RB205_veh_air";
 		editorPreview = "";
 		//Textures
-		hiddenselectionstextures[] = {
+		hiddenselectionstextures[] =
+		{
 			"3AS\3AS_Imperial_Air\Gozanti\data\Camo_Republic_co.paa",
 			"3AS\3AS_Imperial_Air\Gozanti\data\Gozanti_Int_co.paa",
 			"3AS\3AS_Imperial_Air\Gozanti\data\Camo2_Republic_co.paa",
@@ -47,6 +48,11 @@ class cfgVehicles
 			"3AS\3AS_Imperial_Air\Gozanti\data\Camo4_co.paa",
 			"3AS\3AS_Imperial_Air\Gozanti\data\Camo5_co.paa",
 			"3AS\3AS_Imperial_Air\Gozanti\data\Camo6_co.paa"
+		};
+		textureList[] =
+		{
+			"Republic",	1,
+			"Empire",	0
 		};
 		class TextureSources
 		{

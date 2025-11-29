@@ -92,8 +92,7 @@ params ["_this"];
 		"RB205_U_trooper_chimaera","RB205_U_corporal_chimaera","RB205_U_sergeant_chimaera",
 		"RB205_U_trooper_rancor","RB205_U_corporal_rancor","RB205_U_sergeant_rancor",
 		"RB205_U_trooper_wampa","RB205_U_corporal_wampa","RB205_U_sergeant_wampa",
-		"RB205_U_arf_trooper_nexu","RB205_U_arf_corporal_nexu","RB205_U_arf_sergeant_nexu",
-		"RB205_U_plt_trooper_raven","RB205_U_plt_corporal_raven","RB205_U_plt_sergeant_raven",
+		"RB205_U_plt_trooper_banshee","RB205_U_plt_corporal_banshee","RB205_U_plt_sergeant_banshee",
 
 		//CUSTOM ARMOR
 		"RB205_H_tachanka","RB205_U_tachanka",

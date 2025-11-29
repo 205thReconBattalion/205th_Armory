@@ -41,5 +41,6 @@ class cfgVehicles
 		faction = "RB205";
 		editorSubcategory = "RB205_veh_other";
 		editorPreview = "";
+		#include "\RB205_vehicles\keeradak\keeradak_textures.hpp"
 	};
 };

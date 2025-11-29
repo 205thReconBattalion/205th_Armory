@@ -36,40 +36,7 @@ class cfgVehicles
 		faction = "RB205";
 		editorSubcategory = "RB205_veh_air";
 		editorPreview = "";
+		#include "\RB205_vehicles\nuclass\nuclass_textures.hpp"
 		#include "\RB205_vehicles\sounds_aircraft_alarm.hpp"
-		//Textures		
-		class TextureSources
-		{
-			class Republic
-			{
-				displayName = "Grand Army of the Republic";
-				author = "3AS";
-				textures[] =
-				{
-					"3as\3as_republic_heli\nu_class\data\hull_co.paa",
-					"3as\3as_republic_heli\nu_class\data\hull_front_co.paa",
-					"3as\3as_republic_heli\nu_class\data\wings_co.paa",
-					"3as\3as_republic_heli\rho_class\data\cockpit_co.paa",
-					"3as\3as_republic_heli\rho_class\data\cockpit_interfaces_co.paa",
-					"3as\3as_republic_heli\rho_class\data\interior_co.paa",
-					"3as\3as_republic_heli\rho_class\data\interior_optional_co.paa"
-				};
-			};
-			class Empire
-			{
-				displayName = "Galactic Empire";
-				author = "3AS";
-				textures[] =
-				{
-					"3as\3as_republic_heli\nu_class\data\hull_co.paa",
-					"3as\3as_republic_heli\nu_class\data\hull_front_co.paa",
-					"3as\3as_republic_heli\nu_class\data\wings_co.paa",
-					"3as\3as_republic_heli\rho_class\data\cockpit_co.paa",
-					"3as\3as_republic_heli\rho_class\data\cockpit_interfaces_co.paa",
-					"3as\3as_republic_heli\rho_class\data\interior_co.paa",
-					"3as\3as_republic_heli\rho_class\data\interior_optional_co.paa"
-				};
-			};
-		};
 	};
 };
