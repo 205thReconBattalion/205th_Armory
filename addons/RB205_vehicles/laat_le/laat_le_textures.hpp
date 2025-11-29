@@ -8,10 +8,10 @@ hiddenSelectionsTextures[] =
 };
 textureList[] =
 {
-	"Default",			1,
-	"Republic",			0,
-	"Police",			0,
-	"Empire",			0
+	"Default",	1,
+	"Republic",	0,
+	"Police",	0,
+	"Empire",	0
 };
 class TextureSources
 {
