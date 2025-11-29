@@ -36,5 +36,6 @@ class cfgVehicles
 		faction = "RB205";
 		editorSubcategory = "RB205_veh_tank";
 		editorPreview = "";
+		#include "\RB205_vehicles\utat\utat_textures.hpp"
 	};
 };
