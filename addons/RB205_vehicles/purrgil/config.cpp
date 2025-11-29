@@ -45,6 +45,11 @@ class cfgVehicles
 			"3as\3as_starships\data\hs_int_co.paa",
 			"a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa"
 		};
+		textureList[] =
+		{
+			"Republic",	1,
+			"Empire",	0
+		};
 		class TextureSources
 		{
 			class Republic
