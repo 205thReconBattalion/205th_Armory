@@ -42,7 +42,7 @@ class CfgAmmo
 		missileLockMaxDistance = 3000;
 		manueuvrability = 30;
 		sideAirFriction = 0.02;
-		effectsMissile = "RB205_effects_missile_plx_blue";
+		//effectsMissile = "RB205_effects_missile_plx_blue";
 	};
 };
 class CfgMagazines
@@ -54,7 +54,8 @@ class CfgMagazines
 		displayName = "$STR_205_PLX1_AA_MISSILE_DisplayName";
 		displayNameShort = "$STR_205_PLX1_AA_MISSILE_DisplayNameShort";
 		descriptionShort = "$STR_205_PLX1_AA_MISSILE_DescriptionShort";
-		mass = 50;
+		mass = 99;//50
+		count = 2
         author = "205th Recon Battalion";
 	};
 };
