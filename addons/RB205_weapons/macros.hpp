@@ -27,6 +27,7 @@
 		scope=1; \
 		magazines[]={}; \
 		picture=##PICTURE##; \
+		muzzles[] = {"this"}; \
 	};
 
 #define FRIED_WEAPON_SECONDARY(CLASSNAME,PICTURE) \

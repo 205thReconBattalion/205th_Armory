@@ -90,7 +90,7 @@ class CfgWeapons
 		JLTS_canHaveShield = 1;
 		JLTS_shieldedWeapon = "RB205_DC17_shield";
 		JLTS_hasElectronics = 1;
-		JLTS_hasEMPProtection = 0;
+		JLTS_hasEMPProtection = 1;
 		JLTS_friedItem = "RB205_DC17_fried";
 	};
 	FRIED_WEAPON_SECONDARY(RB205_DC17,"\RB205_weapons\data\ui\dc17_fried.paa")
@@ -113,7 +113,7 @@ class CfgWeapons
 		};
 		JLTS_canHaveShield = 0;
 		JLTS_hasElectronics = 1;
-		JLTS_hasEMPProtection = 0;
+		JLTS_hasEMPProtection = 1;
 		JLTS_friedItem = "RB205_DC17_Dual_fried";
 	};
 	FRIED_WEAPON_SECONDARY(RB205_DC17_Dual,"\RB205_weapons\data\ui\dc17_dual_fried.paa")
@@ -209,7 +209,7 @@ class CfgWeapons
 		JLTS_isShielded = 1;
 		JLTS_baseWeapon = "RB205_DC17";
 		JLTS_hasElectronics = 1;
-		JLTS_hasEMPProtection = 0;
+		JLTS_hasEMPProtection = 1;
 		JLTS_friedItem = "RB205_DC17_shield_fried";
 	};
 	FRIED_WEAPON_SECONDARY(RB205_DC17_shield,"\RB205_weapons\data\ui\dc17_fried.paa")
