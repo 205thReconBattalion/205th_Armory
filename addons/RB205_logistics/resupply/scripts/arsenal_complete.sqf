@@ -30,8 +30,8 @@ params ["_this"];
 		"RB205_ugl_he_3rnd","RB205_ugl_smoke_white_3rnd","RB205_ugl_smoke_red_3rnd","RB205_ugl_smoke_green_3rnd","RB205_ugl_smoke_blue_3rnd","RB205_ugl_smoke_yellow_3rnd","RB205_ugl_smoke_orange_3rnd","RB205_ugl_smoke_purple_3rnd","RB205_ugl_flare_white_3rnd","RB205_ugl_flare_red_3rnd","RB205_ugl_flare_green_3rnd","RB205_ugl_flare_ir_3rnd",
 		"RB205_ugl_he_6rnd","RB205_ugl_huntir","RB205_ugl_pike",
 
-		"RB205_datapad","3AS_FusionCutter_F",
-		"3AS_FusionCutter_Magazine","3AS_FusionCutter_Dewreck_Magazine","3AS_Datapad_Base_Mag",
+		"RB205_datapad","3AS_FusionCutter_F","P_StunBaton",
+		"3AS_Datapad_Base_Mag","3AS_FusionCutter_Magazine","3AS_FusionCutter_Dewreck_Magazine",
 		
 		//IMPERIAL WEAPONS / ATTACHMENTS / AMMO
 		"RB205_DLT19","RB205_DLT19X","RB205_E11","RB205_E11_stock","RB205_E11_gl","RB205_E11D","RB205_EC17","RB205_RK3","RB205_SE14R",
@@ -178,6 +178,7 @@ params ["_this"];
 		"jen_jetpacks_example_refuelItemMedium",
 		"RB205_accessCard_gar",	"RB205_accessCard_gar_officer","RB205_accessCard_prison",
 		"RB205_ballisticShield_item",
+		"iedd_item_notebook",
 
 		//OTHER
 		"ItemMap",

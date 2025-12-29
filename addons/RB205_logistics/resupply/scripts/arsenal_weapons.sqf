@@ -29,8 +29,8 @@ params ["_this"];
 		"RB205_ugl_he_3rnd","RB205_ugl_smoke_white_3rnd","RB205_ugl_smoke_red_3rnd","RB205_ugl_smoke_green_3rnd","RB205_ugl_smoke_blue_3rnd","RB205_ugl_smoke_yellow_3rnd","RB205_ugl_smoke_orange_3rnd","RB205_ugl_smoke_purple_3rnd","RB205_ugl_flare_white_3rnd","RB205_ugl_flare_red_3rnd","RB205_ugl_flare_green_3rnd","RB205_ugl_flare_ir_3rnd",
 		"RB205_ugl_he_6rnd","RB205_ugl_huntir","RB205_ugl_pike",
 
-		"RB205_datapad","3AS_FusionCutter_F",
-		"3AS_FusionCutter_Magazine","3AS_FusionCutter_Dewreck_Magazine","3AS_Datapad_Base_Mag",
+		"RB205_datapad","3AS_FusionCutter_F","P_StunBaton",
+		"3AS_Datapad_Base_Mag","3AS_FusionCutter_Magazine","3AS_FusionCutter_Dewreck_Magazine",
 		
 		"RB205_thermalDet","RB205_impactGren","RB205_sonicDet","RB205_droidPopper","RB205_smokeWhite","RB205_smokeBlue","RB205_smokeGreen","RB205_smokeRed","RB205_smokeYellow","RB205_smokePurple","RB205_smokeOrange","RB205_lumaWhite","RB205_lumaGreen","RB205_lumaRed","RB205_lumaYellow",
 		"ACE_Chemlight_White","Chemlight_blue","Chemlight_green","Chemlight_red","ACE_Chemlight_Orange","Chemlight_yellow","ACE_Chemlight_HiWhite","ACE_Chemlight_HiBlue","ACE_Chemlight_HiGreen","ACE_Chemlight_HiRed","ACE_Chemlight_HiYellow","ACE_Chemlight_UltraHiOrange","ACE_Chemlight_IR",
