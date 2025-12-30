@@ -22,7 +22,10 @@ _atrt setVariable ["TAS_ATRT_rider", _rider, true];
 
 _rider attachTo [_atrt, [0, 0, 0], "seat"];
 //[_rider, "ChopperLight_C_LIn_H"] remoteExec ["switchMove", 0];
+[_rider, "GetInQuadbike"] remoteExec ["switchMove", 0]; //1.428s
 _rider setVariable ["TAS_ATRT_isRiding", true];
+
+sleep 1.5;
 
 //Add Collision Shield for Rider (Currently think this is not needed ~Jek)
 _collision = "3AS_ATRT_Collision" createVehicle (position _atrt); // Object to simulate collision for the vehicle
@@ -50,16 +53,20 @@ if (isClass (configFile >> "CfgPatches" >> "ace_advanced_throwing") and isClass 
 // Makes the "Release UAV Controls" action not do anything to avoid issues
 inGameUISetEventHandler ["Action", "if ((_this select 3) isEqualTo ""BackFromUAV"") then {true};"];
 
-[
+/*[
     {
         params ["_rider"];
         [_rider, "RB205_ATRT_Driver"] remoteExec ["switchMove", 0]; // Seated animation
     },
     [_rider],
     1.5
-] call CBA_fnc_waitAndExecute;
+] call CBA_fnc_waitAndExecute;*/
+[_rider, "RB205_ATRT_Driver"] remoteExec ["switchMove", 0];
 
 // AT-RT animations
 [_atrt, "ATRT_activated"] remoteExec ["playMove", 0];
+playsound "ATRT_activate";
 sleep 1;
+
 [_atrt, "Walker_Idle"] remoteExec ["SwitchMove", 0];
+_atrt setAnimSpeedCoef 1.5;

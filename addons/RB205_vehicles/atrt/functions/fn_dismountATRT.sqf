@@ -22,19 +22,41 @@ if (isNil "_rider") exitWith {};
 // Prevent the player getting stuck on top
 _direction = direction _rider;
 _position = getPosASL _atrt;
-_position =
+/*_position =
 [
     _position#0 - 0.35 + sin (_direction - 90),
     _position#1 - 0.3 + cos (_direction - 90),
     _position#2 + 1
+];*/
+_position =
+[
+    _position#0 - 0.35 + sin (_direction - 90),
+    _position#1 - 0.3 + cos (_direction - 90),
+    _position#2
 ];
+
+_atrt setAnimSpeedCoef 1;
 
 // AT-RT animation
 if (!(_instant)) then {
 	[_atrt, "ATRT_deactivate"] remoteExec ["playMove", 0];
+	playsound "ATRT_deactivate";
 	sleep 1;
 	_atrt setunitPos "MIDDLE";
 };
+
+// Switch camera back to rider
+if (cameraOn != (vehicle _rider)) then
+{
+    // Reset camera view to player
+    (vehicle _rider) switchCamera cameraView;
+};
+
+[_rider, "GetOutQuadbike"] remoteExec ["switchMove", 0]; //1.538s
+
+sleep 1.54;
+
+[_rider, ""] remoteExec ["switchMove", 0];
 
 detach _rider;
 //[_rider, "ChopperLight_C_LOut_H"] remoteExec ["switchMove", 0];
@@ -44,11 +66,11 @@ _rider setPosASL _position;
 _rider setVariable ["TAS_ATRT_isRiding", false];
 
 // Switch camera back to rider
-if (cameraOn != (vehicle _rider)) then
+/*if (cameraOn != (vehicle _rider)) then
 {
     // Reset camera view to player
     (vehicle _rider) switchCamera cameraView;
-};
+};*/
 
 _atrt remoteControl objNull;
 _rider remoteControl objNull;
@@ -65,11 +87,11 @@ deleteVehicle _collision;
 _atrt setVariable ["TAS_ATRT_rider", nil, true]; // Reset rider
 inGameUISetEventHandler ["Action", ""];
 
-[
+/*[
     {
         params ["_rider"];
         [_rider, ""] remoteExec ["switchMove", 0]; // Seated animation
     },
     [_rider],
     0.5
-] call CBA_fnc_waitAndExecute;
+] call CBA_fnc_waitAndExecute;*/

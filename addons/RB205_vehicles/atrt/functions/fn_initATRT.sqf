@@ -17,7 +17,7 @@
 params ["_atrt"];
 if (isNull _atrt) exitWith {};
 
-_atrt setAnimSpeedCoef 1.5;
+//_atrt setAnimSpeedCoef 1.5;
 
 _atrt disableAI "AIMINGERROR";
 _atrt disableAI "AUTOTARGET";

@@ -25,8 +25,6 @@ class cfgPatches
 #include "\RB205_vehicles\macros.hpp"
 #include "\RB205_vehicles\inventory.hpp"
 
-//class CBA_Extended_EventHandlers_base;
-
 class cfgVehicles
 {
 	class 3AS_ATRT_Base;
@@ -84,7 +82,6 @@ class cfgVehicles
 			mat[]={};
 		};
 		moves = "CfgMovesATRT_RB205";
-		//gestures = "CfgGesturesATRT";
 	};
 };
 
@@ -633,5 +630,49 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			leftHandIKCurve[]={1};
 			rightHandIKCurve[]={1};
 		};
+	};
+};
+class CfgSounds
+{
+	sounds[]={};
+	class ATRT_activate
+	{
+		name="AT-RT Activate";
+		sound[]=
+		{
+			"\RB205_vehicles\atrt\sfx\atrt_activate",
+			1,
+			1,
+			100
+		};
+		titles[]=
+		{
+			0,
+			""
+		};
+		titlesFont="LCD14";
+		titlesSize=0.1;
+		forceTitles=1;
+		titlesStructured=1;
+	};
+	class ATRT_deactivate
+	{
+		name="AT-RT Deactivate";
+		sound[]=
+		{
+			"\RB205_vehicles\atrt\sfx\atrt_deactivate",
+			1,
+			1,
+			100
+		};
+		titles[]=
+		{
+			0,
+			""
+		};
+		titlesFont="LCD14";
+		titlesSize=0.1;
+		forceTitles=1;
+		titlesStructured=1;
 	};
 };
