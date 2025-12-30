@@ -77,11 +77,14 @@ class cfgVehicles
 		};
 		respawnWeapons[]={};
 		respawnMagazines[]={};
+		canBleed = 0;
 		class Wounds
 		{
 			tex[]={};
 			mat[]={};
 		};
+		moves = "CfgMovesATRT_RB205";
+		//gestures = "CfgGesturesATRT";
 	};
 };
 
@@ -147,17 +150,20 @@ class cfgFunctions
 			};
 			/*class mountATRT
 			{
+			};
+			class dismountATRT
+			{
 			};*/
 			class unstuckATRT
+			{
+			};
+			class repairATRT
 			{
 			};
 			class repairAfterCollisionATRT
 			{
 			};
 			class disassembleATRT
-			{
-			};
-			class repairATRT
 			{
 			};
 		};
@@ -171,6 +177,27 @@ class Extended_Init_EventHandlers
 		class RB205_atrt_Init
 		{
 			init = "(_this select 0) call RB205_fnc_initATRT";
+		};
+	};
+};
+
+class CfgMovesWalker
+{
+    class States;
+	class StandBase;
+};
+class CfgMovesATRT_RB205: CfgMovesWalker
+{
+	class States: States
+	{
+		class ATRT_destroyed: StandBase
+		{
+			actions = "DeadActions";
+			file = "\RB205_vehicles\atrt\anim\atrt_destroyed.rtm";
+			speed = "30/250";
+			soundEdge[] = {};
+			InterpolateTo[] = {};
+			InterpolateFrom[] = {};
 		};
 	};
 };
