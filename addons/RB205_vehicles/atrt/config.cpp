@@ -181,16 +181,269 @@ class Extended_Init_EventHandlers
 	};
 };
 
-class CfgMovesWalker
-{
-    class States;
-	class StandBase;
-};
+class CfgMovesWalker;
 class CfgMovesATRT_RB205: CfgMovesWalker
 {
-	class States: States
+	class Default;
+	class StandBase;
+	class States
 	{
-		class ATRT_destroyed: StandBase
+		class DeadState: Default
+		{
+			actions="DeadActions";
+			//file="3AS\ATRT\3AS_ATRT_Idle";
+			file = "\RB205_vehicles\atrt\anim\atrt_destroyed.rtm";
+			speed=100;
+			looped=0;
+			onLandBeg=1;
+			onLandEnd=1;
+			soundEnabled=0;
+			terminal=1;
+			ragdoll=1;
+			headBobMode=4;
+			headBobStrength=-1;
+			disableWeapons=1;
+			disableWeaponsLong=1;
+		};
+		class Unconscious: DeadState
+		{
+			terminal=0;
+		};
+		class TransAnimBase: Default
+		{
+			idle="";
+			mask="headTorso";
+			stamina=0;
+			relSpeedMin=0.5;
+			static=1;
+			looped=0;
+			leaningFactorBeg=1;
+			leaningFactorEnd=1;
+			leftHandIKBeg=1;
+			leftHandIKCurve[]={1};
+			leftHandIKEnd=1;
+			rightHandIKBeg=1;
+			rightHandIKCurve[]={1};
+			rightHandIKEnd=1;
+			soundEnabled=1;
+			soundEdge[]={0.01};
+			headBobStrength=0.164179;
+			headBobMode=2;
+			interpolationSpeed=3;
+			InterpolateTo[]=
+			{
+				"Unconscious",
+				0.1
+			};
+		};
+		class ATRT_Noweapon: StandBase
+		{
+			stamina=0;
+			canPullTrigger=1;
+			blockMobileSwitching=0;
+			aimPrecision=7;
+			turnSpeed=2;
+			actions="Walker_default_actions";
+			file="\3AS\ATRT\3AS_ATRT_Move";
+			speed="50/100";
+			soundOverride="sprint";
+			duty=0;
+			showWeaponAim=1;
+			collisionShape="A3\anims_f\Data\Geom\Sdr\Perc_Mrun_Slow_Wrfl.p3d";
+			leaningFactorBeg=0;
+			leaningFactorEnd=0;
+			limitGunMovement=0.2;
+			soundEdge[]={0.5,1};
+			static=1;
+			relSpeedMin=0.7;
+			relSpeedMax=1.1;
+			visibleSize=0.9;
+			head="Turret";
+			aiming="Turret";
+			aimingBody="Turret";
+			interpolationSpeed=2.5;
+			rightHandIKCurve[]={1};
+			leftHandIKCurve[]={1};
+			InterpolateTo[]=
+			{
+				"Walker_Idle",
+				0.02,
+				"Unconscious",
+				0.02
+			};
+			disableWeaponsLong=0;
+			disableWeapons=1;
+			headBobMode=0;
+			headBobStrength=0;
+		};
+		class Walker_move: StandBase
+		{
+			stamina=0;
+			canPullTrigger=1;
+			aimPrecision=7;
+			turnSpeed=0.5;
+			actions="Walker_default_actions";
+			file="\3AS\ATRT\3AS_ATRT_Move";
+			speed=0.6;
+			soundOverride="sprint";
+			duty=0;
+			showWeaponAim=1;
+			collisionShape="3AS\ATRT\3AS_ATRT_Collision.p3d";
+			leaningFactorBeg=0;
+			leaningFactorEnd=0;
+			limitGunMovement=1;
+			soundEdge[]={0.2,0.7};
+			static=1;
+			relSpeedMin=0;
+			relSpeedMax=0;
+			visibleSize=0.9;
+			head="Turret";
+			aiming="Turret";
+			aimingBody="Turret";
+			headBobStrength=0;
+			interpolationSpeed=2.5;
+			rightHandIKCurve[]={0};
+			leftHandIKCurve[]={0};
+			InterpolateTo[]=
+			{
+				"Walker_run",
+				1,
+				"Walker_idle",
+				1
+			};
+			InterpolateFrom[]=
+			{
+				"Walker_run",
+				1,
+				"Walker_idle",
+				1
+			};
+			disableWeaponsLong=0;
+			disableWeapons=0;
+		};
+		class Walker_move_back: Walker_move
+		{
+			file="\3AS\ATRT\3AS_ATRT_Move_Back";
+			InterpolateTo[]=
+			{
+				"Walker_idle",
+				0.02
+			};
+			InterpolateFrom[]=
+			{
+				"Walker_idle",
+				0.02
+			};
+		};
+		class Walker_run: Walker_move
+		{
+			file="\3AS\ATRT\3AS_ATRT_Run";
+			speed=1;
+			InterpolateTo[]=
+			{
+				"Walker_move",
+				1
+			};
+			InterpolateFrom[]=
+			{
+				"Walker_move",
+				1
+			};
+		};
+		class Walker_StrafeL: Walker_move
+		{
+			file="\3AS\ATRT\3AS_ATRT_StrafeL";
+			speed=1;
+			soundEdge[]={};
+			InterpolateTo[]=
+			{
+				"Walker_idle",
+				1
+			};
+			InterpolateFrom[]=
+			{
+				"Walker_idle",
+				1
+			};
+		};
+		class Walker_StrafeR: Walker_move
+		{
+			file="\3AS\ATRT\3AS_ATRT_StrafeR";
+			speed=1;
+			soundEdge[]={};
+			InterpolateTo[]=
+			{
+				"Walker_idle",
+				1
+			};
+			InterpolateFrom[]=
+			{
+				"Walker_idle",
+				1
+			};
+		};
+		class Walker_TurnL: Walker_move
+		{
+			file="\3AS\ATRT\3AS_ATRT_TurnL";
+			speed=1;
+			soundEdge[]={};
+			InterpolateTo[]=
+			{
+				"Walker_idle",
+				1
+			};
+			InterpolateFrom[]=
+			{
+				"Walker_idle",
+				1
+			};
+		};
+		class Walker_TurnR: Walker_move
+		{
+			file="\3AS\ATRT\3AS_ATRT_TurnR";
+			speed=1;
+			soundEdge[]={};
+			InterpolateTo[]=
+			{
+				"Walker_idle",
+				1
+			};
+			InterpolateFrom[]=
+			{
+				"Walker_idle",
+				1
+			};
+		};
+		class Walker_idle: Walker_move
+		{
+			file="\3AS\ATRT\3AS_ATRT_Idle";
+			speed="30/250";
+			soundEdge[]={};
+			InterpolateTo[]=
+			{
+				"Walker_move",
+				1,
+				"Walker_move_back",
+				1,
+				"Walker_StrafeL",
+				1,
+				"Walker_StrafeR",
+				1
+			};
+			InterpolateFrom[]=
+			{
+				"Walker_move",
+				1,
+				"Walker_move_back",
+				1,
+				"Walker_StrafeL",
+				1,
+				"Walker_StrafeR",
+				1
+			};
+		};
+
+		/*class ATRT_destroyed: StandBase
 		{
 			actions = "DeadActions";
 			file = "\RB205_vehicles\atrt\anim\atrt_destroyed.rtm";
@@ -198,6 +451,74 @@ class CfgMovesATRT_RB205: CfgMovesWalker
 			soundEdge[] = {};
 			InterpolateTo[] = {};
 			InterpolateFrom[] = {};
+		};*/
+		/*class ATRT_Crouch: StandBase
+		{
+			variantsPlayer[]={};
+			actions="RifleKneelLowActions";
+			duty=-0.6;
+			speed=0.6;
+			file="Poly\Poly_ATRT\anim\ATRT_Crouch";
+			visibleSize=0.3;
+			aimprecision=0.5;
+			camShakeFire=0.5;
+			collisionShape="A3\anims_f\data\geom\sdr\Pknl_Wrfl_Low.p3d";
+			interpolationSpeed=4;
+			ConnectTo[]=
+			{
+				"ATRT_Crouched",
+				1
+			};
+			InterpolateTo[]=
+			{
+				"ATRT_Crouched",
+				1
+			};
 		};
+		class ATRT_Crouched: StandBase
+		{
+			variantsPlayer[]={};
+			actions="RifleKneelLowActions";
+			duty=-0.60000002;
+			file="Poly\Poly_ATRT\anim\ATRT_Crouched";
+			visibleSize=0.30000001;
+			aimprecision=0.5;
+			camShakeFire=0.5;
+			collisionShape="A3\anims_f\data\geom\sdr\Pknl_Wrfl_Low.p3d";
+			interpolationSpeed=4;
+			ConnectTo[]=
+			{
+				"ATRT_Stand",
+				1
+			};
+			InterpolateTo[]=
+			{
+				"ATRT_Stand",
+				1
+			};
+		};
+		class ATRT_Stand: StandBase
+		{
+			variantsPlayer[]={};
+			actions="RifleKneelLowActions";
+			speed=0.60000002;
+			duty=-0.60000002;
+			file="Poly\Poly_ATRT\anim\ATRT_Stand";
+			visibleSize=0.30000001;
+			aimprecision=0.5;
+			camShakeFire=0.5;
+			collisionShape="A3\anims_f\data\geom\sdr\Pknl_Wrfl_Low.p3d";
+			interpolationSpeed=4;
+			ConnectTo[]=
+			{
+				"Walker_Idle",
+				1
+			};
+			InterpolateTo[]=
+			{
+				"Walker_Idle",
+				1
+			};
+		};*/
 	};
 };
