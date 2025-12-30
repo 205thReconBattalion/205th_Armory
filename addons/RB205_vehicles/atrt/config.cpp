@@ -607,3 +607,31 @@ class CfgMovesATRT_RB205: CfgMovesWalker
 		};
 	};
 };
+class CfgMovesBasic
+{
+	class DefaultDie;
+	class ManActions
+	{
+		RB205_ATRT_Driver = "RB205_ATRT_Driver";
+	};
+};
+class CfgMovesMaleSdr: CfgMovesBasic
+{
+	skeletonName = "OFP2_ManSkeleton";
+	gestures = "CfgGesturesMale";
+	class States
+	{
+		class Crew;
+		class RB205_ATRT_Driver: Crew
+		{
+			file="\RB205_vehicles\atrt\anim\atrt_driver.rtm";
+			interpolateTo[]=
+			{
+				"Unconscious",
+				1
+			};
+			leftHandIKCurve[]={1};
+			rightHandIKCurve[]={1};
+		};
+	};
+};

@@ -25,6 +25,7 @@ _atrt disableAI "AUTOCOMBAT";
 _atrt disableAI "MOVE";
 _atrt disableAI "RADIOPROTOCOL";
 
+[_atrt, "ATRT_deactivate"] remoteExec ["playMove", 0];
 _atrt setUnitpos "MIDDLE";
 
 _atrt addEventHandler
@@ -36,7 +37,6 @@ _atrt addEventHandler
         // health calculations
         private _atrtHealth = _atrt getVariable ["TAS_ATRT_Health", ATRT_BASE_HEALTH];
         _atrtHealth = _atrtHealth - _damage;
-        //[format ["AT-RT: %1", _atrtHealth]] remoteExec ["hint", 0];
         _atrt setVariable ["TAS_ATRT_Health", _atrtHealth, true];
 
 		// kills AT-RT if health is 0 (or below)
@@ -56,7 +56,7 @@ _atrt addEventHandler [
     {
         params ["_atrt"];
 
-        _atrt call TAS_fnc_dismountATRT; //instant dimsount
+        [_atrt, true] call RB205_fnc_dismountATRT; //instant dimsount
         [_atrt, "ATRT_destroyed"] remoteExecCall ["switchMove", 0];
     }
 ];
@@ -66,7 +66,7 @@ _atrt addEventHandler [
     {
         params ["_atrt"];
 		
-        _atrt call TAS_fnc_dismountATRT; //instant dimsount
+        [_atrt, true] call RB205_fnc_dismountATRT; //instant dimsount
     }
 ];
 
@@ -77,8 +77,10 @@ _atrt addAction
         //       _target, _caller
         params ["_atrt", "_rider", "", ""];
 
+        //_riderCheck = _atrt getVariable "TAS_ATRT_rider";
+        //if (!(isNil _riderCheck)) exitWith {};
         _rider = _atrt getVariable ["TAS_ATRT_rider", _rider]; //Sets Variable to _rider if Variable not set
-        [_rider, _atrt] call TAS_fnc_mountATRT;
+        [_atrt, _rider] call RB205_fnc_mountATRT;
 
         // Check if the player should be able to ride
         waitUntil
@@ -97,7 +99,7 @@ _atrt addAction
 
         if (!alive _atrt) exitWith {};
 
-        _atrt call TAS_fnc_dismountATRT; //normal dismount
+        [_atrt, false] call RB205_fnc_dismountATRT; //normal dismount
     },
     [],
     1.5,
@@ -116,7 +118,7 @@ _atrt addAction
     "Dismount",
     {
         params ["", "_atrt", "", ""];
-        _atrt call TAS_fnc_dismountATRT; //normal dismount
+        [_atrt, false] call RB205_fnc_dismountATRT; //normal dismount
     },
     nil,
     1.5,

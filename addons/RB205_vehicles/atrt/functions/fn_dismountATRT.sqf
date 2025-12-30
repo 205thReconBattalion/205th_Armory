@@ -13,15 +13,63 @@
  * [atrt, instant] call RB205_fnc_dismountATRT;
  */
 
-params ["_atrt"];
-private ["_class", "_position", "_side", "_direction"];
+params ["_atrt", "_instant"];
+private ["_rider", "_direction", "_position", "_collision"];
 
-_class = typeOf _atrt;
-_position = getPos _atrt;
-_side = WEST; //TODO: getSide before death
-_direction = getDir _atrt ;
+_rider = _atrt getVariable ["TAS_ATRT_rider", nil];
+if (isNil "_rider") exitWith {};
 
-deleteVehicle _atrt;
+// Prevent the player getting stuck on top
+_direction = direction _rider;
+_position = getPosASL _atrt;
+_position =
+[
+    _position#0 - 0.35 + sin (_direction - 90),
+    _position#1 - 0.3 + cos (_direction - 90),
+    _position#2 + 1
+];
 
-_atrtNew = (createGroup _side) createUnit [_class, _position, [], 0, "NONE"];
-_atrtNew setDir _direction;
+// AT-RT animation
+if (!(_instant)) then {
+	[_atrt, "ATRT_deactivate"] remoteExec ["playMove", 0];
+	sleep 1;
+	_atrt setunitPos "MIDDLE";
+};
+
+detach _rider;
+//[_rider, "ChopperLight_C_LOut_H"] remoteExec ["switchMove", 0];
+_rider setDir _direction - 90;
+_rider setPosASL _position;
+
+_rider setVariable ["TAS_ATRT_isRiding", false];
+
+// Switch camera back to rider
+if (cameraOn != (vehicle _rider)) then
+{
+    // Reset camera view to player
+    (vehicle _rider) switchCamera cameraView;
+};
+
+_atrt remoteControl objNull;
+_rider remoteControl objNull;
+
+if (isClass (configFile >> "CfgPatches" >> "ace_advanced_throwing")) then
+{
+    [_rider, "blockThrow", "ridingATRT", false] call ace_common_fnc_statusEffect_set;
+};
+
+//Remove Collision Shield for Rider added by fn_mountATRT.sqf
+_collision = _atrt getVariable ["TAS_ATRT_collisionObj", objNull]; // Remove collision
+deleteVehicle _collision;
+
+_atrt setVariable ["TAS_ATRT_rider", nil, true]; // Reset rider
+inGameUISetEventHandler ["Action", ""];
+
+[
+    {
+        params ["_rider"];
+        [_rider, ""] remoteExec ["switchMove", 0]; // Seated animation
+    },
+    [_rider],
+    0.5
+] call CBA_fnc_waitAndExecute;
