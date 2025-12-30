@@ -148,12 +148,12 @@ class cfgFunctions
 			class initATRT
 			{
 			};
-			/*class mountATRT
+			class mountATRT
 			{
 			};
 			class dismountATRT
 			{
-			};*/
+			};
 			class unstuckATRT
 			{
 			};
@@ -186,13 +186,14 @@ class CfgMovesATRT_RB205: CfgMovesWalker
 {
 	class Default;
 	class StandBase;
+	class ManActions;
 	class States
 	{
 		class DeadState: Default
 		{
 			actions="DeadActions";
-			//file="3AS\ATRT\3AS_ATRT_Idle";
-			file = "\RB205_vehicles\atrt\anim\atrt_destroyed.rtm";
+			file="3AS\ATRT\3AS_ATRT_Idle";
+			//file = "\RB205_vehicles\atrt\anim\atrt_destroyed.rtm";
 			speed=100;
 			looped=0;
 			onLandBeg=1;
@@ -428,6 +429,8 @@ class CfgMovesATRT_RB205: CfgMovesWalker
 				"Walker_StrafeL",
 				1,
 				"Walker_StrafeR",
+				1,
+				"ATRT_deactivate",
 				1
 			};
 			InterpolateFrom[]=
@@ -439,26 +442,28 @@ class CfgMovesATRT_RB205: CfgMovesWalker
 				"Walker_StrafeL",
 				1,
 				"Walker_StrafeR",
+				1,
+				"ATRT_deactivate",
 				1
 			};
 		};
 
-		/*class ATRT_destroyed: StandBase
+		class ATRT_destroyed: StandBase
 		{
-			actions = "DeadActions";
-			file = "\RB205_vehicles\atrt\anim\atrt_destroyed.rtm";
-			speed = "30/250";
-			soundEdge[] = {};
-			InterpolateTo[] = {};
-			InterpolateFrom[] = {};
-		};*/
-		/*class ATRT_Crouch: StandBase
+			actions="DeadActions";
+			file = "\RB205_vehicles\atrt\anim\atrt_destroyed";
+			speed="30/250";
+			soundEdge[]={};
+			InterpolateTo[]={};
+			InterpolateFrom[]={};
+		};
+		class ATRT_deactivate: StandBase
 		{
 			variantsPlayer[]={};
 			actions="RifleKneelLowActions";
 			duty=-0.6;
 			speed=0.6;
-			file="Poly\Poly_ATRT\anim\ATRT_Crouch";
+			file = "\RB205_vehicles\atrt\anim\atrt_deactivate";
 			visibleSize=0.3;
 			aimprecision=0.5;
 			camShakeFire=0.5;
@@ -466,59 +471,139 @@ class CfgMovesATRT_RB205: CfgMovesWalker
 			interpolationSpeed=4;
 			ConnectTo[]=
 			{
-				"ATRT_Crouched",
+				"ATRT_deactivated",
 				1
 			};
 			InterpolateTo[]=
 			{
-				"ATRT_Crouched",
+				"ATRT_deactivated",
 				1
 			};
 		};
-		class ATRT_Crouched: StandBase
+		class ATRT_deactivated: StandBase
 		{
 			variantsPlayer[]={};
 			actions="RifleKneelLowActions";
-			duty=-0.60000002;
-			file="Poly\Poly_ATRT\anim\ATRT_Crouched";
-			visibleSize=0.30000001;
+			duty=-0.6;
+			file = "\RB205_vehicles\atrt\anim\atrt_deactivated";
+			visibleSize=0.3;
 			aimprecision=0.5;
 			camShakeFire=0.5;
 			collisionShape="A3\anims_f\data\geom\sdr\Pknl_Wrfl_Low.p3d";
 			interpolationSpeed=4;
 			ConnectTo[]=
 			{
-				"ATRT_Stand",
+				"ATRT_activated",
 				1
 			};
 			InterpolateTo[]=
 			{
-				"ATRT_Stand",
+				"ATRT_activated",
 				1
 			};
 		};
-		class ATRT_Stand: StandBase
+		class ATRT_activated: StandBase
 		{
 			variantsPlayer[]={};
 			actions="RifleKneelLowActions";
-			speed=0.60000002;
-			duty=-0.60000002;
-			file="Poly\Poly_ATRT\anim\ATRT_Stand";
-			visibleSize=0.30000001;
+			speed=0.6;
+			duty=-0.6;
+			file = "\RB205_vehicles\atrt\anim\atrt_activated";
+			visibleSize=0.3;
 			aimprecision=0.5;
 			camShakeFire=0.5;
 			collisionShape="A3\anims_f\data\geom\sdr\Pknl_Wrfl_Low.p3d";
 			interpolationSpeed=4;
 			ConnectTo[]=
 			{
-				"Walker_Idle",
+				"Walker_idle",
 				1
 			};
 			InterpolateTo[]=
 			{
-				"Walker_Idle",
+				"Walker_idle",
 				1
 			};
-		};*/
+		};
+	};
+	class Actions
+	{
+		class NoActions: ManActions
+		{
+			turnSpeed=1;
+			upDegree=-1;
+			stance="ManStanceUndefined";
+			limitFast=5;
+			leanRRot=0;
+			leanRShift=0;
+			leanLRot=0;
+			leanLShift=0;
+			useFastMove=0;
+		};
+		class DeadActions: NoActions
+		{
+			upDegree="ManPosDead";
+			stance="ManStanceProne";
+			LadderOnDown="";
+			LadderOnUp="";
+			TestDriver="";
+			TestDriverOut="";
+			startSwim="";
+			surfaceSwim="";
+			bottomSwim="";
+			TestGunner="";
+			Die="DeadState";
+		};
+		class Walker_default_actions: NoActions
+		{
+			upDegree="ManPosStand";
+			stance="ManStanceStand";
+			turnSpeed=1;
+			limitFast=4;
+			leanRRot=0.57;
+			leanRShift=0.1;
+			leanLRot=0.57;
+			leanLShift=0.07;
+			default="Walker_idle";
+			stop="Walker_idle";
+			playerstop="Walker_idle";
+			Die="Unconscious";
+			Unconscious="Unconscious";
+			PrimaryWeapon="Walker_idle";
+			Combat="Walker_idle";
+			Stand="Walker_idle";
+			PlayerStand="Walker_idle";
+			PlayerCrouch="ATRT_deactivated";
+			Crouch="ATRT_deactivated";
+			Civil="Walker_idle";
+			TactF="Walker_move";
+			TurnL="Walker_TurnL";
+			TurnR="Walker_TurnR";
+			TurnLRelaxed="Walker_TurnL";
+			TurnRRelaxed="Walker_TurnR";
+			WalkL="Walker_StrafeL";
+			WalkR="Walker_StrafeR";
+			SlowL="Walker_StrafeL";
+			SlowR="Walker_StrafeR";
+			PlayerSlowL="Walker_StrafeL";
+			PlayerSlowR="Walker_StrafeR";
+			FastL="Walker_StrafeL";
+			FastR="Walker_StrafeR";
+			TactL="Walker_StrafeL";
+			TactR="Walker_StrafeR";
+			PlayerTactF="Walker_move";
+			WalkF="Walker_move";
+			PlayerWalkF="Walker_move";
+			SlowF="Walker_move";
+			PlayerSlowF="Walker_move";
+			FastF="Walker_run";
+			TactB="Walker_move_back";
+			PlayerTactB="Walker_move_back";
+			WalkB="Walker_move_back";
+			PlayerWalkB="Walker_move_back";
+			SlowB="Walker_move_back";
+			PlayerSlowB="Walker_move_back";
+			FastB="Walker_move_back";
+		};
 	};
 };
