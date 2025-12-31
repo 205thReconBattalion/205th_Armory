@@ -21,19 +21,13 @@ if (isNil "_rider") exitWith {};
 
 // Prevent the player getting stuck on top
 _direction = direction _rider;
-_position = getPosASL _atrt;
-/*_position =
+/*_position = getPosASL _atrt;
+_position =
 [
     _position#0 - 0.35 + sin (_direction - 90),
     _position#1 - 0.3 + cos (_direction - 90),
     _position#2 + 1
 ];*/
-_position =
-[
-    _position#0 - 0.35 + sin (_direction - 90),
-    _position#1 - 0.3 + cos (_direction - 90),
-    _position#2
-];
 
 _atrt setAnimSpeedCoef 1;
 
@@ -52,16 +46,16 @@ if (cameraOn != (vehicle _rider)) then
     (vehicle _rider) switchCamera cameraView;
 };
 
-[_rider, "GetOutQuadbike"] remoteExec ["switchMove", 0]; //1.538s
+if (!(_instant)) then {
+	[_rider, "GetOutQuadbike"] remoteExec ["switchMove", 0]; //1.538s
+	sleep 1.54;
+};
 
-sleep 1.54;
-
+//_rider setPosASL _position;
+_rider attachTo [_atrt, [-1.2,0,0], "seat"];
 [_rider, ""] remoteExec ["switchMove", 0];
-
 detach _rider;
-//[_rider, "ChopperLight_C_LOut_H"] remoteExec ["switchMove", 0];
 _rider setDir _direction - 90;
-_rider setPosASL _position;
 
 _rider setVariable ["TAS_ATRT_isRiding", false];
 
