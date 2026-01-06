@@ -218,7 +218,7 @@ class CfgMagazines
 		picture = "\3AS\3AS_Weapons\Data\UI\3as_sniper_b.paa";
 		model = "\MRC\JLTS\weapons\DC15x\DC15x_mag.p3d";
 		ammo = "RB205_ammo_overcharged";
-		count = 15;
+		count = 10;
 		mass = 4;
 		tracersEvery = 1;
 		lastRoundsTracer = 15;

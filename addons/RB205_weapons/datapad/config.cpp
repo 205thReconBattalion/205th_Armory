@@ -48,3 +48,28 @@ class ACE_detector {
         };
     };
 };
+
+class CfgVehicles
+{
+	class Man;
+	class CAManBase: Man
+	{
+		class UserActions
+		{
+			class RB205_scan_datapad
+			{
+				displayName = "$STR_JLTS_C_names_UAScanPolice";
+				displayNameDefault = "";
+				priority = 0;
+				radius = 3;
+				position = "camera";
+				showWindow = 1;
+				hideOnUse = 1;
+				onlyForPlayer = 1;
+				shortcut = "";
+				condition = "this != JLTS_playerControlled && currentWeapon JLTS_playerControlled == 'RB205_datapad'";
+				statement = "[this] call JLTS_fnc_contraband_openPoliceScanner";
+			};
+		};
+	};
+};

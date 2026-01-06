@@ -32,8 +32,6 @@ class Mode_SemiAuto;
 
 class CfgWeapons
 {
-	class JLTS_stun_muzzle;
-
 	class 3AS_DC15S_Base_F;
 	class 3AS_DC15S_F: 3AS_DC15S_Base_F
 	{
@@ -72,14 +70,7 @@ class CfgWeapons
 				compatibleItems[] = {};
 			};
 		};
-		modes[] = {"FullAuto","single_medium_optics1","single_far_optics2"};//,"Single"
-		muzzles[] =
-		{
-			"this",
-			"Stun"
-		};
-		class Stun: JLTS_stun_muzzle {};
-		/*class Single: Single
+		class Single: Single
 		{
 			class BaseSoundModeType;
 			class StandardSound: BaseSoundModeType
@@ -91,7 +82,7 @@ class CfgWeapons
 				soundSetShot[] = { "RB205_DC15S_Shot_SoundSet" };
 			};
 			dispersion = DISPERSION_DC15S;
-		};*/
+		};
 		class FullAuto: FullAuto
 		{
 			class BaseSoundModeType;

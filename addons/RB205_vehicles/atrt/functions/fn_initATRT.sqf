@@ -1,6 +1,6 @@
 /*
- * Author: 3AS, Edited DartRuffian
- * Creates mount/dismount actions for an AT-RT object.
+ * Author: Spark (based on 3AS)
+ * Creates mount/dismount actions for an AT-RT object
  *
  * Arguments:
  * atrt: Object - The AT-RT
@@ -9,38 +9,39 @@
  * None
  *
  * Example:
- * init = "(_this select 0) call TAS_fnc_initATRT";
+ * init = "(_this select 0) call RB205_fnc_initATRT";
  */
 
-
 #define ATRT_BASE_HEALTH 50
+
 params ["_atrt"];
 if (isNull _atrt) exitWith {};
 
-_atrt setAnimSpeedCoef 1.5; // Used to increase movement speed //Might be better to set the Speed in the ATRT_Base Config class instead of this. ~Jek
-_atrt disableAI "RADIOPROTOCOL"; // Stops ai from talking/sending messages
+//_atrt setAnimSpeedCoef 1.5;
 
-_this disableAI "AIMINGERROR";
-_this disableAI "AUTOTARGET";
-_this disableAI "AUTOCOMBAT";
-_this disableAI "MOVE";
+_atrt disableAI "AIMINGERROR";
+_atrt disableAI "AUTOTARGET";
+_atrt disableAI "AUTOCOMBAT";
+_atrt disableAI "MOVE";
+_atrt disableAI "RADIOPROTOCOL";
+
+[_atrt, "ATRT_deactivate"] remoteExec ["playMove", 0];
+_atrt setUnitpos "MIDDLE";
 
 _atrt addEventHandler
 [
     "HandleDamage",
     {
         params ["_atrt", "", "_damage", "", "", "", "", ""];
-        private ["_atrtHealth"];
 
-        _atrtHealth = _atrt getVariable ["TAS_ATRT_Health", ATRT_BASE_HEALTH]; //Sets Variable to ATRT_BASE_HEALTH if Variable not Set
+        // health calculations
+        private _atrtHealth = _atrt getVariable ["TAS_ATRT_Health", ATRT_BASE_HEALTH];
         _atrtHealth = _atrtHealth - _damage;
         _atrt setVariable ["TAS_ATRT_Health", _atrtHealth, true];
 
-		//Kill ATRT if health is 0 or less.
+		// kills AT-RT if health is 0 (or below)
         if (_atrtHealth <= 0) then
         {
-            _atrt call TAS_fnc_spawnATRTSmoke;
-            _atrt call TAS_fnc_dismountATRT;
             _atrt setDamage 1;
 
             _atrt removeEventHandler [_thisEvent, _thisEventHandler];
@@ -50,26 +51,36 @@ _atrt addEventHandler
     }
 ];
 
-_atrt addEventHandler
-[
+_atrt addEventHandler [
+    "Killed",
+    {
+        params ["_atrt"];
+
+        [_atrt, true] call RB205_fnc_dismountATRT; //instant dimsount
+        [_atrt, "ATRT_destroyed"] remoteExecCall ["switchMove", 0];
+    }
+];
+
+_atrt addEventHandler [
     "Deleted",
     {
-        // Clears up particles that are spawned by BNAKC_fnc_spawnATRTSmoke before the object is deleted
-        params ["_entity"];
-        private _allEffects = _entity getVariable ["TAS_ATRT_effects", []];
-        { deleteVehicle _x; } forEach _allEffects;
+        params ["_atrt"];
+		
+        [_atrt, true] call RB205_fnc_dismountATRT; //instant dimsount
     }
 ];
 
 _atrt addAction
 [
-    "Drive",
+    "Mount",
     {
         //       _target, _caller
         params ["_atrt", "_rider", "", ""];
 
+        //_riderCheck = _atrt getVariable "TAS_ATRT_rider";
+        //if (!(isNil _riderCheck)) exitWith {};
         _rider = _atrt getVariable ["TAS_ATRT_rider", _rider]; //Sets Variable to _rider if Variable not set
-        [_rider, _atrt] call TAS_fnc_mountATRT;
+        [_atrt, _rider] call RB205_fnc_mountATRT;
 
         // Check if the player should be able to ride
         waitUntil
@@ -77,16 +88,18 @@ _atrt addAction
             sleep 2;
             private _expression =
             (
-                // Rider Checks
                 !alive _rider or
                 lifeState _rider == "INCAPACITATED" or
-                _rider getVariable ["ACE_isUnconscious", false]
+                _rider getVariable ["ACE_isUnconscious", false] or
+                !alive _atrt
             );
             // See https://community.bistudio.com/wiki/waitUntil#Problems
             !isNil "_expression" and { _expression };
         };
 
-        _atrt call TAS_fnc_dismountATRT;
+        if (!alive _atrt) exitWith {};
+
+        [_atrt, false] call RB205_fnc_dismountATRT; //normal dismount
     },
     [],
     1.5,
@@ -104,9 +117,8 @@ _atrt addAction
 [
     "Dismount",
     {
-        //       _target,  _caller
         params ["", "_atrt", "", ""];
-        _atrt call TAS_fnc_dismountATRT;
+        [_atrt, false] call RB205_fnc_dismountATRT; //normal dismount
     },
     nil,
     1.5,
