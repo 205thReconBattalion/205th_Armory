@@ -32,7 +32,8 @@ class cfgWeapons
         hiddenSelectionsTextures[] =
         {
             "RB205_custom\2441_gentleman\data\H_gentleman.paa",
-            "RB205_main\data\arc\visor_arc_co.paa"
+            "RB205_main\data\arc\visor_arc_co.paa",
+            "RB205_custom\2441_gentleman\data\H_gentleman.paa"
         };
     };
 
