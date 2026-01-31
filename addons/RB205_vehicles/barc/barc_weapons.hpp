@@ -16,7 +16,7 @@ class cfgWeapons
 		{
 			"RB205_barc_mag"
 		};
-		class manual: manual
+		/*class manual: manual
 		{
 			class StandardSound
 			{
@@ -55,7 +55,7 @@ class cfgWeapons
 				begin1[] = {"\ls\core\addons\sounds\vehicles\barc\shot.wss",1.12202,1,1200};
 				soundBegin[] = {"begin1",1};
 			};
-		};
+		};*/
 	};
 
 	class ls_speeder_AP;
