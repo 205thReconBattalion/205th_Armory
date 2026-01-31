@@ -101,6 +101,7 @@ class XtdGearInfos
 		V_CUSTOM(RB205_V_putzi,"5283","dft")
 		V_CUSTOM(RB205_V_junior,"5463","dft")
 		V_CUSTOM(RB205_V_scythe,"5577","dft")
+		V_CUSTOM(RB205_V_norway,"7300","dft")
 		V_CUSTOM(RB205_V_jay,"7576","dft")
 		V_CUSTOM(RB205_V_tower,"9294","dft")
 		
@@ -134,6 +135,9 @@ class XtdGearInfos
 
 	class CfgVehicles
 	{
+		//BACKPACKS
+		B_CUSTOM(RB205_B_norway,"7300")
+
 		class RB205_B_spark
 		{
 			model = "aceax_compat_RB205_custom_B_spark";

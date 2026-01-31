@@ -240,11 +240,38 @@ class XtdGearModels
         {
             label = "Clone Vest (Lore)";
         };
+
+        class aceax_compat_RB205_custom_B: aceax_compat_RB205_custom_base
+        {
+            label = "Clone Vest (Lore)";
+        };
     };
     
     class CfgVehicles
     {
+
         class RB205_aceax_compat_base_B;
+        class aceax_compat_RB205_custom_B: RB205_aceax_compat_base_B
+        {
+            label = LABEL;
+            options[] = 
+            {
+                "id"
+            };
+            class id
+            {
+                label = "ID";
+                values[] =
+				{
+                    "7300"
+				};
+                class 7300
+                {
+                    description = "Norway";
+                };
+            };
+        };
+
         class aceax_compat_RB205_custom_B_spark: RB205_aceax_compat_base_B
         {
             label = "Clone Commander Backpack";

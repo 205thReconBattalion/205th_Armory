@@ -25,3 +25,10 @@
 		id = ##ID##; \
 		variant = ##VAR##; \
 	};
+
+#define B_CUSTOM(CLASS,ID) \
+	class ##CLASS## \
+	{ \
+		model = "aceax_compat_RB205_custom_B"; \
+		id = ##ID##; \
+	};
