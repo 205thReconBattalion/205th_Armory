@@ -95,7 +95,7 @@ class cfgVehicles
 			"RB205_barc_mag",
             "RB205_barc_mag"
 		};
-		BARC_SOUND
+		//BARC_SOUND
 		BARC_FLIP
 	};
 
@@ -165,7 +165,7 @@ class cfgVehicles
 			"RB205_barc_mag",
             "RB205_barc_mag"
 		};
-		BARC_SOUND
+		//BARC_SOUND
 		BARC_FLIP
 	};
 };
