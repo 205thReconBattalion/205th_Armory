@@ -12,171 +12,79 @@ class cfgPatches
 		units[] = {};
 		weapons[] =
 		{
-			"RB205_PLX1_F"
+			"RB205_PLX1"
 		};
 		magazines[] =
 		{
-			"RB205_MK39_AA"
+			"RB205_PLX1_missile_AA",
+			"RB205_PLX1_missile_AT"
 		};
 		ammo[] =
 		{
-			"RB205_M_Titan_AA"
+			"RB205_ammo_PLX1_AA",
+			"RB205_ammo_PLX1_AT"
 		};
 	};
 };
 
 #include "\RB205_weapons\macros.hpp"
 
-class WeaponSlotsInfo;
-class CowsSlot;
-class PointerSlot;
-class MuzzleSlot;
-
 class CfgAmmo
 {
-	class M_Titan_AA;
-	class RB205_M_Titan_AA: M_Titan_AA
+	class 3AS_M_MK39_AA;
+	class RB205_ammo_PLX1_AA: 3AS_M_MK39_AA //M_Titan_AA
 	{
 		cmImmunity = 1;
-		hit = 2000;//hit=1400;
-		missileLockMaxDistance = 3000;
-		manueuvrability = 30;
-		sideAirFriction = 0.02;
-		//effectsMissile = "RB205_effects_missile_plx_blue";
+	};
+	class 3AS_M_MK43_AT;
+	class RB205_ammo_PLX1_AT: 3AS_M_MK43_AT
+	{
+		cmImmunity = 1;
 	};
 };
 class CfgMagazines
 {
 	class 3AS_JLTS_MK39_AA;
-	class RB205_MK39_AA: 3AS_JLTS_MK39_AA
+	class RB205_PLX1_missile_AA: 3AS_JLTS_MK39_AA
 	{
-		ammo = "RB205_M_Titan_AA";
+		ammo = "RB205_ammo_PLX1_AA";
 		displayName = "$STR_205_PLX1_AA_MISSILE_DisplayName";
 		displayNameShort = "$STR_205_PLX1_AA_MISSILE_DisplayNameShort";
 		descriptionShort = "$STR_205_PLX1_AA_MISSILE_DescriptionShort";
-		mass = 99;//50
+		mass = 66;
 		count = 2
         author = "205th Recon Battalion";
+	};
+	class 3AS_JLTS_MK43_AT;
+	class RB205_PLX1_missile_AT: 3AS_JLTS_MK43_AT
+	{
+		ammo = "RB205_ammo_PLX1_AT";
+		displayName = "$STR_205_PLX1_AT_MISSILE_DisplayName";
+		displayNameShort = "$STR_205_PLX1_AT_MISSILE_DisplayNameShort";
+		descriptionShort = "$STR_205_PLX1_AT_MISSILE_DescriptionShort";
+		mass = 66;
+		count = 1;
+		author = "205th Recon Battalion";
 	};
 };
 class CfgWeapons
 {
 	class 3AS_PLX1_F;
-	class RB205_PLX1_F: 3AS_PLX1_F
+	class RB205_PLX1: 3AS_PLX1_F
 	{
-		baseWeapon = "RB205_PLX1_F";
+		baseWeapon = "RB205_PLX1";
         author = "205th Recon Battalion";
 		displayName = "$STR_205_PLX1_DisplayName";
 		displayNameShort = "$STR_205_PLX1_DisplayNameShort";
-		descriptionShort = "Luftabwehr-Raketenwerfer<br />Freigegeben für: AT/AA";
-		picture = "\3AS\3AS_Weapons\PLX1\Data\UI\3as_plx.paa";
+		descriptionShort = "Raketenwerfer<br />Freigegeben für: AT/AA";
 		magazines[] =
 		{
-			"RB205_MK39_AA"
-		};
-		ace_overpressure_angle = 45;
-		ace_overpressure_damage = 0.69999999;
-		ace_overpresssure_priority = 1;
-		ace_overpressure_range = 10;
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			class CowsSlot: CowsSlot
-			{
-				compatibleItems[] = {};
-			};
-			class PointerSlot: PointerSlot
-			{
-				compatibleItems[] = {};
-			};
-			class MuzzleSlot: MuzzleSlot
-			{
-				compatibleItems[] = {};
-			};
+			"RB205_PLX1_missile_AA",
+			"RB205_PLX1_missile_AT"
 		};
 		JLTS_hasElectronics = 1;
 		JLTS_hasEMPProtection = 0;
-		JLTS_friedItem = "RB205_PLX1_F_fried";
+		JLTS_friedItem = "RB205_PLX1_fried";
 	};
-	FRIED_WEAPON(RB205_PLX1_F,"\RB205_weapons\data\ui\plx_fried.paa")
-};
-
-
-
-class CfgLights
-{
-	class ls_light_hailfireRocket;
-	class RB205_effects_rocket_blue: ls_light_hailfireRocket
-	{
-		color[] = {0,0,1};
-	};
-	class RB205_effects_rocket_red: ls_light_hailfireRocket
-	{
-		color[] = {186,0,0};
-	};
-};
-class CfgCloudlets
-{
-	class ls_particle_hailfireRocket;
-	class RB205_effects_smoke_PLXblue: ls_particle_hailfireRocket
-	{
-		color[] =
-		{
-			{0.1,0.2,0.80000001,1},
-			{0,0,0,1},
-			{0,0,0,1}
-		};
-		colorVar[] = {0,0,0,1};
-		lifetime = 3;
-		colorCoef[] = {1,1,1,1};
-		size[] = {2,2};
-		volume = 2;
-	};
-	class RB205_effects_smoke_PLXred: ls_particle_hailfireRocket
-	{
-		color[] =
-		{
-			{0.80000001,0.1,0.2,1},
-			{0,0,0,1},
-			{0,0,0,1}
-		};
-		colorVar[] = {0,0,0,1};
-		lifetime=3;
-		colorCoef[] = {1,1,1,1};
-		size[] = {2,2};
-		volume = 2;
-	};
-};
-class RB205_effects_missile_plx_blue
-{
-	class light1
-	{
-		intensity= 1;
-		interval = 1;
-		lifeTime = 4;
-		position[] = {0,0,0};
-		simulation = "light";
-		type = "RB205_effects_rocket_blue";
-	};
-	class MissileEffect1
-	{
-		simulation = "particles";
-		type = "RB205_effects_smoke_PLXblue";
-	};
-};
-class RB205_effects_missile_plx_red
-{
-	class light1
-	{
-		intensity = 1;
-		interval = 1;
-		lifeTime = 4;
-		position[] = {0,0,0};
-		simulation = "light";
-		type = "RB205_effects_rocket_red";
-	};
-	class MissileEffect1
-	{
-		simulation = "particles";
-		type = "RB205_effects_smoke_PLXred";
-	};
+	FRIED_WEAPON(RB205_PLX1,"\RB205_weapons\data\ui\plx_fried.paa")
 };
