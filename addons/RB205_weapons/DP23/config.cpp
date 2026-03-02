@@ -26,7 +26,11 @@ class MuzzleSlot;
 
 class CfgWeapons
 {
-	class 3AS_DP23_F;
+	class 3AS_DP23_Base_F;
+	class 3AS_DP23_F: 3AS_DP23_Base_F
+	{
+		class 3AS_FL_F;
+	};
 	class RB205_DP23: 3AS_DP23_F
 	{
 		baseWeapon = "RB205_DP23";
@@ -34,7 +38,6 @@ class CfgWeapons
 		displayName = "$STR_205_DP23_DisplayName";
 		displayNameShort = "$STR_205_DP23_DisplayNameShort";
 		descriptionShort = "Streu-Blaster der GAR<br />Freigegeben für: Rancor (1-3)";
-		picture = "\3AS\3AS_Weapons\MPL\Data\UI\3as_mpl.paa";
 		cursor = "RB205_CH_shotgun";
 		mass = MASS_WP_CARBINE;
 		magazines[] =
@@ -42,9 +45,10 @@ class CfgWeapons
 			"RB205_Scatter_Energy_Pack"
 		};
 		magazineWell[] = {};
+		fireLightDiffuse[] = {0,0,1};
 		reloadAction = "GestureReload_JLTS_DC15S";
 		reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\Reload_Mx",1,1,10};
-		fireLightDiffuse[] = {0,0,1};
+		recoil = "3AS_recoil_dc15a";
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			class CowsSlot: CowsSlot
@@ -59,6 +63,18 @@ class CfgWeapons
 			{
 				compatibleItems[] = {};
 			};
+		};
+		muzzles[] = {"this", "3AS_FL_F"};
+		class 3AS_FL_F: 3AS_FL_F
+		{
+			displayName = "$STR_205_DP23_DisplayName";
+			magazines[] =
+			{
+				"RB205_Flechette_Energy_Pack"
+			};
+			magazineWell[] = {};
+			reloadAction = "RB205_reload_charge";
+			reloadMagazineSound[] = {"RB205_weapons\data\sounds\reload_charge.ogg",2,1,30};
 		};
 		JLTS_hasElectronics = 1;
 		JLTS_hasEMPProtection = 0;
