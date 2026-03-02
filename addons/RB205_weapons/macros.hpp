@@ -37,8 +37,5 @@
 		scope=1; \
 		magazines[]={}; \
 		picture=##PICTURE##; \
-		class Stun: Stun \
-		{ \
-			magazines[]={}; \
-		}; \
+		muzzles[] = {"this"}; \
 	};
