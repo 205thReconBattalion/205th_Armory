@@ -110,41 +110,13 @@
             <English>[205] T-7 Ion Disruptor Rifle</English>
             <German>[205] T-7 Ionendisruptor</German>
         </Key>
-        <Key ID="STR_205_E11_DisplayName">
-            <English>[205|EMP] E-11 Blaster Rifle</English>
-            <German>[205|EMP] E-11 Blastergewehr</German>
+        <Key ID="STR_205_BINO_M_DisplayName">
+            <English>[205] Macrobinoculars</English>
+            <German>[205] Makrofernglas</German>
         </Key>
-        <Key ID="STR_205_E11_STOCK_DisplayName">
-            <English>[205|EMP] E-11 Blaster Rifle (Stock)</English>
-            <German>[205|EMP] E-11 Blastergewehr (Schaft)</German>
-        </Key>
-        <Key ID="STR_205_E11_GL_DisplayName">
-            <English>[205|EMP] E-11 GL Blaster Rifle (Stock)</English>
-            <German>[205|EMP] E-11 GL Blastergewehr (Schaft)</German>
-        </Key>
-        <Key ID="STR_205_DLT19_DisplayName">
-            <English>[205|EMP] DLT-19 Heavy Blaster Rifle</English>
-            <German>[205|EMP] DLT-19 Blastergewehr</German>
-        </Key>
-        <Key ID="STR_205_DLT19X_DisplayName">
-            <English>[205|EMP] DLT-19X Sniper Rifle</English>
-            <German>[205|EMP] DLT-19X Scharfschützengewehr</German>
-        </Key>
-        <Key ID="STR_205_E11D_DisplayName">
-            <English>[205|EMP] E-11D Blaster Carbine</English>
-            <German>[205|EMP] E-11D Blasterkarabiner</German>
-        </Key>
-        <Key ID="STR_205_SE14R_DisplayName">
-            <English>[205|EMP] SE-14r Light Repeating Blaster</English>
-            <German>[205|EMP] SE-14r Repetierblasterpistole</German>
-        </Key>
-        <Key ID="STR_205_RK3_DisplayName">
-            <English>[205|EMP] RK-3 Blaster Pistol</English>
-            <German>[205|EMP] RK-3 Blasterpistole</German>
-        </Key>
-        <Key ID="STR_205_EC17_DisplayName">
-            <English>[205|EMP] EC-17 Hold-Out Blaster</English>
-            <German>[205|EMP] EC-17 Miniblasterpistole</German>
+        <Key ID="STR_205_BINO_E_DisplayName">
+            <English>[205] Electrobinoculars</English>
+            <German>[205] Elektrofernglas</German>
         </Key>
 <!--displayNameShort weapons-->
         <Key ID="STR_205_DC15A_DisplayNameShort">
@@ -239,37 +211,13 @@
             <English>T-7</English>
             <German>T-7</German>
         </Key>
-        <Key ID="STR_205_E11_DisplayNameShort">
-            <English>E-11</English>
-            <German>E-11</German>
+        <Key ID="STR_205_BINO_M_DisplayNameShort">
+            <English>Macrobinoculars</English>
+            <German>Makrofernglas</German>
         </Key>
-        <Key ID="STR_205_E11_GL_DisplayNameShort">
-            <English>E-11-GL</English>
-            <German>E-11-GL</German>
-        </Key>
-        <Key ID="STR_205_DLT19_DisplayNameShort">
-            <English>DLT-19</English>
-            <German>DLT-19</German>
-        </Key>
-        <Key ID="STR_205_DLT19X_DisplayNameShort">
-            <English>DLT-19X</English>
-            <German>DLT-19X</German>
-        </Key>
-        <Key ID="STR_205_E11D_DisplayNameShort">
-            <English>E-11D</English>
-            <German>E-11D</German>
-        </Key>
-        <Key ID="STR_205_SE14R_DisplayNameShort">
-            <English>SE-14r</English>
-            <German>SE-14r</German>
-        </Key>
-        <Key ID="STR_205_RK3_DisplayNameShort">
-            <English>RK-3</English>
-            <German>RK-3</German>
-        </Key>
-        <Key ID="STR_205_EC17_DisplayNameShort">
-            <English>EC-17</English>
-            <German>EC-17</German>
+        <Key ID="STR_205_BINO_E_DisplayNameShort">
+            <English>Electrobinoculars</English>
+            <German>Elektrofernglas</German>
         </Key>
 <!--displayName magazines-->
         <Key ID="STR_205_Standard_Energy_Pack_DisplayName">
@@ -281,8 +229,8 @@
             <German>[205] Kompaktes Energiepaket (30 Lad.)</German>
         </Key>
         <Key ID="STR_205_Overcharged_Energy_Pack_DisplayName">
-            <English>[205] Overcharged Energy Pack (15 Ch.)</English>
-            <German>[205] Überladenes Energiepaket (15 Lad.)</German>
+            <English>[205] Overcharged Energy Pack (10 Ch.)</English>
+            <German>[205] Überladenes Energiepaket (10 Lad.)</German>
         </Key>
         <Key ID="STR_205_Heavy_Energy_Pack_DisplayName">
             <English>[205] Heavy Energy Pack (200 Ch.)</English>

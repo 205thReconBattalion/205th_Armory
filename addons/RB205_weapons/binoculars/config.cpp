@@ -22,8 +22,8 @@ class CfgWeapons
 	class ls_clone_electrobinoculars;
 	class RB205_binocular: ls_clone_electrobinoculars
 	{
-		displayName = "[205] Clone Trooper Binocular";
-		displayNameShort = "Binocular";
+		displayName = "$STR_205_BINO_M_DisplayName";
+		displayNameShort = "$STR_205_BINO_M_DisplayNameShort";
 		descriptionShort = "Freigegeben für: Alle";
         author = "205th Recon Battalion";
 		picture = "\RB205_weapons\data\ui\binocular.paa";
@@ -41,8 +41,8 @@ class CfgWeapons
 	class ls_clone_electrobinocularsCommander;
 	class RB205_binocular_arf: ls_clone_electrobinocularsCommander
 	{
-		displayName = "[205] Clone ARF Trooper Binocular";
-		displayNameShort = "Binocular";
+		displayName = "$STR_205_BINO_E_DisplayName";
+		displayNameShort = "$STR_205_BINO_E_DisplayNameShort";
 		descriptionShort = "Freigegeben für: ARF, CL+";
         author = "205th Recon Battalion";
 		picture = "\RB205_weapons\data\ui\binocular_arf.paa";
