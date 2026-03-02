@@ -381,7 +381,7 @@ class CfgGesturesMale
 		class t7ion_reload: Default
 		{
 			enableOptics = 0;
-			file = "RB205_weapons\T7ION\data\animations\reload_anim.rtm";
+			file = "RB205_weapons\t7ion\data\anims\reload_anim.rtm";
 			speed = -2.9;
 			looped = 0;
 			mask = "handsWeapon";
