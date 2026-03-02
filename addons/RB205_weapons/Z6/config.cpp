@@ -26,19 +26,18 @@ class MuzzleSlot;
 
 class CfgWeapons
 {
-	class LMG_Mk200_F;
-	class JLTS_Z6: LMG_Mk200_F
+	class 3AS_Z6_Base_F;
+	class 3AS_Z6_F: 3AS_Z6_Base_F //LMG_Mk200_F
 	{
 		class manual;
 	};
-	class RB205_Z6: JLTS_Z6
+	class RB205_Z6: 3AS_Z6_F //JLTS_Z6
 	{
 		baseWeapon = "RB205_Z6";
 		author = "205th Recon Battalion";
 		displayName = "$STR_205_Z6_DisplayName";
 		displayNameShort = "$STR_205_Z6_DisplayNameShort";
 		descriptionShort = "Rotationsblaster der GAR<br />Freigegeben für: Heavy";
-		picture = "\RB205_weapons\data\ui\z6.paa";
 		cursor = "RB205_CH_default";
 		mass = MASS_WP_HEAVY;
 		magazines[] =
@@ -47,6 +46,8 @@ class CfgWeapons
 		};
 		magazineWell[] = {};
 		fireLightDiffuse[] = {0,0,1};
+		reloadAction = "RB205_reload_charge";
+		reloadMagazineSound[] = {"RB205_weapons\data\sounds\reload_charge.ogg",2,1,30};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			class CowsSlot: CowsSlot
@@ -73,6 +74,7 @@ class CfgWeapons
 				};
 			};
 			dispersion = DISPERSION_Z6;
+			reloadTime = 0.075;
 		};
 		JLTS_hasElectronics = 1;
 		JLTS_hasEMPProtection = 0;
