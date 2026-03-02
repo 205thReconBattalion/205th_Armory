@@ -5,7 +5,6 @@ class cfgPatches
 		requiredAddons[] =
 		{
 			"3AS_Weapons",
-			"JLTS_weapons_Z6",
 			"CBA_Extended_EventHandlers",
 			"CBA_MAIN"
 		};
@@ -15,16 +14,22 @@ class cfgPatches
 		{
 			"RB205_ammo_standard",
 			"RB205_ammo_standard_red",
+
 			"RB205_ammo_compact",
 			"RB205_ammo_compact_red",
+
 			"RB205_ammo_overcharged",
 			"RB205_ammo_overcharged_red",
+
 			"RB205_ammo_heavy",
 			"RB205_ammo_heavy_red",
+
 			"RB205_ammo_rapidFire",
 			"RB205_ammo_rapidFire_red",
+
 			"RB205_ammo_experimental",
 			"RB205_ammo_experimental_red",
+
 			"RB205_ammo_scatter",
 			"RB205_ammo_scatter_red"
 		};
@@ -32,16 +37,23 @@ class cfgPatches
 		{
 			"RB205_Standard_Energy_Pack",
 			"RB205_Standard_Energy_Pack_red",
+
 			"RB205_Compact_Energy_Pack",
 			"RB205_Compact_Energy_Pack_red",
+
 			"RB205_Overcharged_Energy_Pack",
 			"RB205_Overcharged_Energy_Pack_red",
+
 			"RB205_Heavy_Energy_Pack",
 			"RB205_Heavy_Energy_Pack_red",
+
 			"RB205_RapidFire_Energy_Pack",
+
 			"RB205_Experimental_Energy_Pack",
 			"RB205_Experimental_Energy_Pack_red",
-			"RB205_Scatter_Energy_Pack"
+
+			"RB205_Scatter_Energy_Pack",
+			"RB205_Flechette_Energy_Pack"
 		};
 		weapons[] = {};
 		units[] = {};
@@ -142,7 +154,7 @@ class CfgAmmo
 	class RB205_ammo_scatter: 3AS_EC30_Pellets_Submunition
 	{
 		hit = 20;
-		caliber = 1.2;
+		caliber = 1.4;
 		coefgravity = 0;
 	};
 	class RB205_ammo_scatter_red: RB205_ammo_scatter
@@ -154,13 +166,11 @@ class CfgAmmo
 
 class CfgMagazines
 {
-	// DC-15A, DC-15S, DC-15C
 	class 3AS_45Rnd_EC50_Mag;
 	class RB205_Standard_Energy_Pack: 3AS_45Rnd_EC50_Mag
 	{
 		displayName = "$STR_205_Standard_Energy_Pack_DisplayName";
 		displayNameShort = "$STR_205_Standard_Energy_Pack_DisplayNameShort";
-		//picture = "\MRC\JLTS\weapons\DC15S\data\ui\DC15S_mag_ui_ca.paa";
 		picture = "\3AS\3AS_Weapons\Data\UI\3as_ammo_b.paa";
 		model = "\MRC\JLTS\weapons\DC15S\DC15S_mag.p3d";
 		ammo = "RB205_ammo_standard";
@@ -171,7 +181,6 @@ class CfgMagazines
 		descriptionShort = "$STR_205_Standard_Energy_Pack_DescriptionShort";
         author = "205th Recon Battalion";
 	};
-	// E-11
 	class RB205_Standard_Energy_Pack_red: RB205_Standard_Energy_Pack
 	{
 		picture = "\3AS\3AS_Weapons\Data\UI\3as_ammo_r.paa";
@@ -181,13 +190,11 @@ class CfgMagazines
 		descriptionShort = "$STR_205_Standard_Energy_Pack_red_DescriptionShort";
 	};
 
-	// DC-17
 	class 3AS_16Rnd_EC20_Mag;
 	class RB205_Compact_Energy_Pack: 3AS_16Rnd_EC20_Mag
 	{
 		displayName = "$STR_205_Compact_Energy_Pack_DisplayName";
 		displayNameShort = "$STR_205_Compact_Energy_Pack_DisplayNameShort";
-		//picture = "\MRC\JLTS\weapons\DC17SA\data\ui\DC17SA_mag_ui_ca.paa";
 		picture = "\3AS\3AS_Weapons\Data\UI\3as_pistol_b.paa";
 		model = "\MRC\JLTS\weapons\DC17SA\DC17SA_mag.p3d";
 		ammo = "RB205_ammo_compact";
@@ -198,7 +205,6 @@ class CfgMagazines
 		descriptionShort = "$STR_205_Compact_Energy_Pack_DescriptionShort";
         author = "205th Recon Battalion";
 	};
-	// SE-14r, RK-3, EC-17
 	class RB205_Compact_Energy_Pack_red: RB205_Compact_Energy_Pack
 	{
 		picture = "\3AS\3AS_Weapons\Data\UI\3as_pistol_r.paa";
@@ -208,24 +214,21 @@ class CfgMagazines
 		descriptionShort = "$STR_205_Compact_Energy_Pack_red_DescriptionShort";
 	};
 
-	// DC-15X, Valken-38X
 	class 3AS_10Rnd_EC80_Mag;
 	class RB205_Overcharged_Energy_Pack: 3AS_10Rnd_EC80_Mag
 	{
 		displayName = "$STR_205_Overcharged_Energy_Pack_DisplayName";
 		displayNameShort = "$STR_205_Overcharged_Energy_Pack_DisplayNameShort";
-		//picture = "\MRC\JLTS\weapons\DC15x\data\ui\DC15X_mag_ui_ca.paa";
 		picture = "\3AS\3AS_Weapons\Data\UI\3as_sniper_b.paa";
 		model = "\MRC\JLTS\weapons\DC15x\DC15x_mag.p3d";
 		ammo = "RB205_ammo_overcharged";
 		count = 10;
 		mass = 4;
 		tracersEvery = 1;
-		lastRoundsTracer = 15;
+		lastRoundsTracer = 10;
 		descriptionShort = "$STR_205_Overcharged_Energy_Pack_DescriptionShort";
         author = "205th Recon Battalion";
 	};
-	// DLT-19X
 	class RB205_Overcharged_Energy_Pack_red: RB205_Overcharged_Energy_Pack
 	{
 		picture = "\3AS\3AS_Weapons\Data\UI\3as_sniper_r.paa";
@@ -235,24 +238,21 @@ class CfgMagazines
 		descriptionShort = "$STR_205_Overcharged_Energy_Pack_red_DescriptionShort";
 	};
 
-	//DC-15L
 	class 3AS_200Rnd_EC40_Mag;
 	class RB205_Heavy_Energy_Pack: 3AS_200Rnd_EC40_Mag
 	{
 		displayName = "$STR_205_Heavy_Energy_Pack_DisplayName";
 		displayNameShort = "$STR_205_Heavy_Energy_Pack_DisplayNameShort";
-		//picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_mag_ui_ca.paa";
 		picture = "\3AS\3AS_Weapons\Data\UI\3as_box_b.paa";
 		model = "\MRC\JLTS\weapons\DC15A\DC15A_mag.p3d";
 		ammo = "RB205_ammo_heavy";
 		count = 200;
-		mass = 16;//23		
+		mass = 16;		
 		tracersEvery = 1;
 		lastRoundsTracer =  200;
 		descriptionShort = "$STR_205_Heavy_Energy_Pack_DescriptionShort";
         author = "205th Recon Battalion";
 	};
-	// DLT-19
 	class RB205_Heavy_Energy_Pack_red: RB205_Heavy_Energy_Pack
 	{
 		picture = "\3AS\3AS_Weapons\Data\UI\3as_box_r.paa";
@@ -262,13 +262,10 @@ class CfgMagazines
 		descriptionShort = "$STR_205_Heavy_Energy_Pack_red_DescriptionShort";
 	};
 
-	//Z-6
-	class JLTS_Z6_mag;
-	class RB205_RapidFire_Energy_Pack: JLTS_Z6_mag
+	class RB205_RapidFire_Energy_Pack: 3AS_200Rnd_EC40_Mag
 	{
 		displayName = "$STR_205_RapidFire_Energy_Pack_DisplayName";
 		displayNameShort = "$STR_205_RapidFire_Energy_Pack_DisplayNameShort";
-		//picture = "\MRC\JLTS\weapons\z6\data\ui\z6_mag_ui_ca.paa";
 		picture = "\3AS\3AS_Weapons\Data\UI\3as_box_b.paa";
 		model = "\MRC\JLTS\weapons\z6\z6_mag.p3d";
 		ammo = "RB205_ammo_rapidFire";
@@ -280,13 +277,11 @@ class CfgMagazines
         author = "205th Recon Battalion";
 	};
 
-	//Westar-M5
 	class 3AS_60Rnd_EC50_Mag;
 	class RB205_Experimental_Energy_Pack: 3AS_60Rnd_EC50_Mag
 	{
 		displayName = "$STR_205_Experimental_Energy_Pack_DisplayName";
 		displayNameShort = "$STR_205_Experimental_Energy_Pack_DisplayNameShort";
-		//picture = "\MRC\JLTS\weapons\DC15S\data\ui\DC15S_mag_ui_ca.paa";
 		picture = "\3AS\3AS_Weapons\Data\UI\3as_ammo_b.paa";
 		model = "\MRC\JLTS\weapons\DC15S\DC15S_mag.p3d";
 		ammo = "RB205_ammo_experimental";
@@ -304,14 +299,12 @@ class CfgMagazines
 		descriptionShort = "$STR_205_Experimental_Energy_Pack_red_DescriptionShort";
 	};
 
-	//DP-23
 	class 3AS_10Rnd_EC30_Pellets;
-	class RB205_Scatter_Energy_Pack: 3AS_10Rnd_EC30_Pellets//3AS_45Rnd_EC50_Mag
+	class RB205_Scatter_Energy_Pack: 3AS_10Rnd_EC30_Pellets
 	{
 		displayName = "$STR_205_Scatter_Energy_Pack_DisplayName";
 		displayNameShort = "$STR_205_Scatter_Energy_Pack_DisplayNameShort";
-		//picture = "\MRC\JLTS\weapons\DP23\data\ui\DP23_mag_ui_ca.paa";
-		picture = "\3AS\3AS_Weapons\Data\UI\3as_ammo_b.paa";
+		picture = "\3AS\3AS_Weapons\Data\UI\3as_shotgun_b.paa";
 		model = "\MRC\JLTS\weapons\DP23\DP23_mag.p3d";
 		ammo = "RB205_ammo_scatter";
 		count = 20;
@@ -321,6 +314,20 @@ class CfgMagazines
 		descriptionShort = "$STR_205_Scatter_Energy_Pack_DescriptionShort";
         author = "205th Recon Battalion";
 	};
+	class 3AS_1Rnd_EC80_Flechette;
+	class RB205_Flechette_Energy_Pack: 3AS_1Rnd_EC80_Flechette
+	{
+		displayName = "$STR_205_Flechette_Energy_Pack_DisplayName";
+		displayNameShort = "$STR_205_Flechette_Energy_Pack_DisplayNameShort";
+		picture = "\3AS\3AS_Weapons\Data\UI\3as_pellets_b.paa";
+		model = "\MRC\JLTS\weapons\DP23\DP23_mag.p3d";
+		count = 3;
+		mass = 8;
+		tracersEvery = 1;
+		lastRoundsTracer = 3;
+		descriptionShort = "$STR_205_Flechette_Energy_Pack_DescriptionShort";
+        author = "205th Recon Battalion";
+	}
 };
 
 class CfgWeaponCursors
@@ -331,7 +338,6 @@ class CfgWeaponCursors
 	class coil;
 	class RB205_CH_default: coil{};
 
-	//class laserdesignator;
 	class cannon;
 	class RB205_CH_shotgun: cannon{};
 	
@@ -345,17 +351,17 @@ class CfgWeaponCursors
 
 	class RB205_CH_t7ion: throw
 	{
-		texture = "RB205_weapons\data\t7ion_ch.paa";
+		texture = "RB205_weapons\data\ch_t7ion.paa";
 	};
 
 	class RB205_CH_sidearm: throw
 	{
-		texture = "RB205_weapons\data\sidearm.paa";
+		texture = "RB205_weapons\data\ch_sidearm.paa";
 	};
 
 	class RB205_CH_sidearm_dual: throw
 	{
-		texture = "RB205_weapons\data\sidearm_dual.paa";
+		texture = "RB205_weapons\data\ch_sidearm_dual.paa";
 	};
 };
 
