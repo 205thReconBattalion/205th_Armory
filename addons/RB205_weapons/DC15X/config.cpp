@@ -50,9 +50,10 @@ class CfgWeapons
 			"RB205_Overcharged_Energy_Pack"
 		};
 		magazineWell[] = {};
+		fireLightDiffuse[] = {0,0,1};
 		reloadAction = "RB205_reload_charge";
 		reloadMagazineSound[] = {"RB205_weapons\data\sounds\reload_charge.ogg",2,1,30};
-		fireLightDiffuse[] = {0,0,1};
+		recoil = "3AS_recoil_dc15a";
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			class CowsSlot: CowsSlot
