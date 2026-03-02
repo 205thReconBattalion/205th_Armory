@@ -56,9 +56,10 @@ class CfgWeapons
 			"RB205_Standard_Energy_Pack"
 		};
 		magazineWell[] = {};
+		fireLightDiffuse[] = {0,0,1};
 		reloadAction = "GestureReload_JLTS_DC15A";
 		reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\Reload_Mx",1,1,10};
-		fireLightDiffuse[] = {0,0,1};
+		recoil = "recoil_smg_03";
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			class CowsSlot: CowsSlot
@@ -116,9 +117,10 @@ class CfgWeapons
 			"RB205_Standard_Energy_Pack"
 		};
 		magazineWell[] = {};
+		fireLightDiffuse[] = {0,0,1};
 		reloadAction = "GestureReload_JLTS_DC15A";
 		reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\Reload_Mx",1,1,10};
-		fireLightDiffuse[] = {0,0,1};
+		recoil = "recoil_smg_03";
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			class CowsSlot: CowsSlot
@@ -193,6 +195,7 @@ class CfgWeapons
 		displayNameShort = "$STR_205_DC15LE_DisplayNameShort";
 		descriptionShort = "Blastergewehr der GAR<br />Freigegeben für: Marksman";
 		cursor = "RB205_CH_default";
+		recoil = "recoil_smg_03";
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			class CowsSlot: CowsSlot
