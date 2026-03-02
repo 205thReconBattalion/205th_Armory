@@ -70,6 +70,7 @@ class CfgWeapons
 				compatibleItems[] = {};
 			};
 		};
+		modes[] = {"FullAuto","single_medium_optics1","single_far_optics2"};//"Single"
 		class Single: Single
 		{
 			class BaseSoundModeType;
@@ -142,6 +143,7 @@ class CfgWeapons
 				compatibleItems[] = {};
 			};
 		};
+		modes[] = {"FullAuto","single_medium_optics1","single_far_optics2"};
 		class Single: Single
 		{
 			class BaseSoundModeType;
