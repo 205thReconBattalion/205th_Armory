@@ -83,6 +83,7 @@ class cfgPatches
 };
 
 #define MASS_EXP	mass = 10;
+#define MASS_EXP_GL	mass = 4;
 #define MASS_SON	mass = 10;
 #define MASS_EMP	mass = 10;
 #define MASS_SMK	mass = 3;
@@ -503,7 +504,7 @@ class CfgMagazines
 		displayNameShort = "$STR_205_HE_DisplayNameShort";
 		descriptionShort = "Wirkung: Explosiv<br />Anzahl: 1";
 		picture = "\3AS\3AS_Weapons\Data\UI\3as_nade_he.paa";
-		MASS_EXP
+		MASS_EXP_GL
         author = "205th Recon Battalion";
 	};
 	class RB205_ugl_he_3rnd: RB205_ugl_he
@@ -511,6 +512,7 @@ class CfgMagazines
 		displayName = "$STR_205_UGL3_HE_DisplayName";
 		descriptionShort = "Wirkung: Explosiv<br />Anzahl: 3";
 		count = 3;
+		MASS_EXP
 	};
 	class RB205_ugl_he_6rnd: RB205_ugl_he
 	{
@@ -526,7 +528,7 @@ class CfgMagazines
 		displayNameShort = "$STR_205_HuntIR_DisplayNameShort";
 		descriptionShort = "";
 		picture = "\3AS\3AS_Weapons\Data\UI\3as_nade_proto.paa";
-		MASS_EMP
+		MASS_EXP
         author = "205th Recon Battalion";
 	};
 	class ACE_40mm_Pike;
@@ -536,7 +538,7 @@ class CfgMagazines
 		displayNameShort = "$STR_205_Pike_DisplayNameShort";
 		descriptionShort = "Wirkung: Explosiv (Laser Gelenkt)<br />Anzahl: 1";
 		picture = "\3AS\3AS_Weapons\Data\UI\3as_nade_proto.paa";
-		MASS_EMP
+		MASS_EXP
         author = "205th Recon Battalion";
 	};
 };

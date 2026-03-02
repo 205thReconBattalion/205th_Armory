@@ -248,9 +248,17 @@
             <English>[205] Scatter Energy Pack (20 Ch.)</English>
             <German>[205] Streu Energiepaket (20 Lad.)</German>
         </Key>
+        <Key ID="STR_205_Flechette_Energy_Pack_DisplayName">
+            <English>[205] Flechette Energy Pack (3 Ch.)</English>
+            <German>[205] Flechette Energiepaket (3 Lad.)</German>
+        </Key>
         <Key ID="STR_205_PLX1_AA_MISSILE_DisplayName">
             <English>[205] PLX-1 Missile (AA)</English>
             <German>[205] PLX-1 Rakete (AA)</German>
+        </Key>
+        <Key ID="STR_205_PLX1_AT_MISSILE_DisplayName">
+            <English>[205] PLX-1 Missile (AT)</English>
+            <German>[205] PLX-1 Rakete (AT)</German>
         </Key>
         <Key ID="STR_205_RPS6_ROCKET_DisplayName">
             <English>[205] RPS-6 Rocket</English>
@@ -309,9 +317,17 @@
             <English>Laser (Scat.)</English>
             <German>Laser (Streu.)</German>
         </Key>
+        <Key ID="STR_205_Flechette_Energy_Pack_DisplayNameShort">
+            <English>Laser (Flechette)</English>
+            <German>Laser (Flechette)</German>
+        </Key>
         <Key ID="STR_205_PLX1_AA_MISSILE_DisplayNameShort">
             <English>Missile (AA)</English>
             <German>Rakete (AA)</German>
+        </Key>
+        <Key ID="STR_205_PLX1_AT_MISSILE_DisplayNameShort">
+            <English>Missile (AT)</English>
+            <German>Rakete (AT)</German>
         </Key>
         <Key ID="STR_205_RPS6_ROCKET_DisplayNameShort">
             <English>Rocket</English>
@@ -390,9 +406,17 @@
             <English>Scatter energy pack used by the DP-23</English>
             <German>Streu Energiepaket genutzt von der DP-23</German>
         </Key>
+        <Key ID="STR_205_Flechette_Energy_Pack_DescriptionShort">
+            <English>Flechette energy pack used by the DP-23</English>
+            <German>Flechette Energiepaket genutzt von der DP-23</German>
+        </Key>
         <Key ID="STR_205_PLX1_AA_MISSILE_DescriptionShort">
             <English>Anti-Air missile used by the PLX-1 rocket launcher</English>
             <German>Luftabwehr-Rakete genutzt von dem PLX-1 Raketenwerfer</German>
+        </Key>
+        <Key ID="STR_205_PLX1_AT_MISSILE_DescriptionShort">
+            <English>Anti-Tank missile used by the PLX-1 rocket launcher</English>
+            <German>Panzerabwehr-Rakete genutzt von dem PLX-1 Raketenwerfer</German>
         </Key>
         <Key ID="STR_205_RPS6_ROCKET_DescriptionShort">
             <English>Anti-Tank rocket used by the RPS-6 rocket launcher</English>
