@@ -24,8 +24,8 @@ class cfgPatches
 
 class cfgWeapons
 {
-    class RB205_H_trooper;
-    class RB205_H_irwan: RB205_H_trooper
+    class RB205_H_corporal;
+    class RB205_H_irwan: RB205_H_corporal
     {
         displayName = "[205] Clone Trooper Helmet [5884]";
         hiddenSelectionsTextures[] =
@@ -36,11 +36,11 @@ class cfgWeapons
     };
 
     class RB205_U_base;
-    class RB205_U_trooper: RB205_U_base
+    class RB205_U_corporal: RB205_U_base
     {
         class ItemInfo;
     };
-    class RB205_U_irwan: RB205_U_trooper
+    class RB205_U_irwan: RB205_U_corporal
     {
         displayName = "[205] Clone Trooper Armor [5884]";
         class ItemInfo : ItemInfo
@@ -52,10 +52,10 @@ class cfgWeapons
 
 class cfgVehicles
 {
-    class RB205_clone_trooper;
-    class RB205_clone_irwan: RB205_clone_trooper
+    class RB205_clone_corporal;
+    class RB205_clone_irwan: RB205_clone_corporal
     {
-        displayName = "CT-5884 Irwan";
+        displayName = "CP-5884 Irwan";
         uniformClass = "RB205_U_irwan";
         editorSubCategory = "RB205_lore";
         hiddenSelectionsTextures[] =
@@ -64,6 +64,6 @@ class cfgVehicles
             "RB205_custom\5884_irwan\data\U_irwan_lower.paa",
             "RB205_main\data\default\U_undersuit_co.paa"
         };
-        LINKED_ITEMS("RB205_H_irwan", "RB205_V_ct", "RB205_NV_chip")
+        LINKED_ITEMS("RB205_H_irwan", "RB205_V_cp", "RB205_NV_chip")
     };
 };
