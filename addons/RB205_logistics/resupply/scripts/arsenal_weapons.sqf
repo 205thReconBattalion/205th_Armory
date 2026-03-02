@@ -9,7 +9,6 @@ params ["_this"];
 		"RB205_Valken38X","RB205_optic_VK38X","RB205_bipod_VK38X",
 		"RB205_DC15X","RB205_optic_DC15X","RB205_muzzle_DC15X","RB205_bipod_DC15X",
 		"RB205_WestarM5","RB205_optic_WM5",
-		"RB205_DC17M",
 		"RB205_Z6",
 		"RB205_DP23",
 		"RB205_BTX42",
@@ -17,19 +16,19 @@ params ["_this"];
 		"RB205_MPL57",
 
 		"RB205_RPS6","RB205_RPS6_disposable",
-		"RB205_PLX1_F",
+		"RB205_PLX1",
 		"RB205_Chaingun",
 
 		"RB205_DC17","RB205_DC17_Dual","RB205_DC17_alt",
 		
-		"RB205_Standard_Energy_Pack","RB205_Heavy_Energy_Pack","RB205_Overcharged_Energy_Pack","RB205_Experimental_Energy_Pack","RB205_DC17M_Blaster_Mag","RB205_DC17M_Sniper_Mag","RB205_DC17M_AT_Mag","RB205_RapidFire_Energy_Pack","RB205_Scatter_Energy_Pack","RB205_BTX42_mag","RB205_T7ION_mag","JLTS_stun_mag_short","JLTS_stun_mag_long",
-		"RB205_MAG_RPS6","RB205_MK39_AA","RB205_chaingun_mag",
+		"RB205_Standard_Energy_Pack","RB205_Heavy_Energy_Pack","RB205_Overcharged_Energy_Pack","RB205_Experimental_Energy_Pack","RB205_DC17M_Blaster_Mag","RB205_DC17M_Sniper_Mag","RB205_DC17M_AT_Mag","RB205_RapidFire_Energy_Pack","RB205_Scatter_Energy_Pack","RB205_Flechette_Energy_Pack","RB205_BTX42_mag","RB205_T7ION_mag","3AS_5Rnd_Stun_Mag",
+		"RB205_MAG_RPS6","RB205_PLX1_missile_AA","RB205_PLX1_missile_AT","RB205_chaingun_mag",
 		"RB205_Compact_Energy_Pack",		
 		"RB205_ugl_he","RB205_ugl_smoke_white","RB205_ugl_smoke_red","RB205_ugl_smoke_green","RB205_ugl_smoke_blue","RB205_ugl_smoke_yellow","RB205_ugl_smoke_orange","RB205_ugl_smoke_purple","RB205_ugl_flare_white","RB205_ugl_flare_red","RB205_ugl_flare_green","RB205_ugl_flare_ir",
 		"RB205_ugl_he_3rnd","RB205_ugl_smoke_white_3rnd","RB205_ugl_smoke_red_3rnd","RB205_ugl_smoke_green_3rnd","RB205_ugl_smoke_blue_3rnd","RB205_ugl_smoke_yellow_3rnd","RB205_ugl_smoke_orange_3rnd","RB205_ugl_smoke_purple_3rnd","RB205_ugl_flare_white_3rnd","RB205_ugl_flare_red_3rnd","RB205_ugl_flare_green_3rnd","RB205_ugl_flare_ir_3rnd",
 		"RB205_ugl_he_6rnd","RB205_ugl_huntir","RB205_ugl_pike",
 
-		"RB205_datapad","3AS_FusionCutter_F","P_StunBaton",
+		"RB205_datapad","3AS_FusionCutter_F",
 		"3AS_Datapad_Base_Mag","3AS_FusionCutter_Magazine","3AS_FusionCutter_Dewreck_Magazine",
 		
 		"RB205_thermalDet","RB205_impactGren","RB205_sonicDet","RB205_droidPopper","RB205_smokeWhite","RB205_smokeBlue","RB205_smokeGreen","RB205_smokeRed","RB205_smokeYellow","RB205_smokePurple","RB205_smokeOrange","RB205_lumaWhite","RB205_lumaGreen","RB205_lumaRed","RB205_lumaYellow",
