@@ -66,6 +66,7 @@ class XtdGearModels
                     "5567",
                     "5577",
                     "5884",
+                    "6066",
                     "6666",
                     "7005",
                     "7300",
@@ -190,6 +191,10 @@ class XtdGearModels
                 class 5884
                 {
                     description = "Irwan";
+                };
+                class 6066
+                {
+                    description = "Umbra";
                 };
                 class 6666
                 {
