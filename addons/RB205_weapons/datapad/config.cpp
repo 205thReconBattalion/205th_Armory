@@ -54,22 +54,19 @@ class CfgVehicles
 	class Man;
 	class CAManBase: Man
 	{
-		class UserActions
+		class ACE_Actions
 		{
-			class RB205_scan_datapad
+			class ACE_MainActions
 			{
-				displayName = "$STR_JLTS_C_names_UAScanPolice";
-				displayNameDefault = "";
-				priority = 0;
-				radius = 3;
-				position = "camera";
-				showWindow = 1;
-				hideOnUse = 1;
-				onlyForPlayer = 1;
-				shortcut = "";
-				condition = "this != JLTS_playerControlled && currentWeapon JLTS_playerControlled == 'RB205_datapad'";
-				statement = "[this] call JLTS_fnc_contraband_openPoliceScanner";
+				class RB205_scan_datapad
+				{
+					displayName = "$STR_JLTS_C_names_UAScanPolice";
+					condition = "currentWeapon _player == 'RB205_datapad'";
+					exceptions[] = {};
+					statement = "[_target] call JLTS_fnc_contraband_openPoliceScanner";
+					icon = "\3AS\3AS_Weapons\Roleplay\data\UI\3as_datapad.paa";
+				};
 			};
-		};
+        };
 	};
 };
