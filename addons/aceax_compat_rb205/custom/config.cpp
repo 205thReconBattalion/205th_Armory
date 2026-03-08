@@ -35,6 +35,7 @@ class XtdGearModels
             class id
             {
                 label = "ID";
+                alwaysSelectable = 1;
                 values[] =
 				{
                     "0113",

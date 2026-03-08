@@ -37,6 +37,7 @@ class XtdGearModels
             class type
             {
                 label = "Type";
+                alwaysSelectable = 1;
                 values[] =
 				{
                     "dft",
@@ -92,6 +93,7 @@ class XtdGearModels
             class camo
             {
                 label = "Camouflage";
+                alwaysSelectable = 1;
                 values[] =
 				{
                     "default",
@@ -134,6 +136,7 @@ class XtdGearModels
             class squad
             {
                 label = "Squad";
+                alwaysSelectable = 1;
                 values[] =
 				{
                     "none",
@@ -233,6 +236,7 @@ class XtdGearModels
             class type
             {
                 label = "Type";
+                alwaysSelectable = 1;
                 values[] =
 				{
                     "dft",
@@ -288,6 +292,7 @@ class XtdGearModels
             class camo
             {
                 label = "Camouflage";
+                alwaysSelectable = 1;
                 values[] =
 				{
                     "default",
@@ -350,6 +355,7 @@ class XtdGearModels
             class color
             {
                 label = "Color";
+                alwaysSelectable = 1;
                 values[] =
 				{
                     "white",
@@ -380,6 +386,7 @@ class XtdGearModels
             class variant
             {
                 label = "Variant";
+                alwaysSelectable = 1;
                 values[] =
 				{
                     "default",
