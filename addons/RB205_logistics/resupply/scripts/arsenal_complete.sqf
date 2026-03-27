@@ -171,7 +171,7 @@ params ["_this"];
 		//EXTERNAL MODS
 		"WBK_HeadLampItem_Narrow","WBK_HandFlashlight",
 		"jen_jetpacks_example_refuelItemMedium",
-		"RB205_accessCard_gar",	"RB205_accessCard_gar_officer","RB205_accessCard_prison",
+		"tfd_pager1","tfd_ls1",
 		"RB205_ballisticShield_item",
 		"iedd_item_notebook",
 
