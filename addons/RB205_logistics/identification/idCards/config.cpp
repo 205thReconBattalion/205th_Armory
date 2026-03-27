@@ -1,6 +1,6 @@
 class cfgPatches
 {
-    class RB205_logistics_idCards
+    class RB205_logistics_identification_idCards
 	{
 		requiredAddons[]=
 		{
