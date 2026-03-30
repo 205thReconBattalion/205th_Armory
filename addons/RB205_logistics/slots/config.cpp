@@ -56,7 +56,7 @@ class cfgVehicles
 	SLOT(RB205_clone_plt_lanceCorporal_banshee,		"(3-1-C) Clone Lance Corporal")
 	SLOT(RB205_clone_plt_trooper_banshee,			"(3-1-D) Clone Trooper")
 
-	//NAVY -> empire
+	//NAVY (4-X) -> RB205_empire
 
 	SLOT(RB205_clone_recruit,						"(5-0) Clone Recruit")
 	

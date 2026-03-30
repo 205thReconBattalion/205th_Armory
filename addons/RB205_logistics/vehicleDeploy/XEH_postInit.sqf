@@ -88,7 +88,6 @@ private _spawnscript_atrt = {
 	private _unit = nil;
 	_unit = "RB205_atrt" createUnit [_spawnPos, createGroup west, "_unit = this"];
 	_unit setDir _vehDir;
-	_unit allowDamage false;
 
 	playSound3D ["A3\Sounds_F\structures\doors\ServoRamp\ServoRampSound_1.wss", _target];
 

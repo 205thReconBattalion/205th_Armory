@@ -2,6 +2,9 @@ params ["_this"];
 
 [ _this,
 	[
+		"RB205_datapad","3AS_FusionCutter_F",
+		"3AS_Datapad_Base_Mag","3AS_FusionCutter_Magazine","3AS_FusionCutter_Dewreck_Magazine",
+		
 		"RB205_diving_inv",
 		"RB205_NV","RB205_NV_marksman","RB205_NV_rangefinder","RB205_NV_arf_antenna","RB205_NV_chip","RB205_rebreather",
 		"RB205_binocular","RB205_binocular_arf",
@@ -9,7 +12,7 @@ params ["_this"];
 
 		"WBK_HeadLampItem_Narrow","WBK_HandFlashlight",
 		"jen_jetpacks_example_refuelItemMedium",
-		"RB205_accessCard_gar",	"RB205_accessCard_gar_officer","RB205_accessCard_prison",
+		"tfd_pager1","tfd_ls1",
 		"RB205_ballisticShield_item",
 
 		"ItemMap",

@@ -34,6 +34,7 @@ class XtdGearModels
             class type
             {
                 label = "Type";
+                alwaysSelectable = 1;
                 values[] =
 				{
                     "dft",
@@ -89,6 +90,7 @@ class XtdGearModels
             class rank
             {
                 label = "Rank";
+                alwaysSelectable = 1;
                 values[] =
 				{
                     "cr",
@@ -158,6 +160,7 @@ class XtdGearModels
             class role
             {
                 label = "Combat Role";
+                alwaysSelectable = 1;
                 values[] =
 				{
                     "rifleman",
@@ -228,6 +231,7 @@ class XtdGearModels
             class variant
             {
                 label = "Variant";
+                alwaysSelectable = 1;
                 values[] =
 				{
                     "dft",
@@ -273,6 +277,7 @@ class XtdGearModels
             class type
             {
                 label = "Type";
+                alwaysSelectable = 1;
                 values[] =
 				{
                     "dft",
@@ -328,6 +333,7 @@ class XtdGearModels
             class role
             {
                 label = "Combat Role";
+                alwaysSelectable = 1;
                 values[] =
 				{
                     "rifleman",

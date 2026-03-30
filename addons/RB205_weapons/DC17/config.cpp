@@ -6,7 +6,6 @@ class cfgPatches
 		{
 			"RB205_weapons",
 			"3AS_Weapons_Republic_DC17S",
-			"SWLW_clones_pistols_DC17",
 			"JLTS_weapons_DC17SA"
 		};
 		requiredVersion = 1.0;
@@ -16,7 +15,6 @@ class cfgPatches
 		{
 			"RB205_DC17",
 			"RB205_DC17_Dual",
-			//"RB205_DC17_alt",
 			"RB205_DC17_shield"
 		};
 	};
@@ -32,7 +30,6 @@ class UnderBarrelSlot;
 
 class CfgWeapons
 {
-	class JLTS_stun_muzzle;
 	class 3AS_DC17S_Base_F;
 	class 3AS_DC17S_F: 3AS_DC17S_Base_F
 	{
@@ -81,12 +78,6 @@ class CfgWeapons
 			};
 			dispersion = DISPERSION_DC17;
 		};
-		muzzles[] =
-		{
-			"this",
-			"Stun"
-		};
-		class Stun: JLTS_stun_muzzle {};
 		JLTS_canHaveShield = 1;
 		JLTS_shieldedWeapon = "RB205_DC17_shield";
 		JLTS_hasElectronics = 1;
@@ -102,6 +93,7 @@ class CfgWeapons
 		displayName = "$STR_205_DC17_DUAL_DisplayName";
 		displayNameShort = "$STR_205_DC17_DisplayNameShort";
 		descriptionShort = "Blasterpistolen der GAR<br />Freigegeben für: ARC, CS+";
+		picture = "\3AS\3AS_Weapons\Republic\DC17S\Data\UI\3as_dc17s_d.paa";
 		cursor = "RB205_CH_sidearm_dual";
 		mass = MASS_WP_PISTOL;
 		model = "\3AS\3AS_Weapons\Republic\DC17S\3AS_DC17S_Dual_F.p3d";
@@ -117,67 +109,6 @@ class CfgWeapons
 		JLTS_friedItem = "RB205_DC17_Dual_fried";
 	};
 	FRIED_WEAPON_SECONDARY(RB205_DC17_Dual,"\RB205_weapons\data\ui\dc17_dual_fried.paa")
-
-	/*class Pistol_Base_F;
-	class SWLW_DC17: Pistol_Base_F
-	{
-		class Single;
-	};
-	class RB205_DC17_alt: SWLW_DC17
-	{
-		baseWeapon = "RB205_DC17_alt";
-		author = "205th Recon Battalion";
-		displayName = "$STR_205_DC17_ALT_DisplayName";
-		displayNameShort = "$STR_205_DC17_DisplayNameShort";
-		descriptionShort = "Blasterpistole der GAR<br />Freigegeben für: Alle";
-		picture = "\3AS\3AS_Weapons\Republic\DC17S\Data\UI\3as_dc17s.paa";
-		cursor = "RB205_CH_sidearm";
-		mass = MASS_WP_PISTOL;
-		magazines[] =
-		{
-			"RB205_Compact_Energy_Pack"
-		};
-		magazineWell[] = {};
-		fireLightDiffuse[] = {0,0,1};
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			class CowsSlot: CowsSlot
-			{
-				compatibleItems[] = {};
-			};
-			class PointerSlot: PointerSlot
-			{
-				compatibleItems[] = {};
-			};
-			class MuzzleSlot: MuzzleSlot
-			{
-				compatibleItems[] = {};
-			};
-		};
-		class Single: Single
-		{
-			class BaseSoundModeType;
-			class StandardSound: BaseSoundModeType
-			{
-				soundSetShot[] = { "RB205_DC17_Shot_SoundSet" };
-			};
-			class SilencedSound: BaseSoundModeType
-			{
-				soundSetShot[] = { "RB205_DC17_Shot_SoundSet" };
-			};
-			dispersion = 0;
-		};
-		muzzles[] =
-		{
-			"this",
-			"Stun"
-		};
-		class Stun: JLTS_stun_muzzle {};
-		JLTS_hasElectronics = 1;
-		JLTS_hasEMPProtection = 0;
-		JLTS_friedItem = "RB205_DC17_alt_fried";
-	};
-	FRIED_WEAPON_SECONDARY(RB205_DC17_alt,"\RB205_weapons\data\ui\dc17_fried.paa")*/
 
 	class RB205_DC17_shield: RB205_DC17
 	{
