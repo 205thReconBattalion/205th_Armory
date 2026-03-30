@@ -519,6 +519,7 @@ class CfgMagazines
 		displayName = "$STR_205_UGL6_HE_DisplayName";
 		descriptionShort = "Wirkung: Explosiv<br />Anzahl: 6";
 		count = 6;
+		MASS_EXP
 	};
 
 	class ACE_HuntIR_M203;
