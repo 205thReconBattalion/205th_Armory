@@ -4,7 +4,8 @@ class cfgPatches
 	{
 		requiredAddons[] =
 		{
-			"ls_weapons_explosives"
+			"ls_weapons_explosives",
+			"3AS_Equipment"
 		};
 		requiredVersion = 1.0;
         author = "205th Recon Battalion";
@@ -22,12 +23,14 @@ class cfgPatches
 		magazines[] =
 		{
 			"RB205_explosive_detpack",
-			"RB205_explosive_demoCharge"
+			"RB205_explosive_demoCharge",
+			"RB205_mine_at"
 		};
 		ammo[] =
 		{
 			"RB205_explosive_detpack_ammo",
-			"RB205_explosive_demoCharge_ammo"
+			"RB205_explosive_demoCharge_ammo",
+			"RB205_mine_at_ammo"
 		};
 	};
 };
@@ -63,6 +66,18 @@ class CfgMagazines
 		picture = "\ls\core\addons\weapons_explosives\data\ui\demoCharge_ui_ca.paa";
 		ammo = "RB205_explosive_demoCharge_ammo";
 		ace_explosives_setupObject = "RB205_explosive_demoCharge_place";
+		mass = 20;
+	};
+	class HX_AT_Mine_Mag;
+	class RB205_mine_at: HX_AT_Mine_Mag
+	{
+		scope = 2;
+		author = "205th Recon Battalion";
+		displayName = "[205] Pressure Mine (AT)";
+		descriptionShort = "Wirkung: Explosiv (Anti-Tank)";
+		picture = "\RB205_weapons\explosives\data\mine.paa";
+		ammo = "RB205_mine_at_ammo";
+		ace_explosives_SetupObject = "3AS_HX_AT_Mine_Placeable";
 		mass = 20;
 	};
 };
@@ -127,6 +142,44 @@ class CfgAmmo
 		indirectHit = 4500;
 		indirectHitRange = 10;
 		defaultMagazine = "RB205_explosive_demoCharge";
+	};
+	class MineBase;
+	class RB205_mine_at_ammo: MineBase
+	{
+		author = "205th Recon Battalion";
+		defaultMagazine = "RB205_mine_at";
+		hit = 5000;
+		indirectHit = 2000;
+		indirectHitRange = 3;
+		//mineTrigger = "TankTriggerMagnetic";
+		mineTrigger = "RangeTrigger";
+		model = "3AS\3AS_Equipment\model\hxmine_armed.p3d";
+		mineModelDisabled = "3AS\3AS_Equipment\model\hxmine_safe.p3d";
+		explosionEffects = "ATMineExplosion";
+		CraterEffects = "ATMineCrater";
+		whistleDist = 8;
+		mineInconspicuousness = 40;
+		soundHit1[] =
+		{
+			"A3\Sounds_F\arsenal\explosives\mines\AT_landmine_explosion_01",
+			3.1622777,
+			1,
+			2000
+		};
+		soundHit2[] =
+		{
+			"A3\Sounds_F\arsenal\explosives\mines\AT_landmine_explosion_02",
+			3.1622777,
+			1,
+			2000
+		};
+		multiSoundHit[] =
+		{
+			"soundHit1",
+			0.5,
+			"soundHit2",
+			0.5
+		};
 	};
 };
 
@@ -197,6 +250,10 @@ class CfgVehicles
 		model = "\ls\core\addons\weapons_explosives\demoCharge\ls_explosive_demoCharge_defused.p3d";
 		ace_offset[] = {0,0,0};
 	};
+	class RB205_mine_at_place: ACE_Explosives_Place
+	{
+		model = "3AS\3AS_Equipment\model\hxmine_safe.p3d";
+	};
 };
 
 class CfgWeapons
@@ -207,7 +264,8 @@ class CfgWeapons
 		muzzles[]+=
 		{
 			"RB205_explosive_detpack_muzzle",
-			"RB205_explosive_demoCharge_muzzle"
+			"RB205_explosive_demoCharge_muzzle",
+			"RB205_mine_at_muzzle"
 		};
 		class PutMuzzle;
 		class RB205_explosive_muzzle_base: PutMuzzle
@@ -232,6 +290,15 @@ class CfgWeapons
 			{
 				"RB205_explosive_demoCharge"
 			};
+		};
+		class RB205_mine_at_muzzle: RB205_explosive_muzzle_base
+		{
+			displayName = "Pressure Mine (AT)";
+			magazines[]=
+			{
+				"RB205_mine_at"
+			};
+			picture = "\A3\Weapons_F\Data\clear_empty.paa";
 		};
 	};
 };
