@@ -35,6 +35,13 @@ params ["_this"];
 		"ACE_Chemlight_White","Chemlight_blue","Chemlight_green","Chemlight_red","ACE_Chemlight_Orange","Chemlight_yellow","ACE_Chemlight_HiWhite","ACE_Chemlight_HiBlue","ACE_Chemlight_HiGreen","ACE_Chemlight_HiRed","ACE_Chemlight_HiYellow","ACE_Chemlight_UltraHiOrange","ACE_Chemlight_IR",
 		"ShieldGrenade_Mag","ShieldGrenadePersonal_Mag","SquadShieldMagazine",
 		"GrenadeInsiendPSENG",
-		"Aux212_7PrG_Proton_Charge","Aux212_X10_Thermal_Disruptor","Aux212_X3_Thermal_Disruptor","3AS_DetPack","EC01_RemoteMagazine","HX_AT_Mine_Mag","RTX_RemoteMagazine","APERSMineDispenser_Mag","SWLW_clones_spec_breach_mag","ls_mag_breach_remoteCharge","C7_Remote_Mag","C12_Remote_Mag","ls_mag_caltrops_mine","ls_mag_caltrops_dispenser","SWLW_clones_spec_demo_mag","SWLW_DetPack_remote_mag","ls_mag_detPack_remoteCharge","JMSLLTE_Detonitecharge_imp_Mag","JMSLLTE_Detonitecharge_reb_Mag","ls_mag_demo_remoteCharge","IEDLandBig_Remote_Mag","IEDUrbanBig_Remote_Mag","DemoCharge_Remote_Mag","ATMine_Range_Mag","UNSCMine_Range_Mag","M168_Remote_Mag","SatchelCharge_Remote_Mag","ClaymoreDirectionalMine_Remote_Mag","APERSBoundingMine_Range_Mag","M41_IED_C_Remote_Mag","M41_IED_Remote_Mag","M41_IED_B_Remote_Mag","SLAMDirectionalMine_Wire_Mag","APERSTripMine_Wire_Mag","212th_MPC_MK1_F","IEDLandSmall_Remote_Mag","IEDUrbanSmall_Remote_Mag","TrainingMine_Mag","ACE_FlareTripMine_Mag","ACE_FlareTripMine_Mag_Green","ACE_FlareTripMine_Mag_Red","APERSMine_Range_Mag","ACE_APERSMine_ToePopper_Mag"
+
+		"DemoCharge_Remote_Mag","SatchelCharge_Remote_Mag","ClaymoreDirectionalMine_Remote_Mag","SLAMDirectionalMine_Wire_Mag",
+		"APERSMine_Range_Mag","ACE_APERSMine_ToePopper_Mag","APERSMineDispenser_Mag","APERSBoundingMine_Range_Mag","ATMine_Range_Mag","TrainingMine_Mag",
+		"APERSTripMine_Wire_Mag","ACE_FlareTripMine_Mag","ACE_FlareTripMine_Mag_Red","ACE_FlareTripMine_Mag_Green",
+		
+		"ls_explosive_breachCharge_magazine","RB205_explosive_detpack","RB205_explosive_demoCharge","RB205_mine_at",
+		"APERSMine_Range_Mag","ACE_APERSMine_ToePopper_Mag","APERSMineDispenser_Mag","APERSBoundingMine_Range_Mag","TrainingMine_Mag",
+		"APERSTripMine_Wire_Mag","ACE_FlareTripMine_Mag","ACE_FlareTripMine_Mag_Red","ACE_FlareTripMine_Mag_Green"
 	]
 ] call ace_arsenal_fnc_initBox;
