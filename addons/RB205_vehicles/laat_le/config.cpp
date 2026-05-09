@@ -37,6 +37,7 @@ class cfgVehicles
 		side = 1;
 		faction = "RB205";
 		editorSubcategory = "RB205_veh_air";
+		editorPreview = "";
 		#include "\RB205_vehicles\laat_le\laat_le_textures.hpp"
 		#include "\RB205_vehicles\laat\laat_sounds.hpp"
 		#include "\RB205_vehicles\sounds_aircraft_alarm.hpp"
