@@ -16,6 +16,38 @@ class cfgPatches
 	};
 };
 
+#include "UIElements\idcardInteractive.hpp"
+
+
+class CfgFunctions
+{
+	class RB205_IdCards
+	{
+		class idcards
+		{
+			file = "\RB205_logistics\identification\idCards\functions";
+			class gatherIdCardInfo{};
+			class showIDCard{};
+		};
+	};
+};
+
+class Extended_PreInit_EventHandlers
+{
+	class RB205_IdCards_SettingsPreInit
+	{
+		init = "call compile preprocessFileLineNumbers '\RB205_logistics\identification\idCards\functions\Settings_PreInit.sqf'";
+	};
+};
+
+class Extended_PostInit_EventHandlers
+{
+	class RB205_IdCards_PostInit
+	{
+		init = "call compile preprocessFileLineNumbers '\RB205_logistics\identification\idCards\functions\XEH_postInit.sqf'";
+	};
+};
+
 class cfgWeapons
 {
 	//class JLTS_ids_gar_army;
@@ -24,6 +56,12 @@ class cfgWeapons
 	class RB205_ids_rep_diplomat: JLTS_ids_gar_navy
 	{
 		displayName = "(ID) Republic Diplomat ID card";
+		hiddenSelectionsTextures[] = {"\MRC\JLTS\contraband\IDs\data\id_card_gar_navy_co.paa"};
+		picture = "\MRC\JLTS\contraband\IDs\data\ui\id_card_gar_navy_ui_ca.paa";
+	};
+	class RB205_ids_cis_diplomat: JLTS_ids_gar_navy
+	{
+		displayName = "(ID) Confederacy of Independent Systems Diplomat ID card";
 		hiddenSelectionsTextures[] = {"\MRC\JLTS\contraband\IDs\data\id_card_gar_navy_co.paa"};
 		picture = "\MRC\JLTS\contraband\IDs\data\ui\id_card_gar_navy_ui_ca.paa";
 	};
@@ -36,13 +74,13 @@ class cfgWeapons
 		hiddenSelectionsTextures[] = {"\MRC\JLTS\contraband\IDs\data\id_card_rep_civ_co.paa"};
 		picture = "\MRC\JLTS\contraband\IDs\data\ui\id_card_rep_civ_ui_ca.paa";
 	};
+
 	class RB205_ids_neutral_civ: JLTS_ids_rep_civ
 	{
-		displayName = "(ID) civilian ID card";
+		displayName = "(ID) Independent Civilian ID card";
 		hiddenSelectionsTextures[] = {"\MRC\JLTS\contraband\IDs\data\id_card_rep_civ_co.paa"};
 		picture = "\MRC\JLTS\contraband\IDs\data\ui\id_card_rep_civ_ui_ca.paa";
 	};
-
 	/*
 	GAR:
 	- Army
