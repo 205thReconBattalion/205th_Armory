@@ -1,14 +1,6 @@
 class cfgWeapons
 {
-	class CannonCore;
-	class 3AS_BARC_repeater: CannonCore
-	{
-		class manual;
-		class close;
-		class short;
-		class medium;
-		class far;
-	};
+	class 3AS_BARC_repeater;
 	class RB205_barc_repeater: 3AS_BARC_repeater
 	{
 		displayName = "BARC Repeater";
@@ -16,55 +8,23 @@ class cfgWeapons
 		{
 			"RB205_barc_mag"
 		};
-		/*class manual: manual
-		{
-			class StandardSound
-			{
-				begin1[] = {"\ls\core\addons\sounds\vehicles\barc\shot.wss",1.12202,1,1200};
-				soundBegin[] = {"begin1",1};
-			};
-		};
-		class close: close
-		{
-			class StandardSound
-			{
-				begin1[] = {"\ls\core\addons\sounds\vehicles\barc\shot.wss",1.12202,1,1200};
-				soundBegin[] = {"begin1",1};
-			};
-		};
-		class short: short
-		{
-			class StandardSound
-			{
-				begin1[] = {"\ls\core\addons\sounds\vehicles\barc\shot.wss",1.12202,1,1200};
-				soundBegin[] = {"begin1",1};
-			};
-		};
-		class medium: medium
-		{
-			class StandardSound
-			{
-				begin1[] = {"\ls\core\addons\sounds\vehicles\barc\shot.wss",1.12202,1,1200};
-				soundBegin[] = {"begin1",1};
-			};
-		};
-		class far: far
-		{
-			class StandardSound
-			{
-				begin1[] = {"\ls\core\addons\sounds\vehicles\barc\shot.wss",1.12202,1,1200};
-				soundBegin[] = {"begin1",1};
-			};
-		};*/
 	};
-
-	class ls_speeder_AP;
-	class RB205_barc_repeater_he: ls_speeder_AP
+	class 3AS_BARC_SideCar_repeater;
+	class RB205_barc_repeater_sidecar: 3AS_BARC_SideCar_repeater
 	{
-		displayName = "BARC Repeater (HE)";
+		displayName = "BARC Repeater (Sidecar)";
 		magazines[] =
 		{
-			"RB205_barc_he_mag"
+			"RB205_barc_mag"
+		};
+	};
+	class 3AS_Defoliator_Heavy_Flamer_Weapon;
+	class RB205_barc_flamer_sidecar: 3AS_Defoliator_Heavy_Flamer_Weapon
+	{
+		displayName = "BARC Flamethrower (Sidecar)";
+		magazines[] =
+		{
+			"RB205_barc_flamer_mag"
 		};
 	};
 };
@@ -76,12 +36,11 @@ class cfgMagazines
 		ammo = "RB205_barc_ammo";
 		count = 1000;
 	};
-
-	class ls_50Rnd_speederHE_belt;
-	class RB205_barc_he_mag: ls_50Rnd_speederHE_belt
+	class 3AS_1000Rnd_HeavyFlamer;
+	class RB205_barc_flamer_mag: 3AS_1000Rnd_HeavyFlamer
 	{
-		ammo = "RB205_barc_he_ammo";
-		count = 75;
+		ammo = "3AS_HeavyFlamer_Round";
+		count = 1000;
 	};
 };
 class cfgAmmo
@@ -100,14 +59,5 @@ class cfgAmmo
 			frequency = 0;
 			power = 0;
 		};
-	};
-
-	class ls_speeder_HE;
-	class RB205_barc_he_ammo: ls_speeder_HE
-	{
-		hit = 20;
-		indirectHit = 10;
-		indirectHitRange = 3;
-		caliber = 2;
 	};
 };

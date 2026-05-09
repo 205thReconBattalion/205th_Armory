@@ -4,8 +4,6 @@ class CfgPatches
 	{
 		requiredAddons[]=
 		{
-			"RB205_vehicles_barc",
-			"RB205_vehicles_atrt",
 			"RB205_vehicles_laat",
 			"RB205_vehicles_laat_c",
 			"RB205_vehicles_atte",
