@@ -11,6 +11,7 @@ class cfgPatches
         weapons[] =
         {
             "RB205_H_gentleman",
+            "RB205_H_gentleman_pilot",
             "RB205_U_gentleman",
             "RB205_V_gentleman"
         };
@@ -26,7 +27,7 @@ class cfgPatches
 class cfgWeapons
 {
     class RB205_H_arc_trooper;
-    class RB205_H_gentleman : RB205_H_arc_trooper
+    class RB205_H_gentleman: RB205_H_arc_trooper
     {
         displayName = "[205] Clone ARC Trooper Helmet [2441]";
         hiddenSelectionsTextures[] =
@@ -36,13 +37,23 @@ class cfgWeapons
             "RB205_custom\2441_gentleman\data\H_gentleman.paa"
         };
     };
+    class RB205_H_plt_trooper;
+    class RB205_H_gentleman_pilot: RB205_H_plt_trooper
+    {
+        displayName = "[205] Clone Pilot Trooper Helmet [2441]";
+        hiddenSelectionsTextures[] =
+        {
+            "RB205_custom\2441_gentleman\data\H_gentleman_pilot.paa",
+            "RB205_main\data\pilot\visor_plt_co.paa"
+        };
+    };
 
     class RB205_U_base;
     class RB205_U_arc_trooper: RB205_U_base
     {
         class ItemInfo;
     };
-    class RB205_U_gentleman : RB205_U_arc_trooper
+    class RB205_U_gentleman: RB205_U_arc_trooper
     {
         displayName = "[205] Clone ARC Trooper Armor [2441]";
         class ItemInfo : ItemInfo
@@ -52,7 +63,7 @@ class cfgWeapons
     };
 
     class RB205_V_arc;
-    class RB205_V_gentleman : RB205_V_arc
+    class RB205_V_gentleman: RB205_V_arc
     {
         displayName = "[205] Clone ARC Trooper Vest [2441]";
         hiddenSelectionsTextures[] =
@@ -66,7 +77,7 @@ class cfgWeapons
 class cfgVehicles
 {
     class RB205_clone_arc_trooper;
-    class RB205_clone_gentleman : RB205_clone_arc_trooper
+    class RB205_clone_gentleman: RB205_clone_arc_trooper
     {
         displayName = "ARC-2441 Gentleman";
         uniformclass = "RB205_U_gentleman";
@@ -77,6 +88,6 @@ class cfgVehicles
             "RB205_custom\2441_gentleman\data\U_gentleman_lower.paa",
             "RB205_main\data\default\U_undersuit_co.paa"
         };
-        LINKED_ITEMS("RB205_H_gentleman", "RB205_V_gentleman", "RB205_NV_rangefinder")
+        LINKED_ITEMS("RB205_H_gentleman","RB205_V_gentleman","RB205_NV_rangefinder")
     };
 };
