@@ -24,25 +24,25 @@ class cfgPatches
 
 class cfgWeapons
 {
-    class RB205_H_plt_trooper;
-    class RB205_H_recker: RB205_H_plt_trooper
+    class RB205_H_ab_trooper;
+    class RB205_H_recker: RB205_H_ab_trooper
     {
-        displayName = "[205] Clone Pilot Trooper Helmet [4562]";
+        displayName = "[205] Clone Airborne Trooper Helmet [4562]";
         hiddenSelectionsTextures[] =
         {
             "RB205_custom\4562_recker\data\H_recker.paa",
-            "RB205_main\data\pilot\visor_plt_co.paa"
+            "RB205_main\data\default\visor_p2_co.paa"
         };
     };
 
     class RB205_U_base;
-    class RB205_U_plt_trooper: RB205_U_base
+    class RB205_U_trooper: RB205_U_base
     {
         class ItemInfo;
     };
-    class RB205_U_recker: RB205_U_plt_trooper
+    class RB205_U_recker: RB205_U_trooper
     {
-        displayName = "[205] Clone Pilot Trooper Armor [4562]";
+        displayName = "[205] Clone Trooper Armor [4562]";
         class ItemInfo: ItemInfo
         {
             uniformClass = RB205_clone_recker;
@@ -52,18 +52,18 @@ class cfgWeapons
 
 class cfgVehicles
 {
-    class RB205_clone_plt_trooper;
-    class RB205_clone_recker: RB205_clone_plt_trooper
+    class RB205_clone_ab_trooper;
+    class RB205_clone_recker: RB205_clone_ab_trooper
     {
         displayName = "CT-4562 Recker";
-        uniformclass = "RB205_U_recker";
+        uniformClass = "RB205_U_recker";
         editorSubCategory = "RB205_lore";
-        hiddenselectionsTextures[] =
+        hiddenSelectionsTextures[] =
         {
             "RB205_custom\4562_recker\data\U_recker_upper.paa",
             "RB205_custom\4562_recker\data\U_recker_lower.paa",
             "RB205_main\data\default\U_undersuit_co.paa"
         };
-        LINKED_ITEMS("RB205_H_recker","RB205_V_ct","RB205_NV_chip")
+        LINKED_ITEMS("RB205_H_recker","RB205_V_ab_ct","RB205_NV_chip")
     };
 };

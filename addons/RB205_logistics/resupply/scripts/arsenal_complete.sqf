@@ -107,7 +107,7 @@ params ["_this"];
 		"RB205_H_tyr","RB205_U_tyr",
 		"RB205_H_smoker","RB205_H_ab_smoker","RB205_U_smoker","RB205_V_smoker",
 		"RB205_H_zeegers","RB205_U_zeegers",
-		"RB205_H_gentleman","RB205_U_gentleman","RB205_V_gentleman",
+		"RB205_H_gentleman","RB205_H_gentleman_pilot","RB205_U_gentleman","RB205_V_gentleman",
 		"RB205_H_scout","RB205_U_scout",
 		"RB205_H_kamaz","RB205_U_kamaz",
 		"RB205_H_ark","RB205_U_ark",
@@ -119,14 +119,17 @@ params ["_this"];
 		"RB205_H_banger","RB205_U_banger",
 		"RB205_H_recker","RB205_U_recker",
 		"RB205_H_crossfire","RB205_U_crossfire",
+		"RB205_H_hit","RB205_U_hit",
 		"RB205_H_putzi","RB205_U_putzi","RB205_V_putzi",
 		"RB205_H_junior","RB205_U_junior","RB205_V_junior",
 		"RB205_H_flank","RB205_U_flank",
 		"RB205_H_scythe","RB205_U_scythe","RB205_V_scythe","RB205_scythe_attachments",
 		"RB205_H_irwan","RB205_U_irwan",
+		"RB205_H_clik","RB205_U_clik",
 		"RB205_H_umbra","RB205_U_umbra",
 		"RB205_H_sixes","RB205_U_sixes",
 		"RB205_H_doc","RB205_H_doc_damaged","RB205_H_arf_doc","RB205_U_doc","RB205_V_doc","RB205_VIS_doc","RB205_VIS_doc_damaged",
+		"RB205_H_halvar","RB205_U_halvar",
 		"RB205_H_norway","RB205_U_norway","RB205_V_norway","RB205_B_norway",
 		"RB205_H_jumper","RB205_U_jumper",
 		"RB205_H_jay","RB205_U_jay","RB205_V_jay",
@@ -152,7 +155,7 @@ params ["_this"];
 		"RB205_emp_V_medic","RB205_emp_V_grenadier","RB205_emp_V_rebreather",
 		"RB205_emp_V_scout_ct","RB205_emp_V_plt_ct","RB205_emp_V_snow_ct","RB205_emp_V_tank_ct","RB205_emp_V_shadow_ct","RB205_emp_V_death","RB205_emp_V_death_grenadier","RB205_emp_V_death_lead","RB205_emp_V_death_lead2","RB205_emp_V_death_lead3",*/
 
-		"RB205_emp_V_navy_ensign","RB205_emp_V_navy_lieutenant","RB205_emp_V_navy_seniorLieutenant","RB205_emp_V_navy_captain","RB205_emp_V_navy_admiral","RB205_emp_V_army_sergeantMajor","RB205_emp_V_army_lieutenant","RB205_emp_V_army_captain","RB205_emp_V_army_commander","RB205_emp_V_isb_agent","RB205_emp_V_isb_lieutenant","RB205_emp_V_isb_captain","RB205_emp_V_isb_major","RB205_emp_V_officer_armor_black","RB205_emp_V_officer_armor_green",
+		"RB205_emp_V_navy_ensign","RB205_emp_V_navy_juniorLieutenant","RB205_emp_V_navy_lieutenant","RB205_emp_V_navy_seniorLieutenant","RB205_emp_V_navy_captain","RB205_emp_V_navy_admiral","RB205_emp_V_army_sergeantMajor","RB205_emp_V_army_lieutenant","RB205_emp_V_army_captain","RB205_emp_V_army_commander","RB205_emp_V_isb_agent","RB205_emp_V_isb_lieutenant","RB205_emp_V_isb_captain","RB205_emp_V_isb_major","RB205_emp_V_officer_armor_black","RB205_emp_V_officer_armor_green",
 
 		/*"RB205_B_emp_heavy","RB205_B_emp_medic","RB205_B_emp_rocket","RB205_B_emp_eod","RB205_B_emp_radio",
 		"RB205_B_emp_ab","RB205_B_emp_ab_heavy","RB205_B_emp_ab_medic","RB205_B_emp_ab_rocket","RB205_B_emp_ab_eod","RB205_B_emp_ab_radio",
@@ -193,7 +196,7 @@ params ["_this"];
 		"ACE_rope3","ACE_rope6","ACE_rope12","ACE_rope15","ACE_rope18","ACE_rope27","ACE_rope36",
 		
 		"JLTS_repairkit_weapon_mini","JLTS_repairkit_weapon","JLTS_riot_shield_item","JLTS_MSE6_manual","JLTS_MSE6_toolkit","JLTS_droidCaller","JLTS_scanner_police",
-		"JLTS_ids_gar_army","JLTS_ids_gar_medical","JLTS_ids_gar_navy","JLTS_ids_police","JLTS_ids_license_weapon_primary","JLTS_ids_license_weapon_secondary","JLTS_ids_license_driver_large","JLTS_ids_license_driver_medium","JLTS_ids_license_driver_small",
+		"JLTS_ids_gar_army","JLTS_ids_gar_medical","JLTS_ids_gar_navy","RB205_keycard_prison",
 
 		"RB205_prowler_item",
 

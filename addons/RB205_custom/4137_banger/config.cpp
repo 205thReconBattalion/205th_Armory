@@ -52,19 +52,19 @@ class cfgWeapons
 
 class cfgVehicles
 {
-class RB205_clone_trooper;
-class RB205_clone_banger: RB205_clone_trooper
-{
-    displayName = "CT-4137 Banger";
-    uniformclass = "RB205_U_banger";
-    editorSubCategory = "RB205_lore";
-    hiddenselectionsTextures[] =
+    class RB205_clone_trooper;
+    class RB205_clone_banger: RB205_clone_trooper
     {
-        "RB205_custom\4137_banger\data\U_banger_upper.paa",
-        "RB205_custom\4137_banger\data\U_banger_lower.paa",
-        "RB205_main\data\default\U_undersuit_co.paa"
+        displayName = "CT-4137 Banger";
+        uniformClass = "RB205_U_banger";
+        editorSubCategory = "RB205_lore";
+        hiddenSelectionsTextures[] =
+        {
+            "RB205_custom\4137_banger\data\U_banger_upper.paa",
+            "RB205_custom\4137_banger\data\U_banger_lower.paa",
+            "RB205_main\data\default\U_undersuit_co.paa"
+        };
+        LINKED_ITEMS("RB205_H_banger","RB205_V_medic","RB205_NV_chip")
+        backpack = "RB205_B_medic";
     };
-    LINKED_ITEMS("RB205_H_banger","RB205_V_medic","RB205_NV_chip")
-    backpack = "RB205_B_medic";
-};
 };

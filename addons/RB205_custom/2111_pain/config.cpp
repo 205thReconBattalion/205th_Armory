@@ -7,7 +7,6 @@ class cfgPatches
             "RB205_main",
             "RB205_custom"
         };
-        author = "205th Recon Battalion";
         requiredVersion = 1.0;
         weapons[] =
         {
@@ -25,26 +24,26 @@ class cfgPatches
 
 class cfgWeapons
 {
-    class RB205_H_plt_trooper;
-    class RB205_H_pain : RB205_H_plt_trooper
+    class RB205_H_trooper;
+    class RB205_H_pain: RB205_H_trooper
     {
-        displayName = "[205] Clone Pilot Trooper Helmet [2111]";
+        displayName = "[205] Clone Trooper Helmet [2111]";
         hiddenSelectionsTextures[] =
         {
             "RB205_custom\2111_pain\data\H_pain.paa",
-            "RB205_main\data\pilot\visor_plt_co.paa"
+            "RB205_main\data\default\visor_p2_co.paa"
         };
     };
     
     class RB205_U_base;
-    class RB205_U_plt_trooper: RB205_U_base
+    class RB205_U_trooper: RB205_U_base
     {
         class ItemInfo;
     };
-    class RB205_U_pain : RB205_U_plt_trooper
+    class RB205_U_pain: RB205_U_trooper
     {
-        displayName = "[205] Clone Pilot Trooper Armor [2111]";
-        class ItemInfo : ItemInfo
+        displayName = "[205] Clone Trooper Armor [2111]";
+        class ItemInfo: ItemInfo
         {
             uniformClass = RB205_clone_pain;	 
         };
@@ -53,8 +52,8 @@ class cfgWeapons
 
 class cfgVehicles
 {
-    class RB205_clone_plt_trooper;
-    class RB205_clone_pain: RB205_clone_plt_trooper
+    class RB205_clone_trooper;
+    class RB205_clone_pain: RB205_clone_trooper
     {   
         displayName = "CT-2111 Pain";
         uniformClass = "RB205_U_pain";

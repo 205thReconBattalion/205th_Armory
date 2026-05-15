@@ -77,7 +77,7 @@ class cfgWeapons
 
 	class RB205_ids_neutral_civ: JLTS_ids_rep_civ
 	{
-		displayName = "(ID) Independent Civilian ID card";
+		displayName = "(ID) Neutral civilian ID card";
 		hiddenSelectionsTextures[] = {"\MRC\JLTS\contraband\IDs\data\id_card_rep_civ_co.paa"};
 		picture = "\MRC\JLTS\contraband\IDs\data\ui\id_card_rep_civ_ui_ca.paa";
 	};
