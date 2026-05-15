@@ -35,8 +35,7 @@ _conditionTakeIDRepublicDiplomat = {
 };
 
 _conditionTakeIDCISDiplomat = {
-	//RB205_ids_cis_diplomat" in (items target); muss noch hinzugefügt werden, sobald die ID-Cards für die Diplomaten fertig sind
-	"JLTS_ids_gar_army" in (items _target) && !([_target, false] call ace_common_fnc_isPlayer);
+	"RB205_ids_cis_diplomat" in (items _target) && !([_target, false] call ace_common_fnc_isPlayer);
 };
 
 _conditionTakeIDRepublicCivilian = {

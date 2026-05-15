@@ -281,13 +281,13 @@ switch (_idtype) do {
 		_idCtrl ctrlCommit 0;
 		_idVariableCtrl ctrlSetPosition [0.85 * safezoneW + safezoneX, 0.51* safezoneH + safezoneY];
 		_idVariableCtrl ctrlCommit 0;
-		_rankCtrl ctrlSetPosition [0.78 * safezoneW + safezoneX, 0.49* safezoneH + safezoneY];
+		_rankCtrl ctrlSetPosition [0.78 * safezoneW + safezoneX, 0.54* safezoneH + safezoneY];
 		_rankCtrl ctrlCommit 0;
-		_rankVariableCtrl ctrlSetPosition [0.85 * safezoneW + safezoneX, 0.49* safezoneH + safezoneY];
+		_rankVariableCtrl ctrlSetPosition [0.85 * safezoneW + safezoneX, 0.54* safezoneH + safezoneY];
 		_rankVariableCtrl ctrlCommit 0;
-		_homeWorldCtrl ctrlSetPosition [0.78 * safezoneW + safezoneX, 0.52* safezoneH + safezoneY];
+		_homeWorldCtrl ctrlSetPosition [0.78 * safezoneW + safezoneX, 0.57* safezoneH + safezoneY];
 		_homeWorldCtrl ctrlCommit 0;
-		_homeWorldVariableCtrl ctrlSetPosition [0.85 * safezoneW + safezoneX, 0.52* safezoneH + safezoneY];
+		_homeWorldVariableCtrl ctrlSetPosition [0.85 * safezoneW + safezoneX, 0.57* safezoneH + safezoneY];
 		_homeWorldVariableCtrl ctrlCommit 0;
 		_licensesPermitsTextCtrl ctrlSetPosition [0.78 * safezoneW + safezoneX, 0.65* safezoneH + safezoneY];
 		_licensesPermitsTextCtrl ctrlCommit 0;
