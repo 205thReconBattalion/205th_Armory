@@ -5,12 +5,13 @@
 /* ARSENAL ACCESS */
 #define ACCESS_TRUE \
 	scope = 2; \
-	scopeArsenal = 2;
+	scopeArsenal = 2; \
+	scopeCurator = 2;
 
 #define ACCESS_FALSE \
 	scope = 0; \
-	scopeArsenal = 0;
-
+	scopeArsenal = 0; \
+	scopeCurator = 0;
 
 /* MASS / WEIGHT */
 #define MASS_HELMET 		20

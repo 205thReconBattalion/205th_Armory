@@ -62,14 +62,17 @@ class XtdGearModels
                     "4137",
                     "4562",
                     "4600",
+                    "4989",
                     "5283",
                     "5463",
                     "5567",
                     "5577",
                     "5884",
+                    "5956",
                     "6066",
                     "6666",
                     "7005",
+                    "7045",
                     "7300",
                     "7565",
                     "7576",
@@ -173,6 +176,10 @@ class XtdGearModels
                 {
                     description = "Crossfire";
                 };
+                class 4989
+                {
+                    description = "Hit";
+                };
                 class 5283
                 {
                     description = "Putzi";
@@ -193,6 +200,10 @@ class XtdGearModels
                 {
                     description = "Irwan";
                 };
+                class 5956
+                {
+                    description = "Clik";
+                };
                 class 6066
                 {
                     description = "Umbra";
@@ -204,6 +215,10 @@ class XtdGearModels
                 class 7005
                 {
                     description = "Doc";
+                };
+                class 7045
+                {
+                    description = "Halvar";
                 };
                 class 7300
                 {
