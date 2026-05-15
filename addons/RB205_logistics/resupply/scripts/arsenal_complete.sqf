@@ -155,7 +155,7 @@ params ["_this"];
 		"RB205_emp_V_medic","RB205_emp_V_grenadier","RB205_emp_V_rebreather",
 		"RB205_emp_V_scout_ct","RB205_emp_V_plt_ct","RB205_emp_V_snow_ct","RB205_emp_V_tank_ct","RB205_emp_V_shadow_ct","RB205_emp_V_death","RB205_emp_V_death_grenadier","RB205_emp_V_death_lead","RB205_emp_V_death_lead2","RB205_emp_V_death_lead3",*/
 
-		"RB205_emp_V_navy_ensign","RB205_emp_V_navy_lieutenant","RB205_emp_V_navy_seniorLieutenant","RB205_emp_V_navy_captain","RB205_emp_V_navy_admiral","RB205_emp_V_army_sergeantMajor","RB205_emp_V_army_lieutenant","RB205_emp_V_army_captain","RB205_emp_V_army_commander","RB205_emp_V_isb_agent","RB205_emp_V_isb_lieutenant","RB205_emp_V_isb_captain","RB205_emp_V_isb_major","RB205_emp_V_officer_armor_black","RB205_emp_V_officer_armor_green",
+		"RB205_emp_V_navy_ensign","RB205_emp_V_navy_juniorLieutenant","RB205_emp_V_navy_lieutenant","RB205_emp_V_navy_seniorLieutenant","RB205_emp_V_navy_captain","RB205_emp_V_navy_admiral","RB205_emp_V_army_sergeantMajor","RB205_emp_V_army_lieutenant","RB205_emp_V_army_captain","RB205_emp_V_army_commander","RB205_emp_V_isb_agent","RB205_emp_V_isb_lieutenant","RB205_emp_V_isb_captain","RB205_emp_V_isb_major","RB205_emp_V_officer_armor_black","RB205_emp_V_officer_armor_green",
 
 		/*"RB205_B_emp_heavy","RB205_B_emp_medic","RB205_B_emp_rocket","RB205_B_emp_eod","RB205_B_emp_radio",
 		"RB205_B_emp_ab","RB205_B_emp_ab_heavy","RB205_B_emp_ab_medic","RB205_B_emp_ab_rocket","RB205_B_emp_ab_eod","RB205_B_emp_ab_radio",
@@ -196,7 +196,7 @@ params ["_this"];
 		"ACE_rope3","ACE_rope6","ACE_rope12","ACE_rope15","ACE_rope18","ACE_rope27","ACE_rope36",
 		
 		"JLTS_repairkit_weapon_mini","JLTS_repairkit_weapon","JLTS_riot_shield_item","JLTS_MSE6_manual","JLTS_MSE6_toolkit","JLTS_droidCaller","JLTS_scanner_police",
-		"JLTS_ids_gar_army","JLTS_ids_gar_medical","JLTS_ids_gar_navy","JLTS_ids_police","JLTS_ids_license_weapon_primary","JLTS_ids_license_weapon_secondary","JLTS_ids_license_driver_large","JLTS_ids_license_driver_medium","JLTS_ids_license_driver_small",
+		"JLTS_ids_gar_army","JLTS_ids_gar_medical","JLTS_ids_gar_navy","RB205_keycard_prison",
 
 		"RB205_prowler_item",
 
