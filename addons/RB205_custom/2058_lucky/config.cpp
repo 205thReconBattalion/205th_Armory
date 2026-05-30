@@ -11,8 +11,7 @@ class cfgPatches
 		weapons[] =
         {
             "RB205_H_lucky",
-            "RB205_U_lucky",
-            "RB205_V_lucky",
+            "RB205_U_lucky"
         };
 		units[]	=
         {
@@ -25,23 +24,23 @@ class cfgPatches
 
 class cfgWeapons
 {
-    class RB205_H_plt_sergeant;
-	class RB205_H_lucky: RB205_H_plt_sergeant
+    class RB205_H_trooper;
+	class RB205_H_lucky: RB205_H_trooper
 	{
-		displayName = "[205] Clone Pilot Trooper Helmet [2058]";
+		displayName = "[205] Clone Trooper Helmet [2058]";
         hiddenSelectionsTextures[] =
         {
             "RB205_custom\2058_lucky\data\H_lucky.paa",
-		    "RB205_main\data\pilot\visor_plt_co.paa"
+            "RB205_main\data\default\visor_p2_co.paa"
         };
 	};
 
-    class RB205_U_sgt_base;
-    class RB205_U_plt_sergeant: RB205_U_sgt_base
+    class RB205_U_base;
+    class RB205_U_trooper: RB205_U_base
     {
         class ItemInfo;
     };
-    class RB205_U_lucky: RB205_U_plt_sergeant
+    class RB205_U_lucky: RB205_U_trooper
     {
         displayName = "[205] Clone Trooper Armor [2058]";
         class ItemInfo: ItemInfo
@@ -49,25 +48,14 @@ class cfgWeapons
             uniformClass = RB205_clone_lucky;
         };
     };
-
-    class RB205_V_plt_cs;
-    class RB205_V_lucky: RB205_V_plt_cs
-    {
-        displayName = "[205] Clone Trooper Vest [2058]";
-        hiddenSelectionsTextures[] =
-        {
-            "RB205_custom\2058_lucky\data\V_lucky.paa",
-            ""
-        };
-    };
 };
 
 class cfgVehicles
 {
-    class RB205_clone_plt_sergeant;
-    class RB205_clone_lucky: RB205_clone_plt_sergeant
+    class RB205_clone_trooper;
+    class RB205_clone_lucky: RB205_clone_trooper
     {
-        displayName = "CS-2058 Lucky";
+        displayName = "CT-2058 Lucky";
         uniformclass = "RB205_U_lucky";
 	    editorSubCategory = "RB205_lore";
         hiddenselectionsTextures[] =
@@ -76,7 +64,6 @@ class cfgVehicles
             "RB205_custom\2058_lucky\data\U_lucky_lower.paa",
             "RB205_main\data\default\U_undersuit_co.paa"
         };
-        LINKED_ITEMS("RB205_H_lucky","RB205_V_lucky","RB205_NV_chip")
-	    identityTypes[] = IDENTITY_TYPES;
+        LINKED_ITEMS("RB205_H_lucky","RB205_V_ct","RB205_NV_chip")
     };
 };

@@ -40,9 +40,9 @@ class XtdGearModels
 				{
                     "0113",
                     "0955",
+                    "1202",
 					"1312",
                     "1504",
-                    "1618",
                     "1972",
                     "2004",
                     "2058",
@@ -52,7 +52,6 @@ class XtdGearModels
                     "2420",
                     "2441",
                     "2574",
-                    "2609",
                     "3234",
                     "3340",
                     "3369",
@@ -65,7 +64,6 @@ class XtdGearModels
                     "4989",
                     "5283",
                     "5463",
-                    "5567",
                     "5577",
                     "5884",
                     "5956",
@@ -88,6 +86,10 @@ class XtdGearModels
                 {
                     description = "Mando";
                 };
+                class 1202
+                {
+                    description = "Lemon";
+                };
                 class 1312
                 {
                     description = "Shadow";
@@ -95,10 +97,6 @@ class XtdGearModels
                 class 1504
                 {
                     description = "Silver";
-                };
-                class 1618
-                {
-                    description = "Fugger";
                 };
                 class 1972
                 {
@@ -135,10 +133,6 @@ class XtdGearModels
                 class 2574
                 {
                     description = "Scout";
-                };
-                class 2609
-                {
-                    description = "Kamaz";
                 };
                 class 3234
                 {
@@ -187,10 +181,6 @@ class XtdGearModels
                 class 5463
                 {
                     description = "Junior";
-                };
-                class 5567
-                {
-                    description = "Flank";
                 };
                 class 5577
                 {
