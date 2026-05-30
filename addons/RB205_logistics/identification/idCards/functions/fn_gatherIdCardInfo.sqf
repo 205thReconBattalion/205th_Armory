@@ -19,7 +19,17 @@ switch (_idtype) do {
 		_id = _splittedString select 1;
 		_rank = _splittedString select 0;
 		_title = _rank + "-" + _id;
-		_squad = groupId group _player;
+		_groupId = groupId group _player;
+		switch (true) do 
+		{
+			case (_groupId regexMatch "^0-0($| [A-E]$)") : {_squad = "Pathfinder";};
+			case (_groupId regexMatch "^1-0($| [A-E]$)") : {_squad = "Tamer";};
+			case (_groupId regexMatch "^1-1($|-[A-E]$)") : {_squad = "Zillo";};
+			case (_groupId regexMatch "^1-2($|-[A-E]$)") : {_squad = "Chimaera";};
+			case (_groupId regexMatch "^1-3($|-[A-E]$)") : {_squad = "Rancor";};
+			case (_groupId regexMatch "^1-4($|-[A-E]$)") : {_squad = "Wampa";};
+			default {_squad = _groupId;};
+		};
 		_battalion = "205th";
 		_picture = "RB205_logistics\identification\idCards\UIElements\idcardClone.paa";
 	};

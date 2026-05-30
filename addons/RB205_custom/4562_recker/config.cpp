@@ -31,7 +31,7 @@ class cfgWeapons
         hiddenSelectionsTextures[] =
         {
             "RB205_custom\4562_recker\data\H_recker.paa",
-            "RB205_main\data\default\visor_p2_co.paa"
+            "RB205_main\data\airborne\visor_ab_co.paa"
         };
     };
 

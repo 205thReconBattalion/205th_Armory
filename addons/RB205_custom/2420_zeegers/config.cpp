@@ -24,14 +24,14 @@ class cfgPatches
 
 class cfgWeapons
 {
-    class RB205_H_trooper;
-    class RB205_H_zeegers : RB205_H_trooper
+    class RB205_H_plt_trooper;
+    class RB205_H_zeegers : RB205_H_plt_trooper
     {
-        displayName = "[205] Clone Trooper Helmet [2420]";
+        displayName = "[205] Clone Pilot Trooper Helmet [2420]";
         hiddenSelectionsTextures[] =
         {
             "RB205_custom\2420_zeegers\data\H_zeegers.paa",
-            "RB205_main\data\default\visor_p2_co.paa"
+            "RB205_main\data\pilot\visor_plt_co.paa"
         };
     };
 
@@ -52,10 +52,10 @@ class cfgWeapons
 
 class cfgVehicles
 {
-    class RB205_clone_trooper;
-    class RB205_clone_zeegers : RB205_clone_trooper
+    class RB205_clone_plt_lanceCorporal;
+    class RB205_clone_zeegers : RB205_clone_plt_lanceCorporal
     {
-        displayName = "CT-2420 Zeegers";
+        displayName = "CLC-2420 Zeegers";
         uniformclass = "RB205_U_zeegers";
         editorSubCategory = "RB205_lore";
         hiddenselectionsTextures[] =
@@ -64,6 +64,6 @@ class cfgVehicles
             "RB205_custom\2420_zeegers\data\U_zeegers_lower.paa",
             "RB205_main\data\default\U_undersuit_co.paa"
         };
-        LINKED_ITEMS("RB205_H_zeegers", "RB205_V_ct", "RB205_NV_chip")
+        LINKED_ITEMS("RB205_H_zeegers", "RB205_V_plt_clc", "RB205_NV_chip")
     };
 };
