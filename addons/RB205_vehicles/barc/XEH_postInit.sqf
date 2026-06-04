@@ -16,6 +16,7 @@ _statement = {
 	if (surfaceIsWater position _veh) then {
 		_pos = getPosASL _veh;
 	};
+	_pos = [_pos select 0, _pos select 1, (_pos select 2) + 1]; //prevents explosion when spawning the new vehicle
 	_dir = getDir _veh;
 	_fuel = fuel _veh;
 	_inv = getItemCargo _veh;
