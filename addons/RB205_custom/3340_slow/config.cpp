@@ -12,8 +12,7 @@ class cfgPatches
         {
             "RB205_H_slow",
             "RB205_H_crew_slow",
-            "RB205_U_slow",
-            "RB205_V_slow"
+            "RB205_U_slow"
         };
         units[]	=
         {
@@ -61,25 +60,14 @@ class cfgWeapons
             uniformClass = RB205_clone_slow;
         };
     };
-
-    class RB205_V_cs;
-    class RB205_V_slow: RB205_V_cs
-    {
-        displayName = "[205] Clone Trooper Vest [3340]";
-        hiddenSelectionsTextures[] =
-        {
-            "RB205_custom\3340_slow\data\V_slow.paa",
-            ""
-        };
-    };
 };
 
 class cfgVehicles
 {
-    class RB205_clone_sergeant;
-    class RB205_clone_slow: RB205_clone_sergeant
+    class RB205_clone_trooper;
+    class RB205_clone_slow: RB205_clone_trooper
     {
-        displayName = "CSM-3340 Slow";
+        displayName = "CT-3340 Slow";
         uniformclass = "RB205_U_slow";
         editorSubCategory = "RB205_lore";
         hiddenselectionsTextures[] =
@@ -88,23 +76,6 @@ class cfgVehicles
             "RB205_custom\3340_slow\data\U_slow_lower.paa",
             "RB205_main\data\default\U_undersuit_co.paa"
         };
-        LINKED_ITEMS("RB205_H_slow","RB205_V_slow","RB205_NV_rangefinder")
-	    identityTypes[] = IDENTITY_TYPES_GLASSES("RB205_VIS_slow");
-    };
-};
-
-class CfgGlasses
-{
-    class RB205_VIS;
-    class RB205_VIS_slow: RB205_VIS
-    {
-        displayName = "[205] Clone Visor [3340]";
-        hiddenSelectionsTextures[] =
-        {
-            "RB205_custom\3340_slow\data\VIS_slow.paa",
-            "",
-            ""
-        };
-        identityTypes[] = { "RB205_VIS_slow",1 };
+        LINKED_ITEMS("RB205_H_slow","RB205_V_ct","RB205_NV_chip")
     };
 };

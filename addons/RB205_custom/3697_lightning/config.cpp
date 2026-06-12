@@ -36,13 +36,13 @@ class cfgWeapons
     };
 
     class RB205_U_base;
-    class RB205_U_trooper: RB205_U_base
+    class RB205_U_arc_trooper: RB205_U_base
     {
         class ItemInfo;
     };
-    class RB205_U_lightning: RB205_U_trooper
+    class RB205_U_lightning: RB205_U_arc_trooper
     {
-        displayName = "[205] Clone Trooper Armor [3697]";
+        displayName = "[205] Clone ARC Trooper Armor [3697]";
         class ItemInfo: ItemInfo
         {
             uniformClass = RB205_clone_lightning;
@@ -52,10 +52,10 @@ class cfgWeapons
 
 class cfgVehicles
 {
-    class RB205_clone_trooper;
-    class RB205_clone_lightning: RB205_clone_trooper
+    class RB205_clone_arc_trooper;
+    class RB205_clone_lightning: RB205_clone_arc_trooper
     {
-        displayName = "CT-3697 Lightning";
+        displayName = "ARC-3697 Lightning";
         uniformclass = "RB205_U_lightning";
         editorSubCategory = "RB205_lore";
         hiddenselectionsTextures[] =
@@ -64,6 +64,6 @@ class cfgVehicles
             "RB205_custom\3697_lightning\data\U_lightning_lower.paa",
             "RB205_main\data\default\U_undersuit_co.paa"
         };
-        LINKED_ITEMS("RB205_H_lightning","RB205_V_ab_ct", "RB205_NV_chip")
+        LINKED_ITEMS("RB205_H_lightning","RB205_V_arc", "RB205_NV_rangefinder")
     };
 };
