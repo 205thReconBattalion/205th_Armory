@@ -1,4 +1,4 @@
-name 		= "205th Recon Battalion | Armory";
+name 		= "205th Recon Battalion | Armory - Test";
 author 		= "Spark";
 logo 		= "logo.paa";
 logoOver	= "logo.paa";
