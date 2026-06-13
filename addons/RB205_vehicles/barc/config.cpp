@@ -47,7 +47,43 @@ class cfgVehicles
 		editorSubcategory = "RB205_veh_ground";
 		editorPreview = "";
 		//Textures
-        //ToDo
+		hiddenSelectionsTextures[] =
+		{
+			"RB205_vehicles\barc\data\barc_ca.paa",
+			"RB205_vehicles\barc\data\barc_exterior_ca.paa",
+			"RB205_vehicles\barc\data\barc_lever_ca.paa"
+		};
+		textureList[] =
+        {
+            "Default",	1,
+            "Republic",	0
+        };
+		class TextureSources
+		{
+			class Default
+			{
+				displayName = "205th Recon Battalion";
+				author = "205th Recon Battalion";
+				textures[] =
+				{
+					"RB205_vehicles\barc\data\barc_ca.paa",
+					"RB205_vehicles\barc\data\barc_exterior_ca.paa",
+					"RB205_vehicles\barc\data\barc_lever_ca.paa"
+				};
+				factions[] = {"RB205"};
+			};
+			class Republic
+			{
+				displayName = "Grand Army of the Republic";
+				author = "205th Recon Battalion";
+				textures[] =
+				{
+					"\QS_Barc_F\data\Barc_ca.paa",
+					"\QS_Barc_F\data\Barc_exterior_ca.paa",
+					"\QS_Barc_F\data\Barc_lever_ca.paa"
+				};
+			};
+		};
 	};
 
 	class RB205_barc_sidecar_base;
@@ -66,7 +102,49 @@ class cfgVehicles
 		editorSubcategory = "RB205_veh_ground";
 		editorPreview = "";
 		//Textures
-        //ToDo
+		hiddenSelectionsTextures[] =
+		{
+			"RB205_vehicles\barc\data\barc_ca.paa",
+			"RB205_vehicles\barc\data\barc_exterior_ca.paa",
+			"RB205_vehicles\barc\data\barc_lever_ca.paa",
+			"RB205_vehicles\barc\data\barc_sidecar_ca.paa",
+			"RB205_vehicles\barc\data\barc_sidecar_exterior_ca.paa"
+		};
+		textureList[] =
+        {
+            "Default",	1,
+            "Republic",	0
+        };
+		class TextureSources
+		{
+			class Default
+			{
+				displayName = "205th Recon Battalion";
+				author = "205th Recon Battalion";
+				textures[] =
+				{
+					"RB205_vehicles\barc\data\barc_ca.paa",
+					"RB205_vehicles\barc\data\barc_exterior_ca.paa",
+					"RB205_vehicles\barc\data\barc_lever_ca.paa",
+					"RB205_vehicles\barc\data\barc_sidecar_ca.paa",
+					"RB205_vehicles\barc\data\barc_sidecar_exterior_ca.paa"
+				};
+				factions[] = {"RB205"};
+			};
+			class Republic
+			{
+				displayName = "Grand Army of the Republic";
+				author = "205th Recon Battalion";
+				textures[] =
+				{
+					"\QS_Barc_F\data\Barc_ca.paa",
+					"\QS_Barc_F\data\Barc_exterior_ca.paa",
+					"\QS_Barc_F\data\Barc_lever_ca.paa",
+					"\QS_Barc_F\data\Barc_sidecar_ca.paa",
+					"\QS_Barc_F\data\Barc_sidecar_exterior_ca.paa"
+				};
+			};
+		};
 	};
 
 	class RB205_barc_stretcher_base;
@@ -85,7 +163,46 @@ class cfgVehicles
 		editorSubcategory = "RB205_veh_ground";
 		editorPreview = "";
 		//Textures
-        //ToDo
+		hiddenSelectionsTextures[]=
+		{
+			"RB205_vehicles\barc\data\barc_ca.paa",
+			"RB205_vehicles\barc\data\barc_exterior_ca.paa",
+			"RB205_vehicles\barc\data\barc_lever_ca.paa",
+			"\QS_Barc_F\data\Barc_stretcher_ca.paa"
+		};
+		textureList[] =
+        {
+            "Default",	1,
+            "Republic",	0
+        };
+		class TextureSources
+		{
+			class Default
+			{
+				displayName = "205th Recon Battalion";
+				author = "205th Recon Battalion";
+				textures[] =
+				{
+					"RB205_vehicles\barc\data\barc_ca.paa",
+					"RB205_vehicles\barc\data\barc_exterior_ca.paa",
+					"RB205_vehicles\barc\data\barc_lever_ca.paa",
+					"\QS_Barc_F\data\Barc_stretcher_ca.paa"
+				};
+				factions[] = {"RB205"};
+			};
+			class Republic
+			{
+				displayName = "Grand Army of the Republic";
+				author = "205th Recon Battalion";
+				textures[] =
+				{
+					"\QS_Barc_F\data\Barc_ca.paa",
+					"\QS_Barc_F\data\Barc_exterior_ca.paa",
+					"\QS_Barc_F\data\Barc_lever_ca.paa",
+					"\QS_Barc_F\data\Barc_stretcher_ca.paa"
+				};
+			};
+		};
 	};
 };
 #include "\RB205_vehicles\barc\barc_weapons.hpp"
