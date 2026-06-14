@@ -42,7 +42,7 @@ class RB205_spawnVehicleDialog
 
     class controls
     {
-        class ConfirmButton: VehicleSpawner_RscButton
+        class SpawnButton: VehicleSpawner_RscButton
         {
             idc = 205502;
             text = "Spawnen";
@@ -51,7 +51,7 @@ class RB205_spawnVehicleDialog
             w = 0.11 * safezoneW;
             h = 0.04 * safezoneH;
 
-            action = "";
+            action = "[] call RB205_spawnerDialog_fnc_onBtnClickSpawn";
         };
 
         class CloseButton: VehicleSpawner_RscButton

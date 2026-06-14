@@ -23,6 +23,7 @@ class CfgFunctions
 			class openDialog{};
 			class onVehicleSelected{};
 			class createVehicleArray{};
+			class onBtnClickSpawn{};
 		};
 	};
 };
