@@ -6,7 +6,6 @@ lnbClear _ctrlListNBox;
 
 uiNamespace setVariable ["RB205_VehicleSpawnerVariableName", _landingpad];
 
-call compile preprocessFileLineNumbers "\RB205_spawnerDialog\functions\VehicleList.sqf";
 _row = nil;
 private _vehicleList = [];
 switch (_spawnerType) do {
@@ -18,10 +17,22 @@ switch (_spawnerType) do {
     default { hint "Spawnertyp nicht gesetzt"; };
 };
 
+_vehicleMaxSpawnsHashMap = missionNamespace getVariable["RB205_VehicleMaxSpawns", createHashMap];
+
 {
-    _row = _ctrlListNBox lnbAddRow [_x select 1, _x select 4, _x select 2];
+    _anzahlVerfuegbar = "";
+    if ((count _vehicleMaxSpawnsHashMap) > 0) then {
+        _varNameVehicleMaxSpawns = format ["%1_VehicleMaxSpawns", toUpper (_x select 0)];
+        _anzahlVerfuegbar = _vehicleMaxSpawnsHashMap getOrDefault [_varNameVehicleMaxSpawns, 0];
+        if (_anzahlVerfuegbar == -1) then {
+            _anzahlVerfuegbar = "∞";
+        } else {
+            _anzahlVerfuegbar = str _anzahlVerfuegbar;
+        };
+    };
+    _row = _ctrlListNBox lnbAddRow [_x select 1, _x select 4, _x select 2, _anzahlVerfuegbar];
     _ctrlListNBox lnbSetData [[_row, 0], _x select 0];
     _ctrlListNBox lnbSetData [[_row, 1], _x select 5];
-    _ctrlListNBox lnbSetPicture [[_row, 3], _x select 3];   
+    _ctrlListNBox lnbSetPicture [[_row, 4], _x select 3];   
 
 } forEach _vehicleList;

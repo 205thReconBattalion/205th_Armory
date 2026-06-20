@@ -70,13 +70,15 @@ class RB205_spawnVehicleDialog
             idc = 205504;
             x = 0.21 * safezoneW + safezoneX;
             y = 0.22 * safezoneH + safezoneY;
-            w = 0.28 * safezoneW;
+            w = 0.30 * safezoneW;
             h = 0.58 * safezoneH;
             
-	        columns[] = {-0.01,0.75,0.88,0.95};
+	        columns[] = {-0.01,0.526,0.657,0.806,0.92};
+            
 
             onLBSelChanged = "_this call RB205_spawnerDialog_fnc_onVehicleSelected";
         };
+
         class InfoGroup
         {
             idc = 205510;
@@ -140,7 +142,7 @@ class RB205_spawnVehicleDialog
         {
             idc = 205506;
             text = "Fahrzeug";
-            x = 0.215 * safezoneW + safezoneX;
+            x = 0.21 * safezoneW + safezoneX;
             y = 0.2 * safezoneH + safezoneY;
             w = 0.08 * safezoneW;
             h = 0.02 * safezoneH;
@@ -150,7 +152,7 @@ class RB205_spawnVehicleDialog
         {
             idc = 205507;
             text = "Seats";
-            x = 0.405 * safezoneW + safezoneX;
+            x = 0.35 * safezoneW + safezoneX;
             y = 0.2 * safezoneH + safezoneY;
             w = 0.05 * safezoneW;
             h = 0.02 * safezoneH;
@@ -160,7 +162,17 @@ class RB205_spawnVehicleDialog
         {
             idc = 205508;
             text = "Cargo";
-            x = 0.44 * safezoneW + safezoneX;
+            x = 0.39 * safezoneW + safezoneX;
+            y = 0.2 * safezoneH + safezoneY;
+            w = 0.05 * safezoneW;
+            h = 0.02 * safezoneH;
+            colorBackground[] = {0,0,0,0};
+        };
+        class TitelRemaining: VehicleSpawner_RscText
+        {
+            idc = 205511;
+            text = "Remaining";
+            x = 0.434 * safezoneW + safezoneX;
             y = 0.2 * safezoneH + safezoneY;
             w = 0.05 * safezoneW;
             h = 0.02 * safezoneH;
@@ -176,5 +188,6 @@ class RB205_spawnVehicleDialog
             h = 0.02 * safezoneH;
             colorBackground[] = {0,0,0,0};
         };
+        
     };
 };

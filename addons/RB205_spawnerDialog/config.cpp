@@ -13,6 +13,14 @@ class CfgPatches
 	};
 };
 
+class Extended_PreInit_EventHandlers
+{
+    class RB205_Spawner
+    {
+        init = "call compile preprocessFileLineNumbers '\RB205_spawnerDialog\functions\VehicleList.sqf'";
+    };
+};
+
 class CfgFunctions
 {
 	class RB205_spawnerDialog

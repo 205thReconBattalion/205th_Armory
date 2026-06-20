@@ -1,24 +1,42 @@
-//hint "Test1";
 private _ctrlDisplay = findDisplay 205500;
 private _ctrlListNBox = _ctrlDisplay displayCtrl 205504;
 _row = lnbCurSelRow _ctrlListNBox;
 _vehicleClassName = _ctrlListNBox lnbData [_row, 0];
 
+private _spawnPossible = true;
+RB205_VehicleMaxSpawns = missionNamespace getVariable["RB205_VehicleMaxSpawns", createHashMap];
 
-_landingPad = uiNamespace getVariable ["RB205_VehicleSpawnerVariableName",objNull];
-_landingPad = missionNamespace getVariable [_landingPad,objNull];
+if ((count RB205_VehicleMaxSpawns) > 0) then {
+    _varNameVehicleMaxSpawns = format ["%1_VehicleMaxSpawns", toUpper _vehicleClassName];
+    _anzahlVerfuegbar = RB205_VehicleMaxSpawns getOrDefault [_varNameVehicleMaxSpawns, 0];
+    if (_anzahlVerfuegbar == 0) exitwith {
+        hint "Dieses Fahrzeug befindet sich nicht mehr im Lager!"; 
+        _spawnPossible = false;
+    };
 
-_pos = nil;
-if (surfaceIsWater position _landingPad)
-then {
-    _pos = getPosASL _landingPad;
-}
-else {
-    _pos = getPosATL _landingPad;
+    if (_anzahlVerfuegbar > 0) then {
+        _anzahlVerfuegbar = _anzahlVerfuegbar - 1;
+        RB205_VehicleMaxSpawns set [_varNameVehicleMaxSpawns,_anzahlVerfuegbar];
+        publicVariable "RB205_VehicleMaxSpawns";
+    };
 };
 
-_dir = getDir _landingPad;
-_veh = createVehicle [_vehicleClassName, _pos, [], 0, "CAN_COLLIDE"];
+if (_spawnPossible) then {
+    _landingPad = uiNamespace getVariable ["RB205_VehicleSpawnerVariableName",objNull];
+    _landingPad = missionNamespace getVariable [_landingPad,objNull];
 
-_veh setDir _dir;
-closeDialog 0;
+    _pos = nil;
+    if (surfaceIsWater position _landingPad)
+    then {
+        _pos = getPosASL _landingPad;
+    }
+    else {
+        _pos = getPosATL _landingPad;
+    };
+
+    _dir = getDir _landingPad;
+    _veh = createVehicle [_vehicleClassName, _pos, [], 0, "CAN_COLLIDE"];
+
+    _veh setDir _dir;
+    closeDialog 0;
+};

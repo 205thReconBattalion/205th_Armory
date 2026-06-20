@@ -28,4 +28,3 @@ rb205_vehicles_air_transport = [
 rb205_vehicles_air_combat = [
  "RB205_vwing","RB205_z95","RB205_arc170","RB205_ywing"
 ];
-

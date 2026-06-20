@@ -1,0 +1,18 @@
+params ["_logic", "_units", "_activated"];
+
+private _rb205_vehicles_all = [];
+_rb205_vehicles_all append rb205_vehicles;
+_rb205_vehicles_all = _rb205_vehicles_all + rb205_vehicles_armored + rb205_vehicles_naval + rb205_vehicles_air_transport + rb205_vehicles_air_combat;
+
+private _fahrzeugAnzahlHashMap = createHashMap;
+
+{
+    private _varName = (toUpper _x) + "_VehicleMaxSpawns";
+    _fahrzeugAnzahlSpawns = _logic getVariable [_varName,-1];
+    _fahrzeugAnzahlHashMap set [_varName, _fahrzeugAnzahlSpawns];
+    
+    
+} forEach _rb205_vehicles_all;
+
+missionNamespace setVariable ["RB205_VehicleMaxSpawns", _fahrzeugAnzahlHashMap, true];
+
