@@ -2,7 +2,7 @@ params ["_logic", "_units", "_activated"];
 
 private _rb205_vehicles_all = [];
 _rb205_vehicles_all append rb205_vehicles;
-_rb205_vehicles_all = _rb205_vehicles_all + rb205_vehicles_armored + rb205_vehicles_naval + rb205_vehicles_air_transport + rb205_vehicles_air_combat;
+_rb205_vehicles_all = _rb205_vehicles_all + rb205_vehicles_armored + rb205_vehicles_naval + rb205_vehicles_air_transport + rb205_vehicles_air_combat + rb205_vehicles_utility;
 
 private _fahrzeugAnzahlHashMap = createHashMap;
 

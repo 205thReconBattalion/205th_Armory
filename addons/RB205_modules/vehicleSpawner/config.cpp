@@ -50,11 +50,21 @@ class CfgVehicles
     class RB205_Eden_Module : Module_F
     {
         scope = 2;
-        scopeCurator = 0;
+        scopeCurator = 1;
         functionPriority = 1;
         isGlobal = 0;
         isTriggerActivated = 0;
         isDisposable = 0;
+        is3DEN = 0;
+        canSetArea = 0;
+    };
+
+    class RB205_Zeus_Module : Module_F
+    {
+        scope = 1;
+        scopeCurator = 2;
+        functionPriority = 1;
+        isGlobal = 1;
         is3DEN = 0;
         canSetArea = 0;
     };
@@ -109,6 +119,15 @@ class CfgVehicles
                 displayName = "Luftkampf Fahrzeuge";
                 control = "Checkbox";
                 expression = "_this setVariable ['RB205_AirFighterVehicleBool', _value, true];";
+                defaultValue = "false";
+                typeName = "BOOL";
+            };
+            class UtilityVehicleBool
+            {
+                property = "RB205_Module_SetVehicleSpawnerInit_UtilityVehicleBool";
+                displayName = "Utility";
+                control = "Checkbox";
+                expression = "_this setVariable ['RB205_UtilityVehicleBool', _value, true];";
                 defaultValue = "false";
                 typeName = "BOOL";
             };            
@@ -669,10 +688,56 @@ class CfgVehicles
                 expression = "_this setVariable ['RB205_YWING_VehicleMaxSpawns', _value, true];";
                 defaultValue = "-1";
             };
+            class RB205_Keeradak_MaxSpawns
+            {
+                property = "RB205_KEERADAK_VehicleMaxSpawns";
+                displayName = "Keeradak";
+                control = "Edit";
+                typeName = "NUMBER";
+                expression = "_this setVariable ['RB205_KEERADAK_VehicleMaxSpawns', _value, true];";
+                defaultValue = "-1";
+            };
 
+            class RB205_RhoClass_Crate_Barracks_MaxSpawns
+            {
+                property = "RB205_RHOCLASS_CRATE_BARRACKS_VehicleMaxSpawns";
+                displayName = "Rho-Class Crate Barracks";
+                control = "Edit";
+                typeName = "NUMBER";
+                expression = "_this setVariable ['RB205_RHOCLASS_CRATE_BARRACKS_VehicleMaxSpawns', _value, true];";
+                defaultValue = "-1";
+            };
 
+            class RB205_RhoClass_Crate_Medical_MaxSpawns
+            {
+                property = "RB205_RHOCLASS_CRATE_MEDICAL_VehicleMaxSpawns";
+                displayName = "Rho-Class Crate Medical";
+                control = "Edit";
+                typeName = "NUMBER";
+                expression = "_this setVariable ['RB205_RHOCLASS_CRATE_MEDICAL_VehicleMaxSpawns', _value, true];";
+                defaultValue = "-1";
+            };
 
-            
+            class RB205_RhoClass_Crate_Transport_MaxSpawns
+            {
+                property = "RB205_RHOCLASS_CRATE_TRANSPORT_VehicleMaxSpawns";
+                displayName = "Rho-Class Crate Transport";
+                control = "Edit";
+                typeName = "NUMBER";
+                expression = "_this setVariable ['RB205_RHOCLASS_CRATE_TRANSPORT_VehicleMaxSpawns', _value, true];";
+                defaultValue = "-1";
+            };
+
+            class RB205_FCC_MaxSpawns
+            {
+                property = "RB205_FCC_VehicleMaxSpawns";
+                displayName = "FCC";
+                control = "Edit";
+                typeName = "NUMBER";
+                expression = "_this setVariable ['RB205_FCC_VehicleMaxSpawns', _value, true];";
+                defaultValue = "-1";
+            };
+
             class ModuleDescriptionMaxSpawns: ModuleDescription {};
         };
 
@@ -688,6 +753,24 @@ class CfgVehicles
             sync[] = {};
         };
     };
-
+/*
+    class RB205_Module_Zeus_SetVehicleMaxSpawns : RB205_Zeus_Module
+    {
+        displayName = "Fahrzeuge begrenzen";
+        category = "RB205_FahrzeugModules";
+        function = "";
+        
+        class RB205_BARC_MaxSpawns
+        {
+            property = "RB205_BARC_VehicleMaxSpawns";
+            displayName = "BARC";
+            control = "Edit";
+            typeName = "NUMBER";
+            expression = "_this setVariable ['RB205_BARC_VehicleMaxSpawns', _value, true];";
+            defaultValue = "-1";
+        };
+        
+    };
+*/
 
 };

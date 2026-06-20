@@ -14,6 +14,7 @@ switch (_spawnerType) do {
     case "airTransport": { _vehicleList = ([rb205_vehicles_air_transport] call RB205_spawnerDialog_fnc_createVehicleArray); };
     case "airCombat": { _vehicleList = ([rb205_vehicles_air_combat] call RB205_spawnerDialog_fnc_createVehicleArray); };
     case "naval": { _vehicleList = ([rb205_vehicles_naval] call RB205_spawnerDialog_fnc_createVehicleArray); };
+    case "utility": { _vehicleList = ([rb205_vehicles_utility] call RB205_spawnerDialog_fnc_createVehicleArray); };
     default { hint "Spawnertyp nicht gesetzt"; };
 };
 

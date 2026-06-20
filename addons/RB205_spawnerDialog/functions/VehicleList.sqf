@@ -28,3 +28,7 @@ rb205_vehicles_air_transport = [
 rb205_vehicles_air_combat = [
  "RB205_vwing","RB205_z95","RB205_arc170","RB205_ywing"
 ];
+
+rb205_vehicles_utility = [
+    "RB205_keeradak", "RB205_rhoclass_crate_barracks", "RB205_rhoclass_crate_medical", "RB205_rhoclass_crate_transport", "RB205_fcc"
+];

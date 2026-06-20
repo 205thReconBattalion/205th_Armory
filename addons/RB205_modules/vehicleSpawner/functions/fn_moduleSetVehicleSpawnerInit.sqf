@@ -7,7 +7,7 @@ _landingPad = missionNamespace getVariable [_spawnpad,objNull];
 {
     if (_logic getVariable "RB205_UnarmoredVehicleBool") then {
         _x addAction [
-            "Ungepanzerte Fahrzeuge",
+            "Fahrzeug Spawner (Ungepanzert)",
             {
                 params ["_target", "_caller", "_actionId", "_arguments"];
                 private _spawnpad = _arguments select 0;
@@ -19,7 +19,7 @@ _landingPad = missionNamespace getVariable [_spawnpad,objNull];
     
     if (_logic getVariable "RB205_ArmoredVehicleBool") then {
         _x addAction [
-            "Gepanzerte Fahrzeuge",
+            "Fahrzeug Spawner (Gepanzert)",
             {
                 params ["_target", "_caller", "_actionId", "_arguments"];
                 private _spawnpad = _arguments select 0;
@@ -30,7 +30,7 @@ _landingPad = missionNamespace getVariable [_spawnpad,objNull];
     };
     if (_logic getVariable "RB205_AirTransportVehicleBool") then {
         _x addAction [
-            "Lufttransport",
+            "Fahrzeug Spawner (Lufttransport)",
             {
                 params ["_target", "_caller", "_actionId", "_arguments"];
                 private _spawnpad = _arguments select 0;
@@ -41,7 +41,7 @@ _landingPad = missionNamespace getVariable [_spawnpad,objNull];
     };
     if (_logic getVariable "RB205_AirFighterVehicleBool") then {
         _x addAction [
-            "Luftkampf",
+            "Fahrzeug Spawner (Jäger)",
             {
                 params ["_target", "_caller", "_actionId", "_arguments"];
                 private _spawnpad = _arguments select 0;
@@ -52,7 +52,7 @@ _landingPad = missionNamespace getVariable [_spawnpad,objNull];
     };
     if (_logic getVariable "RB205_NavalVehicleBool") then {
         _x addAction [
-            "Marine",
+            "Fahrzeug Spawner (Wasserfahrzeuge)",
             {
                 params ["_target", "_caller", "_actionId", "_arguments"];
                 private _spawnpad = _arguments select 0;
@@ -61,6 +61,18 @@ _landingPad = missionNamespace getVariable [_spawnpad,objNull];
             [_spawnpad],17,true,false,"","",5
         ];
     };
+    if (_logic getVariable "RB205_UtilityVehicleBool") then {
+        _x addAction [
+            "Fahrzeug Spawner (Utility)",
+            {
+                params ["_target", "_caller", "_actionId", "_arguments"];
+                private _spawnpad = _arguments select 0;
+                ["utility",_spawnpad] call RB205_spawnerDialog_fnc_openDialog;
+            },
+            [_spawnpad],17,true,false,"","",5
+        ];
+    };
+    
     _x addAction ["<t color='#6a0f0f'>Fahrzeug einlagern</t>",
         {
             params ["_target", "_caller", "_actionId", "_arguments"];
