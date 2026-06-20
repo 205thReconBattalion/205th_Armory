@@ -23,7 +23,7 @@ _vehicleMaxSpawnsHashMap = missionNamespace getVariable["RB205_VehicleMaxSpawns"
     _anzahlVerfuegbar = "";
     if ((count _vehicleMaxSpawnsHashMap) > 0) then {
         _varNameVehicleMaxSpawns = format ["%1_VehicleMaxSpawns", toUpper (_x select 0)];
-        _anzahlVerfuegbar = _vehicleMaxSpawnsHashMap getOrDefault [_varNameVehicleMaxSpawns, 0];
+        _anzahlVerfuegbar = _vehicleMaxSpawnsHashMap getOrDefault [_varNameVehicleMaxSpawns, -1];
         if (_anzahlVerfuegbar == -1) then {
             _anzahlVerfuegbar = "∞";
         } else {

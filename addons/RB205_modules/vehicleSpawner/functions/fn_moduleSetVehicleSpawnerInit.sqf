@@ -67,10 +67,21 @@ _landingPad = missionNamespace getVariable [_spawnpad,objNull];
             private _landingPad = _arguments select 0;
             _allVehiclesInSpawnArea = nearestObjects [_landingPad, ["Land", "Air", "Ship"], 5];
             if ((count _allVehiclesInSpawnArea) >= 1) then {
-                
                 deleteVehicle (_allVehiclesInSpawnArea select 0);
+
+                _vehicleClassName = typeOf (_allVehiclesInSpawnArea select 0);
+                RB205_VehicleMaxSpawns = missionNamespace getVariable["RB205_VehicleMaxSpawns", createHashMap];
+
+                if ((count RB205_VehicleMaxSpawns) >= 0) then {
+                    _varNameVehicleMaxSpawns = format ["%1_VehicleMaxSpawns", toUpper _vehicleClassName];
+                    _anzahlVerfuegbar = RB205_VehicleMaxSpawns getOrDefault [_varNameVehicleMaxSpawns, -1];
+                    if (_anzahlVerfuegbar >= 0) then {
+                        _anzahlVerfuegbar = _anzahlVerfuegbar + 1;
+                        RB205_VehicleMaxSpawns set [_varNameVehicleMaxSpawns,_anzahlVerfuegbar];
+                        publicVariable "RB205_VehicleMaxSpawns";
+                    };
+                };
             };
-            
         },[_landingPad], 16, false,	true, "", "", 5
     ];
 } forEach _units;
