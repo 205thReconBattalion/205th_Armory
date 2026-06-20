@@ -30,5 +30,3 @@ _ctrlVehicleInfoBox ctrlSetPosition [
 _ctrlVehicleInfoBox ctrlCommit 0;
 
 
-
-//hint format ["%1 , %2", _fahrzeugInfoName, _fahrzeugInfoText];
