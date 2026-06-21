@@ -19,11 +19,13 @@ class CfgFunctions
 {
     class RB205_vehicleSetSpawnerModule
     {
-        class Modules
+        class vehicleSpawner
         {
             file = "\RB205_modules\vehicleSpawner\functions";
             class moduleSetVehicleSpawnerInit {};
             class moduleSetVehicleMaxSpawns{};
+            class limitVehiclesVehicleSelected{};
+            class openDialog{};
         };
     };
 };
@@ -36,6 +38,14 @@ class CfgFactionClasses
     {
         displayName = "205th Fahrzeugspawner";
     };
+};
+
+class Extended_PostInit_EventHandlers
+{
+	class RB205_Modules_vehicleSpawner_PostInit
+	{
+		init="call compile preprocessFileLineNumbers '\RB205_modules\vehicleSpawner\functions\XEH_postInit.sqf'";
+	};
 };
 
 class CfgVehicles
@@ -55,16 +65,6 @@ class CfgVehicles
         isGlobal = 0;
         isTriggerActivated = 0;
         isDisposable = 0;
-        is3DEN = 0;
-        canSetArea = 0;
-    };
-
-    class RB205_Zeus_Module : Module_F
-    {
-        scope = 1;
-        scopeCurator = 2;
-        functionPriority = 1;
-        isGlobal = 1;
         is3DEN = 0;
         canSetArea = 0;
     };
@@ -753,24 +753,9 @@ class CfgVehicles
             sync[] = {};
         };
     };
-/*
-    class RB205_Module_Zeus_SetVehicleMaxSpawns : RB205_Zeus_Module
-    {
-        displayName = "Fahrzeuge begrenzen";
-        category = "RB205_FahrzeugModules";
-        function = "";
-        
-        class RB205_BARC_MaxSpawns
-        {
-            property = "RB205_BARC_VehicleMaxSpawns";
-            displayName = "BARC";
-            control = "Edit";
-            typeName = "NUMBER";
-            expression = "_this setVariable ['RB205_BARC_VehicleMaxSpawns', _value, true];";
-            defaultValue = "-1";
-        };
-        
-    };
-*/
 
 };
+
+
+#include "UIElements\defines.hpp"
+#include "UIElements\dialog.hpp"
