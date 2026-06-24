@@ -14,7 +14,8 @@ class RB205_roleDialog
             y = HINTERGRUND_Y;
             w = HINTERGRUND_W;
             h = HINTERGRUND_H;
-            colorBackground[] = {0,0,0,0.8};
+            colorBackground[] = {0,0,0,0.6};
+            colorText[] = {1,1,1,0.7};
             text = "RB205_roleDialog\UIElements\bilder\HintergrundDialog.paa";
         };
     };
