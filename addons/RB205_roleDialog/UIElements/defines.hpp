@@ -9,14 +9,14 @@
 #define BUTTON_W            0.05 * safezoneW
 #define BUTTON_H            0.075 * safezoneH
 
-#define SPALTE_EINS         HINTERGRUND_X + 0.01 * safezoneW
-#define SPALTE_ZWEI         HINTERGRUND_X + 0.08 * safezoneW
-#define SPALTE_DREI         HINTERGRUND_X + 0.15 * safezoneW
-#define SPALTE_VIER         HINTERGRUND_X + 0.22 * safezoneW
+#define SPALTE_EINS         HINTERGRUND_X + 0.02 * safezoneW
+#define SPALTE_ZWEI         HINTERGRUND_X + 0.09 * safezoneW
+#define SPALTE_DREI         HINTERGRUND_X + 0.16 * safezoneW
+#define SPALTE_VIER         HINTERGRUND_X + 0.23 * safezoneW
 
-#define ZEILE_EINS          HINTERGRUND_Y + 0.05 * safezoneH
-#define ZEILE_ZWEI          HINTERGRUND_Y + 0.16 * safezoneH
-#define ZEILE_DREI          HINTERGRUND_Y + 0.27 * safezoneH
+#define ZEILE_EINS          HINTERGRUND_Y + 0.08 * safezoneH
+#define ZEILE_ZWEI          HINTERGRUND_Y + 0.19 * safezoneH
+#define ZEILE_DREI          HINTERGRUND_Y + 0.30 * safezoneH
 
 
 
