@@ -10,10 +10,10 @@ class RB205_limitVehicleSpawnsDialog
         class BackgroundSelection: VehicleSpawnerModule_RscText
         {
             idc = -1;
-            x = 0.4 * safezoneW + safezoneX;
-            y = 0.2 * safezoneH + safezoneY;
-            w = 0.20 * safezoneW;
-            h = 0.60 * safezoneH;
+            x = BACKGROUND_X
+            y = BACKGROUND_Y
+            w = BACKGROUND_W
+            h = BACKGROUND_H
             colorBackground[] = {0,0,0,0.8};
         };
     };
@@ -23,16 +23,33 @@ class RB205_limitVehicleSpawnsDialog
         class VehicleSelectComboBox : VehicleSpawnerModule_RscCombo
         {
             idc = 205521;
-            x = 0.4 * safezoneW + safezoneX;
-            y = 0.2 * safezoneH + safezoneY;
-            w = 0.12;
-            h = 0.035;
-            onLBSelChanged = "_this call RB205_vehicleSetSpawnerModule_fnc_limitVehiclesVehicleSelected";
+            x = BACKGROUND_X;
+            y = BACKGROUND_Y;
+            w = BACKGROUND_W;
+            h = COMBOBOX_H;
+            onLBSelChanged = "_this call RB205_vehicleSetSpawnerModule_fnc_limitVehiclesVehicleSelected;";
+        };
+        class VehicleSpawnCountTitleText : VehicleSpawnerModule_RscText
+        {
+            idc = 205525;
+            x = BACKGROUND_X;
+            y = BACKGROUND_Y + COMBOBOX_H;
+            w = SPAWNCOUNTTITLE_W;
+            h = 0.04 * BACKGROUND_H;
+            text = "Anzahl Spawns: ";
+        };
+        class VehicleSpawnCountText : VehicleSpawnerModule_RscEdit
+        {
+            idc = 205524;
+            x = BACKGROUND_X + SPAWNCOUNTTITLE_W;
+            y = BACKGROUND_Y + COMBOBOX_H;
+            w = 0.2 * BACKGROUND_W;
+            h = 0.04 * BACKGROUND_H;
         };
 
         
 
-        class SpawnButton: VehicleSpawnerModule_RscButton
+        class OkButton: VehicleSpawnerModule_RscButton
         {
             idc = 205522;
             text = "Ok";
@@ -40,8 +57,7 @@ class RB205_limitVehicleSpawnsDialog
             y = 0.8 * safezoneH + safezoneY;
             w = 0.055 * safezoneW;
             h = 0.04 * safezoneH;
-            //TODO
-            action = "[] call RB205_spawnerDialog_fnc_onBtnClickSpawn";
+            action = "[] call RB205_vehicleSetSpawnerModule_fnc_changeVehicleSpawnCountHashMap";
         };
 
         class CloseButton: VehicleSpawnerModule_RscButton

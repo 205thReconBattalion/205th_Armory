@@ -10,20 +10,45 @@
 #define ST_CENTER           2
 #define ST_MULTI            0x10
 
+#define BACKGROUND_X 		0.4 * safezoneW + safezoneX
+#define BACKGROUND_Y		0.2 * safezoneH + safezoneY
+#define BACKGROUND_W		0.20 * safezoneW
+#define BACKGROUND_H		0.60 * safezoneH
+
+#define COMBOBOX_H			0.04 * BACKGROUND_H
+#define SPAWNCOUNTTITLE_W	0.4 * BACKGROUND_W
+
+
+
 
 
 class VehicleSpawnerModule_RscText
 {
     type = CT_STATIC;
     idc = -1;
-    style = ST_CENTER;
-    align = "center";
+    style = ST_LEFT;
+    align = "left";
     text = "";
     font = "PuristaBold";
     sizeEx = 0.035;
     colorText[] = {1,1,1,1};
     colorBackground[] = {0,0,0,0};
 };
+
+class VehicleSpawnerModule_RscEdit
+{
+    type = CT_EDIT;
+    idc = -1;
+    style = ST_LEFT;
+    align = "left";
+    text = "";
+    font = "PuristaBold";
+    sizeEx = 0.035;
+    colorText[] = {1,1,1,1};
+    colorBackground[] = {0,0,0,0};
+};
+
+
 
 class VehicleSpawnerModule_RscButton
 {
