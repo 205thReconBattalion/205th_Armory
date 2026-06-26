@@ -26,6 +26,9 @@ class CfgFunctions
             class moduleSetVehicleMaxSpawns{};
             class limitVehiclesVehicleSelected{};
             class openDialog{};
+            class createVehicleSpawnHashMap{};
+            class changeVehicleSpawnCountHashMap{};
+            
         };
     };
 };
