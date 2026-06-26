@@ -1,3 +1,6 @@
+/*
+Diese Funktion ist das Zeus Modul
+*/
 private _hasZen = isClass (configFile >> "CfgPatches" >> "zen_custom_modules");
 
 if !(_hasZen) exitWith

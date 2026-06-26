@@ -1,3 +1,6 @@
+/*
+Diese Funktion stellt die AddActions für die Spawner bereit
+*/
 params ["_logic", "_units", "_activated"];
 
 if (!_activated) exitWith {};
