@@ -1,8 +1,9 @@
 #define CT_STATIC           0
 #define CT_BUTTON           1
 #define CT_EDIT             2
+#define CT_LISTBOX          5
 #define CT_STRUCTURED_TEXT  13
-#define CT_ListNBox         102
+#define CT_LISTNBOX         102
 #define CT_CONTROLS_GROUP   15
 #define CT_COMBO            4
 
@@ -15,9 +16,11 @@
 #define BACKGROUND_W		0.20 * safezoneW
 #define BACKGROUND_H		0.60 * safezoneH
 
-#define COMBOBOX_H			0.04 * BACKGROUND_H
+#define LISTBOX_H			0.9 * BACKGROUND_H
+#define EDIT_H  			0.04 * BACKGROUND_H
 #define SPAWNCOUNTTITLE_W	0.4 * BACKGROUND_W
-
+#define BUTTON_W            0.055 * safezoneW
+#define BUTTON_H            0.04 * safezoneH
 
 
 
@@ -77,73 +80,71 @@ class VehicleSpawnerModule_RscButton
     soundEscape[] = {"",0.1,1};
 };
 
-class VehicleSpawnerModule_RscCombo
+class VehicleSpawnerModule_RscListNBox
 {
-	deletable = 0;
-	fade = 0;
-	access = 0;
-	type = CT_COMBO;
-	colorSelect[] = {0,0,0,1};
-	colorText[] = {1,1,1,1};
-	colorBackground[] = {0,0,0,1};
-	colorScrollbar[] = {1,0,0,1};
-	colorDisabled[] = {1,1,1,0.25};
-	colorPicture[] = {1,1,1,1};
-	colorPictureSelected[] = {1,1,1,1};
-	colorPictureDisabled[] = {1,1,1,0.25};
-	colorPictureRight[] = {1,1,1,1};
-	colorPictureRightSelected[] = {1,1,1,1};
-	colorPictureRightDisabled[] = {1,1,1,0.25};
-	colorTextRight[] = {1,1,1,1};
-	colorSelectRight[] = {0,0,0,1};
-	colorSelect2Right[] = {0,0,0,1};
-	tooltipColorText[] = {1,1,1,1};
-	tooltipColorBox[] = {1,1,1,1};
-	tooltipColorShade[] = {0,0,0,0.65};
-	soundSelect[] =
-	{
-		"\A3\ui_f\data\sound\RscCombo\soundSelect",
-		0.1,
-		1
-	};
-	soundExpand[] =
-	{
-		"\A3\ui_f\data\sound\RscCombo\soundExpand",
-		0.1,
-		1
-	};
-	soundCollapse[] =
-	{
-		"\A3\ui_f\data\sound\RscCombo\soundCollapse",
-		0.1,
-		1
-	};
-	maxHistoryDelay = 1;
-	class ComboScrollBar
+    access = 0;
+    type = CT_LISTNBOX;
+    style = 0;
+
+    font = "RobotoCondensed";
+    sizeEx = 0.04;
+    rowHeight = 0;
+
+    shadow = 0;
+
+    colorText[] = {1,1,1,1};
+    colorDisabled[] = {1,1,1,0.25};
+    colorBackground[] = {0,0,0,1};
+
+    colorSelect[] = {1,1,1,1};
+    colorSelect2[] = {1,1,1,1};
+    colorSelectBackground[] = {0.95,0.95,0.95,0.5};
+    colorSelectBackground2[] = {1,1,1,0};
+
+    colorScrollbar[] = {0.95,0.95,0.95,1};
+
+    colorPicture[] = {1,1,1,1};
+    colorPictureSelected[] = {1,1,1,1};
+    colorPictureDisabled[] = {1,1,1,0.25};
+
+    maxHistoryDelay = 1;
+
+    period = 1.2;
+
+    soundSelect[] =
     {
-        color[] = {1,1,1,1};
+        "",
+        0.1,
+        1
+    };
+
+    autoScrollSpeed = -1;
+    autoScrollDelay = 5;
+    autoScrollRewind = 0;
+
+    arrowEmpty = "#(argb,8,8,3)color(1,1,1,1)";
+    arrowFull = "#(argb,8,8,3)color(1,1,1,1)";
+
+    class ListScrollBar
+    {
+        color[] = {1,1,1,0.6};
         colorActive[] = {1,1,1,1};
         colorDisabled[] = {1,1,1,0.3};
+
         thumb = "\A3\ui_f\data\gui\cfg\scrollbar\thumb_ca.paa";
         arrowEmpty = "\A3\ui_f\data\gui\cfg\scrollbar\arrowEmpty_ca.paa";
         arrowFull = "\A3\ui_f\data\gui\cfg\scrollbar\arrowFull_ca.paa";
         border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa";
+
         shadow = 0;
         scrollSpeed = 0.06;
+
         width = 0;
         height = 0;
+
         autoScrollEnabled = 0;
         autoScrollSpeed = -1;
         autoScrollDelay = 5;
         autoScrollRewind = 0;
     };
-	style = ST_MULTI + ST_NO_RECT;
-	font = "RobotoCondensed";
-	sizeEx = 0.035;
-	shadow = 0;
-	colorSelectBackground[] = {1,1,1,0.7};
-	arrowEmpty = "\A3\ui_f\data\GUI\RscCommon\rsccombo\arrow_combo_ca.paa";
-	arrowFull = "\A3\ui_f\data\GUI\RscCommon\rsccombo\arrow_combo_active_ca.paa";
-	wholeHeight = 0.45;
-	colorActive[] = {1,0,0,1};
 };

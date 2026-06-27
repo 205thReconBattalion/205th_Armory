@@ -8,7 +8,7 @@ private _ctrlDisplay = findDisplay 205520;
 private _ctrlComboBox = findDisplay 205521;
 private _ctrlText = displayCtrl 205524;
 
-_className = _control lbData _lbCurSel;
+_className = _control lnbData [_lbCurSel,0];
 
 _hashMap = missionNamespace getVariable ["RB205_VehicleMaxSpawns", createHashMap];
 private _varName = (toUpper _className) + "_VehicleMaxSpawns";

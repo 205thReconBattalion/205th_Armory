@@ -10,53 +10,54 @@ class RB205_limitVehicleSpawnsDialog
         class BackgroundSelection: VehicleSpawnerModule_RscText
         {
             idc = -1;
-            x = BACKGROUND_X
-            y = BACKGROUND_Y
-            w = BACKGROUND_W
-            h = BACKGROUND_H
+            x = BACKGROUND_X;
+            y = BACKGROUND_Y;
+            w = BACKGROUND_W;
+            h = BACKGROUND_H;
             colorBackground[] = {0,0,0,0.8};
         };
     };
 
     class controls
     {
-        class VehicleSelectComboBox : VehicleSpawnerModule_RscCombo
+        class VehicleSelectListBox : VehicleSpawnerModule_RscListNBox
         {
             idc = 205521;
             x = BACKGROUND_X;
             y = BACKGROUND_Y;
             w = BACKGROUND_W;
-            h = COMBOBOX_H;
+            h = LISTBOX_H;
+            columns[] = {-1,0.87};
             onLBSelChanged = "_this call RB205_vehicleSetSpawnerModule_fnc_limitVehiclesVehicleSelected;";
         };
         class VehicleSpawnCountTitleText : VehicleSpawnerModule_RscText
         {
             idc = 205525;
             x = BACKGROUND_X;
-            y = BACKGROUND_Y + COMBOBOX_H;
+            y = BACKGROUND_Y + LISTBOX_H + 0.05;
             w = SPAWNCOUNTTITLE_W;
-            h = 0.04 * BACKGROUND_H;
+            h = EDIT_H;
             text = "Anzahl Spawns: ";
         };
         class VehicleSpawnCountText : VehicleSpawnerModule_RscEdit
         {
             idc = 205524;
             x = BACKGROUND_X + SPAWNCOUNTTITLE_W;
-            y = BACKGROUND_Y + COMBOBOX_H;
+            y = BACKGROUND_Y + LISTBOX_H + 0.05;
             w = 0.2 * BACKGROUND_W;
-            h = 0.04 * BACKGROUND_H;
+            h = EDIT_H;
         };
 
         
 
-        class OkButton: VehicleSpawnerModule_RscButton
+        class ChangeButton: VehicleSpawnerModule_RscButton
         {
             idc = 205522;
-            text = "Ok";
-            x = 0.4 * safezoneW + safezoneX;
-            y = 0.8 * safezoneH + safezoneY;
-            w = 0.055 * safezoneW;
-            h = 0.04 * safezoneH;
+            text = "Wert Ändern";
+            x = BACKGROUND_X;
+            y = BACKGROUND_Y + BACKGROUND_H;
+            w = BUTTON_W;
+            h = BUTTON_H;
             action = "[] call RB205_vehicleSetSpawnerModule_fnc_changeVehicleSpawnCountHashMap";
         };
 
@@ -64,10 +65,10 @@ class RB205_limitVehicleSpawnsDialog
         {
             idc = 205523;
             text = "Schließen";
-            x = 0.46 * safezoneW + safezoneX;
-            y = 0.8 * safezoneH + safezoneY;
-            w = 0.055 * safezoneW;
-            h = 0.04 * safezoneH;
+            x = BACKGROUND_X + BACKGROUND_W - BUTTON_W;
+            y = BACKGROUND_Y + BACKGROUND_H;
+            w = BUTTON_W;
+            h = BUTTON_H;
 
             action = "closeDialog 0;";
         };
