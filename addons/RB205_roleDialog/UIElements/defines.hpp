@@ -7,7 +7,7 @@
 #define HINTERGRUND_H       0.60 * safezoneH
 
 #define BUTTON_W            0.05 * safezoneW
-#define BUTTON_H            0.075 * safezoneH
+#define BUTTON_H            0.09 * safezoneH
 
 #define SPALTE_EINS         HINTERGRUND_X + 0.02 * safezoneW
 #define SPALTE_ZWEI         HINTERGRUND_X + 0.09 * safezoneW
