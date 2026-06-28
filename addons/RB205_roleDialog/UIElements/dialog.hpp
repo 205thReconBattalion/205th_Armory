@@ -31,6 +31,7 @@ class RB205_roleDialog
             w = 0.05 * safezoneW;
             h = 0.075 * safezoneH;
 
+            tooltip = "Rifleman";
             
             animTextureNormal = "\RB205_roleDialog\UIElements\bilder\Rifleman.paa";
             animTextureDisabled = "\RB205_roleDialog\UIElements\bilder\Rifleman.paa";
@@ -51,6 +52,8 @@ class RB205_roleDialog
             w = 0.05 * safezoneW;
             h = 0.075 * safezoneH;
             
+            tooltip = "AT/AA";
+            
             animTextureNormal = "\RB205_roleDialog\UIElements\bilder\AT_AA.paa";
             animTextureDisabled = "\RB205_roleDialog\UIElements\bilder\AT_AA.paa";
             animTextureOver = "\RB205_roleDialog\UIElements\bilder\AT_AA.paa";
@@ -68,7 +71,7 @@ class RB205_roleDialog
             y = ZEILE_DREI;
             w = 0.05 * safezoneW;
             h = 0.075 * safezoneH;
-            
+            tooltip = "EOD";
             animTextureNormal = "\RB205_roleDialog\UIElements\bilder\EOD.paa";
             animTextureDisabled = "\RB205_roleDialog\UIElements\bilder\EOD.paa";
             animTextureOver = "\RB205_roleDialog\UIElements\bilder\EOD.paa";
@@ -87,7 +90,7 @@ class RB205_roleDialog
             y = ZEILE_EINS;
             w = 0.05 * safezoneW;
             h = 0.075 * safezoneH;
-            
+            tooltip = "ARF";
             animTextureNormal = "\RB205_roleDialog\UIElements\bilder\ARF.paa";
             animTextureDisabled = "\RB205_roleDialog\UIElements\bilder\ARF.paa";
             animTextureOver = "\RB205_roleDialog\UIElements\bilder\ARF.paa";
@@ -106,7 +109,7 @@ class RB205_roleDialog
             y = ZEILE_ZWEI;
             w = 0.05 * safezoneW;
             h = 0.075 * safezoneH;
-            
+            tooltip = "Grenadier";
             animTextureNormal = "\RB205_roleDialog\UIElements\bilder\Gren.paa";
             animTextureDisabled = "\RB205_roleDialog\UIElements\bilder\Gren.paa";
             animTextureOver = "\RB205_roleDialog\UIElements\bilder\Gren.paa";
@@ -125,6 +128,7 @@ class RB205_roleDialog
             y = ZEILE_DREI;
             w = 0.05 * safezoneW;
             h = 0.075 * safezoneH;
+            tooltip = "Heavy";
             
             animTextureNormal = "\RB205_roleDialog\UIElements\bilder\Heavy.paa";
             animTextureDisabled = "\RB205_roleDialog\UIElements\bilder\Heavy.paa";
@@ -144,6 +148,7 @@ class RB205_roleDialog
             y = ZEILE_EINS;
             w = 0.05 * safezoneW;
             h = 0.075 * safezoneH;
+            tooltip = "Marksman";
             
             animTextureNormal = "\RB205_roleDialog\UIElements\bilder\Marksman.paa";
             animTextureDisabled = "\RB205_roleDialog\UIElements\bilder\Marksman.paa";
@@ -163,7 +168,7 @@ class RB205_roleDialog
             y = ZEILE_ZWEI;
             w = 0.05 * safezoneW;
             h = 0.075 * safezoneH;
-            
+            tooltip = "Crewman";
             animTextureNormal = "\RB205_roleDialog\UIElements\bilder\Crewman.paa";
             animTextureDisabled = "\RB205_roleDialog\UIElements\bilder\Crewman.paa";
             animTextureOver = "\RB205_roleDialog\UIElements\bilder\Crewman.paa";
@@ -182,7 +187,7 @@ class RB205_roleDialog
             y = ZEILE_DREI;
             w = 0.05 * safezoneW;
             h = 0.075 * safezoneH;
-            
+            tooltip = "Medic";
             animTextureNormal = "\RB205_roleDialog\UIElements\bilder\Medic.paa";
             animTextureDisabled = "\RB205_roleDialog\UIElements\bilder\Medic.paa";
             animTextureOver = "\RB205_roleDialog\UIElements\bilder\Medic.paa";
@@ -201,7 +206,7 @@ class RB205_roleDialog
             y = ZEILE_EINS;
             w = 0.05 * safezoneW;
             h = 0.075 * safezoneH;
-            
+            tooltip = "RTO";
             animTextureNormal = "\RB205_roleDialog\UIElements\bilder\RTO.paa";
             animTextureDisabled = "\RB205_roleDialog\UIElements\bilder\RTO.paa";
             animTextureOver = "\RB205_roleDialog\UIElements\bilder\RTO.paa";
@@ -220,7 +225,7 @@ class RB205_roleDialog
             y = ZEILE_ZWEI;
             w = 0.05 * safezoneW;
             h = 0.075 * safezoneH;
-            
+            tooltip = "Pilot";
             animTextureNormal = "\RB205_roleDialog\UIElements\bilder\Pilot.paa";
             animTextureDisabled = "\RB205_roleDialog\UIElements\bilder\Pilot.paa";
             animTextureOver = "\RB205_roleDialog\UIElements\bilder\Pilot.paa";
@@ -239,7 +244,7 @@ class RB205_roleDialog
             y = ZEILE_DREI;
             w = 0.05 * safezoneW;
             h = 0.075 * safezoneH;
-            
+            tooltip = "ARC";
             animTextureNormal = "\RB205_roleDialog\UIElements\bilder\ARC.paa";
             animTextureDisabled = "\RB205_roleDialog\UIElements\bilder\ARC.paa";
             animTextureOver = "\RB205_roleDialog\UIElements\bilder\ARC.paa";

@@ -40,6 +40,10 @@ class RB205RoleDialog_RscButton
     colorBackground2[] = {0.55,0.08,0.08,1};
     colorBackgroundFocused[] = {0,0,0,0};
 
+    tooltipColorText[] = {1,1,1,1};
+	tooltipColorBox[] = {0,0,0,1};
+	tooltipColorShade[] = {0,0,0,0.65};
+
     autoAdjustTexture = true;
 
     textureNoShortcut = "";
