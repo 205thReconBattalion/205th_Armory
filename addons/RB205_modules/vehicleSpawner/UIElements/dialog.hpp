@@ -27,7 +27,7 @@ class RB205_limitVehicleSpawnsDialog
             y = BACKGROUND_Y;
             w = BACKGROUND_W;
             h = LISTBOX_H;
-            columns[] = {-1,0.87};
+            columns[] = {0,0.87};
             onLBSelChanged = "_this call RB205_vehicleSetSpawnerModule_fnc_limitVehiclesVehicleSelected;";
         };
         class VehicleSpawnCountTitleText : VehicleSpawnerModule_RscText
