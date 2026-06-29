@@ -28,6 +28,7 @@ class CfgFunctions
             class openDialog{};
             class createVehicleSpawnHashMap{};
             class changeVehicleSpawnCountHashMap{};
+            class triggerfunction{};
             
         };
     };
@@ -76,7 +77,7 @@ class CfgVehicles
     {
         displayName = "Erstellen Fahrzeugspawner";
         category = "RB205_FahrzeugModules";
-        function = "RB205_vehicleSetSpawnerModule_fnc_moduleSetVehicleSpawnerInit";
+        function = "RB205_vehicleSetSpawnerModule_fnc_triggerfunction";
 
         class Attributes: AttributesBase
         {
