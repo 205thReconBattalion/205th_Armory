@@ -49,6 +49,18 @@ class VehicleSpawnerModule_RscEdit
     sizeEx = 0.035;
     colorText[] = {1,1,1,1};
     colorBackground[] = {0,0,0,0};
+    colorDisabled[] = {1,1,1,0.25};
+
+    deletable = 0;
+	fade = 0;
+	access = 0;
+	colorSelection[] = {};
+	autocomplete = "";
+	shadow = 2;
+	canModify = 1;
+	tooltipColorText[] = {1,1,1,1};
+	tooltipColorBox[] = {1,1,1,1};
+	tooltipColorShade[] = {0,0,0,0.65};
 };
 
 
@@ -82,66 +94,61 @@ class VehicleSpawnerModule_RscButton
 
 class VehicleSpawnerModule_RscListNBox
 {
-    access = 0;
-    type = CT_LISTNBOX;
-    style = 0;
-
-    font = "RobotoCondensed";
-    sizeEx = 0.04;
-    rowHeight = 0;
-
-    shadow = 0;
-
-    colorText[] = {1,1,1,1};
-    colorDisabled[] = {1,1,1,0.25};
-    colorBackground[] = {0,0,0,1};
-
-    colorSelect[] = {1,1,1,1};
-    colorSelect2[] = {1,1,1,1};
-    colorSelectBackground[] = {0.95,0.95,0.95,0.5};
-    colorSelectBackground2[] = {1,1,1,0};
-
-    colorScrollbar[] = {0.95,0.95,0.95,1};
-
-    colorPicture[] = {1,1,1,1};
-    colorPictureSelected[] = {1,1,1,1};
-    colorPictureDisabled[] = {1,1,1,0.25};
-
-    maxHistoryDelay = 1;
-
-    period = 1.2;
-
-    soundSelect[] =
-    {
-        "",
-        0.1,
-        1
-    };
-
-    autoScrollSpeed = -1;
-    autoScrollDelay = 5;
-    autoScrollRewind = 0;
-
-    arrowEmpty = "#(argb,8,8,3)color(1,1,1,1)";
-    arrowFull = "#(argb,8,8,3)color(1,1,1,1)";
-
+	deletable = 0;
+	fade = 0;
+	access = 0;
+	type = CT_LISTNBOX;
+	rowHeight = 0;
+	colorText[] = {1,1,1,1};
+	colorScrollbar[] = {0.95,0.95,0.95,1};
+	colorSelect[] = {1,1,1,1};
+	colorSelect2[] = {1,1,1,1};
+	colorSelectBackground[] = {0.95,0.95,0.95,1};
+	colorSelectBackground2[] = {1,1,1,0.5};
+	colorBackground[] = {0,0,0,1};
+	maxHistoryDelay = 1;
+	soundSelect[] =
+	{
+		"",
+		0.1,
+		1
+	};
+	autoScrollSpeed = -1;
+	autoScrollDelay = 5;
+	autoScrollRewind = 0;
+	arrowEmpty = "#(argb,8,8,3)color(1,1,1,1)";
+	arrowFull = "#(argb,8,8,3)color(1,1,1,1)";
+	drawSideArrows = 0;
+	columns[] = {-0.01,0.2,0.4};
+	idcLeft = -1;
+	idcRight = -1;
+	style = ST_MULTI;
+	shadow = 0;
+	font = "RobotoCondensed";
+	sizeEx = 0.04;
+	color[] = {0.95,0.95,0.95,1};
+	colorDisabled[] = {1,1,1,0.25};
+	colorPicture[] = {1,1,1,1};
+	colorPictureSelected[] = {1,1,1,1};
+	colorPictureDisabled[] = {1,1,1,1};
+	period = 1.2;
+	x = 0;
+	y = 0;
+	w = 0.3;
+	h = 0.3;
     class ListScrollBar
     {
         color[] = {1,1,1,0.6};
         colorActive[] = {1,1,1,1};
         colorDisabled[] = {1,1,1,0.3};
-
         thumb = "\A3\ui_f\data\gui\cfg\scrollbar\thumb_ca.paa";
         arrowEmpty = "\A3\ui_f\data\gui\cfg\scrollbar\arrowEmpty_ca.paa";
         arrowFull = "\A3\ui_f\data\gui\cfg\scrollbar\arrowFull_ca.paa";
         border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa";
-
         shadow = 0;
         scrollSpeed = 0.06;
-
         width = 0;
         height = 0;
-
         autoScrollEnabled = 0;
         autoScrollSpeed = -1;
         autoScrollDelay = 5;
