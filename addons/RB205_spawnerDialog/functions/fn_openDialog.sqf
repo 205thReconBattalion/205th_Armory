@@ -22,7 +22,6 @@ _vehicleMaxSpawnsHashMap = missionNamespace getVariable["RB205_VehicleMaxSpawns"
 
 {
     _anzahlVerfuegbar = "";
-    if ((count _vehicleMaxSpawnsHashMap) > 0) then {
         _varNameVehicleMaxSpawns = format ["%1_VehicleMaxSpawns", toUpper (_x select 0)];
         _anzahlVerfuegbar = _vehicleMaxSpawnsHashMap getOrDefault [_varNameVehicleMaxSpawns, -1];
         if (_anzahlVerfuegbar == -1) then {
@@ -30,7 +29,6 @@ _vehicleMaxSpawnsHashMap = missionNamespace getVariable["RB205_VehicleMaxSpawns"
         } else {
             _anzahlVerfuegbar = str _anzahlVerfuegbar;
         };
-    };
     _row = _ctrlListNBox lnbAddRow [_x select 1, _x select 4, _x select 2, _anzahlVerfuegbar];
     _ctrlListNBox lnbSetData [[_row, 0], _x select 0];
     _ctrlListNBox lnbSetData [[_row, 1], _x select 5];
