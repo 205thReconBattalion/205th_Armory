@@ -28,12 +28,6 @@ class cfgFunctions
             class onBtnClickPilot {};
             class onBtnClickRifleman {};
             class onBtnClickRTO {};
-            class permissionARC {};
-            class permissionCrewman {};
-            class permissionEOD {};
-            class permissionMedic {};
-            class permissionPilot {};
-            class permissionRifleman {};
         };
     };
 };
