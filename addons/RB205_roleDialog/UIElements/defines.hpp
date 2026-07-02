@@ -18,6 +18,8 @@
 #define ZEILE_ZWEI          HINTERGRUND_Y + 0.19 * safezoneH
 #define ZEILE_DREI          HINTERGRUND_Y + 0.30 * safezoneH
 
+#define BUTTON_H            0.09 * safezoneH
+
 
 
 

@@ -29,7 +29,7 @@ class RB205_roleDialog
             x = SPALTE_EINS;
             y = ZEILE_EINS;
             w = 0.05 * safezoneW;
-            h = 0.075 * safezoneH;
+            h = BUTTON_H;
 
             tooltip = "Rifleman";
             
@@ -47,10 +47,10 @@ class RB205_roleDialog
         {
             idc = 205532;
             text = "";
-            x = SPALTE_EINS;
-            y = ZEILE_ZWEI;
+            x = SPALTE_VIER;
+            y = ZEILE_EINS;
             w = 0.05 * safezoneW;
-            h = 0.075 * safezoneH;
+            h = BUTTON_H;
             
             tooltip = "AT/AA";
             
@@ -67,10 +67,10 @@ class RB205_roleDialog
         {
             idc = 205533;
             text = "";
-            x = SPALTE_EINS;
-            y = ZEILE_DREI;
+            x = SPALTE_VIER;
+            y = ZEILE_ZWEI;
             w = 0.05 * safezoneW;
-            h = 0.075 * safezoneH;
+            h = BUTTON_H;
             tooltip = "EOD";
             animTextureNormal = "\RB205_roleDialog\UIElements\bilder\EOD.paa";
             animTextureDisabled = "\RB205_roleDialog\UIElements\bilder\EOD.paa";
@@ -86,10 +86,10 @@ class RB205_roleDialog
         {
             idc = 205540;
             text = "";
-            x = SPALTE_ZWEI;
-            y = ZEILE_EINS;
+            x = SPALTE_DREI;
+            y = ZEILE_DREI;
             w = 0.05 * safezoneW;
-            h = 0.075 * safezoneH;
+            h = BUTTON_H;
             tooltip = "ARF";
             animTextureNormal = "\RB205_roleDialog\UIElements\bilder\ARF.paa";
             animTextureDisabled = "\RB205_roleDialog\UIElements\bilder\ARF.paa";
@@ -106,9 +106,9 @@ class RB205_roleDialog
             idc = 205534;
             text = "";
             x = SPALTE_ZWEI;
-            y = ZEILE_ZWEI;
+            y = ZEILE_EINS;
             w = 0.05 * safezoneW;
-            h = 0.075 * safezoneH;
+            h = BUTTON_H;
             tooltip = "Grenadier";
             animTextureNormal = "\RB205_roleDialog\UIElements\bilder\Gren.paa";
             animTextureDisabled = "\RB205_roleDialog\UIElements\bilder\Gren.paa";
@@ -124,10 +124,10 @@ class RB205_roleDialog
         {
             idc = 205535;
             text = "";
-            x = SPALTE_ZWEI;
-            y = ZEILE_DREI;
+            x = SPALTE_DREI;
+            y = ZEILE_EINS;
             w = 0.05 * safezoneW;
-            h = 0.075 * safezoneH;
+            h = BUTTON_H;
             tooltip = "Heavy";
             
             animTextureNormal = "\RB205_roleDialog\UIElements\bilder\Heavy.paa";
@@ -144,10 +144,10 @@ class RB205_roleDialog
         {
             idc = 205536;
             text = "";
-            x = SPALTE_DREI;
-            y = ZEILE_EINS;
+            x = SPALTE_EINS;
+            y = ZEILE_ZWEI;
             w = 0.05 * safezoneW;
-            h = 0.075 * safezoneH;
+            h = BUTTON_H;
             tooltip = "Marksman";
             
             animTextureNormal = "\RB205_roleDialog\UIElements\bilder\Marksman.paa";
@@ -164,10 +164,10 @@ class RB205_roleDialog
         {
             idc = 205541;
             text = "";
-            x = SPALTE_DREI;
-            y = ZEILE_ZWEI;
+            x = SPALTE_EINS;
+            y = ZEILE_DREI;
             w = 0.05 * safezoneW;
-            h = 0.075 * safezoneH;
+            h = BUTTON_H;
             tooltip = "Crewman";
             animTextureNormal = "\RB205_roleDialog\UIElements\bilder\Crewman.paa";
             animTextureDisabled = "\RB205_roleDialog\UIElements\bilder\Crewman.paa";
@@ -184,9 +184,9 @@ class RB205_roleDialog
             idc = 205537;
             text = "";
             x = SPALTE_DREI;
-            y = ZEILE_DREI;
+            y = ZEILE_ZWEI;
             w = 0.05 * safezoneW;
-            h = 0.075 * safezoneH;
+            h = BUTTON_H;
             tooltip = "Medic";
             animTextureNormal = "\RB205_roleDialog\UIElements\bilder\Medic.paa";
             animTextureDisabled = "\RB205_roleDialog\UIElements\bilder\Medic.paa";
@@ -202,10 +202,10 @@ class RB205_roleDialog
         {
             idc = 205538;
             text = "";
-            x = SPALTE_VIER;
-            y = ZEILE_EINS;
+            x = SPALTE_ZWEI;
+            y = ZEILE_ZWEI;
             w = 0.05 * safezoneW;
-            h = 0.075 * safezoneH;
+            h = BUTTON_H;
             tooltip = "RTO";
             animTextureNormal = "\RB205_roleDialog\UIElements\bilder\RTO.paa";
             animTextureDisabled = "\RB205_roleDialog\UIElements\bilder\RTO.paa";
@@ -221,10 +221,10 @@ class RB205_roleDialog
         {
             idc = 205539;
             text = "";
-            x = SPALTE_VIER;
-            y = ZEILE_ZWEI;
+            x = SPALTE_ZWEI;
+            y = ZEILE_DREI;
             w = 0.05 * safezoneW;
-            h = 0.075 * safezoneH;
+            h = BUTTON_H;
             tooltip = "Pilot";
             animTextureNormal = "\RB205_roleDialog\UIElements\bilder\Pilot.paa";
             animTextureDisabled = "\RB205_roleDialog\UIElements\bilder\Pilot.paa";
@@ -243,7 +243,7 @@ class RB205_roleDialog
             x = SPALTE_VIER;
             y = ZEILE_DREI;
             w = 0.05 * safezoneW;
-            h = 0.075 * safezoneH;
+            h = BUTTON_H;
             tooltip = "ARC";
             animTextureNormal = "\RB205_roleDialog\UIElements\bilder\ARC.paa";
             animTextureDisabled = "\RB205_roleDialog\UIElements\bilder\ARC.paa";
