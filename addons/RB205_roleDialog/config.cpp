@@ -31,7 +31,13 @@ class cfgFunctions
         };
     };
 };
-
+class Extended_PostInit_EventHandlers
+{
+    class RB205_roleDialog_postInit
+    {
+        init = "call compile preprocessFileLineNumbers '\RB205_roleDialog\functions\XEH_PostInit.sqf'";
+    };
+};
 
 
 
