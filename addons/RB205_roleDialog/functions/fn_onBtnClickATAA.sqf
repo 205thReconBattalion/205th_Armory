@@ -4,7 +4,7 @@ player setVariable ["ace_medical_medicClass", 0, true];
 player setVariable ["ACE_IsEngineer", 0, true];
 player setVariable ["ACE_isEOD", 0, true];
 
-_role = "ATAA";
+_role = "AT/AA";
 player setVariable ["RB205_combatRole", _role, true];
 player setVariable ["diwako_dui_nametags_customInfo", _role, true];
 
