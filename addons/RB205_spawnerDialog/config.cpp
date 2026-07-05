@@ -4,7 +4,8 @@ class CfgPatches
 	{
 		requiredAddons[] =
 		{
-			"RB205_vehicles"
+			"RB205_vehicles",
+			"RB205_notification"
 		};
 		requiredVersion = 1.0;
 		author = "Putzi";
