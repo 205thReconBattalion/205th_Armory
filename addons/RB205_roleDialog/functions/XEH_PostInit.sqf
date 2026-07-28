@@ -1,5 +1,5 @@
 if (!hasInterface) exitWith {};
-
+/*
 ["ace_arsenal_displayClosed", {
     _role = player getVariable ["RB205_combatRole", "Rifleman"];
     _msg = format [
@@ -7,3 +7,4 @@ if (!hasInterface) exitWith {};
 ];
 hint parseText _msg;
 }] call CBA_fnc_addEventHandler;
+*/
