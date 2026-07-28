@@ -67,7 +67,7 @@ class RB205_roleDialog
         {
             idc = 205533;
             text = "";
-            x = SPALTE_VIER;
+            x = SPALTE_DREI;
             y = ZEILE_ZWEI;
             w = 0.05 * safezoneW;
             h = BUTTON_H;
@@ -183,7 +183,7 @@ class RB205_roleDialog
         {
             idc = 205537;
             text = "";
-            x = SPALTE_DREI;
+            x = SPALTE_ZWEI;
             y = ZEILE_ZWEI;
             w = 0.05 * safezoneW;
             h = BUTTON_H;
@@ -202,7 +202,7 @@ class RB205_roleDialog
         {
             idc = 205538;
             text = "";
-            x = SPALTE_ZWEI;
+            x = SPALTE_VIER;
             y = ZEILE_ZWEI;
             w = 0.05 * safezoneW;
             h = BUTTON_H;
