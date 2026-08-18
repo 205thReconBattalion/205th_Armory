@@ -28,6 +28,10 @@ class cfgPatches
 #include "\RB205_vehicles\inventory.hpp"
 #include "\RB205_vehicles\bantha\bantha_textures.hpp"
 
+#define FUEL_VALUES \
+	fuelCapacity = 45; \
+	fuelConsumptionRate = 0.01;
+
 class cfgVehicles
 {
 	class Aux212_Bantha_C_IFV_Base;
@@ -43,6 +47,7 @@ class cfgVehicles
 		crew = CREW_ARMORED;
 		VEH_INVENTORY
 		CARGO_S
+		FUEL_VALUES
 		//Editor/ Zeus
 		side = 1;
 		faction = "RB205";
@@ -65,6 +70,7 @@ class cfgVehicles
 		crew = CREW_ARMORED;
 		VEH_INVENTORY
 		CARGO_S
+		FUEL_VALUES
 		//Editor/ Zeus
 		side = 1;
 		faction = "RB205";
@@ -87,6 +93,7 @@ class cfgVehicles
 		crew = CREW_ARMORED;
 		VEH_INVENTORY
 		CARGO_S
+		FUEL_VALUES
 		//Editor/ Zeus
 		side = 1;
 		faction = "RB205";
@@ -109,6 +116,7 @@ class cfgVehicles
 		crew = CREW_ARMORED;
 		VEH_INVENTORY
 		CARGO_S
+		FUEL_VALUES
 		//Editor/ Zeus
 		side = 1;
 		faction = "RB205";
@@ -131,6 +139,7 @@ class cfgVehicles
 		crew = CREW_ARMORED;
 		VEH_INVENTORY
 		CARGO_S
+		FUEL_VALUES
 		//Editor/ Zeus
 		side = 1;
 		faction = "RB205";
@@ -153,6 +162,7 @@ class cfgVehicles
 		crew = CREW_ARMORED;
 		VEH_INVENTORY
 		CARGO_L
+		FUEL_VALUES
 		//Editor/ Zeus
 		side = 1;
 		faction = "RB205";
@@ -175,6 +185,7 @@ class cfgVehicles
 		crew = CREW_ARMORED;
 		VEH_INVENTORY
 		CARGO_M
+		FUEL_VALUES
 		//Editor/ Zeus
 		side = 1;
 		faction = "RB205";
