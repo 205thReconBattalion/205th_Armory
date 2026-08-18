@@ -529,7 +529,7 @@ class CfgMagazines
 		displayNameShort = "$STR_205_HuntIR_DisplayNameShort";
 		descriptionShort = "";
 		picture = "\3AS\3AS_Weapons\Data\UI\3as_nade_proto.paa";
-		MASS_EXP
+		MASS_EXP_GL
         author = "205th Recon Battalion";
 	};
 	class ACE_40mm_Pike;
