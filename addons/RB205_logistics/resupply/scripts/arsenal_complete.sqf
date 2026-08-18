@@ -195,7 +195,7 @@ params ["_this"];
 		"JLTS_repairkit_weapon_mini","JLTS_repairkit_weapon","JLTS_riot_shield_item","JLTS_MSE6_manual","JLTS_MSE6_toolkit","JLTS_droidCaller","JLTS_scanner_police",
 		"JLTS_ids_gar_army","JLTS_ids_gar_medical","JLTS_ids_gar_navy","RB205_keycard_prison",
 
-		"RB205_prowler_item",
+		"RB205_prowler_item","ls_equipment_squadShield_packed",
 
 		"MineDetector","ToolKit","Laserbatteries"
 	]

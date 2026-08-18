@@ -29,7 +29,7 @@ params ["_this"];
 		"JLTS_repairkit_weapon_mini","JLTS_repairkit_weapon","JLTS_riot_shield_item","JLTS_MSE6_manual","JLTS_MSE6_toolkit","JLTS_droidCaller","JLTS_scanner_police",
 		"JLTS_ids_gar_army","JLTS_ids_gar_medical","JLTS_ids_gar_navy","JLTS_ids_police","JLTS_ids_license_weapon_primary","JLTS_ids_license_weapon_secondary","JLTS_ids_license_driver_large","JLTS_ids_license_driver_medium","JLTS_ids_license_driver_small",
 
-		"RB205_prowler_item",
+		"RB205_prowler_item","ls_equipment_squadShield_packed",
 
 		"MineDetector","ToolKit","Laserbatteries"
 	]
