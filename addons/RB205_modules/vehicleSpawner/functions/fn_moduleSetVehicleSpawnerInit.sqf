@@ -44,7 +44,7 @@ _landingPad = missionNamespace getVariable [_spawnpad,objNull];
     };
     if (_logic getVariable "RB205_AirFighterVehicleBool") then {
         _x addAction [
-            "Fahrzeug Spawner (Jäger)",
+            "Fahrzeug Spawner (Sternenjäger)",
             {
                 params ["_target", "_caller", "_actionId", "_arguments"];
                 private _spawnpad = _arguments select 0;
@@ -55,7 +55,7 @@ _landingPad = missionNamespace getVariable [_spawnpad,objNull];
     };
     if (_logic getVariable "RB205_NavalVehicleBool") then {
         _x addAction [
-            "Fahrzeug Spawner (Wasserfahrzeuge)",
+            "Fahrzeug Spawner (Wasser)",
             {
                 params ["_target", "_caller", "_actionId", "_arguments"];
                 private _spawnpad = _arguments select 0;
@@ -66,7 +66,7 @@ _landingPad = missionNamespace getVariable [_spawnpad,objNull];
     };
     if (_logic getVariable "RB205_UtilityVehicleBool") then {
         _x addAction [
-            "Fahrzeug Spawner (Utility)",
+            "Fahrzeug Spawner (Stationär)",
             {
                 params ["_target", "_caller", "_actionId", "_arguments"];
                 private _spawnpad = _arguments select 0;
@@ -80,11 +80,10 @@ _landingPad = missionNamespace getVariable [_spawnpad,objNull];
         {
             params ["_target", "_caller", "_actionId", "_arguments"];
             private _landingPad = _arguments select 0;
-            _allVehiclesInSpawnArea = nearestObjects [_landingPad, ["Land", "Air", "Ship"], 5];
+            _allVehiclesInSpawnArea = nearestObjects [_landingPad, ["Land", "Air", "Ship"], 15]; //"LandVehicle" = "Land" ohne "Man"
             if ((count _allVehiclesInSpawnArea) >= 1) then {
-                deleteVehicle (_allVehiclesInSpawnArea select 0);
-
                 _vehicleClassName = typeOf (_allVehiclesInSpawnArea select 0);
+                deleteVehicle (_allVehiclesInSpawnArea select 0);
                 RB205_VehicleMaxSpawns = missionNamespace getVariable["RB205_VehicleMaxSpawns", createHashMap];
 
                 if ((count RB205_VehicleMaxSpawns) >= 0) then {

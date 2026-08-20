@@ -57,7 +57,7 @@ class RB205_spawnVehicleDialog
         class CloseButton: VehicleSpawner_RscButton
         {
             idc = 205503;
-            text = "Schließen";
+            text = "Abbrechen";
             x = 0.313 * safezoneW + safezoneX;
             y = 0.8 * safezoneH + safezoneY;
             w = 0.11 * safezoneW;
@@ -141,7 +141,7 @@ class RB205_spawnVehicleDialog
         class TitelName: VehicleSpawner_RscText
         {
             idc = 205506;
-            text = "Fahrzeug";
+            text = "Vehicle";
             x = 0.21 * safezoneW + safezoneX;
             y = 0.2 * safezoneH + safezoneY;
             w = 0.08 * safezoneW;

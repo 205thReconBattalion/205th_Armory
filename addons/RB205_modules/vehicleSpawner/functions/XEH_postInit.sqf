@@ -10,7 +10,7 @@ if !(_hasZen) exitWith
 
 if (!hasInterface) exitWith {};
 
-["RB205 Fahrzeugspawner", "Fahrzeugspawn begrenzen",
+["[205] Vehicle Spawner", "Limit Vehicle Spawns",
     {
         params [["_pos",[0,0,0],[[]],3], ["_logic",objNull,[objNull]]];
        

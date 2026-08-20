@@ -1,11 +1,13 @@
 class CfgPatches
 {
-    class RB205_vehicleSetSpawnerModule
+    class RB205_modules_vehicleSpawner
     {
-        requiredAddons[] = {
+        requiredAddons[] =
+        {
             "A3_Modules_F",
             "RB205_spawnerDialog"
         };
+        skipWhenMissingDependencies = 1;
         units[] = 
         {
             "RB205_Module_SetVehicleSpawnerInit",
@@ -37,18 +39,17 @@ class CfgFunctions
 class CfgFactionClasses
 {
     class NO_CATEGORY;
-
-    class RB205_FahrzeugModules: NO_CATEGORY
+    class RB205_modules_vehicleSpawner: NO_CATEGORY
     {
-        displayName = "205th Fahrzeugspawner";
+        displayName = "[205] Vehicle Spawner";
     };
 };
 
 class Extended_PostInit_EventHandlers
 {
-	class RB205_Modules_vehicleSpawner_PostInit
+	class RB205_modules_vehicleSpawner_PostInit
 	{
-		init="call compile preprocessFileLineNumbers '\RB205_modules\vehicleSpawner\functions\XEH_postInit.sqf'";
+		init = "call compile preprocessFileLineNumbers '\RB205_modules\vehicleSpawner\functions\XEH_postInit.sqf'";
 	};
 };
 
@@ -61,7 +62,7 @@ class CfgVehicles
         class ModuleDescription;
     };
 
-    class RB205_Eden_Module : Module_F
+    class RB205_Eden_Module: Module_F
     {
         scope = 2;
         scopeCurator = 1;
@@ -75,8 +76,8 @@ class CfgVehicles
 
     class RB205_Module_SetVehicleSpawnerInit: RB205_Eden_Module
     {
-        displayName = "Erstellen Fahrzeugspawner";
-        category = "RB205_FahrzeugModules";
+        displayName = "Add Vehicle Spawner";
+        category = RB205_modules_vehicleSpawner;
         function = "RB205_vehicleSetSpawnerModule_fnc_triggerfunction";
 
         class Attributes: AttributesBase
@@ -87,7 +88,7 @@ class CfgVehicles
                 displayName = "Ungepanzerte Fahrzeuge";
                 control = "Checkbox";
                 expression = "_this setVariable ['RB205_UnarmoredVehicleBool', _value, true];";
-                defaultValue = "false";
+                defaultValue = "true";
                 typeName = "BOOL";
             };
             class ArmoredVehicleBool
@@ -96,50 +97,54 @@ class CfgVehicles
                 displayName = "Gepanzerte Fahrzeuge";
                 control = "Checkbox";
                 expression = "_this setVariable ['RB205_ArmoredVehicleBool', _value, true];";
-                defaultValue = "false";
+                defaultValue = "true";
                 typeName = "BOOL";
             };
             class NavalVehicleBool
             {
                 property = "RB205_Module_SetVehicleSpawnerInit_NavalVehicleBool";
-                displayName = "Marine Fahrzeuge";
+                displayName = "Wasserfahrzeuge";
                 control = "Checkbox";
                 expression = "_this setVariable ['RB205_NavalVehicleBool', _value, true];";
-                defaultValue = "false";
+                defaultValue = "true";
                 typeName = "BOOL";
             };
             class AirTransportVehicleBool
             {
                 property = "RB205_Module_SetVehicleSpawnerInit_AirTransportVehicleBool";
-                displayName = "Luftransport Fahrzeuge";
+                displayName = "Lufttransport";
+                tooltip = "LAAT/I, LAAT/C, ...";
                 control = "Checkbox";
                 expression = "_this setVariable ['RB205_AirTransportVehicleBool', _value, true];";
-                defaultValue = "false";
+                defaultValue = "true";
                 typeName = "BOOL";
             };
             class AirFighterVehicleBool
             {
                 property = "RB205_Module_SetVehicleSpawnerInit_AirFighterVehicleBool";
-                displayName = "Luftkampf Fahrzeuge";
+                displayName = "Sternenjäger";
+                tooltip = "ARC-170, V-Wing, ...";
                 control = "Checkbox";
                 expression = "_this setVariable ['RB205_AirFighterVehicleBool', _value, true];";
-                defaultValue = "false";
+                defaultValue = "true";
                 typeName = "BOOL";
             };
             class UtilityVehicleBool
             {
                 property = "RB205_Module_SetVehicleSpawnerInit_UtilityVehicleBool";
-                displayName = "Utility";
+                displayName = "Stationäre Systeme";
+                tooltip = "Geschütze, Rho-Class Kisten, ...";
                 control = "Checkbox";
                 expression = "_this setVariable ['RB205_UtilityVehicleBool', _value, true];";
-                defaultValue = "false";
+                defaultValue = "true";
                 typeName = "BOOL";
             };            
             class VehicleSpawnerVariableName
             {
                 property = "RB205_Module_SetVehicleSpawnerInit_VehicleSpawnerVariableName";
-                displayName = "Spawnflächen Variablen Name";
-                control = "EditCode";
+                displayName = "Variablenname der Spawnfläche";
+                tooltip = "nur eine Variable, ohne Anführungszeichen angeben";
+                control = "Edit";
                 expression = "_this setVariable ['RB205_VehicleSpawnerVariableName', _value, true];";
                 defaultValue = """""";
                 typeName = "STRING";
@@ -150,7 +155,7 @@ class CfgVehicles
 
         class ModuleDescription: ModuleDescription
         {
-            description = "Legt fest welche Fahrzeugspawner durch das Modul gesetzt werden.";
+            description = "Definiert die synchronisierten Objekte als Spawn-Terminals für die angekreuzten Fahrzeug-Klassen. Die Fahrzeuge werden dabei auf der angegebenen Spawnfläche gespawnt und können auch wieder eingelagert werden.";
             sync[] = {};
         };
     };
@@ -158,8 +163,8 @@ class CfgVehicles
 
     class RB205_Module_SetVehicleMaxSpawns: RB205_Eden_Module
     {
-        displayName = "Fahrzeuge begrenzen";
-        category = "RB205_FahrzeugModules";
+        displayName = "Limit Vehicle Spawns";
+        category = RB205_modules_vehicleSpawner;
         function = "RB205_vehicleSetSpawnerModule_fnc_moduleSetVehicleMaxSpawns";
 
         class Attributes: AttributesBase
@@ -753,7 +758,7 @@ class CfgVehicles
 
         class ModuleDescriptionMaxSpawns: ModuleDescription
         {
-            description = "Legt fest wie viele Fahrzeuge einer Art gespawnt werden können. '-1' stellt hierbei keine begrenzung dar.";
+            description = "Legt fest wie viele Fahrzeuge einer Art gespawnt werden können. Dabei bedeutet '-1', keine Begrenzung.";
             sync[] = {};
         };
     };
