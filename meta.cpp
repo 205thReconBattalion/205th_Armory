@@ -1,2 +1,2 @@
 protocol = 1;
-name = "205th Recon Battalion | Armory - Test";
+name = "205th Recon Battalion | Armory";
