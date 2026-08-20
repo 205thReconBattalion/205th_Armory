@@ -7,7 +7,7 @@ if !(_hasZen) exitWith
 
 if (!hasInterface) exitWith {};
 
-["Wanted System", "Edit Criminal Records",
+["[205] Wanted System", "Edit Criminal Record",
     {
         params [["_pos",[0,0,0],[[]],3], ["_logic",objNull,[objNull]]];
         private _unit = _logic;
@@ -33,7 +33,7 @@ if (!hasInterface) exitWith {};
     }, "\RB205_modules\crime\UIElements\addEntryModule.paa"
 ] call zen_custom_modules_fnc_register;	
 
-["Wanted System", "Edit Special Info",
+["[205] Wanted System", "Edit Special Info",
     {
         params [["_pos",[0,0,0],[[]],3], ["_logic",objNull,[objNull]]];
         private _unit = _logic;
