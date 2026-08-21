@@ -101,7 +101,33 @@ class CfgHints
 			};
 			image = "RB205_core\data\RB205_logo.paa";
 			logicalOrder = 3;		
-//			vehicle = "RB205_av7";	
+			//vehicle = "RB205_av7";	
+		}
+		class Keeradak
+		{
+			scope = 2;
+			displayName = "Keeradak Anti-Air Gun";
+			description = $STR_Hint_RB205_keeradak;
+			arguments[] = {
+				"str getNumber (configFile >> 'CfgVehicles' >> 'RB205_keeradak' >> 'maxSpeed')",
+				"if(getNumber(configFile >> 'CfgVehicles' >> 'RB205_keeradak' >> 'ace_cargo_hasCargo')==1) then {str getNumber(configFile >> 'CfgVehicles' >> 'RB205_keeradak' >> 'ace_cargo_space')} else {str 0}"
+			};
+			image = "RB205_core\data\RB205_logo.paa";
+			logicalOrder = 4;		
+			vehicle = "RB205_keeradak";	
+		}
+		class FCC
+		{
+			scope = 2;
+			displayName = "Forward Command Center (FCC)";
+			description = $STR_Hint_RB205_fcc;
+			arguments[] = {
+				"str getNumber (configFile >> 'CfgVehicles' >> 'RB205_fcc' >> 'maxSpeed')",
+				"if(getNumber(configFile >> 'CfgVehicles' >> 'RB205_fcc' >> 'ace_cargo_hasCargo')==1) then {str getNumber(configFile >> 'CfgVehicles' >> 'RB205_fcc' >> 'ace_cargo_space')} else {str 0}"
+			};
+			image = "RB205_core\data\RB205_logo.paa";
+			logicalOrder = 5;		
+			vehicle = "RB205_fcc";	
 		}
 	};
 	class 205VehicleArmored
@@ -109,70 +135,6 @@ class CfgHints
 		category = "205_Vehicle_Info_Hint_Category";
 		displayName = "Vehicle (Armored)";
 		logicalOrder = 2;
-		class TX130
-		{
-			scope = 2;
-			displayName = "TX-130 Saber-Class Fighter Tank";
-			description = $STR_Hint_RB205_tx130;
-			arguments[] = {
-				"str getNumber (configFile >> 'CfgVehicles' >> 'RB205_tx130' >> 'maxSpeed')",
-				"if(getNumber(configFile >> 'CfgVehicles' >> 'RB205_tx130' >> 'ace_cargo_hasCargo')==1) then {str getNumber(configFile >> 'CfgVehicles' >> 'RB205_tx130' >> 'ace_cargo_space')} else {str 0}"
-			};
-			image = "RB205_core\data\RB205_logo.paa";
-			logicalOrder = 0;
-			vehicle = "RB205_tx130";
-		};
-		class ATTE
-		{
-			scope = 2;
-			displayName = "All Terrain Tactical Enforcer (AT-TE)";
-			description = $STR_Hint_RB205_atte;
-			arguments[] = {
-				"str getNumber (configFile >> 'CfgVehicles' >> 'RB205_atte' >> 'maxSpeed')",
-				"if(getNumber(configFile >> 'CfgVehicles' >> 'RB205_atte' >> 'ace_cargo_hasCargo')==1) then {str getNumber(configFile >> 'CfgVehicles' >> 'RB205_atte' >> 'ace_cargo_space')} else {str 0}"};
-			image = "RB205_core\data\RB205_logo.paa"; 
-			logicalOrder = 1;
-			vehicle = "RB205_ATTE";
-		};	
-		class ATAP
-		{
-			scope = 2;
-			displayName = "All Terrain Attack Pod (AT-AP)";
-			description = $STR_Hint_RB205_atap;
-			arguments[] = {
-				"str getNumber (configFile >> 'CfgVehicles' >> 'RB205_atap' >> 'maxSpeed')",
-				"if(getNumber(configFile >> 'CfgVehicles' >> 'RB205_atap' >> 'ace_cargo_hasCargo')==1) then {str getNumber(configFile >> 'CfgVehicles' >> 'RB205_atap' >> 'ace_cargo_space')} else {str 0}"
-			};
-			image = "RB205_core\data\RB205_logo.paa";
-			logicalOrder = 2;
-//			vehicle = "RB205_atap";
-		};		
-		class UTAT
-		{
-			scope = 2;
-			displayName = "Unstable Terrain Artillery Transport (UT-AT)";
-			description = $STR_Hint_RB205_utat;
-			arguments[] = {
-				"str getNumber (configFile >> 'CfgVehicles' >> 'RB205_utat' >> 'maxSpeed')",
-				"if(getNumber(configFile >> 'CfgVehicles' >> 'RB205_utat' >> 'ace_cargo_hasCargo')==1) then {str getNumber(configFile >> 'CfgVehicles' >> 'RB205_utat' >> 'ace_cargo_space')} else {str 0}"
-			};
-			image = "RB205_core\data\RB205_logo.paa";
-			logicalOrder = 3;
-//			vehicle = "RB205_utat";
-		};
-		class Juggernaut
-		{
-			scope = 2;
-			displayName = "HAVw A6 Juggernaut";
-			description = $STR_Hint_RB205_juggernaut;
-			arguments[] = {
-				"str getNumber (configFile >> 'CfgVehicles' >> 'RB205_juggernaut' >> 'maxSpeed')",
-				"if(getNumber(configFile >> 'CfgVehicles' >> 'RB205_juggernaut' >> 'ace_cargo_hasCargo')==1) then {str getNumber(configFile >> 'CfgVehicles' >> 'RB205_juggernaut' >> 'ace_cargo_space')} else {str 0}"
-			};
-			image = "RB205_core\data\RB205_logo.paa";
-			logicalOrder = 4;
-//			vehicle = "RB205_juggernaut";
-		};
 		class Bantha
 		{
 			scope = 2;
@@ -183,7 +145,7 @@ class CfgHints
 				"if(getNumber(configFile >> 'CfgVehicles' >> 'RB205_bantha' >> 'ace_cargo_hasCargo')==1) then {str getNumber(configFile >> 'CfgVehicles' >> 'RB205_bantha' >> 'ace_cargo_space')} else {str 0}"
 			};
 			image = "RB205_core\data\RB205_logo.paa";
-			logicalOrder = 5;
+			logicalOrder = 0;
 			vehicle = "212th_Bantha_MK1"; //205th Klasse oder 212th Klassen aus der Aux212th zeigt einen Skinloses Model an
 		};
 		class PX10
@@ -196,8 +158,85 @@ class CfgHints
 				"if(getNumber(configFile >> 'CfgVehicles' >> 'RB205_px10' >> 'ace_cargo_hasCargo')==1) then {str getNumber(configFile >> 'CfgVehicles' >> 'RB205_px10' >> 'ace_cargo_space')} else {str 0}"
 			};
 			image = "RB205_core\data\RB205_logo.paa";
-			logicalOrder = 6;
+			logicalOrder = 1;
 			vehicle = "RB205_px10";
+		};
+		class TX130
+		{
+			scope = 2;
+			displayName = "TX-130 Saber-Class Fighter Tank";
+			description = $STR_Hint_RB205_tx130;
+			arguments[] = {
+				"str getNumber (configFile >> 'CfgVehicles' >> 'RB205_tx130' >> 'maxSpeed')",
+				"if(getNumber(configFile >> 'CfgVehicles' >> 'RB205_tx130' >> 'ace_cargo_hasCargo')==1) then {str getNumber(configFile >> 'CfgVehicles' >> 'RB205_tx130' >> 'ace_cargo_space')} else {str 0}"
+			};
+			image = "RB205_core\data\RB205_logo.paa";
+			logicalOrder = 2;
+			vehicle = "RB205_tx130";
+		};
+		class ATTE
+		{
+			scope = 2;
+			displayName = "All Terrain Tactical Enforcer (AT-TE)";
+			description = $STR_Hint_RB205_atte;
+			arguments[] = {
+				"str getNumber (configFile >> 'CfgVehicles' >> 'RB205_atte' >> 'maxSpeed')",
+				"if(getNumber(configFile >> 'CfgVehicles' >> 'RB205_atte' >> 'ace_cargo_hasCargo')==1) then {str getNumber(configFile >> 'CfgVehicles' >> 'RB205_atte' >> 'ace_cargo_space')} else {str 0}"};
+			image = "RB205_core\data\RB205_logo.paa"; 
+			logicalOrder = 3;
+			vehicle = "RB205_ATTE";
+		};	
+		class ATAP
+		{
+			scope = 2;
+			displayName = "All Terrain Attack Pod (AT-AP)";
+			description = $STR_Hint_RB205_atap;
+			arguments[] = {
+				"str getNumber (configFile >> 'CfgVehicles' >> 'RB205_atap' >> 'maxSpeed')",
+				"if(getNumber(configFile >> 'CfgVehicles' >> 'RB205_atap' >> 'ace_cargo_hasCargo')==1) then {str getNumber(configFile >> 'CfgVehicles' >> 'RB205_atap' >> 'ace_cargo_space')} else {str 0}"
+			};
+			image = "RB205_core\data\RB205_logo.paa";
+			logicalOrder = 4;
+			//vehicle = "RB205_atap";
+		};		
+		class UTAT
+		{
+			scope = 2;
+			displayName = "Unstable Terrain Artillery Transport (UT-AT)";
+			description = $STR_Hint_RB205_utat;
+			arguments[] = {
+				"str getNumber (configFile >> 'CfgVehicles' >> 'RB205_utat' >> 'maxSpeed')",
+				"if(getNumber(configFile >> 'CfgVehicles' >> 'RB205_utat' >> 'ace_cargo_hasCargo')==1) then {str getNumber(configFile >> 'CfgVehicles' >> 'RB205_utat' >> 'ace_cargo_space')} else {str 0}"
+			};
+			image = "RB205_core\data\RB205_logo.paa";
+			logicalOrder = 5;
+			//vehicle = "RB205_utat";
+		};
+		class Juggernaut
+		{
+			scope = 2;
+			displayName = "HAVw A6 Juggernaut";
+			description = $STR_Hint_RB205_juggernaut;
+			arguments[] = {
+				"str getNumber (configFile >> 'CfgVehicles' >> 'RB205_juggernaut' >> 'maxSpeed')",
+				"if(getNumber(configFile >> 'CfgVehicles' >> 'RB205_juggernaut' >> 'ace_cargo_hasCargo')==1) then {str getNumber(configFile >> 'CfgVehicles' >> 'RB205_juggernaut' >> 'ace_cargo_space')} else {str 0}"
+			};
+			image = "RB205_core\data\RB205_logo.paa";
+			logicalOrder = 6;
+			//vehicle = "RB205_juggernaut";
+		};
+		class RX200
+		{
+			scope = 2;
+			displayName = "RX-200 Falchion-Class Assault Tank";
+			description = $STR_Hint_RB205_rx200;
+			arguments[] = {
+				"str getNumber (configFile >> 'CfgVehicles' >> 'RB205_rx200' >> 'maxSpeed')",
+				"if(getNumber(configFile >> 'CfgVehicles' >> 'RB205_rx200' >> 'ace_cargo_hasCargo')==1) then {str getNumber(configFile >> 'CfgVehicles' >> 'RB205_rx200' >> 'ace_cargo_space')} else {str 0}"
+			};
+			image = "RB205_core\data\RB205_logo.paa";
+			logicalOrder = 7;
+			//vehicle = "RB205_rx200";
 		};
 	};
 	class 205GunshipShuttle
@@ -229,7 +268,7 @@ class CfgHints
 			};
 			image = "RB205_core\data\RB205_logo.paa";
 			logicalOrder = 1;
-//			vehicle = "RB205_laatc";
+			//vehicle = "RB205_laatc";
 		};
 		class Laatle
 		{
@@ -244,18 +283,44 @@ class CfgHints
 			logicalOrder = 2;
 			vehicle = "RB205_laatle";
 		};
+		class LAS
+		{
+			scope = 2;
+			displayName = "Low Altitude Support Gunship (LAS)";
+			description = $STR_Hint_RB205_las;
+			arguments[] = {
+				"str getNumber (configFile >> 'CfgVehicles' >> 'RB205_las' >> 'maxSpeed')",
+				"if(getNumber(configFile >> 'CfgVehicles' >> 'RB205_las' >> 'ace_cargo_hasCargo')==1) then {str getNumber(configFile >> 'CfgVehicles' >> 'RB205_las' >> 'ace_cargo_space')} else {str 0}"
+			};
+			image = "RB205_core\data\RB205_logo.paa";
+			logicalOrder = 3;
+			vehicle = "RB205_las";
+		};
 		class Nuclass
 		{
 			scope = 2;
-			displayName = "Nu-Class Attack Shuttle / Rho-Class Transport Shuttle";
+			displayName = "Nu-Class Attack Shuttle";
 			description = $STR_Hint_RB205_nuclass;
 			arguments[] = {
 				"str getNumber (configFile >> 'CfgVehicles' >> 'RB205_nuclass' >> 'maxSpeed')",
 				"if(getNumber(configFile >> 'CfgVehicles' >> 'RB205_nuclass' >> 'ace_cargo_hasCargo')==1) then {str getNumber(configFile >> 'CfgVehicles' >> 'RB205_nuclass' >> 'ace_cargo_space')} else {str 0}"
 			};
 			image = "RB205_core\data\RB205_logo.paa";
-			logicalOrder = 3;
-//			vehicle = "RB205_nuclass";
+			logicalOrder = 4;
+			//vehicle = "RB205_nuclass";
+		};
+		class Rhoclass
+		{
+			scope = 2;
+			displayName = "Rho-Class Transport Shuttle";
+			description = $STR_Hint_RB205_nuclass;
+			arguments[] = {
+				"str getNumber (configFile >> 'CfgVehicles' >> 'RB205_rhoclass' >> 'maxSpeed')",
+				"if(getNumber(configFile >> 'CfgVehicles' >> 'RB205_rhoclass' >> 'ace_cargo_hasCargo')==1) then {str getNumber(configFile >> 'CfgVehicles' >> 'RB205_rhoclass' >> 'ace_cargo_space')} else {str 0}"
+			};
+			image = "RB205_core\data\RB205_logo.paa";
+			logicalOrder = 5;
+			//vehicle = "RB205_rhoclass";
 		};
 		class Purrgil
 		{
@@ -267,8 +332,8 @@ class CfgHints
 				"if(getNumber(configFile >> 'CfgVehicles' >> 'RB205_purrgil' >> 'ace_cargo_hasCargo')==1) then {str getNumber(configFile >> 'CfgVehicles' >> 'RB205_purrgil' >> 'ace_cargo_space')} else {str 0}"
 			};
 			image = "RB205_core\data\RB205_logo.paa";
-			logicalOrder = 4;
-//			vehicle = "RB205_purrgil";
+			logicalOrder = 6;
+			//vehicle = "RB205_purrgil";
 		};
 		class Gozanti
 		{
@@ -280,8 +345,8 @@ class CfgHints
 				"if(getNumber(configFile >> 'CfgVehicles' >> 'RB205_gozanti' >> 'ace_cargo_hasCargo')==1) then {str getNumber(configFile >> 'CfgVehicles' >> 'RB205_gozanti' >> 'ace_cargo_space')} else {str 0}"
 			};
 			image = "RB205_core\data\RB205_logo.paa";
-			logicalOrder = 5;
-//			vehicle = "RB205_gozanti";
+			logicalOrder = 7;
+			//vehicle = "RB205_gozanti";
 		};
 	};
 	class 205Starfighter
@@ -289,32 +354,6 @@ class CfgHints
 		category = "205_Vehicle_Info_Hint_Category";
 		displayName = "Starfighter";
 		logicalOrder = 4;
-		class ARC170
-		{
-			scope = 2;
-			displayName = "Aggressive Reconnaissance-170 (ARC-170)";
-			description = $STR_Hint_RB205_arc170;
-			arguments[] = {
-				"str getNumber (configFile >> 'CfgVehicles' >> 'RB205_arc170' >> 'maxSpeed')",
-				"if(getNumber(configFile >> 'CfgVehicles' >> 'RB205_arc170' >> 'ace_cargo_hasCargo')==1) then {str getNumber(configFile >> 'CfgVehicles' >> 'RB205_arc170' >> 'ace_cargo_space')} else {str 0}"
-			};
-			image = "RB205_core\data\RB205_logo.paa";
-			logicalOrder = 0;
-			vehicle = "RB205_arc170";
-		};
-		class Z95
-		{
-			scope = 2;
-			displayName = "Z-95 Headhunter";
-			description = $STR_Hint_RB205_z95;
-			arguments[] = {
-				"str getNumber (configFile >> 'CfgVehicles' >> 'RB205_z95' >> 'maxSpeed')",
-				"if(getNumber(configFile >> 'CfgVehicles' >> 'RB205_z95' >> 'ace_cargo_hasCargo')==1) then {str getNumber(configFile >> 'CfgVehicles' >> 'RB205_z95' >> 'ace_cargo_space')} else {str 0}"
-			};
-			image = "RB205_core\data\RB205_logo.paa";
-			logicalOrder = 1;
-			vehicle = "RB205_z95";
-		};
 		class VWing
 		{
 			scope = 2;
@@ -325,7 +364,7 @@ class CfgHints
 				"if(getNumber(configFile >> 'CfgVehicles' >> 'RB205_vwing' >> 'ace_cargo_hasCargo')==1) then {str getNumber(configFile >> 'CfgVehicles' >> 'RB205_vwing' >> 'ace_cargo_space')} else {str 0}"
 			};
 			image = "RB205_core\data\RB205_logo.paa";
-			logicalOrder = 2;
+			logicalOrder = 0;
 			vehicle = "RB205_vwing";
 		};
 		class V19
@@ -338,8 +377,47 @@ class CfgHints
 				"if(getNumber(configFile >> 'CfgVehicles' >> 'RB205_v19' >> 'ace_cargo_hasCargo')==1) then {str getNumber(configFile >> 'CfgVehicles' >> 'RB205_v19' >> 'ace_cargo_space')} else {str 0}"
 			};
 			image = "RB205_core\data\RB205_logo.paa";
-			logicalOrder = 3;
+			logicalOrder = 1;
 			vehicle = "RB205_v19";
+		};
+		class Z95
+		{
+			scope = 2;
+			displayName = "Z-95 Headhunter";
+			description = $STR_Hint_RB205_z95;
+			arguments[] = {
+				"str getNumber (configFile >> 'CfgVehicles' >> 'RB205_z95' >> 'maxSpeed')",
+				"if(getNumber(configFile >> 'CfgVehicles' >> 'RB205_z95' >> 'ace_cargo_hasCargo')==1) then {str getNumber(configFile >> 'CfgVehicles' >> 'RB205_z95' >> 'ace_cargo_space')} else {str 0}"
+			};
+			image = "RB205_core\data\RB205_logo.paa";
+			logicalOrder = 2;
+			vehicle = "RB205_z95";
+		};
+		class ARC170
+		{
+			scope = 2;
+			displayName = "Aggressive Reconnaissance-170 (ARC-170)";
+			description = $STR_Hint_RB205_arc170;
+			arguments[] = {
+				"str getNumber (configFile >> 'CfgVehicles' >> 'RB205_arc170' >> 'maxSpeed')",
+				"if(getNumber(configFile >> 'CfgVehicles' >> 'RB205_arc170' >> 'ace_cargo_hasCargo')==1) then {str getNumber(configFile >> 'CfgVehicles' >> 'RB205_arc170' >> 'ace_cargo_space')} else {str 0}"
+			};
+			image = "RB205_core\data\RB205_logo.paa";
+			logicalOrder = 3;
+			vehicle = "RB205_arc170";
+		};
+		class Ywing
+		{
+			scope = 2;
+			displayName = "Y-Wing Bomber";
+			description = $STR_Hint_RB205_ywing;
+			arguments[] = {
+				"str getNumber (configFile >> 'CfgVehicles' >> 'RB205_ywing' >> 'maxSpeed')",
+				"if(getNumber(configFile >> 'CfgVehicles' >> 'RB205_ywing' >> 'ace_cargo_hasCargo')==1) then {str getNumber(configFile >> 'CfgVehicles' >> 'RB205_ywing' >> 'ace_cargo_space')} else {str 0}"
+			};
+			image = "RB205_core\data\RB205_logo.paa";
+			logicalOrder = 4;
+			vehicle = "RB205_ywing";
 		};
 	};
 	class 205Naval
