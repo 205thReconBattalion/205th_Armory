@@ -4,21 +4,16 @@ class CfgPatches
     {
         units[] = {};
         weapons[] = {};
-        requiredAddons[] = 
-        {
-            "RB205_main",
-			"RB205_weapons",
-			"RB205_custom"
-        };
+        requiredAddons[] = {};
     };
 };
 
 class CfgFactionClasses
 {
 	class NO_CATEGORY;
-	class RB205_crime: NO_CATEGORY
+	class RB205_modules_wantedSystem: NO_CATEGORY
 	{
-		displayName="Wanted System";
+		displayName = "[205] Wanted System";
 	};
 };
 
@@ -39,13 +34,13 @@ class CfgEditorCategories
 {
 	class RB205_Modules_Crime
 	{
-		displayName="205th Recon Battalion";
+		displayName = "205th Recon Battalion";
 	};
 };
 class Extended_PostInit_EventHandlers
 {
 	class RB205_Modules_Crime_PostInit
 	{
-		init="call compile preprocessFileLineNumbers '\RB205_modules\crime\XEH_postInit.sqf'";
+		init = "call compile preprocessFileLineNumbers '\RB205_modules\crime\XEH_postInit.sqf'";
 	};
 };
