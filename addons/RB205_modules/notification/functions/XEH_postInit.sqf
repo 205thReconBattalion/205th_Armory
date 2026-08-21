@@ -7,8 +7,8 @@ if (!_hasZEN) exitWith {
 };
 
 [
-    "205th Recon Battalion",
-    "Nachricht senden",
+    "[205] Notifications",
+    "Send Notification",
     {
         params ["_position", "_attachedObject"];
 
@@ -40,8 +40,8 @@ if (!_hasZEN) exitWith {
 ] call zen_custom_modules_fnc_register;
 
 [
-    "205th Recon Battalion",
-    "Nachricht senden Anim",
+    "[205] Notifications",
+    "Send Animated Notification",
     {
         params ["_position", "_attachedObject"];
 

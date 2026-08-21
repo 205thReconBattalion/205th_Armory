@@ -1,6 +1,6 @@
 class CfgPatches
 {
-    class RB205_modules
+    class RB205_modules_notification
     {
         units[] = {};
         weapons[] = {};
