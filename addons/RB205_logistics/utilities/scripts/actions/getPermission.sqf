@@ -1,4 +1,6 @@
-private _roles = [
+createDialog "RB205_roleDialog";
+
+/*private _roles = [
 	"Standard",
 	"Medic",
 	"EOD",
@@ -52,4 +54,4 @@ private _roles = [
 	},
 	"OK",
 	"ABBRECHEN"
-] call CAU_UserInputMenus_fnc_listbox;
+] call CAU_UserInputMenus_fnc_listbox;*/
