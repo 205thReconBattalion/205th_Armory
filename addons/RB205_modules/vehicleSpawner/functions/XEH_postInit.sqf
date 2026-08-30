@@ -1,5 +1,5 @@
 /*
-Diese Funktion ist das Zeus Modul
+Diese Funktion ist das Zeus Modul für die beschränkung der Fahrzeuge
 */
 private _hasZen = isClass (configFile >> "CfgPatches" >> "zen_custom_modules");
 
@@ -28,3 +28,20 @@ if (!hasInterface) exitWith {};
         [] call RB205_vehicleSetSpawnerModule_fnc_openDialog;
     }, ""
 ] call zen_custom_modules_fnc_register;	
+
+
+/*
+Diese Funktion ist das Zeus Modul für die Erstellung eines Spawners während der Mission
+*/
+
+["[205] Vehicle Spawner", "Create Vehicle Spawner",
+    {
+        params ["_position", "_spawnerObjekt"];
+
+        if (isNull _spawnerObjekt) exitWith {
+            ["Es wurde kein Objekt ausgewählt"] call zen_common_fnc_showMessage;
+        };
+        [_spawnerObjekt] call RB205_vehicleSetSpawnerModule_fnc_zeusModuleSelectSpawnPosition;
+    }
+] call zen_custom_modules_fnc_register;
+
