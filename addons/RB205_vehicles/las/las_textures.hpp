@@ -1,8 +1,8 @@
 hiddenSelectionsTextures[] =
 {
-	"\3AS\3AS_Republic_Heli\LAS\data\3AS_LAS_Exterior_co.paa",
+	"RB205_vehicles\las\data\exterior_co.paa",
 	"\3AS\3AS_Republic_Heli\LAS\data\3AS_LAS_Interior_co.paa",
-	"\3AS\3AS_Republic_Heli\LAS\data\3AS_LAS_Wings_co.paa"
+	"RB205_vehicles\las\data\wings_co.paa"
 };
 textureList[] =
 {
@@ -18,9 +18,9 @@ class TextureSources
 		author = "205th Recon Battalion";
 		textures[] =
 		{
-			"\3AS\3AS_Republic_Heli\LAS\data\3AS_LAS_Exterior_co.paa",
+			"RB205_vehicles\las\data\exterior_co.paa",
 			"\3AS\3AS_Republic_Heli\LAS\data\3AS_LAS_Interior_co.paa",
-			"\3AS\3AS_Republic_Heli\LAS\data\3AS_LAS_Wings_co.paa"
+			"RB205_vehicles\las\data\wings_co.paa"
 		};
 		factions[] = {"RB205"};
 	};
