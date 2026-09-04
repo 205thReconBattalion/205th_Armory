@@ -52,6 +52,7 @@ class XtdGearModels
                     "2420",
                     "2441",
                     "2574",
+                    "2612",
                     "3234",
                     "3340",
                     "3369",
@@ -133,6 +134,10 @@ class XtdGearModels
                 class 2574
                 {
                     description = "Scout";
+                };
+                class 2612
+                {
+                    description = "Spike";
                 };
                 class 3234
                 {
