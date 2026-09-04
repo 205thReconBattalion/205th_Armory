@@ -108,6 +108,7 @@ params ["_this"];
 		"RB205_H_zeegers","RB205_U_zeegers",
 		"RB205_H_gentleman","RB205_H_gentleman_pilot","RB205_U_gentleman","RB205_V_gentleman",
 		"RB205_H_scout","RB205_U_scout",
+		"RB205_H_spike","RB205_U_spike",
 		"RB205_H_ark","RB205_U_ark",
 		"RB205_H_paso","RB205_U_paso",
 		"RB205_H_slow","RB205_H_crew_slow","RB205_U_slow",
