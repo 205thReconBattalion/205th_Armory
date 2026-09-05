@@ -30,7 +30,6 @@ private _eh = _display displayAddEventHandler [
         ];
 
         private _spawnPad = _entity;
-        hint str _spawnPad;
         private _eh = _display getVariable [
             "RB205_Module_ZeusOverlayEventHandlerID",
             -1
@@ -46,12 +45,14 @@ private _eh = _display displayAddEventHandler [
             "RB205_Module_ZeusOverlayEventHandlerID",
             nil
         ];
+
         private _count = missionNamespace getVariable ["VehicleSpawnerCount",1];
+        _count = _count + 1;
         missionNamespace setVariable ["VehicleSpawnerCount",_count,true];
         _count = format["RB205_VehicleSpawner_%1", _count];
         _spawnPad setVehicleVarName _count;
+        missionNamespace setVariable [_count, _spawnPad, true];
         _spawnerObjekt setVariable ["RB205_VehicleSpawnerVariableName", _count];
-//        uiNamespace setVariable ["RB205_VehicleSpawnerVariableName", _count];
         uiNamespace setVariable ["RB205_VehicleSpawnerObject", _spawnerObjekt];
         createDialog "RB205_vehicleSelctorDialog";
     }

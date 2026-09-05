@@ -4,6 +4,10 @@ Diese Funktion stellt die AddActions für die Spawner bereit
 params ["_logic", "_units", "_activated"];
 
 if (!_activated) exitWith {};
+/*
+In Spawnpad steht: Der String aus dem Modulnamen
+In landingPad steht: 
+*/
 
 _spawnpad = _logic getVariable ["RB205_VehicleSpawnerVariableName",nil];
 _landingPad = missionNamespace getVariable [_spawnpad,objNull];
