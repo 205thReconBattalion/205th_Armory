@@ -13,5 +13,5 @@ _spawnerObjekt setVariable ["RB205_AirFighterVehicleBool", cbChecked _ctrlCheckb
 _spawnerObjekt setVariable ["RB205_NavalVehicleBool", cbChecked _ctrlCheckboxNaval, true];
 _spawnerObjekt setVariable ["RB205_UtilityVehicleBool", cbChecked _ctrlCheckboxUtility, true];
 closeDialog 1;
-[_spawnerObjekt, [_spawnerObjekt], true] remoteExec ["RB205_vehicleSetSpawnerModule_fnc_moduleSetVehicleSpawnerInit", 0, true];
+[_spawnerObjekt, [_spawnerObjekt], true] remoteExec ["RB205_vehicleSetSpawnerModule_fnc_triggerfunction", 0, _spawnerObjekt];
 ["Fahrzeugspawner wurde erstellt!"] call zen_common_fnc_showMessage;

@@ -49,12 +49,25 @@ private _eh = _display displayAddEventHandler [
         private _count = missionNamespace getVariable ["VehicleSpawnerCount",1];
         _count = _count + 1;
         missionNamespace setVariable ["VehicleSpawnerCount",_count,true];
-        _count = format["RB205_VehicleSpawner_%1", _count];
-        _spawnPad setVehicleVarName _count;
-        missionNamespace setVariable [_count, _spawnPad, true];
-        _spawnerObjekt setVariable ["RB205_VehicleSpawnerVariableName", _count];
+        _spawnerVarName = format["RB205_VehicleSpawner_%1", _count];
+        _spawnPad setVehicleVarName _spawnerVarName;
+        missionNamespace setVariable [_spawnerVarName, _spawnPad, true];
+        _spawnerObjekt setVariable ["RB205_VehicleSpawnerVariableName", _spawnerVarName, true];
         uiNamespace setVariable ["RB205_VehicleSpawnerObject", _spawnerObjekt];
         createDialog "RB205_vehicleSelctorDialog";
+        private _ctrlDisplay = findDisplay 205550;
+        private _ctrlCheckboxUnarmored = _ctrlDisplay displayCtrl 205551;
+        private _ctrlCheckboxArmored = _ctrlDisplay displayCtrl 205552;
+        private _ctrlCheckboxAirTransport = _ctrlDisplay displayCtrl 205553;
+        private _ctrlCheckboxStarfighter = _ctrlDisplay displayCtrl 205554;
+        private _ctrlCheckboxNaval = _ctrlDisplay displayCtrl 205555;
+        private _ctrlCheckboxUtility = _ctrlDisplay displayCtrl 205556;
+        _ctrlCheckboxUnarmored cbSetChecked (_spawnerObjekt getVariable ["RB205_UnarmoredVehicleBool", false]);
+        _ctrlCheckboxArmored cbSetChecked (_spawnerObjekt getVariable ["RB205_ArmoredVehicleBool", false]);
+        _ctrlCheckboxAirTransport cbSetChecked (_spawnerObjekt getVariable ["RB205_AirTransportVehicleBool", false]);
+        _ctrlCheckboxStarfighter cbSetChecked (_spawnerObjekt getVariable ["RB205_AirFighterVehicleBool", false]);
+        _ctrlCheckboxNaval cbSetChecked (_spawnerObjekt getVariable ["RB205_NavalVehicleBool", false]);
+        _ctrlCheckboxUtility cbSetChecked (_spawnerObjekt getVariable ["RB205_UtilityVehicleBool", false]);
     }
 ];
 

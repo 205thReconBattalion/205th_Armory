@@ -5,7 +5,6 @@ params ["_logic", "_units", "_activated"];
 
 if (!_activated) exitWith {};
 
-
 _spawnpad = _logic getVariable ["RB205_VehicleSpawnerVariableName",nil];
 _landingPad = missionNamespace getVariable [_spawnpad,objNull];
 {
@@ -20,7 +19,7 @@ _landingPad = missionNamespace getVariable [_spawnpad,objNull];
                 },
                 [_spawnpad],21,true,false,"","",5
             ];
-            _x setVariable ["isUnarmoredSpawner", true, true];
+            _x setVariable ["isUnarmoredSpawner", true, false];
         };
     };
     if (!(_x getVariable ["isArmoredSpawner",false])) then {
@@ -34,7 +33,7 @@ _landingPad = missionNamespace getVariable [_spawnpad,objNull];
                 },
                 [_spawnpad],20,true,false,"","",5
             ];
-            _x setVariable ["isArmoredSpawner", true, true];
+            _x setVariable ["isArmoredSpawner", true, false];
         };
     };
     if (!(_x getVariable ["isAirTransportSpawner",false])) then {
@@ -48,7 +47,7 @@ _landingPad = missionNamespace getVariable [_spawnpad,objNull];
                 },
                 [_spawnpad],19,true,false,"","",5
             ];
-            _x setVariable ["isAirTransportSpawner", true, true];
+            _x setVariable ["isAirTransportSpawner", true, false];
         };
     };
     if (!(_x getVariable ["isAirFighterSpawner",false])) then {
@@ -62,7 +61,7 @@ _landingPad = missionNamespace getVariable [_spawnpad,objNull];
                 },
                 [_spawnpad],18,true,false,"","",5
             ];
-            _x setVariable ["isAirFighterSpawner", true, true];
+            _x setVariable ["isAirFighterSpawner", true, false];
         };
     };
     if (!(_x getVariable ["isNavalSpawner",false])) then {
@@ -76,7 +75,7 @@ _landingPad = missionNamespace getVariable [_spawnpad,objNull];
                 },
                 [_spawnpad],17,true,false,"","",5
             ];
-            _x setVariable ["isNavalSpawner", true, true];
+            _x setVariable ["isNavalSpawner", true, false];
         };
     };
     if (!(_x getVariable ["isUtilitySpawner",false])) then {
@@ -90,7 +89,7 @@ _landingPad = missionNamespace getVariable [_spawnpad,objNull];
                 },
                 [_spawnpad],17,true,false,"","",5
             ];
-            _x setVariable ["isUtilitySpawner", true, true];
+            _x setVariable ["isUtilitySpawner", true, false];
         };
     };
     if (!(_x getVariable ["isVehicleDespawner",false])) then {
@@ -116,7 +115,7 @@ _landingPad = missionNamespace getVariable [_spawnpad,objNull];
                 };
             },[_landingPad], 16, false,	true, "", "", 5
         ];
-        _x setVariable ["isVehicleDespawner", true, true];
+        _x setVariable ["isVehicleDespawner", true, false];
     };
 
 } forEach _units;
