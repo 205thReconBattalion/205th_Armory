@@ -1,0 +1,17 @@
+private _ctrlDisplay = findDisplay 205550;
+private _ctrlCheckboxUnarmored = _ctrlDisplay displayCtrl 205551;
+private _ctrlCheckboxArmored= _ctrlDisplay displayCtrl 205552;
+private _ctrlCheckboxAirTransport = _ctrlDisplay displayCtrl 205553;
+private _ctrlCheckboxStarfighter = _ctrlDisplay displayCtrl 205554;
+private _ctrlCheckboxNaval = _ctrlDisplay displayCtrl 205555;
+private _ctrlCheckboxUtility = _ctrlDisplay displayCtrl 205556;
+_spawnerObjekt = uiNamespace getVariable ["RB205_VehicleSpawnerObject", nil];
+_spawnerObjekt setVariable ["RB205_UnarmoredVehicleBool", cbChecked _ctrlCheckboxUnarmored, true];
+_spawnerObjekt setVariable ["RB205_ArmoredVehicleBool", cbChecked _ctrlCheckboxArmored, true];
+_spawnerObjekt setVariable ["RB205_AirTransportVehicleBool", cbChecked _ctrlCheckboxAirTransport, true];
+_spawnerObjekt setVariable ["RB205_AirFighterVehicleBool", cbChecked _ctrlCheckboxStarfighter, true];
+_spawnerObjekt setVariable ["RB205_NavalVehicleBool", cbChecked _ctrlCheckboxNaval, true];
+_spawnerObjekt setVariable ["RB205_UtilityVehicleBool", cbChecked _ctrlCheckboxUtility, true];
+closeDialog 1;
+[_spawnerObjekt, [_spawnerObjekt], true] remoteExec ["RB205_vehicleSetSpawnerModule_fnc_triggerfunction", 0, _spawnerObjekt];
+["Fahrzeugspawner wurde erstellt!"] call zen_common_fnc_showMessage;

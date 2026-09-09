@@ -31,6 +31,8 @@ class CfgFunctions
             class createVehicleSpawnHashMap{};
             class changeVehicleSpawnCountHashMap{};
             class triggerfunction{};
+            class zeusModuleSelectSpawnPosition{};
+            class zeusModuleSelectSpawnTypesDialog{};
             
         };
     };
