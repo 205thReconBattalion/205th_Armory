@@ -2,6 +2,7 @@ params ["_control", "_lbCurSel", "_lbSelection"];
 
 private _ctrlDisplay = findDisplay 205500;
 private _ctrlVehicleInfoBox = _ctrlDisplay displayCtrl 205505;
+private _ctrlSkinSelection = _ctrlDisplay displayCtrl 205512;
 
 
 private _fahrzeugKlassenName = _control lnbData [_lbCurSel, 0];
@@ -28,5 +29,19 @@ _ctrlVehicleInfoBox ctrlSetPosition [
     _height
 ];
 _ctrlVehicleInfoBox ctrlCommit 0;
+
+lnbclear _ctrlSkinSelection;
+
+private _skins = configProperties [
+    configFile >> "CfgVehicles" >> _fahrzeugKlassenName >> "TextureSources",
+    "isClass _x",
+    true
+] apply {
+    [configName _x, getText (_x >> "displayName")]
+};
+{
+    _ctrlSkinSelection lnbAddRow [_x select 1];
+    _ctrlSkinSelection lnbSetData [[_forEachIndex,0],_x select 0];
+}forEach _skins; 
 
 

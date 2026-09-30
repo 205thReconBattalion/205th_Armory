@@ -1,7 +1,10 @@
 private _ctrlDisplay = findDisplay 205500;
 private _ctrlListNBox = _ctrlDisplay displayCtrl 205504;
+private _ctrlSkinSelection = _ctrlDisplay displayCtrl 205512;
+private _selectedSkin = _ctrlSkinSelection lnbData [lnbCurSelRow _ctrlSkinSelection, 0];
 _row = lnbCurSelRow _ctrlListNBox;
 _vehicleClassName = _ctrlListNBox lnbData [_row, 0];
+
 
 private _spawnPossible = true;
 RB205_VehicleMaxSpawns = missionNamespace getVariable["RB205_VehicleMaxSpawns", createHashMap];
@@ -38,5 +41,6 @@ if (_spawnPossible) then {
     _veh = createVehicle [_vehicleClassName, _pos, [], 0, "CAN_COLLIDE"];
 
     _veh setDir _dir;
+    [_veh, [_selectedSkin, 1], true] call BIS_fnc_initVehicle;
     closeDialog 0;
 };
