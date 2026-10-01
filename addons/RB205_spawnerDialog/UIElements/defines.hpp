@@ -117,7 +117,7 @@ class VehicleSpawner_RscListNBox
 	colorScrollbar[] = {0.95,0.95,0.95,1};
 	colorSelect[] = {1,1,1,1};
 	colorSelect2[] = {1,1,1,1};
-	colorSelectBackground[] = {0.95,0.95,0.95,1};
+	colorSelectBackground[] = {1,1,1,0.5};
 	colorSelectBackground2[] = {1,1,1,0.5};
 	colorBackground[] = {0,0,0,1};
 	maxHistoryDelay = 1;
