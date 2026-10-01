@@ -31,7 +31,7 @@ _ctrlVehicleInfoBox ctrlSetPosition [
 _ctrlVehicleInfoBox ctrlCommit 0;
 
 lnbclear _ctrlSkinSelection;
-
+_ctrlSkinSelection lnbSetCurSelRow 0;
 private _tagPlusVehicleClass = format ["RB205_VehicleSpawner_%1", _fahrzeugKlassenName];
 private _lastSelectedSkin = profileNamespace getVariable [_tagPlusVehicleClass,""];
 
