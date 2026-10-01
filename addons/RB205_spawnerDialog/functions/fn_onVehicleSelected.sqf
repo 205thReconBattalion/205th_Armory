@@ -33,7 +33,7 @@ _ctrlVehicleInfoBox ctrlCommit 0;
 lnbclear _ctrlSkinSelection;
 
 private _tagPlusVehicleClass = format ["RB205_VehicleSpawner_%1", _fahrzeugKlassenName];
-_lastSelectedSkin = profilenamespace getVariable _tagPlusVehicleClass;
+private _lastSelectedSkin = profileNamespace getVariable [_tagPlusVehicleClass,""];
 
 private _skins = configProperties [
     configFile >> "CfgVehicles" >> _fahrzeugKlassenName >> "TextureSources",
@@ -47,7 +47,7 @@ private _skins = configProperties [
     _ctrlSkinSelection lnbSetData [[_forEachIndex,0],_x select 0];
     if (_x select 0 isEqualTo _lastSelectedSkin) then
     {
-        _ctrlListNBox lnbSetCurSelRow _forEachIndex;
+        _ctrlSkinSelection lnbSetCurSelRow _forEachIndex;
     };
 }forEach _skins;
 
