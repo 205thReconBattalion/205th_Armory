@@ -126,6 +126,7 @@ params ["_this"];
 		"RB205_H_clik","RB205_U_clik",
 		"RB205_H_umbra","RB205_U_umbra",
 		"RB205_H_sixes","RB205_U_sixes",
+		"RB205_H_twin","RB205_U_twin",
 		"RB205_H_doc","RB205_H_doc_damaged","RB205_H_arf_doc","RB205_U_doc","RB205_V_doc","RB205_VIS_doc","RB205_VIS_doc_damaged",
 		"RB205_H_halvar","RB205_U_halvar",
 		"RB205_H_norway","RB205_U_norway","RB205_V_norway","RB205_B_norway",
@@ -133,7 +134,7 @@ params ["_this"];
 		"RB205_H_jay","RB205_U_jay","RB205_V_jay",
 		"RB205_H_spark","RB205_H_spark_arf","RB205_U_spark","RB205_U_spark_arf","RB205_V_spark","RB205_V_spark_arf","RB205_B_spark","RB205_B_spark_jetpack","RB205_VIS_spark",
 		"RB205_H_unlucky","RB205_U_unlucky",
-		"RB205_H_tower","RB205_U_tower","RB205_V_tower",
+		"RB205_H_tower","RB205_U_tower",
 
 		//Phase 1 (Unmarked) Armor
 		/*"SW205_H_p1_trooper","SW205_H_p1_sergeant","SW205_H_p1_lieutenant","SW205_H_p1_captain","SW205_H_p1_commander","SW205_H_p1_arf","SW205_H_p1_plt",

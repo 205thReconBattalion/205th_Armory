@@ -1,6 +1,6 @@
 class cfgPatches
 {
-    class RB205_vehicles_laat_le
+    class RB205_vehicles_las
 	{
 		requiredAddons[]=
 		{

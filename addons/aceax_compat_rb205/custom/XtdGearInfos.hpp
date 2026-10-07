@@ -37,6 +37,7 @@ class XtdGearInfos
 		H_CUSTOM(RB205_H_clik,"5956","dft")
 		H_CUSTOM(RB205_H_umbra,"6066","dft")
 		H_CUSTOM(RB205_H_sixes,"6666","dft")
+		H_CUSTOM(RB205_H_twin,"6777","dft")
 		H_CUSTOM(RB205_H_halvar,"7045","dft")
 		H_CUSTOM(RB205_H_norway,"7300","dft")
 		H_CUSTOM(RB205_H_jumper,"7565","dft")
@@ -88,6 +89,7 @@ class XtdGearInfos
 		U_CUSTOM(RB205_U_clik,"5956","dft")
 		U_CUSTOM(RB205_U_umbra,"6066","dft")
 		U_CUSTOM(RB205_U_sixes,"6666","dft")
+		U_CUSTOM(RB205_U_twin,"6777","dft")
 		U_CUSTOM(RB205_U_norway,"7300","dft")
 		U_CUSTOM(RB205_U_halvar,"7045","dft")
 		U_CUSTOM(RB205_U_jumper,"7565","dft") 
@@ -109,7 +111,6 @@ class XtdGearInfos
 		V_CUSTOM(RB205_V_scythe,"5577","dft")
 		V_CUSTOM(RB205_V_norway,"7300","dft")
 		V_CUSTOM(RB205_V_jay,"7576","dft")
-		V_CUSTOM(RB205_V_tower,"9294","dft")
 		
 		V(RB205_V_doc,"dft","co","rifleman")
 		
