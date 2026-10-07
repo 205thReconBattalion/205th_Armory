@@ -109,7 +109,6 @@ class XtdGearInfos
 		V_CUSTOM(RB205_V_scythe,"5577","dft")
 		V_CUSTOM(RB205_V_norway,"7300","dft")
 		V_CUSTOM(RB205_V_jay,"7576","dft")
-		V_CUSTOM(RB205_V_tower,"9294","dft")
 		
 		V(RB205_V_doc,"dft","co","rifleman")
 		
