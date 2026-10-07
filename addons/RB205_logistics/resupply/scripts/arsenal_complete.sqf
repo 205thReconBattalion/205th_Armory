@@ -126,6 +126,7 @@ params ["_this"];
 		"RB205_H_clik","RB205_U_clik",
 		"RB205_H_umbra","RB205_U_umbra",
 		"RB205_H_sixes","RB205_U_sixes",
+		"RB205_H_twin","RB205_U_twin",
 		"RB205_H_doc","RB205_H_doc_damaged","RB205_H_arf_doc","RB205_U_doc","RB205_V_doc","RB205_VIS_doc","RB205_VIS_doc_damaged",
 		"RB205_H_halvar","RB205_U_halvar",
 		"RB205_H_norway","RB205_U_norway","RB205_V_norway","RB205_B_norway",

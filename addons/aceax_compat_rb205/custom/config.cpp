@@ -70,6 +70,7 @@ class XtdGearModels
                     "5956",
                     "6066",
                     "6666",
+                    "6777",
                     "7005",
                     "7045",
                     "7300",
@@ -206,6 +207,10 @@ class XtdGearModels
                 class 6666
                 {
                     description = "Sixes";
+                };
+                class 6777
+                {
+                    description = "Twin";
                 };
                 class 7005
                 {
