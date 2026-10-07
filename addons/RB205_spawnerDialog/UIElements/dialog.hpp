@@ -1,3 +1,7 @@
+#define POS_X_BACKGROUND_VEHICLE_DIALOG 0.2 * safezoneW + safezoneX
+#define POS_Y_BACKGROUND_VEHICLE_DIALOG 0.2 * safezoneH + safezoneY
+#define POS_W_BACKGROUND_VEHICLE_DIALOG 0.60 * safezoneW
+#define POS_H_BACKGROUND_VEHICLE_DIALOG 0.60 * safezoneH
 class RB205_spawnVehicleDialog
 {
     idd = 205500;
@@ -36,8 +40,28 @@ class RB205_spawnVehicleDialog
             h = 0.02 * safezoneH;
             colorBackground[] = {0.4157,0.0588,0.0588,0.8};
         };
+        class BackgroundSkinSelection: VehicleSpawner_RscText
+        {
+            idc = -1;
+            x = POS_X_BACKGROUND_VEHICLE_DIALOG + POS_W_BACKGROUND_VEHICLE_DIALOG + 0.03;
+            y = (POS_Y_BACKGROUND_VEHICLE_DIALOG) + (POS_H_BACKGROUND_VEHICLE_DIALOG) - 0.10 * safezoneH;
+            w = 0.15 * safezoneW;
+            h = 0.1 * safezoneH;
+            colorBackground[] = {0,0,0,0.8};
+        };
 
-
+        class BackgroundTitelBarSkinSelection: VehicleSpawner_RscText
+        {
+            idc = -1;
+            x = POS_X_BACKGROUND_VEHICLE_DIALOG + POS_W_BACKGROUND_VEHICLE_DIALOG + 0.03;
+            y = (POS_Y_BACKGROUND_VEHICLE_DIALOG) + (POS_H_BACKGROUND_VEHICLE_DIALOG) - 0.12 * safezoneH;
+            w = 0.15 * safezoneW;
+            h = 0.02 * safezoneH;
+            style = 0x02;
+            text = "Skin auswahl";
+            colorText[] = { 1, 1, 1, 1 };
+            colorBackground[] = {0.4157,0.0588,0.0588,0.8};
+        };
     };
 
     class controls
@@ -71,7 +95,7 @@ class RB205_spawnVehicleDialog
             x = 0.21 * safezoneW + safezoneX;
             y = 0.22 * safezoneH + safezoneY;
             w = 0.30 * safezoneW;
-            h = 0.58 * safezoneH;
+            h = 0.53 * safezoneH;
             
 	        columns[] = {-0.01,0.526,0.657,0.806,0.92};
             
@@ -188,6 +212,34 @@ class RB205_spawnVehicleDialog
             h = 0.02 * safezoneH;
             colorBackground[] = {0,0,0,0};
         };
-        
+        class SkinSelection : VehicleSpawner_RscListNBox
+        {
+            idc = 205512;
+            x = POS_X_BACKGROUND_VEHICLE_DIALOG + POS_W_BACKGROUND_VEHICLE_DIALOG + 0.03;
+            y = (POS_Y_BACKGROUND_VEHICLE_DIALOG) + (POS_H_BACKGROUND_VEHICLE_DIALOG) - 0.095 * safezoneH;
+            w = 0.15 * safezoneW;
+            h = 0.09 * safezoneH;
+        };
+        class ShowOnlyAvailableCheckbox : VehicleSpawner_RscCheckbox
+        {
+            idc = 205513;
+            x = 0.21 * safezoneW + safezoneX;
+            y = 0.76 * safezoneH + safezoneY;
+            w = 0.017 * safezoneW;
+            h = 0.03 * safezoneH;
+            tooltip = "";
+            onCheckedChanged = "_this call RB205_spawnerDialog_fnc_onOnlyAvailableChanged";
+        };
+        class ShowOnlyAvailableText : VehicleSpawner_RscText
+        {
+            idc = -1;
+            text = "Nur verfuegbare Fahrzeuge";
+            style = ST_LEFT;
+            align = "left";
+            x = 0.233 * safezoneW + safezoneX;
+            y = 0.76 * safezoneH + safezoneY;
+            w = 0.257 * safezoneW;
+            h = 0.03 * safezoneH;
+        };
     };
 };

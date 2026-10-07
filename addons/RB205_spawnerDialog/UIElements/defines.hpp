@@ -4,12 +4,53 @@
 #define CT_STRUCTURED_TEXT  13
 #define CT_ListNBox         102
 #define CT_CONTROLS_GROUP   15
+#define CT_CHECKBOX         77
 
 #define ST_LEFT             0
 #define ST_CENTER           2
 #define ST_MULTI            0x10
 
 
+
+class VehicleSpawner_RscCheckbox
+{
+    idc = -1;
+    type = CT_CHECKBOX;
+    style = ST_LEFT;
+    checked = 0;
+    x = 0;
+    y = 0;
+    w = 0.025 * safezoneW;
+    h = 0.04 * safezoneH;
+    tooltip = "";
+    color[] = {1,1,1,0.7};
+    colorFocused[] = {1,1,1,1};
+    colorHover[] = {1,1,1,1};
+    colorPressed[] = {1,1,1,1};
+    colorDisabled[] = {1,1,1,0.2};
+    colorBackground[] = {0,0,0,0};
+    colorBackgroundFocused[] = {0,0,0,0};
+    colorBackgroundHover[] = {0,0,0,0};
+    colorBackgroundPressed[] = {0,0,0,0};
+    colorBackgroundDisabled[] = {0,0,0,0};
+    textureChecked = "\A3\ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_checked_ca.paa";
+    textureUnchecked = "\A3\ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_unchecked_ca.paa";
+    textureFocusedChecked = "\A3\ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_checked_ca.paa";
+    textureFocusedUnchecked = "\A3\ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_unchecked_ca.paa";
+    textureHoverChecked = "\A3\ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_checked_ca.paa";
+    textureHoverUnchecked = "\A3\ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_unchecked_ca.paa";
+    texturePressedChecked = "\A3\ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_checked_ca.paa";
+    texturePressedUnchecked = "\A3\ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_unchecked_ca.paa";
+    textureDisabledChecked = "\A3\ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_checked_ca.paa";
+    textureDisabledUnchecked = "\A3\ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_unchecked_ca.paa";
+    tooltipColorText[] = {1,1,1,1};
+    tooltipColorBox[] = {1,1,1,1};
+    tooltipColorShade[] = {0,0,0,0.65};
+    soundEnter[] = {"",0.1,1};
+    soundPush[] = {"",0.1,1};
+    soundClick[] = {"",0.1,1};
+    soundEscape[] = {"",0.1,1};
+};
 
 class VehicleSpawner_RscText
 {
@@ -76,7 +117,7 @@ class VehicleSpawner_RscListNBox
 	colorScrollbar[] = {0.95,0.95,0.95,1};
 	colorSelect[] = {1,1,1,1};
 	colorSelect2[] = {1,1,1,1};
-	colorSelectBackground[] = {0.95,0.95,0.95,1};
+	colorSelectBackground[] = {1,1,1,0.5};
 	colorSelectBackground2[] = {1,1,1,0.5};
 	colorBackground[] = {0,0,0,1};
 	maxHistoryDelay = 1;

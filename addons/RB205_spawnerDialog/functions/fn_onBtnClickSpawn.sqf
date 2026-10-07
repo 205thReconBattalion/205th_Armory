@@ -1,14 +1,17 @@
 private _ctrlDisplay = findDisplay 205500;
 private _ctrlListNBox = _ctrlDisplay displayCtrl 205504;
-_row = lnbCurSelRow _ctrlListNBox;
-_vehicleClassName = _ctrlListNBox lnbData [_row, 0];
+private _ctrlSkinSelection = _ctrlDisplay displayCtrl 205512;
+private _selectedSkin = _ctrlSkinSelection lnbData [lnbCurSelRow _ctrlSkinSelection, 0];
+private _row = lnbCurSelRow _ctrlListNBox;
+private _vehicleClassName = _ctrlListNBox lnbData [_row, 0];
+
 
 private _spawnPossible = true;
 RB205_VehicleMaxSpawns = missionNamespace getVariable["RB205_VehicleMaxSpawns", createHashMap];
 
 if ((count RB205_VehicleMaxSpawns) > 0) then {
     _varNameVehicleMaxSpawns = format ["%1_VehicleMaxSpawns", toUpper _vehicleClassName];
-    _anzahlVerfuegbar = RB205_VehicleMaxSpawns getOrDefault [_varNameVehicleMaxSpawns, 0];
+    _anzahlVerfuegbar = RB205_VehicleMaxSpawns getOrDefault [_varNameVehicleMaxSpawns, -1];
     if (_anzahlVerfuegbar == 0) exitwith {
         ["<t align='center' size='1.5' color='#7A120C' shadow='1'><br/>FEHLER</t><t align='center' size='1' color='#2EB8FF' shadow='1'><br/><br/>Dieses Fahrzeug befindet<br/>sich nicht mehr im Lager!</t>",[]] call RB205_notification_fnc_openDialog;
         _spawnPossible = false;
@@ -38,5 +41,8 @@ if (_spawnPossible) then {
     _veh = createVehicle [_vehicleClassName, _pos, [], 0, "CAN_COLLIDE"];
 
     _veh setDir _dir;
+    [_veh, [_selectedSkin, 1], true] call BIS_fnc_initVehicle;
+    private _tagVehicleClass = format ["RB205_VehicleSpawner_%1", _vehicleClassName];
+    profilenamespace setVariable [_tagVehicleClass, _selectedSkin];
     closeDialog 0;
 };

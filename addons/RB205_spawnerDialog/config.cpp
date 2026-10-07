@@ -33,6 +33,8 @@ class CfgFunctions
 			class onVehicleSelected{};
 			class createVehicleArray{};
 			class onBtnClickSpawn{};
+			class onOnlyAvailableChanged{};
+			class fillListNBox{};
 		};
 	};
 };

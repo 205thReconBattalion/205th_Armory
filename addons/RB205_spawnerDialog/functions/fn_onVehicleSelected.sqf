@@ -2,6 +2,7 @@ params ["_control", "_lbCurSel", "_lbSelection"];
 
 private _ctrlDisplay = findDisplay 205500;
 private _ctrlVehicleInfoBox = _ctrlDisplay displayCtrl 205505;
+private _ctrlSkinSelection = _ctrlDisplay displayCtrl 205512;
 
 
 private _fahrzeugKlassenName = _control lnbData [_lbCurSel, 0];
@@ -29,4 +30,24 @@ _ctrlVehicleInfoBox ctrlSetPosition [
 ];
 _ctrlVehicleInfoBox ctrlCommit 0;
 
+lnbclear _ctrlSkinSelection;
+_ctrlSkinSelection lnbSetCurSelRow 0;
+private _tagPlusVehicleClass = format ["RB205_VehicleSpawner_%1", _fahrzeugKlassenName];
+private _lastSelectedSkin = profileNamespace getVariable [_tagPlusVehicleClass,""];
+
+private _skins = configProperties [
+    configFile >> "CfgVehicles" >> _fahrzeugKlassenName >> "TextureSources",
+    "isClass _x",
+    true
+] apply {
+    [configName _x, getText (_x >> "displayName")]
+};
+{
+    _ctrlSkinSelection lnbAddRow [_x select 1];
+    _ctrlSkinSelection lnbSetData [[_forEachIndex,0],_x select 0];
+    if (_x select 0 isEqualTo _lastSelectedSkin) then
+    {
+        _ctrlSkinSelection lnbSetCurSelRow _forEachIndex;
+    };
+}forEach _skins;
 
