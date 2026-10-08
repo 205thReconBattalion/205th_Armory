@@ -176,6 +176,7 @@ if (_idtype == "diplomatRep" || _idtype == "diplomatCIS" || _idtype == "civilian
 		};
 		case (["clone", _face] call BIS_fnc_inString) : {
 			_species = "Clone";
+			_homeWorld = "Kamino";
 		};
 		case (["sangheili", _face] call BIS_fnc_inString) : {
 			_species = "Human";
@@ -268,6 +269,18 @@ if (_idtype == "diplomatRep" || _idtype == "diplomatCIS" || _idtype == "civilian
 		case (["zeltron", _face] call BIS_fnc_inString) : {
 			_species = "Zeltron";
 			_homeWorld = "Zeltros";
+		};
+		case (["Sith", _face] call BIS_fnc_inString) : {
+			_species = "Sith";
+			_homeWorld = "Korriban";
+		};
+		case (["Selkath", _face] call BIS_fnc_inString) : {
+			_species = "Selkath";
+			_homeWorld = "Manaan";
+		};
+		case (["Neimodian", _face] call BIS_fnc_inString) : {
+			_species = "Neimodian";
+			_homeWorld = "Neimoidia";
 		};
 		default _defaultSpieces;
 	};
