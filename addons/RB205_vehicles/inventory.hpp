@@ -135,6 +135,11 @@ class TransportBackpacks \
         backpack = "RB205_B_heavy"; \
         count = 1; \
     }; \
+    class _transport_parachute \
+    { \
+        backpack = "ls_gar_hawkbat_backpack"; \
+        count = 10; \
+    }; \
 };
 
 #define VEH_INVENTORY_LIGHT \
@@ -225,5 +230,13 @@ class TransportMagazines \
     { \
         magazine = "RB205_Compact_Energy_Pack"; \
         count = 8; \
+    }; \
+}; \
+class TransportBackpacks \
+{ \
+    class _transport_parachute \
+    { \
+        backpack = "ls_gar_hawkbat_backpack"; \
+        count = 1; \
     }; \
 };
