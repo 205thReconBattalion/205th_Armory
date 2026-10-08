@@ -76,7 +76,7 @@ params ["_this"];
 		"RB205_B_snow_heavy","RB205_B_snow_medic","RB205_B_snow_radio","RB205_B_snow_rocket","RB205_B_snow_eod",
 		"RB205_B_arc","RB205_B_arc_jetpack",
 		"RB205_B_autoTurret","RB205_B_heavyRepeater","RB205_B_prowler","RB205_B_squadShield","RB205_B_mortar",
-		"RB205_navy_comlink",
+		"ls_gar_hawkbat_backpack","RB205_navy_comlink",
 
 		"RB205_diving_inv","RB205_VIS",
 
