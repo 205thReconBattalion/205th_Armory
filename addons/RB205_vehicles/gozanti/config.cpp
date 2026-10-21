@@ -31,7 +31,7 @@ class cfgVehicles
 		displayName = "Gozanti Cruiser";
 		author = AUTHOR;
 		crew = CREW_AIR;
-		VEH_INVENTORY
+		VEH_INVENTORY_AIRCRAFT
 		CARGO_XL
 		//Editor/ Zeus
 		side = 1;

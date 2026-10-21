@@ -39,7 +39,7 @@ class cfgVehicles
 		displayName = "LAAT/C";
 		author = AUTHOR;
 		crew = CREW_AIR;
-		VEH_INVENTORY_LIGHT
+		VEH_INVENTORY_AIRCRAFT_LIGHT
 		CARGO_M
 		//Editor/ Zeus
 		side = 1;

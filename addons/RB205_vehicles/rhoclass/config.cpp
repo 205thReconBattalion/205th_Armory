@@ -33,7 +33,7 @@ class cfgVehicles
 		displayName = "Rho-Class Shuttle";
 		author = AUTHOR;
 		crew = CREW_AIR;
-		VEH_INVENTORY
+		VEH_INVENTORY_AIRCRAFT
 		CARGO_L
 		//Editor/ Zeus
 		side = 1;
@@ -53,7 +53,7 @@ class cfgVehicles
 		displayName = "Rho-Class Crate (Transport)";
 		author = AUTHOR;
 		crew = CREW_DEFAULT;
-		VEH_INVENTORY
+		VEH_INVENTORY_AIRCRAFT
 		CARGO_L
 		//Editor/ Zeus
 		side = 1;
@@ -70,7 +70,7 @@ class cfgVehicles
 		displayName = "Rho-Class Crate (Barracks)";
 		author = AUTHOR;
 		crew = CREW_DEFAULT;
-		VEH_INVENTORY
+		VEH_INVENTORY_AIRCRAFT
 		CARGO_L
 		//Editor/ Zeus
 		side = 1;
@@ -87,7 +87,7 @@ class cfgVehicles
 		displayName = "Rho-Class Crate (Medical)";
 		author = AUTHOR;
 		crew = CREW_DEFAULT;
-		VEH_INVENTORY
+		VEH_INVENTORY_AIRCRAFT
 		CARGO_L
 		//Editor/ Zeus
 		side = 1;
