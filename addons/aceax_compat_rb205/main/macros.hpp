@@ -14,9 +14,10 @@
 
 #define IMAGE_NONE		"#(rgb,8,8,3)color(0,0,0,1)"
 #define IMAGE_ZILLO		"\aceax_compat_rb205\main\data\1_1_zillo.jpg"
-#define IMAGE_CHIMAERA	"\aceax_compat_rb205\main\data\1_2_chimaera.jpg"
+#define IMAGE_WAMPA		"\aceax_compat_rb205\main\data\1_2_wampa.jpg"
 #define IMAGE_RANCOR	"\aceax_compat_rb205\main\data\1_3_rancor.jpg"
-#define IMAGE_WAMPA		"\aceax_compat_rb205\main\data\1_4_wampa.jpg"
+#define IMAGE_CHIMAERA	"\aceax_compat_rb205\main\data\2_1_chimaera.jpg"
+#define IMAGE_VERMINOTH	"\aceax_compat_rb205\main\data\2_2_verminoth.jpg"
 #define IMAGE_BANSHEE	"\aceax_compat_rb205\main\data\3_1_banshee.jpg"
 
 

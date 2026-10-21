@@ -143,7 +143,8 @@ class XtdGearModels
                     "1_1",
 					"1_2",
 					"1_3",
-                    "1_4",
+                    "2_1",
+                    "2_2",
 					"3_1"
 				};
                 class none
@@ -161,8 +162,8 @@ class XtdGearModels
                 class 1_2
                 {
                     label = "";
-                    description = "Chimaera (1-2)";
-                    image = IMAGE_CHIMAERA;
+                    description = "Wampa (1-2)";
+                    image = IMAGE_WAMPA;
                 };
                 class 1_3
                 {
@@ -170,11 +171,17 @@ class XtdGearModels
                     description = "Rancor (1-3)";
                     image = IMAGE_RANCOR;
                 };
-                class 1_4
+                class 2_1
                 {
                     label = "";
-                    description = "Wampa (1-4)";
-                    image = IMAGE_WAMPA;
+                    description = "Chimaera (2-1)";
+                    image = IMAGE_CHIMAERA;
+                };
+                class 2_2
+                {
+                    label = "";
+                    description = "Verminoth (2-2)";
+                    image = IMAGE_VERMINOTH;
                 };
                 class 3_1
                 {
