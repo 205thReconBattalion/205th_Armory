@@ -46,7 +46,7 @@ class cfgVehicles
 		displayName = "LAAT/I";
 		author = AUTHOR;
 		crew = CREW_AIR;
-		VEH_INVENTORY
+		VEH_INVENTORY_AIRCRAFT
 		CARGO_M
 		//Editor/ Zeus
 		side = 1;
@@ -57,6 +57,7 @@ class cfgVehicles
 		#include "\RB205_vehicles\laat\laat_weapons.hpp"
 		#include "\RB205_vehicles\laat\laat_sounds.hpp"
 		#include "\RB205_vehicles\sounds_aircraft_alarm.hpp"
+		RB205_vehicles_cabinLightPositions[] = {{0,2,3},{0,-1,3}};
 	};
 	class RB205_laat_lights: 3as_LAAT_Mk1Lights
 	{
@@ -64,7 +65,7 @@ class cfgVehicles
 		displayName = "LAAT/I (Lights)";
 		author = AUTHOR;
 		crew = CREW_AIR;
-		VEH_INVENTORY
+		VEH_INVENTORY_AIRCRAFT
 		CARGO_M
 		//Editor/ Zeus
 		side = 1;
@@ -75,6 +76,7 @@ class cfgVehicles
 		#include "\RB205_vehicles\laat\laat_weapons.hpp"
 		#include "\RB205_vehicles\laat\laat_sounds.hpp"
 		#include "\RB205_vehicles\sounds_aircraft_alarm.hpp"
+		RB205_vehicles_cabinLightPositions[] = {{0,2,3},{0,-1,3}};
 	};
 	class RB205_laat_turrets: 3as_LAAT_Mk1
 	{
@@ -82,7 +84,7 @@ class cfgVehicles
 		displayName = "LAAT/I (Turrets)";
 		author = AUTHOR;
 		crew = CREW_AIR;
-		VEH_INVENTORY
+		VEH_INVENTORY_AIRCRAFT
 		CARGO_M
 		//Editor/ Zeus
 		side = 1;
@@ -93,5 +95,6 @@ class cfgVehicles
 		#include "\RB205_vehicles\laat\laat_weapons.hpp"
 		#include "\RB205_vehicles\laat\laat_sounds.hpp"
 		#include "\RB205_vehicles\sounds_aircraft_alarm.hpp"
+		RB205_vehicles_cabinLightPositions[] = {{0,2,3},{0,-1,3}};
 	};
 };

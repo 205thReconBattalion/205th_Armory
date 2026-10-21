@@ -33,7 +33,7 @@ class cfgVehicles
 		displayName = "ARC-170";
 		author = AUTHOR;
 		crew = CREW_AIR;
-		VEH_INVENTORY_LIGHT
+		VEH_INVENTORY_AIRCRAFT_LIGHT
 		CARGO_NONE
 		//Editor/ Zeus
 		side = 1;

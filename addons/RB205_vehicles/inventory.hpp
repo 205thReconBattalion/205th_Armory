@@ -1,4 +1,4 @@
-#define VEH_INVENTORY \
+#define VEH_INVENTORY_BASE \
 class TransportItems \
 { \
     class _transport_ToolKit \
@@ -127,7 +127,21 @@ class TransportMagazines \
         magazine = "RB205_Standard_Energy_Pack"; \
         count = 50; \
     }; \
-}; \
+};
+
+#define VEH_INVENTORY \
+VEH_INVENTORY_BASE \
+class TransportBackpacks \
+{ \
+    class _transport_backpack \
+    { \
+        backpack = "RB205_B_heavy"; \
+        count = 1; \
+    }; \
+};
+
+#define VEH_INVENTORY_AIRCRAFT \
+VEH_INVENTORY_BASE \
 class TransportBackpacks \
 { \
     class _transport_backpack \
@@ -231,7 +245,10 @@ class TransportMagazines \
         magazine = "RB205_Compact_Energy_Pack"; \
         count = 8; \
     }; \
-}; \
+};
+
+#define VEH_INVENTORY_AIRCRAFT_LIGHT \
+VEH_INVENTORY_LIGHT \
 class TransportBackpacks \
 { \
     class _transport_parachute \

@@ -31,7 +31,7 @@ class cfgVehicles
 		displayName = "LAS"; //Low Altitude Support Craft
 		author = AUTHOR;
 		crew = CREW_AIR;
-		VEH_INVENTORY
+		VEH_INVENTORY_AIRCRAFT
 		CARGO_S
 		//Editor/ Zeus
 		side = 1;
@@ -49,7 +49,7 @@ class cfgVehicles
 		displayName = "LAS (Turrets)";
 		author = AUTHOR;
 		crew = CREW_AIR;
-		VEH_INVENTORY
+		VEH_INVENTORY_AIRCRAFT
 		CARGO_S
 		//Editor/ Zeus
 		side = 1;

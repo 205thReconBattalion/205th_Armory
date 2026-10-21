@@ -29,7 +29,7 @@ class cfgVehicles
 		displayName = "Nu-Class Shuttle";
 		author = AUTHOR;
 		crew = CREW_AIR;
-		VEH_INVENTORY
+		VEH_INVENTORY_AIRCRAFT
 		CARGO_L
 		//Editor/ Zeus
 		side = 1;
