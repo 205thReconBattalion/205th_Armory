@@ -88,9 +88,10 @@ params ["_this"];
 
 		//SQUAD ARMOR
 		"RB205_U_trooper_zillo","RB205_U_corporal_zillo","RB205_U_sergeant_zillo",
-		"RB205_U_trooper_chimaera","RB205_U_corporal_chimaera","RB205_U_sergeant_chimaera",
-		"RB205_U_trooper_rancor","RB205_U_corporal_rancor","RB205_U_sergeant_rancor",
 		"RB205_U_trooper_wampa","RB205_U_corporal_wampa","RB205_U_sergeant_wampa",
+		"RB205_U_trooper_rancor","RB205_U_corporal_rancor","RB205_U_sergeant_rancor",
+		"RB205_U_trooper_chimaera","RB205_U_corporal_chimaera","RB205_U_sergeant_chimaera",
+		"RB205_U_trooper_verminoth","RB205_U_corporal_verminoth","RB205_U_sergeant_verminoth",
 		"RB205_U_plt_trooper_banshee","RB205_U_plt_corporal_banshee","RB205_U_plt_sergeant_banshee",
 
 		//CUSTOM ARMOR

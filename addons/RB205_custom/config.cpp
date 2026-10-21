@@ -39,12 +39,12 @@ class cfgPatches
 			"RB205_clone_trooper_zillo_medic",
 			"RB205_clone_trooper_zillo_rto",
 
-			"RB205_clone_ab_trooper_chimaera",
-			"RB205_clone_ab_lanceCorporal_chimaera",
-			"RB205_clone_ab_corporal_chimaera",
-			"RB205_clone_ab_sergeant_chimaera",
-			"RB205_clone_ab_trooper_chimaera_medic",
-			"RB205_clone_ab_trooper_chimaera_rto",
+			"RB205_clone_trooper_wampa",
+			"RB205_clone_lanceCorporal_wampa",
+			"RB205_clone_corporal_wampa",
+			"RB205_clone_sergeant_wampa",
+			"RB205_clone_trooper_wampa_medic",
+			"RB205_clone_trooper_wampa_rto",
 
 			"RB205_clone_trooper_rancor",
 			"RB205_clone_lanceCorporal_rancor",
@@ -53,12 +53,19 @@ class cfgPatches
 			"RB205_clone_trooper_rancor_medic",
 			"RB205_clone_trooper_rancor_rto",
 
-			"RB205_clone_trooper_wampa",
-			"RB205_clone_lanceCorporal_wampa",
-			"RB205_clone_corporal_wampa",
-			"RB205_clone_sergeant_wampa",
-			"RB205_clone_trooper_wampa_medic",
-			"RB205_clone_trooper_wampa_rto",
+			"RB205_clone_ab_trooper_chimaera",
+			"RB205_clone_ab_lanceCorporal_chimaera",
+			"RB205_clone_ab_corporal_chimaera",
+			"RB205_clone_ab_sergeant_chimaera",
+			"RB205_clone_ab_trooper_chimaera_medic",
+			"RB205_clone_ab_trooper_chimaera_rto",
+
+			"RB205_clone_ab_trooper_verminoth",
+			"RB205_clone_ab_lanceCorporal_verminoth",
+			"RB205_clone_ab_corporal_verminoth",
+			"RB205_clone_ab_sergeant_verminoth",
+			"RB205_clone_ab_trooper_verminoth_medic",
+			"RB205_clone_ab_trooper_verminoth_rto",
 
 			"RB205_clone_plt_trooper_banshee",
 			"RB205_clone_plt_lanceCorporal_banshee",
@@ -114,31 +121,31 @@ class cfgWeapons
 		};
 	};
 
-	class RB205_U_trooper_chimaera: RB205_U_trooper
+	class RB205_U_trooper_wampa: RB205_U_trooper
 	{
 		ACCESS_TRUE
-		displayName = "[205] Clone Trooper Armor <1-2 Chimaera>";
+		displayName = "[205] Clone Trooper Armor <1-2 Wampa>";
 		class ItemInfo: ItemInfo
 		{
-			uniformClass = RB205_clone_ab_trooper_chimaera;
+			uniformClass = RB205_clone_trooper_wampa;
 		};
 	};
-	class RB205_U_corporal_chimaera: RB205_U_corporal
+	class RB205_U_corporal_wampa: RB205_U_corporal
 	{
 		ACCESS_TRUE
-		displayName = "[205] Clone Trooper Armor (Corporal) <1-2 Chimaera>";
+		displayName = "[205] Clone Trooper Armor (Corporal) <1-2 Wampa>";
 		class ItemInfo: ItemInfo
 		{
-			uniformClass = RB205_clone_ab_corporal_chimaera;
+			uniformClass = RB205_clone_corporal_wampa;
 		};
 	};
-	class RB205_U_sergeant_chimaera: RB205_U_sergeant
+	class RB205_U_sergeant_wampa: RB205_U_sergeant
 	{
 		ACCESS_TRUE
-		displayName = "[205] Clone Trooper Armor (Sergeant) <1-2 Chimaera>";
+		displayName = "[205] Clone Trooper Armor (Sergeant) <1-2 Wampa>";
 		class ItemInfo: ItemInfo
 		{
-			uniformClass = RB205_clone_ab_sergeant_chimaera;
+			uniformClass = RB205_clone_sergeant_wampa;
 		};
 	};
 
@@ -170,31 +177,59 @@ class cfgWeapons
 		};
 	};
 
-	class RB205_U_trooper_wampa: RB205_U_trooper
+	class RB205_U_trooper_chimaera: RB205_U_trooper
 	{
 		ACCESS_TRUE
-		displayName = "[205] Clone Trooper Armor <1-3 Rancor>";
+		displayName = "[205] Clone Trooper Armor <2-1 Chimaera>";
 		class ItemInfo: ItemInfo
 		{
-			uniformClass = RB205_clone_trooper_wampa;
+			uniformClass = RB205_clone_ab_trooper_chimaera;
 		};
 	};
-	class RB205_U_corporal_wampa: RB205_U_corporal
+	class RB205_U_corporal_chimaera: RB205_U_corporal
 	{
 		ACCESS_TRUE
-		displayName = "[205] Clone Trooper Armor (Corporal) <1-3 Rancor>";
+		displayName = "[205] Clone Trooper Armor (Corporal) <2-1 Chimaera>";
 		class ItemInfo: ItemInfo
 		{
-			uniformClass = RB205_clone_corporal_wampa;
+			uniformClass = RB205_clone_ab_corporal_chimaera;
 		};
 	};
-	class RB205_U_sergeant_wampa: RB205_U_sergeant
+	class RB205_U_sergeant_chimaera: RB205_U_sergeant
 	{
 		ACCESS_TRUE
-		displayName = "[205] Clone Trooper Armor (Sergeant) <1-3 Rancor>";
+		displayName = "[205] Clone Trooper Armor (Sergeant) <2-1 Chimaera>";
 		class ItemInfo: ItemInfo
 		{
-			uniformClass = RB205_clone_sergeant_wampa;
+			uniformClass = RB205_clone_ab_sergeant_chimaera;
+		};
+	};
+
+	class RB205_U_trooper_verminoth: RB205_U_trooper
+	{
+		ACCESS_TRUE
+		displayName = "[205] Clone Trooper Armor <2-2 Verminoth>";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass = RB205_clone_ab_trooper_verminoth;
+		};
+	};
+	class RB205_U_corporal_verminoth: RB205_U_corporal
+	{
+		ACCESS_TRUE
+		displayName = "[205] Clone Trooper Armor (Corporal) <2-2 Verminoth>";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass = RB205_clone_ab_corporal_verminoth;
+		};
+	};
+	class RB205_U_sergeant_verminoth: RB205_U_sergeant
+	{
+		ACCESS_TRUE
+		displayName = "[205] Clone Trooper Armor (Sergeant) <2-2 Verminoth>";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass = RB205_clone_ab_sergeant_verminoth;
 		};
 	};
 
@@ -315,58 +350,58 @@ class cfgVehicles
 		editorSubcategory = "RB205_squadVariants";
 	};
 
-	class RB205_clone_ab_trooper_chimaera: RB205_clone_ab_trooper
+	class RB205_clone_trooper_wampa: RB205_clone_trooper
 	{
-		displayName = "(1-2 Chimaera) (2-CT) Clone Airborne Trooper";
-		uniformclass = "RB205_U_trooper_chimaera";
+		displayName = "(1-2 Wampa) (2-CT) Clone Trooper";
+		uniformclass = "RB205_U_trooper_wampa";
 		editorSubcategory = "RB205_squadVariants";
 		hiddenselectionsTextures[] =
 		{
-			"RB205_custom\data\U_enl_upper_chimaera.paa",
+			"RB205_custom\data\U_enl_upper_wampa.paa",
 			"RB205_main\data\default\U_enl_lower_co.paa",
 			"RB205_main\data\default\U_undersuit_co.paa"
 		};
 	};
-	class RB205_clone_ab_lanceCorporal_chimaera: RB205_clone_ab_lanceCorporal
+	class RB205_clone_lanceCorporal_wampa: RB205_clone_lanceCorporal
 	{
-		displayName = "(1-2 Chimaera) (3-CLC) Clone Airborne Lance-Corporal";
-		uniformclass = "RB205_U_corporal_chimaera";
+		displayName = "(1-2 Wampa) (3-CLC) Clone Lance-Corporal";
+		uniformclass = "RB205_U_corporal_wampa";
 		editorSubcategory = "RB205_squadVariants";
 	};
-	class RB205_clone_ab_corporal_chimaera: RB205_clone_ab_corporal
+	class RB205_clone_corporal_wampa: RB205_clone_corporal
 	{
-		displayName = "(1-2 Chimaera) (4-CP) Clone Airborne Corporal";
-		uniformclass = "RB205_U_corporal_chimaera";
+		displayName = "(1-2 Wampa) (4-CP) Clone Corporal";
+		uniformclass = "RB205_U_corporal_wampa";
 		editorSubcategory = "RB205_squadVariants";
 		hiddenselectionsTextures[] =
 		{
-			"RB205_custom\data\U_enl_upper_chimaera.paa",
+			"RB205_custom\data\U_enl_upper_wampa.paa",
 			"RB205_main\data\default\U_nco_lower_co.paa",
 			"RB205_main\data\default\U_undersuit_co.paa"
 		};
 	};
-	class RB205_clone_ab_sergeant_chimaera: RB205_clone_ab_sergeant
+	class RB205_clone_sergeant_wampa: RB205_clone_sergeant
 	{
-		displayName = "(1-2 Chimaera) (5-CS) Clone Airborne Sergeant";
-		uniformclass = "RB205_U_sergeant_chimaera";
+		displayName = "(1-2 Wampa) (5-CS) Clone Sergeant";
+		uniformclass = "RB205_U_sergeant_wampa";
 		editorSubcategory = "RB205_squadVariants";
 		hiddenselectionsTextures[] =
 		{
-			"RB205_custom\data\U_enl_upper_chimaera.paa",
+			"RB205_custom\data\U_enl_upper_wampa.paa",
 			"RB205_main\data\default\U_nco_lower_co.paa",
 			"RB205_main\data\default\U_undersuit_co.paa"
 		};
 	};
-	class RB205_clone_ab_trooper_chimaera_medic: RB205_clone_ab_trooper_medic
+	class RB205_clone_trooper_wampa_medic: RB205_clone_trooper_medic
 	{
-		displayName = "(1-2 Chimaera) Clone Airborne Trooper <Medic>";
-		uniformclass = "RB205_U_trooper_chimaera";
+		displayName = "(1-2 Wampa) Clone Trooper <Medic>";
+		uniformclass = "RB205_U_trooper_wampa";
 		editorSubcategory = "RB205_squadVariants";
 	};
-	class RB205_clone_ab_trooper_chimaera_rto: RB205_clone_ab_trooper_rto
+	class RB205_clone_trooper_wampa_rto: RB205_clone_trooper_rto
 	{
-		displayName = "(1-2 Chimaera) Clone Airborne Trooper <RTO>";
-		uniformclass = "RB205_U_trooper_chimaera";
+		displayName = "(1-2 Wampa) Clone Trooper <RTO>";
+		uniformclass = "RB205_U_trooper_wampa";
 		editorSubcategory = "RB205_squadVariants";
 	};
 
@@ -425,64 +460,119 @@ class cfgVehicles
 		editorSubcategory = "RB205_squadVariants";
 	};
 
-	class RB205_clone_trooper_wampa: RB205_clone_trooper
+	class RB205_clone_ab_trooper_chimaera: RB205_clone_ab_trooper
 	{
-		displayName = "(1-4 Wampa) (2-CT) Clone Trooper";
-		uniformclass = "RB205_U_trooper_wampa";
+		displayName = "(2-1 Chimaera) (2-CT) Clone Airborne Trooper";
+		uniformclass = "RB205_U_trooper_chimaera";
 		editorSubcategory = "RB205_squadVariants";
 		hiddenselectionsTextures[] =
 		{
-			"RB205_custom\data\U_enl_upper_wampa.paa",
+			"RB205_custom\data\U_enl_upper_chimaera.paa",
 			"RB205_main\data\default\U_enl_lower_co.paa",
 			"RB205_main\data\default\U_undersuit_co.paa"
 		};
 	};
-	class RB205_clone_lanceCorporal_wampa: RB205_clone_lanceCorporal
+	class RB205_clone_ab_lanceCorporal_chimaera: RB205_clone_ab_lanceCorporal
 	{
-		displayName = "(1-4 Wampa) (3-CLC) Clone Lance-Corporal";
-		uniformclass = "RB205_U_corporal_wampa";
+		displayName = "(2-1 Chimaera) (3-CLC) Clone Airborne Lance-Corporal";
+		uniformclass = "RB205_U_corporal_chimaera";
 		editorSubcategory = "RB205_squadVariants";
 	};
-	class RB205_clone_corporal_wampa: RB205_clone_corporal
+	class RB205_clone_ab_corporal_chimaera: RB205_clone_ab_corporal
 	{
-		displayName = "(1-4 Wampa) (4-CP) Clone Corporal";
-		uniformclass = "RB205_U_corporal_wampa";
+		displayName = "(2-1 Chimaera) (4-CP) Clone Airborne Corporal";
+		uniformclass = "RB205_U_corporal_chimaera";
 		editorSubcategory = "RB205_squadVariants";
 		hiddenselectionsTextures[] =
 		{
-			"RB205_custom\data\U_enl_upper_wampa.paa",
+			"RB205_custom\data\U_enl_upper_chimaera.paa",
 			"RB205_main\data\default\U_nco_lower_co.paa",
 			"RB205_main\data\default\U_undersuit_co.paa"
 		};
 	};
-	class RB205_clone_sergeant_wampa: RB205_clone_sergeant
+	class RB205_clone_ab_sergeant_chimaera: RB205_clone_ab_sergeant
 	{
-		displayName = "(1-4 Wampa) (5-CS) Clone Sergeant";
-		uniformclass = "RB205_U_sergeant_wampa";
+		displayName = "(2-1 Chimaera) (5-CS) Clone Airborne Sergeant";
+		uniformclass = "RB205_U_sergeant_chimaera";
 		editorSubcategory = "RB205_squadVariants";
 		hiddenselectionsTextures[] =
 		{
-			"RB205_custom\data\U_enl_upper_wampa.paa",
+			"RB205_custom\data\U_enl_upper_chimaera.paa",
 			"RB205_main\data\default\U_nco_lower_co.paa",
 			"RB205_main\data\default\U_undersuit_co.paa"
 		};
 	};
-	class RB205_clone_trooper_wampa_medic: RB205_clone_trooper_medic
+	class RB205_clone_ab_trooper_chimaera_medic: RB205_clone_ab_trooper_medic
 	{
-		displayName = "(1-4 Wampa) Clone Trooper <Medic>";
-		uniformclass = "RB205_U_trooper_wampa";
+		displayName = "(2-1 Chimaera) Clone Airborne Trooper <Medic>";
+		uniformclass = "RB205_U_trooper_chimaera";
 		editorSubcategory = "RB205_squadVariants";
 	};
-	class RB205_clone_trooper_wampa_rto: RB205_clone_trooper_rto
+	class RB205_clone_ab_trooper_chimaera_rto: RB205_clone_ab_trooper_rto
 	{
-		displayName = "(1-4 Wampa) Clone Trooper <RTO>";
-		uniformclass = "RB205_U_trooper_wampa";
+		displayName = "(2-1 Chimaera) Clone Airborne Trooper <RTO>";
+		uniformclass = "RB205_U_trooper_chimaera";
+		editorSubcategory = "RB205_squadVariants";
+	};
+
+	class RB205_clone_ab_trooper_verminoth: RB205_clone_ab_trooper
+	{
+		displayName = "(2-2 Verminoth) (2-CT) Clone Airborne Trooper";
+		uniformclass = "RB205_U_trooper_verminoth";
+		editorSubcategory = "RB205_squadVariants";
+		hiddenselectionsTextures[] =
+		{
+			"RB205_custom\data\U_enl_upper_verminoth.paa",
+			"RB205_main\data\default\U_enl_lower_co.paa",
+			"RB205_main\data\default\U_undersuit_co.paa"
+		};
+	};
+	class RB205_clone_ab_lanceCorporal_verminoth: RB205_clone_ab_lanceCorporal
+	{
+		displayName = "(2-2 Verminoth) (3-CLC) Clone Airborne Lance-Corporal";
+		uniformclass = "RB205_U_corporal_verminoth";
+		editorSubcategory = "RB205_squadVariants";
+	};
+	class RB205_clone_ab_corporal_verminoth: RB205_clone_ab_corporal
+	{
+		displayName = "(2-2 Verminoth) (4-CP) Clone Airborne Corporal";
+		uniformclass = "RB205_U_corporal_verminoth";
+		editorSubcategory = "RB205_squadVariants";
+		hiddenselectionsTextures[] =
+		{
+			"RB205_custom\data\U_enl_upper_verminoth.paa",
+			"RB205_main\data\default\U_nco_lower_co.paa",
+			"RB205_main\data\default\U_undersuit_co.paa"
+		};
+	};
+	class RB205_clone_ab_sergeant_verminoth: RB205_clone_ab_sergeant
+	{
+		displayName = "(2-2 Verminoth) (5-CS) Clone Airborne Sergeant";
+		uniformclass = "RB205_U_sergeant_verminoth";
+		editorSubcategory = "RB205_squadVariants";
+		hiddenselectionsTextures[] =
+		{
+			"RB205_custom\data\U_enl_upper_verminoth.paa",
+			"RB205_main\data\default\U_nco_lower_co.paa",
+			"RB205_main\data\default\U_undersuit_co.paa"
+		};
+	};
+	class RB205_clone_ab_trooper_verminoth_medic: RB205_clone_ab_trooper_medic
+	{
+		displayName = "(2-2 Verminoth) Clone Airborne Trooper <Medic>";
+		uniformclass = "RB205_U_trooper_verminoth";
+		editorSubcategory = "RB205_squadVariants";
+	};
+	class RB205_clone_ab_trooper_verminoth_rto: RB205_clone_ab_trooper_rto
+	{
+		displayName = "(2-2 Verminoth) Clone Airborne Trooper <RTO>";
+		uniformclass = "RB205_U_trooper_verminoth";
 		editorSubcategory = "RB205_squadVariants";
 	};
 
 	class RB205_clone_plt_trooper_banshee: RB205_clone_plt_trooper
 	{
-		displayName = "(3-1 Banshee) (2-CT) Clone Pilot Trooper ";
+		displayName = "(3-1 Banshee) (2-CT) Clone Pilot Trooper";
 		uniformclass = "RB205_U_plt_trooper_banshee";
 		editorSubcategory = "RB205_squadVariants";
 		hiddenselectionsTextures[] =

@@ -123,17 +123,21 @@ class XtdGearInfos
 		U(RB205_U_corporal_zillo,"dft","cp","default","1_1")
 		U(RB205_U_sergeant_zillo,"dft","cs","default","1_1")
 		
-		U(RB205_U_trooper_chimaera,"dft","ct","default","1_2")
-		U(RB205_U_corporal_chimaera,"dft","cp","default","1_2")
-		U(RB205_U_sergeant_chimaera,"dft","cs","default","1_2")
+		U(RB205_U_trooper_wampa,"dft","ct","default","1_2")
+		U(RB205_U_corporal_wampa,"dft","cp","default","1_2")
+		U(RB205_U_sergeant_wampa,"dft","cs","default","1_2")
 		
 		U(RB205_U_trooper_rancor,"dft","ct","default","1_3")
 		U(RB205_U_corporal_rancor,"dft","cp","default","1_3")
 		U(RB205_U_sergeant_rancor,"dft","cs","default","1_3")
 		
-		U(RB205_U_trooper_wampa,"dft","ct","default","1_4")
-		U(RB205_U_corporal_wampa,"dft","cp","default","1_4")
-		U(RB205_U_sergeant_wampa,"dft","cs","default","1_4")
+		U(RB205_U_trooper_chimaera,"dft","ct","default","2_1")
+		U(RB205_U_corporal_chimaera,"dft","cp","default","2_1")
+		U(RB205_U_sergeant_chimaera,"dft","cs","default","2_1")
+		
+		U(RB205_U_trooper_verminoth,"dft","ct","default","2_2")
+		U(RB205_U_corporal_verminoth,"dft","cp","default","2_2")
+		U(RB205_U_sergeant_verminoth,"dft","cs","default","2_2")
 		
 		U(RB205_U_plt_trooper_banshee,"plt","ct","default","3_1")
 		U(RB205_U_plt_corporal_banshee,"plt","cp","default","3_1")

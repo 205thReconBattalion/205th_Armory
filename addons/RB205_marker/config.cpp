@@ -44,13 +44,15 @@ class CfgMarkers
 
 	class b_RB205_BFT_70MRP_lead: b_RB205_BFT_lead
 	{
-		name = "2-0 N/A";
+		name = "2-0 Warden";
+		color[] = {0,0,0,1};
 		icon = "RB205_marker\data\2-0.paa";
 	};
 
 	class b_RB205_BFT_35HSP_lead: b_RB205_BFT_lead
 	{
 		name = "3-0 N/A";
+		color[] = {0,0,0,1};
 		icon = "RB205_marker\data\3-0.paa";
 	};
 
@@ -84,28 +86,28 @@ class CfgMarkers
 
 	class b_RB205_BFT_12_a: b_RB205_BFT_lead
 	{
-		name = "1-2 Chimaera";
-		color[] = {0.9,0,0,1};
+		name = "1-2 Wampa";
+		color[] = {0.85,0.85,0,1};
 		icon = "RB205_marker\data\1-2_A.paa";
 	};
 	class b_RB205_BFT_12_b: b_RB205_BFT_12_a
 	{
-		name = "1-2-B Chimaera";
+		name = "1-2-B Wampa";
 		icon = "RB205_marker\data\1-2_B.paa";
 	};
 	class b_RB205_BFT_12_c: b_RB205_BFT_12_a
 	{
-		name = "1-2-C Chimaera";
+		name = "1-2-C Wampa";
 		icon = "RB205_marker\data\1-2_C.paa";
 	};
 	class b_RB205_BFT_12_d: b_RB205_BFT_12_a
 	{
-		name = "1-2-D Chimaera";
+		name = "1-2-D Wampa";
 		icon = "RB205_marker\data\1-2_D.paa";
 	};
 	class b_RB205_BFT_12_e: b_RB205_BFT_12_a
 	{
-		name = "1-2-E Chimaera";
+		name = "1-2-E Wampa";
 		icon = "RB205_marker\data\1-2_E.paa";
 	};
 
@@ -136,34 +138,60 @@ class CfgMarkers
 		icon = "RB205_marker\data\1-3_E.paa";
 	};
 
-	class b_RB205_BFT_14_a: b_RB205_BFT_lead
+	//70th Mobile Response Platoon
+	class b_RB205_BFT_21_a: b_RB205_BFT_lead
 	{
-		name = "1-4 Wampa";
-		color[] = {0.85,0.85,0,1};
-		icon = "RB205_marker\data\1-4_A.paa";
+		name = "2-1 Chimaera";
+		color[] = {0.9,0,0,1};
+		icon = "RB205_marker\data\2-1_A.paa";
 	};
-	class b_RB205_BFT_14_b: b_RB205_BFT_14_a
+	class b_RB205_BFT_21_b: b_RB205_BFT_21_a
 	{
-		name = "1-4-B Wampa";
-		icon = "RB205_marker\data\1-4_B.paa";
+		name = "2-1-B Chimaera";
+		icon = "RB205_marker\data\2-1_B.paa";
 	};
-	class b_RB205_BFT_14_c: b_RB205_BFT_14_a
+	class b_RB205_BFT_21_c: b_RB205_BFT_21_a
 	{
-		name = "1-4-C Wampa";
-		icon = "RB205_marker\data\1-4_C.paa";
+		name = "2-1-C Chimaera";
+		icon = "RB205_marker\data\2-1_C.paa";
 	};
-	class b_RB205_BFT_14_d: b_RB205_BFT_14_a
+	class b_RB205_BFT_21_d: b_RB205_BFT_21_a
 	{
-		name = "1-4-D Wampa";
-		icon = "RB205_marker\data\1-4_D.paa";
+		name = "2-1-D Chimaera";
+		icon = "RB205_marker\data\2-1_D.paa";
 	};
-	class b_RB205_BFT_14_e: b_RB205_BFT_14_a
+	class b_RB205_BFT_21_e: b_RB205_BFT_21_a
 	{
-		name = "1-4-E Wampa";
-		icon = "RB205_marker\data\1-4_E.paa";
+		name = "2-1-E Chimaera";
+		icon = "RB205_marker\data\2-1_E.paa";
 	};
 
-	//70th Mobile Response Platoon
+	class b_RB205_BFT_22_a: b_RB205_BFT_lead
+	{
+		name = "2-2 Verminoth";
+		color[] = {1,0,1,1};
+		icon = "RB205_marker\data\2-2_A.paa";
+	};
+	class b_RB205_BFT_22_b: b_RB205_BFT_22_a
+	{
+		name = "2-2-B Verminoth";
+		icon = "RB205_marker\data\2-2_B.paa";
+	};
+	class b_RB205_BFT_22_c: b_RB205_BFT_22_a
+	{
+		name = "2-2-C Verminoth";
+		icon = "RB205_marker\data\2-2_C.paa";
+	};
+	class b_RB205_BFT_22_d: b_RB205_BFT_22_a
+	{
+		name = "2-2-D Verminoth";
+		icon = "RB205_marker\data\2-2_D.paa";
+	};
+	class b_RB205_BFT_22_e: b_RB205_BFT_22_a
+	{
+		name = "2-2-E Verminoth";
+		icon = "RB205_marker\data\2-2_E.paa";
+	};
 	
 
 	//35th Heavy Support Platoon
