@@ -25,18 +25,14 @@ if (_mode != 0 && {!alive _vehicle}) exitWith {};
 private _lightPositions = _vehicle call RB205_vehicles_fnc_getCabinLightPositions;
 if (_lightPositions isEqualTo []) exitWith {};
 
-private _name = "Disabled";
 private _color = switch (_mode) do {
-    case 1: {_name = "<t color='#FF0000'>Red</t>"; [1, 0, 0]};
-    case 2: {_name = "<t color='#00FF00'>Green</t>"; [0, 1, 0]};
+    case 1: {[1, 0, 0]};
+    case 2: {[0, 1, 0]};
     default {[]};
 };
 
+private _previousMode = _vehicle getVariable ["RB205_vehicles_cabinLightMode", 0];
 _vehicle setVariable ["RB205_vehicles_cabinLightMode", _mode, true];
-
-if (hasInterface) then {
-    [format ["Cabin Lights: %1", _name], 1.5] call ace_common_fnc_displayTextStructured;
-};
 
 private _eventName = "RB205_vehicles_removeCabinLights";
 private _eventArguments = [_vehicle];
@@ -53,6 +49,12 @@ if (isMultiplayer) then {
     [_jipID, _vehicle] call CBA_fnc_removeGlobalEventJIP;
 } else {
     [_eventName, _eventArguments] call CBA_fnc_localEvent;
+};
+
+// A separate live event prevents an old signal from being replayed on JIP.
+// Reapplying the same mode or switching the lights off is silent.
+if (_mode in [1, 2] && {_mode isNotEqualTo _previousMode}) then {
+    ["RB205_vehicles_cabinLightSignal", [_vehicle, _mode]] call CBA_fnc_globalEvent;
 };
 
 nil;

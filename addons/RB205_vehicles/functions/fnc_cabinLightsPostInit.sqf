@@ -34,6 +34,25 @@ missionNamespace setVariable ["RB205_vehicles_cabinLightsInitialized", true];
 
 if (!hasInterface) exitWith {};
 
+// This event is deliberately not stored for JIP. Only current occupants hear it.
+["RB205_vehicles_cabinLightSignal", {
+    params ["_vehicle", "_mode"];
+    if (isNull _vehicle || {!alive _vehicle}) exitWith {};
+    if (isNull player || {!alive player}) exitWith {};
+    if (objectParent player isNotEqualTo _vehicle) exitWith {};
+    if !(_mode in [1, 2]) exitWith {};
+
+    // One stock Arma sound, with a low pitch for HOLD and a high pitch for GO.
+    private _pitch = if (_mode == 1) then {0.65} else {1.4};
+    playSoundUI ["A3\Sounds_F\sfx\blip1.wss", 0.8, _pitch];
+}] call CBA_fnc_addEventHandler;
+
+// Follow the synchronized mode, including after boarding, respawn and JIP.
+// This local check sends no network events and never plays sounds itself.
+[{
+    call RB205_vehicles_fnc_updateCabinLightIndicator;
+}, 0.1] call CBA_fnc_addPerFrameHandler;
+
 ["RB205_vehicles_removeCabinLights", {
     params ["_vehicle"];
     if (isNull _vehicle) exitWith {};
@@ -63,7 +82,6 @@ if (!hasInterface) exitWith {};
         _light setLightColor _color;
         _light setLightAmbient _color;
         _light setLightIntensity 100;
-        _light setLightDayLight true; //Test
         _light setLightConePars [180, 45, 1];
         _light attachTo [_vehicle, _x];
         [_light, -90, 0] call BIS_fnc_setPitchBank;
@@ -111,6 +129,8 @@ private _parentAction = [
         "",
         {
             params ["_target", "_player", "_actionParams"];
+            // Recheck access when executing, in case it changed while the menu was open.
+            if !([_target, _player] call RB205_vehicles_fnc_canSetCabinLights) exitWith {};
             [_target, _actionParams select 0] call RB205_vehicles_fnc_setCabinLights;
         },
         {
