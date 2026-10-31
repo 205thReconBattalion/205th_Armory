@@ -13,10 +13,7 @@ class CfgPatches
 		units[] =
 		{
 			"RB205_fortification_container",
-			"RB205_fortification_container_small",
-			"RB205_fuel_barrel",
-			"RB205_veh_ammo_crate",
-			"RB205_repair_crate"
+			"RB205_fortification_container_small"
 		};
 		weapons[] = {};
 	};
@@ -35,7 +32,7 @@ class CfgVehicles
 		tas_liftVars = "[[[[0,-4,-6.5]]], [-0.001], [-0.4]]";
 		author = AUTHOR;
 		editorCategory = "RB205_prop";
-		editorSubcategory = "RB205_fortificationBuilding";
+		editorSubcategory = "RB205_fortificationContainer";
 		ace_cargo_canLoad = 1;
 		ace_cargo_size = 20;
 		ace_dragging_canCarry = 0;
@@ -111,7 +108,7 @@ class CfgVehicles
 		displayName = "Fortifications Container (Small)";
 		author = AUTHOR;
 		editorCategory = "RB205_prop";
-		editorSubcategory = "RB205_fortificationBuilding";
+		editorSubcategory = "RB205_fortificationContainer";
 		ace_cargo_size = 5;
 		ace_cargo_canLoad = 1;
 		ace_cargo_noRename = 0;
@@ -132,59 +129,13 @@ class CfgVehicles
 			"RB205_fort_misc", -1
 		};
 	};
-	
-	class 3AS_Small_Fuel_Barrel;
-	class RB205_fuel_barrel: 3AS_Small_Fuel_Barrel
-	{
-		displayName = "Fuel Barrel";
-		ace_refuel_fuelCargo = 200;
-		ace_refuel_hooks[] = {{0,0,0}};
-		ace_refuel_hoseLength = 5;
-		author = AUTHOR;
-		editorCategory = "RB205_prop";
-		editorSubcategory = "RB205_fortificationBuilding";
-		ACE_CARGO
-		CARRYABLE
-		DRAGGABLE
-		editorPreview = "";
-	};
-	class 3AS_Crate_LargeAmmo;
-	class RB205_veh_ammo_crate: 3AS_Crate_LargeAmmo
-	{
-		displayName = "Vehicle Ammo Crate";
-		author = AUTHOR;
-		editorCategory = "RB205_prop";
-		editorSubcategory = "RB205_fortificationBuilding";
-		ace_cargo_size = 5;
-		ace_cargo_canLoad = 1;
-		ace_cargo_noRename = 0;
-		ace_cargo_blockUnloadCarry = 0;
-		ace_dragging_canCarry = 0;
-		DRAGGABLE
-		ace_rearm_defaultSupply = 2500;
-		editorPreview = "";
-	};
-	class 3AS_Small_Box_9_Prop;
-	class RB205_repair_crate: 3AS_Small_Box_9_Prop
-	{
-		displayName = "Repair Crate";
-		author = AUTHOR;
-		editorCategory = "RB205_prop";
-		editorSubcategory = "RB205_fortificationBuilding";
-		ACE_CARGO
-		CARRYABLE
-		DRAGGABLE
-		ace_isRepairFacility = 1;
-		ace_repair_canRepair = 1;
-		editorPreview = "";
-	};
 };
 
 class CfgEditorSubcategories
 {
-	class RB205_fortificationBuilding
+	class RB205_fortificationContainer
 	{
-		displayName = "Fortification Building";
+		displayName = "Fortification Container";
 	};
 };
 

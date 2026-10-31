@@ -23,7 +23,12 @@ class CfgPatches
 			"RB205_resupply_weapons_arsenal",
 			"RB205_resupply_medical_arsenal",
 			"RB205_resupply_equipment_arsenal",
-			"RB205_resupply_complete_arsenal"
+			"RB205_resupply_complete_arsenal",
+
+			"RB205_fuel_barrel",
+			"RB205_fuel_barrel_jetpack",
+			"RB205_veh_ammo_crate",
+			"RB205_repair_crate"
 		};
 		weapons[]={};
 	};
@@ -39,7 +44,7 @@ class CfgVehicles
 	{
 		displayName = "Resupply Crate";
 		editorCategory = "RB205_prop";
-		editorSubcategory = "RB205_crates";
+		editorSubcategory = "RB205_crates_empty";
 		INVENTORY_SPACE
 		ACE_CARGO
 		class TransportWeapons{};
@@ -170,6 +175,63 @@ class CfgVehicles
 		scope		= 2;
 		scopeCurator= 2;
 	};
+	
+	class Land_3as_Barrel_Rhydonium;
+	class RB205_fuel_barrel: Land_3as_Barrel_Rhydonium
+	{
+		displayName = "Rhydonium Barrel";
+		ace_refuel_fuelCargo = 200;
+		ace_refuel_hooks[] = {{0,0,0}};
+		ace_refuel_hoseLength = 5;
+		editorCategory = "RB205_prop";
+		editorSubcategory = "RB205_crates";
+		ACE_CARGO
+		CARRYABLE
+		DRAGGABLE
+		editorPreview = "";
+	};
+	class 3AS_Small_Fuel_Barrel;
+	class RB205_fuel_barrel_jetpack: 3AS_Small_Fuel_Barrel
+	{
+		displayName = "Rhydonium Barrel (Jetpack)";
+		ace_refuel_fuelCargo = 20;
+		ace_refuel_hooks[] = {{0,0,0}};
+		ace_refuel_hoseLength = 5;
+		editorCategory = "RB205_prop";
+		editorSubcategory = "RB205_crates";
+		ACE_CARGO
+		CARRYABLE
+		DRAGGABLE
+		editorPreview = "";
+	};
+	class 3AS_Crate_LargeAmmo;
+	class RB205_veh_ammo_crate: 3AS_Crate_LargeAmmo
+	{
+		displayName = "Vehicle Ammo Crate";
+		ace_rearm_defaultSupply = 2500;
+		editorCategory = "RB205_prop";
+		editorSubcategory = "RB205_crates";
+		ace_cargo_size = 5;
+		ace_cargo_canLoad = 1;
+		ace_cargo_noRename = 0;
+		ace_cargo_blockUnloadCarry = 0;
+		ace_dragging_canCarry = 0;
+		DRAGGABLE
+		editorPreview = "";
+	};
+	class 3AS_Small_Box_9_Prop;
+	class RB205_repair_crate: 3AS_Small_Box_9_Prop
+	{
+		displayName = "Repair Crate";
+		ace_isRepairFacility = 1;
+		ace_repair_canRepair = 1;
+		editorCategory = "RB205_prop";
+		editorSubcategory = "RB205_crates";
+		ACE_CARGO
+		CARRYABLE
+		DRAGGABLE
+		editorPreview = "";
+	};
 };
 
 class CfgEditorSubcategories
@@ -177,6 +239,10 @@ class CfgEditorSubcategories
 	class RB205_crates
 	{
 		displayName = "Resupply Crates";
+	};
+	class RB205_crates_empty
+	{
+		displayName = "Resupply Crates (Empty)";
 	};
 	class RB205_crates_arsenal
 	{
