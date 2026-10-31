@@ -123,12 +123,13 @@ tf_subtype="digital_lr";
 
 /* JUMPPACK */
 #define JETPACK_TRUE \
-    JLTS_isJumppack = 0; \
+    SWJP_isJetpack = 1; \
+	JLTS_isJumppack = 0; \
 	tas_is_jetpack = 0; \
     NSMLLTE_jumppack_is_jumppack = 0; \
 	RD501_jumppack_is_jumppack = 0; \
 	knd_isJetpack = 0; \
-	jen_jetpacks_core_isJetpack = 1; \
+	jen_jetpacks_core_isJetpack = 0; \
 	jen_jetpacks_core_acceleration = 1.8; \
 	jen_jetpacks_core_ascensionCoef = 1; \
 	jen_jetpacks_core_coolCoef = 2; \
