@@ -226,6 +226,11 @@ class CfgMarkers
 		name = "3-1 Raven [LAAT/LE]";
 		icon = "RB205_marker\data\3-1_LAATLE.paa";
 	};
+	class b_RB205_BFT_31_las: b_RB205_BFT_31_unknown
+	{
+		name = "3-1 Raven [LAS]";
+		icon = "RB205_marker\data\3-1_LAS.paa";
+	};
 	class b_RB205_BFT_31_nu: b_RB205_BFT_31_unknown
 	{
 		name = "3-1 Raven [Nu-Class]";
