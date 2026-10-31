@@ -180,7 +180,7 @@ z6ShieldProgressBarChangeColor = {
     };
 };
 
-["205th Recon Battalion", "Z6CastShield", ["Activate Z6 Shield", "Aktiviert/Deaktiviert den Z6 Schild"], {
+["[205] Miscellaneous", "Z6CastShield", ["Activate Z6 Shield", "Aktiviert/Deaktiviert den Z6 Schild"], {
     private _player = call CBA_fnc_currentUnit;
 
     if (_player getVariable ["205_Z6_Cast_Shield_KeyPressed", false]) exitWith {};
