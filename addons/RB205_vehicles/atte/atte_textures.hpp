@@ -45,7 +45,7 @@ class textureSources
 		author = "3AS";
 		textures[] =
 		{
-			"3as\3AS_ATTE\data\Textures\3AS_ATTE_Shell_TCW_co.paa",
+			"3as\3AS_ATTE\data\Textures\3AS_ATTE_Shell_co.paa",
 			"3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
 			"3as\3AS_ATTE\data\Textures\3AS_ATTE_Detail_co.paa",
 			"3as\3AS_ATTE\data\Textures\3AS_ATTE_Legs_co.paa",

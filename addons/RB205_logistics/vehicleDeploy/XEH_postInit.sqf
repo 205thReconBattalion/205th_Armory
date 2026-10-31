@@ -118,4 +118,4 @@ private _unloadAtrt = ["'AT-RT' ausladen", "'AT-RT' ausladen", "RB205_vehicles\a
 	[_x, 1, ["ACE_SelfActions"], _unloadBarc, true] call ace_interact_menu_fnc_addActionToClass;
 	[_x, 1, ["ACE_SelfActions"], _unloadBarc_sidecar, true] call ace_interact_menu_fnc_addActionToClass;
 	[_x, 1, ["ACE_SelfActions"], _unloadAtrt, true] call ace_interact_menu_fnc_addActionToClass;
-} forEach ["RB205_laat","RB205_laat_lights","RB205_laat_turrets","RB205_laatc","RB205_atte"];// 3AS_laat_Base | 3AS_ATTE_Base
+} forEach ["RB205_laat","RB205_laat_lights","RB205_laat_turrets","RB205_laatc","RB205_atte","RB205_atte_cmd"];// 3AS_laat_Base | 3AS_ATTE_Base

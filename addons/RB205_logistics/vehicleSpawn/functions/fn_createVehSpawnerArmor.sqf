@@ -44,6 +44,7 @@ rb205_vehicles_spawnArray_armor = [];
     ["RB205_tx130_super",true],
 
     ["RB205_atte",true],
+    ["RB205_atte_cmd",true],
     ["RB205_atap",true],
     ["RB205_rx200",true],
     ["RB205_utat",true],

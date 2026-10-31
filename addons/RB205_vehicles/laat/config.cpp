@@ -22,6 +22,11 @@ class cfgPatches
 #include "\RB205_vehicles\macros.hpp"
 #include "\RB205_vehicles\inventory.hpp"
 
+#define CABIN_LIGHT_POS { {0,2,3}, {0,-1,3} }
+#define FIX_DUPLICATE_SEAT \
+	transportsoldier = 27; \
+	cargoProxyIndexes[] = {1,2,3,4,5,6,7,8,9,10,11,12,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34};
+
 class cfgWeapons {};
 class cfgVehicles
 {
@@ -57,7 +62,8 @@ class cfgVehicles
 		#include "\RB205_vehicles\laat\laat_weapons.hpp"
 		#include "\RB205_vehicles\laat\laat_sounds.hpp"
 		#include "\RB205_vehicles\sounds_aircraft_alarm.hpp"
-		RB205_vehicles_cabinLightPositions[] = {{0,2,3},{0,-1,3}};
+		RB205_vehicles_cabinLightPositions[] = CABIN_LIGHT_POS;
+		FIX_DUPLICATE_SEAT
 	};
 	class RB205_laat_lights: 3as_LAAT_Mk1Lights
 	{
@@ -76,7 +82,8 @@ class cfgVehicles
 		#include "\RB205_vehicles\laat\laat_weapons.hpp"
 		#include "\RB205_vehicles\laat\laat_sounds.hpp"
 		#include "\RB205_vehicles\sounds_aircraft_alarm.hpp"
-		RB205_vehicles_cabinLightPositions[] = {{0,2,3},{0,-1,3}};
+		RB205_vehicles_cabinLightPositions[] = CABIN_LIGHT_POS;
+		FIX_DUPLICATE_SEAT
 	};
 	class RB205_laat_turrets: 3as_LAAT_Mk1
 	{
@@ -95,6 +102,7 @@ class cfgVehicles
 		#include "\RB205_vehicles\laat\laat_weapons.hpp"
 		#include "\RB205_vehicles\laat\laat_sounds.hpp"
 		#include "\RB205_vehicles\sounds_aircraft_alarm.hpp"
-		RB205_vehicles_cabinLightPositions[] = {{0,2,3},{0,-1,3}};
+		RB205_vehicles_cabinLightPositions[] = CABIN_LIGHT_POS;
+		FIX_DUPLICATE_SEAT
 	};
 };

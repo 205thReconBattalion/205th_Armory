@@ -42,6 +42,21 @@ if (_spawnPossible) then {
 
     _veh setDir _dir;
     [_veh, [_selectedSkin, 1], true] call BIS_fnc_initVehicle;
+
+    // BIS_fnc_initVehicle skips the seat locks (lockCargo) of the animation sources when resetting with "true"
+    private _lockableSeats = [];
+    private _lockedSeats = [];
+    {
+        if (isNumber (_x >> "lockCargoAnimationPhase") && isArray (_x >> "lockCargo")) then {
+            private _isLocked = abs ((_veh animationPhase configName _x) - getNumber (_x >> "lockCargoAnimationPhase")) < 0.001;
+            {
+                _lockableSeats pushBackUnique _x;
+                if (_isLocked) then { _lockedSeats pushBackUnique _x; };
+            } forEach getArray (_x >> "lockCargo");
+        };
+    } forEach configProperties [configFile >> "CfgVehicles" >> _vehicleClassName >> "AnimationSources", "isClass _x", true];
+    { _veh lockCargo [_x, _x in _lockedSeats]; } forEach _lockableSeats;
+
     private _tagVehicleClass = format ["RB205_VehicleSpawner_%1", _vehicleClassName];
     profilenamespace setVariable [_tagVehicleClass, _selectedSkin];
     closeDialog 0;

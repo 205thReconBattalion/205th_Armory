@@ -9,7 +9,7 @@ rb205_vehicles_armored = [
  "RB205_bantha_assault","RB205_bantha_cargo","RB205_bantha_unarmed","RB205_bantha","RB205_bantha_aa","RB205_bantha_mortar","RB205_bantha_service",
  "RB205_px10","RB205_px10_service",
  "RB205_tx130","RB205_tx130_gl","RB205_tx130_recon","RB205_tx130_super",
- "RB205_atte","RB205_atap","RB205_utat","RB205_juggernaut","RB205_rx200",
+ "RB205_atte","RB205_atte_cmd","RB205_atap","RB205_utat","RB205_juggernaut","RB205_rx200",
  "RB205_av7"
 ];
 
