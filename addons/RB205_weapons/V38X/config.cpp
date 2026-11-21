@@ -109,6 +109,12 @@ class CfgWeapons
 		JLTS_hasElectronics = 1;
 		JLTS_hasEMPProtection = 0;
 		JLTS_friedItem = "RB205_Valken38X_fried";
+		discreteDistance[] = {25};
+		discreteDistanceInitIndex = 0;
+		ACE_RailHeightAboveBore = 0;
+		ACE_ScopeHeightAboveRail = 0;
+		ACE_IronSightBaseAngle = -0.0171;
+		ACE_RailBaseAngle = -0.0171;
 	};
 	FRIED_WEAPON(RB205_Valken38X,"\RB205_weapons\data\ui\v38x_fried.paa")
 
@@ -129,6 +135,7 @@ class CfgWeapons
 		author = "205th Recon Battalion";
 		displayName = "$STR_205_OPTIC_V38X_DisplayName";
 		descriptionShort = "Vergrößerung: 4x-12x";
+		ACE_ScopeHeightAboveRail = 0;
 		class ItemInfo: ItemInfo
 		{
 			mass = MASS_ACC_OPTIC;
@@ -137,6 +144,10 @@ class CfgWeapons
 				class Snip: Snip
 				{
 					visionMode[] = {"Normal","NVG","TI"};
+					discreteDistance[] = {25};
+					discreteDistanceInitIndex = 0;
+					distanceZoomMin = 25;
+					distanceZoomMax = 25;
 				};
 			};
 		};

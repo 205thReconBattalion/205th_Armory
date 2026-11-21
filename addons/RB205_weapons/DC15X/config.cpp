@@ -114,6 +114,12 @@ class CfgWeapons
 		JLTS_hasElectronics = 1;
 		JLTS_hasEMPProtection = 0;
 		JLTS_friedItem = "RB205_DC15X_fried";
+		discreteDistance[] = {25};
+		discreteDistanceInitIndex = 0;
+		ACE_RailHeightAboveBore = 0;
+		ACE_ScopeHeightAboveRail = 0;
+		ACE_IronSightBaseAngle = -0.0171;
+		ACE_RailBaseAngle = -0.0171;
 	};
 	FRIED_WEAPON(RB205_DC15X,"\RB205_weapons\data\ui\dc15x_fried.paa")
 
@@ -134,6 +140,7 @@ class CfgWeapons
 		author = "205th Recon Battalion";
 		displayName = "$STR_205_OPTIC_DC15X_DisplayName";
 		descriptionShort = "Vergrößerung: 6x-25x";
+		ACE_ScopeHeightAboveRail = 0;
 		class ItemInfo: ItemInfo
 		{
 			mass = MASS_ACC_OPTIC;
@@ -143,6 +150,10 @@ class CfgWeapons
 				{
 					visionMode[] = {"Normal","NVG","TI"};
 					discretefov[] = {0.042,0.02,0.01};
+					discreteDistance[] = {25};
+					discreteDistanceInitIndex = 0;
+					distanceZoomMin = 25;
+					distanceZoomMax = 25;
 				};
 			};
 		};

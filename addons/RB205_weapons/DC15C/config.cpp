@@ -112,6 +112,12 @@ class CfgWeapons
 		JLTS_hasElectronics = 1;
 		JLTS_hasEMPProtection = 0;
 		JLTS_friedItem = "RB205_DC15C_fried";
+		discreteDistance[] = {25};
+		discreteDistanceInitIndex = 0;
+		ACE_RailHeightAboveBore = 0;
+		ACE_ScopeHeightAboveRail = 0;
+		ACE_IronSightBaseAngle = 0.0283;
+		ACE_RailBaseAngle = 0.0283;
 	};
 	FRIED_WEAPON(RB205_DC15C,"\RB205_weapons\data\ui\dc15c_fried.paa")
 	
@@ -228,22 +234,54 @@ class CfgWeapons
 		JLTS_hasElectronics = 1;
 		JLTS_hasEMPProtection = 0;
 		JLTS_friedItem = "RB205_DC15C_GL_fried";
+		discreteDistance[] = {25};
+		discreteDistanceInitIndex = 0;
+		ACE_RailHeightAboveBore = 0;
+		ACE_ScopeHeightAboveRail = 0;
+		ACE_IronSightBaseAngle = 0.0283;
+		ACE_RailBaseAngle = 0.0283;
 	};
 	FRIED_WEAPON(RB205_DC15C_GL,"\RB205_weapons\data\ui\dc15c_gl_fried.paa")
 
 	class ItemCore;
+	class InventoryOpticsItem_Base_F;
 	class 3AS_optic_DC15C_F: ItemCore
 	{
-		class ItemInfo;
+		class ItemInfo: InventoryOpticsItem_Base_F
+		{
+			class OpticsModes
+			{
+				class cq;
+				class scope;
+			};
+		};
 	};
 	class RB205_optic_DC15C: 3AS_optic_DC15C_F
 	{
 		author = "205th Recon Battalion";
 		displayName = "$STR_205_OPTIC_DC15C_DisplayName";
 		descriptionShort = "Vergrößerung: 1x-3x";
+		ACE_ScopeHeightAboveRail = 0;
 		class ItemInfo: ItemInfo
 		{
 			mass = MASS_ACC_OPTIC;
+			class OpticsModes: OpticsModes
+			{
+				class cq: cq
+				{
+					discreteDistance[] = {25};
+					discreteDistanceInitIndex = 0;
+					distanceZoomMin = 25;
+					distanceZoomMax = 25;
+				};
+				class scope: scope
+				{
+					discreteDistance[] = {25};
+					discreteDistanceInitIndex = 0;
+					distanceZoomMin = 25;
+					distanceZoomMax = 25;
+				};
+			};
 		};
 	};
 };
