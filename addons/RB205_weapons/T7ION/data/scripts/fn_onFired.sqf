@@ -2,23 +2,21 @@ params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projecti
 
 if !(local _unit) exitwith {};
 
-if (_weapon isEqualTo "RB205_T7ION") then 
+if (_weapon isEqualTo "RB205_T7ION") then
 {
 	_projectile addEventHandler ["HitPart", {
 		params ["_projectile", "_hitEntity", "_projectileOwner", "_pos", "_velocity", "_normal", "_components", "_radius" ,"_surfaceType"];
 
-		if !((_hitEntity isKindOf "Car") or (_hitEntity isKindOf "Motorcycle") or (_hitEntity isKindOf "UAV") or (_hitEntity isKindOf "Tank") or (_hitEntity isKindOf "Air") or (_hitEntity isKindOf "HeliH") or (_hitEntity isKindOf "Ship") or (_hitEntity isKindOf "Lamps") or (_hitEntity isKindOf "Helicopter") or (_hitEntity isKindOf "Plane") or (_hitEntity isKindOf "Autonomous") or (_hitEntity isKindOf "Armored")) exitwith
+		// A round can hit several surfaces, the EMP only goes off at the first one.
+		if !(_projectile getVariable ["RB205_T7ION_empDone", false]) then
 		{
-			if !((_hitEntity isKindOf "StaticWeapon")) exitwith
-			{			
-				if !(_hitEntity isKindOf "Man") exitwith {};
-				["rb205_ion_electrocuteEvent", [_hitEntity,_projectileOwner]] call CBA_fnc_globalEvent;
-				deleteVehicle _projectile;
-			};
-			["rb205_ion_disableTurretEvent", [_hitEntity,_projectileOwner]] call CBA_fnc_globalEvent;
+			_projectile setVariable ["RB205_T7ION_empDone", true];
+			[_pos vectorAdd (_normal vectorMultiply 0.2), _projectileOwner, _hitEntity] call RB205_T7ION_fnc_empBlast;
+		};
+
+		if ([_hitEntity,_projectileOwner,true] call RB205_T7ION_fnc_applyIon) then
+		{
 			deleteVehicle _projectile;
 		};
-		["rb205_ion_disableVehicleEvent", [_hitEntity,_projectileOwner]] call CBA_fnc_globalEvent;
-		deleteVehicle _projectile;
 	}];
 };

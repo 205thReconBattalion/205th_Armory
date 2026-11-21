@@ -1,5 +1,17 @@
 _AOE = 15;
 
+// This script can start once per particle of the emitter, so only the first start per impact may do the work.
+private _now = time;
+private _alreadyHandled = false;
+isNil {
+	RB205_T7ION_recentIonEffects = (missionNamespace getVariable ["RB205_T7ION_recentIonEffects", []]) select {_now - (_x select 1) < 2};
+	_alreadyHandled = (RB205_T7ION_recentIonEffects findIf {_this distance (_x select 0) < 5}) != -1;
+	if (!_alreadyHandled) then {
+		RB205_T7ION_recentIonEffects pushBack [_this, _now];
+	};
+};
+if (_alreadyHandled) exitWith {};
+
 {
 	_x setHit ["light_1_hitpoint", 0.97]; //all possible light hitpoints
 	_x setHit ["light_2_hitpoint", 0.97]; //no lights escape this
@@ -25,8 +37,7 @@ _AOE = 15;
 		_scantei_spark setParticleRandom [1, [0.1, 0.1, 0.1], [0, 0, 0], 0, 0.25, [0, 0, 0, 0], 0, 0];
 		_scantei_spark setParticleParams [["\A3\data_f\proxies\muzzle_flash\muzzle_flash_silencer.p3d", 1, 0, 1], "", "SpaceObject", 1, 1, [0, 0,_spark_poz_rel], [0, 0, 0], 0, 15, 7.9, 0, [0.5,0.5,0.05], [[1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 0]], [0.08], 1, 0, "", "", _x,0,true,0.3,[[0,0,0,0]]];
 		_scantei_spark setDropInterval _drop;
-		sleep 1;
-		deleteVehicle _scantei_spark;
+		[{deleteVehicle _this}, _scantei_spark, 1] call CBA_fnc_waitAndExecute;
 	} else
 	{
 		//hint "alb";
@@ -34,8 +45,7 @@ _AOE = 15;
 		_scantei_spark setParticleRandom [1, [0.05, 0.05, 0.1], [5, 5, 3], 0, 0.0025, [0, 0, 0, 0], 0, 0];
 		_scantei_spark setParticleParams [["\A3\data_f\proxies\muzzle_flash\muzzle_flash_silencer.p3d", 1, 0, 1], "", "SpaceObject", 1, 1, [0, 0,_spark_poz_rel], [0, 0, 0], 0, 20, 7.9, 0, [0.5,0.5,0.05], [[1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 0]], [0.08], 1, 0, "", "", _x,0,true,0.3,[[0,0,0,0]]];
 		_scantei_spark setDropInterval 0.001;
-		sleep 0.1 +(random 0.4);
-		deleteVehicle _scantei_spark;
+		[{deleteVehicle _this}, _scantei_spark, 0.1 + random 0.4] call CBA_fnc_waitAndExecute;
 	};
 } forEach (nearestObjects [_this, [
 	"Lamps_base_F", //These are all the lights' base classes

@@ -6,7 +6,7 @@ class cfgPatches
 		{
 			"RB205_weapons"
 		};
-		requiredVersion = 1.0;
+		requiredVersion = 2.06;
         author = "205th Recon Battalion";
 		units[] = {};
 		weapons[] =
@@ -23,6 +23,8 @@ class cfgPatches
 		};
 	};
 };
+
+#include "UIElements\chargeRing.hpp"
 
 class Mode_SemiAuto;
 class MuzzleSlot;
@@ -274,7 +276,7 @@ class CfgMagazines
 
 		model = "\MRC\JLTS\weapons\DC15x\DC15x_mag.p3d";
 		picture = "\3AS\3AS_Weapons\Data\UI\3as_sniper_b.paa";
-		mass = 20;
+		mass = 15;
 
 		ammo = "RB205_T7ION_ammo";
 		count = 1;
@@ -353,6 +355,28 @@ class CfgAmmo
 		craterShape="\A3\weapons_f\empty.p3d";
 		class CamShakeExplode
 		{
+		};
+	};
+	class RB205_droidPopper_ammo;
+	class RB205_T7ION_empBlast: RB205_droidPopper_ammo
+	{
+		// Effect and sound of the droid popper. fn_empBlast handles the units, so the hit handler of the grenade stays out.
+		RB205_isEMPGrenade = 0;
+		explosionTime = 0.01;
+	};
+	class RB205_T7ION_overloadBlast: RB205_T7ION_electrocuteGrenade
+	{
+		explosionEffects="RB205_T7ION_EMPExplosion";
+		SoundSetExplosion[]=
+		{
+			"EMP_Sparks_SoundSet_GL"
+		};
+		class CamShakeExplode
+		{
+			power=3.60555;
+			duration=0.8;
+			frequency=20;
+			distance=10.8167;
 		};
 	};
 };
@@ -701,6 +725,24 @@ class CfgSounds
 		sound[] = {"\RB205_weapons\T7ION\data\sounds\ion\spark4.wss", db+10, 1};
 		titles[] = {};
 	};
+	class RB205_T7ION_charge
+	{
+		name = "RB205_T7ION_charge";
+		sound[] = {"\RB205_weapons\T7ION\data\sounds\charge_sound.ogg", 2, 1};
+		titles[] = {};
+	};
+	class RB205_T7ION_hold
+	{
+		name = "RB205_T7ION_hold";
+		sound[] = {"\RB205_weapons\T7ION\data\sounds\hold_sound.ogg", 2, 1};
+		titles[] = {};
+	};
+	class RB205_T7ION_ready
+	{
+		name = "RB205_T7ION_ready";
+		sound[] = {"\RB205_weapons\T7ION\data\sounds\ready_sound.ogg", 1, 1};
+		titles[] = {};
+	};
 };
 class CfgSoundShaders
 {
@@ -725,6 +767,13 @@ class CfgSoundSets
 		loop = 0;
 	};
 };
+class Extended_PreInit_EventHandlers
+{
+	class RB205_T7ION_PreInit
+	{
+		init="call compile preprocessFileLineNumbers '\RB205_weapons\T7ION\data\scripts\XEH_preInit.sqf'";
+	};
+};
 class Extended_PostInit_EventHandlers
 {
 	class RB205_T7ION_PostInit
@@ -741,6 +790,54 @@ class CfgFunctions
 			class onFired
 			{
 				file="RB205_weapons\T7ION\data\scripts\fn_onFired.sqf";
+			};
+			class ionSparks
+			{
+				file="RB205_weapons\T7ION\data\scripts\fn_ionSparks.sqf";
+			};
+			class applyIon
+			{
+				file="RB205_weapons\T7ION\data\scripts\fn_applyIon.sqf";
+			};
+			class empBlast
+			{
+				file="RB205_weapons\T7ION\data\scripts\fn_empBlast.sqf";
+			};
+			class spawnCrater
+			{
+				file="RB205_weapons\T7ION\data\scripts\fn_spawnCrater.sqf";
+			};
+			class chargeBlocksFire
+			{
+				file="RB205_weapons\T7ION\data\scripts\fn_chargeBlocksFire.sqf";
+			};
+			class chargeCanContinue
+			{
+				file="RB205_weapons\T7ION\data\scripts\fn_chargeCanContinue.sqf";
+			};
+			class chargeStart
+			{
+				file="RB205_weapons\T7ION\data\scripts\fn_chargeStart.sqf";
+			};
+			class chargeUpdate
+			{
+				file="RB205_weapons\T7ION\data\scripts\fn_chargeUpdate.sqf";
+			};
+			class chargeRing
+			{
+				file="RB205_weapons\T7ION\data\scripts\fn_chargeRing.sqf";
+			};
+			class debugReload
+			{
+				file="RB205_weapons\T7ION\data\scripts\fn_debugReload.sqf";
+			};
+			class chargeEnd
+			{
+				file="RB205_weapons\T7ION\data\scripts\fn_chargeEnd.sqf";
+			};
+			class chargeOverload
+			{
+				file="RB205_weapons\T7ION\data\scripts\fn_chargeOverload.sqf";
 			};
 		};
 	};
