@@ -159,6 +159,7 @@ class cfgVehicles
         {
             "RB205_custom\8550_spark\data\B_spark.paa"
         };
+        SWJP_nozzleCount = 1;
     };
 
     class RB205_clone_commander;
