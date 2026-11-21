@@ -45,6 +45,8 @@ class CfgVehicles
 	class RB205_droid_med: Land_3AS_Medical_Droid
 	{
 		displayName = "FX-6 Medical Assistant Droid";
+		simulation = "house";
+		sound = "";
 		class EventHandlers: DefaultEventhandlers
 		{
 			init = "[_this select 0] execVM '\RB205_logistics\utilities\scripts\addActions_med.sqf';";
