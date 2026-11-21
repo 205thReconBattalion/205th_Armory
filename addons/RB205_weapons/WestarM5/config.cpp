@@ -148,7 +148,9 @@ class CfgWeapons
 		JLTS_hasElectronics = 1;
 		JLTS_hasEMPProtection = 0;
 		JLTS_friedItem = "RB205_WestarM5_fried";
-	};	
+		ACE_RailHeightAboveBore = 0;
+		ACE_RailBaseAngle = 0.0319; //fixes the reticle being off center
+	};
 	FRIED_WEAPON(RB205_WestarM5,"\RB205_weapons\data\ui\westar_fried.paa")
 
 	class ItemCore;
@@ -160,6 +162,7 @@ class CfgWeapons
 			class OpticsModes
 			{
 				class 3AS_Scope_Optics;
+				class 3AS_OverSights_Optic;
 			};
 		};
 	};
@@ -169,6 +172,7 @@ class CfgWeapons
 		displayName = "$STR_205_OPTIC_WM5_DisplayName";
 		descriptionShort = "Vergrößerung: 2x-8x";
 		picture = "\A3\Weapons_F_EPB\Acc\Data\UI\gear_acco_sniper02_CA.paa";
+		ACE_ScopeHeightAboveRail = 0;
 		class ItemInfo: ItemInfo
 		{
 			mass = MASS_ACC_OPTIC;
@@ -182,6 +186,17 @@ class CfgWeapons
 					opticsZoomInit = "0.25/2";
 					opticsZoomMax = "0.25/2";
 					opticsZoomMin = "0.25/8";
+					discreteDistance[] = {25};
+					discreteDistanceInitIndex = 0;
+					distanceZoomMin = 25;
+					distanceZoomMax = 25;
+				};
+				class 3AS_OverSights_Optic: 3AS_OverSights_Optic
+				{
+					discreteDistance[] = {25};
+					discreteDistanceInitIndex = 0;
+					distanceZoomMin = 25;
+					distanceZoomMax = 25;
 				};
 			};
 		};
