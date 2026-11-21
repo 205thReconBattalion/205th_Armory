@@ -24,14 +24,14 @@ class cfgPatches
 
 class cfgWeapons
 {
-    class RB205_H_trooper;
-    class RB205_H_paso: RB205_H_trooper
+    class RB205_H_plt_trooper;
+    class RB205_H_paso: RB205_H_plt_trooper
     {
-        displayName = "[205] Clone Trooper Helmet [3234]";
+        displayName = "[205] Clone Pilot Trooper Helmet [3234]";
         hiddenSelectionsTextures[] =
         {
             "RB205_custom\3234_paso\data\H_paso.paa",
-            "RB205_main\data\default\visor_p2_co.paa"
+            "RB205_main\data\pilot\visor_plt_co.paa"
         };
     };
 
@@ -52,8 +52,8 @@ class cfgWeapons
 
 class cfgVehicles
 {
-    class RB205_clone_trooper;
-    class RB205_clone_paso: RB205_clone_trooper
+    class RB205_clone_plt_trooper;
+    class RB205_clone_paso: RB205_clone_plt_trooper
     {
         displayName = "CT-3234 Paso";
         uniformclass = "RB205_U_paso";
@@ -64,6 +64,6 @@ class cfgVehicles
             "RB205_custom\3234_paso\data\U_paso_lower.paa",
             "RB205_main\data\default\U_undersuit_co.paa"
         };
-        LINKED_ITEMS("RB205_H_paso","RB205_V_ct","RB205_NV_chip")
+        LINKED_ITEMS("RB205_H_paso","RB205_V_plt_ct","RB205_NV_chip")
     };
 };
