@@ -50,24 +50,23 @@ class cfgWeapons
         };
     };
 
-    class RB205_V_cs;
-    class RB205_V_junior: RB205_V_cs
+    class RB205_V_csm;
+    class RB205_V_junior: RB205_V_csm
     {
         displayName = "[205] Clone Trooper Vest [5463]";
         hiddenSelectionsTextures[] =
         {
-            "RB205_custom\5463_junior\data\V_junior.paa",
-            ""
+            "RB205_custom\5463_junior\data\V_junior.paa"
         };
     };
 };
 
 class cfgVehicles
 {
-    class RB205_clone_sergeant;
-    class RB205_clone_junior: RB205_clone_sergeant
+    class RB205_clone_sergeantMajor;
+    class RB205_clone_junior: RB205_clone_sergeantMajor
     {
-        displayName = "CS-5463 Junior";
+        displayName = "CSM-5463 Junior";
         uniformclass = "RB205_U_junior";
         editorSubCategory = "RB205_lore";
         hiddenselectionsTextures[] =
