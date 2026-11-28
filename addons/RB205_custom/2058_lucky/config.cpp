@@ -11,7 +11,8 @@ class cfgPatches
 		weapons[] =
         {
             "RB205_H_lucky",
-            "RB205_U_lucky"
+            "RB205_U_lucky",
+            "RB205_V_lucky"
         };
 		units[]	=
         {
@@ -48,14 +49,24 @@ class cfgWeapons
             uniformClass = RB205_clone_lucky;
         };
     };
+
+    class RB205_V_csm;
+    class RB205_V_lucky: RB205_V_csm
+    {
+        displayName = "[205] Clone Trooper Vest [2058]";
+        hiddenSelectionsTextures[] =
+        {
+            "RB205_custom\2058_lucky\data\V_lucky.paa"
+        };
+    };
 };
 
 class cfgVehicles
 {
-    class RB205_clone_trooper;
-    class RB205_clone_lucky: RB205_clone_trooper
+    class RB205_clone_sergeantMajor;
+    class RB205_clone_lucky: RB205_clone_sergeantMajor
     {
-        displayName = "CT-2058 Lucky";
+        displayName = "CSM-2058 Lucky";
         uniformclass = "RB205_U_lucky";
 	    editorSubCategory = "RB205_lore";
         hiddenselectionsTextures[] =
@@ -64,6 +75,7 @@ class cfgVehicles
             "RB205_custom\2058_lucky\data\U_lucky_lower.paa",
             "RB205_main\data\default\U_undersuit_co.paa"
         };
-        LINKED_ITEMS("RB205_H_lucky","RB205_V_ct","RB205_NV_chip")
+        LINKED_ITEMS("RB205_H_lucky","RB205_V_lucky","RB205_NV_chip")
+	    identityTypes[] = IDENTITY_TYPES;
     };
 };

@@ -105,6 +105,7 @@ class XtdGearInfos
 		//VESTS
 
 		V_CUSTOM(RB205_V_mando,"0955","dft")
+		V_CUSTOM(RB205_V_lucky,"2058","dft")
 		V_CUSTOM(RB205_V_gentleman,"2441","dft")
 		V_CUSTOM(RB205_V_putzi,"5283","dft")
 		V_CUSTOM(RB205_V_junior,"5463","dft")
